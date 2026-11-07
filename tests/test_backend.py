@@ -203,6 +203,196 @@ class CatalogueTests(unittest.TestCase):
         self.assertIn("Changes were made", html)
 
 
+class GuidesAndLessonsTests(unittest.TestCase):
+    """docs/GUIDE_SPEC.md, Tobi tasks 1-5."""
+
+    def setUp(self):
+        app.config["TESTING"] = True
+        self.c = app.test_client()
+
+    def lesson_entry(self):
+        return store.get(store.lessons()[0]["entry_id"])
+
+    def link_only(self, safety="kid-safe"):
+        return next(e for e in store.entries("build") if e["safety"] == safety and e.get("reuse") == "link-only")
+
+    def test_store_loads_guides_and_lessons(self):
+        self.assertEqual(len(store.lessons()), 26)
+        self.assertIn("fallback", store.guides())
+        ids = {e["id"] for e in store.entries("kids")}
+        for ls in store.lessons():
+            self.assertIn(ls["entry_id"], ids)
+            self.assertIs(store.lesson_by_id(ls["id"]), ls)
+            self.assertEqual(store.get(ls["entry_id"])["lesson_id"], ls["id"])
+        self.assertIsNone(self.link_only()["lesson_id"])
+
+    def test_every_visible_entry_resolves_to_a_guide(self):
+        import guide_helpers
+        for e in store.entries():
+            if e["safety"] in ("kid-safe", "ask-a-grown-up"):
+                r = guide_helpers.guide_for(e, store.guides(), store.lessons())
+                self.assertTrue(r["slides"], e["id"])
+
+    def test_entry_page_with_lesson_in_every_language(self):
+        e = self.lesson_entry()
+        for lang in LANGS:
+            r = self.c.get(f"/{lang}/entry/{e['id']}")
+            self.assertEqual(r.status_code, 200, lang)
+            html = r.get_data(as_text=True)
+            self.assertIn(f"/{lang}/lesson/{e['lesson_id']}", html)
+            self.assertIn('data-slide-type="what_is_it"', html)
+            self.assertNotIn("{entry_title}", html)  # placeholders are filled
+            self.assertNotIn("{age}", html)
+
+    def test_link_only_entry_leaves_the_site_with_a_notice(self):
+        e = self.link_only()
+        html = self.c.get(f"/en/entry/{e['id']}").get_data(as_text=True)
+        self.assertIn('data-slide-type="go_external"', html)
+        self.assertIn("You are leaving our site", html)
+        self.assertIn('rel="noopener noreferrer"', html)
+        self.assertNotIn("/lesson/", html)
+
+    def test_translated_ui_for_slide_page(self):
+        e = self.link_only()
+        html = self.c.get(f"/es/entry/{e['id']}").get_data(as_text=True)
+        self.assertIn("Vas a salir de nuestro sitio", html)
+        self.assertIn("Por ahora este texto está en inglés", html)
+
+    def test_hidden_entries_have_no_guide_page(self):
+        ask = next(e for e in store.entries("build") if e["safety"] == "ask-a-grown-up")
+        self.assertEqual(self.c.get(f"/en/entry/{ask['id']}").status_code, 404)
+        self.c.post("/grownup", data={"on": "1"})
+        r = self.c.get(f"/en/entry/{ask['id']}")
+        self.assertEqual(r.status_code, 200)
+        self.assertIn('data-slide-type="go_external"', r.get_data(as_text=True))
+
+    def test_related_is_kid_safe_even_after_the_gate(self):
+        self.c.post("/grownup", data={"on": "1"})
+        ask = next(e for e in store.entries("build") if e["safety"] == "ask-a-grown-up")
+        html = self.c.get(f"/en/entry/{ask['id']}").get_data(as_text=True)
+        for e in store.entries():
+            if e["safety"] != "kid-safe" and e["id"] != ask["id"]:
+                self.assertNotIn(f"/entry/{e['id']}\"", html)
+
+    def test_lessons_list_and_age_filter(self):
+        r = self.c.get("/en/lessons")
+        self.assertEqual(r.status_code, 200)
+        html = r.get_data(as_text=True)
+        for ls in store.lessons():
+            self.assertIn(f"/en/lesson/{ls['id']}", html)
+        young = self.c.get("/en/lessons?age=5-7").get_data(as_text=True)
+        self.assertIn("5-7", young)
+        self.assertNotIn(f"/en/lesson/{next(x for x in store.lessons() if x['age_group'] == '11-13')['id']}", young)
+        for lang in LANGS:
+            self.assertEqual(self.c.get(f"/{lang}/lessons").status_code, 200)
+
+    def test_every_lesson_page_has_the_attribution_box(self):
+        for ls in store.lessons():
+            r = self.c.get(f"/en/lesson/{ls['id']}")
+            self.assertEqual(r.status_code, 200, ls["id"])
+            html = r.get_data(as_text=True)
+            self.assertIn("CC BY-SA 4.0", html)
+            self.assertIn(ls["source_url"], html)
+            self.assertIn(ls["license_url"], html)
+            self.assertIn(ls["changes_made"], html)
+            self.assertIn("Original lesson, with pictures", html)
+
+    def test_lesson_pages_in_every_language(self):
+        ls = store.lessons()[0]
+        for lang in LANGS:
+            r = self.c.get(f"/{lang}/lesson/{ls['id']}")
+            self.assertEqual(r.status_code, 200, lang)
+        self.assertIn("Por ahora este texto está en inglés", self.c.get(f"/es/lesson/{ls['id']}").get_data(as_text=True))
+
+    def test_lesson_404s(self):
+        self.assertEqual(self.c.get("/en/lesson/nope").status_code, 404)
+        self.assertEqual(self.c.get("/xx/lesson/" + store.lessons()[0]["id"]).status_code, 404)
+
+    def test_link_only_never_serves_lesson_content(self):
+        import json
+        fake = {"id": "lesson-fake", "entry_id": self.link_only()["id"], "title": {"en": "x"}, "age_group": "5-7",
+                "duration_minutes": 5, "summary": {"en": "s"}, "objectives": {"en": []}, "materials": {"en": []},
+                "steps": {"en": []}, "talk_about": {"en": []}, "grown_up_note": {"en": "g"}}
+        store.lessons().append(fake)
+        store._lesson_by_id["lesson-fake"] = fake
+        try:
+            self.assertEqual(self.c.get("/en/lesson/lesson-fake").status_code, 404)
+            self.assertNotIn("lesson-fake", self.c.get("/en/lessons").get_data(as_text=True))
+        finally:
+            store.lessons().remove(fake)
+            del store._lesson_by_id["lesson-fake"]
+
+    def test_lessons_follow_the_gate(self):
+        entry = self.lesson_entry()
+        original = entry["safety"]
+        entry["safety"] = "ask-a-grown-up"
+        try:
+            ls = store.lessons()[0]
+            self.assertEqual(self.c.get(f"/en/lesson/{ls['id']}").status_code, 404)
+            self.assertNotIn(f"/en/lesson/{ls['id']}", self.c.get("/en/lessons").get_data(as_text=True))
+        finally:
+            entry["safety"] = original
+
+    def test_guide_page_says_more_is_coming_when_short(self):
+        import guide
+        short = None
+        for age in guide.AGES:
+            for goal in guide.GOALS:
+                path = guide.build_path(gate_visible(), age, goal, "Beginner")
+                if len(path) < guide.PATH_LEN:
+                    short = (age, goal)
+        if short:
+            html = self.c.get(f"/en/guide?age={short[0]}&goal={short[1]}&level=Beginner").get_data(as_text=True)
+            self.assertIn("More is coming", html)
+
+
+def gate_visible():
+    return gate.filter_visible(store.entries())
+
+
+class TranslationParityTests(unittest.TestCase):
+    def test_ui_labels_complete(self):
+        import i18n_guides
+        import i18n_lessons
+        for mod in (i18n_guides, i18n_lessons):
+            for lang, labels in mod.UI.items():
+                self.assertEqual(set(labels), set(mod.UI_EN), (mod.__name__, lang))
+        self.assertIn("{n}", i18n_guides.UI["ar"]["more"])
+        self.assertIn("{n}", i18n_lessons.UI["hi"]["lesson_minutes"])
+        self.assertIn("{i}", i18n_lessons.UI["pt"]["slide_n"])
+
+    def test_guides_match_english_shape(self):
+        import delivery
+        for kind in delivery.GUIDES:
+            en = delivery.guide_for(kind, "en")
+            for lang in ("es", "ar", "hi", "pt"):
+                g = delivery.guide_for(kind, lang)
+                self.assertTrue(g["translated"], (kind, lang))
+                for field in ("steps", "accessibility", "safety"):
+                    self.assertEqual(len(g[field]), len(en[field]), (kind, lang, field))
+                self.assertEqual(list(g["by_level"]), list(en["by_level"]))
+                for lvl in en["by_level"]:
+                    self.assertEqual(len(g["by_level"][lvl]), len(en["by_level"][lvl]), (kind, lang, lvl))
+
+    def test_unknown_language_falls_back_to_english(self):
+        import delivery
+        g = delivery.guide_for("video", "xx")
+        self.assertFalse(g["translated"])
+        self.assertEqual(g["title"], delivery.GUIDES["video"]["title"])
+
+    def test_howto_pages_in_every_language(self):
+        c = app.test_client()
+        for lang in LANGS:
+            for kind in ("video", "repo", "article", "document"):
+                self.assertIn(f'lang="{lang}"', c.get(f"/{lang}/howto/{kind}").get_data(as_text=True))
+        self.assertIn("IA", c.get("/es/howto/video").get_data(as_text=True))
+
+    def test_youtube_shortcut_is_right(self):
+        import delivery
+        steps = " ".join(delivery.GUIDES["video"]["steps"])
+        self.assertIn("J to go back 10 seconds", steps)
+
+
 class GuideTests(unittest.TestCase):
     def setUp(self):
         import os
@@ -215,7 +405,10 @@ class GuideTests(unittest.TestCase):
             for goal in guide.GOALS:
                 for level in guide.LEVELS:
                     path = guide.build_path(store.entries(), age, goal, level)
-                    self.assertEqual(len(path), guide.PATH_LEN, (age, goal, level))
+                    self.assertGreater(len(path), 0, (age, goal, level))  # never empty
+                    self.assertLessEqual(len(path), guide.PATH_LEN, (age, goal, level))
+                    if order.index(age) <= 1:  # ages 5-10: Beginner only
+                        self.assertTrue(all(e["level"] == "Beginner" for e in path), (age, goal, level))
                     self.assertEqual(len({e["id"] for e in path}), len(path))
                     for e in path:
                         self.assertEqual(e["safety"], "kid-safe")

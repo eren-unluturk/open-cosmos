@@ -10,6 +10,8 @@ Selection rules (pure code, no API key needed):
   3. goal topic first, then "general" topic, at the chosen level.
   4. still short? repeat at the next lower level.
   5. show easier levels first.
+  6. ages 5-10 only get Beginner entries, whatever level was picked.
+  7. the path may be shorter than PATH_LEN. The page says "more is coming". Never padded with unsafe entries.
 """
 import json
 import os
@@ -32,7 +34,8 @@ def age_fits(entry, age):
 def candidates(entries, age, goal, level, limit=40):
     """Ranked pool: best fit first."""
     topic = GOALS.get(goal, "general")
-    level_idx = LEVELS.index(level)
+    # Children under 11 only get Beginner. The data has nothing above it that fits them.
+    level_idx = 0 if AGE_ORDER.index(age) <= 1 else LEVELS.index(level)
     ranked = []
     for e in entries:
         if gate.tier(e) != gate.KID_SAFE or not age_fits(e, age):

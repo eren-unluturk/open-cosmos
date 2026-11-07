@@ -23,6 +23,7 @@
         </li>
       {% else %}<p>No matches yet.</p>{% endfor %}
     </ol>
+    {% if short %}<p class="mt-3">{{ ui.more_coming }}</p>{% endif %}
     <p class="text-xs text-slate-600 mt-6">Path chosen by AI from open resources. Always check the original. We don't store your answers.</p>
   {% endif %}
 {% endblock %}

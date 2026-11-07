@@ -4314,6 +4314,1166 @@
         }
       ],
       "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "build:Build your own AI Model": {
+      "id": "group-build:build-your-own-ai-model",
+      "kind": "group",
+      "title": {
+        "en": "Build your own AI model"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our AI Model build group, a list of tutorials about building the pieces of an AI system yourself. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people with programming and maths experience. Items are Advanced, so it suits about age {age} and up and is hard."
+          },
+          "adult_note": {
+            "en": "Grown-ups: some tutorials need a lot of computer power or a paid service. Check costs before starting."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Read the description to see what it builds."
+            },
+            {
+              "en": "Open the tutorial with a grown-up and check what it needs."
+            },
+            {
+              "en": "Start with the introduction only."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 40,
+              "goal": {
+                "en": "Read the introduction."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 90,
+              "goal": {
+                "en": "Run the first example."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 90,
+              "goal": {
+                "en": "Follow the next section."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Write down what you understood."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Big Data": {
+      "id": "group-learn:big-data",
+      "kind": "group",
+      "title": {
+        "en": "Big data"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Big Data group, a list of tools for working with very large amounts of data. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people who already program and want to work with big data. Items are Intermediate or Advanced, so it suits about age {age} and up."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at this site before your child does. It is listed for developers, and we have not reviewed the page."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Read what the tool is for."
+            },
+            {
+              "en": "Open its site with a grown-up and read the overview."
+            },
+            {
+              "en": "Try a tiny example on a small file."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Read the overview."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Run a tiny example."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 90,
+              "goal": {
+                "en": "Try it on a bigger file."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Explain what it did."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "build:Build your own Search Engine": {
+      "id": "group-build:build-your-own-search-engine",
+      "kind": "group",
+      "title": {
+        "en": "Build your own search engine"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Search Engine build group, a list of tutorials about making a program that finds pages or text. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people who know some programming. Items are mostly Intermediate, so it suits about age {age} and up."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at this site before your child does. It is listed for developers, and we have not reviewed the page."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Pick a tutorial in a language you know."
+            },
+            {
+              "en": "Open it with a grown-up and read the first step."
+            },
+            {
+              "en": "Search a small set of your own files first."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 40,
+              "goal": {
+                "en": "Read and set up."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Build an index of a few documents."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Add ranking."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Try it on more text."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "build:Build your own Template Engine": {
+      "id": "group-build:build-your-own-template-engine",
+      "kind": "group",
+      "title": {
+        "en": "Build your own template engine"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Template Engine build group, a list of tutorials about tools that fill in web pages with data. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people who build web pages and want to see how templates work. Items are Intermediate, so it suits about age {age} and up."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at this site before your child does. It is listed for developers, and we have not reviewed the page."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Make sure you have written a little code before."
+            },
+            {
+              "en": "Open the tutorial with a grown-up."
+            },
+            {
+              "en": "Fill in one word in a template first."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Read and set up."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Replace simple words."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Add loops."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Make a page from a list."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "build:Build your own Text Editor": {
+      "id": "group-build:build-your-own-text-editor",
+      "kind": "group",
+      "title": {
+        "en": "Build your own text editor"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Text Editor build group, a list of tutorials about making a program like a notepad. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people who know some programming and want to build a real tool. It suits about age {age} and up."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at this site before your child does. It is listed for developers, and we have not reviewed the page."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Pick a tutorial in a language you know."
+            },
+            {
+              "en": "Open it with a grown-up and read the first step."
+            },
+            {
+              "en": "Show some text on screen first."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 40,
+              "goal": {
+                "en": "Set up and show text."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Type and delete."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Save a file."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Add a feature you want."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Hardware": {
+      "id": "group-learn:hardware",
+      "kind": "group",
+      "title": {
+        "en": "Hardware and gadgets"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Hardware group, a list about physical computing, like electronics and machines. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people who like building real things. It suits about age {age} and up, with a grown-up for any parts or tools."
+          },
+          "adult_note": {
+            "en": "Grown-ups: hardware means buying parts and sometimes soldering or mains power. Please supervise closely."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Read the description to see what you would need."
+            },
+            {
+              "en": "Look at the site with a grown-up before buying anything."
+            },
+            {
+              "en": "Start with a simple, low-cost idea."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 20,
+              "goal": {
+                "en": "Read about the idea."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "List the parts with a grown-up."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 90,
+              "goal": {
+                "en": "Build the first part."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Test and change it."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Work": {
+      "id": "group-learn:work",
+      "kind": "group",
+      "title": {
+        "en": "Careers in technology"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Work group, a list about jobs and working life in technology. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for older learners who wonder what jobs exist. It suits about age {age} and up."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at this site before your child does. It is listed for developers, and we have not reviewed the page."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Read the description to see what it is about."
+            },
+            {
+              "en": "Look at the site with a grown-up."
+            },
+            {
+              "en": "Write down one job that sounds interesting."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 20,
+              "goal": {
+                "en": "Read about one kind of job."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Find two more jobs."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Talk to someone who has one."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 20,
+              "goal": {
+                "en": "Pick a skill to try."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "build:Build your own Blockchain / Cryptocurrency": {
+      "id": "group-build:build-your-own-blockchain-/-cryptocurrency",
+      "kind": "group",
+      "title": {
+        "en": "Blockchain and cryptocurrency"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Blockchain build group, a list of tutorials about how blockchains and digital money work. We only know the title, short description and level from our list. Money topics need a grown-up."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for older learners who are curious about how the technology works. It suits about age {age} and up, only with a grown-up, and never with real money."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please do not let a child use real money or make crypto accounts. This guide is about learning how the technology works only."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Read the description with a grown-up."
+            },
+            {
+              "en": "Open the tutorial together and check that it uses fake money only."
+            },
+            {
+              "en": "Build the smallest example."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Read the introduction with a grown-up."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Build a tiny chain."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Add a simple rule."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Explain it to a grown-up."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "build:Build your own Operating System": {
+      "id": "group-build:build-your-own-operating-system",
+      "kind": "group",
+      "title": {
+        "en": "Build your own operating system"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Operating System build group, a list of tutorials about writing the core program that runs a computer. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for experienced programmers. Items are Advanced, so it suits about age {age} and up, and is very hard."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at this site before your child does. It is listed for developers, and we have not reviewed the page. Operating system tutorials can change how a computer starts; use a virtual machine."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Read the description and the requirements."
+            },
+            {
+              "en": "Open the tutorial with a grown-up."
+            },
+            {
+              "en": "Use a virtual machine, not your real computer."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 40,
+              "goal": {
+                "en": "Read the introduction."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 120,
+              "goal": {
+                "en": "Set up the tools."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 120,
+              "goal": {
+                "en": "Boot the first screen."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 90,
+              "goal": {
+                "en": "Print text on the screen."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Databases": {
+      "id": "group-learn:databases",
+      "kind": "group",
+      "title": {
+        "en": "Databases"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Databases group, a list of tools for storing and finding data. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people who already program and need to store information. Items are Intermediate or Advanced, so it suits about age {age} and up."
+          },
+          "adult_note": {
+            "en": "Grown-ups: use fake data only. Databases can hold personal details, so keep real names out."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Pick a database that fits what you want to store."
+            },
+            {
+              "en": "Open its site with a grown-up and read the first page."
+            },
+            {
+              "en": "Store and read back a couple of fake records."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Read the overview."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Install and run a first example."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Store some fake data."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Ask the database a question."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
     }
   }
 }

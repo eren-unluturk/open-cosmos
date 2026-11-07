@@ -22,13 +22,14 @@ Python (Flask + Jinja2), Tailwind via CDN, Claude API (translation + level taggi
 ## Data Pipeline (run in order)
 ```bash
 python scripts/fetch.py        # download + parse the two CC0 lists
-python scripts/categorize.py   # topic, level, age_group, safety (add --no-ai for rules only)
-python scripts/translate.py    # translations (needs ANTHROPIC_API_KEY in a local .env)
+python scripts/fetch_kids.py   # CS Unplugged lessons (CC BY-SA 4.0) -> src/data/kids.json
+python scripts/categorize.py --no-ai  # topic, level, age_group, safety (uses the committed cache; no API key needed)
+python scripts/translate.py    # optional: more translations (needs ANTHROPIC_API_KEY in a local .env)
 python scripts/coverage.py     # stats + guide coverage gaps
 python scripts/check_links.py  # link report (never edits data)
 python -m unittest discover -s tests
 ```
-The API key lives only in a local `.env` (git-ignored, never committed).
+Setup once: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`. The API key (only needed for `translate.py`) lives in a local `.env` (git-ignored, never committed).
 
 ## Project Structure
 ```
@@ -42,7 +43,7 @@ tests/    tests
 ## Team & Roles
 | Name | Role | Responsibilities | Files |
 |------|------|------------------|-------|
-| Eren | **Data lead** | Fetch and parse the two CC0 source READMEs into JSON; decide which entries count as intro-to-programming; keep `docs/SOURCES.md` accurate. | `scripts/fetch.py`, `docs/SOURCES.md` |
+| Eren | **Data lead** | Fetch and parse the two CC0 source READMEs and CS Unplugged into JSON; categorize every entry (topic, level, age, safety tier); keep `docs/SOURCES.md` accurate. | `scripts/fetch.py`, `docs/SOURCES.md` |
 | Brian | **AI lead** | Claude prompts for translation and Beginner/Intermediate/Advanced tagging; run and cache the batch; have native speakers spot-check translations. | `scripts/translate.py` |
 | Tobi | **Backend lead** | Flask routes, language and level filtering, UI strings, right-to-left support, search, deployment. Also the safety gate (hide non-kid-safe by default) and guide filtering by safety, age fit and goal. | `src/app.py`, `requirements.txt` |
 | Isabella | **Frontend + pitch lead** | Pages, level badges, language switcher, attribution footer, accessibility; then README, slides, demo video, and submission. | `src/templates/`, `src/static/`, `docs/PITCH.md` |

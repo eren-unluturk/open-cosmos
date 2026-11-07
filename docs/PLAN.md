@@ -60,17 +60,19 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 3. **Backend lead** — `src/app.py`: Flask routes, language/level filtering, UI strings, RTL, deploy. **Also owns the safety gate and guide filtering:** hide non-`kid-safe` entries by default, add the session-only grown-up gate, and make `src/guide.py` use only `kid-safe` entries that fit the chosen age (entry `age_group` <= chosen age) and goal. Otherwise the guide can show teen+ material to a 6-year-old. Details in "Ask the team".
 4. **Frontend + pitch lead** — `src/templates/`, `src/static/`: pages, level badges, language switcher, attribution footer, accessibility; then README, slides, demo video, submission.
 
-**Data contract** (`src/data/learn.json`, `src/data/build.json`, each a list of entries):
-`{id, category, tag, title:{en,...}, desc:{en,...}, level, age_group, topic, safety, safety_reasons, url, source, license}`
-- `id`: `<learn|build>-<8 hex of sha1(url)>`, stable between runs. `tag`: language tag from build-your-own-x (e.g. "Python"), else "".
+**Data contract** (`src/data/learn.json`, `build.json` = CC0; `kids.json` = CC BY-SA 4.0, kept separate; each a list of entries):
+`{id, category, tag, title:{en,...}, desc:{en,...}, level, age_group, topic, safety, safety_reasons, url, source, license}` plus optional `ai_translated`
+- `id`: `<learn|build|kids>-<8 hex of sha1(url)>`, stable between runs. `tag`: language tag from build-your-own-x (e.g. "Python"), else "".
 - `level`: Beginner | Intermediate | Advanced
-- `age_group`: youngest suitable age: "5-7" | "8-10" | "11-13" | "teen+"
+- `age_group`: youngest suitable age: "5-7" | "8-10" | "11-13" | "teen+". For `kids.json` it comes from the source (CS Unplugged's "11-14" maps to "11-13") and categorize.py never overwrites it.
 - `topic`: games | art | web | general | systems | security | other
 - `safety`: "kid-safe" | "ask-a-grown-up" | "adult-only"
-- `safety_reasons`: short strings, empty only for kid-safe (e.g. "security-tooling", "external-forum", "account-required", "unvetted-external-site", "unclassified")
+- `safety_reasons`: short strings, empty only for kid-safe (e.g. "security-tooling", "external-forum", "social-platform", "account-required", "unvetted-external-site", "not-kid-oriented-topic", "off-topic", "unclassified")
+- `ai_translated`: list of languages (es, ar, hi, pt) whose `title`/`desc` text was written by AI. The UI must label these as AI-generated.
+- `license`: "CC0-1.0" for learn/build, "CC-BY-SA-4.0" for kids. `source` is the repo URL, `url` the original page (we link out, never copy content).
 - Entries are sorted kid-safe first, then Beginner first (translate.py works in file order).
 
-**Pipeline order:** `fetch.py` -> `categorize.py` -> `translate.py` (then `coverage.py`, `check_links.py`, `python -m unittest discover -s tests`).
+**Pipeline order:** `fetch.py` -> `fetch_kids.py` -> `categorize.py` -> `translate.py` (then `coverage.py`, `check_links.py`, `python -m unittest discover -s tests`).
 
 **Git:** branch per person (`data`, `ai`, `backend`, `frontend`), small commits, pull before push, merge to `main` often.
 
@@ -84,7 +86,9 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - [ ] Translation pipeline (Claude API): prose translated, code preserved, glossary for terms
 - [ ] 3-4 languages (e.g. Spanish, Arabic, Hindi, Portuguese)
 - [x] Guide page skeleton (`src/guide.py`, done) — needs kid-friendly data + tagging to shine
-- [ ] Decide on a kid-friendly extra source after seeing coverage (Data lead; see "Decisions")
+- [x] Kid-friendly source added: CS Unplugged (`scripts/fetch_kids.py` -> `src/data/kids.json`, 33 entries, CC BY-SA 4.0)
+- [x] First translations done: 74 kid-safe Beginner + CS Unplugged entries in es/ar/hi/pt (hand-written, labeled `ai_translated`)
+- [ ] Translate the remaining kid-safe entries (Intermediate) and check translations with native speakers
 - [ ] Lesson page with language switcher + level tag
 - [ ] Level path: Beginner -> Intermediate -> Advanced ordering of lessons
 - [ ] Attribution/license footer + link to source repo on every lesson
@@ -132,12 +136,28 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - **YouTube/Vimeo links are treated as normal (not flagged).** We rely on YouTube's own age restrictions rather than gating every video.
 - **Fail closed:** unclear means `ask-a-grown-up`, never `kid-safe`. `kid-safe` also requires a kid topic (games/art/web/general) and a vetted link host. The AI pass can only make an entry stricter, never looser than the rules. We classify titles, descriptions, categories and link hosts only, never the linked pages.
 - **Parental gate (design):** by default the site hides `ask-a-grown-up` and `adult-only` entries. An adult can reveal `ask-a-grown-up` entries for the current session only (a simple "I'm a grown-up" confirmation; `adult-only` stays hidden). No accounts, no personal data stored.
-- Rules alone leave most entries with unknown topic or level (they default to Intermediate/"unclassified"). The Claude pass (`python scripts/categorize.py`, needs `ANTHROPIC_API_KEY` in a local `.env`) fills those in; results are cached in `scripts/cache/categorize.json`.
+- **No paid API.** The Claude pass in `categorize.py` was done by hand (by Claude Code in the Data lead's session): 953 entries the rules could not decide were labeled and stored in `scripts/cache/categorize.json` (same format the script's API pass uses), then `python scripts/categorize.py --no-ai` merges them. The cache is **committed**: it is small, holds only labels for public titles, and lets the whole team and the Sunday rebuild reproduce the data with no API key. New entries not in the cache fall back to fail-closed rules ("unclassified" -> ask-a-grown-up).
+- **Vetted hosts:** first tier only: aosabook.org, scratchapixel.com, fullstackpython.com, nand2tetris.org, developer.ibm.com, swtch.com (plus GitHub, MDN, Khan Academy, etc. already in `KNOWN_OK_HOSTS`). Medium family, paywalled, ad-heavy and community sites stay unvetted.
+- **CS Unplugged added** (`uccser/cs-unplugged`): content CC BY-SA 4.0 (`LICENCE-CONTENT`), code MIT (`LICENCE`), verified from the repo. Only titles, a short description we wrote, the repo's age group and a link to the lesson page are stored; no lesson text or images. Kept in `kids.json`, separate from the CC0 files. Translations of it must stay CC BY-SA 4.0 with attribution and a "changes were made" note (see `docs/SOURCES.md`).
+- **Title keywords can raise safety, too:** Slack/Telegram/Twitter/etc. in a title now add `social-platform` (found when a Slack-bot tutorial slipped through as kid-safe).
+- **Heuristic caveat:** for the two CC0 sources, `age_group` "11-13" means "Beginner-level web/games/general material", not "written for kids". Only CS Unplugged is actually kid-targeted.
 
 ## Ask the team (changes needed in files Eren doesn't own)
-- **Tobi (`src/app.py`, `src/guide.py`):** hide entries whose `safety != "kid-safe"` by default; add the grown-up gate (session only, reveals `ask-a-grown-up`, never `adult-only`); filter by `safety`, `topic` and `age_group`. In `guide.py`, `candidates()` should use only `safety == "kid-safe"`, require an age fit (entry `age_group` youngest age <= chosen age), and match `topic` to the chosen goal. Note `topic` now has values systems/security/other too.
-- **Isabella (`src/templates/`):** gate UI and a short "why is this hidden?" explanation; safety badges; show `safety_reasons` as plain-language text when the gate is open; show `tag` (programming language) on build entries.
-- **Brian (`scripts/translate.py`):** new fields `topic`, `safety`, `safety_reasons`, `tag` exist; translate only title/desc, never rewrite them. I made the smallest compatible fix: it now translates entries missing any language in `title` (instead of `level is None`) and no longer overwrites `level`/`age_group` set by `categorize.py`. Entries are sorted kid-safe + Beginner first, so use `--limit` to translate the most important ones first. Please also translate the plain-language safety reasons (or ask Isabella to map the reason codes).
+- **Tobi (`src/app.py`, `src/guide.py`):**
+  - Load `kids.json` alongside `learn.json` and `build.json`.
+  - Safety gate: hide `safety != "kid-safe"` by default; a session-only "I'm a grown-up" confirmation reveals `ask-a-grown-up`; `adult-only` is never shown. Filter by `safety`, `topic` and `age_group`.
+  - Guide: `candidates()` should use only `kid-safe` entries whose `age_group` is <= the chosen age (teen+ never shown to kids) and match the goal's `topic`. **Coverage today:** 27 of 36 age/goal/level combinations have fewer than 6 matching entries (run `python scripts/coverage.py`). Two simple rules fix all of them (simulated against the current data): (A) if the goal has fewer than 6 matches, backfill with `topic == "general"` entries at the same level; (B) if still short, backfill with the next lower level at the same age. For ages 5-10 you may also want to offer only Beginner.
+  - Note `topic` also has systems/security/other values.
+- **Isabella (`src/templates/`):**
+  - Footer/attribution line: "Lessons from CS Unplugged (University of Canterbury CSER Group), licensed CC BY-SA 4.0. Titles and descriptions translated and level-tagged by Hackcessability with AI; changes were made. Other lists: CC0." Link https://creativecommons.org/licenses/by-sa/4.0/.
+  - Show an "AI-translated" badge on any entry whose current language is in `ai_translated`.
+  - Safety badges, the grown-up gate UI, and a short "why is this hidden?" text that explains `safety_reasons` in plain language.
+  - Show `tag` (programming language) on build entries.
+  - CS Unplugged lessons are teacher/parent lesson plans, so say "for an adult to do with a child".
+- **Brian (`scripts/translate.py`):**
+  - 74 kid-safe Beginner and CS Unplugged entries are already translated in es/ar/hi/pt, so translate.py skips them (it translates only entries missing a language). Remaining kid-safe Intermediate entries are the next batch.
+  - Known problems (not fixed by Eren): the script crashes if Claude wraps its JSON in a code fence, and it makes one API call at a time. Suggestions: strip a leading/trailing code fence before `json.loads`, retry once on a parse error, and use a `ThreadPoolExecutor(max_workers=5)` to run several entries at once.
+  - Eren's minimal changes to your file: `kids` is included, `level`/`age_group` set by categorize.py are not overwritten, entries are chosen by missing languages, and `ai_translated` is set. Please keep those.
 
 ## Blockers / Notes
 - Bring laptop + charger.

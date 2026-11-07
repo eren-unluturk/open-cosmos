@@ -131,6 +131,78 @@ class FilterTests(unittest.TestCase):
         self.assertEqual(r.json, {"error": "not found"})
 
 
+class CatalogueTests(unittest.TestCase):
+    def setUp(self):
+        app.config["TESTING"] = True
+        self.c = app.test_client()
+
+    def test_only_cc_by_sa_kids_are_hostable(self):
+        for e in store.entries():
+            if e["delivery"] == "hostable":
+                self.assertEqual(e["side"], "kids")
+                self.assertEqual(e["license"], "CC-BY-SA-4.0")
+                self.assertTrue(e["attribution"])
+            else:
+                self.assertEqual(e["delivery"], "external")
+                self.assertIsNone(e["attribution"])
+        self.assertTrue(all(e["delivery"] == "external" for e in store.entries() if e["side"] != "kids"))
+        self.assertTrue(any(e["delivery"] == "hostable" for e in store.entries()))
+
+    def test_cc0_license_is_never_hostable(self):
+        import delivery
+        self.assertEqual(delivery.classify({"side": "learn", "license": "CC0-1.0", "url": "https://x.org"})["delivery"], "external")
+        self.assertEqual(delivery.classify({"side": "kids", "license": "MIT", "url": "https://x.org"})["delivery"], "external")
+
+    def test_kinds(self):
+        import delivery
+        k = lambda side, url: delivery.kind_of({"side": side, "url": url})
+        self.assertEqual(k("learn", "https://www.youtube.com/watch?v=1"), "video")
+        self.assertEqual(k("learn", "https://youtu.be/abc"), "video")
+        self.assertEqual(k("build", "https://github.com/a/b"), "repo")
+        self.assertEqual(k("learn", "https://x.org/book.pdf"), "document")
+        self.assertEqual(k("learn", "https://medium.com/a"), "article")
+        self.assertEqual(k("kids", "https://www.csunplugged.org/en/topics/binary-numbers/"), "unit")
+        self.assertEqual(k("kids", "https://www.csunplugged.org/en/topics/binary-numbers/lesson-a/"), "lesson")
+        self.assertEqual(k("kids", "https://www.csunplugged.org/en/topics/binary-numbers/lesson-a/programming/"), "challenge")
+        self.assertEqual(k("kids", "https://www.csunplugged.org/en/topics/binary-numbers/integrations/x/"), "activity")
+
+    def test_every_external_kind_has_a_guide_with_all_levels(self):
+        import delivery
+        for e in store.entries():
+            if e["delivery"] == "external":
+                g = delivery.guide_for(e["kind"])
+                self.assertIsNotNone(g, e["kind"])
+                self.assertEqual(list(g["by_level"]), delivery.LEVELS)
+                self.assertTrue(g["steps"] and g["accessibility"] and g["safety"])
+
+    def test_catalogue_pages(self):
+        for lang in LANGS:
+            self.assertEqual(self.c.get(f"/{lang}/catalogue").status_code, 200)
+        for kind in ("video", "repo", "article", "document"):
+            for lang in LANGS:
+                self.assertEqual(self.c.get(f"/{lang}/howto/{kind}").status_code, 200)
+        self.assertEqual(self.c.get("/en/howto/nope").status_code, 404)
+
+    def test_api_catalogue_split_and_gate(self):
+        r = self.c.get("/api/catalogue").json
+        self.assertGreater(r["hostable"]["count"], 0)
+        ids = [x["id"] for d in r.values() for lv in d["levels"].values() for x in lv]
+        self.assertTrue(all(store.get(i)["safety"] == "kid-safe" for i in ids))
+        host_ids = [x["id"] for lv in r["hostable"]["levels"].values() for x in lv]
+        self.assertTrue(all(store.get(i)["delivery"] == "hostable" for i in host_ids))
+        self.c.post("/grownup", data={"on": "1"})
+        r2 = self.c.get("/api/catalogue").json
+        self.assertGreater(r2["external"]["count"], r["external"]["count"])
+        ids2 = [x["id"] for d in r2.values() for lv in d["levels"].values() for x in lv]
+        self.assertFalse(any(store.get(i)["safety"] == "adult-only" for i in ids2))
+
+    def test_entry_page_shows_attribution_for_hostable(self):
+        e = next(x for x in store.entries("kids") if x["delivery"] == "hostable")
+        html = self.c.get(f"/en/entry/{e['id']}").get_data(as_text=True)
+        self.assertIn("CC BY-SA 4.0", html)
+        self.assertIn("Changes were made", html)
+
+
 class GuideTests(unittest.TestCase):
     def setUp(self):
         import os

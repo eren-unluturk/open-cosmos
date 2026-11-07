@@ -2,6 +2,8 @@
 import json
 from pathlib import Path
 
+import delivery
+
 DATA = Path(__file__).parent / "data"
 SIDES = ("learn", "build", "kids")
 
@@ -16,6 +18,7 @@ def _read(side):
     entries = json.loads(path.read_text(encoding="utf-8"))
     for e in entries:
         e["side"] = side
+        e.update(delivery.classify(e))  # adds delivery, kind, attribution (never saved to disk)
     return entries
 
 

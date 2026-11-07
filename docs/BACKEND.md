@@ -129,3 +129,21 @@ Routes: `/<lang>/catalogue` (two sections, grouped Beginner, Intermediate, Advan
 - Missing languages fall back to English per field, and the page says "This text is in English for now."
 - Guide path (`src/guide.py`): ages 5-10 get Beginner only. A short path is shown as is, with a "more is coming" line, never padded with unsafe entries.
 - Labels for these pages are in `src/i18n_lessons.py` (en, es, ar, hi, pt; AI-written, not native-checked). How-to guides and catalogue labels are in `src/i18n_guides.py`.
+
+## Coding problems (in-browser IDE)
+Learners write Python or JavaScript on `/<lang>/problem/<id>`, run it, check it against tests, ask for hints one at a time, or switch to "Guide me" for small steps. No accounts. **Learner code runs in their browser** in a Web Worker (`src/static/runner.js`); it is never sent to our server. The page stops it after 5 seconds. Python uses Pyodide 0.26.4 from cdn.jsdelivr.net (about 10 MB, first run only; no integrity check is possible for a worker script). JavaScript runs with `new Function` inside the worker.
+
+| Piece | Where |
+|-------|-------|
+| Problem text and code (we wrote it) | `scripts/problem_content.py` |
+| Build and proof | `python scripts/build_problems.py` writes `src/data/problems.json` and proves each solution passes, each starter fails, each guided step works (needs `node` for the JavaScript ones) |
+| Format and server-side checks | `src/problems.py` |
+| Pages and API | `/<lang>/problems`, `/<lang>/problem/<id>`, `/api/problems`, `/api/problems/<id>`, `/api/problems/<id>/hint/<n>`, `/api/problems/<id>/solution[?stage=k]` |
+| Page code | `src/static/problem.js`, `src/templates/problem.html` |
+| Labels (en, es, ar, hi, pt) | `src/i18n_problems.py` (keys starting `p_` also go to the browser) |
+
+Hints and answers are not in the page. They are fetched when asked. Tests are in the page (they run in the browser), so the page is not cheat-proof; this is a learning app, not an exam.
+
+Progress: this code does not save anything. When every test passes it fires `document` event `problem:solved` (`detail.id`) and calls `window.HackProgress.markSolved(id)` if that exists. Whoever builds the cookie progress (Eren) only has to define that function.
+
+Add a problem: add it to `scripts/problem_content.py`, run `python scripts/build_problems.py`, commit the JSON. The script refuses a problem whose starter already passes or whose solution fails.

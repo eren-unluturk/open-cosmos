@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% block content %}
+  <article>
+    <h1 class="text-2xl font-bold my-4">{{ title }}</h1>
+    <p class="text-sm">
+      <span class="border rounded px-1">{{ ui['p_lang_' ~ p.language] }}</span>
+      <span class="border rounded px-1">{{ p.level }}</span>
+      {{ ui.ages }} {{ p.age_group }}
+    </p>
+    {% if english_only %}<p class="text-sm text-slate-600">{{ ui.p_english }}</p>{% endif %}
+
+    <noscript><p class="my-4 border rounded p-3">{{ ui.p_noscript }}</p></noscript>
+
+    <section class="my-4" aria-labelledby="prompt-h">
+      <h2 id="prompt-h" class="text-xl font-semibold">{{ ui.p_prompt }}</h2>
+      <p>{{ prompt }}</p>
+      {% if concepts %}<p class="text-sm mt-2">{{ ui.p_concepts }}: {{ concepts | join(', ') }}</p>{% endif %}
+    </section>
+
+    <fieldset class="my-4">
+      <legend class="sr-only">Mode</legend>
+      <label class="me-4"><input type="radio" name="mode" value="alone" checked> {{ ui.p_solve_alone }}</label>
+      <label id="mode-guided-wrap"><input type="radio" name="mode" value="guided"> {{ ui.p_guide_me }}</label>
+    </fieldset>
+
+    <section id="guide-panel" class="border rounded p-3 my-4" aria-labelledby="stage-count" hidden>
+      <h2 id="stage-count" class="font-semibold"></h2>
+      <p id="stage-goal" class="font-medium"></p>
+      <p id="stage-explain"></p>
+      <div class="mt-2 flex flex-wrap gap-2">
+        <button type="button" id="prev" class="border rounded px-2 py-1">{{ ui.p_prev }}</button>
+        <button type="button" id="next" class="border rounded px-2 py-1">{{ ui.p_next }}</button>
+        <button type="button" id="example" class="border rounded px-2 py-1">{{ ui.p_example }}</button>
+      </div>
+    </section>
+
+    <label for="code" class="font-semibold block mt-4">{{ ui.p_editor }}</label>
+    <textarea id="code" class="w-full border rounded p-2 font-mono text-sm" rows="14" spellcheck="false"
+              autocapitalize="off" autocomplete="off" autocorrect="off" dir="ltr" aria-describedby="tab-tip privacy"></textarea>
+    <p id="tab-tip" class="text-xs text-slate-600">{{ ui.p_tab_tip }}</p>
+    <p id="privacy" class="text-xs text-slate-600">{{ ui.p_privacy }}{% if p.language == 'python' %} {{ ui.p_python_note }}{% endif %}</p>
+
+    <div class="my-3 flex flex-wrap gap-2">
+      <button type="button" id="run" data-needs-idle class="border rounded px-3 py-1">{{ ui.p_run }}</button>
+      <button type="button" id="check" data-needs-idle class="border rounded px-3 py-1 font-semibold">{{ ui.p_check }}</button>
+      <button type="button" id="hint" class="border rounded px-3 py-1">{{ ui.p_hint }}</button>
+      <button type="button" id="solution" class="border rounded px-3 py-1">{{ ui.p_solution }}</button>
+      <button type="button" id="reset" class="border rounded px-3 py-1">{{ ui.p_reset }}</button>
+    </div>
+
+    <div aria-live="polite" class="my-2">
+      <p id="status" class="text-sm"></p>
+      <p id="summary" class="font-semibold"></p>
+    </div>
+
+    <h2 class="text-lg font-semibold mt-3">{{ ui.p_results }}</h2>
+    <ul id="results" class="space-y-1"></ul>
+
+    <h2 class="text-lg font-semibold mt-3">{{ ui.p_output }}</h2>
+    <pre id="output" class="border rounded p-2 text-sm overflow-x-auto" dir="ltr"></pre>
+
+    <ol id="hint-list" class="list-decimal ps-6 my-3 space-y-1" aria-live="polite"></ol>
+
+    <section id="answer" class="border rounded p-3 my-3" hidden>
+      <pre id="answer-code" class="text-sm overflow-x-auto" dir="ltr"></pre>
+      <p id="answer-note" class="text-sm"></p>
+    </section>
+  </article>
+
+  <script type="application/json" id="problem-data">{{ config | tojson }}</script>
+  <script src="{{ url_for('static', filename='problem.js') }}" defer></script>
+{% endblock %}

@@ -350,6 +350,115 @@ def gate_visible():
     return gate.filter_visible(store.entries())
 
 
+class ProblemTests(unittest.TestCase):
+    def setUp(self):
+        app.config["TESTING"] = True
+        self.c = app.test_client()
+
+    def test_data_is_valid(self):
+        import problems as kit
+        self.assertGreaterEqual(len(store.problems()), 12)
+        ids = [p["id"] for p in store.problems()]
+        self.assertEqual(len(ids), len(set(ids)))
+        for p in store.problems():
+            self.assertEqual(kit.validate(p), [], p["id"])
+
+    def test_reference_solutions_pass_and_starters_fail(self):
+        import problems as kit
+        for p in store.problems():
+            if p["language"] == "javascript" and not kit.node_available():
+                continue
+            self.assertEqual(kit.verify(p), [], p["id"])
+
+    def test_every_level_and_both_languages_exist(self):
+        self.assertEqual({p["level"] for p in store.problems()}, {"Beginner", "Intermediate", "Advanced"})
+        self.assertEqual({p["language"] for p in store.problems()}, {"python", "javascript"})
+
+    def test_pages_in_every_language(self):
+        for lang in LANGS:
+            self.assertEqual(self.c.get(f"/{lang}/problems").status_code, 200, lang)
+            for p in store.problems():
+                self.assertEqual(self.c.get(f"/{lang}/problem/{p['id']}").status_code, 200, (lang, p["id"]))
+
+    def test_filters(self):
+        html = self.c.get("/en/problems?language=python&level=Beginner").get_data(as_text=True)
+        for p in store.problems():
+            shown = f"/problem/{p['id']}\"" in html
+            self.assertEqual(shown, p["language"] == "python" and p["level"] == "Beginner", p["id"])
+        young = self.c.get("/en/problems?age=8-10").get_data(as_text=True)
+        self.assertNotIn("/problem/js-binary-search\"", young)
+        self.assertEqual(self.c.get("/en/problems?language=<script>&level=zzz").status_code, 200)
+        self.assertIn("/problem/py-hello\"", self.c.get("/en/problems?q=hello").get_data(as_text=True))
+
+    def test_404s(self):
+        self.assertEqual(self.c.get("/en/problem/nope").status_code, 404)
+        self.assertEqual(self.c.get("/xx/problem/py-hello").status_code, 404)
+        self.assertEqual(self.c.get("/api/problems/nope").status_code, 404)
+
+    def test_page_does_not_carry_hints_or_answers(self):
+        import html as htmllib
+        for p in store.problems():
+            page = htmllib.unescape(self.c.get(f"/en/problem/{p['id']}").get_data(as_text=True))
+            for hint in p["hints"]["en"]:
+                self.assertNotIn(hint, page, p["id"])
+            self.assertNotIn(p["solution"].strip(), page, p["id"])
+        self.assertNotIn("return n * 2", self.c.get("/en/problem/py-double").get_data(as_text=True))
+    def test_api_public_view_hides_answers(self):
+        r = self.c.get("/api/problems/py-evens").json
+        self.assertNotIn("solution", r)
+        self.assertNotIn("hints", r)
+        self.assertEqual(r["hint_count"], 3)
+        self.assertTrue(all("solution" not in s for s in r["guided"]))
+        self.assertEqual(self.c.get("/api/problems?lang=es").json["count"], len(store.problems()))
+
+    def test_hints_come_one_at_a_time(self):
+        for n in (1, 2, 3):
+            r = self.c.get(f"/api/problems/py-double/hint/{n}").json
+            self.assertEqual((r["index"], r["total"]), (n, 3))
+            self.assertTrue(r["hint"])
+        self.assertEqual(self.c.get("/api/problems/py-double/hint/0").status_code, 404)
+        self.assertEqual(self.c.get("/api/problems/py-double/hint/4").status_code, 404)
+
+    def test_solution_and_stage_examples(self):
+        r = self.c.get("/api/problems/py-double/solution").json
+        self.assertIn("return n * 2", r["solution"])
+        s = self.c.get("/api/problems/py-evens/solution?stage=3").json
+        self.assertIn("n % 2 == 0", s["solution"])
+        self.assertEqual(self.c.get("/api/problems/py-double/solution?stage=9").status_code, 404)
+        self.assertEqual(self.c.get("/api/problems/py-double/solution?stage=x").status_code, 404)
+
+    def test_config_has_what_the_runner_needs(self):
+        import json, re
+        html = self.c.get("/es/problem/py-double").get_data(as_text=True)
+        cfg = json.loads(re.search(r'id="problem-data">(.*?)</script>', html, re.S).group(1))
+        self.assertEqual((cfg["language"], cfg["lang"]), ("python", "es"))
+        self.assertIn("def check", cfg["prelude"])
+        self.assertTrue(cfg["tests"] and cfg["stages"])
+        self.assertEqual(cfg["ui"]["p_run"], "Ejecutar")
+        self.assertTrue(all(k.startswith("p_") for k in cfg["ui"]))
+        self.assertNotIn("solution", cfg)
+
+    def test_blocked_builtin_preamble(self):
+        import problems as kit
+        p = store.problem("py-to-binary")
+        self.assertIn("def bin", p["preamble"])
+        err = kit.run_reference(p, "def to_binary(n):\n    return bin(n)[2:]\n", 'check(to_binary(5), "101")')
+        self.assertIn("do not use bin", err)
+
+    def test_static_files_are_served(self):
+        for name in ("runner.js", "problem.js"):
+            r = self.c.get(f"/static/{name}")
+            self.assertEqual(r.status_code, 200, name)
+            r.close()
+
+    def test_problem_labels_complete(self):
+        import i18n_problems
+        for lang, labels in i18n_problems.UI.items():
+            self.assertEqual(set(labels), set(i18n_problems.UI_EN), lang)
+        self.assertIn("{n}", i18n_problems.UI["hi"]["p_failed"])
+        self.assertIn("{i}", i18n_problems.UI["ar"]["p_hint_n"])
+
+
 class TranslationParityTests(unittest.TestCase):
     def test_ui_labels_complete(self):
         import i18n_guides

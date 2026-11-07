@@ -1,0 +1,1222 @@
+[
+ {
+  "id": "py-hello",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "8-10",
+  "topic": "general",
+  "title": {
+   "en": "Say hello"
+  },
+  "prompt": {
+   "en": "Make the computer say hello. Use print to show the words Hello, world! on the screen."
+  },
+  "concepts": {
+   "en": [
+    "print",
+    "text in quote marks"
+   ]
+  },
+  "starter": "# Write your code here.\n",
+  "tests": [
+   {
+    "name": {
+     "en": "It prints exactly Hello, world!"
+    },
+    "code": "check(output.strip(), \"Hello, world!\")"
+   },
+   {
+    "name": {
+     "en": "It prints one line"
+    },
+    "code": "check(len(output.strip().splitlines()), 1)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Use the print function to show something on the screen.",
+    "Text goes inside quote marks, inside the brackets: print(\"...\").",
+    "Type the words exactly: capital H, a comma, and an exclamation mark at the end."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Print any word."
+    },
+    "explain": {
+     "en": "print(...) shows what is inside the brackets. Words must be inside quote marks, like \"hi\"."
+    },
+    "solution": "print(\"hi\")",
+    "tests": [
+     {
+      "name": {
+       "en": "Something is printed"
+      },
+      "code": "check(len(output.strip()) > 0, True)"
+     }
+    ],
+    "starter": "# Try printing the word hi.\n"
+   }
+  ],
+  "solution": "print(\"Hello, world!\")\n",
+  "solution_note": {
+   "en": "print shows text. The words are inside quote marks so Python knows they are text."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "py-double",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "8-10",
+  "topic": "general",
+  "title": {
+   "en": "Double it"
+  },
+  "prompt": {
+   "en": "Write a function called double. It takes a number n and gives back n times 2."
+  },
+  "concepts": {
+   "en": [
+    "functions",
+    "return",
+    "multiplying"
+   ]
+  },
+  "starter": "def double(n):\n    # give back n times 2\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "double(4) is 8"
+    },
+    "code": "check(double(4), 8)"
+   },
+   {
+    "name": {
+     "en": "double(0) is 0"
+    },
+    "code": "check(double(0), 0)"
+   },
+   {
+    "name": {
+     "en": "double(-3) is -6"
+    },
+    "code": "check(double(-3), -6)"
+   },
+   {
+    "name": {
+     "en": "double(2.5) is 5.0"
+    },
+    "code": "check(double(2.5), 5.0)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "A function gives a value back with the word return.",
+    "In Python, the * sign multiplies.",
+    "The body of your function is one line: return, then n times 2."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Give a value back."
+    },
+    "explain": {
+     "en": "return sends a value out of the function. For now, just give back n itself."
+    },
+    "solution": "def double(n):\n    return n\n",
+    "tests": [
+     {
+      "name": {
+       "en": "It gives back its input"
+      },
+      "code": "check(double(7), 7)"
+     }
+    ],
+    "starter": "def double(n):\n    pass\n"
+   },
+   {
+    "goal": {
+     "en": "Multiply by 2."
+    },
+    "explain": {
+     "en": "Change what you return. In Python, * means times."
+    },
+    "solution": "def double(n):\n    return n * 2\n",
+    "tests": [
+     {
+      "name": {
+       "en": "double(4) is 8"
+      },
+      "code": "check(double(4), 8)"
+     }
+    ]
+   }
+  ],
+  "solution": "def double(n):\n    return n * 2\n",
+  "solution_note": {
+   "en": "return n * 2 hands back the answer to whoever called the function."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "py-evens",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Count the even numbers"
+  },
+  "prompt": {
+   "en": "Write a function count_evens(numbers). It gets a list of whole numbers and gives back how many of them are even."
+  },
+  "concepts": {
+   "en": [
+    "lists",
+    "loops",
+    "if",
+    "remainder (%)"
+   ]
+  },
+  "starter": "def count_evens(numbers):\n    # count the even numbers in the list\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "[1, 2, 3, 4] has 2 even numbers"
+    },
+    "code": "check(count_evens([1, 2, 3, 4]), 2)"
+   },
+   {
+    "name": {
+     "en": "An empty list has 0"
+    },
+    "code": "check(count_evens([]), 0)"
+   },
+   {
+    "name": {
+     "en": "[2, 4, 6] has 3"
+    },
+    "code": "check(count_evens([2, 4, 6]), 3)"
+   },
+   {
+    "name": {
+     "en": "[1, 3] has 0"
+    },
+    "code": "check(count_evens([1, 3]), 0)"
+   },
+   {
+    "name": {
+     "en": "0 and -2 are even"
+    },
+    "code": "check(count_evens([0, -2, 5]), 2)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "An even number has no remainder when you divide it by 2.",
+    "The % sign gives the remainder. 7 % 2 is 1, and 8 % 2 is 0.",
+    "Keep a counter. Loop over the list. If n % 2 == 0, add 1 to the counter. Return the counter."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Make a counter and give it back."
+    },
+    "explain": {
+     "en": "A counter is a variable that starts at 0. Return it at the end."
+    },
+    "solution": "def count_evens(numbers):\n    count = 0\n    return count\n",
+    "tests": [
+     {
+      "name": {
+       "en": "An empty list gives 0"
+      },
+      "code": "check(count_evens([]), 0)"
+     }
+    ],
+    "starter": "def count_evens(numbers):\n    pass\n"
+   },
+   {
+    "goal": {
+     "en": "Loop over the list and count every number."
+    },
+    "explain": {
+     "en": "for n in numbers: runs the lines below it once for each number. Add 1 to count each time."
+    },
+    "solution": "def count_evens(numbers):\n    count = 0\n    for n in numbers:\n        count += 1\n    return count\n",
+    "tests": [
+     {
+      "name": {
+       "en": "It counts every item (all of these are even)"
+      },
+      "code": "check(count_evens([2, 4, 6]), 3)"
+     }
+    ]
+   },
+   {
+    "goal": {
+     "en": "Count only the even ones."
+    },
+    "explain": {
+     "en": "Put the counting line inside an if. The test n % 2 == 0 is true for even numbers."
+    },
+    "solution": "def count_evens(numbers):\n    count = 0\n    for n in numbers:\n        if n % 2 == 0:\n            count += 1\n    return count\n",
+    "tests": [
+     {
+      "name": {
+       "en": "[1, 2, 3, 4] has 2 even numbers"
+      },
+      "code": "check(count_evens([1, 2, 3, 4]), 2)"
+     }
+    ]
+   }
+  ],
+  "solution": "def count_evens(numbers):\n    count = 0\n    for n in numbers:\n        if n % 2 == 0:\n            count += 1\n    return count\n",
+  "solution_note": {
+   "en": "n % 2 == 0 is true when n divides by 2 with nothing left over. The counter goes up only then."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "py-reverse-words",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Reverse the words"
+  },
+  "prompt": {
+   "en": "Write a function reverse_words(sentence). It gives back the same words in the opposite order, joined by single spaces. Example: \"one two three\" becomes \"three two one\". Extra spaces at the ends or in the middle are ignored."
+  },
+  "concepts": {
+   "en": [
+    "strings",
+    "split and join",
+    "slicing"
+   ]
+  },
+  "starter": "def reverse_words(sentence):\n    # return the words in the opposite order\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "\"one two three\" becomes \"three two one\""
+    },
+    "code": "check(reverse_words(\"one two three\"), \"three two one\")"
+   },
+   {
+    "name": {
+     "en": "One word stays the same"
+    },
+    "code": "check(reverse_words(\"hello\"), \"hello\")"
+   },
+   {
+    "name": {
+     "en": "An empty sentence gives an empty string"
+    },
+    "code": "check(reverse_words(\"\"), \"\")"
+   },
+   {
+    "name": {
+     "en": "Extra spaces are ignored"
+    },
+    "code": "check(reverse_words(\"  a   b \"), \"b a\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Start by splitting the sentence into a list of words with .split().",
+    "A list can be turned around with words[::-1].",
+    "Put the words back together with \" \".join(your_list)."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Split the sentence into words."
+    },
+    "explain": {
+     "en": ".split() turns \"a b\" into the list [\"a\", \"b\"]. It also ignores extra spaces."
+    },
+    "solution": "def reverse_words(sentence):\n    words = sentence.split()\n    return words\n",
+    "tests": [
+     {
+      "name": {
+       "en": "It gives a list of words"
+      },
+      "code": "check(reverse_words(\"a b\"), [\"a\", \"b\"])"
+     }
+    ],
+    "starter": "def reverse_words(sentence):\n    pass\n"
+   },
+   {
+    "goal": {
+     "en": "Turn the list around."
+    },
+    "explain": {
+     "en": "words[::-1] gives the list in reverse order."
+    },
+    "solution": "def reverse_words(sentence):\n    words = sentence.split()\n    return words[::-1]\n",
+    "tests": [
+     {
+      "name": {
+       "en": "The list is reversed"
+      },
+      "code": "check(reverse_words(\"a b c\"), [\"c\", \"b\", \"a\"])"
+     }
+    ]
+   }
+  ],
+  "solution": "def reverse_words(sentence):\n    words = sentence.split()\n    return \" \".join(words[::-1])\n",
+  "solution_note": {
+   "en": "split makes a list, [::-1] reverses it, and join glues the words back into one string."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "py-fizzbuzz",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Fizz and Buzz"
+  },
+  "prompt": {
+   "en": "Write a function fizzbuzz(n). It gives back a list for the numbers 1 to n. For each number, put in the text \"Fizz\" if it divides by 3, \"Buzz\" if it divides by 5, and \"FizzBuzz\" if it divides by both. Otherwise put the number as text, like \"7\"."
+  },
+  "concepts": {
+   "en": [
+    "loops",
+    "range",
+    "if / elif",
+    "remainder (%)",
+    "lists"
+   ]
+  },
+  "starter": "def fizzbuzz(n):\n    # return a list of text, one item for each number from 1 to n\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "fizzbuzz(5) is the right list"
+    },
+    "code": "check(fizzbuzz(5), [\"1\", \"2\", \"Fizz\", \"4\", \"Buzz\"])"
+   },
+   {
+    "name": {
+     "en": "15 is FizzBuzz"
+    },
+    "code": "check(fizzbuzz(15)[-1], \"FizzBuzz\")"
+   },
+   {
+    "name": {
+     "en": "fizzbuzz(0) is an empty list"
+    },
+    "code": "check(fizzbuzz(0), [])"
+   },
+   {
+    "name": {
+     "en": "3 is Fizz"
+    },
+    "code": "check(fizzbuzz(3)[2], \"Fizz\")"
+   },
+   {
+    "name": {
+     "en": "10 is Buzz"
+    },
+    "code": "check(fizzbuzz(10)[9], \"Buzz\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "range(1, n + 1) gives the numbers from 1 up to n.",
+    "i % 3 == 0 means i divides by 3 with nothing left over.",
+    "Check for both 3 and 5 first (divides by 15). If you check 3 first, you never reach FizzBuzz."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Make a list of the numbers as text."
+    },
+    "explain": {
+     "en": "str(5) turns the number 5 into the text \"5\". result.append(x) adds x to the end of a list."
+    },
+    "solution": "def fizzbuzz(n):\n    result = []\n    for i in range(1, n + 1):\n        result.append(str(i))\n    return result\n",
+    "tests": [
+     {
+      "name": {
+       "en": "fizzbuzz(3) is [\"1\", \"2\", \"3\"] for now"
+      },
+      "code": "check(fizzbuzz(2), [\"1\", \"2\"])"
+     }
+    ],
+    "starter": "def fizzbuzz(n):\n    pass\n"
+   },
+   {
+    "goal": {
+     "en": "Say Fizz for multiples of 3."
+    },
+    "explain": {
+     "en": "Inside the loop, use if i % 3 == 0: to add \"Fizz\" instead of the number."
+    },
+    "solution": "def fizzbuzz(n):\n    result = []\n    for i in range(1, n + 1):\n        if i % 3 == 0:\n            result.append(\"Fizz\")\n        else:\n            result.append(str(i))\n    return result\n",
+    "tests": [
+     {
+      "name": {
+       "en": "3 is Fizz"
+      },
+      "code": "check(fizzbuzz(3)[2], \"Fizz\")"
+     }
+    ]
+   }
+  ],
+  "solution": "def fizzbuzz(n):\n    result = []\n    for i in range(1, n + 1):\n        if i % 15 == 0:\n            result.append(\"FizzBuzz\")\n        elif i % 3 == 0:\n            result.append(\"Fizz\")\n        elif i % 5 == 0:\n            result.append(\"Buzz\")\n        else:\n            result.append(str(i))\n    return result\n",
+  "solution_note": {
+   "en": "A number that divides by both 3 and 5 divides by 15, so that check comes first."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "py-to-binary",
+  "language": "python",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Write a number in binary"
+  },
+  "prompt": {
+   "en": "Write a function to_binary(n). It gives back the binary digits of a whole number n (0 or more) as text. Example: 5 becomes \"101\". Do not use the built-in bin() function."
+  },
+  "concepts": {
+   "en": [
+    "binary numbers",
+    "while loops",
+    "remainder (%) and whole-number division (//)",
+    "building text"
+   ]
+  },
+  "starter": "def to_binary(n):\n    # return the binary digits of n as text\n    pass\n",
+  "preamble": "def bin(*args, **kwargs):\n    raise NameError('Please do not use bin().')\n",
+  "tests": [
+   {
+    "name": {
+     "en": "5 is 101"
+    },
+    "code": "check(to_binary(5), \"101\")"
+   },
+   {
+    "name": {
+     "en": "0 is 0"
+    },
+    "code": "check(to_binary(0), \"0\")"
+   },
+   {
+    "name": {
+     "en": "8 is 1000"
+    },
+    "code": "check(to_binary(8), \"1000\")"
+   },
+   {
+    "name": {
+     "en": "10 is 1010"
+    },
+    "code": "check(to_binary(10), \"1010\")"
+   },
+   {
+    "name": {
+     "en": "255 is 11111111"
+    },
+    "code": "check(to_binary(255), \"11111111\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "The last binary digit of n is n % 2. Then divide n by 2 with // and repeat until n is 0.",
+    "The digits come out last-first. Put each new digit at the front of the text, not the end.",
+    "Zero is a special case: its answer is \"0\", but the loop would give an empty text."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Find the last binary digit."
+    },
+    "explain": {
+     "en": "A number's last binary digit is its remainder when you divide by 2. n % 2 is 0 or 1. Give it back as text."
+    },
+    "solution": "def to_binary(n):\n    return str(n % 2)\n",
+    "tests": [
+     {
+      "name": {
+       "en": "6 ends in 0"
+      },
+      "code": "check(to_binary(6), \"0\")"
+     },
+     {
+      "name": {
+       "en": "7 ends in 1"
+      },
+      "code": "check(to_binary(7), \"1\")"
+     }
+    ],
+    "starter": "def to_binary(n):\n    pass\n"
+   },
+   {
+    "goal": {
+     "en": "Collect every digit, even if they come out backwards."
+    },
+    "explain": {
+     "en": "Repeat while n > 0: add the last digit, then do n = n // 2 to drop it. The digits will be in reverse order for now."
+    },
+    "solution": "def to_binary(n):\n    digits = \"\"\n    while n > 0:\n        digits += str(n % 2)\n        n = n // 2\n    return digits\n",
+    "tests": [
+     {
+      "name": {
+       "en": "6 comes out backwards as 011"
+      },
+      "code": "check(to_binary(6), \"011\")"
+     }
+    ]
+   }
+  ],
+  "solution": "def to_binary(n):\n    if n == 0:\n        return \"0\"\n    digits = \"\"\n    while n > 0:\n        digits = str(n % 2) + digits\n        n = n // 2\n    return digits\n",
+  "solution_note": {
+   "en": "Each step peels off the last binary digit. Putting new digits at the front fixes the order."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "js-hello",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "8-10",
+  "topic": "general",
+  "title": {
+   "en": "Say hello"
+  },
+  "prompt": {
+   "en": "Make the computer say hello. Use console.log to show the words Hello, world! on the screen."
+  },
+  "concepts": {
+   "en": [
+    "console.log",
+    "text in quote marks"
+   ]
+  },
+  "starter": "// Write your code here.\n",
+  "tests": [
+   {
+    "name": {
+     "en": "It prints exactly Hello, world!"
+    },
+    "code": "assertEqual(output.trim(), \"Hello, world!\")"
+   },
+   {
+    "name": {
+     "en": "It prints one line"
+    },
+    "code": "assertEqual(output.trim().split(\"\\n\").length, 1)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Use console.log to show something on the screen.",
+    "Text goes inside quote marks, inside the brackets: console.log(\"...\");",
+    "Type the words exactly: capital H, a comma, and an exclamation mark at the end."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Print any word."
+    },
+    "explain": {
+     "en": "console.log(...) shows what is inside the brackets. Words must be inside quote marks, like \"hi\"."
+    },
+    "solution": "console.log(\"hi\");\n",
+    "tests": [
+     {
+      "name": {
+       "en": "Something is printed"
+      },
+      "code": "assert(output.trim().length > 0, \"Nothing was printed yet.\")"
+     }
+    ],
+    "starter": "// Try printing the word hi.\n"
+   }
+  ],
+  "solution": "console.log(\"Hello, world!\");\n",
+  "solution_note": {
+   "en": "console.log shows text. The words are inside quote marks so JavaScript knows they are text."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "js-add",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Add two numbers"
+  },
+  "prompt": {
+   "en": "Write a function called add. It takes two numbers, a and b, and gives back their sum."
+  },
+  "concepts": {
+   "en": [
+    "functions",
+    "return",
+    "adding"
+   ]
+  },
+  "starter": "function add(a, b) {\n  // give back a plus b\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "add(2, 3) is 5"
+    },
+    "code": "assertEqual(add(2, 3), 5)"
+   },
+   {
+    "name": {
+     "en": "add(-1, 1) is 0"
+    },
+    "code": "assertEqual(add(-1, 1), 0)"
+   },
+   {
+    "name": {
+     "en": "add(0.5, 0.25) is 0.75"
+    },
+    "code": "assertEqual(add(0.5, 0.25), 0.75)"
+   },
+   {
+    "name": {
+     "en": "add(10, 0) is 10"
+    },
+    "code": "assertEqual(add(10, 0), 10)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "A function gives a value back with the word return.",
+    "In JavaScript, the + sign adds two numbers.",
+    "The body is one line: return, then a plus b, then a semicolon."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Give a value back."
+    },
+    "explain": {
+     "en": "return sends a value out of the function. For now, just give back a."
+    },
+    "solution": "function add(a, b) {\n  return a;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "It gives back a"
+      },
+      "code": "assertEqual(add(7, 0), 7)"
+     }
+    ],
+    "starter": "function add(a, b) {\n}\n"
+   }
+  ],
+  "solution": "function add(a, b) {\n  return a + b;\n}\n",
+  "solution_note": {
+   "en": "return a + b; hands the sum back to whoever called the function."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "js-find-max",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Find the biggest number"
+  },
+  "prompt": {
+   "en": "Write a function findMax(numbers). It gives back the biggest number in the list. If the list is empty, give back null. Do not use Math.max."
+  },
+  "concepts": {
+   "en": [
+    "arrays",
+    "loops",
+    "if",
+    "comparing numbers"
+   ]
+  },
+  "starter": "function findMax(numbers) {\n  // give back the biggest number\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "The biggest of [3, 9, 2] is 9"
+    },
+    "code": "assertEqual(findMax([3, 9, 2]), 9)"
+   },
+   {
+    "name": {
+     "en": "Negative numbers work"
+    },
+    "code": "assertEqual(findMax([-5, -2, -9]), -2)"
+   },
+   {
+    "name": {
+     "en": "One number is its own biggest"
+    },
+    "code": "assertEqual(findMax([7]), 7)"
+   },
+   {
+    "name": {
+     "en": "An empty list gives null"
+    },
+    "code": "assertEqual(findMax([]), null)"
+   },
+   {
+    "name": {
+     "en": "It does not use Math.max"
+    },
+    "code": "assert(!findMax.toString().includes(\"Math.max\"), \"Please do not use Math.max.\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Keep a variable for the biggest number you have seen so far.",
+    "Start it as the first item. Then look at the other items one by one.",
+    "If an item is bigger than your variable, put that item in the variable. Handle the empty list first."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Handle the empty list."
+    },
+    "explain": {
+     "en": "numbers.length is how many items there are. If it is 0, return null."
+    },
+    "solution": "function findMax(numbers) {\n  if (numbers.length === 0) return null;\n  return numbers[0];\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "An empty list gives null"
+      },
+      "code": "assertEqual(findMax([]), null)"
+     }
+    ],
+    "starter": "function findMax(numbers) {\n}\n"
+   },
+   {
+    "goal": {
+     "en": "Start with the first number as the biggest."
+    },
+    "explain": {
+     "en": "numbers[0] is the first item. Keep it in a variable called biggest and return that."
+    },
+    "solution": "function findMax(numbers) {\n  if (numbers.length === 0) return null;\n  let biggest = numbers[0];\n  return biggest;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "One number is its own biggest"
+      },
+      "code": "assertEqual(findMax([7]), 7)"
+     }
+    ]
+   },
+   {
+    "goal": {
+     "en": "Look at every number."
+    },
+    "explain": {
+     "en": "Use for (const n of numbers) { ... }. If n is bigger than biggest, set biggest = n."
+    },
+    "solution": "function findMax(numbers) {\n  if (numbers.length === 0) return null;\n  let biggest = numbers[0];\n  for (const n of numbers) {\n    if (n > biggest) biggest = n;\n  }\n  return biggest;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "The biggest of [3, 9, 2] is 9"
+      },
+      "code": "assertEqual(findMax([3, 9, 2]), 9)"
+     }
+    ]
+   }
+  ],
+  "solution": "function findMax(numbers) {\n  if (numbers.length === 0) return null;\n  let biggest = numbers[0];\n  for (const n of numbers) {\n    if (n > biggest) biggest = n;\n  }\n  return biggest;\n}\n",
+  "solution_note": {
+   "en": "The variable biggest always holds the largest number seen so far."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "js-count-vowels",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Count the vowels"
+  },
+  "prompt": {
+   "en": "Write a function countVowels(text). It gives back how many vowels (a, e, i, o, u) are in the text. Capital letters count too."
+  },
+  "concepts": {
+   "en": [
+    "strings",
+    "loops",
+    "includes",
+    "lower case"
+   ]
+  },
+  "starter": "function countVowels(text) {\n  // count a, e, i, o and u\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "hello has 2 vowels"
+    },
+    "code": "assertEqual(countVowels(\"hello\"), 2)"
+   },
+   {
+    "name": {
+     "en": "Capital letters count"
+    },
+    "code": "assertEqual(countVowels(\"AEIOU\"), 5)"
+   },
+   {
+    "name": {
+     "en": "Empty text has 0"
+    },
+    "code": "assertEqual(countVowels(\"\"), 0)"
+   },
+   {
+    "name": {
+     "en": "rhythm has 0"
+    },
+    "code": "assertEqual(countVowels(\"rhythm\"), 0)"
+   },
+   {
+    "name": {
+     "en": "A whole sentence"
+    },
+    "code": "assertEqual(countVowels(\"Programming is fun\"), 5)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "You can loop over the letters of a text with for (const ch of text).",
+    "\"aeiou\".includes(ch) is true when ch is a vowel.",
+    "Capital letters are not in \"aeiou\". Make the text lower case first with text.toLowerCase()."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Count every letter."
+    },
+    "explain": {
+     "en": "for (const ch of text) goes through the text one letter at a time. Add 1 to count each time."
+    },
+    "solution": "function countVowels(text) {\n  let count = 0;\n  for (const ch of text) {\n    count++;\n  }\n  return count;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "It counts every letter for now"
+      },
+      "code": "assertEqual(countVowels(\"abc\"), 3)"
+     }
+    ],
+    "starter": "function countVowels(text) {\n}\n"
+   },
+   {
+    "goal": {
+     "en": "Count only the vowels."
+    },
+    "explain": {
+     "en": "Add an if: \"aeiou\".includes(ch) is true when ch is a vowel. Only then add 1."
+    },
+    "solution": "function countVowels(text) {\n  let count = 0;\n  for (const ch of text) {\n    if (\"aeiou\".includes(ch)) count++;\n  }\n  return count;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "hello has 2 vowels"
+      },
+      "code": "assertEqual(countVowels(\"hello\"), 2)"
+     }
+    ]
+   }
+  ],
+  "solution": "function countVowels(text) {\n  let count = 0;\n  for (const ch of text.toLowerCase()) {\n    if (\"aeiou\".includes(ch)) count++;\n  }\n  return count;\n}\n",
+  "solution_note": {
+   "en": "toLowerCase makes A and a the same, so one check finds both."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "js-sort-numbers",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Sort a list by hand"
+  },
+  "prompt": {
+   "en": "Write a function sortNumbers(numbers). It gives back a NEW list with the same numbers from smallest to biggest. Do not change the list you were given, and do not use .sort()."
+  },
+  "concepts": {
+   "en": [
+    "arrays",
+    "nested loops",
+    "swapping",
+    "sorting"
+   ]
+  },
+  "starter": "function sortNumbers(numbers) {\n  // give back a new, sorted list\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "[3, 1, 2] becomes [1, 2, 3]"
+    },
+    "code": "assertEqual(sortNumbers([3, 1, 2]), [1, 2, 3])"
+   },
+   {
+    "name": {
+     "en": "A sorted list stays sorted"
+    },
+    "code": "assertEqual(sortNumbers([1, 2, 3]), [1, 2, 3])"
+   },
+   {
+    "name": {
+     "en": "A backwards list"
+    },
+    "code": "assertEqual(sortNumbers([5, 4, 3, 2, 1]), [1, 2, 3, 4, 5])"
+   },
+   {
+    "name": {
+     "en": "An empty list"
+    },
+    "code": "assertEqual(sortNumbers([]), [])"
+   },
+   {
+    "name": {
+     "en": "Repeated numbers"
+    },
+    "code": "assertEqual(sortNumbers([2, 2, 1]), [1, 2, 2])"
+   },
+   {
+    "name": {
+     "en": "The original list is not changed"
+    },
+    "code": "const a = [3, 1, 2]; sortNumbers(a); assertEqual(a, [3, 1, 2])"
+   },
+   {
+    "name": {
+     "en": "It does not use .sort()"
+    },
+    "code": "assert(!sortNumbers.toString().includes(\".sort(\"), \"Please do not use .sort().\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Make a copy first: const result = [...numbers]; Then change only the copy.",
+    "Compare each item with the one next to it. If they are the wrong way round, swap them.",
+    "One pass along the list is not enough for every list. Repeat the passes (a loop inside a loop)."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Make a copy and return it."
+    },
+    "explain": {
+     "en": "[...numbers] makes a new list with the same items. Changing the copy leaves the original alone."
+    },
+    "solution": "function sortNumbers(numbers) {\n  const result = [...numbers];\n  return result;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "It returns a new list"
+      },
+      "code": "const a = [2, 1]; const r = sortNumbers(a); assert(Array.isArray(r) && r !== a, \"Return a new list, not the same one.\")"
+     }
+    ],
+    "starter": "function sortNumbers(numbers) {\n}\n"
+   },
+   {
+    "goal": {
+     "en": "Make one pass: swap neighbours that are the wrong way round."
+    },
+    "explain": {
+     "en": "Loop i from 0 to length - 2. If result[i] > result[i + 1], swap them using a temporary variable."
+    },
+    "solution": "function sortNumbers(numbers) {\n  const result = [...numbers];\n  for (let i = 0; i < result.length - 1; i++) {\n    if (result[i] > result[i + 1]) {\n      const temp = result[i];\n      result[i] = result[i + 1];\n      result[i + 1] = temp;\n    }\n  }\n  return result;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "[2, 1] becomes [1, 2]"
+      },
+      "code": "assertEqual(sortNumbers([2, 1]), [1, 2])"
+     },
+     {
+      "name": {
+       "en": "[1, 3, 2] becomes [1, 2, 3]"
+      },
+      "code": "assertEqual(sortNumbers([1, 3, 2]), [1, 2, 3])"
+     }
+    ]
+   }
+  ],
+  "solution": "function sortNumbers(numbers) {\n  const result = [...numbers];\n  for (let pass = 0; pass < result.length; pass++) {\n    for (let i = 0; i < result.length - 1 - pass; i++) {\n      if (result[i] > result[i + 1]) {\n        const temp = result[i];\n        result[i] = result[i + 1];\n        result[i + 1] = temp;\n      }\n    }\n  }\n  return result;\n}\n",
+  "solution_note": {
+   "en": "Each pass pushes the biggest remaining number to the end. This is called bubble sort."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "js-binary-search",
+  "language": "javascript",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Binary search"
+  },
+  "prompt": {
+   "en": "Write a function binarySearch(sorted, target). The list is sorted from smallest to biggest. Give back the position (index) of target, or -1 if it is not there. Do it by halving the part you search each time."
+  },
+  "concepts": {
+   "en": [
+    "binary search",
+    "divide and conquer",
+    "while loops",
+    "indexes"
+   ]
+  },
+  "starter": "function binarySearch(sorted, target) {\n  // give back the index of target, or -1\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "7 is at position 3"
+    },
+    "code": "assertEqual(binarySearch([1, 3, 5, 7, 9], 7), 3)"
+   },
+   {
+    "name": {
+     "en": "The first item"
+    },
+    "code": "assertEqual(binarySearch([1, 3, 5, 7, 9], 1), 0)"
+   },
+   {
+    "name": {
+     "en": "The last item"
+    },
+    "code": "assertEqual(binarySearch([1, 3, 5, 7, 9], 9), 4)"
+   },
+   {
+    "name": {
+     "en": "A missing number gives -1"
+    },
+    "code": "assertEqual(binarySearch([1, 3, 5, 7, 9], 4), -1)"
+   },
+   {
+    "name": {
+     "en": "An empty list gives -1"
+    },
+    "code": "assertEqual(binarySearch([], 1), -1)"
+   },
+   {
+    "name": {
+     "en": "A list with one item"
+    },
+    "code": "assertEqual(binarySearch([2], 2), 0)"
+   },
+   {
+    "name": {
+     "en": "A big list"
+    },
+    "code": "const big = Array.from({ length: 1000 }, (_, i) => i * 2); assertEqual(binarySearch(big, 998), 499); assertEqual(binarySearch(big, 999), -1)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Keep two positions, low and high. The target can only be between them.",
+    "Look at the middle item: mid = Math.floor((low + high) / 2). Is it the target, too small, or too big?",
+    "If the middle is too small, the target is on the right: set low = mid + 1. If too big, set high = mid - 1. Stop when low is more than high."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Check the middle item."
+    },
+    "explain": {
+     "en": "Math.floor(sorted.length / 2) is the middle position. If that item is the target, return its position. Otherwise return -1 for now."
+    },
+    "solution": "function binarySearch(sorted, target) {\n  const mid = Math.floor(sorted.length / 2);\n  if (sorted[mid] === target) return mid;\n  return -1;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "The middle of [1, 3, 5] is found"
+      },
+      "code": "assertEqual(binarySearch([1, 3, 5], 3), 1)"
+     },
+     {
+      "name": {
+       "en": "4 is not in [1, 3, 5]"
+      },
+      "code": "assertEqual(binarySearch([1, 3, 5], 4), -1)"
+     }
+    ],
+    "starter": "function binarySearch(sorted, target) {\n}\n"
+   },
+   {
+    "goal": {
+     "en": "Search the right half when the middle is too small."
+    },
+    "explain": {
+     "en": "Use low and high and a while (low <= high) loop. When sorted[mid] < target, set low = mid + 1. For now, if the middle is too big, just return -1."
+    },
+    "solution": "function binarySearch(sorted, target) {\n  let low = 0;\n  let high = sorted.length - 1;\n  while (low <= high) {\n    const mid = Math.floor((low + high) / 2);\n    if (sorted[mid] === target) return mid;\n    if (sorted[mid] < target) low = mid + 1;\n    else return -1;\n  }\n  return -1;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "9 is found on the right"
+      },
+      "code": "assertEqual(binarySearch([1, 3, 5, 7, 9], 9), 4)"
+     },
+     {
+      "name": {
+       "en": "7 is found on the right"
+      },
+      "code": "assertEqual(binarySearch([1, 3, 5, 7, 9], 7), 3)"
+     }
+    ]
+   }
+  ],
+  "solution": "function binarySearch(sorted, target) {\n  let low = 0;\n  let high = sorted.length - 1;\n  while (low <= high) {\n    const mid = Math.floor((low + high) / 2);\n    if (sorted[mid] === target) return mid;\n    if (sorted[mid] < target) low = mid + 1;\n    else high = mid - 1;\n  }\n  return -1;\n}\n",
+  "solution_note": {
+   "en": "Each step throws away half of the list, so 1000 items need only about 10 looks."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ }
+]

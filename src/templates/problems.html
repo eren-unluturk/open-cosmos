@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1 class="text-2xl font-bold my-4">{{ ui.problems_title }}</h1>
+  <p>{{ ui.problems_intro }}</p>
+  <form method="get" role="search" class="my-4 flex flex-wrap gap-2 items-center">
+    <label for="q" class="sr-only">{{ ui.search }}</label>
+    <input id="q" name="q" value="{{ q }}" maxlength="80" class="border rounded px-2 py-1" placeholder="{{ ui.search }}">
+    <label for="language">{{ ui.p_language }}</label>
+    <select id="language" name="language" class="border rounded px-2 py-1">
+      <option value="">{{ ui.all }}</option>
+      {% for l in languages %}<option value="{{ l }}" {{ 'selected' if l == language }}>{{ ui['p_lang_' ~ l] }}</option>{% endfor %}
+    </select>
+    <label for="level">Level</label>
+    <select id="level" name="level" class="border rounded px-2 py-1">
+      <option value="">{{ ui.all }}</option>
+      {% for l in levels %}<option value="{{ l }}" {{ 'selected' if l == level }}>{{ l }}</option>{% endfor %}
+    </select>
+    <label for="age">{{ ui.age_label }}</label>
+    <select id="age" name="age" class="border rounded px-2 py-1">
+      <option value="">{{ ui.all }}</option>
+      {% for a in ages %}<option value="{{ a }}" {{ 'selected' if a == age }}>{{ a }}</option>{% endfor %}
+    </select>
+    <button class="border rounded px-2 py-1">{{ ui.search }}</button>
+  </form>
+  {% if lang != 'en' %}<p class="text-sm text-slate-600">{{ ui.p_english }}</p>{% endif %}
+  <ul class="space-y-3">
+    {% for p in problems %}
+      <li>
+        <a class="underline font-medium" href="{{ url_for('problem_page', lang=lang, problem_id=p.id) }}">{{ p.title.get(lang) or p.title.en }}</a>
+        <span class="text-xs border rounded px-1">{{ ui['p_lang_' ~ p.language] }}</span>
+        <span class="text-xs border rounded px-1">{{ p.level }}</span>
+        <span class="text-xs">{{ ui.ages }} {{ p.age_group }}</span>
+        <p class="text-sm">{{ (p.concepts.get(lang) or p.concepts.en) | join(', ') }}</p>
+      </li>
+    {% else %}<li>{{ ui.problems_none }}</li>{% endfor %}
+  </ul>
+{% endblock %}

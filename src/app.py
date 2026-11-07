@@ -12,6 +12,8 @@ import gate
 import guide
 import i18n_guides
 import i18n_lessons
+import i18n_problems
+import problems as problem_kit
 import store
 
 # The data lead owns scripts/guide_helpers.py (pure Python). We import it as is.
@@ -50,9 +52,12 @@ for _code, _label in KIDS_LABEL.items():
     UI[_code].setdefault("kids", _label)
 UI["en"].update(i18n_guides.UI_EN)
 UI["en"].update(i18n_lessons.UI_EN)
+UI["en"].update(i18n_problems.UI_EN)
 for _code, _extra in i18n_guides.UI.items():
     UI[_code].update(_extra)
 for _code, _extra in i18n_lessons.UI.items():
+    UI[_code].update(_extra)
+for _code, _extra in i18n_problems.UI.items():
     UI[_code].update(_extra)
 
 
@@ -204,6 +209,121 @@ def lesson_page(lang, lesson_id):
         return value
     view = {f: pick(f) for f in ("title", "summary", "objectives", "materials", "steps", "talk_about", "grown_up_note")}
     return render_template("lesson.html", ls=ls, v=view, entry=entry, english_only=english and lang != "en", **ctx(lang))
+
+# --- Coding problems. The learner's code runs in their browser (static/runner.js). We never run it. ---
+
+LANGUAGES = problem_kit.LANGUAGES
+
+
+def problem_text(p, field, lang):
+    return tx(p.get(field), lang)
+
+
+def localize_tests(tests, lang):
+    return [{"name": tx(t["name"], lang)[0], "code": t["code"]} for t in tests]
+
+
+@app.route("/<lang>/problems")
+def problems_page(lang):
+    if lang not in LANGS:
+        abort(404)
+    level, q, age, _ = filters()
+    language = request.args.get("language")
+    language = language if language in LANGUAGES else None
+    items = []
+    for p in store.problems():
+        if level and p["level"] != level:
+            continue
+        if language and p["language"] != language:
+            continue
+        if age and not guide.age_fits(p, age):
+            continue
+        if q and not store.matches({"title": p["title"], "desc": p["prompt"], "category": " ".join(p["concepts"]["en"]), "tag": p["language"]}, q, lang):
+            continue
+        items.append(p)
+    order = {l: i for i, l in enumerate(problem_kit.LEVELS)}
+    ages = {a: i for i, a in enumerate(guide.AGE_ORDER)}
+    items.sort(key=lambda p: (order[p["level"]], ages[p["age_group"]], p["title"]["en"].lower()))
+    return render_template("problems.html", problems=items, level=level, language=language, age=age, q=q,
+                           languages=LANGUAGES, ages=guide.AGES, **ctx(lang))
+
+
+@app.route("/<lang>/problem/<problem_id>")
+def problem_page(lang, problem_id):
+    p = store.problem(problem_id)
+    if lang not in LANGS or p is None:
+        abort(404)
+    title, fb1 = problem_text(p, "title", lang)
+    prompt, fb2 = problem_text(p, "prompt", lang)
+    concepts, fb3 = problem_text(p, "concepts", lang)
+    fell_back = fb1 or fb2 or fb3
+    stages = []
+    for s in p.get("guided", []):
+        goal, g1 = tx(s["goal"], lang)
+        explain, g2 = tx(s["explain"], lang)
+        fell_back = fell_back or g1 or g2
+        stages.append({"goal": goal, "explain": explain, "starter": s.get("starter", ""),
+                       "tests": localize_tests(s["tests"], lang)})
+    config = {
+        "id": p["id"], "language": p["language"], "lang": lang, "starter": p["starter"],
+        "preamble": p.get("preamble", ""),
+        "prelude": problem_kit.PRELUDE_PY if p["language"] == "python" else problem_kit.PRELUDE_JS,
+        "tests": localize_tests(p["tests"], lang), "stages": stages, "hint_count": len(p["hints"]["en"]),
+        "max_code": problem_kit.MAX_CODE,
+        "ui": {k: v for k, v in ctx(lang)["ui"].items() if k.startswith("p_")},
+    }
+    return render_template("problem.html", p=p, title=title, prompt=prompt, concepts=concepts, config=config,
+                           english_only=fell_back and lang != "en", **ctx(lang))
+
+
+def api_problem_or_404(problem_id):
+    p = store.problem(problem_id)
+    if p is None:
+        abort(404)
+    return p
+
+
+@app.get("/api/problems")
+def api_problems():
+    lang = request.args.get("lang", "en")
+    if lang not in LANGS:
+        abort(404)
+    return {"count": len(store.problems()), "problems": [
+        {"id": p["id"], "language": p["language"], "level": p["level"], "age_group": p["age_group"],
+         "topic": p["topic"], "title": tx(p["title"], lang)[0], "concepts": tx(p["concepts"], lang)[0]}
+        for p in store.problems()]}
+
+
+@app.get("/api/problems/<problem_id>")
+def api_problem(problem_id):
+    return problem_kit.public_view(api_problem_or_404(problem_id))
+
+
+@app.get("/api/problems/<problem_id>/hint/<int:n>")
+def api_problem_hint(problem_id, n):
+    """Hints are handed out one at a time (n starts at 1) so they are not in the page from the start."""
+    p = api_problem_or_404(problem_id)
+    lang = request.args.get("lang", "en")
+    hints = tx(p["hints"], lang if lang in LANGS else "en")[0]
+    if n < 1 or n > len(hints):
+        abort(404)
+    return {"index": n, "total": len(hints), "hint": hints[n - 1]}
+
+
+@app.get("/api/problems/<problem_id>/solution")
+def api_problem_solution(problem_id):
+    """The reference answer. ?stage=3 gives the example for guided step 3 (1-based)."""
+    p = api_problem_or_404(problem_id)
+    lang = request.args.get("lang", "en")
+    lang = lang if lang in LANGS else "en"
+    stage = request.args.get("stage")
+    if stage:
+        if not stage.isdigit() or not 1 <= int(stage) <= len(p.get("guided", [])):
+            abort(404)
+        s = p["guided"][int(stage) - 1]
+        return {"stage": int(stage), "solution": s["solution"], "note": tx(s["explain"], lang)[0]}
+    return {"solution": p["solution"], "note": tx(p.get("solution_note", {"en": ""}), lang)[0]}
+
 
 @app.route("/<lang>/catalogue")
 def catalogue(lang):

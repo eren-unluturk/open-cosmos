@@ -100,6 +100,37 @@ class RouteTests(unittest.TestCase):
         self.assertEqual(r.status_code, 200)
 
 
+class FilterTests(unittest.TestCase):
+    def setUp(self):
+        app.config["TESTING"] = True
+        self.c = app.test_client()
+
+    def test_age_and_topic_filters(self):
+        order = ["5-7", "8-10", "11-13", "teen+"]
+        r = self.c.get("/api/entries?age=8-10&topic=general").json
+        self.assertGreater(r["count"], 0)
+        ids = {x["id"] for x in r["entries"]}
+        for i in ids:
+            e = store.get(i)
+            self.assertLessEqual(order.index(e["age_group"]), 1)
+            self.assertEqual(e["topic"], "general")
+
+    def test_bad_filters_ignored(self):
+        base = self.c.get("/api/entries").json["count"]
+        self.assertEqual(self.c.get("/api/entries?age=99&topic=zzz").json["count"], base)
+
+    def test_accept_language_redirect(self):
+        r = self.c.get("/", headers={"Accept-Language": "pt-BR,pt;q=0.9"})
+        self.assertTrue(r.headers["Location"].endswith("/pt/"))
+        r = self.c.get("/", headers={"Accept-Language": "fr"})
+        self.assertTrue(r.headers["Location"].endswith("/en/"))
+
+    def test_api_404_is_json(self):
+        r = self.c.get("/api/nope")
+        self.assertEqual(r.status_code, 404)
+        self.assertEqual(r.json, {"error": "not found"})
+
+
 class GuideTests(unittest.TestCase):
     def setUp(self):
         import os

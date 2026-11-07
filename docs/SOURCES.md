@@ -23,3 +23,10 @@ So we:
 - **What we list from it:** units, lessons, the lessons' programming-challenge pages (only those that really have challenges) and the cross-curricular "integration" activities that have a repo-stated age (inherited from the lessons they require). Each is a title, a short description we wrote, the repo's age group and a link to the page on csunplugged.org.
 - The CS Unplugged project also publishes its own human translations (the repo has `es`, `fr`, `de`, `it`, `zh_Hans`, `mi` content folders). Prefer linking to those language versions where they exist.
 - Note: these are teacher/parent lesson plans for hands-on activities, so the audience is the adult helping the child.
+
+## Adapted lessons (`src/data/lessons.json`, CC BY-SA 4.0)
+- `lessons.json` holds our own short, simplified adaptations of CS Unplugged lesson plans (26 lessons, ages 5-13). It is **kept in its own file** and is **CC BY-SA 4.0 (ShareAlike)**, like `kids.json`. The CC0 files never contain adapted text.
+- We rewrote the ideas in our own short words (no long verbatim passages) and include **no images**; every lesson links to the original lesson page for the pictures and printables.
+- Every lesson carries: the license (`CC-BY-SA-4.0`), the attribution (University of Canterbury Computer Science Education Research Group, CS Unplugged), a link to the original lesson, a link to https://creativecommons.org/licenses/by-sa/4.0/ and a "changes were made" statement ("Simplified, shortened and translated by Hackcessability with AI"). The UI must show these on every lesson page.
+- Translations of lessons are also CC BY-SA 4.0 and must keep the same attribution and the changes statement.
+- Built by `scripts/fetch_lessons.py` from `scripts/lesson_content/` (text written by Claude Code, no paid API). Only `kid-safe`, `open-content` entries get a lesson.

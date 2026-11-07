@@ -5,12 +5,12 @@ Auto choices are logged under "Decisions".
 
 ## Status
 - Phase A (foundation): DONE (reuse flag, fallback guides, helpers, tests, spec).
-- Phase B (lessons): NOT STARTED
+- Phase B (lessons): DONE: 26 lessons (13 at 5-7, 12 at 8-10, 1 at 11-13) in `src/data/lessons.json`. Integration and programming-challenge entries have no lesson (they keep a go_external slide).
 - Phase C (handwritten guides): NOT STARTED, 0 of 65 groups
 - Phase D (wrap-up): NOT STARTED
 
 ## NEXT
-Phase B: write `scripts/fetch_lessons.py`.
+Phase C: handwritten guides, batch 1 (see list below).
 
 ## Decisions
 - `docs/PITCH_DATA.md` did not exist, so demo-path groups are those with the most kid-safe entries and the best level coverage.

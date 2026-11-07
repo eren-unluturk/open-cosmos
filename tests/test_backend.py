@@ -69,6 +69,12 @@ class RouteTests(unittest.TestCase):
         self.assertEqual(self.c.get("/xx/").status_code, 404)
         self.assertEqual(self.c.get("/en/nope").status_code, 404)
 
+    def test_security_headers(self):
+        h = self.c.get("/en/").headers
+        self.assertEqual(h["X-Content-Type-Options"], "nosniff")
+        self.assertEqual(h["X-Frame-Options"], "DENY")
+        self.assertEqual(h["Referrer-Policy"], "no-referrer")
+
     def test_healthz(self):
         self.assertEqual(self.c.get("/healthz").json, {"ok": True})
 

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+  <article>
+    <h1 class="text-2xl font-bold my-4">{{ title }}</h1>
+    {% if fell_back %}<p class="text-sm text-slate-600">Shown in English.</p>{% endif %}
+    {% if is_ai %}<p class="text-sm text-slate-600">AI-translated. Check the original.</p>{% endif %}
+    <p class="my-2">{{ desc }}</p>
+    <ul class="text-sm space-y-1 my-4">
+      <li>{{ e.level }} · {{ e.age_group }} · {{ e.topic }}</li>
+      {% if e.tag %}<li>{{ e.tag }}</li>{% endif %}
+      <li>{{ ui.source }}: <a class="underline" href="{{ e.source }}" rel="noopener">{{ e.source.split('github.com/')[1] }}</a></li>
+      <li>{{ ui.license }}: {{ e.license }}</li>
+      {% if e.safety != 'kid-safe' %}<li>Ask a grown-up before you open this link.</li>{% endif %}
+    </ul>
+    <a class="underline font-medium" href="{{ e.url }}" rel="noopener noreferrer">{{ e.url }}</a>
+  </article>
+{% endblock %}

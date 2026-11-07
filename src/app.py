@@ -1,15 +1,20 @@
 """Flask app. Run: flask --app src/app run --debug"""
-import json
-from pathlib import Path
+import os
+import secrets
 
 from dotenv import load_dotenv
-from flask import Flask, abort, redirect, render_template, request, url_for
+from flask import Flask, abort, redirect, render_template, request, session, url_for
 
+import gate
 import guide
+import store
 
 load_dotenv()
 app = Flask(__name__)
-DATA = Path(__file__).parent / "data"
+# Set SECRET_KEY in .env for production. A random fallback only resets sessions on restart.
+app.secret_key = os.environ.get("SECRET_KEY") or secrets.token_hex(32)
+app.config.update(SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE="Lax")
+SIDES = store.SIDES
 LANGS = {"en": "English", "es": "Español", "ar": "العربية", "hi": "हिन्दी", "pt": "Português"}
 RTL = {"ar"}
 LEVELS = ["Beginner", "Intermediate", "Advanced"]
@@ -29,9 +34,13 @@ UI = {
 }
 
 
-def load(side):
-    path = DATA / f"{side}.json"
-    return json.loads(path.read_text()) if path.exists() else []
+KIDS_LABEL = {"en": "For kids", "es": "Para niños", "ar": "للأطفال", "hi": "बच्चों के लिए", "pt": "Para crianças"}
+for _code, _label in KIDS_LABEL.items():
+    UI[_code].setdefault("kids", _label)
+
+
+def is_adult():
+    return bool(session.get("adult"))
 
 
 @app.route("/")
@@ -48,14 +57,57 @@ def home(lang):
 
 @app.route("/<lang>/<side>")
 def listing(lang, side):
-    if lang not in LANGS or side not in ("learn", "build"):
+    if lang not in LANGS or side not in SIDES:
         abort(404)
-    level = request.args.get("level")
-    items = [e for e in load(side) if not level or e.get("level") == level]
+    level, q = filters()
+    items = select(lang, side, level, q)
     groups = {}
     for e in items:
         groups.setdefault(e["category"], []).append(e)
-    return render_template("listing.html", side=side, groups=groups, level=level, **ctx(lang))
+    return render_template("listing.html", side=side, groups=groups, level=level, q=q, **ctx(lang))
+
+
+def filters():
+    """Validated query values. Anything not on the allow-list is dropped."""
+    level = request.args.get("level")
+    level = level if level in LEVELS else None
+    q = (request.args.get("q") or "").strip()[:80]
+    return level, q
+
+
+def select(lang, side, level, q):
+    items = gate.filter_visible(store.entries(side), is_adult())
+    if level:
+        items = [e for e in items if e.get("level") == level]
+    if q:
+        items = [e for e in items if store.matches(e, q, lang)]
+    return items
+
+
+@app.route("/<lang>/entry/<entry_id>")
+def entry_page(lang, entry_id):
+    e = store.get(entry_id)
+    if lang not in LANGS or e is None or not gate.visible(e, is_adult()):
+        abort(404)
+    title, fb_title = store.text(e, "title", lang)
+    desc, fb_desc = store.text(e, "desc", lang)
+    return render_template("entry.html", e=e, title=title, desc=desc, fell_back=fb_title or fb_desc,
+                           is_ai=lang in e.get("ai_translated", []), **ctx(lang))
+
+
+@app.get("/api/entries")
+def api_entries():
+    lang = request.args.get("lang", "en")
+    side = request.args.get("side")
+    if lang not in LANGS or (side and side not in SIDES):
+        abort(404)
+    level, q = filters()
+    items = select(lang, side, level, q)
+    return {"count": len(items), "entries": [
+        {"id": e["id"], "side": e["side"], "title": store.text(e, "title", lang)[0],
+         "desc": store.text(e, "desc", lang)[0], "level": e.get("level"), "age_group": e.get("age_group"),
+         "topic": e.get("topic"), "safety": e.get("safety"), "url": e["url"], "license": e["license"]}
+        for e in items]}
 
 
 @app.route("/<lang>/guide")
@@ -65,14 +117,32 @@ def guide_page(lang):
     age, goal, level = (request.args.get(k) for k in ("age", "goal", "level"))
     path = None
     if age in guide.AGES and goal in guide.GOALS and level in LEVELS:
-        entries = load("learn") + load("build")
+        entries = gate.filter_visible(store.entries())
         path = guide.build_path(entries, age, goal, level)
     return render_template("guide.html", path=path, ages=guide.AGES, goals=list(guide.GOALS),
                            age=age, goal=goal, level=level, **ctx(lang))
 
 
+@app.post("/grownup")
+def grownup():
+    # Session-only flag. No account, nothing stored on the server.
+    if request.form.get("on") == "1":
+        session["adult"] = True
+    else:
+        session.pop("adult", None)
+    nxt = request.form.get("next", "/")
+    if not nxt.startswith("/") or nxt.startswith("//"):  # block open redirects
+        nxt = "/"
+    return redirect(nxt)
+
+
+@app.get("/healthz")
+def healthz():
+    return {"ok": True}
+
+
 def ctx(lang):
-    return {"lang": lang, "langs": LANGS, "rtl": lang in RTL, "ui": UI[lang], "levels": LEVELS}
+    return {"lang": lang, "langs": LANGS, "rtl": lang in RTL, "ui": UI[lang], "levels": LEVELS, "adult": is_adult()}
 
 
 if __name__ == "__main__":

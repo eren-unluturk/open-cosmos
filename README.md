@@ -17,7 +17,7 @@ We add AI translation into multiple languages and a Beginner / Intermediate / Ad
 - Video: _TBD_
 
 ## Tech Stack
-Next.js + TypeScript, Tailwind CSS, Claude API (translation + level tagging), static JSON data, Vercel. Details in `docs/PLAN.md`.
+Python (Flask + Jinja2), Tailwind via CDN, Claude API (translation + level tagging), static JSON data, Render. Details in `docs/PLAN.md`.
 
 ## Project Structure
 ```

@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1 class="text-3xl font-bold my-6">{{ ui.tagline }}</h1>
+  <div class="flex gap-4">
+    <a class="rounded bg-slate-900 text-white px-4 py-2" href="{{ url_for('listing', lang=lang, side='learn') }}">{{ ui.learn }}</a>
+    <a class="rounded bg-slate-900 text-white px-4 py-2" href="{{ url_for('listing', lang=lang, side='build') }}">{{ ui.build }}</a>
+  </div>
+{% endblock %}

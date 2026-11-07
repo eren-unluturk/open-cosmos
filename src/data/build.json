@@ -1,0 +1,4552 @@
+[
+  {
+    "id": "build-0",
+    "category": "Build your own Distributed Systems",
+    "title": {
+      "en": "**Java**: _Building Your Own Kafka-like System From Scratch: A Step-by-Step Guide_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/buildthingsuseful/build-your-own-kafka",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-1",
+    "category": "Build your own 3D Renderer",
+    "title": {
+      "en": "**C++**: _Introduction to Ray Tracing: a Simple Method for Creating 3D Images_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/how-does-it-work",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-2",
+    "category": "Build your own 3D Renderer",
+    "title": {
+      "en": "**C++**: _How OpenGL works: software rendering in 500 lines of code_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/ssloy/tinyrenderer/wiki",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-3",
+    "category": "Build your own 3D Renderer",
+    "title": {
+      "en": "**C++**: _Raycasting engine of Wolfenstein 3D_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://lodev.org/cgtutor/raycasting.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-4",
+    "category": "Build your own 3D Renderer",
+    "title": {
+      "en": "**C++**: _Physically Based Rendering:From Theory To Implementation_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.pbr-book.org/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-5",
+    "category": "Build your own 3D Renderer",
+    "title": {
+      "en": "**C++**: _Ray Tracing in One Weekend_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://raytracing.github.io/books/RayTracingInOneWeekend.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-6",
+    "category": "Build your own 3D Renderer",
+    "title": {
+      "en": "**C++**: _Rasterization: a Practical Implementation_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/overview-rasterization-algorithm",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-7",
+    "category": "Build your own 3D Renderer",
+    "title": {
+      "en": "**C# / TypeScript / JavaScript**: _Learning how to write a 3D soft engine from scratch in C#, TypeScript or JavaScript_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.davrous.com/2013/06/13/tutorial-series-learning-how-to-write-a-3d-soft-engine-from-scratch-in-c-typescript-or-javascript/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-8",
+    "category": "Build your own 3D Renderer",
+    "title": {
+      "en": "**Java / JavaScript**: _Build your own 3D renderer_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://avik-das.github.io/build-your-own-raytracer/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-9",
+    "category": "Build your own 3D Renderer",
+    "title": {
+      "en": "**Java**: _How to create your own simple 3D render engine in pure Java_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://blog.rogach.org/2015/08/how-to-create-your-own-simple-3d-render.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-10",
+    "category": "Build your own 3D Renderer",
+    "title": {
+      "en": "**JavaScript / Pseudocode**: _Computer Graphics from scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.gabrielgambetta.com/computer-graphics-from-scratch/introduction.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-11",
+    "category": "Build your own 3D Renderer",
+    "title": {
+      "en": "**Python**: _A 3D Modeller_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://aosabook.org/en/500L/a-3d-modeller.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-12",
+    "category": "Build your own AI Model",
+    "title": {
+      "en": "**Python**: _A Large Language Model (LLM)_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-13",
+    "category": "Build your own AI Model",
+    "title": {
+      "en": "**Python**: _Diffusion Models for Image Generation_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://huggingface.co/learn/diffusion-course/en/unit1/3",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-14",
+    "category": "Build your own AI Model",
+    "title": {
+      "en": "**Python**: _RAG for Document Search_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/langchain-ai/rag-from-scratch",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-15",
+    "category": "Build your own Augmented Reality",
+    "title": {
+      "en": "**Python**: _Augmented Reality with Python and OpenCV_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://bitesofcode.wordpress.com/2017/09/12/augmented-reality-with-python-and-opencv-part-1/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-16",
+    "category": "Build your own BitTorrent Client",
+    "title": {
+      "en": "**C#**: _Building a BitTorrent client from scratch in C#_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.seanjoflynn.com/research/bittorrent.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-17",
+    "category": "Build your own BitTorrent Client",
+    "title": {
+      "en": "**Go**: _Building a BitTorrent client from the ground up in Go_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://blog.jse.li/posts/torrent/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-18",
+    "category": "Build your own BitTorrent Client",
+    "title": {
+      "en": "**Nim**: _Writing a Bencode Parser_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://xmonader.github.io/nimdays/day02_bencode.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-19",
+    "category": "Build your own BitTorrent Client",
+    "title": {
+      "en": "**Node.js**: _Write your own bittorrent client_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://allenkim67.github.io/programming/2016/05/04/how-to-make-your-own-bittorrent-client.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-20",
+    "category": "Build your own BitTorrent Client",
+    "title": {
+      "en": "**Python**: _A BitTorrent client in Python 3.5_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://markuseliasson.se/article/bittorrent-in-python/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-21",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**ATS**: _Functional Blockchain_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://beta.observablehq.com/@galletti94/functional-blockchain",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-22",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**Crystal**: _Write your own blockchain and PoW algorithm using Crystal_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-23",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**Go**: _Building Blockchain in Go_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://jeiwan.net/posts/building-blockchain-in-go-part-1/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-24",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**Go**: _Code your own blockchain in less than 200 lines of Go_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/@mycoralhealth/code-your-own-blockchain-in-less-than-200-lines-of-go-e296282bcffc",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-25",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**Java**: _Creating Your First Blockchain with Java_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-26",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**JavaScript**: _A cryptocurrency implementation in less than 1500 lines of code_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/conradoqg/naivecoin",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-27",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**JavaScript**: _Build your own Blockchain in JavaScript_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/nambrot/blockchain-in-js",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-28",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**JavaScript**: _Learn & Build a JavaScript Blockchain_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/digital-alchemy-holdings/learn-build-a-javascript-blockchain-part-1-ca61c285821e",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-29",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**JavaScript**: _Creating a blockchain with JavaScript_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/SavjeeTutorials/SavjeeCoin",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-30",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**JavaScript**: _How To Launch Your Own Production-Ready Cryptocurrency_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://hackernoon.com/how-to-launch-your-own-production-ready-cryptocurrency-ab97cb773371",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-31",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**JavaScript**: _Writing a Blockchain in Node.js_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.smashingmagazine.com/2020/02/cryptocurrency-blockchain-node-js/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-32",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**Kotlin**: _Let’s implement a cryptocurrency in Kotlin_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/@vasilyf/lets-implement-a-cryptocurrency-in-kotlin-part-1-blockchain-8704069f8580",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-33",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**Python**: _Learn Blockchains by Building One_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://hackernoon.com/learn-blockchains-by-building-one-117428612f46",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-34",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**Python**: _Build your own blockchain: a Python tutorial_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://ecomunsing.com/build-your-own-blockchain",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-35",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**Python**: _A Practical Introduction to Blockchain with Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://adilmoujahid.com/posts/2018/03/intro-blockchain-bitcoin-python/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-36",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**Python**: _Let’s Build the Tiniest Blockchain_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/crypto-currently/lets-build-the-tiniest-blockchain-e70965a248b",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-37",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**Ruby**: _Programming Blockchains Step-by-Step (Manuscripts Book Edition)_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/yukimotopress/programming-blockchains-step-by-step",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-38",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**Scala**: _How to build a simple actor-based blockchain_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.freecodecamp.org/how-to-build-a-simple-actor-based-blockchain-aac1e996c177",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-39",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**TypeScript**: _Naivecoin: a tutorial for building a cryptocurrency_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://lhartikk.github.io/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-40",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**TypeScript**: _NaivecoinStake: a tutorial for building a cryptocurrency with the Proof of Stake consensus_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://naivecoinstake.learn.uno/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-41",
+    "category": "Build your own Blockchain / Cryptocurrency",
+    "title": {
+      "en": "**Rust**: _Building A Blockchain in Rust & Substrate_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://hackernoon.com/building-a-blockchain-in-rust-and-substrate-a-step-by-step-guide-for-developers-kc223ybp",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-42",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**Haskell**: _Roll your own IRC bot_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://wiki.haskell.org/Roll_your_own_IRC_bot",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-43",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**Node.js**: _Creating a Simple Facebook Messenger AI Bot with API.ai in Node.js_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://tutorials.botsfloor.com/creating-a-simple-facebook-messenger-ai-bot-with-api-ai-in-node-js-50ae2fa5c80d",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-44",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**Node.js**: _How to make a responsive telegram bot_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.sohamkamani.com/blog/2016/09/21/making-a-telegram-bot/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-45",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**Node.js**: _Create a Discord bot_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://discordjs.guide/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-46",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**Node.js**: _gifbot - Building a GitHub App_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://blog.scottlogic.com/2017/05/22/gifbot-github-integration.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-47",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**Node.js**: _Building A Simple AI Chatbot With Web Speech API And Node.js_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.smashingmagazine.com/2017/08/ai-chatbot-web-speech-api-node-js/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-48",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**Python**: _How to Build Your First Slack Bot with Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.fullstackpython.com/blog/build-first-slack-bot-python.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-49",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**Python**: _How to build a Slack Bot with Python using Slack Events API & Django under 20 minute_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/freehunch/how-to-build-a-slack-bot-with-python-using-slack-events-api-django-under-20-minute-code-included-269c3a9bf64e",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-50",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**Python**: _Build a Reddit Bot_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://pythonforengineers.com/blog/build-a-reddit-bot-part-1/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-51",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**Python**: _How To Create a Telegram Bot Using Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.freecodecamp.org/news/how-to-create-a-telegram-bot-using-python/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-52",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**Python**: _Create a Twitter Bot in Python Using Tweepy_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.freecodecamp.org/creating-a-twitter-bot-in-python-with-tweepy-ac524157a607",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-53",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**R**: _Build A Cryptocurrency Trading Bot with R_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://towardsdatascience.com/build-a-cryptocurrency-trading-bot-with-r-1445c429e1b1",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-54",
+    "category": "Build your own Bot",
+    "title": {
+      "en": "**Rust**: _A bot for Starcraft in Rust, C or any other language_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://habr.com/en/post/436254/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-55",
+    "category": "Build your own Command-Line Tool",
+    "title": {
+      "en": "**Go**: _Visualize your local git contributions with Go_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://flaviocopes.com/go-git-contributions/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-56",
+    "category": "Build your own Command-Line Tool",
+    "title": {
+      "en": "**Go**: _Build a command line app with Go: lolcat_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://flaviocopes.com/go-tutorial-lolcat/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-57",
+    "category": "Build your own Command-Line Tool",
+    "title": {
+      "en": "**Go**: _Building a cli command with Go: cowsay_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://flaviocopes.com/go-tutorial-cowsay/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-58",
+    "category": "Build your own Command-Line Tool",
+    "title": {
+      "en": "**Go**: _Go CLI tutorial: fortune clone_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://flaviocopes.com/go-tutorial-fortune/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-59",
+    "category": "Build your own Command-Line Tool",
+    "title": {
+      "en": "**Nim**: _Writing a stow alternative to manage dotfiles_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://xmonader.github.io/nimdays/day06_nistow.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-60",
+    "category": "Build your own Command-Line Tool",
+    "title": {
+      "en": "**Node.js**: _Create a CLI tool in Javascript_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://citw.dev/tutorial/create-your-own-cli-tool",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-61",
+    "category": "Build your own Command-Line Tool",
+    "title": {
+      "en": "**Rust**: _Command line apps in Rust_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://rust-cli.github.io/book/index.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-62",
+    "category": "Build your own Command-Line Tool",
+    "title": {
+      "en": "**Rust**: _Writing a Command Line Tool in Rust_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://mattgathu.dev/2017/08/29/writing-cli-app-rust.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-63",
+    "category": "Build your own Command-Line Tool",
+    "title": {
+      "en": "**Zig**: _Build Your Own CLI App in Zig from Scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://rebuild-x.github.io/docs/#/./zig/terminal/cli",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-64",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**C**: _Let's Build a Simple Database_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://cstack.github.io/db_tutorial/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-65",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**C++**: _Build Your Own Redis from Scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://build-your-own.org/redis",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-66",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**C#**: _Build Your Own Database_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.codeproject.com/Articles/1029838/Build-Your-Own-Database",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-67",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**Clojure**: _An Archaeology-Inspired Database_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://aosabook.org/en/500L/an-archaeology-inspired-database.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-68",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**Crystal**: _Why you should build your own NoSQL Database_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/@marceloboeira/why-you-should-build-your-own-nosql-database-9bbba42039f5",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-69",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**Go**: _Build Your Own Database from Scratch: From B+Tree To SQL in 3000 Lines_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://build-your-own.org/database/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-70",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**Go**: _Code a database in 45 steps: a series of test-driven small coding puzzles_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://trialofcode.org/database/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-71",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**Go**: _Build Your Own Redis from Scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.build-redis-from-scratch.dev/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-72",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**JavaScript**: _Dagoba: an in-memory graph database_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://aosabook.org/en/500L/dagoba-an-in-memory-graph-database.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-73",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**Python**: _DBDB: Dog Bed Database_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://aosabook.org/en/500L/dbdb-dog-bed-database.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-74",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**Python**: _Write your own miniature Redis with Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://charlesleifer.com/blog/building-a-simple-redis-server-with-python/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-75",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**Ruby**: _Build your own fast, persistent KV store in Ruby_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://dineshgowda.com/posts/build-your-own-persistent-kv-store/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-76",
+    "category": "Build your own Database",
+    "title": {
+      "en": "**Rust**: _Build your own Redis client and server_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://tokio.rs/tokio/tutorial/setup",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-77",
+    "category": "Build your own Docker",
+    "title": {
+      "en": "**C**: _Linux containers in 500 lines of code_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://blog.lizzie.io/linux-containers-in-500-loc.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-78",
+    "category": "Build your own Docker",
+    "title": {
+      "en": "**Go**: _Build Your Own Container Using Less than 100 Lines of Go_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.infoq.com/articles/build-a-container-golang",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-79",
+    "category": "Build your own Docker",
+    "title": {
+      "en": "**Python**: _A workshop on Linux containers: Rebuild Docker from Scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/Fewbytes/rubber-docker",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-80",
+    "category": "Build your own Docker",
+    "title": {
+      "en": "**Python**: _A proof-of-concept imitation of Docker, written in 100% Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/tonybaloney/mocker",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-81",
+    "category": "Build your own Docker",
+    "title": {
+      "en": "**Shell**: _Docker implemented in around 100 lines of bash_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/p8952/bocker",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-82",
+    "category": "Build your own Emulator / Virtual Machine",
+    "title": {
+      "en": "**C**: _Home-grown bytecode interpreters_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/bumble-tech/home-grown-bytecode-interpreters-51e12d59b25c",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-83",
+    "category": "Build your own Emulator / Virtual Machine",
+    "title": {
+      "en": "**C**: _Virtual machine in C_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://web.archive.org/web/20200121100942/https://blog.felixangell.com/virtual-machine-in-c/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-84",
+    "category": "Build your own Emulator / Virtual Machine",
+    "title": {
+      "en": "**C**: _Write your Own Virtual Machine_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://justinmeiners.github.io/lc3-vm/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-85",
+    "category": "Build your own Emulator / Virtual Machine",
+    "title": {
+      "en": "**C**: _Writing a Game Boy emulator, Cinoop_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://cturt.github.io/cinoop.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-86",
+    "category": "Build your own Emulator / Virtual Machine",
+    "title": {
+      "en": "**C++**: _How to write an emulator (CHIP-8 interpreter)_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-87",
+    "category": "Build your own Emulator / Virtual Machine",
+    "title": {
+      "en": "**C++**: _Emulation tutorial (CHIP-8 interpreter)_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.codeslinger.co.uk/pages/projects/chip8.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-88",
+    "category": "Build your own Emulator / Virtual Machine",
+    "title": {
+      "en": "**C++**: _Emulation tutorial (GameBoy emulator)_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.codeslinger.co.uk/pages/projects/gameboy.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-89",
+    "category": "Build your own Emulator / Virtual Machine",
+    "title": {
+      "en": "**C++**: _Emulation tutorial (Master System emulator)_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.codeslinger.co.uk/pages/projects/mastersystem/memory.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-90",
+    "category": "Build your own Emulator / Virtual Machine",
+    "title": {
+      "en": "**Common Lisp**: _CHIP-8 in Common Lisp_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://stevelosh.com/blog/2016/12/chip8-cpu/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-91",
+    "category": "Build your own Emulator / Virtual Machine",
+    "title": {
+      "en": "**JavaScript**: _GameBoy Emulation in JavaScript_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://imrannazar.com/GameBoy-Emulation-in-JavaScript",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-92",
+    "category": "Build your own Emulator / Virtual Machine",
+    "title": {
+      "en": "**Python**: _Emulation Basics: Write your own Chip 8 Emulator/Interpreter_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://omokute.blogspot.com.br/2012/06/emulation-basics-write-your-own-chip-8.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-93",
+    "category": "Build your own Emulator / Virtual Machine",
+    "title": {
+      "en": "**Rust**: _0dmg: Learning Rust by building a partial Game Boy emulator_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://jeremybanks.github.io/0dmg/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-94",
+    "category": "Build your own Front-end Framework / Library",
+    "title": {
+      "en": "**JavaScript**: _WTF is JSX (Let's Build a JSX Renderer)_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://jasonformat.com/wtf-is-jsx/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-95",
+    "category": "Build your own Front-end Framework / Library",
+    "title": {
+      "en": "**JavaScript**: _A DIY guide to build your own React_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/hexacta/didact",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-96",
+    "category": "Build your own Front-end Framework / Library",
+    "title": {
+      "en": "**JavaScript**: _Gooact: React in 160 lines of JavaScript_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/@sweetpalma/gooact-react-in-160-lines-of-javascript-44e0742ad60f",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-97",
+    "category": "Build your own Front-end Framework / Library",
+    "title": {
+      "en": "**JavaScript**: _Learn how React Reconciler package works by building your own lightweight React DOM_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://hackernoon.com/learn-you-some-custom-react-renderers-aed7164a4199",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-98",
+    "category": "Build your own Front-end Framework / Library",
+    "title": {
+      "en": "**JavaScript**: _Build Yourself a Redux_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://zapier.com/engineering/how-to-build-redux/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-99",
+    "category": "Build your own Front-end Framework / Library",
+    "title": {
+      "en": "**JavaScript**: _Let’s Write Redux!_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.jamasoftware.com/blog/lets-write-redux/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-100",
+    "category": "Build your own Front-end Framework / Library",
+    "title": {
+      "en": "**JavaScript**: _Build Your own Simplified AngularJS in 200 Lines of JavaScript_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://blog.mgechev.com/2015/03/09/build-learn-your-own-light-lightweight-angularjs/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-101",
+    "category": "Build your own Front-end Framework / Library",
+    "title": {
+      "en": "**JavaScript**: _Make Your Own AngularJS_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://teropa.info/blog/2013/11/03/make-your-own-angular-part-1-scopes-and-digest.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-102",
+    "category": "Build your own Front-end Framework / Library",
+    "title": {
+      "en": "**JavaScript**: _How to write your own Virtual DOM_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/@deathmood/how-to-write-your-own-virtual-dom-ee74acc13060",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-103",
+    "category": "Build your own Front-end Framework / Library",
+    "title": {
+      "en": "**JavaScript**: _Building a frontend framework, from scratch, with components (templating, state, VDOM)_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://mfrachet.github.io/create-frontend-framework/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-104",
+    "category": "Build your own Front-end Framework / Library",
+    "title": {
+      "en": "**JavaScript**: _Build your own React_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://pomb.us/build-your-own-react/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-105",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**C**: _Handmade Hero_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://handmadehero.org/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-106",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**C**: _How to Program an NES game in C_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://nesdoug.com/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-107",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**C**: _Learn Video Game Programming in C_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.youtube.com/playlist?list=PLT6WFYYZE6uLMcPGS3qfpYm7T_gViYMMt",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-108",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**C**: _On Tetris and Reimplementation_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://brennan.io/2015/06/12/tetris-reimplementation/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-109",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**C++**: _Breakout_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://learnopengl.com/In-Practice/2D-Game/Breakout",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-110",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**C++**: _Beginning Game Programming v2.0_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://lazyfoo.net/tutorials/SDL/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-111",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**C++**: _Tetris tutorial in C++ platform independent focused in game logic for beginners_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://javilop.com/gamedev/tetris-tutorial-in-c-platform-independent-focused-in-game-logic-for-beginners/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-112",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**C++**: _Space Invaders from Scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://nicktasios.nl/posts/space-invaders-from-scratch-part-1.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-113",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**C#**: _Learn C# by Building a Simple RPG_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-114",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**C#**: _Creating a Roguelike Game in C#_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://roguesharp.wordpress.com/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-115",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**C#**: _Build a C#/WPF RPG_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://scottlilly.com/build-a-cwpf-rpg/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-116",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**Java**: _3D Game Development with LWJGL 3_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://lwjglgamedev.gitbooks.io/3d-game-development-with-lwjgl/content/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-117",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**JavaScript**: _2D breakout game using Phaser_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-118",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**JavaScript**: _How to Make Flappy Bird in HTML5 With Phaser_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.lessmilk.com/tutorial/flappy-bird-phaser-1",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-119",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**JavaScript**: _Developing Games with React, Redux, and SVG_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://auth0.com/blog/developing-games-with-react-redux-and-svg-part-1/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-120",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**JavaScript**: _How to Make Your First Roguelike_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://gamedevelopment.tutsplus.com/tutorials/how-to-make-your-first-roguelike--gamedev-13677",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-121",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**JavaScript**: _Think like a programmer: How to build Snake using only JavaScript, HTML & CSS_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.freecodecamp.org/think-like-a-programmer-how-to-build-snake-using-only-javascript-html-and-css-7b1479c3339e",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-122",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**Lua**: _BYTEPATH_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/SSYGEN/blog/issues/30",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-123",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**Python**: _Developing Games With PyGame_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://pythonprogramming.net/pygame-python-3-part-1-intro/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-124",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**Python**: _Roguelike Tutorial Revised_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://rogueliketutorials.com/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-125",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**Ruby**: _Developing Games With Ruby_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://leanpub.com/developing-games-with-ruby/read",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-126",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**Ruby**: _Ruby Snake_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.diatomenterprises.com/gamedev-on-ruby-why-not/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-127",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**Rust**: _Adventures in Rust: A Basic 2D Game_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://a5huynh.github.io/posts/2018/adventures-in-rust/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-128",
+    "category": "Build your own Game",
+    "title": {
+      "en": "**Rust**: _Roguelike Tutorial in Rust + tcod_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://tomassedovic.github.io/roguelike-tutorial/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-129",
+    "category": "Build your own Git",
+    "title": {
+      "en": "**Haskell**: _Reimplementing “git clone” in Haskell from the bottom up_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-130",
+    "category": "Build your own Git",
+    "title": {
+      "en": "**JavaScript**: _Gitlet_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://gitlet.maryrosecook.com/docs/gitlet.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-131",
+    "category": "Build your own Git",
+    "title": {
+      "en": "**JavaScript**: _Build GIT - Learn GIT_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://kushagra.dev/blog/build-git-learn-git/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-132",
+    "category": "Build your own Git",
+    "title": {
+      "en": "**Python**: _Just enough of a Git client to create a repo, commit, and push itself to GitHub_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://benhoyt.com/writings/pygit/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-133",
+    "category": "Build your own Git",
+    "title": {
+      "en": "**Python**: _Write yourself a Git!_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://wyag.thb.lt/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-134",
+    "category": "Build your own Git",
+    "title": {
+      "en": "**Python**: _ugit: Learn Git Internals by Building Git Yourself_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.leshenko.net/p/ugit/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-135",
+    "category": "Build your own Git",
+    "title": {
+      "en": "**Ruby**: _Rebuilding Git in Ruby_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://robots.thoughtbot.com/rebuilding-git-in-ruby",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-136",
+    "category": "Build your own Memory Allocator",
+    "title": {
+      "en": "**C**: _Malloc is not magic -- Implementing your own memory allocator_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/p/e0354e914402",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-137",
+    "category": "Build your own Network Stack",
+    "title": {
+      "en": "**C**: _Beej's Guide to Network Programming_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://beej.us/guide/bgnet/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-138",
+    "category": "Build your own Network Stack",
+    "title": {
+      "en": "**C**: _Let's code a TCP/IP stack_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-139",
+    "category": "Build your own Network Stack",
+    "title": {
+      "en": "**C / Python**: _Build your own VPN/Virtual Switch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/peiyuanix/build-your-own-zerotier",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-140",
+    "category": "Build your own Network Stack",
+    "title": {
+      "en": "**Ruby**: _How to build a network stack in Ruby_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/geckoboard-under-the-hood/how-to-build-a-network-stack-in-ruby-f73aeb1b661b",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-141",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**C#**: _Neural Network OCR_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.codeproject.com/Articles/11285/Neural-Network-OCR",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-142",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**F#**: _Building Neural Networks in F#: Part 1_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/data-science/building-neural-networks-in-f-part-1-a2832ae972e6",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-143",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**F#**: _Building Neural Networks in F#: Part 2_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/data-science/building-neural-networks-in-f-part-2-training-evaluation-5e3a68889da6",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-144",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**Go**: _Build a multilayer perceptron with Golang_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://made2591.github.io/posts/neuralnetwork",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-145",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**Go**: _How to build a simple artificial neural network with Go_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://sausheong.github.io/posts/how-to-build-a-simple-artificial-neural-network-with-go/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-146",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**Go**: _Building a Neural Net from Scratch in Go_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://datadan.io/blog/neural-net-with-go",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-147",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**JavaScript**: _Neural networks from scratch for JavaScript linguists (Part1 — The Perceptron)_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://hackernoon.com/neural-networks-from-scratch-for-javascript-linguists-part1-the-perceptron-632a4d1fbad2",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-148",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**Python**: _A Neural Network in 11 lines of Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://iamtrask.github.io/2015/07/12/basic-python-network/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-149",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**Python**: _Build Deep Learning From Scratch (reimplement PyTorch internals across 34 stages)_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/roiamiel1/Build-Deep-Learning-From-Scratch",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-150",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**Python**: _Implement a Neural Network from Scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://victorzhou.com/blog/intro-to-neural-networks/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-151",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**Python**: _Optical Character Recognition (OCR)_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://aosabook.org/en/500L/optical-character-recognition-ocr.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-152",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**Python**: _Traffic signs classification with a convolutional network_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://navoshta.com/traffic-signs-classification/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-153",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**Python**: _Generate Music using LSTM Neural Network in Keras_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-154",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**Python**: _An Introduction to Convolutional Neural Networks_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://victorzhou.com/blog/intro-to-cnns-part-1/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-155",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**Python**: _Neural Networks: Zero to Hero_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-156",
+    "category": "Build your own Neural Network",
+    "title": {
+      "en": "**Python**: _SlowTorch: Implementation of PyTorch from the ground up in 100% pure Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/xames3/slowtorch",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-157",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**Assembly**: _Writing a Tiny x86 Bootloader_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://joebergeron.io/posts/post_two.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-158",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**Assembly**: _Baking Pi – Operating Systems Development_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/index.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-159",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**C**: _Operating Systems: From 0 to 1_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://tuhdo.github.io/os01/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-160",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**C**: _The little book about OS development_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://littleosbook.github.io/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-161",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**C**: _Roll your own toy UNIX-clone OS_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://jamesmolloy.co.uk/tutorial_html/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-162",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**C**: _Kernel 101 – Let’s write a Kernel_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://arjunsreedharan.org/post/82710718100/kernel-101-lets-write-a-kernel",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-163",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**C**: _Kernel 201 – Let’s write a Kernel with keyboard and screen support_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://arjunsreedharan.org/post/99370248137/kernel-201-lets-write-a-kernel-with-keyboard",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-164",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**C**: _Build a minimal multi-tasking kernel for ARM from scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/jserv/mini-arm-os",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-165",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**C**: _How to create an OS from scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/cfenollosa/os-tutorial",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-166",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**C**: _Malloc tutorial_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://danluu.com/malloc-tutorial/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-167",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**C**: _Hack the virtual memory_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://blog.holbertonschool.com/hack-the-virtual-memory-c-strings-proc/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-168",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**C**: _Learning operating system development using Linux kernel and Raspberry Pi_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/s-matyukevich/raspberry-pi-os",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-169",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**C**: _Operating systems development for Dummies_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/@lduck11007/operating-systems-development-for-dummies-3d4d786e8ac",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-170",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**C++**: _Writing a Bootloader_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://3zanders.co.uk/2017/10/13/writing-a-bootloader/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-171",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**Rust**: _Writing an OS in Rust_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://os.phil-opp.com/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-172",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**Rust**: _Add RISC-V Rust Operating System Tutorial_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://osblog.stephenmarz.com/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-173",
+    "category": "Build your own Operating System",
+    "title": {
+      "en": "**(any)**: _Linux from scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://linuxfromscratch.org/lfs",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-174",
+    "category": "Build your own Physics Engine",
+    "title": {
+      "en": "**C**: _Video Game Physics Tutorial_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.toptal.com/game/video-game-physics-part-i-an-introduction-to-rigid-body-dynamics",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-175",
+    "category": "Build your own Physics Engine",
+    "title": {
+      "en": "**C++**: _Game physics series by Allen Chou_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://allenchou.net/game-physics-series/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-176",
+    "category": "Build your own Physics Engine",
+    "title": {
+      "en": "**C++**: _How to Create a Custom Physics Engine_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://gamedevelopment.tutsplus.com/series/how-to-create-a-custom-physics-engine--gamedev-12715",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-177",
+    "category": "Build your own Physics Engine",
+    "title": {
+      "en": "**JavaScript**: _How Physics Engines Work_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://buildnewgames.com/gamephysics/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-178",
+    "category": "Build your own Physics Engine",
+    "title": {
+      "en": "**JavaScript**: _Broad Phase Collision Detection Using Spatial Partitioning_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://buildnewgames.com/broad-phase-collision-detection/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-179",
+    "category": "Build your own Physics Engine",
+    "title": {
+      "en": "**JavaScript**: _Build a simple 2D physics engine for JavaScript games_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://developer.ibm.com/tutorials/wa-build2dphysicsengine/?mhsrc=ibmsearch_a&mhq=2dphysic",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-180",
+    "category": "Build your own Processor",
+    "title": {
+      "en": "**Verilog**: _From Blinker to RISC-V_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/BrunoLevy/learn-fpga/tree/master/FemtoRV/TUTORIALS/FROM_BLINKER_TO_RISCV",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-181",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**(any)**: _mal - Make a Lisp_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/kanaka/mal#mal---make-a-lisp",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-182",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Assembly**: _Jonesforth_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/nornagon/jonesforth/blob/master/jonesforth.S",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-183",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**C**: _Baby's First Garbage Collector_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-184",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**C**: _Build Your Own Lisp: Learn C and build your own programming language in 1000 lines of code_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.buildyourownlisp.com/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-185",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**C**: _Writing a Simple Garbage Collector in C_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://maplant.com/gc.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-186",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**C**: _C interpreter that interprets itself._"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/lotabout/write-a-C-interpreter",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-187",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**C**: _A C & x86 version of the \"Let's Build a Compiler\" by Jack Crenshaw_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/lotabout/Let-s-build-a-compiler",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-188",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**C**: _A journey explaining how to build a compiler from scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/DoctorWkt/acwj",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-189",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**C++**: _Writing Your Own Toy Compiler Using Flex_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://gnuu.org/2009/09/18/writing-your-own-toy-compiler/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-190",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**C++**: _Kaleidoscope: Implementing a Language with LLVM_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-191",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**F#**: _Understanding Parser Combinators_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://fsharpforfunandprofit.com/posts/understanding-parser-combinators/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-192",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Go**: _The Super Tiny Compiler_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/hazbo/the-super-tiny-compiler",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-193",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Haskell**: _Let's Build a Compiler_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://g-ford.github.io/cradle/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-194",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Haskell**: _Write You a Haskell_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://dev.stephendiehl.com/fun/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-195",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Haskell**: _Write Yourself a Scheme in 48 Hours_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-196",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Haskell**: _Write You A Scheme_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.wespiser.com/writings/wyas/home.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-197",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Java**: _Crafting interpreters: A handbook for making programming languages_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.craftinginterpreters.com/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-198",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Java**: _Creating JVM Language_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://jakubdziworski.github.io/categories.html#Enkel-ref",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-199",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**JavaScript**: _The Super Tiny Compiler_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/jamiebuilds/the-super-tiny-compiler",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-200",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**JavaScript**: _The Super Tiny Interpreter_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/keyanzhang/the-super-tiny-interpreter",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-201",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**JavaScript**: _Little Lisp interpreter_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://maryrosecook.com/blog/post/little-lisp-interpreter",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-202",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**JavaScript**: _How to implement a programming language in JavaScript_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://lisperator.net/pltut/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-203",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**JavaScript**: _Let’s go write a Lisp_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://idiocy.org/lets-go-write-a-lisp/part-1.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-204",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**OCaml**: _Writing a C Compiler_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://norasandler.com/2017/11/29/Write-a-Compiler.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-205",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**OCaml**: _Writing a Lisp, the series_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://bernsteinbear.com/blog/lisp/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-206",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Pascal**: _Let's Build a Compiler_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://compilers.iecc.com/crenshaw/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-207",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Python**: _A Python Interpreter Written in Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://aosabook.org/en/500L/a-python-interpreter-written-in-python.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-208",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Python**: _lisp.py: Make your own Lisp interpreter_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://khamidou.com/compilers/lisp.py/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-209",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Python**: _How to Write a Lisp Interpreter in Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://norvig.com/lispy.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-210",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Python**: _Let’s Build A Simple Interpreter_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://ruslanspivak.com/lsbasi-part1/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-211",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Python**: _From Source Code To Machine Code: Build Your Own Compiler From Scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://build-your-own.org/compiler/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-212",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Racket**: _Beautiful Racket: How to make your own programming languages with Racket_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://beautifulracket.com/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-213",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Ruby**: _A Compiler From Scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.destroyallsoftware.com/screencasts/catalog/a-compiler-from-scratch",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-214",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Ruby**: _Markdown compiler from scratch in Ruby_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://blog.beezwax.net/2017/07/07/writing-a-markdown-compiler/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-215",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Rust**: _Learning Parser Combinators With Rust_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://bodil.lol/parser-combinators/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-216",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**Swift**: _Building a LISP from scratch with Swift_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.uraimo.com/2017/02/05/building-a-lisp-from-scratch-with-swift/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-217",
+    "category": "Build your own Programming Language",
+    "title": {
+      "en": "**TypeScript**: _Build your own WebAssembly Compiler_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://blog.scottlogic.com/2019/05/17/webassembly-compiler.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-218",
+    "category": "Build your own Regex Engine",
+    "title": {
+      "en": "**C**: _A Regular Expression Matcher_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-219",
+    "category": "Build your own Regex Engine",
+    "title": {
+      "en": "**C**: _Regular Expression Matching Can Be Simple And Fast_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://swtch.com/~rsc/regexp/regexp1.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-220",
+    "category": "Build your own Regex Engine",
+    "title": {
+      "en": "**Go**: _How to build a regex engine from scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://rhaeguard.github.io/posts/regex",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-221",
+    "category": "Build your own Regex Engine",
+    "title": {
+      "en": "**JavaScript**: _Build a Regex Engine in Less than 40 Lines of Code_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://nickdrane.com/build-your-own-regex/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-222",
+    "category": "Build your own Regex Engine",
+    "title": {
+      "en": "**JavaScript**: _How to implement regular expressions in functional javascript using derivatives_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://dpk.io/dregs/toydregs",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-223",
+    "category": "Build your own Regex Engine",
+    "title": {
+      "en": "**JavaScript**: _Implementing a Regular Expression Engine_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://deniskyashif.com/2019/02/17/implementing-a-regular-expression-engine/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-224",
+    "category": "Build your own Regex Engine",
+    "title": {
+      "en": "**Perl**: _How Regexes Work_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://perl.plover.com/Regex/article.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-225",
+    "category": "Build your own Regex Engine",
+    "title": {
+      "en": "**Python**: _Build Your Own Regular Expression Engines: Backtracking, NFA, DFA_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://build-your-own.org/b2a/r0_intro",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-226",
+    "category": "Build your own Regex Engine",
+    "title": {
+      "en": "**Scala**: _No Magic: Regular Expressions_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://rcoh.svbtle.com/no-magic-regular-expressions",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-227",
+    "category": "Build your own Search Engine",
+    "title": {
+      "en": "**CSS**: _A search engine in CSS_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://stories.algolia.com/a-search-engine-in-css-b5ec4e902e97",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-228",
+    "category": "Build your own Search Engine",
+    "title": {
+      "en": "**Python**: _Building a search engine using Redis and redis-py_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.dr-josiah.com/2010/07/building-search-engine-using-redis-and.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-229",
+    "category": "Build your own Search Engine",
+    "title": {
+      "en": "**Python**: _Building a Vector Space Indexing Engine in Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://boyter.org/2010/08/build-vector-space-search-engine-python/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-230",
+    "category": "Build your own Search Engine",
+    "title": {
+      "en": "**Python**: _Making text search learn from feedback_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/filament-ai/making-text-search-learn-from-feedback-4fe210fd87b0",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-231",
+    "category": "Build your own Search Engine",
+    "title": {
+      "en": "**Python**: _Finding Important Words in Text Using TF-IDF_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://stevenloria.com/tf-idf/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-232",
+    "category": "Build your own Shell",
+    "title": {
+      "en": "**C**: _Tutorial - Write a Shell in C_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://brennan.io/2015/01/16/write-a-shell-in-c/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-233",
+    "category": "Build your own Shell",
+    "title": {
+      "en": "**C**: _Let's build a shell!_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/kamalmarhubi/shell-workshop",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-234",
+    "category": "Build your own Shell",
+    "title": {
+      "en": "**C**: _Writing a UNIX Shell_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://indradhanush.github.io/blog/writing-a-unix-shell-part-1/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-235",
+    "category": "Build your own Shell",
+    "title": {
+      "en": "**C**: _Build Your Own Shell_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/tokenrove/build-your-own-shell",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-236",
+    "category": "Build your own Shell",
+    "title": {
+      "en": "**C**: Write a shell in C"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://danishpraka.sh/posts/write-a-shell/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-237",
+    "category": "Build your own Shell",
+    "title": {
+      "en": "**Go**: _Writing a simple shell in Go_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://sj14.gitlab.io/post/2018-07-01-go-unix-shell/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-238",
+    "category": "Build your own Shell",
+    "title": {
+      "en": "**Rust**: _Build Your Own Shell using Rust_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.joshmcguigan.com/blog/build-your-own-shell-rust/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-239",
+    "category": "Build your own Template Engine",
+    "title": {
+      "en": "**JavaScript**: _JavaScript template engine in just 20 lines_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://krasimirtsonev.com/blog/article/Javascript-template-engine-in-just-20-line",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-240",
+    "category": "Build your own Template Engine",
+    "title": {
+      "en": "**JavaScript**: _Understanding JavaScript Micro-Templating_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/wdstack/understanding-javascript-micro-templating-f37a37b3b40e",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-241",
+    "category": "Build your own Template Engine",
+    "title": {
+      "en": "**Python**: _Approach: Building a toy template engine in Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://alexmic.net/building-a-template-engine/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-242",
+    "category": "Build your own Template Engine",
+    "title": {
+      "en": "**Python**: _A Template Engine_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://aosabook.org/en/500L/a-template-engine.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-243",
+    "category": "Build your own Template Engine",
+    "title": {
+      "en": "**Ruby**: _How to write a template engine in less than 30 lines of code_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://bits.citrusbyte.com/how-to-write-a-template-library/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-244",
+    "category": "Build your own Text Editor",
+    "title": {
+      "en": "**C**: _Build Your Own Text Editor_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://viewsourcecode.org/snaptoken/kilo/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-245",
+    "category": "Build your own Text Editor",
+    "title": {
+      "en": "**C++**: _Designing a Simple Text Editor_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.fltk.org/doc-1.1/editor.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-246",
+    "category": "Build your own Text Editor",
+    "title": {
+      "en": "**Python**: _Create a Simple Python Text Editor!_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.instructables.com/id/Create-a-Simple-Python-Text-Editor/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-247",
+    "category": "Build your own Text Editor",
+    "title": {
+      "en": "**Ruby**: _Build a Collaborative Text Editor Using Rails_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://blog.aha.io/text-editor/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-248",
+    "category": "Build your own Text Editor",
+    "title": {
+      "en": "**Rust**: _Hecto: Build your own text editor in Rust_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.flenker.blog/hecto/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-249",
+    "category": "Build your own Visual Recognition System",
+    "title": {
+      "en": "**Python**: _Developing a License Plate Recognition System with Machine Learning in Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/devcenter/developing-a-license-plate-recognition-system-with-machine-learning-in-python-787833569ccd",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-250",
+    "category": "Build your own Visual Recognition System",
+    "title": {
+      "en": "**Python**: _Building a Facial Recognition Pipeline with Deep Learning in Tensorflow_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://hackernoon.com/building-a-facial-recognition-pipeline-with-deep-learning-in-tensorflow-66e7645015b8",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-251",
+    "category": "Build your own Voxel Engine",
+    "title": {
+      "en": "**C++**: _Let's Make a Voxel Engine_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://sites.google.com/site/letsmakeavoxelengine/home",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-252",
+    "category": "Build your own Web Browser",
+    "title": {
+      "en": "**Rust**: _Let's build a browser engine_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-253",
+    "category": "Build your own Web Browser",
+    "title": {
+      "en": "**Python**: _Browser Engineering_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://browser.engineering",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-254",
+    "category": "Build your own Web Server",
+    "title": {
+      "en": "**C#**: _Writing a Web Server from Scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.codeproject.com/Articles/859108/Writing-a-Web-Server-from-Scratch",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-255",
+    "category": "Build your own Web Server",
+    "title": {
+      "en": "**Node.js**: _Build Your Own Web Server From Scratch In JavaScript_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://build-your-own.org/webserver/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-256",
+    "category": "Build your own Web Server",
+    "title": {
+      "en": "**Node.js**: _Let's code a web server from scratch with NodeJS Streams_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.codementor.io/@ziad-saab/let-s-code-a-web-server-from-scratch-with-nodejs-streams-h4uc9utji",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-257",
+    "category": "Build your own Web Server",
+    "title": {
+      "en": "**Node.js**: _lets-build-express_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/antoaravinth/lets-build-express",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-258",
+    "category": "Build your own Web Server",
+    "title": {
+      "en": "**PHP**: _Writing a webserver in pure PHP_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://station.clancats.com/writing-a-webserver-in-pure-php/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-259",
+    "category": "Build your own Web Server",
+    "title": {
+      "en": "**Python**: _A Simple Web Server_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://aosabook.org/en/500L/a-simple-web-server.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-260",
+    "category": "Build your own Web Server",
+    "title": {
+      "en": "**Python**: _Let’s Build A Web Server._"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://ruslanspivak.com/lsbaws-part1/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-261",
+    "category": "Build your own Web Server",
+    "title": {
+      "en": "**Python**: _Web application from scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://defn.io/2018/02/25/web-app-from-scratch-01/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-262",
+    "category": "Build your own Web Server",
+    "title": {
+      "en": "**Python**: _Building a basic HTTP Server from scratch in Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://joaoventura.net/blog/2017/python-webserver/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-263",
+    "category": "Build your own Web Server",
+    "title": {
+      "en": "**Python**: _Implementing a RESTful Web API with Python & Flask_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://blog.luisrei.com/articles/flaskrest.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-264",
+    "category": "Build your own Web Server",
+    "title": {
+      "en": "**Ruby**: _Building a simple websockets server from scratch in Ruby_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://blog.honeybadger.io/building-a-simple-websockets-server-from-scratch-in-ruby/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-265",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**(any)**: _From NAND to Tetris: Building a Modern Computer From First Principles_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://nand2tetris.org/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-266",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**(any)**:  build-your-own-x-vibe-coding: BYOX-style tutorials adapted for vibe coding"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/inFaaa/build-your-own-x-vibe-coding",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-267",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Alloy**: _The Same-Origin Policy_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://aosabook.org/en/500L/the-same-origin-policy.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-268",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**C**: _How to Write a Video Player in Less Than 1000 Lines_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://dranger.com/ffmpeg/ffmpeg.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-269",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**C**: _Learn how to write a hash table in C_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/jamesroutley/write-a-hash-table",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-270",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**C**: _The very basics of a terminal emulator_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.uninformativ.de/blog/postings/2018-02-24/0/POSTING-en.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-271",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**C**: _Write a System Call_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://brennan.io/2016/11/14/kernel-dev-ep3/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-272",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**C**: _Sol - An MQTT broker from scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://codepr.github.io/posts/sol-mqtt-broker",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-273",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**C++**: _Build your own VR headset for $200_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/relativty/Relativ",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-274",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**C++**: _How X Window Managers work and how to write one_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://seasonofcode.com/posts/how-x-window-managers-work-and-how-to-write-one-part-i.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-275",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**C++**: _Writing a Linux Debugger_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://blog.tartanllama.xyz/writing-a-linux-debugger-setup/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-276",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**C++**: _How a 64k intro is made_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://www.lofibucket.com/articles/64k_intro.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-277",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**C++**: _Make your own Game Engine_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-278",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**C#**: _C# Networking: Create a TCP chater server, TCP games, UDP Pong and more_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://16bpp.net/tutorials/csharp-networking",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-279",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**C#**: _Loading and rendering 3D skeletal animations from scratch in C# and GLSL_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.seanjoflynn.com/research/skeletal-animation.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-280",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Clojure**: _Building a spell-checker_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://bernhardwenzel.com/articles/clojure-spellchecker/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-281",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Go**: _Build A Simple Terminal Emulator In 100 Lines of Golang_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://ishuah.com/2021/03/10/build-a-terminal-emulator-in-100-lines-of-go/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-282",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Go**: _Let's Create a Simple Load Balancer_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://kasvith.me/posts/lets-create-a-simple-lb-go/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-283",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Go**: _Video Encoding from Scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/kevmo314/codec-from-scratch",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-284",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**JavaScript**: _Build Your Own Module Bundler - Minipack_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/ronami/minipack",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-285",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**JavaScript**: _Learn JavaScript Promises by Building a Promise from Scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://levelup.gitconnected.com/understand-javascript-promises-by-building-a-promise-from-scratch-84c0fd855720",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-286",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**JavaScript**: _Implementing promises from scratch (TDD way)_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.mauriciopoppe.com/notes/computer-science/computation/promises/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-287",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**JavaScript**: _Implement your own — call(), apply() and bind() method in JavaScript_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://blog.usejournal.com/implement-your-own-call-apply-and-bind-method-in-javascript-42cc85dba1b",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-288",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**JavaScript**: _JavaScript Algorithms and Data Structures_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/trekhleb/javascript-algorithms",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-289",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**JavaScript**: _Build a ride hailing app with React Native_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://pusher.com/tutorials/ride-hailing-react-native",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-290",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**JavaScript**: _Build Your Own AdBlocker in (Literally) 10 Minutes_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://levelup.gitconnected.com/building-your-own-adblocker-in-literally-10-minutes-1eec093b04cd",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-291",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Kotlin**: _Build Your Own Cache_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/kezhenxu94/cache-lite",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-292",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Lua**: _Building a CDN from Scratch to Learn about CDN_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/leandromoreira/cdn-up-and-running",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-293",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Nim**: _Writing a Redis Protocol Parser_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://xmonader.github.io/nimdays/day12_resp.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-294",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Nim**: _Writing a Build system_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://xmonader.github.io/nimdays/day11_buildsystem.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-295",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Nim**: _Writing a MiniTest Framework_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://xmonader.github.io/nimdays/day08_minitest.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-296",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Nim**: _Writing a DMIDecode Parser_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://xmonader.github.io/nimdays/day01_dmidecode.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-297",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Nim**: _Writing a INI Parser_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://xmonader.github.io/nimdays/day05_iniparser.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-298",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Nim**: _Writing a Link Checker_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://xmonader.github.io/nimdays/day04_asynclinkschecker.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-299",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Nim**: _Writing a URL Shortening Service_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://xmonader.github.io/nimdays/day07_shorturl.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-300",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Node.js**: _Build a static site generator in 40 lines with Node.js_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.webdevdrops.com/en/build-static-site-generator-nodejs-8969ebe34b22/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-301",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Node.js**: _Building A Simple Single Sign On(SSO) Server And Solution From Scratch In Node.js._"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://codeburst.io/building-a-simple-single-sign-on-sso-server-and-solution-from-scratch-in-node-js-ea6ee5fdf340",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-302",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Node.js**: _How to create a real-world Node CLI app with Node_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.freecodecamp.org/how-to-create-a-real-world-node-cli-app-with-node-391b727bbed3",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-303",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Node.js**: _Build a DNS Server in Node.js_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://engineerhead.github.io/dns-server/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-304",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Node.js**: _Build a Synchronization Engine with Node.js and Y.js_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://greenvitriol.com/posts/sync-engine-for-everyone",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-305",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**PHP**: _Write your own MVC from scratch in PHP_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://chaitya62.github.io/2018/04/29/Writing-your-own-MVC-from-Scratch-in-PHP.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-306",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**PHP**: _Make your own blog_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://ilovephp.jondh.me.uk/en/tutorial/make-your-own-blog",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-307",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**PHP**: _Modern PHP Without a Framework_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://kevinsmith.io/modern-php-without-a-framework",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-308",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**PHP**: _Code a Web Search Engine in PHP_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://boyter.org/2013/01/code-for-a-search-engine-in-php-part-1/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-309",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Python**: _How to Build a Kick-Ass Mobile Document Scanner in Just 5 Minutes_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.pyimagesearch.com/2014/09/01/build-kick-ass-mobile-document-scanner-just-5-minutes/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-310",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Python**: _Continuous Integration System_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://aosabook.org/en/500L/a-continuous-integration-system.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-311",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Python**: _Recommender Systems in Python: Beginner Tutorial_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.datacamp.com/community/tutorials/recommender-systems-python",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-312",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Python**: _Write SMS-spam detector with Scikit-learn_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://medium.com/@kopilov.vlad/detect-sms-spam-in-kaggle-with-scikit-learn-5f6afa7a3ca2",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-313",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Python**: _A Simple Content-Based Recommendation Engine in Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://blog.untrod.com/2016/06/simple-similar-products-recommendation-engine-in-python.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-314",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Python**: _Stock Market Predictions with LSTM in Python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.datacamp.com/community/tutorials/lstm-python-stock-market",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-315",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Python**: _Building a simple Generative Adversarial Network (GAN) using Tensorflow_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://blog.paperspace.com/implementing-gans-in-tensorflow/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-316",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Python**: _Learn ML Algorithms by coding: Decision Trees_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://lethalbrains.com/learn-ml-algorithms-by-coding-decision-trees-439ac503c9a4",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-317",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Python**: _JSON Decoding Algorithm_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/cheery/json-algorithm",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-318",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Python**: _Build your own Git plugin with python_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://joshburns-xyz.vercel.app/posts/build-your-own-git-plugin",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-319",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Ruby**: _A Pedometer in the Real World_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "http://aosabook.org/en/500L/a-pedometer-in-the-real-world.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-320",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Ruby**: _Creating a Linux Desktop application with Ruby_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://iridakos.com/tutorials/2018/01/25/creating-a-gtk-todo-application-with-ruby",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-321",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Rust**: _Building a DNS server in Rust_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/EmilHernvall/dnsguide/blob/master/README.md",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-322",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Rust**: _Writing Scalable Chat Service from Scratch_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://nbaksalyar.github.io/2015/07/10/writing-chat-in-rust.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-323",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**Rust**: _WebGL + Rust: Basic Water Tutorial_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://www.chinedufn.com/3d-webgl-basic-water-tutorial/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  },
+  {
+    "id": "build-324",
+    "category": "Uncategorized",
+    "title": {
+      "en": "**TypeScript**: _Tiny Package Manager: Learns how npm or Yarn works_"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": null,
+    "url": "https://github.com/g-plane/tiny-package-manager",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0"
+  }
+]

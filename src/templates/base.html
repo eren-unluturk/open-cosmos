@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{ lang }}" dir="{{ 'rtl' if rtl else 'ltr' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Learn — {{ ui.tagline }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-slate-900">
+  <a href="#main" class="sr-only focus:not-sr-only">Skip to content</a>
+  <header class="border-b p-4 flex flex-wrap gap-4 items-center justify-between">
+    <nav class="flex gap-4" aria-label="Main">
+      <a class="font-bold" href="{{ url_for('home', lang=lang) }}">Open Learn</a>
+      <a href="{{ url_for('listing', lang=lang, side='learn') }}">{{ ui.learn }}</a>
+      <a href="{{ url_for('listing', lang=lang, side='build') }}">{{ ui.build }}</a>
+    </nav>
+    <nav class="flex gap-2" aria-label="Language">
+      {% for code, name in langs.items() %}
+        <a lang="{{ code }}" href="{{ request.path.replace('/' ~ lang ~ '/', '/' ~ code ~ '/', 1) if request.path != '/' ~ lang else '/' ~ code }}"
+           class="px-2 underline {{ 'font-bold' if code == lang }}">{{ name }}</a>
+      {% endfor %}
+    </nav>
+  </header>
+  <main id="main" class="max-w-4xl mx-auto p-4">{% block content %}{% endblock %}</main>
+  <footer class="border-t p-4 text-sm text-slate-600">
+    All content is open data (CC0) from
+    <a class="underline" href="https://github.com/sindresorhus/awesome">sindresorhus/awesome</a> and
+    <a class="underline" href="https://github.com/codecrafters-io/build-your-own-x">codecrafters-io/build-your-own-x</a>.
+    We claim none of it. Translations and levels are AI-generated; always check the original.
+  </footer>
+</body>
+</html>

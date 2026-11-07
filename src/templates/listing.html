@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1 class="text-2xl font-bold my-4">{{ ui[side] }}</h1>
+  <nav class="flex gap-2 mb-6" aria-label="Level">
+    <a class="underline {{ 'font-bold' if not level }}" href="{{ url_for('listing', lang=lang, side=side) }}">{{ ui.all }}</a>
+    {% for l in levels %}
+      <a class="underline {{ 'font-bold' if level == l }}" href="{{ url_for('listing', lang=lang, side=side, level=l) }}">{{ l }}</a>
+    {% endfor %}
+  </nav>
+  {% for category, items in groups.items() %}
+    <h2 class="text-xl font-semibold mt-6">{{ category }}</h2>
+    <ul class="space-y-3 mt-2">
+      {% for e in items %}
+        <li>
+          <a class="underline font-medium" href="{{ e.url }}" rel="noopener">{{ e.title.get(lang) or e.title.en }}</a>
+          {% if e.level %}<span class="text-xs border rounded px-1 mx-1">{{ e.level }}</span>{% endif %}
+          <p>{{ e.desc.get(lang) or e.desc.en }}</p>
+          <p class="text-xs text-slate-600">{{ ui.source }}: <a class="underline" href="{{ e.source }}">{{ e.source.split('github.com/')[1] }}</a> · {{ ui.license }}: {{ e.license }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No entries yet. Run <code>python scripts/fetch.py</code>.</p>
+  {% endfor %}
+{% endblock %}

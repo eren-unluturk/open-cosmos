@@ -6,8 +6,8 @@ the tests, `python scripts/guide_progress.py`, then commit.
 
 ## Status
 - Phase A (foundation): DONE. Phase B (lessons): DONE (26 lessons).
-- Phase C (handwritten guides): 40 of 65 groups done; 7 topic fallbacks always cover the rest.
-- Entries with a handwritten guide: 897 of 1070 visible.
+- Phase C (handwritten guides): 52 of 65 groups done; 7 topic fallbacks always cover the rest.
+- Entries with a handwritten guide: 1030 of 1070 visible.
 
 | Band | Entries with handwritten guide | Visible entries |
 |---|---|---|
@@ -15,38 +15,26 @@ the tests, `python scripts/guide_progress.py`, then commit.
 | kid-safe 8-10 | 36 | 36 |
 | kid-safe 11-13 | 77 | 77 |
 | kid-safe teen+ | 338 | 338 |
-| ask-a-grown-up | 422 | 595 |
+| ask-a-grown-up | 555 | 595 |
 
 ## NEXT
-`learn:Decentralized Systems`
+`build:Build your own BitTorrent Client`
 
 ## Remaining groups in priority order
 
-1. `learn:Decentralized Systems`
-2. `learn:Security`
-3. `build:Build your own Bot`
-4. `build:Build your own Database`
-5. `build:Build your own Emulator / Virtual Machine`
-6. `learn:Health and Social Science`
-7. `learn:Business`
-8. `build:Build your own Command-Line Tool`
-9. `build:Build your own Regex Engine`
-10. `build:Build your own Git`
-11. `build:Build your own Docker`
-12. `build:Build your own Shell`
-13. `build:Build your own BitTorrent Client`
-14. `learn:Editors`
-15. `learn:Entertainment`
-16. `learn:Networking`
-17. `learn:Related`
-18. `build:Build your own Network Stack`
-19. `learn:Events`
-20. `build:Build your own Visual Recognition System`
-21. `build:Build your own Web Browser`
-22. `build:Build your own Distributed Systems`
-23. `build:Build your own Memory Allocator`
-24. `build:Build your own Processor`
-25. `build:Build your own Voxel Engine`
+1. `build:Build your own BitTorrent Client`
+2. `learn:Editors`
+3. `learn:Entertainment`
+4. `learn:Networking`
+5. `learn:Related`
+6. `build:Build your own Network Stack`
+7. `learn:Events`
+8. `build:Build your own Visual Recognition System`
+9. `build:Build your own Web Browser`
+10. `build:Build your own Distributed Systems`
+11. `build:Build your own Memory Allocator`
+12. `build:Build your own Processor`
+13. `build:Build your own Voxel Engine`
 
 ## Done groups
 
@@ -90,3 +78,15 @@ the tests, `python scripts/guide_progress.py`, then commit.
 - `build:Build your own Blockchain / Cryptocurrency`
 - `build:Build your own Operating System`
 - `learn:Databases`
+- `learn:Decentralized Systems`
+- `learn:Security`
+- `build:Build your own Bot`
+- `build:Build your own Database`
+- `build:Build your own Emulator / Virtual Machine`
+- `learn:Health and Social Science`
+- `learn:Business`
+- `build:Build your own Command-Line Tool`
+- `build:Build your own Regex Engine`
+- `build:Build your own Git`
+- `build:Build your own Docker`
+- `build:Build your own Shell`

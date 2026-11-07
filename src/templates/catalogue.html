@@ -1,46 +1,46 @@
 {% extends "base.html" %}
 {% block content %}
-  <h1 class="text-2xl font-bold my-4">Lesson catalogue</h1>
+  <h1 class="text-2xl font-bold my-4">{{ ui.cat_title }}</h1>
   <form method="get" role="search" class="mb-4 flex flex-wrap gap-2">
-    <label for="q" class="sr-only">Search</label>
-    <input id="q" name="q" value="{{ q }}" maxlength="80" class="border rounded px-2 py-1" placeholder="Search">
+    <label for="q" class="sr-only">{{ ui.search }}</label>
+    <input id="q" name="q" value="{{ q }}" maxlength="80" class="border rounded px-2 py-1" placeholder="{{ ui.search }}">
     <label for="level" class="sr-only">Level</label>
     <select id="level" name="level" class="border rounded px-2 py-1">
       <option value="">{{ ui.all }}</option>
       {% for l in levels %}<option value="{{ l }}" {{ 'selected' if l == level }}>{{ l }}</option>{% endfor %}
     </select>
-    <button class="border rounded px-2 py-1">Search</button>
+    <button class="border rounded px-2 py-1">{{ ui.search }}</button>
   </form>
 
   <section aria-labelledby="hostable-h">
-    <h2 id="hostable-h" class="text-xl font-semibold mt-6">Lessons on this site</h2>
-    <p class="text-sm">Open license (CC BY-SA 4.0). We show these with credit to the authors.</p>
+    <h2 id="hostable-h" class="text-xl font-semibold mt-6">{{ ui.cat_here }}</h2>
+    <p class="text-sm">{{ ui.cat_here_note }}</p>
     {% for lvl, items in groups.hostable.items() %}
       <h3 class="font-semibold mt-4">{{ lvl }} ({{ items|length }})</h3>
       <ul class="space-y-2 mt-1">
         {% for e in items %}
           <li><a class="underline" href="{{ url_for('entry_page', lang=lang, entry_id=e.id) }}">{{ e.title.get(lang) or e.title.en }}</a>
-            <span class="text-xs border rounded px-1">{{ e.kind }}</span>
-            <span class="text-xs">ages {{ e.age_group }}</span></li>
+            <span class="text-xs border rounded px-1">{{ ui['kind_' ~ e.kind] }}</span>
+            <span class="text-xs">{{ ui.ages }} {{ e.age_group }}</span></li>
         {% endfor %}
       </ul>
-    {% else %}<p>No matches.</p>{% endfor %}
+    {% else %}<p>{{ ui.no_matches }}</p>{% endfor %}
   </section>
 
   <section aria-labelledby="external-h">
-    <h2 id="external-h" class="text-xl font-semibold mt-8">Lessons on other sites</h2>
-    <p class="text-sm">We link to these. You do the lesson on the other site. How-to guides:
-      {% for k, g in kinds.items() %}<a class="underline" href="{{ url_for('howto', lang=lang, kind=k) }}">{{ k }}</a>{{ ', ' if not loop.last }}{% endfor %}.
+    <h2 id="external-h" class="text-xl font-semibold mt-8">{{ ui.cat_other }}</h2>
+    <p class="text-sm">{{ ui.cat_other_note }}
+      {% for k in kinds %}<a class="underline" href="{{ url_for('howto', lang=lang, kind=k) }}">{{ ui['kind_' ~ k] }}</a>{{ ', ' if not loop.last }}{% endfor %}
     </p>
     {% for lvl, items in groups.external.items() %}
       <h3 class="font-semibold mt-4">{{ lvl }} ({{ items|length }})</h3>
       <ul class="space-y-2 mt-1">
         {% for e in items[:50] %}
           <li><a class="underline" href="{{ url_for('entry_page', lang=lang, entry_id=e.id) }}">{{ e.title.get(lang) or e.title.en }}</a>
-            <span class="text-xs border rounded px-1">{{ e.kind }}</span></li>
+            <span class="text-xs border rounded px-1">{{ ui['kind_' ~ e.kind] }}</span></li>
         {% endfor %}
-        {% if items|length > 50 %}<li class="text-sm">and {{ items|length - 50 }} more. Use search to narrow it down.</li>{% endif %}
+        {% if items|length > 50 %}<li class="text-sm">{{ ui.more.format(n=items|length - 50) }}</li>{% endif %}
       </ul>
-    {% else %}<p>No matches.</p>{% endfor %}
+    {% else %}<p>{{ ui.no_matches }}</p>{% endfor %}
   </section>
 {% endblock %}

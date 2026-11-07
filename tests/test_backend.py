@@ -203,6 +203,105 @@ class CatalogueTests(unittest.TestCase):
         self.assertIn("Changes were made", html)
 
 
+class LessonTextTests(unittest.TestCase):
+    def setUp(self):
+        app.config["TESTING"] = True
+        self.c = app.test_client()
+
+    def hosted(self, kind):
+        return [e for e in store.entries("kids") if e["delivery"] == "hostable" and e["kind"] == kind]
+
+    def test_every_hosted_unit_and_lesson_has_text(self):
+        for e in self.hosted("unit") + self.hosted("lesson"):
+            found = store.lesson(e["id"], "en")
+            self.assertIsNotNone(found, e["url"])
+            self.assertGreater(len(found["markdown"]), 200, e["url"])
+
+    def test_external_entries_have_no_lesson_page_text(self):
+        e = next(x for x in store.entries("learn") if x["safety"] == "kid-safe")
+        html = self.c.get(f"/en/entry/{e['id']}").get_data(as_text=True)
+        self.assertNotIn('id="lesson-h"', html)
+
+    def test_language_choice_human_then_ai_then_english(self):
+        unit = next(e for e in self.hosted("unit") if e["id"] == "kids-cff31573")  # binary numbers
+        es = store.lesson(unit["id"], "es")
+        self.assertEqual((es["lang"], es["ai"], es["fallback"]), ("es", False, False))
+        ar = store.lesson(unit["id"], "ar")
+        self.assertEqual((ar["lang"], ar["ai"], ar["fallback"]), ("ar", True, False))
+        lesson = next(e for e in self.hosted("lesson") if store.lesson(e["id"], "ar")["fallback"])
+        fb = store.lesson(lesson["id"], "ar")
+        self.assertEqual((fb["lang"], fb["fallback"]), ("en", True))
+
+    def test_all_unit_intros_translated(self):
+        for e in self.hosted("unit"):
+            for lang in ("es", "ar", "hi", "pt"):
+                found = store.lesson(e["id"], lang)
+                self.assertEqual(found["lang"], lang, (e["url"], lang))
+                self.assertGreater(len(found["markdown"]), 200)
+
+    def test_markdown_is_safe(self):
+        html = store.render_markdown("<script>alert(1)</script>\n\n[x](javascript:alert(1))\n\n[ok](https://example.org)")
+        self.assertNotIn("<script>", html)
+        self.assertNotIn('href="javascript', html)
+        self.assertIn('rel="noopener noreferrer"', html)
+
+    def test_no_template_tags_left_in_lesson_text(self):
+        import re
+        for e in self.hosted("unit") + self.hosted("lesson"):
+            md = store.lesson(e["id"], "en")["markdown"]
+            self.assertIsNone(re.search(r"\{(panel|image|video|button-link|glossary-link)", md), e["url"])
+
+    def test_entry_page_shows_lesson_in_every_language(self):
+        e = next(x for x in self.hosted("unit") if x["id"] == "kids-84a24760")
+        for lang in LANGS:
+            r = self.c.get(f"/{lang}/entry/{e['id']}")
+            self.assertEqual(r.status_code, 200)
+            self.assertIn('id="lesson-h"', r.get_data(as_text=True))
+        ar = self.c.get(f"/ar/entry/{e['id']}").get_data(as_text=True)
+        self.assertIn('dir="rtl"', ar)
+        self.assertIn("CC BY-SA 4.0", ar)
+
+    def test_big_lesson_page_loads(self):
+        e = next(x for x in self.hosted("lesson") if "how-binary-digits-work/" in x["url"] and "junior" not in x["url"])
+        self.assertEqual(self.c.get(f"/es/entry/{e['id']}").status_code, 200)
+
+
+class TranslationParityTests(unittest.TestCase):
+    def test_ui_labels_complete(self):
+        import i18n_guides
+        for lang, labels in i18n_guides.UI.items():
+            self.assertEqual(set(labels), set(i18n_guides.UI_EN), lang)
+            self.assertIn("{n}", labels["more"], lang)
+
+    def test_guides_match_english_shape(self):
+        import delivery
+        for kind in delivery.GUIDES:
+            en = delivery.guide_for(kind, "en")
+            for lang in ("es", "ar", "hi", "pt"):
+                g = delivery.guide_for(kind, lang)
+                self.assertTrue(g["translated"], (kind, lang))
+                self.assertEqual(len(g["steps"]), len(en["steps"]), (kind, lang))
+                self.assertEqual(len(g["accessibility"]), len(en["accessibility"]), (kind, lang))
+                self.assertEqual(len(g["safety"]), len(en["safety"]), (kind, lang))
+                self.assertEqual(list(g["by_level"]), list(en["by_level"]))
+                for lvl in en["by_level"]:
+                    self.assertEqual(len(g["by_level"][lvl]), len(en["by_level"][lvl]), (kind, lang, lvl))
+
+    def test_unknown_language_falls_back_to_english(self):
+        import delivery
+        g = delivery.guide_for("video", "xx")
+        self.assertFalse(g["translated"])
+        self.assertEqual(g["title"], delivery.GUIDES["video"]["title"])
+
+    def test_howto_pages_in_every_language(self):
+        c = app.test_client()
+        for lang in LANGS:
+            for kind in ("video", "repo", "article", "document"):
+                html = c.get(f"/{lang}/howto/{kind}").get_data(as_text=True)
+                self.assertIn(f'lang="{lang}"', html)
+        self.assertIn("AI", c.get("/es/howto/video").get_data(as_text=True))
+
+
 class GuideTests(unittest.TestCase):
     def setUp(self):
         import os

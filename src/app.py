@@ -8,6 +8,7 @@ from flask import Flask, abort, redirect, render_template, request, session, url
 import delivery
 import gate
 import guide
+import i18n_guides
 import store
 
 load_dotenv()
@@ -40,6 +41,9 @@ UI = {
 KIDS_LABEL = {"en": "For kids", "es": "Para niños", "ar": "للأطفال", "hi": "बच्चों के लिए", "pt": "Para crianças"}
 for _code, _label in KIDS_LABEL.items():
     UI[_code].setdefault("kids", _label)
+UI["en"].update(i18n_guides.UI_EN)
+for _code, _extra in i18n_guides.UI.items():
+    UI[_code].update(_extra)
 
 
 def is_adult():
@@ -98,6 +102,16 @@ def select(lang, side, level, q, age=None, topic=None):
     return items
 
 
+def lesson_for(e, lang):
+    """Lesson text for a hosted entry, rendered to safe HTML. None for external links."""
+    if e["delivery"] != "hostable":
+        return None
+    found = store.lesson(e["id"], lang)
+    if not found:
+        return None
+    return {**found, "html": store.render_markdown(found["markdown"])}
+
+
 @app.route("/<lang>/entry/<entry_id>")
 def entry_page(lang, entry_id):
     e = store.get(entry_id)
@@ -106,7 +120,8 @@ def entry_page(lang, entry_id):
     title, fb_title = store.text(e, "title", lang)
     desc, fb_desc = store.text(e, "desc", lang)
     return render_template("entry.html", e=e, title=title, desc=desc, fell_back=fb_title or fb_desc,
-                           guide=delivery.guide_for(e["kind"]),
+                           guide=delivery.guide_for(e["kind"], lang),
+                           lesson=lesson_for(e, lang),
                            is_ai=lang in e.get("ai_translated", []), **ctx(lang))
 
 
@@ -122,7 +137,7 @@ def catalogue(lang):
 
 @app.route("/<lang>/howto/<kind>")
 def howto(lang, kind):
-    g = delivery.guide_for(kind)
+    g = delivery.guide_for(kind, lang)
     if lang not in LANGS or g is None:
         abort(404)
     return render_template("howto.html", g=g, kind=kind, kinds=delivery.GUIDES, **ctx(lang))

@@ -6,13 +6,29 @@
     {% if is_ai %}<p class="text-sm text-slate-600">AI-translated. Check the original.</p>{% endif %}
     <p class="my-2">{{ desc }}</p>
     <ul class="text-sm space-y-1 my-4">
-      <li>{{ e.level }} · {{ e.age_group }} · {{ e.topic }}</li>
+      <li>{{ e.level }} · {{ e.age_group }} · {{ e.topic }} · {{ ui['kind_' ~ e.kind] }}</li>
       {% if e.tag %}<li>{{ e.tag }}</li>{% endif %}
       <li>{{ ui.source }}: <a class="underline" href="{{ e.source }}" rel="noopener">{{ e.source.split('github.com/')[1] }}</a></li>
       <li>{{ ui.license }}: {{ e.license }}</li>
       {% if e.safety != 'kid-safe' %}<li>Ask a grown-up before you open this link.</li>{% endif %}
     </ul>
-    <p class="text-sm my-2"><strong>{{ 'On this site' if e.delivery == 'hostable' else 'On another site' }}.</strong> {{ e.delivery_reason }}</p>
+    <p class="text-sm my-2"><strong>{{ ui.on_site if e.delivery == 'hostable' else ui.on_other }}.</strong>
+      {{ ui.reason_hostable if e.delivery == 'hostable' else ui.reason_external }}</p>
+
+    {% if lesson %}
+      <section class="my-6" aria-labelledby="lesson-h">
+        <h2 id="lesson-h" class="text-xl font-semibold">{{ ui.lesson_text }}</h2>
+        <p class="text-sm text-slate-600">{{ ui.lesson_for_adult }}</p>
+        {% if lesson.fallback %}<p class="text-sm text-slate-600">{{ ui.lesson_fallback }}</p>
+        {% elif lesson.ai %}<p class="text-sm text-slate-600">{{ ui.lesson_ai }}</p>
+        {% elif lesson.lang != 'en' %}<p class="text-sm text-slate-600">{{ ui.lesson_human }}</p>{% endif %}
+        <p class="text-sm text-slate-600">{{ ui.lesson_images }}</p>
+        <div class="lesson space-y-3 mt-4" lang="{{ lesson.lang }}" dir="{{ 'rtl' if lesson.lang in ['ar'] else 'ltr' }}">
+          {{ lesson.html | safe }}
+        </div>
+      </section>
+    {% endif %}
+
     {% if e.attribution %}<p class="text-xs text-slate-600">{{ e.attribution }}</p>{% endif %}
     <a class="underline font-medium" href="{{ e.url }}" rel="noopener noreferrer">{{ e.url }}</a>
     {% if guide %}<p class="mt-4"><a class="underline" href="{{ url_for('howto', lang=lang, kind=e.kind) }}">{{ guide.title }}</a></p>{% endif %}

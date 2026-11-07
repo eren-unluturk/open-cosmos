@@ -65,3 +65,53 @@ def matches(entry, q, lang):
         text(entry, "desc", lang)[0], entry["desc"].get("en", ""),
     ]))
     return all(word in haystack for word in _fold(q).split())
+
+
+# ---------------------------------------------------------------------------
+# Lesson text (CS Unplugged, CC BY-SA 4.0). Only for entries with delivery == "hostable".
+#   lessons.json             written by scripts/fetch_lessons.py. English, plus the project's own
+#                            human translations (Spanish) where they exist.
+#   lessons_translated.json  AI translations we added, {entry_id: {lang: markdown}}.
+# ---------------------------------------------------------------------------
+_lesson_text = None
+_lesson_ai = None
+_md = None
+
+
+def _load_lesson_files():
+    global _lesson_text, _lesson_ai
+    if _lesson_text is None:
+        def read(name):
+            p = DATA / name
+            return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+        _lesson_text = {k: v["body"] for k, v in read("lessons.json").items()}
+        _lesson_ai = read("lessons_translated.json")
+
+
+def lesson(entry_id, lang):
+    """Lesson text for an entry, or None. Picks the human translation, then the AI one, then English.
+    Returns {"markdown", "lang", "ai", "fallback"}."""
+    _load_lesson_files()
+    human = _lesson_text.get(entry_id)
+    if not human:
+        return None
+    if lang in human:
+        return {"markdown": human[lang], "lang": lang, "ai": False, "fallback": False}
+    ai = _lesson_ai.get(entry_id, {})
+    if lang in ai:
+        return {"markdown": ai[lang], "lang": lang, "ai": True, "fallback": False}
+    return {"markdown": human["en"], "lang": "en", "ai": False, "fallback": lang != "en"}
+
+
+def render_markdown(md):
+    """Markdown to safe HTML. Raw HTML in the source is escaped; unsafe link schemes are dropped."""
+    global _md
+    if _md is None:
+        from markdown_it import MarkdownIt
+        _md = MarkdownIt("commonmark", {"html": False, "linkify": False})
+    tokens = _md.parse(md)
+    for block in tokens:
+        for tok in block.children or []:
+            if tok.type == "link_open":
+                tok.attrSet("rel", "noopener noreferrer")
+    return _md.renderer.render(tokens, _md.options, {})

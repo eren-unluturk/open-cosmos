@@ -21,6 +21,8 @@ Track details come at opening remarks (Sat 12:30 PM). Judging criteria: _TBD —
 2. **A level-based path** (Beginner / Intermediate / Advanced) that sequences existing repo material so newcomers know where to start.
 3. **Clear sourcing**: every lesson links to the original repo, author, and license.
 
+**Who it's for (details in `docs/PITCH.md`):** (1) a student who needs tutoring and finds GitHub repos unapproachable, and (2) international students who struggle with English-only resources.
+
 **Why it matters:** repos are free but hard to approach and mostly English-only. We lower both barriers.
 
 ## Two sides

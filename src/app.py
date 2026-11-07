@@ -1,6 +1,8 @@
 """Flask app. Run: flask --app src/app run --debug"""
 import os
 import secrets
+import sys
+from pathlib import Path
 
 from dotenv import load_dotenv
 from flask import Flask, abort, redirect, render_template, request, session, url_for
@@ -8,7 +10,13 @@ from flask import Flask, abort, redirect, render_template, request, session, url
 import delivery
 import gate
 import guide
+import i18n_guides
+import i18n_lessons
 import store
+
+# The data lead owns scripts/guide_helpers.py (pure Python). We import it as is.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
+import guide_helpers  # noqa: E402
 
 load_dotenv()
 app = Flask(__name__)
@@ -40,6 +48,12 @@ UI = {
 KIDS_LABEL = {"en": "For kids", "es": "Para niños", "ar": "للأطفال", "hi": "बच्चों के लिए", "pt": "Para crianças"}
 for _code, _label in KIDS_LABEL.items():
     UI[_code].setdefault("kids", _label)
+UI["en"].update(i18n_guides.UI_EN)
+UI["en"].update(i18n_lessons.UI_EN)
+for _code, _extra in i18n_guides.UI.items():
+    UI[_code].update(_extra)
+for _code, _extra in i18n_lessons.UI.items():
+    UI[_code].update(_extra)
 
 
 def is_adult():
@@ -98,6 +112,44 @@ def select(lang, side, level, q, age=None, topic=None):
     return items
 
 
+def tx(value, lang):
+    """Text from a {"en": ..., "es": ...} dict. Returns (text, fell_back_to_english)."""
+    if not isinstance(value, dict):
+        return value, False
+    if value.get(lang):
+        return value[lang], False
+    return value.get("en", ""), lang != "en"
+
+
+def localize_slides(slides, entry, age, lang):
+    """Guide slides with text picked for lang and {placeholders} filled. Also says if English was used."""
+    timeline = guide_helpers.build_timeline(entry, age)
+    english = False
+
+    def pick(value):
+        nonlocal english
+        text, fell = tx(value, lang)
+        english = english or fell
+        return guide_helpers.fill(text, entry, age, lang)
+
+    out = []
+    for s in slides:
+        item = {"type": s["type"], "title": pick(s["title"]), "estimate": bool(s.get("estimate")),
+                "leaving_site": bool(s.get("leaving_site")), "attribution": bool(s.get("attribution"))}
+        if s.get("body"):
+            item["body"] = pick(s["body"])
+        if s.get("steps"):
+            item["steps"] = [pick(x) for x in s["steps"]]
+        if s.get("adult_note"):
+            item["adult_note"] = pick(s["adult_note"])
+        if s.get("timeline"):
+            item["timeline"] = [{"when": pick(x["when"]), "goal": pick(x["goal"]),
+                                 "minutes": timeline["minutes"] if x["minutes"] == "{minutes}" else x["minutes"]}
+                                for x in s["timeline"]]
+        out.append(item)
+    return out, english, timeline
+
+
 @app.route("/<lang>/entry/<entry_id>")
 def entry_page(lang, entry_id):
     e = store.get(entry_id)
@@ -105,10 +157,53 @@ def entry_page(lang, entry_id):
         abort(404)
     title, fb_title = store.text(e, "title", lang)
     desc, fb_desc = store.text(e, "desc", lang)
+    age = request.args.get("age")
+    age = age if age in guide_helpers.AGES else None
+    resolved = guide_helpers.guide_for(e, store.guides(), store.lessons())
+    slides, english_only, timeline = localize_slides(resolved["slides"], e, age, lang)
+    visible_entries = [x for x in store.entries() if x.get("safety") == "kid-safe"]  # never the grown-up tier
+    related = guide_helpers.related_entries(e, visible_entries, age=age)
     return render_template("entry.html", e=e, title=title, desc=desc, fell_back=fb_title or fb_desc,
-                           guide=delivery.guide_for(e["kind"]),
+                           guide=delivery.guide_for(e["kind"], lang), slides=slides, timeline=timeline,
+                           guide_english_only=english_only and lang != "en", related=related, age=age,
+                           lesson=store.lesson_for_entry(e["id"]) if e.get("reuse") == "open-content" else None,
                            is_ai=lang in e.get("ai_translated", []), **ctx(lang))
 
+
+@app.route("/<lang>/lessons")
+def lessons_page(lang):
+    if lang not in LANGS:
+        abort(404)
+    _, _, age, _ = filters()
+    items = []
+    for ls in store.lessons():
+        entry = store.get(ls["entry_id"])
+        if entry is None or entry.get("reuse") != "open-content" or not gate.visible(entry, is_adult()):
+            continue
+        if age and not guide.age_fits(ls, age):
+            continue
+        items.append(ls)
+    order = {a: i for i, a in enumerate(guide.AGE_ORDER)}
+    items.sort(key=lambda x: (order.get(x["age_group"], 9), x["title"]["en"].lower()))
+    return render_template("lessons.html", lessons=items, age=age, ages=guide.AGES, **ctx(lang))
+
+
+@app.route("/<lang>/lesson/<lesson_id>")
+def lesson_page(lang, lesson_id):
+    ls = store.lesson_by_id(lesson_id)
+    entry = store.get(ls["entry_id"]) if ls else None
+    # Only open-content entries have lessons, and only visible entries are shown.
+    if lang not in LANGS or ls is None or entry is None or entry.get("reuse") != "open-content" \
+            or not gate.visible(entry, is_adult()):
+        abort(404)
+    english = False
+    def pick(field):
+        nonlocal english
+        value, fell = tx(ls.get(field), lang)
+        english = english or fell
+        return value
+    view = {f: pick(f) for f in ("title", "summary", "objectives", "materials", "steps", "talk_about", "grown_up_note")}
+    return render_template("lesson.html", ls=ls, v=view, entry=entry, english_only=english and lang != "en", **ctx(lang))
 
 @app.route("/<lang>/catalogue")
 def catalogue(lang):
@@ -122,7 +217,7 @@ def catalogue(lang):
 
 @app.route("/<lang>/howto/<kind>")
 def howto(lang, kind):
-    g = delivery.guide_for(kind)
+    g = delivery.guide_for(kind, lang)
     if lang not in LANGS or g is None:
         abort(404)
     return render_template("howto.html", g=g, kind=kind, kinds=delivery.GUIDES, **ctx(lang))
@@ -179,7 +274,8 @@ def guide_page(lang):
     if age in guide.AGES and goal in guide.GOALS and level in LEVELS:
         entries = gate.filter_visible(store.entries())
         path = guide.build_path(entries, age, goal, level)
-    return render_template("guide.html", path=path, ages=guide.AGES, goals=list(guide.GOALS),
+    short = path is not None and len(path) < guide.PATH_LEN  # tell the child more is coming
+    return render_template("guide.html", path=path, short=short, ages=guide.AGES, goals=list(guide.GOALS),
                            age=age, goal=goal, level=level, **ctx(lang))
 
 

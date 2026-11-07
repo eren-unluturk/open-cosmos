@@ -9,6 +9,25 @@ SIDES = ("learn", "build", "kids")
 
 _entries = None
 _by_id = None
+_guides = None
+_lessons = None
+_lesson_by_id = None
+_lesson_by_entry = None
+
+
+def _read_json(name, default):
+    path = DATA / name
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
+
+
+def _load_lessons():
+    """guides.json and lessons.json are written by the data lead (scripts/build_guides.py, fetch_lessons.py)."""
+    global _guides, _lessons, _lesson_by_id, _lesson_by_entry
+    if _lessons is None:
+        _guides = _read_json("guides.json", {"fallback": {}, "groups": {}})
+        _lessons = _read_json("lessons.json", [])
+        _lesson_by_id = {x["id"]: x for x in _lessons}
+        _lesson_by_entry = {x["entry_id"]: x for x in _lessons}
 
 
 def _read(side):
@@ -27,6 +46,10 @@ def _load():
     if _entries is None:
         _entries = {side: _read(side) for side in SIDES}
         _by_id = {e["id"]: e for es in _entries.values() for e in es}
+        _load_lessons()
+        for e in _by_id.values():  # which entries have a lesson on this site
+            lesson = _lesson_by_entry.get(e["id"])
+            e["lesson_id"] = lesson["id"] if lesson else None
 
 
 def entries(side=None):
@@ -65,3 +88,25 @@ def matches(entry, q, lang):
         text(entry, "desc", lang)[0], entry["desc"].get("en", ""),
     ]))
     return all(word in haystack for word in _fold(q).split())
+
+
+def guides():
+    """The guides.json document: {"fallback": {...}, "groups": {...}}."""
+    _load_lessons()
+    return _guides
+
+
+def lessons():
+    """All adapted lessons (a list, in file order)."""
+    _load_lessons()
+    return _lessons
+
+
+def lesson_by_id(lesson_id):
+    _load_lessons()
+    return _lesson_by_id.get(lesson_id)
+
+
+def lesson_for_entry(entry_id):
+    _load_lessons()
+    return _lesson_by_entry.get(entry_id)

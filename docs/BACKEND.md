@@ -119,3 +119,11 @@ Rule lives in `src/delivery.py`. `store.py` adds `delivery`, `kind` and `attribu
 Hostable lessons have no body text yet. The entry page links to the original until the body is added. Rule for adding one: copy only markdown under `csunplugged/topics/content/` and images under `csunplugged/static/img/`, and show `attribution` on the page.
 
 Routes: `/<lang>/catalogue` (two sections, grouped Beginner, Intermediate, Advanced), `/<lang>/howto/<kind>` (steps, accessibility tips, per-level tips, safety), `/api/catalogue`. The safety gate and the age, topic and level filters apply to all of them.
+
+## Guides and lessons (docs/GUIDE_SPEC.md)
+- `store.guides()`, `store.lessons()`, `store.lesson_by_id()`, `store.lesson_for_entry()` load `guides.json` and `lessons.json` once. Every entry also gets `lesson_id` (or `None`) at load time.
+- `/<lang>/entry/<id>` now calls Eren's `scripts/guide_helpers.py` (`guide_for`, `build_timeline`, `related_entries`, `fill`). It passes localized slides to the template as a stacked list; Isabella turns that into the slide viewer. `?age=` sets the age for the timeline. "Explore next" only lists `kid-safe` entries, even after the grown-up gate.
+- `/<lang>/lessons` (filter `?age=`) and `/<lang>/lesson/<id>`. A lesson is served only if its entry is `reuse == "open-content"` and visible through the gate. Every lesson page has the CC BY-SA credit box (`attribution`, `source_url`, `license_url`, `changes_made`).
+- Missing languages fall back to English per field, and the page says "This text is in English for now."
+- Guide path (`src/guide.py`): ages 5-10 get Beginner only. A short path is shown as is, with a "more is coming" line, never padded with unsafe entries.
+- Labels for these pages are in `src/i18n_lessons.py` (en, es, ar, hi, pt; AI-written, not native-checked). How-to guides and catalogue labels are in `src/i18n_guides.py`.

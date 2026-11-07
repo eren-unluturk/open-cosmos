@@ -6,15 +6,67 @@
     {% if is_ai %}<p class="text-sm text-slate-600">AI-translated. Check the original.</p>{% endif %}
     <p class="my-2">{{ desc }}</p>
     <ul class="text-sm space-y-1 my-4">
-      <li>{{ e.level }} · {{ e.age_group }} · {{ e.topic }}</li>
+      <li>{{ e.level }} · {{ e.age_group }} · {{ e.topic }} · {{ ui['kind_' ~ e.kind] }}</li>
       {% if e.tag %}<li>{{ e.tag }}</li>{% endif %}
       <li>{{ ui.source }}: <a class="underline" href="{{ e.source }}" rel="noopener">{{ e.source.split('github.com/')[1] }}</a></li>
       <li>{{ ui.license }}: {{ e.license }}</li>
       {% if e.safety != 'kid-safe' %}<li>Ask a grown-up before you open this link.</li>{% endif %}
     </ul>
-    <p class="text-sm my-2"><strong>{{ 'On this site' if e.delivery == 'hostable' else 'On another site' }}.</strong> {{ e.delivery_reason }}</p>
+    <p class="text-sm my-2"><strong>{{ ui.on_site if e.lesson_id else ui.on_other }}.</strong>
+      {{ ui.reason_hostable if e.delivery == 'hostable' else ui.reason_external }}</p>
+    {% if e.lesson_id %}
+      <p class="my-2"><a class="underline font-medium" href="{{ url_for('lesson_page', lang=lang, lesson_id=e.lesson_id) }}">{{ ui.go_lesson }}</a></p>
+    {% endif %}
+
+    {% if slides %}
+      <section class="my-6" aria-labelledby="guide-h">
+        <h2 id="guide-h" class="text-xl font-semibold">{{ ui.guide }}</h2>
+        <p class="text-sm text-slate-600">{{ ui.guide_overview }}</p>
+        {% if guide_english_only %}<p class="text-sm text-slate-600">{{ ui.english_only }}</p>{% endif %}
+        {# One slide after another. The frontend can turn this list into a slide viewer. #}
+        <ol class="slides space-y-4 mt-3">
+          {% for s in slides %}
+            <li class="slide border rounded p-3" data-slide-type="{{ s.type }}" aria-label="{{ ui.slide_n.format(i=loop.index, n=loop.length) }}">
+              <h3 class="font-semibold">{{ s.title }}</h3>
+              {% if s.body %}<p>{{ s.body }}</p>{% endif %}
+              {% if s.steps %}<ol class="list-decimal ps-6">{% for step in s.steps %}<li>{{ step }}</li>{% endfor %}</ol>{% endif %}
+              {% if s.timeline %}
+                <table class="text-sm mt-2">
+                  <caption class="text-start font-medium">{{ ui.timeline_title }} ({{ ui.estimate }})</caption>
+                  <tbody>
+                    {% for row in s.timeline %}
+                      <tr><th scope="row" class="pe-3 text-start">{{ row.when }}</th><td class="pe-3">{{ row.minutes }} min</td><td>{{ row.goal }}</td></tr>
+                    {% endfor %}
+                  </tbody>
+                </table>
+              {% elif s.estimate %}<p class="text-xs text-slate-600">({{ ui.estimate }})</p>{% endif %}
+              {% if s.leaving_site %}<p class="mt-2"><strong>{{ ui.leaving_title }}.</strong> {{ ui.leaving_text }}</p>{% endif %}
+              {% if s.adult_note %}<p class="text-sm mt-2">{{ s.adult_note }}</p>{% endif %}
+              {% if s.type == 'go_external' %}
+                <p class="mt-2"><a class="underline font-medium" href="{{ e.url }}" target="_blank" rel="noopener noreferrer">{{ ui.go_external }}</a></p>
+              {% elif s.type == 'go_lesson' and e.lesson_id %}
+                <p class="mt-2"><a class="underline font-medium" href="{{ url_for('lesson_page', lang=lang, lesson_id=e.lesson_id) }}">{{ ui.go_lesson }}</a></p>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ol>
+      </section>
+    {% endif %}
+
+    {% if related %}
+      <section class="my-6" aria-labelledby="related-h">
+        <h2 id="related-h" class="text-xl font-semibold">{{ ui.related_title }}</h2>
+        <ul class="space-y-1 mt-2">
+          {% for r in related %}
+            <li><a class="underline" href="{{ url_for('entry_page', lang=lang, entry_id=r.id) }}">{{ r.title.get(lang) or r.title.en }}</a>
+              <span class="text-xs border rounded px-1">{{ r.level }}</span></li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+
     {% if e.attribution %}<p class="text-xs text-slate-600">{{ e.attribution }}</p>{% endif %}
-    <a class="underline font-medium" href="{{ e.url }}" rel="noopener noreferrer">{{ e.url }}</a>
+    {% if not e.lesson_id %}<a class="underline font-medium" href="{{ e.url }}" rel="noopener noreferrer">{{ e.url }}</a>{% endif %}
     {% if guide %}<p class="mt-4"><a class="underline" href="{{ url_for('howto', lang=lang, kind=e.kind) }}">{{ guide.title }}</a></p>{% endif %}
   </article>
 {% endblock %}

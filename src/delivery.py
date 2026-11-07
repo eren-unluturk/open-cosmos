@@ -107,7 +107,7 @@ GUIDES = {
             "Open the link. It opens the video on the other site. Check with a grown-up if you are a child.",
             "Turn on captions: press C, or click the CC button. For another language open Settings, then Subtitles, then Auto-translate.",
             "Slow it down or speed it up: Settings, then Playback speed. Use 0.75 if the speaker is fast.",
-            "Pause often. Use K or the space bar to pause, and J or the left arrow to go back 5 seconds.",
+            "Pause often. Use K or the space bar to pause, the left arrow to go back 5 seconds, and J to go back 10 seconds.",
             "Do the step on your own computer right after you watch it. Then play the next part.",
             "Skip the comments section. It can have rude or unsafe messages, and it is not part of the lesson.",
         ],
@@ -179,5 +179,18 @@ for _guide in GUIDES.values():
     ]
 
 
-def guide_for(kind):
-    return GUIDES.get(kind)
+def guide_for(kind, lang="en"):
+    """The guide for a kind, in lang when we have a translation, else English.
+    The result has "translated": True when the text is an AI translation."""
+    en = GUIDES.get(kind)
+    if en is None:
+        return None
+    if lang != "en":
+        import i18n_guides
+        t = i18n_guides.GUIDES.get(lang)
+        if t and kind in t["kinds"]:
+            k = t["kinds"][kind]
+            return {"title": k["title"], "summary": k["summary"], "steps": k["steps"],
+                    "accessibility": k["accessibility"] + t["access_common"],
+                    "by_level": t["levels"], "safety": t["safety"], "translated": True}
+    return {**en, "translated": False}

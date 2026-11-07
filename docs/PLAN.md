@@ -88,8 +88,8 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - [x] Translation approach: titles/descriptions translated by hand by Claude Code (no paid API), code and technical terms kept in English, labeled `ai_translated`
 - [x] 4 languages started (Spanish, Arabic, Hindi, Portuguese) for 74 entries
 - [x] Guide page skeleton (`src/guide.py`, done) — needs kid-friendly data + tagging to shine
-- [x] Kid-friendly source added: CS Unplugged (`scripts/fetch_kids.py` -> `src/data/kids.json`, 33 entries, CC BY-SA 4.0)
-- [x] First translations done: 74 kid-safe Beginner + CS Unplugged entries in es/ar/hi/pt (hand-written, labeled `ai_translated`)
+- [x] Kid-friendly source added: CS Unplugged (`scripts/fetch_kids.py` -> `src/data/kids.json`, 57 entries: 7 units, 26 lessons, 5 programming-challenge pages, 19 classroom integration activities; CC BY-SA 4.0)
+- [x] First translations done: 74 kid-safe Beginner + the first 33 CS Unplugged entries in es/ar/hi/pt (hand-written, labeled `ai_translated`); the 24 newer CS Unplugged entries and all other kid-safe entries are in `docs/TRANSLATE_QUEUE.md`
 - [ ] Translate the remaining kid-safe entries (Intermediate) and check translations with native speakers
 - [ ] Lesson page with language switcher + level tag
 - [ ] Level path: Beginner -> Intermediate -> Advanced ordering of lessons
@@ -142,15 +142,30 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - **Vetted hosts:** first tier only: aosabook.org, scratchapixel.com, fullstackpython.com, nand2tetris.org, developer.ibm.com, swtch.com (plus GitHub, MDN, Khan Academy, etc. already in `KNOWN_OK_HOSTS`). Medium family, paywalled, ad-heavy and community sites stay unvetted.
 - **CS Unplugged added** (`uccser/cs-unplugged`): content CC BY-SA 4.0 (`LICENCE-CONTENT`), code MIT (`LICENCE`), verified from the repo. Only titles, a short description we wrote, the repo's age group and a link to the lesson page are stored; no lesson text or images. Kept in `kids.json`, separate from the CC0 files. Translations of it must stay CC BY-SA 4.0 with attribution and a "changes were made" note (see `docs/SOURCES.md`).
 - **Title keywords can raise safety, too:** Slack/Telegram/Twitter/etc. in a title now add `social-platform` (found when a Slack-bot tutorial slipped through as kid-safe).
+- **CS Unplugged activities added** (Nov 7): programming-challenge pages and classroom integration activities, using the same rules (own short description, repo-stated age, link only). Only 5 lessons really have programming challenges; the rest of the site's `/programming/` pages are empty, so they are skipped. Integrations without a stated age are skipped.
 - **Heuristic caveat:** for the two CC0 sources, `age_group` "11-13" means "Beginner-level web/games/general material", not "written for kids". Only CS Unplugged is actually kid-targeted.
 
 - **Human safety spot-check.** `docs/SAFETY_REVIEW.md` lists 30 random kid-safe, 15 random ask-a-grown-up, all 15 adult-only and 10 youngest/rarest kid-safe entries. Eren reviewed all rows: every one was `ok` (no loosening or tightening needed). Corrections would go in `scripts/cache/safety_overrides.json` (`{"<id>": {"safety": "<tier>", "reason": "..."}}`); `categorize.py` applies it LAST and it may loosen or tighten. The file is currently empty (`{}`). A sample of about 70 of 1,068 entries is a spot-check, not a full review.
+
+## Coverage gaps (for Tobi; run `python scripts/coverage.py`)
+26 of 36 age/goal/level combinations have fewer than 6 kid-safe entries. What is real and what is short:
+- **Ages 5-7:** only `general` Beginner has real content (24 entries). Games, art and web have 0, and there is no Intermediate or Advanced.
+- **Ages 8-10:** `general` Beginner 60; art Beginner 5; games 1; web 0; no Intermediate or Advanced.
+- **Ages 11-13:** games, art and web have Beginner and Intermediate (6-9 each); Advanced has 0 everywhere. General is well covered.
+- **Rules so the guide never shows an empty or unsafe path:**
+  1. Use only `safety == "kid-safe"` entries with `age_group` <= the chosen age.
+  2. **Ages 5-10: show only Beginner and only the `general` topic**, whatever goal was chosen (plus the goal's own entries if there are any, e.g. 8-10 art). Don't offer Intermediate/Advanced at these ages.
+  3. Backfill A: if the goal has fewer than 6, add `topic == "general"` entries at the same level.
+  4. Backfill B: if still short, add entries of the next lower level at the same age.
+  5. If a path still ends up under 6, show what exists plus a note ("more coming"), never an empty list, and never an entry that is not `kid-safe`.
+  6. Say plainly in the UI that CS Unplugged lessons are for an adult to do with a child.
+- These gaps are real (no more open sources are planned), so the pitch should say "growing library" rather than imply full coverage.
 
 ## Ask the team (changes needed in files Eren doesn't own)
 - **Tobi (`src/app.py`, `src/guide.py`):**
   - Load `kids.json` alongside `learn.json` and `build.json`.
   - Safety gate: hide `safety != "kid-safe"` by default; a session-only "I'm a grown-up" confirmation reveals `ask-a-grown-up`; `adult-only` is never shown. Filter by `safety`, `topic` and `age_group`.
-  - Guide: `candidates()` should use only `kid-safe` entries whose `age_group` is <= the chosen age (teen+ never shown to kids) and match the goal's `topic`. **Coverage today:** 27 of 36 age/goal/level combinations have fewer than 6 matching entries (run `python scripts/coverage.py`). Two simple rules fix all of them (simulated against the current data): (A) if the goal has fewer than 6 matches, backfill with `topic == "general"` entries at the same level; (B) if still short, backfill with the next lower level at the same age. For ages 5-10 you may also want to offer only Beginner.
+  - Guide: `candidates()` should use only `kid-safe` entries whose `age_group` is <= the chosen age (teen+ never shown to kids) and match the goal's `topic`. **Coverage today:** 26 of 36 age/goal/level combinations have fewer than 6 matching entries (run `python scripts/coverage.py`). Two simple rules fix all of them (simulated against the current data): (A) if the goal has fewer than 6 matches, backfill with `topic == "general"` entries at the same level; (B) if still short, backfill with the next lower level at the same age. For ages 5-10 you may also want to offer only Beginner.
   - Note `topic` also has systems/security/other values.
   - `src/guide.py` still has an optional Claude path (`anthropic`, `ANTHROPIC_API_KEY`). We have no key, so the rule-based path above is the real one: make it the default, and drop the AI path and `anthropic` from `requirements.txt` if nobody will use it (also keeps the deploy simple).
 - **Isabella (`src/templates/`):**

@@ -106,3 +106,16 @@ Add response headers: `X-Content-Type-Options: nosniff`, a basic CSP (Tailwind C
 - Does Isabella want `/api/entries`, or are server-rendered pages enough?
 - Is `kids` its own tab, or merged into Learn? (License text differs, so a separate label is safer.)
 - Which model name is valid for the guide? Check before demo.
+
+## Lesson catalogue (hosted vs external)
+Rule lives in `src/delivery.py`. `store.py` adds `delivery`, `kind` and `attribution` to every entry at load time. Nothing is written to the JSON files.
+
+| delivery | What | Why |
+|----------|------|-----|
+| `hostable` | CS Unplugged (`kids.json`, CC BY-SA 4.0) | License lets us show the lesson on our pages with credit, license link, a "changes were made" note, and the same license. |
+| `external` | `learn.json`, `build.json` | CC0 covers only the list. The linked pages belong to their owners, so we link out. |
+
+`kind`: hostable = unit, lesson, challenge, activity. External = video, repo, article, document.
+Hostable lessons have no body text yet. The entry page links to the original until the body is added. Rule for adding one: copy only markdown under `csunplugged/topics/content/` and images under `csunplugged/static/img/`, and show `attribution` on the page.
+
+Routes: `/<lang>/catalogue` (two sections, grouped Beginner, Intermediate, Advanced), `/<lang>/howto/<kind>` (steps, accessibility tips, per-level tips, safety), `/api/catalogue`. The safety gate and the age, topic and level filters apply to all of them.

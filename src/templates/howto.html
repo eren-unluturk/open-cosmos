@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+  <article>
+    <h1 class="text-2xl font-bold my-4">{{ g.title }}</h1>
+    {% if lang != 'en' %}<p class="text-sm text-slate-600">This guide is in English for now.</p>{% endif %}
+    <p>{{ g.summary }}</p>
+
+    <h2 class="text-xl font-semibold mt-6">Steps</h2>
+    <ol class="list-decimal ps-6 space-y-2 mt-2">{% for s in g.steps %}<li>{{ s }}</li>{% endfor %}</ol>
+
+    <h2 class="text-xl font-semibold mt-6">Make it work for you</h2>
+    <ul class="list-disc ps-6 space-y-2 mt-2">{% for s in g.accessibility %}<li>{{ s }}</li>{% endfor %}</ul>
+
+    <h2 class="text-xl font-semibold mt-6">By level</h2>
+    {% for lvl, tips in g.by_level.items() %}
+      <h3 class="font-semibold mt-3">{{ lvl }}</h3>
+      <ul class="list-disc ps-6 space-y-1">{% for s in tips %}<li>{{ s }}</li>{% endfor %}</ul>
+    {% endfor %}
+
+    <h2 class="text-xl font-semibold mt-6">Stay safe</h2>
+    <ul class="list-disc ps-6 space-y-1 mt-2">{% for s in g.safety %}<li>{{ s }}</li>{% endfor %}</ul>
+
+    <p class="mt-6 text-sm">Other guides:
+      {% for k in kinds %}{% if k != kind %}<a class="underline" href="{{ url_for('howto', lang=lang, kind=k) }}">{{ k }}</a>{{ ' ' }}{% endif %}{% endfor %}
+    </p>
+  </article>
+{% endblock %}

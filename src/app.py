@@ -5,6 +5,7 @@ import secrets
 from dotenv import load_dotenv
 from flask import Flask, abort, redirect, render_template, request, session, url_for
 
+import delivery
 import gate
 import guide
 import store
@@ -16,6 +17,7 @@ app.secret_key = os.environ.get("SECRET_KEY") or secrets.token_hex(32)
 app.config.update(SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE="Lax",
                   SESSION_COOKIE_SECURE=os.environ.get("COOKIE_SECURE") == "1")  # on in production (HTTPS)
 SIDES = store.SIDES
+TOPICS = ("games", "art", "web", "general", "systems", "security", "other")
 LANGS = {"en": "English", "es": "Español", "ar": "العربية", "hi": "हिन्दी", "pt": "Português"}
 RTL = {"ar"}
 LEVELS = ["Beginner", "Intermediate", "Advanced"]
@@ -46,7 +48,9 @@ def is_adult():
 
 @app.route("/")
 def index():
-    return redirect(url_for("home", lang="en"))
+    # Pick the best supported language from the browser, default English.
+    lang = request.accept_languages.best_match(list(LANGS)) or "en"
+    return redirect(url_for("home", lang=lang))
 
 
 @app.route("/<lang>/")
@@ -60,12 +64,13 @@ def home(lang):
 def listing(lang, side):
     if lang not in LANGS or side not in SIDES:
         abort(404)
-    level, q = filters()
-    items = select(lang, side, level, q)
+    level, q, age, topic = filters()
+    items = select(lang, side, level, q, age, topic)
     groups = {}
     for e in items:
         groups.setdefault(e["category"], []).append(e)
-    return render_template("listing.html", side=side, groups=groups, level=level, q=q, **ctx(lang))
+    return render_template("listing.html", side=side, groups=groups, level=level, q=q,
+                           age=age, topic=topic, **ctx(lang))
 
 
 def filters():
@@ -73,13 +78,21 @@ def filters():
     level = request.args.get("level")
     level = level if level in LEVELS else None
     q = (request.args.get("q") or "").strip()[:80]
-    return level, q
+    age = request.args.get("age")
+    age = age if age in guide.AGES else None
+    topic = request.args.get("topic")
+    topic = topic if topic in TOPICS else None
+    return level, q, age, topic
 
 
-def select(lang, side, level, q):
+def select(lang, side, level, q, age=None, topic=None):
     items = gate.filter_visible(store.entries(side), is_adult())
     if level:
         items = [e for e in items if e.get("level") == level]
+    if age:  # entries suited to this age or younger
+        items = [e for e in items if guide.age_fits(e, age)]
+    if topic:
+        items = [e for e in items if e.get("topic") == topic]
     if q:
         items = [e for e in items if store.matches(e, q, lang)]
     return items
@@ -93,7 +106,53 @@ def entry_page(lang, entry_id):
     title, fb_title = store.text(e, "title", lang)
     desc, fb_desc = store.text(e, "desc", lang)
     return render_template("entry.html", e=e, title=title, desc=desc, fell_back=fb_title or fb_desc,
+                           guide=delivery.guide_for(e["kind"]),
                            is_ai=lang in e.get("ai_translated", []), **ctx(lang))
+
+
+@app.route("/<lang>/catalogue")
+def catalogue(lang):
+    if lang not in LANGS:
+        abort(404)
+    level, q, age, topic = filters()
+    groups = split_catalogue(select(lang, None, level, q, age, topic))
+    return render_template("catalogue.html", groups=groups, level=level, q=q, age=age, topic=topic,
+                           kinds=delivery.GUIDES, **ctx(lang))
+
+
+@app.route("/<lang>/howto/<kind>")
+def howto(lang, kind):
+    g = delivery.guide_for(kind)
+    if lang not in LANGS or g is None:
+        abort(404)
+    return render_template("howto.html", g=g, kind=kind, kinds=delivery.GUIDES, **ctx(lang))
+
+
+def split_catalogue(items):
+    """{"hostable": {level: [...]}, "external": {level: [...]}}, easier levels first, empty levels dropped."""
+    out = {d: {l: [] for l in LEVELS} for d in ("hostable", "external")}
+    for e in items:
+        if e.get("level") in LEVELS:
+            out[e["delivery"]][e["level"]].append(e)
+    return {d: {l: es for l, es in by.items() if es} for d, by in out.items()}
+
+
+@app.get("/api/catalogue")
+def api_catalogue():
+    lang = request.args.get("lang", "en")
+    if lang not in LANGS:
+        abort(404)
+    level, q, age, topic = filters()
+    groups = split_catalogue(select(lang, None, level, q, age, topic))
+
+    def brief(e):
+        return {"id": e["id"], "side": e["side"], "kind": e["kind"], "level": e["level"],
+                "age_group": e.get("age_group"), "topic": e.get("topic"),
+                "title": store.text(e, "title", lang)[0], "url": e["url"], "license": e["license"]}
+
+    return {d: {"count": sum(len(es) for es in by.values()),
+                "levels": {l: [brief(e) for e in es] for l, es in by.items()}}
+            for d, by in groups.items()}
 
 
 @app.get("/api/entries")
@@ -102,8 +161,8 @@ def api_entries():
     side = request.args.get("side")
     if lang not in LANGS or (side and side not in SIDES):
         abort(404)
-    level, q = filters()
-    items = select(lang, side, level, q)
+    level, q, age, topic = filters()
+    items = select(lang, side, level, q, age, topic)
     return {"count": len(items), "entries": [
         {"id": e["id"], "side": e["side"], "title": store.text(e, "title", lang)[0],
          "desc": store.text(e, "desc", lang)[0], "level": e.get("level"), "age_group": e.get("age_group"),
@@ -137,6 +196,13 @@ def grownup():
     return redirect(nxt)
 
 
+@app.errorhandler(404)
+def not_found(_):
+    if request.path.startswith("/api/"):
+        return {"error": "not found"}, 404
+    return "Not found", 404
+
+
 @app.get("/healthz")
 def healthz():
     return {"ok": True}
@@ -152,7 +218,7 @@ def security_headers(resp):
 
 
 def ctx(lang):
-    return {"lang": lang, "langs": LANGS, "rtl": lang in RTL, "ui": UI[lang], "levels": LEVELS, "adult": is_adult()}
+    return {"lang": lang, "langs": LANGS, "rtl": lang in RTL, "ui": {**UI["en"], **UI[lang]}, "levels": LEVELS, "adult": is_adult()}
 
 
 if __name__ == "__main__":

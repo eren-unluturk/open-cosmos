@@ -24,7 +24,7 @@ MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5")
 PATH_LEN = 6
 
 
-def _age_fits(entry, age):
+def age_fits(entry, age):
     group = entry.get("age_group")
     return group in AGE_ORDER and AGE_ORDER.index(group) <= AGE_ORDER.index(age)
 
@@ -35,7 +35,7 @@ def candidates(entries, age, goal, level, limit=40):
     level_idx = LEVELS.index(level)
     ranked = []
     for e in entries:
-        if gate.tier(e) != gate.KID_SAFE or not _age_fits(e, age):
+        if gate.tier(e) != gate.KID_SAFE or not age_fits(e, age):
             continue
         if e.get("level") not in LEVELS or LEVELS.index(e["level"]) > level_idx:
             continue

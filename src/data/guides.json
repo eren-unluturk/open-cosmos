@@ -1990,6 +1990,1166 @@
         }
       ],
       "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Programming Languages": {
+      "id": "group-learn:programming-languages",
+      "kind": "group",
+      "title": {
+        "en": "Programming languages"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Programming Languages group, a long list of resources for learning particular programming languages. We only know each item's title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for anyone ready to learn a language. Most items are Intermediate, so some coding experience helps. The Beginner items are the best start, and it suits about age {age} and up."
+          },
+          "adult_note": {
+            "en": "Grown-ups: you may need to help install software. Please check the site first."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Pick a language you have heard of or are curious about."
+            },
+            {
+              "en": "Open the original site with a grown-up and read the first page."
+            },
+            {
+              "en": "Type in one tiny example and see what it does."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Read the first page and run one tiny example."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Work through the first few lessons."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Write a very short program of your own."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Fix one bug and show someone."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Miscellaneous": {
+      "id": "group-learn:miscellaneous",
+      "kind": "group",
+      "title": {
+        "en": "More resources"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Miscellaneous group, a mixed bag of resources that did not fit in the other groups. We only know the title, short description, topic and level from our list, so the best way to find out more is to look."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It might be for you if you like exploring. Items vary a lot in difficulty, so check the level ({level}) and ask a grown-up if you are unsure. It is marked for about age {age} and up."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this group is mixed, so some items are not for children. Please look first."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Read the description to see what the item is about."
+            },
+            {
+              "en": "Look at the original site with a grown-up before you start."
+            },
+            {
+              "en": "Stop if it feels too hard and pick something easier."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 20,
+              "goal": {
+                "en": "Look around and pick one thing to try."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Try the first part and note what you learned."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 40,
+              "goal": {
+                "en": "Try to make or change something small."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Tell someone about it."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Computer Science": {
+      "id": "group-learn:computer-science",
+      "kind": "group",
+      "title": {
+        "en": "Computer science"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Computer Science group, a list of resources about the ideas behind computing, like how algorithms and data work. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for curious people who want to know why computers work, not only how to use them. Many items are Advanced or Intermediate, so it suits about age {age} and up."
+          },
+          "adult_note": {
+            "en": "Grown-ups: some material is university level. A hard item is not a problem; just choose an easier one."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Read the description and see if the idea sounds interesting."
+            },
+            {
+              "en": "Open the original site with a grown-up and read the first section."
+            },
+            {
+              "en": "Draw or write the main idea in your own words."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Read the first section."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Take notes and try one example."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Explain the idea to someone."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Look for the idea in a program you know."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "build:Build your own Game": {
+      "id": "group-build:build-your-own-game",
+      "kind": "group",
+      "title": {
+        "en": "Build your own game"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Build your own Game group, a list of tutorials about making a game from the ground up. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for anyone who wants to make a game, not only play one. There are Beginner, Intermediate and Advanced items. It suits about age {age} and up, and a little programming experience helps."
+          },
+          "adult_note": {
+            "en": "Grown-ups: tutorials may need software installed. Please check before your child downloads anything."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Pick a game idea that looks small, like a simple arcade game."
+            },
+            {
+              "en": "Open the tutorial with a grown-up and read the first step."
+            },
+            {
+              "en": "Follow it step by step and run it often to see what changes."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Read the first step and set up what you need."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Get something moving on the screen."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Add a rule or score."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Change the look and play it with a friend."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "build:Uncategorized": {
+      "id": "group-build:uncategorized",
+      "kind": "group",
+      "title": {
+        "en": "Build-it tutorials"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Uncategorized build group, a collection of 'build it yourself' tutorials that did not fit a more specific group. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people who learn by making things. Most items are Intermediate, so some programming experience helps. It suits about age {age} and up."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at the tutorial before your child starts."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Read the description and the level."
+            },
+            {
+              "en": "Open the tutorial with a grown-up and check what you need to install."
+            },
+            {
+              "en": "Build the first small part and test it."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Read the tutorial and set up."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Build the first part."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Build the next part and fix problems."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Finish and change something to make it yours."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Media": {
+      "id": "group-learn:media",
+      "kind": "group",
+      "title": {
+        "en": "Pictures, sound and media"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Media group, a list of resources about images, icons, sound and other media for programs and websites. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people who like design, drawing or music and want to use them in their projects. It suits about age {age} and up, and the art-minded will like it."
+          },
+          "adult_note": {
+            "en": "Grown-ups: check the licenses of any pictures or sounds before sharing a project."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Pick a type of media you like, such as pictures or sound."
+            },
+            {
+              "en": "Open the site with a grown-up and look at examples."
+            },
+            {
+              "en": "Try to use one in a project you already have."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 20,
+              "goal": {
+                "en": "Browse and pick one you like."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Try it in a small project."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 40,
+              "goal": {
+                "en": "Make something that uses it."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Show your work to a friend."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Theory": {
+      "id": "group-learn:theory",
+      "kind": "group",
+      "title": {
+        "en": "Computer theory"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Theory group, a list of resources about the ideas and maths behind computing. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for curious people who like puzzles and maths. Items are mostly Intermediate or Advanced, so it suits about age {age} and up and can be hard."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this material can be abstract. Easier items are fine to start with."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Read the description to decide if it sounds interesting."
+            },
+            {
+              "en": "Open the original site with a grown-up."
+            },
+            {
+              "en": "Try one small idea or visualization and stop when it gets hard."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Read the first section."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Work through one example."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Explain the idea to someone."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Compare it with another resource."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "build:Build your own 3D Renderer": {
+      "id": "group-build:build-your-own-3d-renderer",
+      "kind": "group",
+      "title": {
+        "en": "Build your own 3D renderer"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Build your own 3D Renderer group, a list of tutorials about making a program that draws 3D scenes. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people who like graphics and maths. There are Beginner items, but most take some programming experience. It suits about age {age} and up."
+          },
+          "adult_note": {
+            "en": "Grown-ups: graphics tutorials usually need a programming language installed."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Pick a Beginner tutorial."
+            },
+            {
+              "en": "Open it with a grown-up and read the first step."
+            },
+            {
+              "en": "Draw a single shape on the screen before anything else."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Set up and draw one shape."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Draw a cube or a simple scene."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Add colour and light."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Move the camera and share your picture."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "build:Build your own Programming Language": {
+      "id": "group-build:build-your-own-programming-language",
+      "kind": "group",
+      "title": {
+        "en": "Build your own programming language"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Build your own Programming Language group, a list of tutorials about making your own tiny language and a program that runs it. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people who already know a bit of programming and want to see how languages work inside. Most items are Intermediate or Advanced, so it suits about age {age} and up."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this is an advanced topic. It is fine to take it slowly or leave it for later."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Make sure you can write a simple program in some language."
+            },
+            {
+              "en": "Open the tutorial with a grown-up and read the first step."
+            },
+            {
+              "en": "Build the smallest part first, like reading numbers."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 40,
+              "goal": {
+                "en": "Read the intro and set up."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 90,
+              "goal": {
+                "en": "Build a tiny calculator."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 90,
+              "goal": {
+                "en": "Add variables or commands."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 90,
+              "goal": {
+                "en": "Write a program in your new language."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Books": {
+      "id": "group-learn:books",
+      "kind": "group",
+      "title": {
+        "en": "Free programming books"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Books group, a list of free books about programming. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for readers who like to learn from a book. Items are mostly Intermediate, so it suits about age {age} and up, with a grown-up to help find a good one."
+          },
+          "adult_note": {
+            "en": "Grown-ups: check that the book is the right level for your child."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Pick a book whose title sounds interesting."
+            },
+            {
+              "en": "Open it with a grown-up and look at the contents."
+            },
+            {
+              "en": "Read one short chapter and try one example."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 20,
+              "goal": {
+                "en": "Read the introduction."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Read one chapter and try its examples."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Read the next chapter."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Write down three things you learned."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
     }
   }
 }

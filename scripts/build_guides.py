@@ -113,6 +113,8 @@ def load_content():
     pkg = ROOT / "scripts" / "guide_content"
     sys.path.insert(0, str(ROOT / "scripts"))
     for m in sorted(pkgutil.iter_modules([str(pkg)]), key=lambda m: m.name):
+        if m.name.startswith("_"):
+            continue
         mod = importlib.import_module(f"guide_content.{m.name}")
         for key, g in mod.GUIDES.items():
             assert key not in groups, f"duplicate guide {key}"

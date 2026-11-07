@@ -21,7 +21,7 @@ MODEL = "claude-haiku-5-5"
 
 PROMPT = """You help make open-source programming resources accessible.
 Given an English resource title and description, return ONLY JSON:
-{{"level": one of {levels},
+{{"level": one of {levels}, "age_group": one of ["5-7","8-10","11-13","teen+"] (youngest age it suits),
   "translations": {{"es": {{"title": "", "desc": ""}}, "ar": {{...}}, "hi": {{...}}, "pt": {{...}}}}}}
 Rules: keep code, product names and technical terms in English (add a short
 translated gloss in parentheses only if helpful). Be faithful; add nothing new.
@@ -39,6 +39,7 @@ def process(client, entry):
     )
     out = json.loads(msg.content[0].text)
     entry["level"] = out["level"]
+    entry["age_group"] = out.get("age_group")
     for lang, tr in out["translations"].items():
         entry["title"][lang] = tr["title"]
         entry["desc"][lang] = tr["desc"]

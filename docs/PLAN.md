@@ -30,6 +30,13 @@ Track details come at opening remarks (Sat 12:30 PM). Judging criteria: _TBD —
 - **Build** — sourced from [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) (CC0): "build your own X" tutorials (databases, git, shell, etc.).
 - Both are link lists. We translate + level-tag the list entries and link out. Details in `docs/SOURCES.md`.
 
+## Audience update: children just starting to learn
+Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (about ages 5-13) and the parents/teachers who help them**, plus non-English speakers.
+- **Flagship feature: "What should I learn?" guide** (`/<lang>/guide`, `src/guide.py`). Multiple-choice only (age, goal, level), and the AI picks an ordered 6-step path from our data. It may only choose existing entry ids, so it can't invent links. Falls back to keyword matching with no API key.
+- **Child safety:** no accounts, no free-text input, no personal data stored, no ads/tracking. Keep language simple and friendly. Mention that adults should supervise.
+- **OPEN RISK (Data lead):** `awesome` and `build-your-own-x` are written for adult developers and are NOT kid-focused. We must add child-friendly **open-licensed** sources and record each in `docs/SOURCES.md` after checking the license. Found so far: `uccser/cs-unplugged` (MIT code; check its content license before reuse). Keep the existing two as the "older learners" tier.
+- `scripts/translate.py` now also tags `age_group` (5-7, 8-10, 11-13, teen+).
+
 ## Principles
 - Open data only. Only use content under licenses that allow translation/redistribution (CC-BY, MIT, etc.). Record license per source.
 - Never present content as ours. Show attribution + "translated from" on every page. Note translations are AI-generated.
@@ -64,6 +71,8 @@ Track details come at opening remarks (Sat 12:30 PM). Judging criteria: _TBD —
 - [ ] Pick 1-2 open-licensed intro-to-programming repos; record license + attribution in `docs/SOURCES.md`
 - [ ] Translation pipeline (Claude API): prose translated, code preserved, glossary for terms
 - [ ] 3-4 languages (e.g. Spanish, Arabic, Hindi, Portuguese)
+- [x] Guide page skeleton (`src/guide.py`, done) — needs kid-friendly data + tagging to shine
+- [ ] Add kid-friendly open sources (Data lead)
 - [ ] Lesson page with language switcher + level tag
 - [ ] Level path: Beginner -> Intermediate -> Advanced ordering of lessons
 - [ ] Attribution/license footer + link to source repo on every lesson

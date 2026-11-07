@@ -10,7 +10,7 @@ A website (Hackcessability, **Information Access** track) with two sides, built 
 - **Learn**: curated learning lists from [sindresorhus/awesome](https://github.com/sindresorhus/awesome) (CC0)
 - **Build**: "build your own X" tutorials from [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) (CC0)
 
-We add AI translation into multiple languages and a Beginner / Intermediate / Advanced path. We claim none of the content as ours. Every entry links to its source and license (see `docs/SOURCES.md`).
+For young beginners (and the parents and teachers helping them), we add a **"What should I learn?" guide** that builds a short, ordered path from open resources. We also add AI translation into multiple languages and a Beginner / Intermediate / Advanced path. We claim none of the content as ours. Every entry links to its source and license (see `docs/SOURCES.md`).
 
 ## Demo
 - Live link: _TBD_

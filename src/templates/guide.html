@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1 class="text-2xl font-bold my-4">{{ ui.guide }}</h1>
+  <form method="get" class="space-y-4 mb-8">
+    <fieldset><legend class="font-semibold">Age</legend>
+      {% for a in ages %}<label class="mr-4"><input type="radio" name="age" value="{{ a }}" required {{ 'checked' if a == age }}> {{ a }}</label>{% endfor %}
+    </fieldset>
+    <fieldset><legend class="font-semibold">I want to make…</legend>
+      {% for g in goals %}<label class="mr-4"><input type="radio" name="goal" value="{{ g }}" required {{ 'checked' if g == goal }}> {{ g }}</label>{% endfor %}
+    </fieldset>
+    <fieldset><legend class="font-semibold">Level</legend>
+      {% for l in levels %}<label class="mr-4"><input type="radio" name="level" value="{{ l }}" required {{ 'checked' if l == level }}> {{ l }}</label>{% endfor %}
+    </fieldset>
+    <button class="rounded bg-slate-900 text-white px-4 py-2" type="submit">{{ ui.start }}</button>
+  </form>
+  {% if path is not none %}
+    <ol class="space-y-4 list-decimal ps-6">
+      {% for e in path %}
+        <li>
+          <a class="underline font-medium" href="{{ e.url }}" rel="noopener">{{ e.title.get(lang) or e.title.en }}</a>
+          <p>{{ e.desc.get(lang) or e.desc.en }}</p>
+          <p class="text-xs text-slate-600">{{ ui.source }}: <a class="underline" href="{{ e.source }}">{{ e.source.split('github.com/')[1] }}</a> · {{ ui.license }}: {{ e.license }}</p>
+        </li>
+      {% else %}<p>No matches yet.</p>{% endfor %}
+    </ol>
+    <p class="text-xs text-slate-600 mt-6">Path chosen by AI from open resources. Always check the original. We don't store your answers.</p>
+  {% endif %}
+{% endblock %}

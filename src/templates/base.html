@@ -11,6 +11,7 @@
   <header class="border-b p-4 flex flex-wrap gap-4 items-center justify-between">
     <nav class="flex gap-4" aria-label="Main">
       <a class="font-bold" href="{{ url_for('home', lang=lang) }}">Open Learn</a>
+      <a href="{{ url_for('guide_page', lang=lang) }}">{{ ui.guide }}</a>
       <a href="{{ url_for('listing', lang=lang, side='learn') }}">{{ ui.learn }}</a>
       <a href="{{ url_for('listing', lang=lang, side='build') }}">{{ ui.build }}</a>
     </nav>

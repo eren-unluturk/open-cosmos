@@ -2,35 +2,54 @@
 
 Takes only multiple-choice answers (no free text, nothing stored), so no personal
 data is collected from children and prompt injection isn't possible. The AI may
-only pick from entry ids we pass in, so it can never invent a link.
-Falls back to simple keyword/level matching when there is no API key or the call fails.
+only re-order entry ids we pass in, so it can never invent a link.
+
+Selection rules (pure code, no API key needed):
+  1. kid-safe entries only, whatever the grown-up switch says.
+  2. entry age_group <= chosen age (teen+ is never shown to a child).
+  3. goal topic first, then "general" topic, at the chosen level.
+  4. still short? repeat at the next lower level.
+  5. show easier levels first.
 """
 import json
 import os
 
-GOALS = {
-    "games": ["game", "scratch", "play"],
-    "art": ["art", "draw", "music", "creative", "animation", "design"],
-    "web": ["web", "html", "css", "javascript", "site"],
-    "general": [],
-}
+import gate
+
+GOALS = {"games": "games", "art": "art", "web": "web", "general": "general"}
 AGES = ["5-7", "8-10", "11-13"]
 LEVELS = ["Beginner", "Intermediate", "Advanced"]
-MODEL = "claude-haiku-5-5"
+AGE_ORDER = ["5-7", "8-10", "11-13", "teen+"]
+MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5")
 PATH_LEN = 6
 
 
-def candidates(entries, goal, level, limit=40):
-    words = GOALS.get(goal, [])
-    scored = []
+def _age_fits(entry, age):
+    group = entry.get("age_group")
+    return group in AGE_ORDER and AGE_ORDER.index(group) <= AGE_ORDER.index(age)
+
+
+def candidates(entries, age, goal, level, limit=40):
+    """Ranked pool: best fit first."""
+    topic = GOALS.get(goal, "general")
+    level_idx = LEVELS.index(level)
+    ranked = []
     for e in entries:
-        if e.get("level") and e["level"] != level:
+        if gate.tier(e) != gate.KID_SAFE or not _age_fits(e, age):
             continue
-        text = (e["title"]["en"] + " " + e["desc"]["en"] + " " + e["category"]).lower()
-        score = sum(w in text for w in words) + (1 if e.get("age_group") else 0)
-        scored.append((score, e))
-    scored.sort(key=lambda t: -t[0])
-    return [e for _, e in scored[:limit]]
+        if e.get("level") not in LEVELS or LEVELS.index(e["level"]) > level_idx:
+            continue
+        distance = level_idx - LEVELS.index(e["level"])  # 0 = chosen level
+        if e.get("topic") == topic:
+            match = 0
+        elif e.get("topic") == "general":
+            match = 1
+        else:
+            continue
+        kids_bonus = 0 if (e.get("side") == "kids" and AGE_ORDER.index(age) <= 1) else 1
+        ranked.append(((distance, match, kids_bonus), e))
+    ranked.sort(key=lambda t: t[0])
+    return [e for _, e in ranked[:limit]]
 
 
 def ai_pick(pool, age, goal, level):
@@ -45,18 +64,24 @@ def ai_pick(pool, age, goal, level):
     )
     msg = client.messages.create(model=MODEL, max_tokens=300,
                                  messages=[{"role": "user", "content": prompt}])
-    return json.loads(msg.content[0].text)["ids"]
+    text = msg.content[0].text.strip()
+    if text.startswith("```"):
+        text = text.strip("`").removeprefix("json").strip()
+    return json.loads(text)["ids"]
 
 
 def build_path(entries, age, goal, level):
-    pool = candidates(entries, goal, level)
+    pool = candidates(entries, age, goal, level)
     by_id = {e["id"]: e for e in pool}
     ids = []
     if os.environ.get("ANTHROPIC_API_KEY"):
         try:
-            ids = [i for i in ai_pick(pool, age, goal, level) if i in by_id]
+            ids = list(dict.fromkeys(i for i in ai_pick(pool, age, goal, level) if i in by_id))
         except Exception:
             ids = []
-    if not ids:  # fallback
-        ids = [e["id"] for e in pool]
-    return [by_id[i] for i in ids[:PATH_LEN]]
+    if len(ids) < PATH_LEN:  # AI off, failed, or returned too few: fill from the ranked pool
+        ids += [e["id"] for e in pool if e["id"] not in ids]
+    chosen = [by_id[i] for i in ids[:PATH_LEN]]
+    # Easier first. sort() is stable, so the AI/ranked order holds inside a level.
+    chosen.sort(key=lambda e: LEVELS.index(e["level"]))
+    return chosen

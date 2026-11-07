@@ -1,9 +1,68 @@
 {% extends "base.html" %}
+{% from "macros.html" import card, icon with context %}
 {% block content %}
-  <h1 class="text-3xl font-bold my-6">{{ ui.tagline }}</h1>
-  <div class="flex gap-4 flex-wrap">
-    <a class="rounded bg-blue-700 text-white px-4 py-2" href="{{ url_for('guide_page', lang=lang) }}">{{ ui.guide }}</a>
-    <a class="rounded bg-slate-900 text-white px-4 py-2" href="{{ url_for('listing', lang=lang, side='learn') }}">{{ ui.learn }}</a>
-    <a class="rounded bg-slate-900 text-white px-4 py-2" href="{{ url_for('listing', lang=lang, side='build') }}">{{ ui.build }}</a>
+<section class="hero">
+  <div class="hero-text">
+    <h1 class="headline">{{ ui.home_h1_a }} <span class="hl">{{ ui.home_h1_b }}</span></h1>
+    <p class="hero-sub">{{ ui.home_sub }}</p>
+    <div class="actions">
+      <a class="btn btn-gold btn-lg" href="{{ url_for('guide_page', lang=lang) }}">{{ icon('compass') }} {{ ui.cta_start }}</a>
+      <a class="textlink" href="{{ url_for('constellation', lang=lang) }}">{{ ui.cta_wander }} <span aria-hidden="true">→</span></a>
+    </div>
   </div>
+  <svg class="hero-art" viewBox="0 0 260 220" aria-hidden="true">
+    <g transform="rotate(-14 130 118)">
+      <ellipse cx="130" cy="118" rx="106" ry="22" fill="none" stroke="#F4B942" stroke-width="8"/>
+      <circle cx="130" cy="118" r="60" fill="#7B2CBF"/>
+      <path d="M86 86a60 60 0 0 1 72-10" fill="none" stroke="#C8B6FF" stroke-width="7" stroke-linecap="round" opacity=".5"/>
+      <circle cx="150" cy="140" r="9" fill="#3C1E70" opacity=".6"/><circle cx="108" cy="128" r="5" fill="#3C1E70" opacity=".5"/>
+      <path d="M24 118a106 22 0 0 0 212 0" fill="none" stroke="#FFD166" stroke-width="8"/>
+    </g>
+    <circle cx="232" cy="52" r="10" fill="#E0E1DD"/><circle cx="228" cy="49" r="3" fill="#778DA9"/>
+    <use href="#star" x="18" y="16" width="30" height="30" fill="#FFD166"/>
+    <use href="#star" x="196" y="170" width="16" height="16" fill="#C8B6FF"/>
+    <circle cx="40" cy="190" r="2.5" fill="#E0E1DD"/><circle cx="70" cy="34" r="1.8" fill="#E0E1DD"/>
+  </svg>
+</section>
+
+<section aria-labelledby="today">
+  <h2 id="today" class="section-title">{{ ui.today }}</h2>
+  <div class="grid suggest">
+    {% for item in suggestions %}{{ card(item, lang, ui, u, difficulty, kind_of, level_icon, chip=ui['g_' ~ item.galaxy]) }}{% endfor %}
+  </div>
+</section>
+
+{% set first = rows | selectattr(1) | first %}
+{% if first %}
+{% set g, items = first %}
+<section aria-labelledby="row-{{ g.id }}">
+  <div class="section-head">
+    <h2 id="row-{{ g.id }}" class="section-title">{{ ui['g_' ~ g.id] }}</h2>
+    <a class="textlink" href="{{ url_for('galaxy', lang=lang, gid=g.id) }}">{{ ui.see_all }} <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="row">
+    {% for item in items %}{{ card(item, lang, ui, u, difficulty, kind_of, level_icon) }}{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+<section aria-labelledby="more" class="more">
+  <h2 id="more" class="section-title small">{{ ui.more_galaxies }}</h2>
+  <div class="galaxy-tiles">
+    <a class="gtile hue-teal" href="{{ url_for('problems_page', lang=lang) }}">
+      <span class="gdisc">{{ icon('g-code') }}</span>
+      <span><span class="gname">{{ ui.problems_title }}</span><span class="gcount">Python · JavaScript</span></span>
+    </a>
+    <a class="gtile hue-gold" href="{{ url_for('lessons_page', lang=lang) }}">
+      <span class="gdisc">{{ icon('book') }}</span>
+      <span><span class="gname">{{ ui.lessons }}</span><span class="gcount">{{ lesson_count }} {{ ui.kind_unplugged|lower }}</span></span>
+    </a>
+    {% for g in galaxies if g.id != (first[0].id if first else '') %}
+      <a class="gtile hue-{{ g.hue }}" href="{{ url_for('galaxy', lang=lang, gid=g.id) }}">
+        <span class="gdisc">{{ icon(g.icon) }}</span>
+        <span><span class="gname">{{ ui['g_' ~ g.id] }}</span><span class="gcount">{{ g.count }} {{ ui.stops }}</span></span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
 {% endblock %}

@@ -1,23 +1,24 @@
 {% extends "base.html" %}
+{% from "macros.html" import icon with context %}
+{% block title %}{{ ui.lessons }} · {{ ui.brand }}{% endblock %}
 {% block content %}
-  <h1 class="text-2xl font-bold my-4">{{ ui.lessons_title }}</h1>
-  <p>{{ ui.lessons_intro }}</p>
-  <form method="get" class="my-4 flex flex-wrap gap-2 items-center">
-    <label for="age">{{ ui.age_label }}</label>
-    <select id="age" name="age" class="border rounded px-2 py-1">
-      <option value="">{{ ui.all }}</option>
-      {% for a in ages %}<option value="{{ a }}" {{ 'selected' if a == age }}>{{ a }}</option>{% endfor %}
-    </select>
-    <button class="border rounded px-2 py-1">{{ ui.search }}</button>
-  </form>
-  <ul class="space-y-3">
-    {% for ls in lessons %}
-      <li>
-        <a class="underline font-medium" href="{{ url_for('lesson_page', lang=lang, lesson_id=ls.id) }}">{{ ls.title.get(lang) or ls.title.en }}</a>
-        <span class="text-xs border rounded px-1">{{ ui.ages }} {{ ls.age_group }}</span>
-        <span class="text-xs">{{ ui.lesson_minutes.format(n=ls.duration_minutes) }}</span>
-        <p>{{ ls.summary.get(lang) or ls.summary.en }}</p>
-      </li>
-    {% else %}<li>{{ ui.lessons_none }}</li>{% endfor %}
-  </ul>
+<h1 class="bubble">{{ ui.lessons }}</h1>
+<p class="lede">{{ ui.lessons_sub }}</p>
+<nav class="filters" aria-label="{{ ui.age }}">
+  <a class="pill" href="{{ url_for('lessons_page', lang=lang) }}" {% if not age %}aria-current="page"{% endif %}>{{ ui.all_ages }}</a>
+  {% for a in ages %}<a class="pill" href="{{ url_for('lessons_page', lang=lang, age=a) }}" {% if age == a %}aria-current="page"{% endif %}>{{ ui.ages }} {{ a }}</a>{% endfor %}
+</nav>
+<div class="grid">
+  {% for ls in lessons %}
+    <article class="card" data-id="{{ ls.entry_id }}">
+      <a class="card-body" href="{{ url_for('lesson_page', lang=lang, lesson_id=ls.id) }}">
+        <div class="card-top"><span class="chip teal">{{ ui.ages }} {{ ls.age_group }}</span><span class="badge" aria-hidden="true">{{ icon('book') }}{{ icon('star-f', 'done-mark') }}</span></div>
+        <h3 class="card-title">{{ tr(ls.title, lang) }}</h3>
+        <span class="card-sub">{{ tr(ls.summary, lang) }}</span>
+        <div class="card-foot"><span class="diff">{{ ls.duration_minutes }} {{ ui.min }} · {{ ui.estimate }}</span><span class="kind">{{ ui.kind_unplugged }}</span></div>
+      </a>
+    </article>
+  {% else %}<div class="panel"><p>{{ ui.lessons_none }}</p></div>{% endfor %}
+</div>
+<p class="attrib" style="margin-top:24px">{{ ui.footer_2 }}</p>
 {% endblock %}

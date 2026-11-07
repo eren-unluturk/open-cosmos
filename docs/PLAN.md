@@ -213,3 +213,8 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 
 ## Blockers / Notes
 - Bring laptop + charger.
+
+## Frontend decisions (Isabella, Nov 7)
+- Galaxy UI on top of the team backend: subjects = galaxies, tracks = systems, entries = stops (`src/tracks.py`). Map in `docs/FRONTEND.md`.
+- Guide slides render on `/entry/<id>`; one slide at a time with JS, all stacked without JS. External link only on the last slide, after the leaving notice.
+- Card "time" from the sketch is the stop kind (screen-free lesson / build project / resource list); real times only appear as labeled estimates in the guide.

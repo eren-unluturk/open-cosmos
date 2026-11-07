@@ -1,0 +1,74 @@
+{% macro icon(name, cls='') -%}<svg class="i {{ cls }}" aria-hidden="true" focusable="false"><use href="#{{ name }}"/></svg>{%- endmacro %}
+
+{% macro level_form(l, lang, ui, cur_level, level_icon) -%}
+<form method="post" action="{{ url_for('prefs', lang=lang) }}">
+  <input type="hidden" name="level" value="{{ '' if cur_level == l else l }}">
+  <input type="hidden" name="next" value="{{ request.full_path }}">
+  <button class="navbtn lvl lvl-{{ level_icon[l] }} {{ 'on' if cur_level == l }}" type="submit" aria-pressed="{{ 'true' if cur_level == l else 'false' }}">
+    <span class="disc">{{ icon(level_icon[l]) }}</span><span class="cap">{{ ui['lvl_' ~ l] }}</span>
+  </button>
+</form>
+{%- endmacro %}
+
+{% macro dots(n, ui) -%}
+<span class="diff" title="{{ ui.difficulty }} {{ n }}/5">{{ ui.difficulty }}
+  <span class="dots" aria-hidden="true">{% for i in range(5) %}<i class="{{ 'on' if i < n }}"></i>{% endfor %}</span>
+  <span class="sr-only">{{ n }}/5</span>
+</span>
+{%- endmacro %}
+
+{% macro flags(e, lang, ui) -%}
+<span class="flags">
+  {% if e.tag and e.tag != '(any)' %}<span class="flag">{{ e.tag }}</span>{% endif %}
+  <span class="flag">{{ ui.ages }} {{ e.age_group }}</span>
+  {% if lang in (e.ai_translated or []) %}<span class="flag ai">{{ ui.ai_badge }}</span>{% endif %}
+  {% if e.safety == 'ask-a-grown-up' %}<span class="flag warn">{{ ui.ask_badge }}</span>{% endif %}
+</span>
+{%- endmacro %}
+
+{% macro card(item, lang, ui, u, difficulty, kind_of, level_icon, chip=None, show_url=False) -%}
+{% set e = item.e %}
+{% set g = u.g.get(item.galaxy) %}
+<article class="card" data-id="{{ e.id }}">
+  <a class="card-body" href="{{ url_for('entry_page', lang=lang, entry_id=e.id, g=item.galaxy, s=item.system) }}">
+    <div class="card-top">
+      <span class="chip {{ g.hue if g else '' }}">{{ chip or (ui['s_' ~ item.system] if item.system else ui.everything) }}</span>
+      <span class="badge lvl-{{ level_icon[e.level] }}" title="{{ ui['lvl_' ~ e.level] }}"><span class="sr-only">{{ ui['lvl_' ~ e.level] }}</span>{{ icon(level_icon[e.level]) }}{{ icon('star-f', 'done-mark') }}</span>
+    </div>
+    <h3 class="card-title" lang="{{ lang if e.title.get(lang) else 'en' }}">{{ tr(e.title, lang) }}</h3>
+    <div class="card-foot">
+      {{ dots(difficulty(e), ui) }}
+      <span class="kind">{{ ui[kind_of(e)] }}</span>
+    </div>
+    {% if show_url %}<span class="orig" title="{{ e.url }}">{{ e.url }}</span>{% endif %}
+  </a>
+  <div class="blurb" aria-hidden="true">{{ tr(e.desc, lang) or ui.no_desc }}</div>
+</article>
+{%- endmacro %}
+
+{% macro grownup_notice(n, lang, ui) -%}
+{% if n %}
+<div class="panel notice">
+  <span class="with-i">{{ icon('lock') }} <span><strong>{{ n }}</strong> {{ ui.hidden_n }}</span></span>
+  <form method="post" action="{{ url_for('grownup') }}">
+    <input type="hidden" name="on" value="1"><input type="hidden" name="next" value="{{ request.full_path }}">
+    <button class="btn btn-violet btn-sm" type="submit">{{ icon('grownup') }} {{ ui.grownup_btn }}</button>
+  </form>
+  <details class="why"><summary>{{ ui.why_hidden }}</summary><p>{{ ui.why_hidden_body }}</p></details>
+</div>
+{% endif %}
+{%- endmacro %}
+
+{% macro flow(stops, start, stop_at, gid, sid, lang, ui, here=None) -%}
+<div class="flow" role="list">
+  {% for e in stops[start:stop_at] %}
+    {% set n = start + loop.index %}
+    <a role="listitem" class="flow-step {{ 'here' if e.id == here }}" data-id="{{ e.id }}" href="{{ url_for('entry_page', lang=lang, entry_id=e.id, g=gid, s=sid) }}" {% if e.id == here %}aria-current="step"{% endif %}>
+      <span class="num">{{ ui.stop }} {{ n }}</span>
+      <span class="t">{{ tr(e.title, lang) }}</span>
+      <span class="kind" style="font-size:12px;color:var(--mist)">{{ ui[kind_of(e)] }}</span>
+    </a>
+    {% if not loop.last %}<svg class="flow-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>{% endif %}
+  {% endfor %}
+</div>
+{%- endmacro %}

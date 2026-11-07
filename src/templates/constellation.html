@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}{{ ui.constellation }} · {{ ui.brand }}{% endblock %}
+{% block content %}
+<h1 class="bubble">{{ ui.constellation }}</h1>
+<p class="lede">{{ ui.const_sub }}</p>
+
+<svg class="map" viewBox="0 0 1000 640" role="group" aria-label="{{ ui.constellation }}">
+  {% for a, b in links %}
+    {% set pa = u.g[a].pos %}{% set pb = u.g[b].pos %}
+    <line class="link" data-a="{{ a }}" data-b="{{ b }}" x1="{{ pa[0] }}" y1="{{ pa[1] }}" x2="{{ pb[0] }}" y2="{{ pb[1] }}"/>
+  {% endfor %}
+  {% for i in range(40) %}
+    <circle cx="{{ (i * 137) % 1000 }}" cy="{{ (i * 89 + 23) % 640 }}" r="{{ 1 + (i % 3) * 0.6 }}" fill="{{ ['#E0E1DD', '#FFD166', '#C8B6FF'][i % 3] }}" class="twinkle" style="animation-delay:{{ (i % 7) * 0.45 }}s" aria-hidden="true"/>
+  {% endfor %}
+  {% for g in galaxies %}
+    {% set size = 104 + [g.count, 200]|min / 200 * 56 %}
+    {% set x, y = g.pos %}
+    <a href="{{ url_for('galaxy', lang=lang, gid=g.id) }}" data-galaxy="{{ g.id }}" aria-label="{{ ui['g_' ~ g.id] }}, {{ g.count }} {{ ui.stops }}">
+      <circle class="glow" cx="{{ x }}" cy="{{ y }}" r="{{ size * 0.95 }}"/>
+      <use href="#star" class="star-shape focus-ring" x="{{ x - size / 2 }}" y="{{ y - size / 2 }}" width="{{ size }}" height="{{ size }}"/>
+      <use href="#{{ g.icon }}" class="star-glyph" x="{{ x - 15 }}" y="{{ y - 12 }}" width="30" height="30"/>
+      <text x="{{ x }}" y="{{ y + size / 2 + 26 }}" text-anchor="middle" font-size="22">{{ ui['g_' ~ g.id] }}</text>
+      <text class="count" x="{{ x }}" y="{{ y + size / 2 + 46 }}" text-anchor="middle">{{ g.count }} {{ ui.stops }}</text>
+    </a>
+  {% endfor %}
+</svg>
+{% endblock %}

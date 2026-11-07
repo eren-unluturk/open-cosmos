@@ -47,6 +47,9 @@ Setup once: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`
 ## Guides and lessons
 Every learning entry has a short slide **guide** with a recommended roadmap/timeline (`src/data/guides.json`: 65 handwritten group guides plus 7 topic fallbacks, so every visible entry has one; written ahead of time, no live AI). Link-only entries end with a "leaving our site" slide; CS Unplugged lessons (CC BY-SA 4.0) are adapted into our own lessons in `src/data/lessons.json` (26 lessons). Spec for the app: `docs/GUIDE_SPEC.md`. Demo items: `docs/DEMO_SLICE.md`. Numbers for slides: `docs/PITCH_DATA.md`.
 
+## Frontend (galaxy theme)
+Space-themed UI: palette `#0D1B2A #1B263B #415A77 #778DA9 #E0E1DD` plus galaxy yellows and purples. Map of every file and where to change things: `docs/FRONTEND.md`.
+
 ## Project Structure
 ```
 src/      application code

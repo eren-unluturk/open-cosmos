@@ -12,6 +12,7 @@
 </nav>
 
 <h1 class="bubble" lang="{{ 'en' if fell_back else lang }}">{{ title }}</h1>
+<div class="hc-item" data-progress-item="{{ e.id }}"></div>
 
 <div class="meta">
   <span class="chip gold with-i">{{ icon(level_icon[e.level]) }} {{ ui['lvl_' ~ e.level] }}</span>

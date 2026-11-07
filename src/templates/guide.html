@@ -17,7 +17,7 @@
   <button class="btn btn-gold" type="submit">{{ icon('rocket') }} {{ ui.start }}</button>
 </form>
 {% if path is not none %}
-  <ol class="route">
+  <ol class="route" data-progress-roadmap="{{ path | map(attribute='id') | join(',') }}">
     {% for e in path %}
       {% set gid, sid = u.home_of(e.id) %}
       <li><div class="panel">

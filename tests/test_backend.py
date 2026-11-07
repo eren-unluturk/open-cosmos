@@ -459,6 +459,50 @@ class ProblemTests(unittest.TestCase):
         self.assertIn("{i}", i18n_problems.UI["ar"]["p_hint_n"])
 
 
+class ProgressHookTests(unittest.TestCase):
+    """docs/PROGRESS_SPEC.md "Hooks Tobi must add"."""
+
+    def setUp(self):
+        app.config["TESTING"] = True
+        self.c = app.test_client()
+
+    def page(self, path):
+        r = self.c.get(path)
+        self.assertEqual(r.status_code, 200, path)
+        return r.get_data(as_text=True)
+
+    def test_every_page_loads_the_script_text_and_privacy_line(self):
+        import json, re
+        for lang in LANGS:
+            html = self.page(f"/{lang}/")
+            self.assertIn("progress.css", html)
+            self.assertIn("progress.js", html)
+            self.assertIn("data-progress-privacy", html)
+            block = re.search(r'id="hc-progress-text">(.*?)</script>', html, re.S).group(1)
+            text = json.loads(block)
+            self.assertNotIn("_note", text)
+            self.assertTrue(text["privacy"], lang)
+        self.assertIn("data-progress-stars", self.page("/en/"))
+
+    def test_entry_and_lesson_pages_have_the_toggle_hook(self):
+        ls = store.lessons()[0]
+        self.assertIn(f'data-progress-item="{ls["id"]}"', self.page(f"/en/lesson/{ls['id']}"))
+        self.assertIn(f'data-progress-item="{ls["entry_id"]}"', self.page(f"/en/entry/{ls['entry_id']}"))
+
+    def test_lessons_list_has_panel_summary_and_ids(self):
+        html = self.page("/en/lessons")
+        for hook in ("data-progress-panel", "data-progress-list", "data-progress-summary"):
+            self.assertIn(hook, html)
+        for ls in store.lessons():
+            self.assertIn(f'data-progress-id="{ls["id"]}"', html)
+
+    def test_guide_path_is_a_roadmap_of_valid_ids(self):
+        import re
+        html = self.page("/en/guide?age=8-10&goal=games&level=Beginner")
+        ids = re.search(r'data-progress-roadmap="([^"]*)"', html).group(1).split(",")
+        self.assertTrue(ids and all(re.fullmatch(r"[a-z]+-[0-9a-f]{8}", i) for i in ids), ids)
+
+
 class TranslationParityTests(unittest.TestCase):
     def test_ui_labels_complete(self):
         import i18n_guides

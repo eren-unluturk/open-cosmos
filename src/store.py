@@ -110,3 +110,24 @@ def lesson_by_id(lesson_id):
 def lesson_for_entry(entry_id):
     _load_lessons()
     return _lesson_by_entry.get(entry_id)
+
+_problems = None
+_problem_by_id = None
+
+
+def _load_problems():
+    global _problems, _problem_by_id
+    if _problems is None:
+        _problems = _read_json("problems.json", [])
+        _problem_by_id = {p["id"]: p for p in _problems}
+
+
+def problems():
+    """All coding problems (src/data/problems.json, built by scripts/build_problems.py)."""
+    _load_problems()
+    return _problems
+
+
+def problem(problem_id):
+    _load_problems()
+    return _problem_by_id.get(problem_id)

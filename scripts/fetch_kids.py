@@ -1,6 +1,6 @@
 """Fetch CS Unplugged (kid-friendly, CC BY-SA 4.0) lesson metadata into src/data/kids.json.
 
-We store ONLY: the lesson title, a short description we write ourselves, the age group the
+We store ONLY (for lessons, programming-challenge pages and classroom integration activities): the title, a short description we write ourselves, the age group the
 repo states, and a link to the original lesson page. No lesson text or images are copied.
 Content license: CC BY-SA 4.0 (LICENCE-CONTENT in the repo). See docs/SOURCES.md.
 Run AFTER fetch.py and BEFORE categorize.py.
@@ -70,6 +70,27 @@ def parse_durations(yaml_text):
     return out
 
 
+def parse_integrations(yaml_text):
+    """curriculum-integrations.yaml -> [(slug, [curriculum areas], [prerequisite lesson slugs])]."""
+    out = []
+    for block in re.split(r"^(?=[a-z0-9-]+:\s*$)", yaml_text, flags=re.M):
+        m = re.match(r"([a-z0-9-]+):", block)
+        if not m:
+            continue
+        areas = re.findall(r"^    - ([a-z-]+)\s*$", block.split("curriculum-areas:")[1].split("prerequisite")[0], re.M) \
+            if "curriculum-areas:" in block else []
+        pre = re.findall(r"^\s+- ([a-z0-9-]+)\s*$", block.split("prerequisite-lessons:")[1], re.M) \
+            if "prerequisite-lessons:" in block else []
+        out.append((m.group(1), areas, pre))
+    return out
+
+
+def has_programming_challenges(url):
+    """The site serves a 'No programming challenges' page for some lessons; skip those (metadata check only)."""
+    r = requests.get(url, timeout=30, headers={"User-Agent": "link-checker/1.0 (open-data education project)"})
+    return r.status_code == 200 and "No programming challenges" not in r.text
+
+
 def make(url, title, desc, category, age):
     return {
         "id": entry_id("kids", url), "category": category, "tag": "",
@@ -106,6 +127,25 @@ def main():
                     + (f" (about {mins} minutes)" if mins else "")
                     + f", part of the '{topic_title}' unit.")
             entries.append(make(url, title, desc, f"CS Unplugged: {topic_title}", age))
+            purl = f"{SITE}/{topic}/{slug}/programming/"
+            if has_programming_challenges(purl):
+                entries.append(make(purl, f"{title}: programming challenges",
+                                    f"Programming challenges (Scratch, Python or blocks) to go with the '{title}' lesson, "
+                                    f"from the '{topic_title}' unit. Best done with a grown-up.",
+                                    f"CS Unplugged: {topic_title}", age))
+        for slug, areas, pre in parse_integrations(get(f"structure/{topic}/curriculum-integrations/curriculum-integrations.yaml")):
+            known = [ages[p] for p in pre if p in ages]
+            if not known:  # no repo-stated age to inherit: skip rather than guess
+                continue
+            age = min(known, key=AGE_ORDER.index)
+            md = get(f"en/{topic}/curriculum-integrations/{slug}.md") or get(f"en/{topic}/curriculum-integrations/{slug}/{slug}.md")
+            title = first_heading(md, slug.replace("-", " ").capitalize())
+            if title == "?":
+                title = slug.replace("-", " ").capitalize()
+            what = ", ".join(a.replace("-", " ") for a in areas) or "cross-curricular"
+            entries.append(make(f"{SITE}/{topic}/integrations/{slug}/", title,
+                                f"A classroom activity linking the '{topic_title}' unit with {what} (ages {age}). For an adult to run with children.",
+                                f"CS Unplugged: {topic_title}", age))
         print(f"{topic}: {len(ages)} lessons")
     entries.sort(key=lambda e: (e["category"], AGE_ORDER.index(e["age_group"]), e["title"]["en"].lower(), e["id"]))
     path = DATA / "kids.json"

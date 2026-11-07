@@ -6,8 +6,8 @@ the tests, `python scripts/guide_progress.py`, then commit.
 
 ## Status
 - Phase A (foundation): DONE. Phase B (lessons): DONE (26 lessons).
-- Phase C (handwritten guides): 52 of 65 groups done; 7 topic fallbacks always cover the rest.
-- Entries with a handwritten guide: 1030 of 1070 visible.
+- Phase C (handwritten guides): 65 of 65 groups done; 7 topic fallbacks always cover the rest.
+- Entries with a handwritten guide: 1070 of 1070 visible.
 
 | Band | Entries with handwritten guide | Visible entries |
 |---|---|---|
@@ -15,26 +15,13 @@ the tests, `python scripts/guide_progress.py`, then commit.
 | kid-safe 8-10 | 36 | 36 |
 | kid-safe 11-13 | 77 | 77 |
 | kid-safe teen+ | 338 | 338 |
-| ask-a-grown-up | 555 | 595 |
+| ask-a-grown-up | 595 | 595 |
 
 ## NEXT
-`build:Build your own BitTorrent Client`
+Phase D (wrap-up) if not done yet; all groups have guides.
 
 ## Remaining groups in priority order
 
-1. `build:Build your own BitTorrent Client`
-2. `learn:Editors`
-3. `learn:Entertainment`
-4. `learn:Networking`
-5. `learn:Related`
-6. `build:Build your own Network Stack`
-7. `learn:Events`
-8. `build:Build your own Visual Recognition System`
-9. `build:Build your own Web Browser`
-10. `build:Build your own Distributed Systems`
-11. `build:Build your own Memory Allocator`
-12. `build:Build your own Processor`
-13. `build:Build your own Voxel Engine`
 
 ## Done groups
 
@@ -90,3 +77,16 @@ the tests, `python scripts/guide_progress.py`, then commit.
 - `build:Build your own Git`
 - `build:Build your own Docker`
 - `build:Build your own Shell`
+- `build:Build your own BitTorrent Client`
+- `learn:Editors`
+- `learn:Entertainment`
+- `learn:Networking`
+- `learn:Related`
+- `build:Build your own Network Stack`
+- `learn:Events`
+- `build:Build your own Visual Recognition System`
+- `build:Build your own Web Browser`
+- `build:Build your own Distributed Systems`
+- `build:Build your own Memory Allocator`
+- `build:Build your own Processor`
+- `build:Build your own Voxel Engine`

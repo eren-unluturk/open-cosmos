@@ -26,6 +26,7 @@ python scripts/fetch_kids.py   # CS Unplugged lessons (CC BY-SA 4.0) -> src/data
 python scripts/categorize.py --no-ai  # topic, level, age_group, safety (uses the committed cache + human overrides)
 python scripts/coverage.py     # stats + guide coverage gaps
 python scripts/check_links.py  # polite link report; re-checks only non-ok links (never edits data)
+# After the data freeze, do NOT re-run fetch.py (new upstream entries would only get fail-closed rules).
 python -m unittest discover -s tests
 ```
 Setup once: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`. Nothing in the pipeline needs an API key. Translations are written into the JSON ahead of time (see `docs/PLAN.md`); `scripts/translate.py` is an optional API-based alternative nobody is using. If you ever need a secret, keep it in a local `.env` (git-ignored, never committed).
@@ -48,4 +49,9 @@ tests/    tests
 | Isabella | **Frontend + pitch lead** | Pages, level badges, language switcher, attribution footer, accessibility; then README, slides, demo video, and submission. | `src/templates/`, `src/static/`, `docs/PITCH.md` |
 
 ## Challenges / What We Learned
-_Fill in near the end — useful for judging and Devpost._
+**Data**
+- *Parsing is never as clean as it looks.* The two lists are hand-edited Markdown: language tags in bold (`**Python**: title`), `[video]` and `[pdf]` markers, `#` anchors and duplicate links. Our first parser silently dropped about 30 build entries; we found it by counting lines in the source.
+- *Safety fails closed.* Every entry is `kid-safe`, `ask-a-grown-up` or `adult-only`; anything unclear is ask-a-grown-up. Rules were only ever allowed to get stricter (a test enforces it), and false matches taught us a lot ("from scratch" is not Scratch, "child process" is not a child, a Slack-bot tutorial is not kid-safe).
+- *No paid API, so no API in the pipeline.* Classification and translation are done ahead of time by hand with Claude Code and committed (`scripts/cache/`, `src/data/`), so anyone can rebuild with no key.
+- *ShareAlike is a constraint.* CS Unplugged is CC BY-SA 4.0 and the lists are CC0, so they live in separate files, we copy no lesson text, and translations carry attribution and a "changes were made" note.
+- *Hand-labeling has limits.* We label titles, descriptions and hosts, never the linked pages, and a person spot-checked only 70 entries. "Kid-safe" means nothing in the listing looks risky. Real kid content for games, art and web at ages 5-10 is thin, so the guide backfills and we say so (see `docs/STATS.md`).

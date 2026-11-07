@@ -72,7 +72,7 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - `license`: "CC0-1.0" for learn/build, "CC-BY-SA-4.0" for kids. `source` is the repo URL, `url` the original page (we link out, never copy content).
 - Entries are sorted kid-safe first, then Beginner first (translate.py works in file order).
 
-**Pipeline order:** `fetch.py` -> `fetch_kids.py` -> `categorize.py` -> `translate.py` (then `coverage.py`, `check_links.py`, `python -m unittest discover -s tests`).
+**Pipeline order:** `fetch.py` -> `fetch_kids.py` -> `categorize.py --no-ai` (applies rules, then the committed label cache, then `safety_overrides.json` last) -> translations (by hand; `translate.py` is optional and needs a key) -> `coverage.py`, `check_links.py`, `python -m unittest discover -s tests`. **After the data freeze do not re-run `fetch.py`** (it re-downloads the upstream lists; new entries would only get fail-closed rules).
 
 **Git:** branch per person (`data`, `ai`, `backend`, `frontend`), small commits, pull before push, merge to `main` often.
 
@@ -91,6 +91,7 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - [x] Kid-friendly source added: CS Unplugged (`scripts/fetch_kids.py` -> `src/data/kids.json`, 57 entries: 7 units, 26 lessons, 5 programming-challenge pages, 19 classroom integration activities; CC BY-SA 4.0)
 - [x] First translations done: 74 kid-safe Beginner + the first 33 CS Unplugged entries in es/ar/hi/pt (hand-written, labeled `ai_translated`); the 24 newer CS Unplugged entries and all other kid-safe entries are in `docs/TRANSLATE_QUEUE.md`
 - [ ] Translate the remaining kid-safe entries (Intermediate) and check translations with native speakers
+- [x] Data docs for the pitch: `docs/STATS.md`, `docs/SAFETY_REVIEW.md`, `docs/TRANSLATE_QUEUE.md`
 - [ ] Lesson page with language switcher + level tag
 - [ ] Level path: Beginner -> Intermediate -> Advanced ordering of lessons
 - [ ] Attribution/license footer + link to source repo on every lesson
@@ -143,6 +144,7 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - **CS Unplugged added** (`uccser/cs-unplugged`): content CC BY-SA 4.0 (`LICENCE-CONTENT`), code MIT (`LICENCE`), verified from the repo. Only titles, a short description we wrote, the repo's age group and a link to the lesson page are stored; no lesson text or images. Kept in `kids.json`, separate from the CC0 files. Translations of it must stay CC BY-SA 4.0 with attribution and a "changes were made" note (see `docs/SOURCES.md`).
 - **Title keywords can raise safety, too:** Slack/Telegram/Twitter/etc. in a title now add `social-platform` (found when a Slack-bot tutorial slipped through as kid-safe).
 - **CS Unplugged activities added** (Nov 7): programming-challenge pages and classroom integration activities, using the same rules (own short description, repo-stated age, link only). Only 5 lessons really have programming challenges; the rest of the site's `/programming/` pages are empty, so they are skipped. Integrations without a stated age are skipped.
+- **Link-check policy.** `check_links.py` is polite (1 request/second/host, backoff on 429, one retry) and classifies results as ok / rate_limited / blocked_bot / broken / error. 429 and 403 are NOT treated as broken. It never edits data; confirmed-dead links (404, DNS, bad SSL) are removed by hand and listed in `scripts/cache/removed_links.json`, which `fetch.py` skips. Timeouts and 5xx are rechecked before removal. 7 removed so far; 9 temporary errors remain, all ask-a-grown-up.
 - **Heuristic caveat:** for the two CC0 sources, `age_group` "11-13" means "Beginner-level web/games/general material", not "written for kids". Only CS Unplugged is actually kid-targeted.
 
 - **Human safety spot-check.** `docs/SAFETY_REVIEW.md` lists 30 random kid-safe, 15 random ask-a-grown-up, all 15 adult-only and 10 youngest/rarest kid-safe entries. Eren reviewed all rows: every one was `ok` (no loosening or tightening needed). Corrections would go in `scripts/cache/safety_overrides.json` (`{"<id>": {"safety": "<tier>", "reason": "..."}}`); `categorize.py` applies it LAST and it may loosen or tighten. The file is currently empty (`{}`). A sample of about 70 of 1,068 entries is a spot-check, not a full review.

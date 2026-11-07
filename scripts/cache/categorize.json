@@ -1,0 +1,7081 @@
+{
+ "0018312474d4a38539b992d609f6c2ac567738aa": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "001f05e6d8beaab52ea20c6d770e2a16d40a0125": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "005f80ef3efa501605c7fb2e457791f12e31f670": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "00621c7bce25573689a4670da52d7b3f13072c9f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "00bd17df0894ea3dddf48744f0b29c759c03793f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "0101ee38f086c18c3bdc74736fe1b662adf29c0e": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "010224b7508f9b60cbe784e5957161f268a01ba0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "010cbc6d6c73a6df4dfcd1aaa5426eb091009930": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "01a94b623ff810f0682bbef18db5ada5d3e4289e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "01fdb8144cf89034b1fe2edc88a53324ac491f07": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "0219a11c89927c81f6b39b888eba20c775093df4": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "028a85ce0b86c7e18eb777a71677d5fc906c794a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "029304663657ab18baee300c3625f30124269dd9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "02d7eaca739c2c23aeb74b33ab186b82fd467a38": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "031060d5cd0acd0bddb00bf653d466ebb46ad6fe": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "031258a733e9bcade4cfd95cac8d1e556aff7a30": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "036e35ce4a834c5aa39b25facf8dc6704fc167ba": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "03bf03926bdbcb7dbee50edafc50558db680bfbb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "03f626e9fd54a75bfa162041684c623f0b4978bc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "04117ef59b8be98eaa7751a5e1775409dfa08aab": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "04340b9f05e140fed7cbdc0c2fff212dc42718cd": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "043d124c3444bb6ebad7d20e75c49a7679dd17b9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "047d5deaa4e162cf2900598180f9953072c9c3fb": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "04f3875ec0c869c224422d7aca4b0f51642e51ba": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "0516e95d031f2506c9d4ebfb619433d1db26faa9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "052be388cda51a5883dd8d150a5573463fa75ec4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "056142c1dfaa4c1de2cff11948a2ae07e59a4032": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "0619e75da3f7ee48630c88b23f616e7e0cb330bd": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "065c950abdcb2669c68981758657bfa98879200c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "066475989845460f0869190b78db725725bbf7a7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "069c114bf30e0a39cb788165b2a81605a9c99974": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "072a575eda6668b9223185c8bf9ac7335a4a81ea": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "072dad07a62fa89c882e0129dbbf9d61e6b07433": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "07b28516bb2ef838695d344d156032dc753983cc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "07b3650f177d5cc3e5b03f8f106b96e8a2e53c73": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "07c78b35dff6953dc7dc7ddfd9d60f759c5e773d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "07e2e9a2669b63673bc490385a44b482062abc6c": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "084852afe8cd37534b79553a21944928e06ea337": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "089f8e7060f53a8df11652e01ca576868853e48d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "08dc3f7b759beec70bbccf59693d4c3546c1928f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "097bc90d312f759a5c8aef806bc12dcf738ad726": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "09c33ba20a8df76cfa56a5572c6797fc4ba0f7a8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "09f8b00992175b7b3b1fd07910a496797c25a058": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "0a19d4c114d7b138833634e6f21dc24cc73685f1": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "0a288229bd0f0424edfd728eee13f2ecddb85f5c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "0a970e5487c773f7fcb5bf7aa4513237913c4684": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "0aecee858c635477fb7eb9c1eb94a635dcebd116": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "0b1105872c53950a66c582e147aae6036e463d80": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "0b3c828b06ebbde2ff77c4bf72bc107808e89971": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "0b6573cebdc7ba6bb2400b23e74c876dbd84d35b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "0baa58c86cb1196b2cbffae59d1a342ee30de112": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "0c10917071e65e70d83b3776490b50fde0ad3e76": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "0c450e36e6fc178c33113514918d54db0b34a77d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "0d30feebfa767daee24d5b2b18a63c5aa558809e": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "0d674b848369ced5319fadfc3cf95e32ef66c42a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "0d7485ab3df5d6d1e6f426e33a92f47a2beaa50e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "0d7514489e06534bbb3865b62412cd5bf725b6f0": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "0d89565d08c9b9f582a5afb5b4f296c3d03e3230": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "0d9a582db0c4366bec5f31e31f5d0876ff9da337": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "0dfd667fe8a6ddc8675d49b46dd34d2406dc1396": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "0e02024c631044d7cd023418c3303a1faadd4266": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "0e4e8438d0fc9762a0a2c8d543725229fa4ea682": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "security"
+ },
+ "0e5f17f35262a8bc16fcf090c82b3e1eb61d4b39": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "0e75b424818351082010bc00addad3c875edbe60": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "0ea7feffb0d3ba25b20e58eceda56ae921d147b6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "0ecbea7564eb1c21d00f88997ac4f2685ffe0b1d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "0f39575007f4a47c532f97dc2f3350a3ebc07d98": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "external-forum"
+  ],
+  "topic": "other"
+ },
+ "0f4e8d1cf2a45865aea463f0bba4b947f44e11ab": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "0f57d8520580b17904e5920e8f3ead84b143febc": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "0fa749577f18bdb16686573d69388a91db6c99a2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "10909d9b7080bfb280e9699d0607ad1f979adcfa": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "10d93cfb25b083811aa341ae28e4cd687d1cd7de": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "113805c9306cd136fbf4e089fa98564654da0a15": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "security"
+ },
+ "11380bea633f32fdeb86d62883c2b568a60e8b56": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "11544ef37dd439c627f966b2c093a9b509addd57": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "11684cac04710fd950d994bc5f873c7fdefd814b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "11d6bdb58c1e1537507253c346f79b08832e3c8f": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "126c4223beddfb90cd8760857ac6628b4c638f09": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "129f450c59b0dbbd4e4987aeff72e7b8b9f368ea": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "12bafc50a053eecbf7bb2631b88e2735fb88542c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "12c2328fb3cdc35609f7f0ece684d7292696a80f": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "1301d6f10500c49fffee7194b995f2195d61cde1": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "torrent-client"
+  ],
+  "topic": "systems"
+ },
+ "138ce485d3e9519f607b12f7a3dcd7a0896c646c": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "13a9bce6a5f777713d09f181c7e046f57c05446c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "13c4278e9ab1fe13d1507fc9a5bbbe3ddab93e58": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "13c5808c492c6842b9c314fdf601b12ce8a33581": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "141f539fa49afe22a230031bb0b42600c077cc83": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "14bb905437b867e9c2544523e0632f4289e4ee77": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "14c93de227a499d1ba61b45659c4ba4a7abea45b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "155befdcda907d7d28fd8fc313c6137ea576af74": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "15bd810b4687e6d79cc8848fd2d607a285c7d7e0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "15d76c64d07ff396ea8900a45c56bf548f986fe4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "general"
+ },
+ "166e26fd7c43cb5b8dbf270d8b3d5da0fe2ec341": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "16b30b1fa6d8bf6af8edc8a769b36dc5866e4499": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "16b647f9526543492464dad5368d5a26853ffe6f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "adult-only",
+  "safety_reasons": [
+   "security-tooling"
+  ],
+  "topic": "other"
+ },
+ "172683dc346dc35bacb2458fd46c634036ee889a": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "1816ea0baa34881d0169cd6a8d8664de3469f9a7": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "facial-recognition"
+  ],
+  "topic": "other"
+ },
+ "1865e62e0ccc4cd0b4c7a55b63ace138bd610db1": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "18ba27e8b315b123ad604cda8bf1e4f74fc7e542": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "unclear-content"
+  ],
+  "topic": "other"
+ },
+ "18c9f9df6cd1dcc8417388a21775f6c2698c6c71": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "18fb79eed747f971ec1d1e6459ad134a7ec339dc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "1a2f00553b9b1db99009bf3ecd4a7010a7d48e54": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "1abde89036f6643bbb2b9949c1d915d08ab7d24e": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "1b473ab619cc8a22ff7e6341cfb10214ef0e7fc5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "1b68fa94fc91815958e8032752bba3c7498a26ed": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "1bd68e7daf6602a53177f15560879de37119df1d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "1be0f4240fe8a6689597ae40ee91c9014cfeb0e8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "1bf6d898971568ebccd92d8d5ded8069a6b342d1": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "1c1635e627d2bc85b62ae6647398917691fd76e5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "1d1f674886d85f2d551c24ef44373da8ab9fbc59": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "1d25ed78a9e4570def403680ed9ef2c01aa30a7a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "1d7afeb87306e59a2281274281bd9415f9af65bf": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "1da62c2635596e47a2bfeec5de1c93ae9eab85cd": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "1dc6989dbec75b3d49cbe365b06692d0b5f1d566": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "1dd229c9b431d1026393cf4923386c63807d964f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "1e127f4e75c667aeb6719402319e4604fe79ac1a": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "1e4358df35e2d876b6334592977d2daacb191f02": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "1e47c99423092be016db99443bd48373e14acd10": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "1ec9bdfaee8457b92fb36b8cda4fab1b0485b79d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "1ee328dce9cda35a970c1f124373146e6b21044f": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "1eef79e2fe278e2678f1ba0510d0f6c0ab090c22": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "1f231ec3afe404c9de1de99f57d087eb431b5552": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "20507bc73186353dd929f06a9fdf9332fbd3c563": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "206ad0ca3398d7ba0d50afe978143df9c897892e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "20ae509060fd86acac1a40976a64bd042ecf5843": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "20bb1d1132b1dacf8dec0e4f242a7ecb2d77bab7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "20f45d8e8de464310bafb5f4cfb60aa332e3d05e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "adult-only",
+  "safety_reasons": [
+   "security-tooling"
+  ],
+  "topic": "security"
+ },
+ "2115b6c20ab5c1b0948b564bf8f7e9016f2cf356": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "216081cb85c3396104a1d67df4f6534385c931dc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "226f63a42a8cba4784a18f819a00be0504c5e767": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "227b3da329f288e3ad2a1ec8a01f43d7dff6637b": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "228b0fb3d50f7c5fa4ca179fea85dd23eb5ac447": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "22df4a7e8556a51a1a34ee6ba7411dc91c2a404f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "unclear-content"
+  ],
+  "topic": "other"
+ },
+ "2343b76d87d356edc75afe34368c6a88fa0b354e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "234d5fadeda02bbd74cb4e7e9b42da8a83c5499f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "23a4be8bda0e6039736ba87712d2b7b61508f0f3": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "23ad7046096ec61761564d246d393f4547460a30": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "23d831c51db7013ede2ac8f22903da63085b6779": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "23ecb1348277289e14db4c420dc102e0cd6b6779": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "2406f66d288e0305362f3ccc5d80367cba0033aa": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "240944c0125baaa153701426acbaebc353d5c7a5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "24ae9fc4167a21777938cae2d53f0f2f86cbf43f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "24b1acb9411bcd5d4b5bc31fa90559b7f0e469ab": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "252605d34f319cc588d05fe98bae0d1b47f4fc3c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "252ab4cf4bba6abd98c55ded3b3f7c59bf24df05": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "253f922f1a35cfc0c1c60ea15c38b4e26462b02c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "25a078fb4d164f3c198026a7233e4a5a8a8c0a61": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "25ed9fb08410748dbd3b5fffc6739b1b789bb119": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "2637e262874adbc84635b84a599cd9665ea6ddec": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "26bd3b76431d4ef9e582586f84f5d99a19368db4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "279a7acb243f6ee8bd37bd9d83f2a65a2b6bd8b2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "27e27b8613d94ca1cc58971c31c93c28b0b71cb3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "adult-only",
+  "safety_reasons": [
+   "security-tooling"
+  ],
+  "topic": "security"
+ },
+ "2809af5b84c07c76e0dfc3b0bd0c737d652db95b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "28478d2fc6ebc848bc281b423c55ccbd3a9b3e69": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "285e36358c160fc94904f19bbb6c09222c853e70": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "social-platform"
+  ],
+  "topic": "other"
+ },
+ "28f14395f3d47e651caf98c585a25c2086d73463": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "293a5730b2c18fb9202551d39135048cf3494668": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "external-forum"
+  ],
+  "topic": "other"
+ },
+ "295e9809b5f7e99be30efdc52fccea81280c9698": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "298168496a12c19179990d7577223966168cfd9e": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "29afdcfa65993e3b298383ab46fe009930ebecba": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "29f01fe7bb5d66815d3d342df9fe438b332e6055": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "29f92f388385b5e68ab7d91ef4316b656d59920c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "2a058c8d5b7d02604d4cc657651eb3aa3b60cbe9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "2a1cd0b50a86f849e0abb0da2491d97e144fe58b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "2a7629d58a47747911c61e6d8c8b95ffdd78e887": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "2a8c0550b774d5da35aa6f9d18157ebc0022746b": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "2af310d1c9e4d07cda41e5571eb90b6aec924a79": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "2b2da92bf72135c7afa801d1c23b15b33cc69814": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "2b85c6a33aeac33bd278917de3d552e1d3e62ff0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "2b8777472c962cda47c96552d9acac3180d9c82a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "2b8ba2c8c6d31d473ed2746ed234624b7c4cebc3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "2c2df2d5fa85bc10b253fdec04ff71305b9432a5": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "2d768b79e10291efc98146f23826d3d4746df3b4": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "2e23599ca3d56f2b706a9dade526c900bd8ddb63": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "2e23c32d1fb6793a9b1929bdb01aaad366ddcec1": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "2e6d29cdc68673eeedaff83c70c3306d6f701398": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "2ec1c11a31295d55185c2117974d11753e529e59": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "2ee8a08594ce01e41fa9ee431e128637df5dc097": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "2f41b0e3c4eef2bf71475442be5a92d4d95bea2a": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "2f4ff1a957109d0d12a90c7ff3f9becf0d5ea1e2": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "2fb01d3bdd87e75a3daddb4f12ca902ea734a1e8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "security"
+ },
+ "300a7bda9eb809a6cd1d276abae03638ee1676d0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "30969b2246cd28048c8335998a0d2a88c8d03679": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "30a62ba4325bec386dd4865bc17fa4d2bd0fa353": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "30ab6a2cf18fbd97cecf455828fd9e0c4c64357f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "30ae6f10bf2ea7f4cbe1eb9725115a1c16fb56fa": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "30f77cba162535b1bd6c4efc0c5cd54ee8e760a6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "310d13b1dd0a1c0fd511e346d0b5a0fe36e59a94": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "313a559ad968f51a8c2a4c988c0ce8f7c7b819ff": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "general"
+ },
+ "31541c91e8807b0cf39d84b208377b99093a028e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "31bfb12347787351bd3930c49d757ac0a9682ed9": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "31ed4c28b4e3e754d1531ea4076c312dbcd7a5d3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "unclear-content"
+  ],
+  "topic": "other"
+ },
+ "324f007cb4c62efc0e1cd035330364cf40f2ea0e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "unclear-content"
+  ],
+  "topic": "general"
+ },
+ "327b9cccf5972788c3c191f353689c68b3501ab5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "unclear-content"
+  ],
+  "topic": "other"
+ },
+ "3280eeba46ad0cd432af7bcd85948ebb4797beee": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "3307241963794448866a477faba988bd84b29fca": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "33857829d1875498bf468a53ceeefb6fc1c95cd7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "33cbcfce0dda6e9cdbed81f8364050c7f69d63ff": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "344350d9d55ec8f17d3877648ce5735a639e1e64": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "348e964295a0d0e913e834b9cd222daf1c7b308b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "unclear-content"
+  ],
+  "topic": "general"
+ },
+ "35da80d6dfb74c90a9504ac7462577c41b46a9c6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "366e8c03036ccbe307bbef9544f1323437b38981": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "368ee25eaf518ff7ec8fdc690255144816c3a8d6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "36a14aff9c8217c6362840e90bc93238a7b6f1bd": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "36bb4497a9bc448a8d7fab916bec953def371299": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "36ce5ef3647244f364345276c3df5f5b137b1fbc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "36d428c63260fce79bfb38444cb4d864912c5188": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "social-platform"
+  ],
+  "topic": "games"
+ },
+ "36d9f907e57652762e1ac76b5acc4de3a5477958": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "36ee8c13e76ed71ea2025c22ac8f9ea5be9ae494": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "3726dd1968e963e2948999c4dca0e8f56fbc89c7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "375c39ce2066d6dcaa7053716329251068dd3c9e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "375f443fc2c0e0d18d6bad755076877a4a0500ad": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "37dfd5d8f6c82865e7b3f4f7d86038c929b5c57b": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "380385652f6916fbcb73fcfd0114a783520c7d76": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "388eb4274cb26e50e4ebdc6b6d23d343674d5cf9": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "390ec68f20270b8936ef444ee63ce8b333399161": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "3978ef9762ed00069b1ba983db24ac047bb4ddde": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "39ad72b788da74f47706c8b74bd4e8fb6f0eb62c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "torrent-client"
+  ],
+  "topic": "systems"
+ },
+ "39fb8df08fdf53a3df869e02d8079ed260a356cc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "other"
+ },
+ "3a639ed798528468c601ce36c08765ec3df128e0": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-topic"
+  ],
+  "topic": "other"
+ },
+ "3af64093135657f2c9d47c7d75df4e3d1904dcaa": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "3bc191dec28e42f86507741d4b3f9562d06c8f5a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "3bebbd9f87384407ebdc3c4bd6f694668bd2dcd9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "3c45168550708225d2551b8fb9b4a31ec7ca2059": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "3c75807584471077ca0cbe0972a8017c1190f32c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "3c7bd73974682a4cce39f89274d8dabb8f13d7be": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "3cecaf76006f2f9375385e024a645c2bec660e02": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "3cedc1eea49f71f262a7422b55569cb34112c264": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "3d6777fa0b9218704ddb5355d619718b9e2cb46d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "3d772d76c7e7fa37f3bca9a48939655e47ed984c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "3e33b1c9403839c26088f23822ed4a7517e155db": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "3e74241d701db0adea677a719a7d53c18526c1b3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "3eb9aa44833d2a219eff323c5f74427b8670e96b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "3ec28e80cde122af20f464954af251b3cdcde9df": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "3eccd6e3fe72a138fb026a0ad77f6e58e72fb2e1": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "3f4200a753e9cfc115ecefd53c968edc2a3a5319": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "3fceefb9148b37e0337263045649b3f364a99209": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "3fdae98b5ec7d02f4b554e3d051aebfaeb3653b4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "3fe9821136869d0c3ebd571fbab3a8c5b80b379e": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "3ffe2a29e6d4aae0196866f10cf8819a77d15e9a": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "40089d156f6a01b9d40dff0708e65cf5b27b3e79": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "406a50c63d1c14a5f88d9015bc19616d245b3325": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "40bffd77d42576eb90df0552e0b7273448ea43b2": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "40dba81e6dde30485ce0d790d2609b1f3e34979f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "account-required"
+  ],
+  "topic": "other"
+ },
+ "4140d6a690b526276d0c4c9a53e6417630b74d72": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "417357040f6dae9dcda804ea3df49fd45d8d0ce2": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "41fb95032443d4d66fb3acf47a35365dae06e13b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "security"
+ },
+ "42327e86e61c1ad24c72d90efb83a60b98091a27": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "ai-tools"
+  ],
+  "topic": "other"
+ },
+ "43078a726c88ad46681318c2b3693ad43964c8c8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "432eedde9c9bfdd8edc976b3050253f22f3e1113": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "4332a7f486ef49ace1931af0588a1bd0b07ae391": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "4334fecbfdf8b2c54129edbfdaa6a3fb96e29352": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "43797d558a9e8ef17180e80754863c884b935ec1": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "43ca9764bb8c34fc3e45d7ba6a76c4e7eabdc756": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "43f28a77edb6c781855ad2982f84d8b5b3aa0aa5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "43f49dcb5c37255f8f8e2c9e30f54705575fbad3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "4445d7a02ebc6d1bad622ce8a627a1fedc31a57b": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "44ae73c9b78708a055b0fcd56b5f71cf15de659e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "security"
+ },
+ "4560d86b8e000c0f461d0e25936016392bfdcd72": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "45696f458cc15aeb43e728ca8d515062cdc32dd3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "45b22732abaaff5f1b3046d8914519a1bd999459": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "45f99e1d026fcfc4017ab1ba7007f245bab9079f": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "461a07714458ff3de28f4b1a932a284eefb72b03": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "46744309ae9c5fbfc9b40d16cf852ebe846d8228": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "468b28aca3c17772a6e0400e6982fa0e939ea1a4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "46ea19d3e667b32d2714923f3afabcb255654126": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "47454ec069275e2aeec680e6526d7408b41f3ddf": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "4745b321f94e234c009848d763c92c44895e6cde": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "47aae61a59a3af3fbe096cfb82b2672dbdea1d17": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "47e24c2a701fa5963859ac97445469a68ba49bcc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "47f6f7368aabd70f9cfb60a0f6fb7661221bfb34": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "4851c7b0d38f17400047cc76e1c861f76d594760": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "4882af5b97abc8c48eb2e9cb095bea9e64c90dd5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "4894ce4be03929fb9e31c9d22f48a91e85ab4d66": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "48becf50359bd3c2c3db6d5dd678b5ae134fb45b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "48f7ee08dc8f952049bbc7c5fdff9c082facdf17": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "492abb6e93512582e251f76f4c78b6091063dc38": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "496c44a885cb8926692db442924d380fc611a208": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "4a25c8074e70286df4a9a1671b7b80db10c233be": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "4a9399ebaa57ee9f6f0b5389f25afaf2530f7232": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "4a99f48f3e5c4774f3f9719e6147ea351ce71d2c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "4b07ee3e55e234a4ab88195a13493c3a0db78447": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "4b67f9254e6a67017a4238961286cd6c24004b34": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "4c2426b2c5c346c817b1fb6143c2bf0a94e4034a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "4c528c895a19d6c97c93980d293dce00c5e4b988": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "4c938a8bf0cfe5ab37de804cc01bb69ff99b2bcb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "4c9706baecc0584d72a2c397fc106a7e80292371": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "social-platform"
+  ],
+  "topic": "other"
+ },
+ "4cb84b7ea934e0e319405d217e6e214026cd1ea7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "4ccb4d97d7777cde8e7c1b2b3ec4047770ad5fb8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "4cdbf34ff4bd8c13826eabd0a275619c4532b557": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "4ce8007c3694afcbcbbbdc2bd65aa4e72bd356e7": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "4d73ad790c01d1a64b347641cbc24f9a1c94f35f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "4e1111aaa4a923c99cd817a3107a3d595a3cca3b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "4e3d669bbfb3a1fc79b9fa95b46e2164b8a6fdb2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "4e41c677e67134e6f05fdf4372dc88ed90395ef0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "ai-tools"
+  ],
+  "topic": "other"
+ },
+ "4e7c7c5bf4c4437c44876b571da76f740a9c3bca": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "4ea8923ef510e7641844bb828116a39beae74ba5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "4eda95f9b1ebeda03c0acf89a41c6e7f1190f944": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "4f2e69d63007b9a4d5a46bdfb867e20417770f53": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "4f36eb02f1e1b9376baa2e7db809a9be1cee4754": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "4f3c47d5eebcc4f51798a83603c394bc2a2076e9": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "4f589d2258e524c5d16a14e2975dd3c00178353a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "4fdcd6b7fcdcb67fce4406e5308941d08e4a27e5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "4ffe514afde262c421950a0f656a91453124acfa": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "5031770fb120606309eb4ece17f29841536d0292": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "50775b7f7d0092cf7e0de650bcd4d0cda07b26d3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "social-platform"
+  ],
+  "topic": "other"
+ },
+ "50b59112d1355121ab73fd9f5fece478df00a4c0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "50c4bcb93093bc585b5b026771fe6a61c03bf3d0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "51d85f2be7c192ac63be2bb9e30ed12422f39175": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "external-forum"
+  ],
+  "topic": "other"
+ },
+ "52a8b693024f9a30e7bae03b152634d321fb8c67": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "52e49c1b706a271c4939967935e866c11a814b8e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "adult-only",
+  "safety_reasons": [
+   "security-tooling"
+  ],
+  "topic": "security"
+ },
+ "52fc753afad5e039367a3b506818003dc2c73533": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "5309967eea6d9fb6945c1ffa4832ca6245b67a21": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "534dd4257a87491d7f23f66089e6604b0f452ba8": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "5369da33a220a1bdc7314db00dceeff5d90815a3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "account-required"
+  ],
+  "topic": "other"
+ },
+ "53e2751a567c27c4210852e45f0210e4a988dcac": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "545e9102739da10ecbf7967c30fe99e47a872f97": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "546007c67895736bfe48268d3ffa668276ed2606": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "547e0c647b3b2599d8e206ec702d489fb60e8e77": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "54be2923f945cd6c5b5dbb4431193b37dca9e71a": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "54f9a2ccc3b17489dabe1a403e7c3c2f7bf1f583": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "55006e930c56032a0fda848939db7b8fca414402": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "55226c14e627aa7d5dcd9dbec54eaecb29695ac3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "social-platform"
+  ],
+  "topic": "other"
+ },
+ "5584ad332a5a0b4585eeec8fecfee94c40098de7": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "55c5e67a0dfc894ca8d67a67d7a469a2bbc79b61": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "56bbf3ceb15e5f351928d93433deea84a8babd0b": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "56f12558c650c5bf8e12cc1ccb21efb5576bbe28": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "571e6a260910d3b00f5584ba8a62571f6b05738d": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "572bf1c105ed1396e1d120d6aef2c3904c298928": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "57db5578fdbb501e4cea302ce637a13daa294eda": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "583049c066d094415a87695a530fbd5cdd97b9d0": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "58d79b876854593325521e3640415696f2f8fb74": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "58ef266ab9e20beab4448d156a9d5180e27de80a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "anonymity-network"
+  ],
+  "topic": "systems"
+ },
+ "591f389e79cdd146d1f7f321984488faca4a5ba7": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "59bcce96604d0c60bba8ddb2671c399e787b475b": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "59cd59eb39284e5cc7857b54db833a07f88556de": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "59d41f7e82d1055b17d3cb3fdb95e8a5ca1a1b71": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "59e0b05af4d1cce19521a852790b35f7cbd35668": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "5a24cc7bc9730a684b252e142495381e0df2db14": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "5a42cbff2323eab0125deac780272d446f1d1cf2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "5aa6227911b12f9d0fcfe3d523f1907c7fef6fa5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "5ade54dd889ff07b83cc605f7d4512e3930eee22": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "5b40b93946316397f0f857babbbf363635544a49": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "5b91ac49d4d07f66790dee76e9e7e8ac85019a27": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "5b95e238b30fd77b3c515c98d2cec77834582f1b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "5bcbb31e25d27cc912b181e1ae3ea74878c41dd4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "5c3695c438349f2476ca01d5debc3fe3895a3dff": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "5c408bdb5f9621c97454da3a05b113541b3b5042": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "5c44d54fa05c37aa3b574e278acbd17d1c982cad": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "5c515e2a437764ecede7baa81de4413664949116": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "5ca38835aab06bf93f43f00a714af385c81c7133": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "5d06f97fe75cfd14671772731fa389301ee0ba58": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "5d209d246d9e6803f8888074997066d585f5e751": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "5da71f5e600f3f51e2f5974e3fa775f0e879bf70": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "5dd4d043b071a8035aa2ddd32ff171be7a5766ff": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "5de838cbc3548c61e6e4b0a66b27d9236bed166c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "5e812386938fa697c4f910ee5756a08c41d83777": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "5ea6c69b1e680614a74e9526bfa60674bf12ca67": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "5f99900351b5e855664f3b27598872cef539b155": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "5fa2b3d452cada90c5d5a8f0226bd017c0a4c955": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "5fc8202605f8d04123b0643cc19841ff5f6f0cde": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "5fe593b4de769868a2d460d3e5e47399b8fa5349": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-topic"
+  ],
+  "topic": "other"
+ },
+ "6031595e199c53b9202960cb26af5b1a77e7ba35": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "6061f17454c919fb43e77d233dab2703fba19850": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "security"
+ },
+ "60d916674324bd07d2735c9d2d9cbf517bbe55c3": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "61113a49a12b6e64bf04bb444e15ddecc215508e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "61118328ddd872d602a4a3f6c7ebc1c990f01591": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "61326a0f402c8f9be74ca5f2e77b8f33768c1ac1": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "adult-only",
+  "safety_reasons": [
+   "security-tooling"
+  ],
+  "topic": "security"
+ },
+ "61b0ec1a0443fa5aff3ab5e48c8b223704a184fb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "torrent-client"
+  ],
+  "topic": "systems"
+ },
+ "61b707ca76da0e11c8b0863598a4efc07c585243": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-topic"
+  ],
+  "topic": "other"
+ },
+ "61c935adae842c72066040132b8799bf3090352c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "61e142071f722606fa348b40e13ef600c04855c3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "620af5ade062aaa2045c780ebc1809055f2757d3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "62299f538f7b16e513897448c4dbad7c95636725": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "624c3a51938cf75091c2a8673da3462001c2a365": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "64001469ab97e952153b653c5d1416b841be7100": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "64ef0dd60a4ef31c6d4c44582d2a03b494069fe5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "658e7c464987e8f96b9cb680f3799442edb87989": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "660dbe5a0fa0f37ec998093fec1c4530420f02d2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "663019dd6e1aa546132c9ab811763ff239a3c7c0": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "6637813754518d20e44663d7f421bddb1b50fdc6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "664dbddae407783339602c30d7a70cd9548235eb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "66b3b77e79e37f36fbb84d1def8a3d1d7510a4b8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "66c2187b448889ed2a69e86c23bab75b416699fe": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "670e7bd0e5335440d7f3a7504de57b684b9849ef": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "678addf38da3d8d78633b7b1288e115d924a46e6": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "67abe1049e98300f1b22e8016b510ba6e306f995": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "68183edbbc873b67f34ad9529f4212606da18d02": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "682137e73e619122157cccdc8c6e5bc6453fd1b6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "other"
+ },
+ "688032e345731c7df05fe379c1539fdd109c38b6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "6886b4c60c8431d183e09b0b926dd6abdabc10e2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "692ef71e7d9f3e951724ebb28426cffa5607a498": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "6a659619c64270f768109074a557ee4c7015f51a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "6a852c5904e2b02ec805239f70c08905d11ee2a3": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "6b68846c1a7ca2a00bb274941a4b388c47a537f5": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "6b8cf1e6b27409db6dcf8775eb75a1dbb911beeb": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "6bdef9fb98c04108fc72868beb36f4b6e1c405bd": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "6bdf0343e857b8f21dab18cbb304017f111f94ad": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "6bec52bb26199725d6f3f9ac90deb73a8e2b3931": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "6bf73af0e6f28ea45c086976893f3649b6838544": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "6c20ba66d5c94b20ed3f3a4e98add950d4c5499a": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "6c704586e5542aaeb92a627f363ae8e5434bd743": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "6d929c09ed07e97fceaca2081f924e90d33962cb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "6df7d54c576b29aede6ab51bf548712b628176c9": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "adult-only",
+  "safety_reasons": [
+   "security-tooling"
+  ],
+  "topic": "security"
+ },
+ "6e62a8620f465cbda0a4faa4c316a43af1229b52": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "6e95044f0787eaf266bfcb011f8e6fba9f250219": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "6ec3bb6d314dff2be96ca8fde18c412abac2ba6a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "6f16802949f7bc4a8d49c8747265e75a368acdd0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "6f71ac953f18f2d10b35da097bea002dc56bd3a1": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "6f8f6db70a26a71519751e151813294b102826f3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "6f8fe567675d1a6bea4a265d4a0eb40bde444839": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "6fc113194628a786d56511e655d7b7f1abe670dc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "7032f0b8cf372aeee2cabc69ee7b73c6ea2893d6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "708f582cc10a6ef59ecaa68fc394a21eb38c1f0f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "ai-tools"
+  ],
+  "topic": "other"
+ },
+ "70937a8bf522ff2398b5961e37e55395f7c9f167": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "709c3d2556c6fedc061ab664184b1240d6dc744c": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "71009f3af2f0793488592808c52efe195987f2e9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "7127f2586a49124791f4d3d5e5a829e994109255": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "717a2a459a581ed826ce0b850708f850a1e9270f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "privacy-topic"
+  ],
+  "topic": "other"
+ },
+ "717ea834a7123a67dabb335ad632a62758a4a2bb": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "718e7b931427e06cc76688edd000911312dfc89b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "71b903b513f6ed8b37bc8c566bc8778169d576d3": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "71c1e69ec8d01fbda65b50fbdeef0d52874748ba": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "71e97ea5e1c489c1598f631d8f6401359aed1a5f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "71facbcdd04395044b4738dfe19accfdf52e78cf": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "7232239fb67e0c11f6a16b960abc5183e63f99ff": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "7256b9f919d45189546df5c6eb07b776c31816ba": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "72b233eafc4d5fea133a7f64f0ada349ea710626": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "73106d55461af930d426d5c3d49808ec1084283c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "external-forum"
+  ],
+  "topic": "other"
+ },
+ "733b0883e378146ea50db53655fab64804504fff": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "73814615fb1b3475fa65ee67e699d4a6fda2fe1d": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "73e34d75bb0e1e3a239754714530986d58ad15dd": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "74d64d285c6ba8d474d67d0b566bfc8c5f7580de": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "751afd7ada369c72ffcecedbc8e59c6fbcab06fc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "75369bb8bccf33f80e413e093e1e53bbf74f8226": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "757f5f91cd424c52a79e7d56c7555c5cd5836fcf": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "75db0799569a74184408440ff7f76740dfed698c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "76474bbefa29bdecac1c1f96d45f75abdb512a82": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "76599c27e46e769774ee0590863ccfbcdef2478d": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "765b7366bba2111b17554dc80199eaa38fec98e1": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "767bba3a952613863cdd9b7292d5c3776c01ef25": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "7689467298738b4cd3d2df5c416e5881e9323273": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "7714a15db9d93564afc89062d690e506e8082228": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "7721ce181cd0033e361d5f19506e33ca688c19e7": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "77399c200e5a98ee9ae14494561f026c8bac5534": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "77d9de5743d2f00d6fd825a4e1dfa205e55278b9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "7859bd27f10d6b98448cba499dafa1faa92d3da8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "web"
+ },
+ "7861c831fddec8bb48b0998f4913c188ccd3290a": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "78772fdba6c7c66ead76792c39f3ff8bbaef1cc8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "78dd1b5715dbd623b08278b1021caf33195cc575": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "797645ccb74fb9b4056140e5286739c3c5c8f4bc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "79a6151e0c97293f0cef06796fc88d300fc8c298": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "7a2fb98b829fd2919a7686a597240cc6a3c57356": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "7aa450da384ac1fc040e12117ba9600e3f2d06ba": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "7b1a7ab5ff2db562320ca8e5da8efbb6a24f2c64": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "7b2b9f030c3d23a9e9706b5c3f28f622699aff65": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "7c87a5d475fedcbec85ce2ff0ea8656c0205bf38": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "7cf31d3a06d6a709f3d9964d78868b47f78e6a52": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "7d28ea0771c56d7b6b9aabc02b8da100921fd7bc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "7d53b1ef0343e3285f59d5c020819f4947473915": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "7d5fe78cf2ebf2b5adb1e7d31463fd8f247ec353": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "7db2ad99e6a1483a17bf3c71301387e299a63bd3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "7df08a4e8b26352835f415261bd2443e1d6f59c8": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "7e12900cf4897a96c7b988aecf04452d62d27385": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "7e24388278b6e53de2f2f8f36bc262cba768463d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "7e58a412a157612f8d763721d7234a770b6f2aae": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "7ebb2cd7a24c7076d351914ae6fcaae0799d7a3b": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "7ef1a9e164b49101340c03b0cb3da179351dfd93": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "7f07e583ee565e8ac6a98f5014fd264825e92b75": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "7f11679519bb2691de498af2ccb0a4ebbcf4d7cd": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "torrent-client"
+  ],
+  "topic": "systems"
+ },
+ "7f513dcd57f836d726458fabdd10d7bdf9118c32": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "adult-only",
+  "safety_reasons": [
+   "security-tooling"
+  ],
+  "topic": "security"
+ },
+ "7fb0dc3e389f918cd8d98480bc2f91ec4b537c5f": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "806261e68ccbe1ca4e008becf45a0469f07f1b14": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "8067460574e4afe06a40292c147d9c7e18868d99": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "80c3d84cf088abbf60ffda52508b1bb3b5880c14": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "80f2a33696550aa48a23e408e38a224fcedd0860": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "8109582c92bc0f39d18d630793dd71ed823c1fce": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "816f3570d15cb426d14e69a783848d7aca8f50cd": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "8170b608833b11af6dd8c813488d233e46dc76a0": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "81f9919341635114fefa655ecc2081656c80a697": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "822682a5fc2a8cc7f03611c2d98669c3a2f0f870": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "82560696a7dfe98ed40b203a26c43704a0e00395": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "82b156b18823f57ada7b11efe61279e208e9c3fc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-topic"
+  ],
+  "topic": "other"
+ },
+ "82d1624131c125bb94f1517f3a0a7c84caf1ab59": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "835be87f44350e124f513f61dd4a5a64f2bc76a5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "837814bf98a2f3767946ed37db21567b1d0adbda": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "83b41a529a0ac358e511170a5b34d35204b0a586": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "83ba50504fcee2a7ddf38322654903d863c36152": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "83c366cecd7fb436783ac6f603838bd726b7942d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "advertising"
+  ],
+  "topic": "web"
+ },
+ "83d3db69946ccfdead81a4c839ab0d6371b0b973": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "843ce86ac079f8fbe43cdfe84c11fba46e7ab031": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "844c996189113b6f1b4c05af72c85e9d0da02d35": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "security"
+ },
+ "8496c3328e1f31d66fc83fdb39ca7404751e674f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "85037e5baf6e7fa7ca9212100d2fa8c090893e6f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "torrent-client"
+  ],
+  "topic": "systems"
+ },
+ "85123e09cb2802d8683648c15aefb7f03da19559": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "unclear-content"
+  ],
+  "topic": "other"
+ },
+ "853c4f6e047d1b2f0175a7caa3fbc7dc48658a2e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "85766621b2ca3fbaf92459c4ea0802ab57e999cf": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "other"
+ },
+ "861e9535181546388a67aea5c70cbc41a28415bf": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "86398946a30e3a63f5dcd87bd41140de5ffcacbc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "8675ed14d2a07aa92c263eff052f50e3fab71bf7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "871f2949ffee816c2493ab879492b089857028eb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-topic"
+  ],
+  "topic": "other"
+ },
+ "877ac3c3a15a26ca284af08362c2463f9332a26f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "8840ede1adc8dd088c0145c9b7ec44f387fe5996": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "885869935730e4cebe875bfa9759f617e277f066": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "88b507d165483e82c66494deb442601dfad0b1ec": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "88b94237c57b5279a4d259960515a25dadbae5f6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "88beda48c372582d75c23818d4d15c0dde557c9d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "8967a432e140a7d88973391da8aa6a0ebf09aa61": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "8a36f1f4a6fbc42427478a0005bca3fdfe03d24c": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "8a967a99dfd401478e5ec99400e687abf3a94d0b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "social-platform"
+  ],
+  "topic": "other"
+ },
+ "8b049e1221815e1406a45be94a59489ee502ad04": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "8b0f25f0e5d8332957fc786cc0421d28ae6f81f7": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "8c2b3bbe37bb6e349875a834a0415f6415d5004b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "8c7f69a0419a8f64d78d41919072e7703c75ada1": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "8cc53ee44182158b77313c278972e90636cd14d1": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "8d9ee42e1273917147c9f0669572d935f4c46129": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "8de9918d87c726f82e9537cbfdadac819ff4eb0b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "8df8f088077057b25fba838ab0ee230cddc89361": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "account-required"
+  ],
+  "topic": "other"
+ },
+ "8e56a52253b4cc82ec04ba607b3f45400bb6cc08": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "other"
+ },
+ "8e93eeaa27d89299384710bcefcf6114093d9339": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "8f5a83f1e70af80d3087c7579cf7e8b90ecff8e3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "8f6236ad4168b267c73953ebb0ba86e4e0f1cc17": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "90108f900f646f836aa177eb41aff21ddd36fe14": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "902792ae203305214a3c876b35cba58b7e9aa6ed": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "90409e4ae6c914825577ad83c3c747d7d12a4bb6": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "90afa3399cceaa6d5ef05c921e432b86cbf0c02a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "90eb4fb0fcc2878326264dcd7bde8be59134b86c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "90f02f04e485d6d107172f0d367fcca96d83ef47": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "9121c54a62c92cf67e29effd7d7d1b2ff4faa242": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "913fe2b3de2ab3f251fad242fefeb5ac065c519a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "915010277cc087be2217a8cf8b5efeb4dbf9e82c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "91d34615abcc5dbd975293eb23acd185e06c012c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "928dd368680c99949452a7cd2b8d1e3126dc8d08": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "92932ac76d4186cad5375fd1947b62d1d5fd874b": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "92c27dc2fa44f686ac5b222e3d62975241927fc9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "930820aad1f53050fb379fdcdc9f8a342cd69805": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "933923854b2ef91719f2668c0ca8a79c9823c7e6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "939876ebc58afbe96d79700b361b654e85dcec3f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "93ae5e778865144fba46f5fddf4704444eb8cd72": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "93eaeb7d7bece036ef948eb4d7a1426c0d04a7df": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "941cd6b6c691118af09ec724b37f35a11ef1d6e7": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "944fa1767a539a1aa5badd31c7c2031b2f9ee52a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "94603b5b20e8d16908783a1a78d46f2eaad5a029": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "94bc63dc23d1be421e07435b879b9a4466272e34": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "94ed77e93cc86524873514a42498cdd844835538": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "94f57ef07bf53f818ac825986f04144074acd2fb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "9526eac169de141093a90786a1a1e6ac24dda6f5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "959f60be6d51231efaf882b3a791575911446d76": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "95acdbb902df027e7115bcf5ba311e82ece57dc3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "960d8cf71fe8c6f07f2bce2c76c0a7305eeacb79": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-topic"
+  ],
+  "topic": "other"
+ },
+ "96987ce5c4a9f3d51772a84c23370d9ba5e7f1a2": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "96a81683bd1b4f20c5ccc379c7b6b48cb918db98": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "96f4d357e332da413c08f5cd2f5f4a973dcbb1b8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "97628728c80791b39c71946dff836d4432f90335": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "978d2b70c5d5aaf29e0cc7c9c8cb025985582c42": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "97b6a877d261ba30c50d78a748c44f67bc3adfb0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "97bc660359345c7313ae8b038afe7be0937c80df": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "97d8f45693918c49cc9f9f67586b5b9b1c946783": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "97fc488a23689604cea6c3ab40f091013e6562be": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "9806eb13830829c25157234e57c31590172b67a0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "98476a1701a12d5c77ebaf8a59e204b205d84b6b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "9875e87caf7a9e357ccf9fcaac40847e69df0b3e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "9993d87b513b127d6df02d61f116ebb599d36814": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "999a8ab395e273c8d6ea8c5766595f817bf6782a": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "9a79a7bf240f7b34ce8236dd461482a5578a9d8e": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "9aab53ff460b38b650a41fa7beb7941cccacad70": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "9ac95047ebe06240e9d057fa3672bd9cdfe766c0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "9ae27c04f4bd3af8e10630135160b462974fe4ef": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "9aebf24132b7c34899418f1aabc15498eb8401a0": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "9b38ea656c03d31c760262d4e810ac7fb6748f3a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "9b7dd84245068091ddc717dab2e13633176b8722": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "privacy-law"
+  ],
+  "topic": "other"
+ },
+ "9ba664633d70e50e98d2eed2e09e8683ba067339": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "9bdff1d07b29376edf0a084527a9f696ee371643": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "9be6c2733bbf87004181a62560f55d6a7ec8eff6": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "9c821e241a90377345fb0db24a1c728a8aacaf51": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "9c9fc63f1fecff1dc772aa8aee1c6f3fc8eead3f": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "9cb6ef85ae0d9e16e9fb17b11e3c8fc149e57b8d": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "9cc9cf2d80db3aecdb7059214129815417fd35a9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "9d4333e9d9184d459626c998c526c623a0d2bf1d": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "9d60e79a915ee06085c6a7e4d65692ce88489b38": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "adult-only",
+  "safety_reasons": [
+   "security-tooling"
+  ],
+  "topic": "security"
+ },
+ "9d7d9df44a3b54024ff3dac6e4059dad6b69653a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "9d88d962d3d287451d75ae8792747b80c3e1421c": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "9dcf52c9b21a4ce082f0aa19e8d5dd4a494a3cac": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "9e19cf5fd1d1c65d905c135fc1a52629c4fe5fac": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "9e8c2883edfcd76fbe3203e857b58da1ea6a8dac": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "9ed8a7124c3c4998ee16cd211f0c2817e4d30300": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "9f89819e3c2b590b8dc2fa81db910a9718144b4c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "9f92f210eedcb77b2f13cec23e7bcc48ecc4b775": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "9fc2af90c3534e5d4fe8bf046cd379bb5ad3d2e7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "a024059c6fa82f7a2dddb97bda5380db2306cfbb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "a03a9004ac1e77edebeff47d0075c82dd63f92fc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "a065896ef56231814299a247b2ef3d90614924a8": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "a075187bb45a1deb36eda79180c808c5d11bd5df": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "security"
+ },
+ "a07c8f701b7e10f0e33b53d976ad69105ffb6097": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "a0cfaaf5ff76987b42e217b5487812e0c6c5acc5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "a18e8de8fd2dc44cb2fe182a35b94fa4b0e00958": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "a27c3adfbea00da6a2802d055a2dad1b687e5c27": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "a298f14f3f8c13572ae867bceab095a6903fd850": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "a2a24d085f211b17695d463a98a3f03858d5a853": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "a2cb733ee718b3ef445ddbd7056f2ee52f8925ae": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "a2d052a09ddcca52e310ec3edebbd0b47edd6dd9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "a2e525154999e70ddd33a70626f274dd5922b7dc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "a3495d992085db27a4dba0346c10fca09512e85c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "external-forum"
+  ],
+  "topic": "other"
+ },
+ "a399581b5c353324f640a84d5e469c2b3e44e835": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "a3a2e7a6906bc996ac8b7aa0ae95559766178218": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "a3e3d276bc3c523e5ec943bafbc20ab301469d46": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "a4931ced8a187d157958762baa56dba4ec2e1b98": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "a4e980651ef6cba59db29859c4f59771787c405a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "a5f6289714d9fe0912b08ccdf48e15f019536737": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "a61ddaa023bbb91d8996d67bc061f4f3b784e588": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "a622d35f8561b2ed022c14fbd93c8081649ac45e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "a6348a5f5ed08ba6f5c1f90955217931c819b9a6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "a648ea334e8dc8c912dcef10f53866014da09b69": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "a6894b9b6f15d8b5dd44a6b1736b694d15e412e0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "a702538a85f7851c9e854348500ef2ad6b0fb502": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "web"
+ },
+ "a7931525cd18890392f91da2df87493c8ebfa68c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "a7a17e7b8079c5c073d1c20d650106b3eeadc68f": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "a7b51524a1e72efd1d9ad072b3f60b6a6e62e298": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "a7c597e7a84e9f679ce29bd3e4e11508f796657d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "a80370cd43dc8527981275f0b6834e3b9783264e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "a8866dc946ed08c8cd5f9c88ffafac57338cf366": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "a88f938f139abf796cc1885b9356eb898a76c54c": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "a8adb657a27d9885c80fb554b3b309107ecf530c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "a8f60aa36fc692caefc0ed7cdccd9f18749b168c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "a8fd14a4ab711cc76395bdfcb26b94c72f93952d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "a95d6b0853fb84d4e25474842829dc48823fa3be": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "a97b355aaf0203428f84d4b578566eaa4b10d302": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "a9bb741aedfc923c915dbde0e7ac19f894cf0910": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "a9e470de6ba69a69a59d531cb2fce271cdf6eb7a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "aaa6560292c9c07bf88039aa7e2ad72220cc643a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "aac226f1eb86e44ed549ebed01582e1d6fb8b682": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "aacc767f4dd102361b21dfac2446e127a22fe8c4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "ab440df3fc9867d402de7051a5e44c57239329a8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "privacy-topic"
+  ],
+  "topic": "other"
+ },
+ "ab6a32d95b3e112dc7b7a8dc8642fda8354d568a": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "ab958169c11ed20c6d065f0110d30a46125532fc": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "ab9a311717208b858f9b6fc984cd7149fdbefa4c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "abd2e6904f1e1ce7f6c9f54ee9c07ffc273cb565": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "aceae8c73fb5383c219e5bb387b6ea56bf742938": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "ad01ca5b4039c98d765175d0aca55c7b456a87f8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "ad8f9e01cb9868473d30ab7e8d27e3ca59682334": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "ad95c97e5b7b5cacd5a8d68bfdfc3a81509ae460": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "adb5f7e625f0712b955badad0a8feb5cde87bdbf": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "ade42133dda6cdef6c36c7d0db74d7ff6add0d69": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "ae1b6a6bc6883c4b096533cbb5ec02baecd43b5a": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "ae55ecf6e208d57bde8df81d8c598911c443b90f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "ae7e326ad3c0c550a5c4802b3991810d580eb0d2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "aebe2fd264462c62be48ee2bb69f744773bfe000": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "aef984d0fced031caa9793dea4e54b5f04e9139f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "inappropriate-title"
+  ],
+  "topic": "systems"
+ },
+ "af064ddcfa3c4b46d0b8e19b9526022defbe61df": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "af2981a58e8a8afe74bedd93995cc397bd56848e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "af2d0771c7f58b75775537bd617226bf5d1c41ad": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "b056aec0f939616993b66377cf74588048b5033f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "b05e8a2aae6d2ce1cceec2256d1e3ceed96f1361": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "b0629e327c345fb9636807d84e7efe26107cc318": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "b0cf3b1fce2fec17bf7637920c2d0bf5fcc5e1a7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "ai-tools"
+  ],
+  "topic": "other"
+ },
+ "b158b8509cae6666e238edefef3204248a11cff4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "b185d0e6dbd0b1b72eb84958d34af7846645779d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "b1c9eb80938dde48df28223501db0bac4d93c94d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "security"
+ },
+ "b1cb0ca08a87ccad9e675e234c5abc9bff050f0d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "b1f33ceb1bf257cd653391f484d33a9410e50e2a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "b2fb38e53048329ebc25b941875b1c417d233635": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "b387a37201499991e02663647a7eaa2dcdc973d0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "b3cd6b19291533735ad8201451965c343320984c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "b3ea0692442390026370a9e3a5961ef837d9d217": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "b4447dce4cd0cc9b43fc8c2f97b93a67b166923e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "b48ff5d0a0ff084f18d9985729195d5dd2f6f01f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "b4b78b4554e7348be03e02de236337176aa6e148": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "b4d0a3a52a24115fb41974ee7bf3e6bfb8cf4ae0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "b503db0c42ee99daca265b032b6359218c9526e7": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "b588f1fb0d3ad71c29efd2b59023003bbaa208be": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "b5c569c488191f2e8e08c408684fe68c82da8e62": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "b6417ec3b66ebc1b93156c20615bdbca87918065": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "b6684905026fb757cb42cb35da412139a7e3a7b8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "b693b67a91604b23a7e6ef39a7cb45a8b5119691": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "external-forum"
+  ],
+  "topic": "other"
+ },
+ "b6ef55e03131d2aee63b5a8abba503cde5dd4763": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "b6f2de9ab51be455b9305db08e4725fc6dc16145": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "b702ac662ccf04d96d7d92824de5a35890739c9b": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "b703038b6c68bcac2aff39338a6f457ef5794032": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "b7336c67c1347abb3ba88ce6d55d2640b38963c3": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "b7dbd70569fdeea0518990cf442f4e85c51885ea": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "b841402c59f5ffcc5744a053185c537676dbc6a2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "b847d9fc061a041a690e226b72db035098557749": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "b84ac738b9dfb1f01425910d809a786e1de612e4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "b85b1ceab576329c4230f6c31f15bf931a38ff4b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "b8cdaa34ec4933d5422109a48447fd9ee12a775a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "b901ddd6d6aa0027fd621b7c3e2deaf6113faffe": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "b9ad5ae529942c23942e410e9f1c56344162e6ae": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "b9db4ab198e11548c57fb91bdb8e2caa2c2e8ee6": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "b9e43dae0b3f8e392cadb578d81e9315a3674528": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "ba1b3699622ba5cbfdbed67fcfd36a7f84451db7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "ba1b59c06731826a965d081d191c767717eb82a7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "ba32e2c94cc2e52b1089fa5166e663d6efe3e256": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "ba5d84396daa613fba9788733b76a4f809278af2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "bab0c52f63f41f3e8f0189ff9ab84e11f9bbe5e2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "external-forum"
+  ],
+  "topic": "other"
+ },
+ "bb4898cf4e12eb881da9af358e6b27575aa9cf93": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "bbda1ec7e60c3aab96eab449ab424550062ad36c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "bce9a0243d1b966d624bbb2c045ad4b03bfb1479": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "bd33ee1cc58050665574a8f493941356a8952f4a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "bd68e0ddd9b8bc3959587bb7017da14808c49e71": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "bddf7478e1917e132ac33f6804c3374dfe718289": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "bdf5d4eefeabef577d873a8a858bd8ac44e5353a": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "be0ed88d4288901f54f186fa1ad8d593d0b0536a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "be4cde91699c9574ee881dd02839c9e1576f8a14": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "bef283bef965c3272e3e4598f3f601e7ab96bcb0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "c0035680a64305de9de099921a9b37e81386ef63": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "c01108b091c2ffd6964de9038ccf40684b40f802": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "c060761cab61aea182f91d93de7d13fa0f3b7ca1": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "c1c3d03de629c0fc0641a842bbbb1989b54dd79f": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "c1f18963254880c5269c38e0de90d4f34a8ea370": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "security"
+ },
+ "c246a49d08c9a859bbd6dad58918bb6a4065d5a8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "c2af9ed49405342ecd52c6a085491b7b3e8914c3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "c2f87ef5b2a9e1ad40c1de4df11c869c83f08359": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "c3397ac570dd242953d0b14b7e5e78e1409e5464": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "c33c0979c65bcbf2aec1f22c81d7071a4108ac15": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "c36988c49143f1bc3d390be0a25af4ebfa493720": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "security"
+ },
+ "c36fde593acb6119fd2959d9e0f4eff380ed7e8d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "c3f2cfd078d2168f9839aadb61291d950c6afac5": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "adult-only",
+  "safety_reasons": [
+   "security-tooling"
+  ],
+  "topic": "security"
+ },
+ "c45a9b915dbbc2792e9356f76ea8ed61ec5e0e2a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "c4813b3fb33b8dee831e470f87a98101bd751171": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "c4911c39a71060076517b6995ac357a5c1b31f10": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "c51bfd3a803b6cad6f8c53275f2b3f33937072f6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "c57c3ecb94532b546b008e3995d2f8610b347c94": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "c5c866c3adaf2d74d4789ece93a7656c91e3a2b9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "other"
+ },
+ "c5cfee0577ce0df9a5e54406224c9e5ca46d8008": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "c635127a384a339e6972e6eee23094b7f3ae8059": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "c63614224ef0a604f9c60e63d4f1656da8641638": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "c660056231ee7f47f60092a5586d3a2dbb5e820b": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "c68ea608ea9c9e9b9c6404f0afbd4c62d2f385cf": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "c69361fc595b2e1dd7b1d72d71a248c28b092b3c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "other"
+ },
+ "c6a7d1beeb84963e187aed84732530377cfffb7b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "c6d54ba4259cfffcfc23b76880697431e76a2e60": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "c723f4e757cf9e8f5f029f64a009dd8488f7c115": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "c788ca916b9a6f76e185b29d19ba9c374f7c3213": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "c78ad4e5a9629a107f86b1480e40abee87748251": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "c7a4be6162ad52777ea201f076058dcbbe8f1923": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "c8ac689d15b67544d4e95491b0e2219a92bee7a4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "c8be7cc7f0d8e47f96450730942546cdee105b64": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "account-required"
+  ],
+  "topic": "other"
+ },
+ "c8c0f25a3ac1dd98390e2f96d3e5324eaeb91b85": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "c8d49d0230845d388ebf023169c6726adddf6e3a": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "c8d62038e1fa0ffa91edd7353014abc10706b713": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "c8fae84dee1e069eb684957044377e7674e42a49": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "c948c96963301f6a40b92804b65bedab763b411c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "c982c0d927a3fcb4c351e98404cd16282f27e83b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "c99a9e2cca9f9f33e95289898ca5732b85de110f": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "c9b926dde88db5bc96468063b5a3280e0f1c0641": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "c9c8db6d13f2dd0b174aaa8a027f77262b81c2d8": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "c9e5626306a48d77a09ac0807b2f22ef51a8d8ac": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "ca112f77e573d0912bd92ac784b5fa31a067e5bd": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "ca19561fa4aa09c1da639d28b393e8a5383367ef": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "ca80afc80dc5b5bb757411b8ee2dac51799480c0": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "ca915504ba9922016058913d7017d2601383792f": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "cb1a803ef89854e53fef9df4c607c2569b159b0b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "cbba8da400fdb08bee6fda21d9cc9463a25fcd92": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "cc42c193294b92a2cfbf3650f36e3801ae601e59": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "cc654a70965c0285d291f2419c858aa365a31dbb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "cd46b399338f740862f0e691177c1491cb486add": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "cd842f0215cf0a8b1a80616940b14824f5d4c9c3": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "cda4e0d6092aeab8296cf401fac1f4d36e743f25": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "cdeb6af8ac0e9d2adae95b9b84412570dc351e94": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "ce18e6793cd847f213eba6899d78f0ccdc62471d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "ce3b7a704b932f3b8f3daf4a6bf6b7c268f1f235": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "ce539516b3ac12b29e310508713a9aa2e1421178": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "ceb95349267a8a83722f7df903632c29011a12d5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "ced7421c1ddf1cbeda848730ca72c058d095c72e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "external-forum"
+  ],
+  "topic": "other"
+ },
+ "cf2c75512a191a9825a03e5b4eef9b954a6d1032": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "cf66b6c39749a43294eaeaf7b2dadbe0c799d6c5": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "cf98201a9efee45992ad0b30b1d4fd3bd4f80778": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "cfe3f7d2ab32aac412e15c9bbeba2dd67ddbcd99": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "cfe5506ea0193246a69686253fdf4078fe3ef034": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "d02ae3496864b969c4ee008920e791c30cfe3591": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "d04d9ce351a670c1c5aa14df5680caea8e5da608": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "d07badbc961728d694ce39f353953fb4c3e38d2c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "d0c73938db9e3f7e153d5ba323b6b9b067bd8923": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "d0e145687b987d0b59ec046367e498098887f91d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "d19918100483ee7fb7166e4b002105c00e701550": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "d21f8fe554251f4a2b28aadb79244300bd93fef9": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "d24cbbef6723288ebaecd82b5ddb8eb49190db08": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "d26da24dd961ce954283d481e0791c8bdc24903e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "d2de3cebc22b7930510b9bfee37806fd4a77f72d": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "d33f5f1b5355bdc9945a50c84094ee2e11798ecb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "d36c09ceb78b6256490fdcf24db2757f1a7f75e8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "d3b0e029521165aba0a596ad2567c9c7f231c5c6": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "d46402435b984a1378682bb90369f9785345787e": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "d4689ae0011e4f36f3b98ca0e42f4d202aed80f0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "d4bef5ca3a5fe61c20d56451f3d9ac51beac0292": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "d50814dcd35e33230779911de7ec114bb74f6cbe": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "d50ad07ebb0d314963f24b06e088f6605f7b97af": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "d59ff46f4c97aa5986b6bf9fba9598e9808b84ce": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "d612c5534c90625dff0d894e92dce282ce339dfc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "d62cd0686253a3081b74b883b2c10661b9ea2c9d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "d6518d42b2462085da81d335d29b73c5008ff4fd": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-topic"
+  ],
+  "topic": "other"
+ },
+ "d65f6296cc6b5a2baa7feb478aa53ef8db83d754": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "account-required"
+  ],
+  "topic": "other"
+ },
+ "d6e6405c8c77f93d13ff1e11523f7b89e9da19a0": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "d76a3a8b4c03cde3791a7de7ff5d65171fcdfe99": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "d7863f63cc4e58c0ece8c41d649b3ea152a404e8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "d7b385de6f3dde9f7954d1b4e871b565ab2d78c6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "d7ea962dce4027e6ebaec2cb6914ccb16740436e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "d821f5fae2f9193a72311baacd1cb4337039c746": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "d87b1d506360d181246c6e9acdce7d7ae48b4b49": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "d88a83131c8fe4adc47fc7e3b35fc8e4b882cc58": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "d8900e43f9da227a6944b289f48d77fa6899a569": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "d8f8247c232acb133267384319eff21ebec383ff": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "d93d48c275250b719e79e0310aac99285ad1a236": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "d9c11261bae68d02f569c77bf368728db5041828": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "da3f1fd09d431b471424acc43058c69ac6cf6333": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "da7372df9117c52c3f47fc15a2e9dd2f93745d32": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "db408b3269b7afe55ccde14b88cb10e29efc4bcf": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "db5b26a55db822e7e40a95c08097db39e8775ff4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "db6b0fba51ea08e80913ef76414f081360a0f145": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "db7e94e317bc9ed8359bfbe3225469bb13c5de0a": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "dbec121c3652b021cd3182ad0c20bd06fc698011": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "other"
+ },
+ "dbf9db946685950045bcb982b01727a891e179bb": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "online-multiplayer"
+  ],
+  "topic": "games"
+ },
+ "dc350310097f0c81ff33ac0ad436d607775988ba": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "dd2a4d6b4988fe3ac55ff51a7af15582721a4cb1": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "security-topic"
+  ],
+  "topic": "security"
+ },
+ "dd4707723ab55548e44e4a2ea9f3a42e5487b2b2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "external-forum"
+  ],
+  "topic": "other"
+ },
+ "dd610a4f2151e55e92ddc5e1914185ef463f8e77": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "dd6983784269a8604afa0fb07dc9c48f08b4bcb5": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "ddaf05386d48da5b969d31aadacc9133969bba06": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "dddf1c6db3305782b7b2180ca8fce8c6d828ad5a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "ddf252d0c5842f5aa7896ae153e446c7d82c3da0": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "de8b7f1f167fc6de5f8d3deea904216623bcd54f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "df984aec73293fd41634c70ffaf0f8538527a119": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "dfb91b50093603e0e7c2e56144e4d050ea37228f": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "dfc26d561d1095ef27711517f5b0d47651681127": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "dff6880bae0d1ffc0127337a3cd0f840f6f8c8d0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "adult-only",
+  "safety_reasons": [
+   "security-tooling"
+  ],
+  "topic": "security"
+ },
+ "e010afceac8b36bd2b73e2a0088b5def96ca41b8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "social-platform"
+  ],
+  "topic": "other"
+ },
+ "e03a1cf9c6c346907b1f3b1c35b0a79fed8aebff": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "e0f92f6e250629002e5a179115c42711a2d89f68": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "e14a07e242c2ad6dde0d9b5468ca78b40a1ff8e7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "e1a0a97e50ebbe36210de8009253dcfec5c1d16d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "e1c2353a6df8927ff72b77318abaa997fd2d333f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "e1c3fd8b4fe29598c5c607dc74b9c35370447481": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "e28d3285d1a79c1c00ca116bc524a0bdf2554397": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "e33754480cbd84eafeb3ada9ad8300c9f184e4c0": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "e39d2f6f178964b3c8e4c911abb7f642f4d7bf58": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "e3c329c75bd20af3f7b8549f7ff39d26c001b1a4": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "e3eb0cb1aa98f2c858c98bc8328d3a1a26614b6f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "e3fcd6c5065df7030aaf52b7ab92640c21845afb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "e4113b87881c02bb2aebe988209231de54cf06fb": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "e426f7388554f5f7544406605ea636ee277e0ac4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "e4a0fec08282eedd1cd95e444d3e2a8b1ac497e7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "e52d6a9e6a4a3449fe9b7d23049e97befb09db53": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "e5e6a240a63c7b81aeb2213f4800ae5d40c31da6": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "e60bd5f64cb8b476d8386c1897eb540c29ca3d22": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "e63452bc360d36685daaf11d468a0dd1a59f0895": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "e658fd803d85ca344dc6f60f5adaf06867d7b792": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "e69befeb6f2ba1739d2709864f8d7b32f1acf8ac": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "e6ccedabbed5bec5e2d227fd6cb05ea7acdc7653": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "e6df8813d4aee644f09070cc05116f34aff1446b": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "adult-only",
+  "safety_reasons": [
+   "security-tooling"
+  ],
+  "topic": "security"
+ },
+ "e76d97a7aafd03a987df9be3cb55bc7e85cbbaad": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "e76deeb127f8f89088589f2acef144d87fa1a048": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "e76e98adc3bbb9a7f1e3baa79f65c52452bbab43": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "e7d41c772bf97f05b9a0e525e1eac6787c40a508": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "e7e2501492ca82d3799f69fab945149077688079": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "e7e62f53e1478c8c9045cc9c66d3040bbd1af434": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "e814707197b605c707cdad796bc8fe35df97c79e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "e8c64e006cfe87babcc87c97d42d71c10a0dfbc8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "e8e315cddf3fb8425bd72d68a43c79254acfc01b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "finance-crypto"
+  ],
+  "topic": "systems"
+ },
+ "e9452c90b1f7278aa14be3d9ce608d256845b181": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "e9973dbb3e7fa125dc54eefadc8201b40038ecc7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "e9a535cdfe1113561a0ed8311cb60be2a8b4ae16": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "e9e941eaf615e6b51467f459d6458accbbf4f7a6": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "ea9c6576f963fdc41221409619e6b1bf157316cb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "eaa69733660afe3cd89c72230f22553f0cd2760b": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "eae69843df3b93d78761efeb232c4f341f541eb5": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "eb351b664a908795790c468eeb11ddbb35117ecb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "eb5647c045067d8b518889885cfafe763a0233e8": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "eb571869ebe2d0c380f64a92530c7ba12fadafeb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "ebb24adcf3e2aeb0e10ece1a06233138ae1ccd0e": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "ebdbd07dd6578f6132e5a9a975226098063a4616": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "ecadfb3fb0347560c715123dd7d9627ef91dd9eb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "ecb9c5f68a68b6a33337a876973bd826886ae07d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "ecde78c453e34826b1f08bb6131b9688c39bbe3d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "ed223b50973a967b977a48d6f34ac653ddfc4da3": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "ed37debe433c19475b0e06bd9a41bad35b10093e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "ed6ee99e20ba2b3a45951ba0409c355ca7bee978": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "unclear-content"
+  ],
+  "topic": "other"
+ },
+ "ed717f689b217750d87fc93439f4b5f035222748": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "ed8f39cf24f3adb77bc3e2a43937c8f29b2b60c2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "edc00b2ba40c3af9fe6f2b41a4c7985db668e2e5": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "ee1957534924f24f5c2cca9bb4a77a6bf5dfc6dc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "ee52c0217cccfd0a57c91f5faa0842912f7fa21f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "ee6f5b9cf05f6b77bf3dbee7f60afa579a372244": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "eeb82c2e3f302519f4e711240050b68b6b7d5f64": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "eed76b9907faad93818f6f8fee5d7e23ad0e211d": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "eee67b531a2e997720f88b9c506cd7efbdf1d2de": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "ef30db37389df65643d25a91af8b1297743eeba7": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "efa15dc217f6a478182d16d8d2760e484e2550a8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "efe9d42be0f33016a694111962edd2699b75e0ab": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "f03fc77abbecbb941d93c74379b06a853f78aad1": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "f0463d30bbdf0b731d459d4e3d99bcc81a0928bd": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "f08b7ec591940905b1b00bd9e13d8d77c4fc12da": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "f0e41f826940022653143d598fb3e590c1c284f4": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "social-platform"
+  ],
+  "topic": "other"
+ },
+ "f0ff8410e54874b4f165798384656e81e5421972": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "f11a02edad1fd95e3c31448707b945f8a8178a3c": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "f1c7c3a841a9ea3b913aecac612e24da4e314821": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "f1e824b8ac788f3dc6b856fb998818bbd388ea15": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "networking-tools"
+  ],
+  "topic": "systems"
+ },
+ "f213f550f6e6eb6151f22eaffd5130bad06e03bb": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "adult-only",
+  "safety_reasons": [
+   "security-tooling"
+  ],
+  "topic": "security"
+ },
+ "f257421a7d0d6d921b19e5e8321e29c4b9ff8273": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "f28204cae45369381d8dde26ac792ba60bcbc21b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "f2bf2474749e923d82661c61ecd2fed87d4c5d52": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "f3865a0178651c9fc05567805dc28b07ec78a8c9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "social-platform"
+  ],
+  "topic": "other"
+ },
+ "f3879c3281627d6493f597f016eee89e1dc91b01": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "f3935bf6b49067987b2ebdfaf9ff0f48471584f2": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "f3c28c79f11213b749dbe3cfb3973cdb6058bfdc": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "f3ff42c7ebe320b6a480e6414c0ba6d6165e7e0f": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "surveillance-topic"
+  ],
+  "topic": "other"
+ },
+ "f4546f6a4e3be14f9a09adc43ef63c7f10e1a5ef": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "f492fd070f504c4eee0040f1d1429bb64c1df391": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "f4aa12d712d2c159f58e99928793b14009293ebb": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "f4cec383ef878f0e59682fbb39691f322d4f0a29": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "external-forum"
+  ],
+  "topic": "other"
+ },
+ "f4f94c7a730e55f3640d4d553460309fd49179a3": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "f50672af447e0d2d0c02e910c5742bf229a74675": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "f5100a58124f1f3fb55c23c633f09ad19a5fc3ae": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "f5224ae3dfdea981477d2e621039ece31248bd6a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "f73b7ca34af6b4368bd161c794f06e10a4b3075f": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "f7990def10ba5820f48d191e0d772839205a62d2": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "f813d871489882d4b3171ec02ffa7bda8aa8fb52": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "f84cb3597d84b9322da83493f781a857dbe9dbe7": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "f8861765842325f13e6e63eb33c7bf44be0972d7": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "f8b8359600f72c7ffd3051411708684d503b6c36": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "f8d1cdff157cc19ed8ee3c8d8101e0b7b4729c07": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "f8dd4391e5dac4e9871b63c5318920c115514c5d": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "f8f2503eda0a84172851bcdfbe764873091ad662": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "chat-service"
+  ],
+  "topic": "other"
+ },
+ "f91499aa4c249e649797d7e8d275aaa1a0cca3e9": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "f92034fe29810d7441b0e31dc4feef6546d20c9e": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "f9e42c22beea8d6f5eccaefe263ba385b0eb658b": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "fa044cc2f1a74e28b97a9605bd3bade15f61c762": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "fa0c70ca25d4e37719de6e97ecde7e2b37ffdef2": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "fa1b77d0afdb5882a8e26515e0c912ae6ec3653a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "web"
+ },
+ "fa204defe5eea3ade442268be28d9644fbf488c1": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "fabc600bcd18b7f2c6497ddfa99ee4ff2f80f6a6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "fac894fe44f656633c8ef2b1a7188f640f11706a": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "fb0da943cb36f0494a441401beca11d06cc24d78": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "fb3ac1193cfab301530adf6e7404a7ac9fdbd646": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "fb483eeda71abbdbb6fe0ec0f8af02c7b7936f34": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "hardware-build"
+  ],
+  "topic": "general"
+ },
+ "fb86ec6c691bd0e3e3f42cc7f5011e5a22a24a63": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "fba2a3cff36e4db449010da34570d235ccbe8f7a": {
+  "age_group": "11-13",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "fbf08023f8cc6d55b30f7e88d87f43a47e99295c": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "fc32a654ebd8129bbf3533e2f6861d3f4040a4e7": {
+  "age_group": "11-13",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "fc37f60569635fb380b58d0b47db54bc7b7f3fd1": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "art"
+ },
+ "fcaf5fb13ac40f60f3691c2b492be9e9a1d34249": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "fce198d157af6cd916cdd9fb301429ea4c723bf8": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "chat-service"
+  ],
+  "topic": "systems"
+ },
+ "fcee1c7a9dcf5b67ebbca998355c47d1a1616751": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "fd0ba6121a0a5a3ee2bc836fdc20345d22b00101": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "fd12011fc04cf7519f3e52cf1bfc954f09e02789": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "fd3133ff5747e8f2af510ec6bfa6a73bdc7e1aeb": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "fd5bd43b48410e06fc6ab82a82a78051d9e7250a": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "systems"
+ },
+ "fe1ec384a0ee8c8bb50956fccb84a60c333f33e6": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "external-forum"
+  ],
+  "topic": "other"
+ },
+ "feabdee9e8f7222c6071397a585f3658cb870586": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "off-topic"
+  ],
+  "topic": "other"
+ },
+ "fee7c2c99c4aeb5187a08a02507218229f1f0a19": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "games"
+ },
+ "fefb7479ba54e00ec70f143d2a099e4b14dbfabf": {
+  "age_group": "teen+",
+  "level": "Advanced",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "other"
+ },
+ "ff6527e248c81da341f23a80513c4faca72cabdb": {
+  "age_group": "teen+",
+  "level": "Intermediate",
+  "safety": "ask-a-grown-up",
+  "safety_reasons": [
+   "ai-tools"
+  ],
+  "topic": "other"
+ },
+ "ff7ade842d4a7a573440ddf90078cda8809f4500": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "ff870c92ef8407dc9d79ac7d1a9a02eba85b4ee7": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ }
+}

@@ -34,7 +34,8 @@ def main():
     ap.add_argument("--workers", type=int, default=20)
     ap.add_argument("--timeout", type=float, default=8)
     args = ap.parse_args()
-    items = [e for n in ("learn", "build") for e in json.loads((DATA / f"{n}.json").read_text())][: args.limit]
+    items = [e for n in ("learn", "build", "kids") if (DATA / f"{n}.json").exists()
+             for e in json.loads((DATA / f"{n}.json").read_text())][: args.limit]
     with ThreadPoolExecutor(args.workers) as pool:
         results = list(pool.map(lambda it: check(it, args.timeout), items))
     REPORT.parent.mkdir(parents=True, exist_ok=True)

@@ -20,7 +20,8 @@ NEEDED = 6
 
 
 def load():
-    return [e for n in ("learn", "build") for e in json.loads((DATA / f"{n}.json").read_text())]
+    return [e for n in ("learn", "build", "kids") if (DATA / f"{n}.json").exists()
+            for e in json.loads((DATA / f"{n}.json").read_text())]
 
 
 def fits(e, age, goal, level):

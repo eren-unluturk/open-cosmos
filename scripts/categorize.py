@@ -82,6 +82,8 @@ ASK_RULES = [
     ("finance-crypto", rx([r"blockchain", r"bitcoin", r"ethereum", r"cryptocurrenc\w+", r"crypto", r"nft",
                            r"trading", r"defi"])),
     ("external-forum", rx([r"forums?", r"chat", r"community", r"discussion", r"discord", r"reddit"])),
+    ("social-platform", rx([r"slack", r"telegram", r"twitter", r"tweets?", r"facebook", r"messenger", r"whatsapp",
+                            r"instagram", r"tiktok", r"mastodon", r"linkedin", r"snapchat"])),
     ("account-required", rx([r"sign ?up", r"log ?in", r"accounts?", r"register\w*", r"enroll\w*"])),
 ]
 HOST_REASONS = [  # (reason, domains)
@@ -102,6 +104,9 @@ KNOWN_OK_HOSTS = ["github.com", "gitlab.com", "github.io", "developer.mozilla.or
                   "freecodecamp.org", "khanacademy.org", "scratch.mit.edu", "code.org", "csunplugged.org",
                   "python.org", "wikipedia.org", "readthedocs.io", "processing.org", "p5js.org", "w3.org",
                   "javascript.info", "learnxinyminutes.com",
+                  # first-tier hosts vetted by the Data lead (open-licensed / academic / vendor docs, no ads)
+                  "aosabook.org", "scratchapixel.com", "fullstackpython.com", "nand2tetris.org",
+                  "developer.ibm.com", "swtch.com",
                   # YouTube/Vimeo: we rely on the platform's own age restrictions (team decision).
                   "youtube.com", "youtu.be", "vimeo.com"]
 
@@ -120,6 +125,7 @@ def host_matches(host, url, domains):
 def normalize(text):
     """Remove phrases that would trigger false matches ('from scratch' != Scratch, 'neural network' != networking)."""
     text = re.sub(r"\bfrom (?:the )?(?:ground up|scratch)\b", " ", text, flags=re.I)
+    text = re.sub(r"\bsorting networks?\b", "sortingnet", text, flags=re.I)  # not computer networking
     return re.sub(r"\bneural net(?:work)?s?\b", "neuralnet", text, flags=re.I)
 
 
@@ -255,6 +261,10 @@ def apply(e, rules, ai):
               "safety": safety, "safety_reasons": list(dict.fromkeys(reasons))})
 
 
+# Sources whose age_group comes from the source itself (fetch_kids.py): categorize must not overwrite it.
+PRESET_AGE_SOURCES = {"https://github.com/uccser/cs-unplugged"}
+
+
 def sort_key(e):
     return (SAFETY.index(e["safety"]), LEVELS.index(e["level"]), AGES.index(e["age_group"]),
             e["category"], e["title"]["en"].lower(), e["id"])
@@ -266,7 +276,8 @@ def main():
     ap.add_argument("--no-ai", action="store_true", help="rules only, no API calls")
     args = ap.parse_args()
 
-    files = {n: json.loads((DATA / f"{n}.json").read_text()) for n in ("learn", "build")}
+    files = {n: json.loads((DATA / f"{n}.json").read_text())
+             for n in ("learn", "build", "kids") if (DATA / f"{n}.json").exists()}
     cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
 
     rules = {e["id"]: rule_pass(e) for es in files.values() for e in es}
@@ -302,7 +313,10 @@ def main():
         for e in es:
             ai = cache.get(cache_key(e)) if not rules[e["id"]]["decided"] else None
             used_ai += bool(ai)
+            preset_age = e.get("age_group") if e["source"] in PRESET_AGE_SOURCES else None
             apply(e, rules[e["id"]], ai)
+            if preset_age in AGES:
+                e["age_group"] = preset_age
         es.sort(key=sort_key)
         (DATA / f"{name}.json").write_text(json.dumps(es, ensure_ascii=False, indent=2) + "\n")
         print(f"{name}: {len(es)} entries categorized")

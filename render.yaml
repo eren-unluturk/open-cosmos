@@ -1,6 +1,6 @@
-services:
+﻿services:
   - type: web
-    name: hackcessability
+    name: learning-lab
     runtime: python
     plan: free
     buildCommand: pip install -r requirements.txt

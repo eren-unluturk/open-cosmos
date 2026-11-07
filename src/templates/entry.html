@@ -12,6 +12,9 @@
       <li>{{ ui.license }}: {{ e.license }}</li>
       {% if e.safety != 'kid-safe' %}<li>Ask a grown-up before you open this link.</li>{% endif %}
     </ul>
+    <p class="text-sm my-2"><strong>{{ 'On this site' if e.delivery == 'hostable' else 'On another site' }}.</strong> {{ e.delivery_reason }}</p>
+    {% if e.attribution %}<p class="text-xs text-slate-600">{{ e.attribution }}</p>{% endif %}
     <a class="underline font-medium" href="{{ e.url }}" rel="noopener noreferrer">{{ e.url }}</a>
+    {% if guide %}<p class="mt-4"><a class="underline" href="{{ url_for('howto', lang=lang, kind=e.kind) }}">{{ guide.title }}</a></p>{% endif %}
   </article>
 {% endblock %}

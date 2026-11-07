@@ -5,6 +5,7 @@ import secrets
 from dotenv import load_dotenv
 from flask import Flask, abort, redirect, render_template, request, session, url_for
 
+import delivery
 import gate
 import guide
 import store
@@ -105,7 +106,53 @@ def entry_page(lang, entry_id):
     title, fb_title = store.text(e, "title", lang)
     desc, fb_desc = store.text(e, "desc", lang)
     return render_template("entry.html", e=e, title=title, desc=desc, fell_back=fb_title or fb_desc,
+                           guide=delivery.guide_for(e["kind"]),
                            is_ai=lang in e.get("ai_translated", []), **ctx(lang))
+
+
+@app.route("/<lang>/catalogue")
+def catalogue(lang):
+    if lang not in LANGS:
+        abort(404)
+    level, q, age, topic = filters()
+    groups = split_catalogue(select(lang, None, level, q, age, topic))
+    return render_template("catalogue.html", groups=groups, level=level, q=q, age=age, topic=topic,
+                           kinds=delivery.GUIDES, **ctx(lang))
+
+
+@app.route("/<lang>/howto/<kind>")
+def howto(lang, kind):
+    g = delivery.guide_for(kind)
+    if lang not in LANGS or g is None:
+        abort(404)
+    return render_template("howto.html", g=g, kind=kind, kinds=delivery.GUIDES, **ctx(lang))
+
+
+def split_catalogue(items):
+    """{"hostable": {level: [...]}, "external": {level: [...]}}, easier levels first, empty levels dropped."""
+    out = {d: {l: [] for l in LEVELS} for d in ("hostable", "external")}
+    for e in items:
+        if e.get("level") in LEVELS:
+            out[e["delivery"]][e["level"]].append(e)
+    return {d: {l: es for l, es in by.items() if es} for d, by in out.items()}
+
+
+@app.get("/api/catalogue")
+def api_catalogue():
+    lang = request.args.get("lang", "en")
+    if lang not in LANGS:
+        abort(404)
+    level, q, age, topic = filters()
+    groups = split_catalogue(select(lang, None, level, q, age, topic))
+
+    def brief(e):
+        return {"id": e["id"], "side": e["side"], "kind": e["kind"], "level": e["level"],
+                "age_group": e.get("age_group"), "topic": e.get("topic"),
+                "title": store.text(e, "title", lang)[0], "url": e["url"], "license": e["license"]}
+
+    return {d: {"count": sum(len(es) for es in by.values()),
+                "levels": {l: [brief(e) for e in es] for l, es in by.items()}}
+            for d, by in groups.items()}
 
 
 @app.get("/api/entries")

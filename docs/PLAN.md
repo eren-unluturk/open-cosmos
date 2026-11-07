@@ -57,22 +57,34 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 ## Team split (4 people)
 1. **Data lead** — `scripts/fetch.py`: fetch + parse both READMEs into JSON; keep `docs/SOURCES.md` accurate.
 2. **AI lead** — `scripts/translate.py`: prompts, translation, level tagging, caching, native-speaker spot checks.
-3. **Backend lead** — `src/app.py`: Flask routes, language/level filtering, UI strings, RTL, deploy.
+3. **Backend lead** — `src/app.py`: Flask routes, language/level filtering, UI strings, RTL, deploy. **Also owns the safety gate and guide filtering:** hide non-`kid-safe` entries by default, add the session-only grown-up gate, and make `src/guide.py` use only `kid-safe` entries that fit the chosen age (entry `age_group` <= chosen age) and goal. Otherwise the guide can show teen+ material to a 6-year-old. Details in "Ask the team".
 4. **Frontend + pitch lead** — `src/templates/`, `src/static/`: pages, level badges, language switcher, attribution footer, accessibility; then README, slides, demo video, submission.
 
-**Data contract** (`src/data/<source>.json`, list of entries):
-`{id, category, title:{en,es,ar,hi,pt}, desc:{...}, level, url, source, license}`
+**Data contract** (`src/data/learn.json`, `src/data/build.json`, each a list of entries):
+`{id, category, tag, title:{en,...}, desc:{en,...}, level, age_group, topic, safety, safety_reasons, url, source, license}`
+- `id`: `<learn|build>-<8 hex of sha1(url)>`, stable between runs. `tag`: language tag from build-your-own-x (e.g. "Python"), else "".
+- `level`: Beginner | Intermediate | Advanced
+- `age_group`: youngest suitable age: "5-7" | "8-10" | "11-13" | "teen+"
+- `topic`: games | art | web | general | systems | security | other
+- `safety`: "kid-safe" | "ask-a-grown-up" | "adult-only"
+- `safety_reasons`: short strings, empty only for kid-safe (e.g. "security-tooling", "external-forum", "account-required", "unvetted-external-site", "unclassified")
+- Entries are sorted kid-safe first, then Beginner first (translate.py works in file order).
+
+**Pipeline order:** `fetch.py` -> `categorize.py` -> `translate.py` (then `coverage.py`, `check_links.py`, `python -m unittest discover -s tests`).
 
 **Git:** branch per person (`data`, `ai`, `backend`, `frontend`), small commits, pull before push, merge to `main` often.
 
 **Languages (start with):** Spanish, Arabic (RTL), Hindi, Portuguese.
 
 ## MVP (must ship)
-- [ ] Pick 1-2 open-licensed intro-to-programming repos; record license + attribution in `docs/SOURCES.md`
+- [x] Source repos picked and licenses recorded in `docs/SOURCES.md` (awesome, build-your-own-x)
+- [x] Parser cleaned: language tags split out, markdown stripped, deduped by URL (Data lead)
+- [x] `scripts/categorize.py`: topic, level, age_group, safety tier (rules done; AI pass written, needs a run with an API key)
+- [x] Data tests, coverage report, link checker (Data lead)
 - [ ] Translation pipeline (Claude API): prose translated, code preserved, glossary for terms
 - [ ] 3-4 languages (e.g. Spanish, Arabic, Hindi, Portuguese)
 - [x] Guide page skeleton (`src/guide.py`, done) — needs kid-friendly data + tagging to shine
-- [ ] Add kid-friendly open sources (Data lead)
+- [ ] Decide on a kid-friendly extra source after seeing coverage (Data lead; see "Decisions")
 - [ ] Lesson page with language switcher + level tag
 - [ ] Level path: Beginner -> Intermediate -> Advanced ordering of lessons
 - [ ] Attribution/license footer + link to source repo on every lesson
@@ -115,7 +127,17 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 | Sun 9:00 | SUBMITTED (hard deadline) |
 
 ## Decisions
--
+- **Categorize, don't filter.** We keep every entry from the two existing CC0 sources and tag each one, so the site serves young learners (5-13) and still offers advanced material. No new sources up front; add one only if coverage results show gaps (`python scripts/coverage.py`). Candidate if needed: `uccser/cs-unplugged` (verify its code AND content licenses first, add a `docs/SOURCES.md` row before using it).
+- **Safety tiers:** `kid-safe` (nothing risky in the listing), `ask-a-grown-up` (forums/social platforms, accounts or payment, security or network topics, crypto/finance, unvetted sites, or just unclear), `adult-only` (hacking/exploit/malware tooling, adult content).
+- **YouTube/Vimeo links are treated as normal (not flagged).** We rely on YouTube's own age restrictions rather than gating every video.
+- **Fail closed:** unclear means `ask-a-grown-up`, never `kid-safe`. `kid-safe` also requires a kid topic (games/art/web/general) and a vetted link host. The AI pass can only make an entry stricter, never looser than the rules. We classify titles, descriptions, categories and link hosts only, never the linked pages.
+- **Parental gate (design):** by default the site hides `ask-a-grown-up` and `adult-only` entries. An adult can reveal `ask-a-grown-up` entries for the current session only (a simple "I'm a grown-up" confirmation; `adult-only` stays hidden). No accounts, no personal data stored.
+- Rules alone leave most entries with unknown topic or level (they default to Intermediate/"unclassified"). The Claude pass (`python scripts/categorize.py`, needs `ANTHROPIC_API_KEY` in a local `.env`) fills those in; results are cached in `scripts/cache/categorize.json`.
+
+## Ask the team (changes needed in files Eren doesn't own)
+- **Tobi (`src/app.py`, `src/guide.py`):** hide entries whose `safety != "kid-safe"` by default; add the grown-up gate (session only, reveals `ask-a-grown-up`, never `adult-only`); filter by `safety`, `topic` and `age_group`. In `guide.py`, `candidates()` should use only `safety == "kid-safe"`, require an age fit (entry `age_group` youngest age <= chosen age), and match `topic` to the chosen goal. Note `topic` now has values systems/security/other too.
+- **Isabella (`src/templates/`):** gate UI and a short "why is this hidden?" explanation; safety badges; show `safety_reasons` as plain-language text when the gate is open; show `tag` (programming language) on build entries.
+- **Brian (`scripts/translate.py`):** new fields `topic`, `safety`, `safety_reasons`, `tag` exist; translate only title/desc, never rewrite them. I made the smallest compatible fix: it now translates entries missing any language in `title` (instead of `level is None`) and no longer overwrites `level`/`age_group` set by `categorize.py`. Entries are sorted kid-safe + Beginner first, so use `--limit` to translate the most important ones first. Please also translate the plain-language safety reasons (or ask Isabella to map the reason codes).
 
 ## Blockers / Notes
 - Bring laptop + charger.

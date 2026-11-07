@@ -1,0 +1,102 @@
+"""Data-contract tests. Run: python -m unittest discover -s tests -v   (pytest also works)."""
+import json
+import sys
+import unittest
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "src" / "data"
+sys.path.insert(0, str(ROOT / "scripts"))
+import categorize  # noqa: E402
+
+REQUIRED = ["id", "category", "tag", "title", "desc", "level", "age_group", "topic",
+            "safety", "safety_reasons", "url", "source", "license"]
+
+
+def entries():
+    return [e for n in ("learn", "build") for e in json.loads((DATA / f"{n}.json").read_text())]
+
+
+class DataContract(unittest.TestCase):
+    def setUp(self):
+        self.entries = entries()
+
+    def test_not_empty(self):
+        self.assertGreater(len(self.entries), 0)
+
+    def test_required_fields(self):
+        for e in self.entries:
+            for f in REQUIRED:
+                self.assertIn(f, e, f"{e.get('id')} missing {f}")
+            self.assertTrue(e["title"].get("en"), e["id"])
+            self.assertIn("en", e["desc"], e["id"])
+
+    def test_enums(self):
+        for e in self.entries:
+            self.assertIn(e["level"], categorize.LEVELS, e["id"])
+            self.assertIn(e["age_group"], categorize.AGES, e["id"])
+            self.assertIn(e["topic"], categorize.TOPICS, e["id"])
+            self.assertIn(e["safety"], categorize.SAFETY, e["id"])
+            self.assertIsInstance(e["safety_reasons"], list, e["id"])
+
+    def test_no_duplicates(self):
+        ids = [e["id"] for e in self.entries]
+        urls = [e["url"] for e in self.entries]
+        self.assertEqual(len(ids), len(set(ids)), "duplicate ids")
+        self.assertEqual(len(urls), len(set(urls)), "duplicate urls")
+
+    def test_license_and_source(self):
+        for e in self.entries:
+            self.assertTrue(e["license"], e["id"])
+            self.assertTrue(e["source"].startswith("https://"), e["id"])
+
+    def test_safety_reasons_consistent(self):
+        for e in self.entries:
+            if e["safety"] == "kid-safe":
+                self.assertEqual(e["safety_reasons"], [], e["id"])
+            else:
+                self.assertTrue(e["safety_reasons"], f"{e['id']} is {e['safety']} with no reasons")
+
+    def test_kid_safe_only_kid_topics(self):  # fail-closed rule
+        for e in self.entries:
+            if e["safety"] == "kid-safe":
+                self.assertIn(e["topic"], categorize.KID_TOPICS, e["id"])
+
+    def test_clean_titles(self):
+        for e in self.entries:
+            self.assertNotRegex(e["title"]["en"], r"[*_`]", e["id"])
+
+
+class CategorizeUnits(unittest.TestCase):
+    def mk(self, title, url="https://github.com/x/y", desc="", category="General"):
+        return {"id": "t", "title": {"en": title}, "desc": {"en": desc}, "category": category, "tag": "", "url": url}
+
+    def test_security_is_adult_only(self):
+        r = categorize.rule_pass(self.mk("Build your own malware loader"))
+        self.assertEqual(categorize.safety_from(r["adult"], r["ask"])[0], "adult-only")
+
+    def test_from_scratch_is_not_scratch(self):
+        r = categorize.rule_pass(self.mk("Build a web server from scratch"))
+        self.assertNotEqual(r["age_group"], "5-7")
+
+    def test_unknown_host_fails_closed(self):
+        r = categorize.rule_pass(self.mk("Learn to make a game", url="https://random-blog.example/post"))
+        self.assertNotEqual(categorize.safety_from(r["adult"], r["ask"])[0], "kid-safe")
+
+    def test_validate_rejects_bad_values(self):
+        good = {"topic": "web", "level": "Beginner", "age_group": "8-10", "safety": "kid-safe", "safety_reasons": []}
+        self.assertIsNotNone(categorize.validate(good))
+        self.assertIsNone(categorize.validate({**good, "safety": "safe"}))
+        self.assertIsNone(categorize.validate({**good, "topic": "cooking"}))
+        self.assertIsNone(categorize.validate("junk"))
+
+    def test_ai_cannot_loosen_safety(self):
+        e = self.mk("Hacking tools")
+        rules = categorize.rule_pass(e)
+        ai = {"topic": "web", "level": "Beginner", "age_group": "8-10", "safety": "kid-safe", "safety_reasons": []}
+        categorize.apply(e, rules, ai)
+        self.assertEqual(e["safety"], "adult-only")
+
+
+if __name__ == "__main__":
+    unittest.main()

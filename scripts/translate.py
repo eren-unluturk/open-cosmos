@@ -38,8 +38,9 @@ def process(client, entry):
             levels=LEVELS, title=entry["title"]["en"], desc=entry["desc"]["en"])}],
     )
     out = json.loads(msg.content[0].text)
-    entry["level"] = out["level"]
-    entry["age_group"] = out.get("age_group")
+    # categorize.py owns level/age_group; only fill them if it hasn't run.
+    entry["level"] = entry.get("level") or out["level"]
+    entry["age_group"] = entry.get("age_group") or out.get("age_group")
     for lang, tr in out["translations"].items():
         entry["title"][lang] = tr["title"]
         entry["desc"][lang] = tr["desc"]
@@ -54,7 +55,7 @@ def main():
     for name in ("learn", "build"):
         path = DATA / f"{name}.json"
         entries = json.loads(path.read_text())
-        todo = [e for e in entries if e["level"] is None][: args.limit]
+        todo = [e for e in entries if any(l not in e["title"] for l in LANGS)][: args.limit]
         for i, e in enumerate(todo, 1):
             process(client, e)
             print(f"{name}: {i}/{len(todo)}")

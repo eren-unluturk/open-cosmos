@@ -116,6 +116,8 @@ Rule lives in `src/delivery.py`. `store.py` adds `delivery`, `kind` and `attribu
 | `external` | `learn.json`, `build.json` | CC0 covers only the list. The linked pages belong to their owners, so we link out. |
 
 `kind`: hostable = unit, lesson, challenge, activity. External = video, repo, article, document.
-Hostable lessons have no body text yet. The entry page links to the original until the body is added. Rule for adding one: copy only markdown under `csunplugged/topics/content/` and images under `csunplugged/static/img/`, and show `attribution` on the page.
+Hosted units and lessons (33) have their text in `src/data/lessons.json`; challenges and activities (24) are still link-only. `store.lesson(id, lang)` picks a human translation, then an AI one from `lessons_translated.json`, then English (`fallback: true`). `store.render_markdown` renders with raw HTML disabled and `rel="noopener noreferrer"` on links. Images are not copied yet.
+
+Translations: `src/i18n_guides.py` holds the how-to guides and catalogue labels in es, ar, hi, pt (AI-written, not native-checked). Tests check that every translated list has the same length as the English one.
 
 Routes: `/<lang>/catalogue` (two sections, grouped Beginner, Intermediate, Advanced), `/<lang>/howto/<kind>` (steps, accessibility tips, per-level tips, safety), `/api/catalogue`. The safety gate and the age, topic and level filters apply to all of them.

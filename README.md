@@ -17,7 +17,7 @@ _TBD_
 
 ## Getting Started
 ```bash
-cp .env.example .env   # add your keys
+# create your own .env (git-ignored) with keys shared privately by the team
 # install + run commands go here
 ```
 

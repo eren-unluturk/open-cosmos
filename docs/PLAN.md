@@ -176,6 +176,7 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
   - CS Unplugged lessons are teacher/parent lesson plans, so say "for an adult to do with a child".
 - **Brian (`scripts/translate.py`, and `src/guide.py` / `requirements.txt` with Tobi):**
   - 74 kid-safe Beginner and CS Unplugged entries are already translated in es/ar/hi/pt, so translate.py skips them (it translates only entries missing a language). Remaining kid-safe Intermediate entries are the next batch.
+  - **Translation queue:** `docs/TRANSLATE_QUEUE.md` lists the 401 kid-safe entries still untranslated (24 CS Unplugged, 258+36 Intermediate, 65+18 Advanced), in priority order, with counts per level and source. Pick row ranges with Eren so nobody edits the same JSON entries.
   - `translate.py` needs an API key and we have none, so remaining translations are done by hand (Claude Code in Eren's session) in batches. Agree with Eren which languages/entries to take from `docs/TRANSLATE_QUEUE.md` and arrange native-speaker checks. If you ever do use the script, known problems (not fixed): it crashes if the model wraps its JSON in a code fence and makes one call at a time (strip fences, retry once, `ThreadPoolExecutor(max_workers=5)`).
   - Eren's minimal changes to your file: `kids` is included, `level`/`age_group` set by categorize.py are not overwritten, entries are chosen by missing languages, and `ai_translated` is set. Please keep those.
 

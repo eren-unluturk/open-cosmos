@@ -1218,5 +1218,1235 @@
   },
   "license": "original",
   "source": "Hackcessability"
+ },
+ {
+  "id": "py-greet",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "8-10",
+  "topic": "general",
+  "title": {
+   "en": "Greet someone"
+  },
+  "prompt": {
+   "en": "Write a function greet(name). It gives back the text Hello, then a space, then the name, then an exclamation mark. Example: greet(\"Sam\") gives \"Hello, Sam!\"."
+  },
+  "concepts": {
+   "en": [
+    "functions",
+    "return",
+    "joining text"
+   ]
+  },
+  "starter": "def greet(name):\n    # give back the greeting\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "greet(\"Sam\") is \"Hello, Sam!\""
+    },
+    "code": "check(greet(\"Sam\"), \"Hello, Sam!\")"
+   },
+   {
+    "name": {
+     "en": "greet(\"Ana\") is \"Hello, Ana!\""
+    },
+    "code": "check(greet(\"Ana\"), \"Hello, Ana!\")"
+   },
+   {
+    "name": {
+     "en": "An empty name still works"
+    },
+    "code": "check(greet(\"\"), \"Hello, !\")"
+   },
+   {
+    "name": {
+     "en": "A name with a dot"
+    },
+    "code": "check(greet(\"Dr. Who\"), \"Hello, Dr. Who!\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Text can be joined with the + sign: \"ab\" + \"cd\" is \"abcd\".",
+    "You need three pieces: \"Hello, \", the name, and \"!\".",
+    "Join the three pieces with + and return the result. Watch the space after the comma."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Give back the word Hello."
+    },
+    "explain": {
+     "en": "Text goes inside quote marks. return sends it back."
+    },
+    "solution": "def greet(name):\n    return \"Hello\"\n",
+    "tests": [
+     {
+      "name": {
+       "en": "It starts with Hello"
+      },
+      "code": "check(greet(\"x\").startswith(\"Hello\"), True)"
+     }
+    ],
+    "starter": "def greet(name):\n    pass\n"
+   },
+   {
+    "goal": {
+     "en": "Join the name on."
+    },
+    "explain": {
+     "en": "Use + to join two pieces of text: \"Hello, \" + name."
+    },
+    "solution": "def greet(name):\n    return \"Hello, \" + name\n",
+    "tests": [
+     {
+      "name": {
+       "en": "Hello, then the name"
+      },
+      "code": "check(greet(\"Sam\"), \"Hello, Sam\")"
+     }
+    ]
+   }
+  ],
+  "solution": "def greet(name):\n    return \"Hello, \" + name + \"!\"\n",
+  "solution_note": {
+   "en": "+ joins pieces of text together, in the order you write them."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "py-is-even",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Is it even?"
+  },
+  "prompt": {
+   "en": "Write a function is_even(n). It gives back True if the whole number n is even, and False if it is odd."
+  },
+  "concepts": {
+   "en": [
+    "True and False",
+    "remainder (%)",
+    "comparing with =="
+   ]
+  },
+  "starter": "def is_even(n):\n    # give back True or False\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "4 is even"
+    },
+    "code": "check(is_even(4), True)"
+   },
+   {
+    "name": {
+     "en": "7 is not even"
+    },
+    "code": "check(is_even(7), False)"
+   },
+   {
+    "name": {
+     "en": "0 is even"
+    },
+    "code": "check(is_even(0), True)"
+   },
+   {
+    "name": {
+     "en": "-2 is even"
+    },
+    "code": "check(is_even(-2), True)"
+   },
+   {
+    "name": {
+     "en": "-3 is not even"
+    },
+    "code": "check(is_even(-3), False)"
+   },
+   {
+    "name": {
+     "en": "It gives True or False, not a number"
+    },
+    "code": "assert type(is_even(4)) is bool, \"Give back True or False.\""
+   }
+  ],
+  "hints": {
+   "en": [
+    "An even number divides by 2 with nothing left over.",
+    "n % 2 is the remainder when n is divided by 2.",
+    "Compare that remainder with 0 using ==. The answer of a comparison is already True or False."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Find the remainder."
+    },
+    "explain": {
+     "en": "n % 2 gives the remainder of n divided by 2. It is 0 for even numbers and 1 for odd numbers."
+    },
+    "solution": "def is_even(n):\n    return n % 2\n",
+    "tests": [
+     {
+      "name": {
+       "en": "7 leaves 1 and 8 leaves 0"
+      },
+      "code": "check(is_even(7), 1)\ncheck(is_even(8), 0)"
+     }
+    ],
+    "starter": "def is_even(n):\n    pass\n"
+   }
+  ],
+  "solution": "def is_even(n):\n    return n % 2 == 0\n",
+  "solution_note": {
+   "en": "n % 2 == 0 asks: is the remainder zero? The answer is True or False."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "py-palindrome",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Palindromes"
+  },
+  "prompt": {
+   "en": "Write a function is_palindrome(text). It gives back True if the text reads the same forwards and backwards, and False if not. Ignore capital letters and spaces. Example: \"Race car\" is a palindrome."
+  },
+  "concepts": {
+   "en": [
+    "strings",
+    "lower case",
+    "replace",
+    "reversing with [::-1]"
+   ]
+  },
+  "starter": "def is_palindrome(text):\n    # True if text reads the same both ways\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "racecar is a palindrome"
+    },
+    "code": "check(is_palindrome(\"racecar\"), True)"
+   },
+   {
+    "name": {
+     "en": "hello is not"
+    },
+    "code": "check(is_palindrome(\"hello\"), False)"
+   },
+   {
+    "name": {
+     "en": "Capital letters and spaces are ignored"
+    },
+    "code": "check(is_palindrome(\"A man a plan a canal Panama\"), True)"
+   },
+   {
+    "name": {
+     "en": "Empty text is a palindrome"
+    },
+    "code": "check(is_palindrome(\"\"), True)"
+   },
+   {
+    "name": {
+     "en": "Ab is not"
+    },
+    "code": "check(is_palindrome(\"Ab\"), False)"
+   },
+   {
+    "name": {
+     "en": "It gives True or False"
+    },
+    "code": "assert type(is_palindrome(\"a\")) is bool, \"Give back True or False.\""
+   }
+  ],
+  "hints": {
+   "en": [
+    "First make the text easy to compare: all lower case, and no spaces.",
+    ".lower() changes capital letters. .replace(\" \", \"\") removes spaces.",
+    "Text can be reversed with text[::-1]. A palindrome is equal to its own reverse."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Clean the text."
+    },
+    "explain": {
+     "en": "text.lower() makes every letter small. .replace(\" \", \"\") takes the spaces out."
+    },
+    "solution": "def is_palindrome(text):\n    cleaned = text.lower().replace(\" \", \"\")\n    return cleaned\n",
+    "tests": [
+     {
+      "name": {
+       "en": "A b becomes ab"
+      },
+      "code": "check(is_palindrome(\"A b\"), \"ab\")"
+     }
+    ],
+    "starter": "def is_palindrome(text):\n    pass\n"
+   },
+   {
+    "goal": {
+     "en": "Reverse the cleaned text."
+    },
+    "explain": {
+     "en": "cleaned[::-1] is the same text backwards."
+    },
+    "solution": "def is_palindrome(text):\n    cleaned = text.lower().replace(\" \", \"\")\n    return cleaned[::-1]\n",
+    "tests": [
+     {
+      "name": {
+       "en": "abc backwards is cba"
+      },
+      "code": "check(is_palindrome(\"abc\"), \"cba\")"
+     }
+    ]
+   }
+  ],
+  "solution": "def is_palindrome(text):\n    cleaned = text.lower().replace(\" \", \"\")\n    return cleaned == cleaned[::-1]\n",
+  "solution_note": {
+   "en": "A palindrome is the same as its own reverse, so we compare the cleaned text with it."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "py-word-count",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Count the words"
+  },
+  "prompt": {
+   "en": "Write a function word_count(text). It gives back a dictionary that says how many times each word appears. Ignore capital letters: Go and go are the same word. Words are separated by spaces. Example: word_count(\"the cat the\") gives {\"the\": 2, \"cat\": 1}."
+  },
+  "concepts": {
+   "en": [
+    "dictionaries",
+    "loops",
+    "split",
+    "lower case"
+   ]
+  },
+  "starter": "def word_count(text):\n    # give back a dictionary of word counts\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "the cat the"
+    },
+    "code": "check(word_count(\"the cat the\"), {\"the\": 2, \"cat\": 1})"
+   },
+   {
+    "name": {
+     "en": "Empty text gives an empty dictionary"
+    },
+    "code": "check(word_count(\"\"), {})"
+   },
+   {
+    "name": {
+     "en": "Capital letters are ignored"
+    },
+    "code": "check(word_count(\"Go go GO\"), {\"go\": 3})"
+   },
+   {
+    "name": {
+     "en": "Two words, repeated"
+    },
+    "code": "check(word_count(\"a b a b a\"), {\"a\": 3, \"b\": 2})"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Make the text lower case, then split it into a list of words.",
+    "A dictionary links a word to a number: counts[\"cat\"] = 1. Start with an empty one: {}.",
+    "For each word, add 1 to its count. counts.get(word, 0) gives 0 if the word is new."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Make a list of lower-case words."
+    },
+    "explain": {
+     "en": "text.lower().split() gives the words in small letters, as a list."
+    },
+    "solution": "def word_count(text):\n    return text.lower().split()\n",
+    "tests": [
+     {
+      "name": {
+       "en": "A b becomes [a, b]"
+      },
+      "code": "check(word_count(\"A b\"), [\"a\", \"b\"])"
+     }
+    ],
+    "starter": "def word_count(text):\n    pass\n"
+   },
+   {
+    "goal": {
+     "en": "Put every word in a dictionary."
+    },
+    "explain": {
+     "en": "Start with counts = {}. For each word, set counts[word] = 1 for now."
+    },
+    "solution": "def word_count(text):\n    counts = {}\n    for word in text.lower().split():\n        counts[word] = 1\n    return counts\n",
+    "tests": [
+     {
+      "name": {
+       "en": "Each word is there once"
+      },
+      "code": "check(word_count(\"a b\"), {\"a\": 1, \"b\": 1})"
+     }
+    ]
+   }
+  ],
+  "solution": "def word_count(text):\n    counts = {}\n    for word in text.lower().split():\n        counts[word] = counts.get(word, 0) + 1\n    return counts\n",
+  "solution_note": {
+   "en": "counts.get(word, 0) is the old count, or 0 for a new word. Adding 1 gives the new count."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "py-parity-bit",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Add a parity bit"
+  },
+  "prompt": {
+   "en": "Computers can spot mistakes by adding one extra digit. Write a function add_parity_bit(bits). The text bits is made of 0s and 1s. Add one more digit at the end (0 or 1) so that the whole text has an EVEN number of 1s. Example: \"101\" becomes \"1010\", and \"111\" becomes \"1111\"."
+  },
+  "concepts": {
+   "en": [
+    "error detection",
+    "counting",
+    "remainder (%)",
+    "joining text"
+   ]
+  },
+  "starter": "def add_parity_bit(bits):\n    # give back bits with one more digit on the end\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "101 becomes 1010"
+    },
+    "code": "check(add_parity_bit(\"101\"), \"1010\")"
+   },
+   {
+    "name": {
+     "en": "111 becomes 1111"
+    },
+    "code": "check(add_parity_bit(\"111\"), \"1111\")"
+   },
+   {
+    "name": {
+     "en": "Empty text becomes 0"
+    },
+    "code": "check(add_parity_bit(\"\"), \"0\")"
+   },
+   {
+    "name": {
+     "en": "0 becomes 00"
+    },
+    "code": "check(add_parity_bit(\"0\"), \"00\")"
+   },
+   {
+    "name": {
+     "en": "1 becomes 11"
+    },
+    "code": "check(add_parity_bit(\"1\"), \"11\")"
+   },
+   {
+    "name": {
+     "en": "1100 becomes 11000"
+    },
+    "code": "check(add_parity_bit(\"1100\"), \"11000\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Count the 1s in the text with bits.count(\"1\").",
+    "If the count is odd, add a 1 to make it even. If it is already even, add a 0.",
+    "count % 2 is 1 when the count is odd and 0 when it is even. Turn it into text with str() and put it on the end."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Count the 1s."
+    },
+    "explain": {
+     "en": "bits.count(\"1\") tells you how many 1s are in the text."
+    },
+    "solution": "def add_parity_bit(bits):\n    ones = bits.count(\"1\")\n    return ones\n",
+    "tests": [
+     {
+      "name": {
+       "en": "1011 has three 1s"
+      },
+      "code": "check(add_parity_bit(\"1011\"), 3)"
+     }
+    ],
+    "starter": "def add_parity_bit(bits):\n    pass\n"
+   },
+   {
+    "goal": {
+     "en": "Is the count odd?"
+    },
+    "explain": {
+     "en": "ones % 2 is 1 for an odd count and 0 for an even count. That is the digit you need to add."
+    },
+    "solution": "def add_parity_bit(bits):\n    ones = bits.count(\"1\")\n    return ones % 2\n",
+    "tests": [
+     {
+      "name": {
+       "en": "An odd count gives 1"
+      },
+      "code": "check(add_parity_bit(\"1011\"), 1)"
+     },
+     {
+      "name": {
+       "en": "An even count gives 0"
+      },
+      "code": "check(add_parity_bit(\"11\"), 0)"
+     }
+    ]
+   }
+  ],
+  "solution": "def add_parity_bit(bits):\n    return bits + str(bits.count(\"1\") % 2)\n",
+  "solution_note": {
+   "en": "The extra digit makes the number of 1s even. If one digit gets flipped later, the count turns odd and the mistake shows."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "py-primes-up-to",
+  "language": "python",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Find the prime numbers"
+  },
+  "prompt": {
+   "en": "Write a function primes_up_to(n). It gives back a list of every prime number from 2 up to n (n included), smallest first. A prime has no divisors except 1 and itself. Example: primes_up_to(10) gives [2, 3, 5, 7]."
+  },
+  "concepts": {
+   "en": [
+    "loops inside loops",
+    "divisors",
+    "break",
+    "efficiency"
+   ]
+  },
+  "starter": "def primes_up_to(n):\n    # give back a list of the primes from 2 to n\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "primes_up_to(10) is [2, 3, 5, 7]"
+    },
+    "code": "check(primes_up_to(10), [2, 3, 5, 7])"
+   },
+   {
+    "name": {
+     "en": "There are no primes up to 1"
+    },
+    "code": "check(primes_up_to(1), [])"
+   },
+   {
+    "name": {
+     "en": "2 is the first prime"
+    },
+    "code": "check(primes_up_to(2), [2])"
+   },
+   {
+    "name": {
+     "en": "n itself is included"
+    },
+    "code": "check(primes_up_to(13)[-1], 13)"
+   },
+   {
+    "name": {
+     "en": "Up to 30"
+    },
+    "code": "check(primes_up_to(30), [2, 3, 5, 7, 11, 13, 17, 19, 23, 29])"
+   },
+   {
+    "name": {
+     "en": "There are 669 primes up to 5000"
+    },
+    "code": "check(len(primes_up_to(5000)), 669)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Look at each number i from 2 to n. Decide if i is prime, and keep it if it is.",
+    "To test i, try dividing by d = 2, 3, 4 ... If i % d == 0 for any d, then i is not prime.",
+    "You only need to try d while d * d <= i. That makes it much faster."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "List the numbers from 2 to n."
+    },
+    "explain": {
+     "en": "range(2, n + 1) counts from 2 up to n. list(...) turns it into a list."
+    },
+    "solution": "def primes_up_to(n):\n    return list(range(2, n + 1))\n",
+    "tests": [
+     {
+      "name": {
+       "en": "The numbers 2 to 5"
+      },
+      "code": "check(primes_up_to(5), [2, 3, 4, 5])"
+     }
+    ],
+    "starter": "def primes_up_to(n):\n    pass\n"
+   },
+   {
+    "goal": {
+     "en": "Remove the even numbers (except 2)."
+    },
+    "explain": {
+     "en": "Keep a number if it is 2, or if i % 2 != 0. A list can be built with a loop and append."
+    },
+    "solution": "def primes_up_to(n):\n    result = []\n    for i in range(2, n + 1):\n        if i == 2 or i % 2 != 0:\n            result.append(i)\n    return result\n",
+    "tests": [
+     {
+      "name": {
+       "en": "Evens are gone (9 is still there for now)"
+      },
+      "code": "check(primes_up_to(9), [2, 3, 5, 7, 9])"
+     }
+    ]
+   }
+  ],
+  "solution": "def primes_up_to(n):\n    primes = []\n    for i in range(2, n + 1):\n        is_prime = True\n        d = 2\n        while d * d <= i:\n            if i % d == 0:\n                is_prime = False\n                break\n            d += 1\n        if is_prime:\n            primes.append(i)\n    return primes\n",
+  "solution_note": {
+   "en": "If i has a divisor, it has one that is at most the square root of i. So we can stop trying at d * d > i."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "py-flatten",
+  "language": "python",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Flatten a list"
+  },
+  "prompt": {
+   "en": "Write a function flatten(items). The list items can hold numbers and also other lists, and those lists can hold lists too, as deep as you like. Give back one flat list with all the numbers in the same order. Example: flatten([1, [2, [3]], 4]) gives [1, 2, 3, 4]."
+  },
+  "concepts": {
+   "en": [
+    "lists inside lists",
+    "isinstance",
+    "recursion (a function calling itself)"
+   ]
+  },
+  "starter": "def flatten(items):\n    # give back one flat list\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "One level of lists"
+    },
+    "code": "check(flatten([1, [2, 3], 4]), [1, 2, 3, 4])"
+   },
+   {
+    "name": {
+     "en": "An empty list"
+    },
+    "code": "check(flatten([]), [])"
+   },
+   {
+    "name": {
+     "en": "Lists deep inside lists"
+    },
+    "code": "check(flatten([[1, [2]], [[3]]]), [1, 2, 3])"
+   },
+   {
+    "name": {
+     "en": "Already flat"
+    },
+    "code": "check(flatten([1, 2]), [1, 2])"
+   },
+   {
+    "name": {
+     "en": "Empty lists inside"
+    },
+    "code": "check(flatten([[], [1], []]), [1])"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Go through the items one by one and build a new list called result.",
+    "isinstance(item, list) is True when item is itself a list.",
+    "If item is a list, flatten it too (your function can call itself!) and add everything it gives back. Otherwise add item."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Copy the items into a new list."
+    },
+    "explain": {
+     "en": "result = [] makes an empty list. result.append(x) adds x to the end."
+    },
+    "solution": "def flatten(items):\n    result = []\n    for item in items:\n        result.append(item)\n    return result\n",
+    "tests": [
+     {
+      "name": {
+       "en": "A flat list stays the same"
+      },
+      "code": "check(flatten([1, 2]), [1, 2])"
+     }
+    ],
+    "starter": "def flatten(items):\n    pass\n"
+   },
+   {
+    "goal": {
+     "en": "Open up the lists inside, one level deep."
+    },
+    "explain": {
+     "en": "If item is a list, loop over it and append each inner item. Otherwise append item."
+    },
+    "solution": "def flatten(items):\n    result = []\n    for item in items:\n        if isinstance(item, list):\n            for inner in item:\n                result.append(inner)\n        else:\n            result.append(item)\n    return result\n",
+    "tests": [
+     {
+      "name": {
+       "en": "One level of lists"
+      },
+      "code": "check(flatten([1, [2, 3], 4]), [1, 2, 3, 4])"
+     }
+    ]
+   }
+  ],
+  "solution": "def flatten(items):\n    result = []\n    for item in items:\n        if isinstance(item, list):\n            result.extend(flatten(item))\n        else:\n            result.append(item)\n    return result\n",
+  "solution_note": {
+   "en": "A list inside a list is flattened by the same function. That is called recursion."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "js-greet",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "8-10",
+  "topic": "general",
+  "title": {
+   "en": "Greet someone"
+  },
+  "prompt": {
+   "en": "Write a function greet(name). It gives back the text Hello, then a space, then the name, then an exclamation mark. Example: greet(\"Sam\") gives \"Hello, Sam!\"."
+  },
+  "concepts": {
+   "en": [
+    "functions",
+    "return",
+    "joining text"
+   ]
+  },
+  "starter": "function greet(name) {\n  // give back the greeting\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "greet(\"Sam\") is \"Hello, Sam!\""
+    },
+    "code": "assertEqual(greet(\"Sam\"), \"Hello, Sam!\")"
+   },
+   {
+    "name": {
+     "en": "greet(\"Ana\") is \"Hello, Ana!\""
+    },
+    "code": "assertEqual(greet(\"Ana\"), \"Hello, Ana!\")"
+   },
+   {
+    "name": {
+     "en": "An empty name still works"
+    },
+    "code": "assertEqual(greet(\"\"), \"Hello, !\")"
+   },
+   {
+    "name": {
+     "en": "A name with a dot"
+    },
+    "code": "assertEqual(greet(\"Dr. Who\"), \"Hello, Dr. Who!\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Text can be joined with the + sign: \"ab\" + \"cd\" is \"abcd\".",
+    "You need three pieces: \"Hello, \", the name, and \"!\".",
+    "Join the three pieces with + and return the result. Watch the space after the comma."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Give back the word Hello."
+    },
+    "explain": {
+     "en": "Text goes inside quote marks. return sends it back."
+    },
+    "solution": "function greet(name) {\n  return \"Hello\";\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "It starts with Hello"
+      },
+      "code": "assert(greet(\"x\").startsWith(\"Hello\"), \"The greeting should start with Hello.\")"
+     }
+    ],
+    "starter": "function greet(name) {\n}\n"
+   },
+   {
+    "goal": {
+     "en": "Join the name on."
+    },
+    "explain": {
+     "en": "Use + to join two pieces of text: \"Hello, \" + name."
+    },
+    "solution": "function greet(name) {\n  return \"Hello, \" + name;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "Hello, then the name"
+      },
+      "code": "assertEqual(greet(\"Sam\"), \"Hello, Sam\")"
+     }
+    ]
+   }
+  ],
+  "solution": "function greet(name) {\n  return \"Hello, \" + name + \"!\";\n}\n",
+  "solution_note": {
+   "en": "+ joins pieces of text together, in the order you write them."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "js-sum",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Add up a list"
+  },
+  "prompt": {
+   "en": "Write a function sum(numbers). It gives back the total of all the numbers in the list. An empty list gives 0."
+  },
+  "concepts": {
+   "en": [
+    "arrays",
+    "loops",
+    "variables"
+   ]
+  },
+  "starter": "function sum(numbers) {\n  // give back the total\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "[1, 2, 3] adds up to 6"
+    },
+    "code": "assertEqual(sum([1, 2, 3]), 6)"
+   },
+   {
+    "name": {
+     "en": "An empty list is 0"
+    },
+    "code": "assertEqual(sum([]), 0)"
+   },
+   {
+    "name": {
+     "en": "-1 and 1 make 0"
+    },
+    "code": "assertEqual(sum([-1, 1]), 0)"
+   },
+   {
+    "name": {
+     "en": "Decimals work"
+    },
+    "code": "assertEqual(sum([0.5, 0.25]), 0.75)"
+   },
+   {
+    "name": {
+     "en": "One number"
+    },
+    "code": "assertEqual(sum([10]), 10)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Keep a variable called total that starts at 0.",
+    "for (const n of numbers) { ... } goes through the numbers one at a time.",
+    "Inside the loop, add n to total. After the loop, return total."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Start a total at 0."
+    },
+    "explain": {
+     "en": "let total = 0; makes a variable. Return it. An empty list should give 0."
+    },
+    "solution": "function sum(numbers) {\n  let total = 0;\n  return total;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "An empty list is 0"
+      },
+      "code": "assertEqual(sum([]), 0)"
+     }
+    ],
+    "starter": "function sum(numbers) {\n}\n"
+   },
+   {
+    "goal": {
+     "en": "Add each number to the total."
+    },
+    "explain": {
+     "en": "total += n means total = total + n."
+    },
+    "solution": "function sum(numbers) {\n  let total = 0;\n  for (const n of numbers) {\n    total += n;\n  }\n  return total;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "[1, 2, 3] adds up to 6"
+      },
+      "code": "assertEqual(sum([1, 2, 3]), 6)"
+     }
+    ]
+   }
+  ],
+  "solution": "function sum(numbers) {\n  let total = 0;\n  for (const n of numbers) {\n    total += n;\n  }\n  return total;\n}\n",
+  "solution_note": {
+   "en": "total collects the numbers one at a time, so after the loop it holds the whole sum."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "js-reverse-string",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Turn text around"
+  },
+  "prompt": {
+   "en": "Write a function reverseString(text). It gives back the same text backwards. Example: \"abc\" becomes \"cba\". Do not use .reverse()."
+  },
+  "concepts": {
+   "en": [
+    "strings",
+    "loops",
+    "building a result"
+   ]
+  },
+  "starter": "function reverseString(text) {\n  // give back the text backwards\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "abc becomes cba"
+    },
+    "code": "assertEqual(reverseString(\"abc\"), \"cba\")"
+   },
+   {
+    "name": {
+     "en": "Empty text stays empty"
+    },
+    "code": "assertEqual(reverseString(\"\"), \"\")"
+   },
+   {
+    "name": {
+     "en": "One letter stays the same"
+    },
+    "code": "assertEqual(reverseString(\"a\"), \"a\")"
+   },
+   {
+    "name": {
+     "en": "A longer text"
+    },
+    "code": "assertEqual(reverseString(\"Hello, world\"), \"dlrow ,olleH\")"
+   },
+   {
+    "name": {
+     "en": "It does not use .reverse()"
+    },
+    "code": "assert(!reverseString.toString().includes(\".reverse(\"), \"Please do not use .reverse().\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Build a new text one letter at a time. Start with an empty text: \"\".",
+    "for (const ch of text) goes through the letters from first to last.",
+    "If you put each new letter at the FRONT of your result (ch + result), the order flips."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Copy the letters one by one."
+    },
+    "explain": {
+     "en": "Start with let result = \"\"; Add each letter to the end with result += ch."
+    },
+    "solution": "function reverseString(text) {\n  let result = \"\";\n  for (const ch of text) {\n    result += ch;\n  }\n  return result;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "A copy of ab"
+      },
+      "code": "assertEqual(reverseString(\"ab\"), \"ab\")"
+     }
+    ],
+    "starter": "function reverseString(text) {\n}\n"
+   }
+  ],
+  "solution": "function reverseString(text) {\n  let result = \"\";\n  for (const ch of text) {\n    result = ch + result;\n  }\n  return result;\n}\n",
+  "solution_note": {
+   "en": "Each new letter goes in front of the ones before it, so the last letter ends up first."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "js-factorial",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Factorial"
+  },
+  "prompt": {
+   "en": "The factorial of n (written n!) is 1 x 2 x 3 x ... x n. For example 5! = 5 x 4 x 3 x 2 x 1 = 120. Write a function factorial(n) that gives it back. 0! is 1."
+  },
+  "concepts": {
+   "en": [
+    "loops",
+    "multiplying",
+    "building up a result"
+   ]
+  },
+  "starter": "function factorial(n) {\n  // give back n!\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "0! is 1"
+    },
+    "code": "assertEqual(factorial(0), 1)"
+   },
+   {
+    "name": {
+     "en": "1! is 1"
+    },
+    "code": "assertEqual(factorial(1), 1)"
+   },
+   {
+    "name": {
+     "en": "3! is 6"
+    },
+    "code": "assertEqual(factorial(3), 6)"
+   },
+   {
+    "name": {
+     "en": "5! is 120"
+    },
+    "code": "assertEqual(factorial(5), 120)"
+   },
+   {
+    "name": {
+     "en": "10! is 3628800"
+    },
+    "code": "assertEqual(factorial(10), 3628800)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "5! means 5 x 4 x 3 x 2 x 1. And 0! is 1.",
+    "Start a variable called result at 1. Then multiply it by each whole number from 1 up to n.",
+    "Use a loop: for (let i = 1; i <= n; i++). Multiply result by i inside it."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Start with 1."
+    },
+    "explain": {
+     "en": "result = 1 is the starting point. It is also the right answer for 0!."
+    },
+    "solution": "function factorial(n) {\n  let result = 1;\n  return result;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "0! is 1"
+      },
+      "code": "assertEqual(factorial(0), 1)"
+     }
+    ],
+    "starter": "function factorial(n) {\n}\n"
+   },
+   {
+    "goal": {
+     "en": "Multiply by every number up to n."
+    },
+    "explain": {
+     "en": "for (let i = 1; i <= n; i++) runs once for each i. Do result *= i inside."
+    },
+    "solution": "function factorial(n) {\n  let result = 1;\n  for (let i = 1; i <= n; i++) {\n    result *= i;\n  }\n  return result;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "3! is 6"
+      },
+      "code": "assertEqual(factorial(3), 6)"
+     }
+    ]
+   }
+  ],
+  "solution": "function factorial(n) {\n  let result = 1;\n  for (let i = 1; i <= n; i++) {\n    result *= i;\n  }\n  return result;\n}\n",
+  "solution_note": {
+   "en": "For 0 the loop does not run, so the answer stays 1, which is right."
+  },
+  "license": "original",
+  "source": "Hackcessability"
+ },
+ {
+  "id": "js-fibonacci",
+  "language": "javascript",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Fibonacci, fast"
+  },
+  "prompt": {
+   "en": "The Fibonacci numbers go 0, 1, 1, 2, 3, 5, 8, 13 ... Each one is the sum of the two before it. Write a function fibonacci(n) that gives back the n-th one, counting from 0: fibonacci(0) is 0, fibonacci(1) is 1, fibonacci(7) is 13. It must also work fast for n = 50."
+  },
+  "concepts": {
+   "en": [
+    "loops",
+    "keeping state in variables",
+    "why repeating work is slow"
+   ]
+  },
+  "starter": "function fibonacci(n) {\n  // give back the n-th Fibonacci number\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "fibonacci(0) is 0"
+    },
+    "code": "assertEqual(fibonacci(0), 0)"
+   },
+   {
+    "name": {
+     "en": "fibonacci(1) is 1"
+    },
+    "code": "assertEqual(fibonacci(1), 1)"
+   },
+   {
+    "name": {
+     "en": "fibonacci(2) is 1"
+    },
+    "code": "assertEqual(fibonacci(2), 1)"
+   },
+   {
+    "name": {
+     "en": "fibonacci(10) is 55"
+    },
+    "code": "assertEqual(fibonacci(10), 55)"
+   },
+   {
+    "name": {
+     "en": "fibonacci(20) is 6765"
+    },
+    "code": "assertEqual(fibonacci(20), 6765)"
+   },
+   {
+    "name": {
+     "en": "fibonacci(50) is fast and right"
+    },
+    "code": "assertEqual(fibonacci(50), 12586269025)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Each number is the sum of the two before it: 0, 1, 1, 2, 3, 5 ...",
+    "If your function calls itself twice, it repeats a huge amount of work for n = 50. Use a loop instead.",
+    "Keep two variables, previous and current. In each step make next = previous + current, then move previous and current forward."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Handle 0 and 1."
+    },
+    "explain": {
+     "en": "For n = 0 the answer is 0, and for n = 1 it is 1. So if n < 2, return n."
+    },
+    "solution": "function fibonacci(n) {\n  if (n < 2) return n;\n  return 0;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "fibonacci(0) is 0"
+      },
+      "code": "assertEqual(fibonacci(0), 0)"
+     },
+     {
+      "name": {
+       "en": "fibonacci(1) is 1"
+      },
+      "code": "assertEqual(fibonacci(1), 1)"
+     }
+    ],
+    "starter": "function fibonacci(n) {\n}\n"
+   },
+   {
+    "goal": {
+     "en": "Walk along the sequence with a loop."
+    },
+    "explain": {
+     "en": "Start with previous = 0 and current = 1. Repeat n - 1 times: next = previous + current, then previous = current and current = next."
+    },
+    "solution": "function fibonacci(n) {\n  if (n < 2) return n;\n  let previous = 0;\n  let current = 1;\n  for (let i = 2; i <= n; i++) {\n    const next = previous + current;\n    previous = current;\n    current = next;\n  }\n  return current;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "fibonacci(10) is 55"
+      },
+      "code": "assertEqual(fibonacci(10), 55)"
+     }
+    ]
+   }
+  ],
+  "solution": "function fibonacci(n) {\n  if (n < 2) return n;\n  let previous = 0;\n  let current = 1;\n  for (let i = 2; i <= n; i++) {\n    const next = previous + current;\n    previous = current;\n    current = next;\n  }\n  return current;\n}\n",
+  "solution_note": {
+   "en": "The loop only ever remembers the last two numbers, so it takes n steps. Calling the function twice from itself would take billions."
+  },
+  "license": "original",
+  "source": "Hackcessability"
  }
 ]

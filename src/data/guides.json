@@ -1,0 +1,756 @@
+{
+  "version": 1,
+  "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates.",
+  "fallback": {
+    "games": {
+      "id": "fallback-games",
+      "kind": "fallback",
+      "title": {
+        "en": "Games"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is about learning programming through games or game ideas."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for anyone who likes games and wants to see how they are made. We marked it {level}, for about age {age}."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at the page before your child does and sit nearby for the first session."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Open the link with a grown-up if you are under 13."
+            },
+            {
+              "en": "Look for a part that matches what you already know. Skip the hard parts for now."
+            },
+            {
+              "en": "Try one small thing, then stop and tell someone what you tried."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan for about {minutes} minutes at a time, over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Look around and pick one thing to try."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Try it again and write down one thing you learned."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Make something small of your own with a grown-up or friend."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "art": {
+      "id": "fallback-art",
+      "kind": "fallback",
+      "title": {
+        "en": "Art and creative coding"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is about making art, drawings, music or pictures with code."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for anyone who likes to draw, design or make things look cool. We marked it {level}, for about age {age}."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at the page before your child does and sit nearby for the first session."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Open the link with a grown-up if you are under 13."
+            },
+            {
+              "en": "Look for a part that matches what you already know. Skip the hard parts for now."
+            },
+            {
+              "en": "Try one small thing, then stop and tell someone what you tried."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan for about {minutes} minutes at a time, over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Look around and pick one thing to try."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Try it again and write down one thing you learned."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Make something small of your own with a grown-up or friend."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "web": {
+      "id": "fallback-web",
+      "kind": "fallback",
+      "title": {
+        "en": "Websites"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is about building websites and web pages."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for anyone who wants to make a page that shows up in a browser. We marked it {level}, for about age {age}."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at the page before your child does and sit nearby for the first session."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Open the link with a grown-up if you are under 13."
+            },
+            {
+              "en": "Look for a part that matches what you already know. Skip the hard parts for now."
+            },
+            {
+              "en": "Try one small thing, then stop and tell someone what you tried."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan for about {minutes} minutes at a time, over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Look around and pick one thing to try."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Try it again and write down one thing you learned."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Make something small of your own with a grown-up or friend."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "general": {
+      "id": "fallback-general",
+      "kind": "fallback",
+      "title": {
+        "en": "Learning to code"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is about learning how to program or how computers think."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for anyone starting out or looking for the next step. We marked it {level}, for about age {age}."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at the page before your child does and sit nearby for the first session."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Open the link with a grown-up if you are under 13."
+            },
+            {
+              "en": "Look for a part that matches what you already know. Skip the hard parts for now."
+            },
+            {
+              "en": "Try one small thing, then stop and tell someone what you tried."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan for about {minutes} minutes at a time, over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Look around and pick one thing to try."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Try it again and write down one thing you learned."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Make something small of your own with a grown-up or friend."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "systems": {
+      "id": "fallback-systems",
+      "kind": "fallback",
+      "title": {
+        "en": "How computers work"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is about how computers and programs work inside."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people who like to look under the hood. We marked it {level}, for about age {age}; these topics are often harder."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at the page before your child does and sit nearby for the first session."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Open the link with a grown-up if you are under 13."
+            },
+            {
+              "en": "Look for a part that matches what you already know. Skip the hard parts for now."
+            },
+            {
+              "en": "Try one small thing, then stop and tell someone what you tried."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan for about {minutes} minutes at a time, over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Look around and pick one thing to try."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Try it again and write down one thing you learned."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Make something small of your own with a grown-up or friend."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "security": {
+      "id": "fallback-security",
+      "kind": "fallback",
+      "title": {
+        "en": "Computer safety topics"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is about computer security."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "Security topics are for grown-ups or older learners with a grown-up nearby. We marked it {level}, for about age {age}."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at the page before your child does and sit nearby for the first session."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Open the link with a grown-up if you are under 13."
+            },
+            {
+              "en": "Look for a part that matches what you already know. Skip the hard parts for now."
+            },
+            {
+              "en": "Try one small thing, then stop and tell someone what you tried."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan for about {minutes} minutes at a time, over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Look around and pick one thing to try."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Try it again and write down one thing you learned."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Make something small of your own with a grown-up or friend."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "other": {
+      "id": "fallback-other",
+      "kind": "fallback",
+      "title": {
+        "en": "More to explore"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is a computing resource that does not fit our main topics."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It might still be useful. We marked it {level}, for about age {age}; ask a grown-up if you are not sure."
+          },
+          "adult_note": {
+            "en": "Grown-ups: please look at the page before your child does and sit nearby for the first session."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Open the link with a grown-up if you are under 13."
+            },
+            {
+              "en": "Look for a part that matches what you already know. Skip the hard parts for now."
+            },
+            {
+              "en": "Try one small thing, then stop and tell someone what you tried."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan for about {minutes} minutes at a time, over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Look around and pick one thing to try."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Try it again and write down one thing you learned."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": "{minutes}",
+              "goal": {
+                "en": "Make something small of your own with a grown-up or friend."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    }
+  },
+  "groups": {}
+}

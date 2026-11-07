@@ -13,3 +13,4 @@ More numbers are in `docs/STATS.md`. Regenerate counts with `python scripts/guid
 - "**Time estimates are estimates.** Guides were **written from catalog data only** (titles, descriptions, level, topic), not from reading the linked pages."
 - "Translations of titles and descriptions are AI-generated and not yet checked by native speakers. Guides and lessons are English for now."
 - "'Kid-safe' means nothing in the listing looks risky; we did not review the linked pages." For ages 11-13 on the two CC0 lists, it means beginner-level material, not content written for kids.
+- "A child's progress (done items and stars) is saved only in their own browser; we have no accounts and nothing is sent to us."

@@ -1,0 +1,29 @@
+/* Browser-only progress controls (see docs/PROGRESS_SPEC.md). Logical properties, so it works in RTL.
+   Only styles the elements progress.js adds; it does not touch existing pages. */
+.hc-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.hc-progress { margin-block: 1rem; }
+.hc-progress-note { margin-block: 0.5rem; font-size: 0.875rem; color: #334155; }
+.hc-progress-btn {
+  min-block-size: 44px; min-inline-size: 44px; padding-block: 0.5rem; padding-inline: 1rem;
+  border: 2px solid #1e293b; border-radius: 0.5rem; background: #ffffff; color: #1e293b;
+  font: inherit; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem;
+  margin-inline-end: 0.5rem; margin-block-end: 0.5rem;
+}
+.hc-progress-btn:hover { background: #f1f5f9; }
+.hc-progress-btn.hc-on { background: #166534; border-color: #166534; color: #ffffff; }
+.hc-progress-btn.hc-danger { border-color: #991b1b; color: #991b1b; }
+.hc-progress-btn:focus-visible, .hc-input:focus-visible { outline: 3px solid #1d4ed8; outline-offset: 2px; }
+.hc-progress-btn[hidden], .hc-codebox[hidden], .hc-input[hidden] { display: none; }
+.hc-check { font-weight: 700; }
+.hc-listcheck { margin-inline-start: 0.5rem; color: #166534; font-weight: 700; }
+.hc-panel { border: 2px solid #1e293b; border-radius: 0.75rem; padding: 1rem; margin-block: 1rem; background: #ffffff; color: #1e293b; }
+.hc-panel-title { font-size: 1.25rem; font-weight: 700; margin-block-end: 0.5rem; }
+.hc-panel-count { font-size: 1.125rem; margin-block: 0.25rem; }
+.hc-row { display: flex; flex-wrap: wrap; margin-block-start: 0.5rem; }
+.hc-codebox { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-block: 0.5rem; }
+.hc-input { min-block-size: 44px; padding-inline: 0.75rem; border: 2px solid #1e293b; border-radius: 0.5rem; font: inherit; color: #1e293b; background: #ffffff; max-inline-size: 100%; inline-size: 24rem; }
+.hc-stars { display: inline-flex; gap: 0.25rem; font-size: 1.75rem; line-height: 1; color: #475569; }
+.hc-star-on { color: #b45309; }
+@media (prefers-reduced-motion: no-preference) {
+  .hc-progress-btn { transition: background-color 0.15s ease, color 0.15s ease; }
+}

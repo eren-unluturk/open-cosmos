@@ -1,29 +1,33 @@
 {% extends "base.html" %}
+{% block title %}{{ ui.guide }} · {{ ui.brand }}{% endblock %}
+{% from "macros.html" import icon with context %}
 {% block content %}
-  <h1 class="text-2xl font-bold my-4">{{ ui.guide }}</h1>
-  <form method="get" class="space-y-4 mb-8">
-    <fieldset><legend class="font-semibold">Age</legend>
-      {% for a in ages %}<label class="mr-4"><input type="radio" name="age" value="{{ a }}" required {{ 'checked' if a == age }}> {{ a }}</label>{% endfor %}
-    </fieldset>
-    <fieldset><legend class="font-semibold">I want to make…</legend>
-      {% for g in goals %}<label class="mr-4"><input type="radio" name="goal" value="{{ g }}" required {{ 'checked' if g == goal }}> {{ g }}</label>{% endfor %}
-    </fieldset>
-    <fieldset><legend class="font-semibold">Level</legend>
-      {% for l in levels %}<label class="mr-4"><input type="radio" name="level" value="{{ l }}" required {{ 'checked' if l == level }}> {{ l }}</label>{% endfor %}
-    </fieldset>
-    <button class="rounded bg-slate-900 text-white px-4 py-2" type="submit">{{ ui.start }}</button>
-  </form>
-  {% if path is not none %}
-    <ol class="space-y-4 list-decimal ps-6">
-      {% for e in path %}
-        <li>
-          <a class="underline font-medium" href="{{ e.url }}" rel="noopener">{{ e.title.get(lang) or e.title.en }}</a>
-          <p>{{ e.desc.get(lang) or e.desc.en }}</p>
-          <p class="text-xs text-slate-600">{{ ui.source }}: <a class="underline" href="{{ e.source }}">{{ e.source.split('github.com/')[1] }}</a> · {{ ui.license }}: {{ e.license }}</p>
-        </li>
-      {% else %}<p>No matches yet.</p>{% endfor %}
-    </ol>
-    {% if short %}<p class="mt-3">{{ ui.more_coming }}</p>{% endif %}
-    <p class="text-xs text-slate-600 mt-6">Path chosen by AI from open resources. Always check the original. We don't store your answers.</p>
-  {% endif %}
+<h1 class="bubble">{{ ui.guide }}</h1>
+<p class="lede">{{ ui.guide_sub }}</p>
+<form method="get" class="panel" style="margin:20px 0 30px">
+  <fieldset><legend>{{ ui.age }}</legend><div class="choices">
+    {% for a in ages %}<label class="choice"><input type="radio" name="age" value="{{ a }}" required {{ 'checked' if a == age }}><span>{{ a }}</span></label>{% endfor %}
+  </div></fieldset>
+  <fieldset><legend>{{ ui.goal }}</legend><div class="choices">
+    {% for g in goals %}<label class="choice"><input type="radio" name="goal" value="{{ g }}" required {{ 'checked' if g == goal }}><span>{{ ui['goal_' ~ g] }}</span></label>{% endfor %}
+  </div></fieldset>
+  <fieldset><legend>{{ ui.level }}</legend><div class="choices">
+    {% for l in levels %}<label class="choice"><input type="radio" name="level" value="{{ l }}" required {{ 'checked' if l == level }}><span class="with-i">{{ icon(level_icon[l]) }} {{ ui['lvl_' ~ l] }}</span></label>{% endfor %}
+  </div></fieldset>
+  <button class="btn btn-gold" type="submit">{{ icon('rocket') }} {{ ui.start }}</button>
+</form>
+{% if path is not none %}
+  <ol class="route">
+    {% for e in path %}
+      {% set gid, sid = u.home_of(e.id) %}
+      <li><div class="panel">
+        <a class="card-title" style="color:var(--moon);text-decoration:none" href="{{ url_for('entry_page', lang=lang, entry_id=e.id, g=gid, s=sid) }}">{{ tr(e.title, lang) }}</a>
+        <p style="margin:6px 0">{{ tr(e.desc, lang) or ui.no_desc }}</p>
+        <p class="attrib">{{ ui.source }}: <a href="{{ e.source }}">{{ e.source.split('github.com/')[1] }}</a> · {{ ui.license }}: {{ e.license }}</p>
+      </div></li>
+    {% else %}<li><div class="panel">{{ ui.no_results }}</div></li>{% endfor %}
+  </ol>
+  {% if short %}<p class="panel" style="margin-top:16px">{{ ui.more_coming }}</p>{% endif %}
+  <p class="attrib" style="margin-top:20px">{{ ui.guide_note }}</p>
+{% endif %}
 {% endblock %}

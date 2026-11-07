@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}{{ ui.profile }} · {{ ui.brand }}{% endblock %}
+{% from "macros.html" import icon with context %}
+{% block content %}
+<h1 class="bubble">{{ ui.profile }}</h1>
+<p class="lede with-i">{{ icon('lock') }} {{ ui.me_sub }}</p>
+<div class="stats">
+  <div class="panel stat"><b id="n-stops">0</b>{{ ui.explored_stops }}</div>
+  <div class="panel stat"><b id="n-gal">0</b>{{ ui.galaxies_visited }}</div>
+</div>
+<h2 class="section-title">{{ ui.badges }}</h2>
+<div class="badges">
+  <div class="medal" data-rule="first"><div class="m" aria-hidden="true">{{ icon('rocket') }}</div>{{ ui.b_first }}</div>
+  <div class="medal" data-rule="five"><div class="m" aria-hidden="true">{{ icon('star-f') }}</div>{{ ui.b_five }}</div>
+  <div class="medal" data-rule="hopper"><div class="m" aria-hidden="true">{{ icon('g-environment') }}</div>{{ ui.b_hopper }}</div>
+  <div class="medal" data-rule="ten"><div class="m" aria-hidden="true">{{ icon('astronaut') }}</div>{{ ui.b_ten }}</div>
+</div>
+<h2 class="section-title">{{ ui.explored_stops }}</h2>
+<p id="log-empty" class="muted">{{ ui.me_empty }} <a href="{{ url_for('home', lang=lang) }}">→</a></p>
+<ul id="log" data-lang="{{ lang }}" style="line-height:2"></ul>
+<p><button class="btn btn-ghost btn-sm" type="button" data-clear>{{ ui.me_clear }}</button></p>
+{% endblock %}

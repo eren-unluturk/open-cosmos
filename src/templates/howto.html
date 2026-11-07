@@ -1,27 +1,22 @@
 {% extends "base.html" %}
+{% block title %}{{ g.title }} · {{ ui.brand }}{% endblock %}
 {% block content %}
-  <article>
-    <h1 class="text-2xl font-bold my-4">{{ g.title }}</h1>
-    {% if g.translated %}<p class="text-sm text-slate-600">{{ ui.guide_ai }}</p>{% endif %}
-    <p>{{ g.summary }}</p>
-
-    <h2 class="text-xl font-semibold mt-6">{{ ui.howto_steps }}</h2>
-    <ol class="list-decimal ps-6 space-y-2 mt-2">{% for s in g.steps %}<li>{{ s }}</li>{% endfor %}</ol>
-
-    <h2 class="text-xl font-semibold mt-6">{{ ui.howto_access }}</h2>
-    <ul class="list-disc ps-6 space-y-2 mt-2">{% for s in g.accessibility %}<li>{{ s }}</li>{% endfor %}</ul>
-
-    <h2 class="text-xl font-semibold mt-6">{{ ui.howto_levels }}</h2>
+<h1 class="bubble">{{ g.title }}</h1>
+{% if lang != 'en' %}<p class="attrib">{{ ui.guide_ai if g.translated else ui.english_only }}</p>{% endif %}
+<p class="lede">{{ g.summary }}</p>
+<div class="lesson-grid">
+  <div class="lesson-main">
+    <h2 class="section-title">{{ ui.steps_h }}</h2>
+    <ol class="steps big">{% for s in g.steps %}<li>{{ s }}</li>{% endfor %}</ol>
+    <h2 class="section-title">{{ ui.make_it_work }}</h2>
+    <ul class="ticks">{% for s in g.accessibility %}<li>{{ s }}</li>{% endfor %}</ul>
+  </div>
+  <aside class="lesson-side">
     {% for lvl, tips in g.by_level.items() %}
-      <h3 class="font-semibold mt-3">{{ lvl }}</h3>
-      <ul class="list-disc ps-6 space-y-1">{% for s in tips %}<li>{{ s }}</li>{% endfor %}</ul>
+      <div class="panel"><h2 class="side-h">{{ ui['lvl_' ~ lvl] }}</h2><ul class="ticks">{% for s in tips %}<li>{{ s }}</li>{% endfor %}</ul></div>
     {% endfor %}
-
-    <h2 class="text-xl font-semibold mt-6">{{ ui.howto_safety }}</h2>
-    <ul class="list-disc ps-6 space-y-1 mt-2">{% for s in g.safety %}<li>{{ s }}</li>{% endfor %}</ul>
-
-    <p class="mt-6 text-sm">{{ ui.howto_other }}:
-      {% for k in kinds %}{% if k != kind %}<a class="underline" href="{{ url_for('howto', lang=lang, kind=k) }}">{{ ui['kind_' ~ k] }}</a>{{ ' ' }}{% endif %}{% endfor %}
-    </p>
-  </article>
+    <div class="panel adult-panel"><h2 class="side-h">{{ ui.stay_safe }}</h2><ul class="ticks">{% for s in g.safety %}<li>{{ s }}</li>{% endfor %}</ul></div>
+  </aside>
+</div>
+<p class="attrib">{% for k in kinds %}{% if k != kind %}<a href="{{ url_for('howto', lang=lang, kind=k) }}">{{ k }}</a>{{ ' · ' if not loop.last }}{% endif %}{% endfor %}</p>
 {% endblock %}

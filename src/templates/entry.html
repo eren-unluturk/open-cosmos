@@ -1,72 +1,145 @@
 {% extends "base.html" %}
+{% from "macros.html" import card, flow, dots, flags, icon with context %}
+{% block title %}{{ title }} · {{ ui.brand }}{% endblock %}
 {% block content %}
-  <article>
-    <h1 class="text-2xl font-bold my-4">{{ title }}</h1>
-    {% if fell_back %}<p class="text-sm text-slate-600">Shown in English.</p>{% endif %}
-    {% if is_ai %}<p class="text-sm text-slate-600">AI-translated. Check the original.</p>{% endif %}
-    <p class="my-2">{{ desc }}</p>
-    <ul class="text-sm space-y-1 my-4">
-      <li>{{ e.level }} · {{ e.age_group }} · {{ e.topic }} · {{ ui['kind_' ~ e.kind] }}</li>
-      {% if e.tag %}<li>{{ e.tag }}</li>{% endif %}
-      <li>{{ ui.source }}: <a class="underline" href="{{ e.source }}" rel="noopener">{{ e.source.split('github.com/')[1] }}</a></li>
-      <li>{{ ui.license }}: {{ e.license }}</li>
-      {% if e.safety != 'kid-safe' %}<li>Ask a grown-up before you open this link.</li>{% endif %}
-    </ul>
-    <p class="text-sm my-2"><strong>{{ ui.on_site if e.lesson_id else ui.on_other }}.</strong>
-      {{ ui.reason_hostable if e.delivery == 'hostable' else ui.reason_external }}</p>
-    {% if e.lesson_id %}
-      <p class="my-2"><a class="underline font-medium" href="{{ url_for('lesson_page', lang=lang, lesson_id=e.lesson_id) }}">{{ ui.go_lesson }}</a></p>
-    {% endif %}
+{% set allowed = true %}
+<nav class="crumbs" aria-label="Breadcrumb">
+  <a href="{{ url_for('constellation', lang=lang) }}">{{ ui.constellation }}</a>
+  {% if gid %}
+    <span aria-hidden="true">›</span><a href="{{ url_for('galaxy', lang=lang, gid=gid) }}">{{ ui['g_' ~ gid] }}</a>
+    <span aria-hidden="true">›</span><a href="{{ url_for('system', lang=lang, gid=gid, sid=sid) }}">{{ ui['s_' ~ sid] }}</a>
+  {% endif %}
+</nav>
 
-    {% if slides %}
-      <section class="my-6" aria-labelledby="guide-h">
-        <h2 id="guide-h" class="text-xl font-semibold">{{ ui.guide }}</h2>
-        <p class="text-sm text-slate-600">{{ ui.guide_overview }}</p>
-        {% if guide_english_only %}<p class="text-sm text-slate-600">{{ ui.english_only }}</p>{% endif %}
-        {# One slide after another. The frontend can turn this list into a slide viewer. #}
-        <ol class="slides space-y-4 mt-3">
-          {% for s in slides %}
-            <li class="slide border rounded p-3" data-slide-type="{{ s.type }}" aria-label="{{ ui.slide_n.format(i=loop.index, n=loop.length) }}">
-              <h3 class="font-semibold">{{ s.title }}</h3>
-              {% if s.body %}<p>{{ s.body }}</p>{% endif %}
-              {% if s.steps %}<ol class="list-decimal ps-6">{% for step in s.steps %}<li>{{ step }}</li>{% endfor %}</ol>{% endif %}
-              {% if s.timeline %}
-                <table class="text-sm mt-2">
-                  <caption class="text-start font-medium">{{ ui.timeline_title }} ({{ ui.estimate }})</caption>
-                  <tbody>
-                    {% for row in s.timeline %}
-                      <tr><th scope="row" class="pe-3 text-start">{{ row.when }}</th><td class="pe-3">{{ row.minutes }} min</td><td>{{ row.goal }}</td></tr>
-                    {% endfor %}
-                  </tbody>
-                </table>
-              {% elif s.estimate %}<p class="text-xs text-slate-600">({{ ui.estimate }})</p>{% endif %}
-              {% if s.leaving_site %}<p class="mt-2"><strong>{{ ui.leaving_title }}.</strong> {{ ui.leaving_text }}</p>{% endif %}
-              {% if s.adult_note %}<p class="text-sm mt-2">{{ s.adult_note }}</p>{% endif %}
-              {% if s.type == 'go_external' %}
-                <p class="mt-2"><a class="underline font-medium" href="{{ e.url }}" target="_blank" rel="noopener noreferrer">{{ ui.go_external }}</a></p>
-              {% elif s.type == 'go_lesson' and e.lesson_id %}
-                <p class="mt-2"><a class="underline font-medium" href="{{ url_for('lesson_page', lang=lang, lesson_id=e.lesson_id) }}">{{ ui.go_lesson }}</a></p>
-              {% endif %}
+<h1 class="bubble" lang="{{ 'en' if fell_back else lang }}">{{ title }}</h1>
+
+<div class="meta">
+  <span class="chip gold with-i">{{ icon(level_icon[e.level]) }} {{ ui['lvl_' ~ e.level] }}</span>
+  {{ dots(difficulty(e), ui) }}
+  <span class="chip">{{ ui[kind_of(e)] }}</span>
+  {% if nb.index is not none %}<span class="chip">{{ ui.stop }} {{ nb.index + 1 }} / {{ nb.stops|length }}</span>{% endif %}
+  {{ flags(e, lang, ui) }}
+  {% if fell_back %}<span class="flag">{{ ui.shown_en }}</span>{% endif %}
+</div>
+
+<p class="lede">{{ desc or ui.no_desc }}</p>
+{% if e.side == 'kids' %}<p class="lede with-i">{{ icon('grownup') }} <strong>{{ ui.with_adult }}.</strong></p>{% endif %}
+
+{% if allowed %}
+  <div class="launch-row">
+    <a class="btn btn-gold btn-lg" href="#guide">{{ icon('rocket') }} {{ ui.start_guide }}</a>
+    {% if lesson %}<a class="btn btn-violet btn-lg" href="{{ url_for('lesson_page', lang=lang, lesson_id=lesson.id) }}" data-launch>{{ icon('book') }} {{ ui.go_lesson }}</a>{% endif %}
+    <button class="btn btn-ghost" type="button" data-explore="{{ e.id }}" data-g="{{ gid or '' }}" data-s="{{ sid or '' }}" data-title="{{ title }}"
+            data-on="{{ ui.unmark }}" data-off="{{ ui.mark_explored }}" aria-pressed="false">{{ icon('star-o', 'off') }}{{ icon('star-f', 'onstar') }} <span class="lab">{{ ui.mark_explored }}</span></button>
+  </div>
+{% else %}
+  <div class="panel notice">
+    <div>
+      <strong class="with-i">{{ icon('lock') }} {{ ui.needs_grownup }}</strong>
+      <ul style="margin:6px 0 0">{% for r in e.safety_reasons %}<li>{{ ui['r_' ~ r] }}</li>{% endfor %}</ul>
+    </div>
+    <form method="post" action="{{ url_for('grownup') }}">
+      <input type="hidden" name="on" value="1"><input type="hidden" name="next" value="{{ request.full_path }}">
+      <button class="btn btn-violet btn-sm" type="submit">{{ icon('grownup') }} {{ ui.grownup_btn }}</button>
+    </form>
+  </div>
+{% endif %}
+{% if allowed and e.safety == 'ask-a-grown-up' and e.safety_reasons %}
+  <p class="attrib">{{ ui.ask_badge }}: {% for r in e.safety_reasons %}{{ ui['r_' ~ r] }}{% if not loop.last %}; {% endif %}{% endfor %}</p>
+{% endif %}
+
+{% if allowed %}
+<section id="guide" class="guide" aria-labelledby="guide-h">
+  <div class="section-head">
+    <h2 id="guide-h" class="section-title">{{ ui.guide_h }}</h2>
+    <span class="flags"><span class="flag ai" title="{{ ui.guide_overview }}">{{ ui.ai_overview }}</span></span>
+  </div>
+
+  {% if guide_english_only %}<p class="attrib">{{ ui.english_only }}</p>{% endif %}
+  <div class="deck" data-deck data-rtl="{{ '1' if rtl else '0' }}" data-of="{{ ui.of }}" aria-roledescription="carousel" aria-label="{{ ui.guide_h }}">
+    <p class="sr-only" aria-live="polite" data-live></p>
+    {% for sl in slides %}
+    {% set n = loop.index %}
+    <section class="slide slide-{{ sl.type }}" id="slide-{{ n }}" data-slide-type="{{ sl.type }}" {% if guide_english_only %}lang="en" dir="ltr"{% endif %} data-slide aria-roledescription="slide" aria-label="{{ n }} {{ ui.of }} {{ slides|length }}: {{ sl.title }}">
+      <p class="slide-count" aria-hidden="true">{{ n }} / {{ slides|length }}</p>
+      <h3 class="slide-title" tabindex="-1">{{ sl.title }}</h3>
+
+      {% if sl.body %}<p class="slide-body">{{ sl.body }}</p>{% endif %}
+
+      {% if sl.steps %}
+        <ol class="steps">{% for st in sl.steps %}<li>{{ st }}</li>{% endfor %}</ol>
+      {% endif %}
+
+      {% if sl.type == 'time' %}
+        <div class="time-chips">
+          <span class="time-chip"><b>{{ timeline.minutes }}</b> {{ ui.min }} {{ ui.per_session }}</span>
+          <span class="time-chip"><b>{{ timeline.sessions }}</b> {{ ui.sessions }}</span>
+          <span class="flag warn">{{ ui.estimate }}</span>
+        </div>
+      {% endif %}
+
+      {% if sl.timeline %}
+        <ol class="timeline">
+          {% for it in sl.timeline %}
+            <li class="tl-item">
+              <span class="tl-dot" aria-hidden="true"></span>
+              <span class="tl-when">{{ it.when }}</span>
+              <span class="tl-min">{{ it.minutes }} {{ ui.min }}</span>
+              <span class="tl-goal">{{ it.goal }}</span>
             </li>
           {% endfor %}
         </ol>
-      </section>
-    {% endif %}
+        <p class="attrib">{{ ui.estimate_note }}</p>
+      {% elif sl.estimate and sl.type != 'time' %}
+        <span class="flag warn">{{ ui.estimate }}</span>
+      {% endif %}
 
-    {% if related %}
-      <section class="my-6" aria-labelledby="related-h">
-        <h2 id="related-h" class="text-xl font-semibold">{{ ui.related_title }}</h2>
-        <ul class="space-y-1 mt-2">
-          {% for r in related %}
-            <li><a class="underline" href="{{ url_for('entry_page', lang=lang, entry_id=r.id) }}">{{ r.title.get(lang) or r.title.en }}</a>
-              <span class="text-xs border rounded px-1">{{ r.level }}</span></li>
-          {% endfor %}
-        </ul>
-      </section>
-    {% endif %}
+      {% if sl.type == 'go_external' %}
+        <div class="leaving">
+          <p class="leaving-title with-i">{{ icon('external') }} {{ ui.leaving_title }}</p>
+          {% if sl.adult_note %}<p class="adult-note"><strong>{{ ui.grownups }}:</strong> {{ sl.adult_note | replace('Grown-ups: ', '') }}</p>{% endif %}
+          <a class="btn btn-gold btn-lg" href="{{ e.url }}" target="_blank" rel="noopener noreferrer" data-launch>{{ ui.go_external }} {{ icon('external') }}<span class="sr-only"> ({{ ui.opens_new }})</span></a>
+          <p class="orig">{{ e.url }}</p>
+        </div>
+      {% elif sl.type == 'go_lesson' and lesson %}
+        <div class="leaving stay">
+          <a class="btn btn-violet btn-lg" href="{{ url_for('lesson_page', lang=lang, lesson_id=lesson.id) }}" data-launch>{{ icon('book') }} {{ ui.go_lesson }}</a>
+          {% if sl.adult_note %}<p class="attrib">{{ sl.adult_note }}</p>{% endif %}
+        </div>
+      {% elif sl.adult_note %}
+        <p class="adult-note"><strong>{{ ui.grownups }}:</strong> {{ sl.adult_note | replace('Grown-ups: ', '') }}</p>
+      {% endif %}
+    </section>
+    {% endfor %}
 
-    {% if e.attribution %}<p class="text-xs text-slate-600">{{ e.attribution }}</p>{% endif %}
-    {% if not e.lesson_id %}<a class="underline font-medium" href="{{ e.url }}" rel="noopener noreferrer">{{ e.url }}</a>{% endif %}
-    {% if guide %}<p class="mt-4"><a class="underline" href="{{ url_for('howto', lang=lang, kind=e.kind) }}">{{ guide.title }}</a></p>{% endif %}
-  </article>
+    <div class="deck-nav" data-deck-nav hidden>
+      <button class="btn btn-ghost" type="button" data-prev>{{ ui.prev }}</button>
+      <span class="deck-dots" aria-hidden="true">{% for sl in slides %}<i></i>{% endfor %}</span>
+      <span class="deck-pos" data-pos></span>
+      <button class="btn btn-gold" type="button" data-next>{{ ui.next }}</button>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<p class="attrib">
+  <strong>{{ ui.on_this_site if e.delivery == 'hostable' else ui.on_other_site }}.</strong>
+  {{ ui.from_list }}: <a href="{{ e.source }}">{{ e.source.split('github.com/')[1] }}</a> · {{ ui.license }}: {{ e.license }} · {{ e.category }}
+  {% if is_ai %} · {{ ui.footer_3 }}{% endif %}
+</p>
+{% if e.attribution %}<p class="attrib">{{ e.attribution }}</p>{% endif %}
+{% if guide %}<p class="attrib"><a href="{{ url_for('howto', lang=lang, kind=e.kind) }}">{{ guide.title }}</a></p>{% endif %}
+
+{% if nb.stops %}
+  <h2 class="section-title">{{ ui.path_title }} {{ ui['s_' ~ sid] }}</h2>
+  {% set start = [nb.index - 2, 0]|max if nb.index is not none else 0 %}
+  {{ flow(nb.stops, start, start + 7, gid, sid, lang, ui, here=e.id) }}
+{% endif %}
+
+{% if related %}
+  <h2 class="section-title">{{ ui.related_title }}</h2>
+  <div class="grid suggest">
+    {% for r in related %}{% set rg, rs = u.home_of(r.id) %}{{ card({'e': r, 'galaxy': rg, 'system': rs}, lang, ui, u, difficulty, kind_of, level_icon) }}{% endfor %}
+  </div>
+{% endif %}
 {% endblock %}

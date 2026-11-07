@@ -44,6 +44,7 @@ def process(client, entry):
     for lang, tr in out["translations"].items():
         entry["title"][lang] = tr["title"]
         entry["desc"][lang] = tr["desc"]
+    entry["ai_translated"] = sorted(out["translations"])  # label AI output (see docs/PLAN.md)
 
 
 def main():
@@ -52,8 +53,10 @@ def main():
     ap.add_argument("--limit", type=int, default=None, help="max entries per file (for testing)")
     args = ap.parse_args()
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    for name in ("learn", "build"):
+    for name in ("learn", "build", "kids"):
         path = DATA / f"{name}.json"
+        if not path.exists():
+            continue
         entries = json.loads(path.read_text())
         todo = [e for e in entries if any(l not in e["title"] for l in LANGS)][: args.limit]
         for i, e in enumerate(todo, 1):

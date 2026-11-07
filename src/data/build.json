@@ -1,13 +1,54 @@
 [
   {
+    "id": "build-25037537",
+    "category": "Build your own 3D Renderer",
+    "tag": "C++",
+    "title": {
+      "en": "Introduction to Ray Tracing: a Simple Method for Creating 3D Images",
+      "es": "Introducción al trazado de rayos: un método sencillo para crear imágenes 3D",
+      "ar": "مقدمة في تتبع الأشعة: طريقة بسيطة لإنشاء صور ثلاثية الأبعاد",
+      "hi": "रे ट्रेसिंग का परिचय: 3D चित्र बनाने की एक सरल विधि",
+      "pt": "Introdução ao ray tracing: um método simples para criar imagens 3D"
+    },
+    "desc": {
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
+    },
+    "level": "Beginner",
+    "url": "https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/how-does-it-work",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "art",
+    "age_group": "11-13",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
     "id": "build-74ec6690",
     "category": "Build your own Augmented Reality",
     "tag": "C#",
     "title": {
-      "en": "How To: Augmented Reality App Tutorial for Beginners with Vuforia and Unity 3D"
+      "en": "How To: Augmented Reality App Tutorial for Beginners with Vuforia and Unity 3D",
+      "es": "Cómo hacer: tutorial de aplicación de realidad aumentada para principiantes con Vuforia y Unity 3D",
+      "ar": "كيف تصنع: درس تطبيق واقع معزز للمبتدئين باستخدام Vuforia وUnity 3D",
+      "hi": "कैसे करें: Vuforia और Unity 3D के साथ शुरुआती लोगों के लिए ऑगमेंटेड रियलिटी ऐप ट्यूटोरियल",
+      "pt": "Como fazer: tutorial de aplicativo de realidade aumentada para iniciantes com Vuforia e Unity 3D"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Beginner",
     "url": "https://www.youtube.com/watch?v=uXNjNcqW4kY",
@@ -16,17 +57,64 @@
     "topic": "general",
     "age_group": "11-13",
     "safety": "kid-safe",
-    "safety_reasons": []
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "build-74d1338b",
+    "category": "Build your own Game",
+    "tag": "JavaScript",
+    "title": {
+      "en": "2D breakout game using Phaser",
+      "es": "Juego de ladrillos en 2D con Phaser",
+      "ar": "لعبة تحطيم الطوب ثنائية الأبعاد باستخدام Phaser",
+      "hi": "Phaser से 2D ब्रेकआउट गेम",
+      "pt": "Jogo de breakout 2D com Phaser"
+    },
+    "desc": {
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
+    },
+    "level": "Beginner",
+    "url": "https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "11-13",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-e4a12f9c",
     "category": "Build your own Game",
     "tag": "Rust",
     "title": {
-      "en": "Adventures in Rust: A Basic 2D Game"
+      "en": "Adventures in Rust: A Basic 2D Game",
+      "es": "Aventuras en Rust: un juego 2D básico",
+      "ar": "مغامرات في Rust: لعبة ثنائية الأبعاد بسيطة",
+      "hi": "Rust में रोमांच: एक बुनियादी 2D गेम",
+      "pt": "Aventuras em Rust: um jogo 2D básico"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Beginner",
     "url": "https://a5huynh.github.io/posts/2018/adventures-in-rust/",
@@ -35,17 +123,31 @@
     "topic": "games",
     "age_group": "11-13",
     "safety": "kid-safe",
-    "safety_reasons": []
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-b614c819",
     "category": "Build your own Game",
     "tag": "Java",
     "title": {
-      "en": "Code a 2D Game Engine using Java - Full Course for Beginners"
+      "en": "Code a 2D Game Engine using Java - Full Course for Beginners",
+      "es": "Programa un motor de juegos 2D con Java: curso completo para principiantes",
+      "ar": "برمجة محرك ألعاب ثنائي الأبعاد باستخدام Java: دورة كاملة للمبتدئين",
+      "hi": "Java से 2D गेम इंजन कोड करें: शुरुआती लोगों के लिए पूरा कोर्स",
+      "pt": "Programe um motor de jogos 2D com Java: curso completo para iniciantes"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Beginner",
     "url": "https://www.youtube.com/watch?v=025QFeZfeyM",
@@ -54,17 +156,97 @@
     "topic": "games",
     "age_group": "11-13",
     "safety": "kid-safe",
-    "safety_reasons": []
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "build-d7ec58bb",
+    "category": "Build your own Game",
+    "tag": "JavaScript",
+    "title": {
+      "en": "Think like a programmer: How to build Snake using only JavaScript, HTML & CSS",
+      "es": "Piensa como un programador: cómo crear Snake usando solo JavaScript, HTML y CSS",
+      "ar": "فكّر كمبرمج: كيف تبني لعبة الثعبان باستخدام JavaScript وHTML وCSS فقط",
+      "hi": "प्रोग्रामर की तरह सोचें: सिर्फ़ JavaScript, HTML और CSS से Snake कैसे बनाएँ",
+      "pt": "Pense como um programador: como criar o Snake usando apenas JavaScript, HTML e CSS"
+    },
+    "desc": {
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
+    },
+    "level": "Beginner",
+    "url": "https://medium.freecodecamp.org/think-like-a-programmer-how-to-build-snake-using-only-javascript-html-and-css-7b1479c3339e",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "11-13",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "build-c952c1e9",
+    "category": "Build your own Physics Engine",
+    "tag": "JavaScript",
+    "title": {
+      "en": "Build a simple 2D physics engine for JavaScript games",
+      "es": "Crea un motor de física 2D sencillo para juegos de JavaScript",
+      "ar": "ابنِ محرك فيزياء ثنائي الأبعاد بسيطًا لألعاب JavaScript",
+      "hi": "JavaScript गेम्स के लिए एक सरल 2D फ़िज़िक्स इंजन बनाएँ",
+      "pt": "Crie um motor de física 2D simples para jogos em JavaScript"
+    },
+    "desc": {
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
+    },
+    "level": "Beginner",
+    "url": "https://developer.ibm.com/tutorials/wa-build2dphysicsengine/?mhsrc=ibmsearch_a&mhq=2dphysic",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "11-13",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-5540d72a",
     "category": "Build your own Programming Language",
     "tag": "Python",
     "title": {
-      "en": "Make Your Own Simple Interpreted Programming Language"
+      "en": "Make Your Own Simple Interpreted Programming Language",
+      "es": "Crea tu propio lenguaje de programación interpretado sencillo",
+      "ar": "اصنع لغة برمجة مفسَّرة بسيطة خاصة بك",
+      "hi": "अपनी खुद की सरल इंटरप्रेटेड प्रोग्रामिंग भाषा बनाएँ",
+      "pt": "Crie sua própria linguagem de programação interpretada simples"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Beginner",
     "url": "https://www.youtube.com/watch?v=dj9CBS3ikGA&list=PLZQftyCk7_SdoVexSmwy_tBgs7P0b97yD&index=1",
@@ -72,6 +254,116 @@
     "license": "CC0-1.0",
     "topic": "general",
     "age_group": "11-13",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "build-ef3aa935",
+    "category": "Build your own Web Server",
+    "tag": "Python",
+    "title": {
+      "en": "A Simple Web Server",
+      "es": "Un servidor web sencillo",
+      "ar": "خادم ويب بسيط",
+      "hi": "एक सरल वेब सर्वर",
+      "pt": "Um servidor web simples"
+    },
+    "desc": {
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
+    },
+    "level": "Beginner",
+    "url": "http://aosabook.org/en/500L/a-simple-web-server.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "11-13",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "build-2eb84e01",
+    "category": "Uncategorized",
+    "tag": "(any)",
+    "title": {
+      "en": "From NAND to Tetris: Building a Modern Computer From First Principles",
+      "es": "De NAND a Tetris: construir una computadora moderna desde los principios básicos",
+      "ar": "من NAND إلى تتريس: بناء حاسوب حديث من المبادئ الأولى",
+      "hi": "NAND से Tetris तक: बुनियादी सिद्धांतों से एक आधुनिक कंप्यूटर बनाना",
+      "pt": "De NAND a Tetris: construindo um computador moderno a partir dos primeiros princípios"
+    },
+    "desc": {
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
+    },
+    "level": "Beginner",
+    "url": "http://nand2tetris.org/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "11-13",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "build-16587794",
+    "category": "Build your own Game",
+    "tag": "JavaScript",
+    "title": {
+      "en": "Build your own 8-Ball Pool game from scratch"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "https://www.youtube.com/watch?v=aXwCrtAo4Wc",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "11-13",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-c238feec",
+    "category": "Build your own 3D Renderer",
+    "tag": "Python",
+    "title": {
+      "en": "A 3D Modeller"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "http://aosabook.org/en/500L/a-3d-modeller.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "art",
+    "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": []
   },
@@ -95,58 +387,20 @@
     "safety_reasons": []
   },
   {
-    "id": "build-aeccd2f8",
+    "id": "build-f9f9837c",
     "category": "Build your own 3D Renderer",
     "tag": "C++",
     "title": {
-      "en": "How OpenGL works: software rendering in 500 lines of code"
+      "en": "Rasterization: a Practical Implementation"
     },
     "desc": {
       "en": ""
     },
     "level": "Intermediate",
-    "url": "https://github.com/ssloy/tinyrenderer/wiki",
+    "url": "https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/overview-rasterization-algorithm",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "art",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-1f1bc03a",
-    "category": "Build your own AI Model",
-    "tag": "Python",
-    "title": {
-      "en": "A Large Language Model (LLM)"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/rasbt/LLMs-from-scratch",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-9ab4653e",
-    "category": "Build your own AI Model",
-    "tag": "Python",
-    "title": {
-      "en": "RAG for Document Search"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/langchain-ai/rag-from-scratch",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": []
@@ -228,63 +482,6 @@
     "safety_reasons": []
   },
   {
-    "id": "build-1224ccc0",
-    "category": "Build your own BitTorrent Client",
-    "tag": "Node.js",
-    "title": {
-      "en": "Write your own bittorrent client"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://allenkim67.github.io/programming/2016/05/04/how-to-make-your-own-bittorrent-client.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-e931c5f4",
-    "category": "Build your own Bot",
-    "tag": "Python",
-    "title": {
-      "en": "Create a Twitter Bot in Python Using Tweepy"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://medium.freecodecamp.org/creating-a-twitter-bot-in-python-with-tweepy-ac524157a607",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-492b7482",
-    "category": "Build your own Bot",
-    "tag": "Python",
-    "title": {
-      "en": "How To Create a Telegram Bot Using Python"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.freecodecamp.org/news/how-to-create-a-telegram-bot-using-python/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
     "id": "build-fdaf1687",
     "category": "Build your own Front-end Framework / Library",
     "tag": "JavaScript",
@@ -296,25 +493,6 @@
     },
     "level": "Intermediate",
     "url": "https://github.com/hexacta/didact",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-d68ab5c2",
-    "category": "Build your own Front-end Framework / Library",
-    "tag": "JavaScript",
-    "title": {
-      "en": "Building a Custom React Renderer"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://youtu.be/CGpMlWVcHok",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "web",
@@ -342,63 +520,6 @@
     "safety_reasons": []
   },
   {
-    "id": "build-2156aefb",
-    "category": "Build your own Front-end Framework / Library",
-    "tag": "JavaScript",
-    "title": {
-      "en": "Building React From Scratch"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.youtube.com/watch?v=_MAD4Oly9yg",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-74d1338b",
-    "category": "Build your own Game",
-    "tag": "JavaScript",
-    "title": {
-      "en": "2D breakout game using Phaser"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-16587794",
-    "category": "Build your own Game",
-    "tag": "JavaScript",
-    "title": {
-      "en": "Build your own 8-Ball Pool game from scratch"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.youtube.com/watch?v=aXwCrtAo4Wc",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
     "id": "build-0e0ee2d4",
     "category": "Build your own Game",
     "tag": "Lua",
@@ -410,25 +531,6 @@
     },
     "level": "Intermediate",
     "url": "https://github.com/SSYGEN/blog/issues/30",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-ebb0d512",
-    "category": "Build your own Game",
-    "tag": "C",
-    "title": {
-      "en": "Chess Engine In C"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.youtube.com/playlist?list=PLZ1QII7yudbc-Ky058TEaOstZHVbT-2hg",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "games",
@@ -532,44 +634,6 @@
     "safety_reasons": []
   },
   {
-    "id": "build-0dd2a748",
-    "category": "Build your own Game",
-    "tag": "C++",
-    "title": {
-      "en": "Reconstructing Cave Story"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.youtube.com/playlist?list=PL006xsVEsbKjSKBmLu1clo85yLrwjY67X",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-dbc6b593",
-    "category": "Build your own Game",
-    "tag": "C++",
-    "title": {
-      "en": "Remaking Cavestory in C++"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.youtube.com/watch?v=ETvApbD5xRo&list=PLNOBk_id22bw6LXhrGfhVwqQIa-M2MsLa",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
     "id": "build-27f27e0a",
     "category": "Build your own Game",
     "tag": "Rust",
@@ -584,25 +648,6 @@
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "games",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-d7ec58bb",
-    "category": "Build your own Game",
-    "tag": "JavaScript",
-    "title": {
-      "en": "Think like a programmer: How to build Snake using only JavaScript, HTML & CSS"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://medium.freecodecamp.org/think-like-a-programmer-how-to-build-snake-using-only-javascript-html-and-css-7b1479c3339e",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": []
@@ -657,63 +702,6 @@
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-0154ebfa",
-    "category": "Build your own Neural Network",
-    "tag": "Python",
-    "title": {
-      "en": "SlowTorch: Implementation of PyTorch from the ground up in 100% pure Python"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/xames3/slowtorch",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-28348eb1",
-    "category": "Build your own Physics Engine",
-    "tag": "C++",
-    "title": {
-      "en": "3D Physics Engine Tutorial"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.youtube.com/playlist?list=PLEETnX-uPtBXm1KEr_2zQ6K_0hoGH6JJ0",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "art",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-bcb475f9",
-    "category": "Build your own Programming Language",
-    "tag": "Java",
-    "title": {
-      "en": "Creating JVM Language"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://jakubdziworski.github.io/categories.html#Enkel-ref",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "general",
@@ -779,6 +767,25 @@
     "safety_reasons": []
   },
   {
+    "id": "build-62aac5fc",
+    "category": "Build your own Template Engine",
+    "tag": "Python",
+    "title": {
+      "en": "A Template Engine"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "http://aosabook.org/en/500L/a-template-engine.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
     "id": "build-d8acae03",
     "category": "Build your own Text Editor",
     "tag": "Python",
@@ -817,44 +824,6 @@
     "safety_reasons": []
   },
   {
-    "id": "build-1b76c92d",
-    "category": "Uncategorized",
-    "tag": "Python",
-    "title": {
-      "en": "Build a Deep Learning Library"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.youtube.com/watch?v=o64FV-ez6Gw",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-be788f8d",
-    "category": "Uncategorized",
-    "tag": "Node.js",
-    "title": {
-      "en": "Build a DNS Server in Node.js"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://engineerhead.github.io/dns-server/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
     "id": "build-a11ba8c6",
     "category": "Uncategorized",
     "tag": "JavaScript",
@@ -874,36 +843,17 @@
     "safety_reasons": []
   },
   {
-    "id": "build-8122166b",
+    "id": "build-28a71ea2",
     "category": "Uncategorized",
-    "tag": "(any)",
+    "tag": "Python",
     "title": {
-      "en": "build-your-own-x-vibe-coding: BYOX-style tutorials adapted for vibe coding"
+      "en": "Continuous Integration System"
     },
     "desc": {
       "en": ""
     },
     "level": "Intermediate",
-    "url": "https://github.com/inFaaa/build-your-own-x-vibe-coding",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
-    "id": "build-99ad8b06",
-    "category": "Uncategorized",
-    "tag": "Lua",
-    "title": {
-      "en": "Building a CDN from Scratch to Learn about CDN"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/leandromoreira/cdn-up-and-running",
+    "url": "http://aosabook.org/en/500L/a-continuous-integration-system.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "general",
@@ -988,25 +938,6 @@
     "safety_reasons": []
   },
   {
-    "id": "build-5ab37fe3",
-    "category": "Uncategorized",
-    "tag": "C++",
-    "title": {
-      "en": "Make your own Game Engine"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
     "id": "build-760f10e2",
     "category": "Uncategorized",
     "tag": "TypeScript",
@@ -1021,6 +952,101 @@
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "general",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-f3e0da40",
+    "category": "Uncategorized",
+    "tag": "PHP",
+    "title": {
+      "en": "Write your own MVC from scratch in PHP"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "https://chaitya62.github.io/2018/04/29/Writing-your-own-MVC-from-Scratch-in-PHP.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-021ddad9",
+    "category": "Uncategorized",
+    "tag": "Nim",
+    "title": {
+      "en": "Writing a Link Checker"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "https://xmonader.github.io/nimdays/day04_asynclinkschecker.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-361c58ea",
+    "category": "Uncategorized",
+    "tag": "Nim",
+    "title": {
+      "en": "Writing a MiniTest Framework"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "https://xmonader.github.io/nimdays/day08_minitest.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-55f98526",
+    "category": "Uncategorized",
+    "tag": "Nim",
+    "title": {
+      "en": "Writing a URL Shortening Service"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "https://xmonader.github.io/nimdays/day07_shorturl.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-aeccd2f8",
+    "category": "Build your own 3D Renderer",
+    "tag": "C++",
+    "title": {
+      "en": "How OpenGL works: software rendering in 500 lines of code"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/ssloy/tinyrenderer/wiki",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "art",
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": []
@@ -1045,6 +1071,139 @@
     "safety_reasons": []
   },
   {
+    "id": "build-1f1bc03a",
+    "category": "Build your own AI Model",
+    "tag": "Python",
+    "title": {
+      "en": "A Large Language Model (LLM)"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/rasbt/LLMs-from-scratch",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-9ab4653e",
+    "category": "Build your own AI Model",
+    "tag": "Python",
+    "title": {
+      "en": "RAG for Document Search"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/langchain-ai/rag-from-scratch",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-d68ab5c2",
+    "category": "Build your own Front-end Framework / Library",
+    "tag": "JavaScript",
+    "title": {
+      "en": "Building a Custom React Renderer"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://youtu.be/CGpMlWVcHok",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-2156aefb",
+    "category": "Build your own Front-end Framework / Library",
+    "tag": "JavaScript",
+    "title": {
+      "en": "Building React From Scratch"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.youtube.com/watch?v=_MAD4Oly9yg",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-ebb0d512",
+    "category": "Build your own Game",
+    "tag": "C",
+    "title": {
+      "en": "Chess Engine In C"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.youtube.com/playlist?list=PLZ1QII7yudbc-Ky058TEaOstZHVbT-2hg",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-0dd2a748",
+    "category": "Build your own Game",
+    "tag": "C++",
+    "title": {
+      "en": "Reconstructing Cave Story"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.youtube.com/playlist?list=PL006xsVEsbKjSKBmLu1clo85yLrwjY67X",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-dbc6b593",
+    "category": "Build your own Game",
+    "tag": "C++",
+    "title": {
+      "en": "Remaking Cavestory in C++"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.youtube.com/watch?v=ETvApbD5xRo&list=PLNOBk_id22bw6LXhrGfhVwqQIa-M2MsLa",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
     "id": "build-69566814",
     "category": "Build your own Neural Network",
     "tag": "Python",
@@ -1056,6 +1215,101 @@
     },
     "level": "Advanced",
     "url": "https://github.com/roiamiel1/Build-Deep-Learning-From-Scratch",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-2cf54114",
+    "category": "Build your own Neural Network",
+    "tag": "Python",
+    "title": {
+      "en": "Optical Character Recognition (OCR)"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://aosabook.org/en/500L/optical-character-recognition-ocr.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-0154ebfa",
+    "category": "Build your own Neural Network",
+    "tag": "Python",
+    "title": {
+      "en": "SlowTorch: Implementation of PyTorch from the ground up in 100% pure Python"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/xames3/slowtorch",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-28348eb1",
+    "category": "Build your own Physics Engine",
+    "tag": "C++",
+    "title": {
+      "en": "3D Physics Engine Tutorial"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.youtube.com/playlist?list=PLEETnX-uPtBXm1KEr_2zQ6K_0hoGH6JJ0",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "art",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-f459bc96",
+    "category": "Build your own Programming Language",
+    "tag": "Python",
+    "title": {
+      "en": "A Python Interpreter Written in Python"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://aosabook.org/en/500L/a-python-interpreter-written-in-python.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-bcb475f9",
+    "category": "Build your own Programming Language",
+    "tag": "Java",
+    "title": {
+      "en": "Creating JVM Language"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://jakubdziworski.github.io/categories.html#Enkel-ref",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "general",
@@ -1083,6 +1337,44 @@
     "safety_reasons": []
   },
   {
+    "id": "build-1b76c92d",
+    "category": "Uncategorized",
+    "tag": "Python",
+    "title": {
+      "en": "Build a Deep Learning Library"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.youtube.com/watch?v=o64FV-ez6Gw",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "build-5ab37fe3",
+    "category": "Uncategorized",
+    "tag": "C++",
+    "title": {
+      "en": "Make your own Game Engine"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "teen+",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
     "id": "build-cc90863d",
     "category": "Build your own 3D Renderer",
     "tag": "Java",
@@ -1094,27 +1386,6 @@
     },
     "level": "Beginner",
     "url": "http://blog.rogach.org/2015/08/how-to-create-your-own-simple-3d-render.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "art",
-    "age_group": "11-13",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-25037537",
-    "category": "Build your own 3D Renderer",
-    "tag": "C++",
-    "title": {
-      "en": "Introduction to Ray Tracing: a Simple Method for Creating 3D Images"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Beginner",
-    "url": "https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/how-does-it-work",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "art",
@@ -1206,7 +1477,7 @@
     "age_group": "11-13",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unvetted-external-site"
+      "social-platform"
     ]
   },
   {
@@ -1224,6 +1495,69 @@
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "general",
+    "age_group": "11-13",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "social-platform"
+    ]
+  },
+  {
+    "id": "build-40e6e9f8",
+    "category": "Build your own Game",
+    "tag": "C++",
+    "title": {
+      "en": "Beginning Game Programming v2.0"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Beginner",
+    "url": "http://lazyfoo.net/tutorials/SDL/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "11-13",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-7ecc31b4",
+    "category": "Build your own Game",
+    "tag": "Python",
+    "title": {
+      "en": "Developing Games With PyGame"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Beginner",
+    "url": "https://pythonprogramming.net/pygame-python-3-part-1-intro/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "11-13",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-753d478e",
+    "category": "Build your own Game",
+    "tag": "JavaScript",
+    "title": {
+      "en": "How to Make Flappy Bird in HTML5 With Phaser"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Beginner",
+    "url": "http://www.lessmilk.com/tutorial/flappy-bird-phaser-1",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
     "age_group": "11-13",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
@@ -1263,6 +1597,48 @@
     },
     "level": "Beginner",
     "url": "http://scottlilly.com/learn-c-by-building-a-simple-rpg-index/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "11-13",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-155653ef",
+    "category": "Build your own Game",
+    "tag": "Python",
+    "title": {
+      "en": "Making Games with Python & Pygame"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Beginner",
+    "url": "https://inventwithpython.com/makinggames.pdf",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "11-13",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-0434fca0",
+    "category": "Build your own Game",
+    "tag": "Ruby",
+    "title": {
+      "en": "Ruby Snake"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Beginner",
+    "url": "https://www.diatomenterprises.com/gamedev-on-ruby-why-not/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "games",
@@ -1315,27 +1691,6 @@
     ]
   },
   {
-    "id": "build-c952c1e9",
-    "category": "Build your own Physics Engine",
-    "tag": "JavaScript",
-    "title": {
-      "en": "Build a simple 2D physics engine for JavaScript games"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Beginner",
-    "url": "https://developer.ibm.com/tutorials/wa-build2dphysicsengine/?mhsrc=ibmsearch_a&mhq=2dphysic",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "11-13",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-21b68d5a",
     "category": "Build your own Programming Language",
     "tag": "Python",
@@ -1371,27 +1726,6 @@
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "general",
-    "age_group": "11-13",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-ef3aa935",
-    "category": "Build your own Web Server",
-    "tag": "Python",
-    "title": {
-      "en": "A Simple Web Server"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Beginner",
-    "url": "http://aosabook.org/en/500L/a-simple-web-server.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
     "age_group": "11-13",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
@@ -1505,27 +1839,6 @@
     ]
   },
   {
-    "id": "build-2eb84e01",
-    "category": "Uncategorized",
-    "tag": "(any)",
-    "title": {
-      "en": "From NAND to Tetris: Building a Modern Computer From First Principles"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Beginner",
-    "url": "http://nand2tetris.org/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "11-13",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-2644784f",
     "category": "Uncategorized",
     "tag": "C++",
@@ -1540,6 +1853,27 @@
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "general",
+    "age_group": "11-13",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-172f0000",
+    "category": "Uncategorized",
+    "tag": "PHP",
+    "title": {
+      "en": "Make your own blog"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Beginner",
+    "url": "https://ilovephp.jondh.me.uk/en/tutorial/make-your-own-blog",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
     "age_group": "11-13",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
@@ -1674,7 +2008,7 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -1691,12 +2025,11 @@
     "url": "https://swtch.com/~rsc/regexp/regexp1.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -1735,12 +2068,12 @@
     "url": "http://www.fltk.org/doc-1.1/editor.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -1779,12 +2112,13 @@
     "url": "https://kasvith.me/posts/lets-create-a-simple-lb-go/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic",
+      "networking-tools"
     ]
   },
   {
@@ -1810,21 +2144,85 @@
     ]
   },
   {
-    "id": "build-c238feec",
-    "category": "Build your own 3D Renderer",
-    "tag": "Python",
+    "id": "build-407e7948",
+    "category": "Build your own Game",
+    "tag": "C#",
     "title": {
-      "en": "A 3D Modeller"
+      "en": "Build a C#/WPF RPG"
     },
     "desc": {
       "en": ""
     },
     "level": "Intermediate",
-    "url": "http://aosabook.org/en/500L/a-3d-modeller.html",
+    "url": "https://scottlilly.com/build-a-cwpf-rpg/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "art",
-    "age_group": "teen+",
+    "topic": "games",
+    "age_group": "11-13",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-4c8991c6",
+    "category": "Build your own Game",
+    "tag": "Ruby",
+    "title": {
+      "en": "Developing Games With Ruby"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "https://leanpub.com/developing-games-with-ruby/read",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "11-13",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "may-require-payment",
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-4623e1bf",
+    "category": "Build your own Game",
+    "tag": "Python",
+    "title": {
+      "en": "Roguelike Tutorial Revised"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "http://rogueliketutorials.com/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "11-13",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-bdd60357",
+    "category": "Build your own Game",
+    "tag": "C++",
+    "title": {
+      "en": "Space Invaders from Scratch"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "http://nicktasios.nl/posts/space-invaders-from-scratch-part-1.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "11-13",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
       "unvetted-external-site"
@@ -1852,69 +2250,6 @@
     ]
   },
   {
-    "id": "build-3bd8827e",
-    "category": "Build your own 3D Renderer",
-    "tag": "C# / TypeScript / JavaScript",
-    "title": {
-      "en": "Learning how to write a 3D soft engine from scratch in C#, TypeScript or JavaScript"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.davrous.com/2013/06/13/tutorial-series-learning-how-to-write-a-3d-soft-engine-from-scratch-in-c-typescript-or-javascript/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "art",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-f4fa7292",
-    "category": "Build your own 3D Renderer",
-    "tag": "C++",
-    "title": {
-      "en": "Physically Based Rendering:From Theory To Implementation"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://www.pbr-book.org/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "art",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-f9f9837c",
-    "category": "Build your own 3D Renderer",
-    "tag": "C++",
-    "title": {
-      "en": "Rasterization: a Practical Implementation"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/overview-rasterization-algorithm",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "art",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-3e9c12cb",
     "category": "Build your own 3D Renderer",
     "tag": "C++",
@@ -1929,27 +2264,6 @@
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "art",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-5dd33ef0",
-    "category": "Build your own AI Model",
-    "tag": "Python",
-    "title": {
-      "en": "Diffusion Models for Image Generation"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://huggingface.co/learn/diffusion-course/en/unit1/3",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
@@ -1995,7 +2309,8 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "torrent-client"
     ]
   },
   {
@@ -2012,12 +2327,13 @@
     "url": "https://www.seanjoflynn.com/research/bittorrent.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic",
+      "torrent-client"
     ]
   },
   {
@@ -2034,12 +2350,34 @@
     "url": "https://blog.jse.li/posts/torrent/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic",
+      "torrent-client"
+    ]
+  },
+  {
+    "id": "build-1224ccc0",
+    "category": "Build your own BitTorrent Client",
+    "tag": "Node.js",
+    "title": {
+      "en": "Write your own bittorrent client"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "https://allenkim67.github.io/programming/2016/05/04/how-to-make-your-own-bittorrent-client.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "torrent-client"
     ]
   },
   {
@@ -2056,11 +2394,12 @@
     "url": "https://xmonader.github.io/nimdays/day02_bencode.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic",
+      "torrent-client"
     ]
   },
   {
@@ -2439,11 +2778,10 @@
     "url": "https://habr.com/en/post/436254/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "games",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
       "unvetted-external-site"
     ]
   },
@@ -2466,8 +2804,8 @@
     "safety": "ask-a-grown-up",
     "safety_reasons": [
       "finance-crypto",
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -2509,7 +2847,29 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "external-forum"
+      "external-forum",
+      "social-platform"
+    ]
+  },
+  {
+    "id": "build-e931c5f4",
+    "category": "Build your own Bot",
+    "tag": "Python",
+    "title": {
+      "en": "Create a Twitter Bot in Python Using Tweepy"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "https://medium.freecodecamp.org/creating-a-twitter-bot-in-python-with-tweepy-ac524157a607",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "social-platform"
     ]
   },
   {
@@ -2572,7 +2932,28 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unvetted-external-site"
+      "social-platform"
+    ]
+  },
+  {
+    "id": "build-492b7482",
+    "category": "Build your own Bot",
+    "tag": "Python",
+    "title": {
+      "en": "How To Create a Telegram Bot Using Python"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "https://www.freecodecamp.org/news/how-to-create-a-telegram-bot-using-python/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "social-platform"
     ]
   },
   {
@@ -2614,7 +2995,7 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unvetted-external-site"
+      "social-platform"
     ]
   },
   {
@@ -2635,8 +3016,9 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic",
+      "external-forum"
     ]
   },
   {
@@ -2653,11 +3035,10 @@
     "url": "https://flaviocopes.com/go-tutorial-lolcat/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "general",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
       "unvetted-external-site"
     ]
   },
@@ -2675,11 +3056,11 @@
     "url": "https://rebuild-x.github.io/docs/#/./zig/terminal/cli",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -2696,11 +3077,10 @@
     "url": "https://flaviocopes.com/go-tutorial-cowsay/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "general",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
       "unvetted-external-site"
     ]
   },
@@ -2718,11 +3098,11 @@
     "url": "https://rust-cli.github.io/book/index.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -2781,11 +3161,10 @@
     "url": "https://flaviocopes.com/go-git-contributions/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "general",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
       "unvetted-external-site"
     ]
   },
@@ -2803,12 +3182,12 @@
     "url": "https://mattgathu.dev/2017/08/29/writing-cli-app-rust.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -2825,33 +3204,11 @@
     "url": "https://xmonader.github.io/nimdays/day06_nistow.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified"
-    ]
-  },
-  {
-    "id": "build-21a368df",
-    "category": "Build your own Database",
-    "tag": "Clojure",
-    "title": {
-      "en": "An Archaeology-Inspired Database"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://aosabook.org/en/500L/an-archaeology-inspired-database.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
     "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -2866,28 +3223,6 @@
     },
     "level": "Intermediate",
     "url": "https://www.codeproject.com/Articles/1029838/Build-Your-Own-Database",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-ab38f6ba",
-    "category": "Build your own Database",
-    "tag": "Go",
-    "title": {
-      "en": "Build Your Own Database from Scratch: From B+Tree To SQL in 3000 Lines"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://build-your-own.org/database/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "systems",
@@ -2939,51 +3274,8 @@
     "safety": "ask-a-grown-up",
     "safety_reasons": [
       "not-kid-oriented-topic",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-09df4d29",
-    "category": "Build your own Database",
-    "tag": "C++",
-    "title": {
-      "en": "Build Your Own Redis from Scratch"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://build-your-own.org/redis",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-c1e41323",
-    "category": "Build your own Database",
-    "tag": "Go",
-    "title": {
-      "en": "Build Your Own Redis from Scratch"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.build-redis-from-scratch.dev/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "networking-tools"
     ]
   },
   {
@@ -3008,28 +3300,6 @@
     ]
   },
   {
-    "id": "build-f812e29f",
-    "category": "Build your own Database",
-    "tag": "JavaScript",
-    "title": {
-      "en": "Dagoba: an in-memory graph database"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://aosabook.org/en/500L/dagoba-an-in-memory-graph-database.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-f7c77e2f",
     "category": "Build your own Database",
     "tag": "Python",
@@ -3047,8 +3317,7 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -3095,69 +3364,6 @@
     ]
   },
   {
-    "id": "build-3d177740",
-    "category": "Build your own Distributed Systems",
-    "tag": "Java",
-    "title": {
-      "en": "Building Your Own Kafka-like System From Scratch: A Step-by-Step Guide"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/buildthingsuseful/build-your-own-kafka",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic"
-    ]
-  },
-  {
-    "id": "build-96caab18",
-    "category": "Build your own Docker",
-    "tag": "Python",
-    "title": {
-      "en": "A proof-of-concept imitation of Docker, written in 100% Python"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/tonybaloney/mocker",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic"
-    ]
-  },
-  {
-    "id": "build-38561d2a",
-    "category": "Build your own Docker",
-    "tag": "Python",
-    "title": {
-      "en": "A workshop on Linux containers: Rebuild Docker from Scratch"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/Fewbytes/rubber-docker",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic"
-    ]
-  },
-  {
     "id": "build-46ab7454",
     "category": "Build your own Docker",
     "tag": "Go",
@@ -3169,70 +3375,6 @@
     },
     "level": "Intermediate",
     "url": "https://www.infoq.com/articles/build-a-container-golang",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-2b949af7",
-    "category": "Build your own Docker",
-    "tag": "Go",
-    "title": {
-      "en": "Building a container from scratch in Go"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.youtube.com/watch?v=8fi7uSYlOdc",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic"
-    ]
-  },
-  {
-    "id": "build-53c6ec93",
-    "category": "Build your own Docker",
-    "tag": "Shell",
-    "title": {
-      "en": "Docker implemented in around 100 lines of bash"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/p8952/bocker",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic"
-    ]
-  },
-  {
-    "id": "build-e91f785b",
-    "category": "Build your own Docker",
-    "tag": "C",
-    "title": {
-      "en": "Linux containers in 500 lines of code"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://blog.lizzie.io/linux-containers-in-500-loc.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "systems",
@@ -3277,27 +3419,6 @@
     },
     "level": "Intermediate",
     "url": "https://pomb.us/build-your-own-react/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-9fbc7a66",
-    "category": "Build your own Front-end Framework / Library",
-    "tag": "JavaScript",
-    "title": {
-      "en": "Build Your own Simplified AngularJS in 200 Lines of JavaScript"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://blog.mgechev.com/2015/03/09/build-learn-your-own-light-lightweight-angularjs/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "web",
@@ -3371,27 +3492,6 @@
     ]
   },
   {
-    "id": "build-027d2582",
-    "category": "Build your own Front-end Framework / Library",
-    "tag": "JavaScript",
-    "title": {
-      "en": "Learn how React Reconciler package works by building your own lightweight React DOM"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://hackernoon.com/learn-you-some-custom-react-renderers-aed7164a4199",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-d1d7cf94",
     "category": "Build your own Front-end Framework / Library",
     "tag": "JavaScript",
@@ -3403,27 +3503,6 @@
     },
     "level": "Intermediate",
     "url": "https://www.jamasoftware.com/blog/lets-write-redux/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-64cde5c0",
-    "category": "Build your own Front-end Framework / Library",
-    "tag": "JavaScript",
-    "title": {
-      "en": "Make Your Own AngularJS"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://teropa.info/blog/2013/11/03/make-your-own-angular-part-1-scopes-and-digest.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "web",
@@ -3477,48 +3556,6 @@
     ]
   },
   {
-    "id": "build-28f54b72",
-    "category": "Build your own Game",
-    "tag": "Java",
-    "title": {
-      "en": "3D Game Development with LWJGL 3"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://lwjglgamedev.gitbooks.io/3d-game-development-with-lwjgl/content/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-40e6e9f8",
-    "category": "Build your own Game",
-    "tag": "C++",
-    "title": {
-      "en": "Beginning Game Programming v2.0"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://lazyfoo.net/tutorials/SDL/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-f701b58e",
     "category": "Build your own Game",
     "tag": "C++",
@@ -3530,27 +3567,6 @@
     },
     "level": "Intermediate",
     "url": "https://learnopengl.com/In-Practice/2D-Game/Breakout",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-407e7948",
-    "category": "Build your own Game",
-    "tag": "C#",
-    "title": {
-      "en": "Build a C#/WPF RPG"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://scottlilly.com/build-a-cwpf-rpg/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "games",
@@ -3582,27 +3598,6 @@
     ]
   },
   {
-    "id": "build-7ecc31b4",
-    "category": "Build your own Game",
-    "tag": "Python",
-    "title": {
-      "en": "Developing Games With PyGame"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://pythonprogramming.net/pygame-python-3-part-1-intro/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-9c48230e",
     "category": "Build your own Game",
     "tag": "JavaScript",
@@ -3624,112 +3619,6 @@
     ]
   },
   {
-    "id": "build-4c8991c6",
-    "category": "Build your own Game",
-    "tag": "Ruby",
-    "title": {
-      "en": "Developing Games With Ruby"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://leanpub.com/developing-games-with-ruby/read",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "may-require-payment",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-64e16970",
-    "category": "Build your own Game",
-    "tag": "C",
-    "title": {
-      "en": "Handmade Hero"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://handmadehero.org/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-753d478e",
-    "category": "Build your own Game",
-    "tag": "JavaScript",
-    "title": {
-      "en": "How to Make Flappy Bird in HTML5 With Phaser"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://www.lessmilk.com/tutorial/flappy-bird-phaser-1",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-9811a59b",
-    "category": "Build your own Game",
-    "tag": "C",
-    "title": {
-      "en": "How to Program an NES game in C"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://nesdoug.com/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-155653ef",
-    "category": "Build your own Game",
-    "tag": "Python",
-    "title": {
-      "en": "Making Games with Python & Pygame"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://inventwithpython.com/makinggames.pdf",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-1cb87876",
     "category": "Build your own Game",
     "tag": "C",
@@ -3741,69 +3630,6 @@
     },
     "level": "Intermediate",
     "url": "https://brennan.io/2015/06/12/tetris-reimplementation/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-4623e1bf",
-    "category": "Build your own Game",
-    "tag": "Python",
-    "title": {
-      "en": "Roguelike Tutorial Revised"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://rogueliketutorials.com/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-0434fca0",
-    "category": "Build your own Game",
-    "tag": "Ruby",
-    "title": {
-      "en": "Ruby Snake"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.diatomenterprises.com/gamedev-on-ruby-why-not/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-bdd60357",
-    "category": "Build your own Game",
-    "tag": "C++",
-    "title": {
-      "en": "Space Invaders from Scratch"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://nicktasios.nl/posts/space-invaders-from-scratch-part-1.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "games",
@@ -3890,34 +3716,12 @@
     "url": "https://robots.thoughtbot.com/rebuilding-git-in-ruby",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-8f526ea0",
-    "category": "Build your own Git",
-    "tag": "Haskell",
-    "title": {
-      "en": "Reimplementing “git clone” in Haskell from the bottom up"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -3942,28 +3746,6 @@
     ]
   },
   {
-    "id": "build-9a050b04",
-    "category": "Build your own Memory Allocator",
-    "tag": "C",
-    "title": {
-      "en": "Malloc is not magic -- Implementing your own memory allocator"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://medium.com/p/e0354e914402",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-28673161",
     "category": "Build your own Network Stack",
     "tag": "C",
@@ -3975,74 +3757,6 @@
     },
     "level": "Intermediate",
     "url": "http://beej.us/guide/bgnet/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "networking-tools",
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-44a507c7",
-    "category": "Build your own Network Stack",
-    "tag": "C / Python",
-    "title": {
-      "en": "Build your own VPN/Virtual Switch"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/peiyuanix/build-your-own-zerotier",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "networking-tools",
-      "not-kid-oriented-topic"
-    ]
-  },
-  {
-    "id": "build-0849a723",
-    "category": "Build your own Network Stack",
-    "tag": "Ruby",
-    "title": {
-      "en": "How to build a network stack in Ruby"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://medium.com/geckoboard-under-the-hood/how-to-build-a-network-stack-in-ruby-f73aeb1b661b",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "networking-tools",
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-5177e3e9",
-    "category": "Build your own Network Stack",
-    "tag": "C",
-    "title": {
-      "en": "Let's code a TCP/IP stack"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "systems",
@@ -4072,7 +3786,7 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -4093,8 +3807,8 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -4115,8 +3829,8 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -4137,29 +3851,8 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-31273347",
-    "category": "Build your own Neural Network",
-    "tag": "Python",
-    "title": {
-      "en": "Generate Music using LSTM Neural Network in Keras"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "art",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -4201,8 +3894,8 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -4220,113 +3913,6 @@
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "web",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-2cf54114",
-    "category": "Build your own Neural Network",
-    "tag": "Python",
-    "title": {
-      "en": "Optical Character Recognition (OCR)"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://aosabook.org/en/500L/optical-character-recognition-ocr.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-2ac841ff",
-    "category": "Build your own Neural Network",
-    "tag": "Python",
-    "title": {
-      "en": "Traffic signs classification with a convolutional network"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://navoshta.com/traffic-signs-classification/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "networking-tools",
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-9a43f551",
-    "category": "Build your own Operating System",
-    "tag": "C",
-    "title": {
-      "en": "Building a software and hardware stack for a simple computer from scratch"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.youtube.com/watch?v=ZjwvMcP3Nf0&list=PLU94OURih-CiP4WxKSMt3UcwMSDM3aTtX",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic"
-    ]
-  },
-  {
-    "id": "build-9abdc733",
-    "category": "Build your own Physics Engine",
-    "tag": "JavaScript",
-    "title": {
-      "en": "Broad Phase Collision Detection Using Spatial Partitioning"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://buildnewgames.com/broad-phase-collision-detection/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-bd0f0ebe",
-    "category": "Build your own Physics Engine",
-    "tag": "C++",
-    "title": {
-      "en": "Game physics series by Allen Chou"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://allenchou.net/game-physics-series/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
@@ -4355,28 +3941,6 @@
     ]
   },
   {
-    "id": "build-181e4b2c",
-    "category": "Build your own Physics Engine",
-    "tag": "C++",
-    "title": {
-      "en": "How to Create a Custom Physics Engine"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://gamedevelopment.tutsplus.com/series/how-to-create-a-custom-physics-engine--gamedev-12715",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-acb8d909",
     "category": "Build your own Physics Engine",
     "tag": "C",
@@ -4391,48 +3955,6 @@
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "games",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-f9dcf1fa",
-    "category": "Build your own Processor",
-    "tag": "Verilog",
-    "title": {
-      "en": "From Blinker to RISC-V"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/BrunoLevy/learn-fpga/tree/master/FemtoRV/TUTORIALS/FROM_BLINKER_TO_RISCV",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified"
-    ]
-  },
-  {
-    "id": "build-f459bc96",
-    "category": "Build your own Programming Language",
-    "tag": "Python",
-    "title": {
-      "en": "A Python Interpreter Written in Python"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://aosabook.org/en/500L/a-python-interpreter-written-in-python.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
@@ -4525,27 +4047,6 @@
     ]
   },
   {
-    "id": "build-d9e8392d",
-    "category": "Build your own Programming Language",
-    "tag": "C",
-    "title": {
-      "en": "C interpreter that interprets itself."
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/lotabout/write-a-C-interpreter",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic"
-    ]
-  },
-  {
     "id": "build-8534ce86",
     "category": "Build your own Programming Language",
     "tag": "Java",
@@ -4567,27 +4068,6 @@
     ]
   },
   {
-    "id": "build-15f4cb59",
-    "category": "Build your own Programming Language",
-    "tag": "JavaScript",
-    "title": {
-      "en": "How to implement a programming language in JavaScript"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://lisperator.net/pltut/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-5376ac4c",
     "category": "Build your own Programming Language",
     "tag": "Python",
@@ -4599,27 +4079,6 @@
     },
     "level": "Intermediate",
     "url": "http://norvig.com/lispy.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-8c6a219d",
-    "category": "Build your own Programming Language",
-    "tag": "C++",
-    "title": {
-      "en": "Kaleidoscope: Implementing a Language with LLVM"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "general",
@@ -4736,69 +4195,6 @@
     ]
   },
   {
-    "id": "build-96fb5d11",
-    "category": "Build your own Programming Language",
-    "tag": "F#",
-    "title": {
-      "en": "Understanding Parser Combinators"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://fsharpforfunandprofit.com/posts/understanding-parser-combinators/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-705327a5",
-    "category": "Build your own Programming Language",
-    "tag": "Haskell",
-    "title": {
-      "en": "Write You a Haskell"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://dev.stephendiehl.com/fun/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-cb4e96d8",
-    "category": "Build your own Programming Language",
-    "tag": "Haskell",
-    "title": {
-      "en": "Write You A Scheme"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.wespiser.com/writings/wyas/home.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-57c226dc",
     "category": "Build your own Programming Language",
     "tag": "Haskell",
@@ -4841,28 +4237,6 @@
     ]
   },
   {
-    "id": "build-d01e97d6",
-    "category": "Build your own Programming Language",
-    "tag": "C",
-    "title": {
-      "en": "Writing a Simple Garbage Collector in C"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://maplant.com/gc.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-fd8b9fd8",
     "category": "Build your own Regex Engine",
     "tag": "C",
@@ -4876,12 +4250,12 @@
     "url": "https://www.cs.princeton.edu/courses/archive/spr09/cos333/beautiful.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -4906,27 +4280,6 @@
     ]
   },
   {
-    "id": "build-5209fbbe",
-    "category": "Build your own Regex Engine",
-    "tag": "Python",
-    "title": {
-      "en": "Build Your Own Regular Expression Engines: Backtracking, NFA, DFA"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://build-your-own.org/b2a/r0_intro",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-7d1140b8",
     "category": "Build your own Regex Engine",
     "tag": "Perl",
@@ -4940,12 +4293,12 @@
     "url": "https://perl.plover.com/Regex/article.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -4962,11 +4315,11 @@
     "url": "https://rhaeguard.github.io/posts/regex",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -5025,12 +4378,12 @@
     "url": "https://rcoh.svbtle.com/no-magic-regular-expressions",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -5268,27 +4621,6 @@
     ]
   },
   {
-    "id": "build-62aac5fc",
-    "category": "Build your own Template Engine",
-    "tag": "Python",
-    "title": {
-      "en": "A Template Engine"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://aosabook.org/en/500L/a-template-engine.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-3c8beaf2",
     "category": "Build your own Template Engine",
     "tag": "Python",
@@ -5323,11 +4655,10 @@
     "url": "http://bits.citrusbyte.com/how-to-write-a-template-library/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "general",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
       "unvetted-external-site"
     ]
   },
@@ -5387,11 +4718,10 @@
     "url": "https://blog.aha.io/text-editor/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "web",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
       "unvetted-external-site"
     ]
   },
@@ -5409,11 +4739,11 @@
     "url": "https://viewsourcecode.org/snaptoken/kilo/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -5430,76 +4760,12 @@
     "url": "https://www.flenker.blog/hecto/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-49a27066",
-    "category": "Build your own Visual Recognition System",
-    "tag": "Python",
-    "title": {
-      "en": "Building a Facial Recognition Pipeline with Deep Learning in Tensorflow"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://hackernoon.com/building-a-facial-recognition-pipeline-with-deep-learning-in-tensorflow-66e7645015b8",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-e765aefb",
-    "category": "Build your own Visual Recognition System",
-    "tag": "Python",
-    "title": {
-      "en": "Developing a License Plate Recognition System with Machine Learning in Python"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://medium.com/devcenter/developing-a-license-plate-recognition-system-with-machine-learning-in-python-787833569ccd",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-6da47b04",
-    "category": "Build your own Voxel Engine",
-    "tag": "C++",
-    "title": {
-      "en": "Let's Make a Voxel Engine"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://sites.google.com/site/letsmakeavoxelengine/home",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -5514,27 +4780,6 @@
     },
     "level": "Intermediate",
     "url": "https://browser.engineering",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-8bfed8bd",
-    "category": "Build your own Web Browser",
-    "tag": "Rust",
-    "title": {
-      "en": "Let's build a browser engine"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "web",
@@ -5709,8 +4954,28 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-be788f8d",
+    "category": "Uncategorized",
+    "tag": "Node.js",
+    "title": {
+      "en": "Build a DNS Server in Node.js"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "https://engineerhead.github.io/dns-server/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "networking-tools"
     ]
   },
   {
@@ -5756,27 +5021,6 @@
     ]
   },
   {
-    "id": "build-b68f71eb",
-    "category": "Uncategorized",
-    "tag": "Node.js",
-    "title": {
-      "en": "Build a Synchronization Engine with Node.js and Y.js"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://greenvitriol.com/posts/sync-engine-for-everyone",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-893d3622",
     "category": "Uncategorized",
     "tag": "JavaScript",
@@ -5811,11 +5055,11 @@
     "url": "https://github.com/kezhenxu94/cache-lite",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -5857,28 +5101,50 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic",
+      "hardware-build"
     ]
   },
   {
-    "id": "build-13e49445",
+    "id": "build-8122166b",
     "category": "Uncategorized",
-    "tag": "Rust",
+    "tag": "(any)",
     "title": {
-      "en": "Building a DNS server in Rust"
+      "en": "build-your-own-x-vibe-coding: BYOX-style tutorials adapted for vibe coding"
     },
     "desc": {
       "en": ""
     },
     "level": "Intermediate",
-    "url": "https://github.com/EmilHernvall/dnsguide/blob/master/README.md",
+    "url": "https://github.com/inFaaa/build-your-own-x-vibe-coding",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "general",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
+      "unclear-content"
+    ]
+  },
+  {
+    "id": "build-99ad8b06",
+    "category": "Uncategorized",
+    "tag": "Lua",
+    "title": {
+      "en": "Building a CDN from Scratch to Learn about CDN"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Intermediate",
+    "url": "https://github.com/leandromoreira/cdn-up-and-running",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "networking-tools"
     ]
   },
   {
@@ -5895,11 +5161,10 @@
     "url": "https://bernhardwenzel.com/articles/clojure-spellchecker/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "general",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
       "unvetted-external-site"
     ]
   },
@@ -5940,27 +5205,6 @@
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "web",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-28a71ea2",
-    "category": "Uncategorized",
-    "tag": "Python",
-    "title": {
-      "en": "Continuous Integration System"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "http://aosabook.org/en/500L/a-continuous-integration-system.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
@@ -6029,7 +5273,7 @@
     "safety": "ask-a-grown-up",
     "safety_reasons": [
       "external-forum",
-      "unclassified"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -6046,34 +5290,12 @@
     "url": "http://dranger.com/ffmpeg/ffmpeg.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-3c77e4f3",
-    "category": "Uncategorized",
-    "tag": "C++",
-    "title": {
-      "en": "How X Window Managers work and how to write one"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://seasonofcode.com/posts/how-x-window-managers-work-and-how-to-write-one-part-i.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -6182,28 +5404,6 @@
     ]
   },
   {
-    "id": "build-172f0000",
-    "category": "Uncategorized",
-    "tag": "PHP",
-    "title": {
-      "en": "Make your own blog"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://ilovephp.jondh.me.uk/en/tutorial/make-your-own-blog",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-9a5efdac",
     "category": "Uncategorized",
     "tag": "PHP",
@@ -6217,55 +5417,10 @@
     "url": "https://kevinsmith.io/modern-php-without-a-framework",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "web",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-62d6acbe",
-    "category": "Uncategorized",
-    "tag": "C",
-    "title": {
-      "en": "Sol - An MQTT broker from scratch"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://codepr.github.io/posts/sol-mqtt-broker",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified"
-    ]
-  },
-  {
-    "id": "build-e06766bd",
-    "category": "Uncategorized",
-    "tag": "Python",
-    "title": {
-      "en": "Stock Market Predictions with LSTM in Python"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.datacamp.com/community/tutorials/lstm-python-stock-market",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "account-required",
-      "may-require-payment",
       "unvetted-external-site"
     ]
   },
@@ -6283,55 +5438,11 @@
     "url": "http://aosabook.org/en/500L/the-same-origin-policy.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "web",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-d88e0459",
-    "category": "Uncategorized",
-    "tag": "Go",
-    "title": {
-      "en": "Video Encoding from Scratch"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/kevmo314/codec-from-scratch",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified"
-    ]
-  },
-  {
-    "id": "build-69ee5ac7",
-    "category": "Uncategorized",
-    "tag": "C",
-    "title": {
-      "en": "Write a System Call"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://brennan.io/2016/11/14/kernel-dev-ep3/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified",
-      "unvetted-external-site"
+      "security-topic"
     ]
   },
   {
@@ -6356,27 +5467,6 @@
     ]
   },
   {
-    "id": "build-f3e0da40",
-    "category": "Uncategorized",
-    "tag": "PHP",
-    "title": {
-      "en": "Write your own MVC from scratch in PHP"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://chaitya62.github.io/2018/04/29/Writing-your-own-MVC-from-Scratch-in-PHP.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified"
-    ]
-  },
-  {
     "id": "build-4e92e23f",
     "category": "Uncategorized",
     "tag": "Nim",
@@ -6390,11 +5480,11 @@
     "url": "https://xmonader.github.io/nimdays/day11_buildsystem.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -6411,11 +5501,11 @@
     "url": "https://xmonader.github.io/nimdays/day01_dmidecode.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -6432,75 +5522,11 @@
     "url": "https://xmonader.github.io/nimdays/day05_iniparser.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified"
-    ]
-  },
-  {
-    "id": "build-021ddad9",
-    "category": "Uncategorized",
-    "tag": "Nim",
-    "title": {
-      "en": "Writing a Link Checker"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://xmonader.github.io/nimdays/day04_asynclinkschecker.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified"
-    ]
-  },
-  {
-    "id": "build-8281ce1b",
-    "category": "Uncategorized",
-    "tag": "C++",
-    "title": {
-      "en": "Writing a Linux Debugger"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://blog.tartanllama.xyz/writing-a-linux-debugger-setup/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
     "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-361c58ea",
-    "category": "Uncategorized",
-    "tag": "Nim",
-    "title": {
-      "en": "Writing a MiniTest Framework"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://xmonader.github.io/nimdays/day08_minitest.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic"
     ]
   },
   {
@@ -6517,32 +5543,12 @@
     "url": "https://xmonader.github.io/nimdays/day12_resp.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
-      "unclassified"
-    ]
-  },
-  {
-    "id": "build-55f98526",
-    "category": "Uncategorized",
-    "tag": "Nim",
-    "title": {
-      "en": "Writing a URL Shortening Service"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://xmonader.github.io/nimdays/day07_shorturl.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "other",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unclassified"
+      "not-kid-oriented-topic",
+      "networking-tools"
     ]
   },
   {
@@ -6559,12 +5565,76 @@
     "url": "https://nbaksalyar.github.io/2015/07/10/writing-chat-in-rust.html",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
-    "topic": "other",
+    "topic": "systems",
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
       "external-forum",
-      "unclassified"
+      "not-kid-oriented-topic",
+      "chat-service"
+    ]
+  },
+  {
+    "id": "build-3bd8827e",
+    "category": "Build your own 3D Renderer",
+    "tag": "C# / TypeScript / JavaScript",
+    "title": {
+      "en": "Learning how to write a 3D soft engine from scratch in C#, TypeScript or JavaScript"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.davrous.com/2013/06/13/tutorial-series-learning-how-to-write-a-3d-soft-engine-from-scratch-in-c-typescript-or-javascript/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "art",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-f4fa7292",
+    "category": "Build your own 3D Renderer",
+    "tag": "C++",
+    "title": {
+      "en": "Physically Based Rendering:From Theory To Implementation"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://www.pbr-book.org/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "art",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-5dd33ef0",
+    "category": "Build your own AI Model",
+    "tag": "Python",
+    "title": {
+      "en": "Diffusion Models for Image Generation"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://huggingface.co/learn/diffusion-course/en/unit1/3",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
     ]
   },
   {
@@ -6586,6 +5656,241 @@
     "safety": "ask-a-grown-up",
     "safety_reasons": [
       "finance-crypto",
+      "not-kid-oriented-topic",
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-21a368df",
+    "category": "Build your own Database",
+    "tag": "Clojure",
+    "title": {
+      "en": "An Archaeology-Inspired Database"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://aosabook.org/en/500L/an-archaeology-inspired-database.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-ab38f6ba",
+    "category": "Build your own Database",
+    "tag": "Go",
+    "title": {
+      "en": "Build Your Own Database from Scratch: From B+Tree To SQL in 3000 Lines"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://build-your-own.org/database/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic",
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-09df4d29",
+    "category": "Build your own Database",
+    "tag": "C++",
+    "title": {
+      "en": "Build Your Own Redis from Scratch"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://build-your-own.org/redis",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic",
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-c1e41323",
+    "category": "Build your own Database",
+    "tag": "Go",
+    "title": {
+      "en": "Build Your Own Redis from Scratch"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.build-redis-from-scratch.dev/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic",
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-f812e29f",
+    "category": "Build your own Database",
+    "tag": "JavaScript",
+    "title": {
+      "en": "Dagoba: an in-memory graph database"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://aosabook.org/en/500L/dagoba-an-in-memory-graph-database.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-3d177740",
+    "category": "Build your own Distributed Systems",
+    "tag": "Java",
+    "title": {
+      "en": "Building Your Own Kafka-like System From Scratch: A Step-by-Step Guide"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/buildthingsuseful/build-your-own-kafka",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-96caab18",
+    "category": "Build your own Docker",
+    "tag": "Python",
+    "title": {
+      "en": "A proof-of-concept imitation of Docker, written in 100% Python"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/tonybaloney/mocker",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-38561d2a",
+    "category": "Build your own Docker",
+    "tag": "Python",
+    "title": {
+      "en": "A workshop on Linux containers: Rebuild Docker from Scratch"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/Fewbytes/rubber-docker",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-2b949af7",
+    "category": "Build your own Docker",
+    "tag": "Go",
+    "title": {
+      "en": "Building a container from scratch in Go"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.youtube.com/watch?v=8fi7uSYlOdc",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-53c6ec93",
+    "category": "Build your own Docker",
+    "tag": "Shell",
+    "title": {
+      "en": "Docker implemented in around 100 lines of bash"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/p8952/bocker",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-e91f785b",
+    "category": "Build your own Docker",
+    "tag": "C",
+    "title": {
+      "en": "Linux containers in 500 lines of code"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://blog.lizzie.io/linux-containers-in-500-loc.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
       "not-kid-oriented-topic",
       "unvetted-external-site"
     ]
@@ -6851,6 +6156,154 @@
     ]
   },
   {
+    "id": "build-9fbc7a66",
+    "category": "Build your own Front-end Framework / Library",
+    "tag": "JavaScript",
+    "title": {
+      "en": "Build Your own Simplified AngularJS in 200 Lines of JavaScript"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://blog.mgechev.com/2015/03/09/build-learn-your-own-light-lightweight-angularjs/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-027d2582",
+    "category": "Build your own Front-end Framework / Library",
+    "tag": "JavaScript",
+    "title": {
+      "en": "Learn how React Reconciler package works by building your own lightweight React DOM"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://hackernoon.com/learn-you-some-custom-react-renderers-aed7164a4199",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-64cde5c0",
+    "category": "Build your own Front-end Framework / Library",
+    "tag": "JavaScript",
+    "title": {
+      "en": "Make Your Own AngularJS"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://teropa.info/blog/2013/11/03/make-your-own-angular-part-1-scopes-and-digest.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-28f54b72",
+    "category": "Build your own Game",
+    "tag": "Java",
+    "title": {
+      "en": "3D Game Development with LWJGL 3"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://lwjglgamedev.gitbooks.io/3d-game-development-with-lwjgl/content/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-64e16970",
+    "category": "Build your own Game",
+    "tag": "C",
+    "title": {
+      "en": "Handmade Hero"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://handmadehero.org/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-9811a59b",
+    "category": "Build your own Game",
+    "tag": "C",
+    "title": {
+      "en": "How to Program an NES game in C"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://nesdoug.com/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-8f526ea0",
+    "category": "Build your own Git",
+    "tag": "Haskell",
+    "title": {
+      "en": "Reimplementing “git clone” in Haskell from the bottom up"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://stefan.saasen.me/articles/git-clone-in-haskell-from-the-bottom-up/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
     "id": "build-cb389d38",
     "category": "Build your own Git",
     "tag": "Python",
@@ -6868,6 +6321,140 @@
     "age_group": "teen+",
     "safety": "ask-a-grown-up",
     "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-9a050b04",
+    "category": "Build your own Memory Allocator",
+    "tag": "C",
+    "title": {
+      "en": "Malloc is not magic -- Implementing your own memory allocator"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://medium.com/p/e0354e914402",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic",
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-44a507c7",
+    "category": "Build your own Network Stack",
+    "tag": "C / Python",
+    "title": {
+      "en": "Build your own VPN/Virtual Switch"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/peiyuanix/build-your-own-zerotier",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "networking-tools",
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-0849a723",
+    "category": "Build your own Network Stack",
+    "tag": "Ruby",
+    "title": {
+      "en": "How to build a network stack in Ruby"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://medium.com/geckoboard-under-the-hood/how-to-build-a-network-stack-in-ruby-f73aeb1b661b",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "networking-tools",
+      "not-kid-oriented-topic",
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-5177e3e9",
+    "category": "Build your own Network Stack",
+    "tag": "C",
+    "title": {
+      "en": "Let's code a TCP/IP stack"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "networking-tools",
+      "not-kid-oriented-topic",
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-31273347",
+    "category": "Build your own Neural Network",
+    "tag": "Python",
+    "title": {
+      "en": "Generate Music using LSTM Neural Network in Keras"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "art",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-2ac841ff",
+    "category": "Build your own Neural Network",
+    "tag": "Python",
+    "title": {
+      "en": "Traffic signs classification with a convolutional network"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://navoshta.com/traffic-signs-classification/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "networking-tools",
+      "not-kid-oriented-topic",
       "unvetted-external-site"
     ]
   },
@@ -6927,6 +6514,27 @@
     },
     "level": "Advanced",
     "url": "https://github.com/jserv/mini-arm-os",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-9a43f551",
+    "category": "Build your own Operating System",
+    "tag": "C",
+    "title": {
+      "en": "Building a software and hardware stack for a simple computer from scratch"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.youtube.com/watch?v=ZjwvMcP3Nf0&list=PLU94OURih-CiP4WxKSMt3UcwMSDM3aTtX",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "systems",
@@ -7240,6 +6848,90 @@
     ]
   },
   {
+    "id": "build-9abdc733",
+    "category": "Build your own Physics Engine",
+    "tag": "JavaScript",
+    "title": {
+      "en": "Broad Phase Collision Detection Using Spatial Partitioning"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://buildnewgames.com/broad-phase-collision-detection/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-bd0f0ebe",
+    "category": "Build your own Physics Engine",
+    "tag": "C++",
+    "title": {
+      "en": "Game physics series by Allen Chou"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://allenchou.net/game-physics-series/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-181e4b2c",
+    "category": "Build your own Physics Engine",
+    "tag": "C++",
+    "title": {
+      "en": "How to Create a Custom Physics Engine"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://gamedevelopment.tutsplus.com/series/how-to-create-a-custom-physics-engine--gamedev-12715",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-f9dcf1fa",
+    "category": "Build your own Processor",
+    "tag": "Verilog",
+    "title": {
+      "en": "From Blinker to RISC-V"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/BrunoLevy/learn-fpga/tree/master/FemtoRV/TUTORIALS/FROM_BLINKER_TO_RISCV",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
     "id": "build-5e81ba95",
     "category": "Build your own Programming Language",
     "tag": "C",
@@ -7325,6 +7017,27 @@
     ]
   },
   {
+    "id": "build-d9e8392d",
+    "category": "Build your own Programming Language",
+    "tag": "C",
+    "title": {
+      "en": "C interpreter that interprets itself."
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/lotabout/write-a-C-interpreter",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
     "id": "build-445148d1",
     "category": "Build your own Programming Language",
     "tag": "Elixir",
@@ -7385,6 +7098,48 @@
     "safety": "ask-a-grown-up",
     "safety_reasons": [
       "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-15f4cb59",
+    "category": "Build your own Programming Language",
+    "tag": "JavaScript",
+    "title": {
+      "en": "How to implement a programming language in JavaScript"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://lisperator.net/pltut/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-8c6a219d",
+    "category": "Build your own Programming Language",
+    "tag": "C++",
+    "title": {
+      "en": "Kaleidoscope: Implementing a Language with LLVM"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
     ]
   },
   {
@@ -7495,6 +7250,69 @@
     ]
   },
   {
+    "id": "build-96fb5d11",
+    "category": "Build your own Programming Language",
+    "tag": "F#",
+    "title": {
+      "en": "Understanding Parser Combinators"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://fsharpforfunandprofit.com/posts/understanding-parser-combinators/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-705327a5",
+    "category": "Build your own Programming Language",
+    "tag": "Haskell",
+    "title": {
+      "en": "Write You a Haskell"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://dev.stephendiehl.com/fun/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-cb4e96d8",
+    "category": "Build your own Programming Language",
+    "tag": "Haskell",
+    "title": {
+      "en": "Write You A Scheme"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.wespiser.com/writings/wyas/home.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
     "id": "build-5cfc9d13",
     "category": "Build your own Programming Language",
     "tag": "OCaml",
@@ -7517,6 +7335,28 @@
     ]
   },
   {
+    "id": "build-d01e97d6",
+    "category": "Build your own Programming Language",
+    "tag": "C",
+    "title": {
+      "en": "Writing a Simple Garbage Collector in C"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "http://maplant.com/gc.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic",
+      "unvetted-external-site"
+    ]
+  },
+  {
     "id": "build-f4b5a54a",
     "category": "Build your own Programming Language",
     "tag": "C++",
@@ -7528,6 +7368,289 @@
     },
     "level": "Advanced",
     "url": "https://gnuu.org/2009/09/18/writing-your-own-toy-compiler/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic",
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-5209fbbe",
+    "category": "Build your own Regex Engine",
+    "tag": "Python",
+    "title": {
+      "en": "Build Your Own Regular Expression Engines: Backtracking, NFA, DFA"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://build-your-own.org/b2a/r0_intro",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-49a27066",
+    "category": "Build your own Visual Recognition System",
+    "tag": "Python",
+    "title": {
+      "en": "Building a Facial Recognition Pipeline with Deep Learning in Tensorflow"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://hackernoon.com/building-a-facial-recognition-pipeline-with-deep-learning-in-tensorflow-66e7645015b8",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site",
+      "facial-recognition"
+    ]
+  },
+  {
+    "id": "build-e765aefb",
+    "category": "Build your own Visual Recognition System",
+    "tag": "Python",
+    "title": {
+      "en": "Developing a License Plate Recognition System with Machine Learning in Python"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://medium.com/devcenter/developing-a-license-plate-recognition-system-with-machine-learning-in-python-787833569ccd",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site",
+      "surveillance-topic"
+    ]
+  },
+  {
+    "id": "build-6da47b04",
+    "category": "Build your own Voxel Engine",
+    "tag": "C++",
+    "title": {
+      "en": "Let's Make a Voxel Engine"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://sites.google.com/site/letsmakeavoxelengine/home",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "games",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-8bfed8bd",
+    "category": "Build your own Web Browser",
+    "tag": "Rust",
+    "title": {
+      "en": "Let's build a browser engine"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-b68f71eb",
+    "category": "Uncategorized",
+    "tag": "Node.js",
+    "title": {
+      "en": "Build a Synchronization Engine with Node.js and Y.js"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://greenvitriol.com/posts/sync-engine-for-everyone",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "web",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site"
+    ]
+  },
+  {
+    "id": "build-13e49445",
+    "category": "Uncategorized",
+    "tag": "Rust",
+    "title": {
+      "en": "Building a DNS server in Rust"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/EmilHernvall/dnsguide/blob/master/README.md",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic",
+      "networking-tools"
+    ]
+  },
+  {
+    "id": "build-3c77e4f3",
+    "category": "Uncategorized",
+    "tag": "C++",
+    "title": {
+      "en": "How X Window Managers work and how to write one"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://seasonofcode.com/posts/how-x-window-managers-work-and-how-to-write-one-part-i.html",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-62d6acbe",
+    "category": "Uncategorized",
+    "tag": "C",
+    "title": {
+      "en": "Sol - An MQTT broker from scratch"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://codepr.github.io/posts/sol-mqtt-broker",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic",
+      "networking-tools"
+    ]
+  },
+  {
+    "id": "build-e06766bd",
+    "category": "Uncategorized",
+    "tag": "Python",
+    "title": {
+      "en": "Stock Market Predictions with LSTM in Python"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://www.datacamp.com/community/tutorials/lstm-python-stock-market",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "general",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "account-required",
+      "may-require-payment",
+      "unvetted-external-site",
+      "finance-topic"
+    ]
+  },
+  {
+    "id": "build-d88e0459",
+    "category": "Uncategorized",
+    "tag": "Go",
+    "title": {
+      "en": "Video Encoding from Scratch"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://github.com/kevmo314/codec-from-scratch",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-69ee5ac7",
+    "category": "Uncategorized",
+    "tag": "C",
+    "title": {
+      "en": "Write a System Call"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://brennan.io/2016/11/14/kernel-dev-ep3/",
+    "source": "https://github.com/codecrafters-io/build-your-own-x",
+    "license": "CC0-1.0",
+    "topic": "systems",
+    "age_group": "teen+",
+    "safety": "ask-a-grown-up",
+    "safety_reasons": [
+      "unvetted-external-site",
+      "not-kid-oriented-topic"
+    ]
+  },
+  {
+    "id": "build-8281ce1b",
+    "category": "Uncategorized",
+    "tag": "C++",
+    "title": {
+      "en": "Writing a Linux Debugger"
+    },
+    "desc": {
+      "en": ""
+    },
+    "level": "Advanced",
+    "url": "https://blog.tartanllama.xyz/writing-a-linux-debugger-setup/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "systems",

@@ -1,0 +1,1091 @@
+[
+  {
+    "id": "kids-cff31573",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "Binary numbers (unit)",
+      "es": "Números binarios (unidad)",
+      "ar": "الأعداد الثنائية (وحدة)",
+      "hi": "बाइनरी संख्याएँ (इकाई)",
+      "pt": "Números binários (unidade)"
+    },
+    "desc": {
+      "en": "A CS Unplugged unit with several hands-on, screen-free lessons about binary numbers.",
+      "es": "Una unidad de CS Unplugged con varias lecciones prácticas y sin pantallas sobre números binarios.",
+      "ar": "وحدة من CS Unplugged تضم عدة دروس عملية بدون شاشات حول الأعداد الثنائية.",
+      "hi": "CS Unplugged की एक इकाई जिसमें बाइनरी संख्याएँ के बारे में कई व्यावहारिक, बिना स्क्रीन वाले पाठ हैं।",
+      "pt": "Uma unidade do CS Unplugged com várias aulas práticas e sem telas sobre números binários."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-a93d9654",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "Codes for letters using binary representation",
+      "es": "Códigos para letras usando representación binaria",
+      "ar": "رموز للحروف باستخدام التمثيل الثنائي",
+      "hi": "बाइनरी निरूपण से अक्षरों के कोड",
+      "pt": "Códigos para letras usando representação binária"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 5-7 (about 45 minutes), part of the 'Binary numbers' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 5-7 años (unos 45 minutos), parte de la unidad «Números binarios».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 5-7 سنوات (حوالي 45 دقيقة)، ضمن وحدة «الأعداد الثنائية».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 5-7 वर्ष की उम्र के लिए (लगभग 45 मिनट), «बाइनरी संख्याएँ» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 5-7 anos (cerca de 45 minutos), parte da unidade «Números binários»."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/codes-for-letters-using-binary-representation-junior/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-0d3a63dc",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "How binary digits work",
+      "es": "Cómo funcionan los dígitos binarios",
+      "ar": "كيف تعمل الأرقام الثنائية",
+      "hi": "बाइनरी अंक कैसे काम करते हैं",
+      "pt": "Como funcionam os dígitos binários"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 5-7 (about 45 minutes), part of the 'Binary numbers' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 5-7 años (unos 45 minutos), parte de la unidad «Números binarios».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 5-7 سنوات (حوالي 45 دقيقة)، ضمن وحدة «الأعداد الثنائية».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 5-7 वर्ष की उम्र के लिए (लगभग 45 मिनट), «बाइनरी संख्याएँ» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 5-7 anos (cerca de 45 minutos), parte da unidade «Números binários»."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/how-binary-digits-work-junior/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-77746380",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "Reinforcing sequencing in binary number systems",
+      "es": "Reforzar la secuenciación en los sistemas de números binarios",
+      "ar": "تعزيز التسلسل في أنظمة الأعداد الثنائية",
+      "hi": "बाइनरी संख्या प्रणाली में क्रम की समझ पक्की करना",
+      "pt": "Reforçando a sequenciação nos sistemas de números binários"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 5-7 (about 60 minutes), part of the 'Binary numbers' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 5-7 años (unos 60 minutos), parte de la unidad «Números binarios».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 5-7 سنوات (حوالي 60 دقيقة)، ضمن وحدة «الأعداد الثنائية».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 5-7 वर्ष की उम्र के लिए (लगभग 60 मिनट), «बाइनरी संख्याएँ» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 5-7 anos (cerca de 60 minutos), parte da unidade «Números binários»."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/reinforcing-sequencing-in-binary-number-systems-junior/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-84a24760",
+    "category": "CS Unplugged: Error detection and correction",
+    "tag": "",
+    "title": {
+      "en": "Error detection and correction (unit)",
+      "es": "Detección y corrección de errores (unidad)",
+      "ar": "اكتشاف الأخطاء وتصحيحها (وحدة)",
+      "hi": "त्रुटि की पहचान और सुधार (इकाई)",
+      "pt": "Detecção e correção de erros (unidade)"
+    },
+    "desc": {
+      "en": "A CS Unplugged unit with several hands-on, screen-free lessons about error detection and correction.",
+      "es": "Una unidad de CS Unplugged con varias lecciones prácticas y sin pantallas sobre detección y corrección de errores.",
+      "ar": "وحدة من CS Unplugged تضم عدة دروس عملية بدون شاشات حول اكتشاف الأخطاء وتصحيحها.",
+      "hi": "CS Unplugged की एक इकाई जिसमें त्रुटि की पहचान और सुधार के बारे में कई व्यावहारिक, बिना स्क्रीन वाले पाठ हैं।",
+      "pt": "Uma unidade do CS Unplugged com várias aulas práticas e sem telas sobre detecção e correção de erros."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/error-detection-and-correction/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-c140548d",
+    "category": "CS Unplugged: Error detection and correction",
+    "tag": "",
+    "title": {
+      "en": "Parity magic",
+      "es": "La magia de la paridad",
+      "ar": "سحر التماثل (الزوجية)",
+      "hi": "पैरिटी का जादू",
+      "pt": "A mágica da paridade"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 5-7 (about 30 minutes), part of the 'Error detection and correction' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 5-7 años (unos 30 minutos), parte de la unidad «Detección y corrección de errores».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 5-7 سنوات (حوالي 30 دقيقة)، ضمن وحدة «اكتشاف الأخطاء وتصحيحها».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 5-7 वर्ष की उम्र के लिए (लगभग 30 मिनट), «त्रुटि की पहचान और सुधार» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 5-7 anos (cerca de 30 minutos), parte da unidade «Detecção e correção de erros»."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/error-detection-and-correction/parity-magic-junior/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-7363fdeb",
+    "category": "CS Unplugged: Image Representation",
+    "tag": "",
+    "title": {
+      "en": "Colour by numbers",
+      "es": "Colorear por números",
+      "ar": "التلوين بالأرقام",
+      "hi": "संख्याओं से रंग भरना",
+      "pt": "Colorir por números"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 5-7 (about 45 minutes), part of the 'Image Representation' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 5-7 años (unos 45 minutos), parte de la unidad «Representación de imágenes».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 5-7 سنوات (حوالي 45 دقيقة)، ضمن وحدة «تمثيل الصور».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 5-7 वर्ष की उम्र के लिए (लगभग 45 मिनट), «चित्रों का निरूपण» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 5-7 anos (cerca de 45 minutos), parte da unidade «Representação de imagens»."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/image-representation/colour-by-numbers/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-6e3aacdb",
+    "category": "CS Unplugged: Image Representation",
+    "tag": "",
+    "title": {
+      "en": "Image Representation (unit)",
+      "es": "Representación de imágenes (unidad)",
+      "ar": "تمثيل الصور (وحدة)",
+      "hi": "चित्रों का निरूपण (इकाई)",
+      "pt": "Representação de imagens (unidade)"
+    },
+    "desc": {
+      "en": "A CS Unplugged unit with several hands-on, screen-free lessons about image representation.",
+      "es": "Una unidad de CS Unplugged con varias lecciones prácticas y sin pantallas sobre representación de imágenes.",
+      "ar": "وحدة من CS Unplugged تضم عدة دروس عملية بدون شاشات حول تمثيل الصور.",
+      "hi": "CS Unplugged की एक इकाई जिसमें चित्रों का निरूपण के बारे में कई व्यावहारिक, बिना स्क्रीन वाले पाठ हैं।",
+      "pt": "Uma unidade do CS Unplugged com várias aulas práticas e sem telas sobre representação de imagens."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/image-representation/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-df024931",
+    "category": "CS Unplugged: Image Representation",
+    "tag": "",
+    "title": {
+      "en": "Squeezing pictures into less space",
+      "es": "Comprimir imágenes en menos espacio",
+      "ar": "ضغط الصور في مساحة أقل",
+      "hi": "चित्रों को कम जगह में समेटना",
+      "pt": "Comprimindo imagens em menos espaço"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 5-7 (about 45 minutes), part of the 'Image Representation' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 5-7 años (unos 45 minutos), parte de la unidad «Representación de imágenes».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 5-7 سنوات (حوالي 45 دقيقة)، ضمن وحدة «تمثيل الصور».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 5-7 वर्ष की उम्र के लिए (लगभग 45 मिनट), «चित्रों का निरूपण» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 5-7 anos (cerca de 45 minutos), parte da unidade «Representação de imagens»."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/image-representation/squeezing-pictures-into-less-space/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-1ee79a47",
+    "category": "CS Unplugged: Kidbots",
+    "tag": "",
+    "title": {
+      "en": "Fitness unplugged",
+      "es": "Ejercicio sin pantallas",
+      "ar": "اللياقة بدون شاشات",
+      "hi": "बिना स्क्रीन की कसरत",
+      "pt": "Exercício sem telas"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 5-7 (about 45 minutes), part of the 'Kidbots' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 5-7 años (unos 45 minutos), parte de la unidad «Kidbots».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 5-7 سنوات (حوالي 45 دقيقة)، ضمن وحدة «Kidbots».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 5-7 वर्ष की उम्र के लिए (लगभग 45 मिनट), «Kidbots» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 5-7 anos (cerca de 45 minutos), parte da unidade «Kidbots»."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/kidbots/fitness-unplugged/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-2d82e44a",
+    "category": "CS Unplugged: Kidbots",
+    "tag": "",
+    "title": {
+      "en": "Kidbots (unit)",
+      "es": "Kidbots (unidad)",
+      "ar": "Kidbots (وحدة)",
+      "hi": "Kidbots (इकाई)",
+      "pt": "Kidbots (unidade)"
+    },
+    "desc": {
+      "en": "A CS Unplugged unit with several hands-on, screen-free lessons about kidbots.",
+      "es": "Una unidad de CS Unplugged con varias lecciones prácticas y sin pantallas sobre kidbots.",
+      "ar": "وحدة من CS Unplugged تضم عدة دروس عملية بدون شاشات حول Kidbots.",
+      "hi": "CS Unplugged की एक इकाई जिसमें Kidbots के बारे में कई व्यावहारिक, बिना स्क्रीन वाले पाठ हैं।",
+      "pt": "Uma unidade do CS Unplugged com várias aulas práticas e sem telas sobre kidbots."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/kidbots/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-b49ee0d4",
+    "category": "CS Unplugged: Kidbots",
+    "tag": "",
+    "title": {
+      "en": "Rescue Mission",
+      "es": "Misión de rescate",
+      "ar": "مهمة إنقاذ",
+      "hi": "बचाव अभियान",
+      "pt": "Missão de resgate"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 5-7 (about 30 minutes), part of the 'Kidbots' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 5-7 años (unos 30 minutos), parte de la unidad «Kidbots».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 5-7 سنوات (حوالي 30 دقيقة)، ضمن وحدة «Kidbots».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 5-7 वर्ष की उम्र के लिए (लगभग 30 मिनट), «Kidbots» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 5-7 anos (cerca de 30 minutos), parte da unidade «Kidbots»."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/kidbots/rescue-mission/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-3135230d",
+    "category": "CS Unplugged: Searching algorithms",
+    "tag": "",
+    "title": {
+      "en": "Divide and conquer",
+      "es": "Divide y vencerás",
+      "ar": "فرّق تسد",
+      "hi": "बाँटो और जीतो",
+      "pt": "Dividir para conquistar"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 5-7 (about 30 minutes), part of the 'Searching algorithms' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 5-7 años (unos 30 minutos), parte de la unidad «Algoritmos de búsqueda».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 5-7 سنوات (حوالي 30 دقيقة)، ضمن وحدة «خوارزميات البحث».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 5-7 वर्ष की उम्र के लिए (लगभग 30 मिनट), «खोज एल्गोरिदम» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 5-7 anos (cerca de 30 minutos), parte da unidade «Algoritmos de busca»."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/searching-algorithms/divide-and-conquer-junior/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-2f303408",
+    "category": "CS Unplugged: Searching algorithms",
+    "tag": "",
+    "title": {
+      "en": "How many guesses?",
+      "es": "¿Cuántos intentos hacen falta?",
+      "ar": "كم تخمينًا نحتاج؟",
+      "hi": "कितने अनुमान लगेंगे?",
+      "pt": "Quantos palpites?"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 5-7 (about 30 minutes), part of the 'Searching algorithms' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 5-7 años (unos 30 minutos), parte de la unidad «Algoritmos de búsqueda».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 5-7 سنوات (حوالي 30 دقيقة)، ضمن وحدة «خوارزميات البحث».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 5-7 वर्ष की उम्र के लिए (लगभग 30 मिनट), «खोज एल्गोरिदम» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 5-7 anos (cerca de 30 minutos), parte da unidade «Algoritmos de busca»."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/searching-algorithms/how-many-guesses-junior/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-c9d84e40",
+    "category": "CS Unplugged: Searching algorithms",
+    "tag": "",
+    "title": {
+      "en": "Searching algorithms (unit)",
+      "es": "Algoritmos de búsqueda (unidad)",
+      "ar": "خوارزميات البحث (وحدة)",
+      "hi": "खोज एल्गोरिदम (इकाई)",
+      "pt": "Algoritmos de busca (unidade)"
+    },
+    "desc": {
+      "en": "A CS Unplugged unit with several hands-on, screen-free lessons about searching algorithms.",
+      "es": "Una unidad de CS Unplugged con varias lecciones prácticas y sin pantallas sobre algoritmos de búsqueda.",
+      "ar": "وحدة من CS Unplugged تضم عدة دروس عملية بدون شاشات حول خوارزميات البحث.",
+      "hi": "CS Unplugged की एक इकाई जिसमें खोज एल्गोरिदम के बारे में कई व्यावहारिक, बिना स्क्रीन वाले पाठ हैं।",
+      "pt": "Uma unidade do CS Unplugged com várias aulas práticas e sem telas sobre algoritmos de busca."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/searching-algorithms/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-08675e89",
+    "category": "CS Unplugged: Sorting networks",
+    "tag": "",
+    "title": {
+      "en": "Investigating variations using the Sorting Network",
+      "es": "Investigar variaciones con la red de ordenación",
+      "ar": "استكشاف الاختلافات باستخدام شبكة الفرز",
+      "hi": "सॉर्टिंग नेटवर्क से विविधताओं की जाँच",
+      "pt": "Investigando variações com a rede de ordenação"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 5-7 (about 30 minutes), part of the 'Sorting networks' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 5-7 años (unos 30 minutos), parte de la unidad «Redes de ordenación».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 5-7 سنوات (حوالي 30 دقيقة)، ضمن وحدة «شبكات الفرز».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 5-7 वर्ष की उम्र के लिए (लगभग 30 मिनट), «सॉर्टिंग नेटवर्क» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 5-7 anos (cerca de 30 minutos), parte da unidade «Redes de ordenação»."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/sorting-networks/investigating-variations-using-the-sorting-network-junior/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-eb3b917c",
+    "category": "CS Unplugged: Sorting networks",
+    "tag": "",
+    "title": {
+      "en": "Reinforcing numeracy through a Sorting Network",
+      "es": "Reforzar el sentido numérico con una red de ordenación",
+      "ar": "تعزيز مهارات العدّ باستخدام شبكة الفرز",
+      "hi": "सॉर्टिंग नेटवर्क से संख्या-ज्ञान पक्का करना",
+      "pt": "Reforçando a numeracia com uma rede de ordenação"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 5-7 (about 45 minutes), part of the 'Sorting networks' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 5-7 años (unos 45 minutos), parte de la unidad «Redes de ordenación».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 5-7 سنوات (حوالي 45 دقيقة)، ضمن وحدة «شبكات الفرز».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 5-7 वर्ष की उम्र के लिए (लगभग 45 मिनट), «सॉर्टिंग नेटवर्क» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 5-7 anos (cerca de 45 minutos), parte da unidade «Redes de ordenação»."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/sorting-networks/reinforcing-numeracy-through-a-sorting-network-junior/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-48abfa01",
+    "category": "CS Unplugged: Sorting networks",
+    "tag": "",
+    "title": {
+      "en": "Sorting networks (unit)",
+      "es": "Redes de ordenación (unidad)",
+      "ar": "شبكات الفرز (وحدة)",
+      "hi": "सॉर्टिंग नेटवर्क (इकाई)",
+      "pt": "Redes de ordenação (unidade)"
+    },
+    "desc": {
+      "en": "A CS Unplugged unit with several hands-on, screen-free lessons about sorting networks.",
+      "es": "Una unidad de CS Unplugged con varias lecciones prácticas y sin pantallas sobre redes de ordenación.",
+      "ar": "وحدة من CS Unplugged تضم عدة دروس عملية بدون شاشات حول شبكات الفرز.",
+      "hi": "CS Unplugged की एक इकाई जिसमें सॉर्टिंग नेटवर्क के बारे में कई व्यावहारिक, बिना स्क्रीन वाले पाठ हैं।",
+      "pt": "Uma unidade do CS Unplugged com várias aulas práticas e sem telas sobre redes de ordenação."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/sorting-networks/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-982181c8",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "Codes for letters using binary representation",
+      "es": "Códigos para letras usando representación binaria",
+      "ar": "رموز للحروف باستخدام التمثيل الثنائي",
+      "hi": "बाइनरी निरूपण से अक्षरों के कोड",
+      "pt": "Códigos para letras usando representação binária"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 45 minutes), part of the 'Binary numbers' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 45 minutos), parte de la unidad «Números binarios».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 45 دقيقة)، ضمن وحدة «الأعداد الثنائية».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 45 मिनट), «बाइनरी संख्याएँ» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 45 minutos), parte da unidade «Números binários»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/codes-for-letters-using-binary-representation/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-a98cbe0d",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "How binary digits work",
+      "es": "Cómo funcionan los dígitos binarios",
+      "ar": "كيف تعمل الأرقام الثنائية",
+      "hi": "बाइनरी अंक कैसे काम करते हैं",
+      "pt": "Como funcionam os dígitos binários"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 45 minutes), part of the 'Binary numbers' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 45 minutos), parte de la unidad «Números binarios».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 45 دقيقة)، ضمن وحدة «الأعداد الثنائية».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 45 मिनट), «बाइनरी संख्याएँ» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 45 minutos), parte da unidade «Números binários»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/how-binary-digits-work/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-1d63d1ba",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "Reinforcing sequencing in binary number systems",
+      "es": "Reforzar la secuenciación en los sistemas de números binarios",
+      "ar": "تعزيز التسلسل في أنظمة الأعداد الثنائية",
+      "hi": "बाइनरी संख्या प्रणाली में क्रम की समझ पक्की करना",
+      "pt": "Reforçando a sequenciação nos sistemas de números binários"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 60 minutes), part of the 'Binary numbers' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 60 minutos), parte de la unidad «Números binarios».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 60 دقيقة)، ضمن وحدة «الأعداد الثنائية».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 60 मिनट), «बाइनरी संख्याएँ» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 60 minutos), parte da unidade «Números binários»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/reinforcing-sequencing-in-binary-number-systems/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-c04ee384",
+    "category": "CS Unplugged: Error detection and correction",
+    "tag": "",
+    "title": {
+      "en": "Parity magic",
+      "es": "La magia de la paridad",
+      "ar": "سحر التماثل (الزوجية)",
+      "hi": "पैरिटी का जादू",
+      "pt": "A mágica da paridade"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 30 minutes), part of the 'Error detection and correction' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 30 minutos), parte de la unidad «Detección y corrección de errores».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 30 دقيقة)، ضمن وحدة «اكتشاف الأخطاء وتصحيحها».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 30 मिनट), «त्रुटि की पहचान और सुधार» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 30 minutos), parte da unidade «Detecção e correção de erros»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/error-detection-and-correction/parity-magic/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-0f5a4341",
+    "category": "CS Unplugged: Error detection and correction",
+    "tag": "",
+    "title": {
+      "en": "Product code check digits",
+      "es": "Dígitos de control de los códigos de producto",
+      "ar": "أرقام التحقق في رموز المنتجات",
+      "hi": "उत्पाद कोड के जाँच अंक",
+      "pt": "Dígitos verificadores de códigos de produto"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 30 minutes), part of the 'Error detection and correction' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 30 minutos), parte de la unidad «Detección y corrección de errores».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 30 دقيقة)، ضمن وحدة «اكتشاف الأخطاء وتصحيحها».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 30 मिनट), «त्रुटि की पहचान और सुधार» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 30 minutos), parte da unidade «Detecção e correção de erros»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/error-detection-and-correction/product-code-check-digits/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-294ef399",
+    "category": "CS Unplugged: Kidbots",
+    "tag": "",
+    "title": {
+      "en": "Sending a rocket to Mars",
+      "es": "Enviar un cohete a Marte",
+      "ar": "إرسال صاروخ إلى المريخ",
+      "hi": "मंगल ग्रह पर रॉकेट भेजना",
+      "pt": "Enviando um foguete a Marte"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 30 minutes), part of the 'Kidbots' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 30 minutos), parte de la unidad «Kidbots».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 30 دقيقة)، ضمن وحدة «Kidbots».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 30 मिनट), «Kidbots» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 30 minutos), parte da unidade «Kidbots»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/kidbots/sending-a-rocket-to-mars/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-35cb46bb",
+    "category": "CS Unplugged: Kidbots",
+    "tag": "",
+    "title": {
+      "en": "The Modulo operator Unplugged",
+      "es": "El operador módulo sin pantallas",
+      "ar": "عامل باقي القسمة بدون شاشات",
+      "hi": "बिना स्क्रीन के मॉड्यूलो ऑपरेटर",
+      "pt": "O operador módulo sem telas"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 30 minutes), part of the 'Kidbots' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 30 minutos), parte de la unidad «Kidbots».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 30 دقيقة)، ضمن وحدة «Kidbots».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 30 मिनट), «Kidbots» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 30 minutos), parte da unidade «Kidbots»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/kidbots/modulo/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-3e9e326c",
+    "category": "CS Unplugged: Searching algorithms",
+    "tag": "",
+    "title": {
+      "en": "Divide and conquer",
+      "es": "Divide y vencerás",
+      "ar": "فرّق تسد",
+      "hi": "बाँटो और जीतो",
+      "pt": "Dividir para conquistar"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 30 minutes), part of the 'Searching algorithms' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 30 minutos), parte de la unidad «Algoritmos de búsqueda».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 30 دقيقة)، ضمن وحدة «خوارزميات البحث».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 30 मिनट), «खोज एल्गोरिदम» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 30 minutos), parte da unidade «Algoritmos de busca»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/searching-algorithms/divide-and-conquer/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-774bf776",
+    "category": "CS Unplugged: Searching algorithms",
+    "tag": "",
+    "title": {
+      "en": "How many guesses?",
+      "es": "¿Cuántos intentos hacen falta?",
+      "ar": "كم تخمينًا نحتاج؟",
+      "hi": "कितने अनुमान लगेंगे?",
+      "pt": "Quantos palpites?"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 30 minutes), part of the 'Searching algorithms' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 30 minutos), parte de la unidad «Algoritmos de búsqueda».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 30 دقيقة)، ضمن وحدة «خوارزميات البحث».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 30 मिनट), «खोज एल्गोरिदम» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 30 minutos), parte da unidade «Algoritmos de busca»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/searching-algorithms/how-many-guesses/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-001ee380",
+    "category": "CS Unplugged: Searching algorithms",
+    "tag": "",
+    "title": {
+      "en": "The Great Number Hunt (Sorted)",
+      "es": "La gran búsqueda de números (ordenados)",
+      "ar": "رحلة البحث الكبرى عن الأرقام (مرتّبة)",
+      "hi": "संख्याओं की बड़ी खोज (क्रमबद्ध)",
+      "pt": "A grande caça aos números (ordenados)"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 45 minutes), part of the 'Searching algorithms' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 45 minutos), parte de la unidad «Algoritmos de búsqueda».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 45 دقيقة)، ضمن وحدة «خوارزميات البحث».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 45 मिनट), «खोज एल्गोरिदम» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 45 minutos), parte da unidade «Algoritmos de busca»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/searching-algorithms/the-great-number-hunt-sorted/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-614dd1e5",
+    "category": "CS Unplugged: Searching algorithms",
+    "tag": "",
+    "title": {
+      "en": "The Great Number Hunt (Unsorted)",
+      "es": "La gran búsqueda de números (desordenados)",
+      "ar": "رحلة البحث الكبرى عن الأرقام (غير مرتّبة)",
+      "hi": "संख्याओं की बड़ी खोज (बिना क्रम)",
+      "pt": "A grande caça aos números (desordenados)"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 30 minutes), part of the 'Searching algorithms' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 30 minutos), parte de la unidad «Algoritmos de búsqueda».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 30 دقيقة)، ضمن وحدة «خوارزميات البحث».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 30 मिनट), «खोज एल्गोरिदम» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 30 minutos), parte da unidade «Algoritmos de busca»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/searching-algorithms/the-great-number-hunt-unsorted/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-d6fe1dbf",
+    "category": "CS Unplugged: Sorting networks",
+    "tag": "",
+    "title": {
+      "en": "Investigating variations using the Sorting Network",
+      "es": "Investigar variaciones con la red de ordenación",
+      "ar": "استكشاف الاختلافات باستخدام شبكة الفرز",
+      "hi": "सॉर्टिंग नेटवर्क से विविधताओं की जाँच",
+      "pt": "Investigando variações com a rede de ordenação"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 30 minutes), part of the 'Sorting networks' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 30 minutos), parte de la unidad «Redes de ordenación».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 30 دقيقة)، ضمن وحدة «شبكات الفرز».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 30 मिनट), «सॉर्टिंग नेटवर्क» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 30 minutos), parte da unidade «Redes de ordenação»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/sorting-networks/investigating-variations-using-the-sorting-network/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-cc505421",
+    "category": "CS Unplugged: Sorting networks",
+    "tag": "",
+    "title": {
+      "en": "Reinforcing numeracy through a Sorting Network",
+      "es": "Reforzar el sentido numérico con una red de ordenación",
+      "ar": "تعزيز مهارات العدّ باستخدام شبكة الفرز",
+      "hi": "सॉर्टिंग नेटवर्क से संख्या-ज्ञान पक्का करना",
+      "pt": "Reforçando a numeracia com uma rede de ordenação"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 8-10 (about 45 minutes), part of the 'Sorting networks' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 8-10 años (unos 45 minutos), parte de la unidad «Redes de ordenación».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 8-10 سنوات (حوالي 45 دقيقة)، ضمن وحدة «شبكات الفرز».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 8-10 वर्ष की उम्र के लिए (लगभग 45 मिनट), «सॉर्टिंग नेटवर्क» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 8-10 anos (cerca de 45 minutos), parte da unidade «Redes de ordenação»."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/sorting-networks/reinforcing-numeracy-through-a-sorting-network/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-327441d6",
+    "category": "CS Unplugged: Data structures for searching",
+    "tag": "",
+    "title": {
+      "en": "Binary search trees",
+      "es": "Árboles de búsqueda binaria",
+      "ar": "أشجار البحث الثنائية",
+      "hi": "बाइनरी सर्च ट्री",
+      "pt": "Árvores de busca binária"
+    },
+    "desc": {
+      "en": "A hands-on, screen-free CS Unplugged lesson for ages 11-13 (about 45 minutes), part of the 'Data structures for searching' unit.",
+      "es": "Una lección práctica y sin pantallas de CS Unplugged para edades de 11-13 años (unos 45 minutos), parte de la unidad «Estructuras de datos para buscar».",
+      "ar": "درس عملي بدون شاشات من CS Unplugged للأعمار 11-13 سنوات (حوالي 45 دقيقة)، ضمن وحدة «هياكل البيانات للبحث».",
+      "hi": "CS Unplugged का एक व्यावहारिक, बिना स्क्रीन वाला पाठ, 11-13 वर्ष की उम्र के लिए (लगभग 45 मिनट), «खोज के लिए डेटा संरचनाएँ» इकाई का हिस्सा।",
+      "pt": "Uma aula prática e sem telas do CS Unplugged para idades de 11-13 anos (cerca de 45 minutos), parte da unidade «Estruturas de dados para busca»."
+    },
+    "level": "Intermediate",
+    "age_group": "11-13",
+    "url": "https://www.csunplugged.org/en/topics/data-structures-for-searching/binary-search-trees/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  },
+  {
+    "id": "kids-2b810aaa",
+    "category": "CS Unplugged: Data structures for searching",
+    "tag": "",
+    "title": {
+      "en": "Data structures for searching (unit)",
+      "es": "Estructuras de datos para buscar (unidad)",
+      "ar": "هياكل البيانات للبحث (وحدة)",
+      "hi": "खोज के लिए डेटा संरचनाएँ (इकाई)",
+      "pt": "Estruturas de dados para busca (unidade)"
+    },
+    "desc": {
+      "en": "A CS Unplugged unit with several hands-on, screen-free lessons about data structures for searching.",
+      "es": "Una unidad de CS Unplugged con varias lecciones prácticas y sin pantallas sobre estructuras de datos para buscar.",
+      "ar": "وحدة من CS Unplugged تضم عدة دروس عملية بدون شاشات حول هياكل البيانات للبحث.",
+      "hi": "CS Unplugged की एक इकाई जिसमें खोज के लिए डेटा संरचनाएँ के बारे में कई व्यावहारिक, बिना स्क्रीन वाले पाठ हैं।",
+      "pt": "Uma unidade do CS Unplugged com várias aulas práticas e sem telas sobre estruturas de dados para busca."
+    },
+    "level": "Intermediate",
+    "age_group": "11-13",
+    "url": "https://www.csunplugged.org/en/topics/data-structures-for-searching/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": [],
+    "ai_translated": [
+      "es",
+      "ar",
+      "hi",
+      "pt"
+    ]
+  }
+]

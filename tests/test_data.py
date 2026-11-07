@@ -14,7 +14,13 @@ REQUIRED = ["id", "category", "tag", "title", "desc", "level", "age_group", "top
 
 
 def entries():
-    return [e for n in ("learn", "build") for e in json.loads((DATA / f"{n}.json").read_text())]
+    return [e for n in ("learn", "build", "kids") if (DATA / f"{n}.json").exists()
+            for e in json.loads((DATA / f"{n}.json").read_text())]
+
+
+def file_entries(name):
+    p = DATA / f"{name}.json"
+    return json.loads(p.read_text()) if p.exists() else []
 
 
 class DataContract(unittest.TestCase):
@@ -61,6 +67,23 @@ class DataContract(unittest.TestCase):
         for e in self.entries:
             if e["safety"] == "kid-safe":
                 self.assertIn(e["topic"], categorize.KID_TOPICS, e["id"])
+
+    def test_license_separation(self):  # CC BY-SA entries stay out of the CC0 files
+        for name in ("learn", "build"):
+            for e in file_entries(name):
+                self.assertEqual(e["license"], "CC0-1.0", f"{name}: {e['id']}")
+        for e in file_entries("kids"):
+            self.assertEqual(e["license"], "CC-BY-SA-4.0", e["id"])
+            self.assertEqual(e["source"], "https://github.com/uccser/cs-unplugged", e["id"])
+            self.assertTrue(e["url"].startswith("https://www.csunplugged.org/"), e["id"])
+
+    def test_translations_marked_ai(self):  # plan: AI translations must be labeled
+        for e in self.entries:
+            langs = [l for l in ("es", "ar", "hi", "pt") if l in e["title"]]
+            if langs:
+                self.assertEqual(sorted(e.get("ai_translated", [])), sorted(langs), e["id"])
+                for l in langs:
+                    self.assertTrue(e["title"][l].strip(), f"{e['id']} empty {l} title")
 
     def test_clean_titles(self):
         for e in self.entries:

@@ -520,25 +520,6 @@
     "safety_reasons": []
   },
   {
-    "id": "build-0e0ee2d4",
-    "category": "Build your own Game",
-    "tag": "Lua",
-    "title": {
-      "en": "BYTEPATH"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://github.com/SSYGEN/blog/issues/30",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "games",
-    "age_group": "teen+",
-    "safety": "kid-safe",
-    "safety_reasons": []
-  },
-  {
     "id": "build-25d276a6",
     "category": "Build your own Game",
     "tag": "C",
@@ -1460,27 +1441,6 @@
     ]
   },
   {
-    "id": "build-47776cfc",
-    "category": "Build your own Bot",
-    "tag": "Node.js",
-    "title": {
-      "en": "Creating a Simple Facebook Messenger AI Bot with API.ai in Node.js"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Beginner",
-    "url": "https://tutorials.botsfloor.com/creating-a-simple-facebook-messenger-ai-bot-with-api-ai-in-node-js-50ae2fa5c80d",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "11-13",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "social-platform"
-    ]
-  },
-  {
     "id": "build-40aee621",
     "category": "Build your own Bot",
     "tag": "Python",
@@ -1723,27 +1683,6 @@
     },
     "level": "Beginner",
     "url": "http://www.instructables.com/id/Create-a-Simple-Python-Text-Editor/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "general",
-    "age_group": "11-13",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
-    "id": "build-967a6295",
-    "category": "Build your own Web Server",
-    "tag": "Python",
-    "title": {
-      "en": "Building a basic HTTP Server from scratch in Python"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Beginner",
-    "url": "http://joaoventura.net/blog/2017/python-webserver/",
     "source": "https://github.com/codecrafters-io/build-your-own-x",
     "license": "CC0-1.0",
     "topic": "general",
@@ -2030,28 +1969,6 @@
     "safety": "ask-a-grown-up",
     "safety_reasons": [
       "not-kid-oriented-topic"
-    ]
-  },
-  {
-    "id": "build-59c8a089",
-    "category": "Build your own Shell",
-    "tag": "Go",
-    "title": {
-      "en": "Writing a simple shell in Go"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Beginner",
-    "url": "https://sj14.gitlab.io/post/2018-07-01-go-unix-shell/",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "not-kid-oriented-topic",
-      "unvetted-external-site"
     ]
   },
   {
@@ -4832,27 +4749,6 @@
     ]
   },
   {
-    "id": "build-8d4f886a",
-    "category": "Build your own Web Server",
-    "tag": "Node.js",
-    "title": {
-      "en": "Let's code a web server from scratch with NodeJS Streams"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://www.codementor.io/@ziad-saab/let-s-code-a-web-server-from-scratch-with-nodejs-streams-h4uc9utji",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
-    ]
-  },
-  {
     "id": "build-47bb454a",
     "category": "Build your own Web Server",
     "tag": "Python",
@@ -5296,27 +5192,6 @@
     "safety_reasons": [
       "unvetted-external-site",
       "not-kid-oriented-topic"
-    ]
-  },
-  {
-    "id": "build-58149953",
-    "category": "Uncategorized",
-    "tag": "JavaScript",
-    "title": {
-      "en": "Implement your own — call(), apply() and bind() method in JavaScript"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Intermediate",
-    "url": "https://blog.usejournal.com/implement-your-own-call-apply-and-bind-method-in-javascript-42cc85dba1b",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "web",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site"
     ]
   },
   {
@@ -7526,28 +7401,6 @@
     "safety_reasons": [
       "not-kid-oriented-topic",
       "networking-tools"
-    ]
-  },
-  {
-    "id": "build-3c77e4f3",
-    "category": "Uncategorized",
-    "tag": "C++",
-    "title": {
-      "en": "How X Window Managers work and how to write one"
-    },
-    "desc": {
-      "en": ""
-    },
-    "level": "Advanced",
-    "url": "https://seasonofcode.com/posts/how-x-window-managers-work-and-how-to-write-one-part-i.html",
-    "source": "https://github.com/codecrafters-io/build-your-own-x",
-    "license": "CC0-1.0",
-    "topic": "systems",
-    "age_group": "teen+",
-    "safety": "ask-a-grown-up",
-    "safety_reasons": [
-      "unvetted-external-site",
-      "not-kid-oriented-topic"
     ]
   },
   {

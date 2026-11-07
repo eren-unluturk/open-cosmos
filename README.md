@@ -31,10 +31,10 @@ tests/    tests
 ## Team & Roles
 | Name | Role | Responsibilities | Files |
 |------|------|------------------|-------|
-|      | **Data lead** | Fetch and parse the two CC0 source READMEs into JSON; decide which entries count as intro-to-programming; keep `docs/SOURCES.md` accurate. | `scripts/fetch.py`, `docs/SOURCES.md` |
-|      | **AI lead** | Claude prompts for translation and Beginner/Intermediate/Advanced tagging; run and cache the batch; have native speakers spot-check translations. | `scripts/translate.py` |
-|      | **Backend lead** | Flask routes, language and level filtering, UI strings, right-to-left support, search, deployment. | `src/app.py`, `requirements.txt` |
-|      | **Frontend + pitch lead** | Pages, level badges, language switcher, attribution footer, accessibility; then README, slides, demo video, and submission. | `src/templates/`, `src/static/`, `docs/PITCH.md` |
+| Eren | **Data lead** | Fetch and parse the two CC0 source READMEs into JSON; decide which entries count as intro-to-programming; keep `docs/SOURCES.md` accurate. | `scripts/fetch.py`, `docs/SOURCES.md` |
+| Brian | **AI lead** | Claude prompts for translation and Beginner/Intermediate/Advanced tagging; run and cache the batch; have native speakers spot-check translations. | `scripts/translate.py` |
+| Tobi | **Backend lead** | Flask routes, language and level filtering, UI strings, right-to-left support, search, deployment. | `src/app.py`, `requirements.txt` |
+| Isabella | **Frontend + pitch lead** | Pages, level badges, language switcher, attribution footer, accessibility; then README, slides, demo video, and submission. | `src/templates/`, `src/static/`, `docs/PITCH.md` |
 
 ## Challenges / What We Learned
 _Fill in near the end — useful for judging and Devpost._

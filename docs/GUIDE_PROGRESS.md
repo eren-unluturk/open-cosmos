@@ -6,67 +6,57 @@ the tests, `python scripts/guide_progress.py`, then commit.
 
 ## Status
 - Phase A (foundation): DONE. Phase B (lessons): DONE (26 lessons).
-- Phase C (handwritten guides): 20 of 65 groups done; 7 topic fallbacks always cover the rest.
-- Entries with a handwritten guide: 664 of 1070 visible.
+- Phase C (handwritten guides): 30 of 65 groups done; 7 topic fallbacks always cover the rest.
+- Entries with a handwritten guide: 794 of 1070 visible.
 
 | Band | Entries with handwritten guide | Visible entries |
 |---|---|---|
 | kid-safe 5-7 | 24 | 24 |
 | kid-safe 8-10 | 36 | 36 |
-| kid-safe 11-13 | 71 | 77 |
-| kid-safe teen+ | 276 | 338 |
-| ask-a-grown-up | 257 | 595 |
+| kid-safe 11-13 | 77 | 77 |
+| kid-safe teen+ | 329 | 338 |
+| ask-a-grown-up | 328 | 595 |
 
 ## NEXT
-`build:Build your own Augmented Reality`
+`build:Build your own AI Model`
 
 ## Remaining groups in priority order
 
-1. `build:Build your own Augmented Reality`
-2. `learn:Development Environment`
-3. `build:Build your own Physics Engine`
-4. `build:Build your own Web Server`
-5. `kids:CS Unplugged: Data structures for searching`
-6. `learn:Back-End Development`
-7. `learn:Content Management Systems`
-8. `build:Build your own Neural Network`
-9. `build:Build your own Front-end Framework / Library`
-10. `learn:Testing`
-11. `build:Build your own AI Model`
-12. `learn:Big Data`
-13. `build:Build your own Search Engine`
-14. `build:Build your own Template Engine`
-15. `build:Build your own Text Editor`
-16. `learn:Hardware`
-17. `learn:Work`
-18. `build:Build your own Blockchain / Cryptocurrency`
-19. `build:Build your own Operating System`
-20. `learn:Databases`
-21. `learn:Decentralized Systems`
-22. `learn:Security`
-23. `build:Build your own Bot`
-24. `build:Build your own Database`
-25. `build:Build your own Emulator / Virtual Machine`
-26. `learn:Health and Social Science`
-27. `learn:Business`
-28. `build:Build your own Command-Line Tool`
-29. `build:Build your own Regex Engine`
-30. `build:Build your own Git`
-31. `build:Build your own Docker`
-32. `build:Build your own Shell`
-33. `build:Build your own BitTorrent Client`
-34. `learn:Editors`
-35. `learn:Entertainment`
-36. `learn:Networking`
-37. `learn:Related`
-38. `build:Build your own Network Stack`
-39. `learn:Events`
-40. `build:Build your own Visual Recognition System`
-41. `build:Build your own Web Browser`
-42. `build:Build your own Distributed Systems`
-43. `build:Build your own Memory Allocator`
-44. `build:Build your own Processor`
-45. `build:Build your own Voxel Engine`
+1. `build:Build your own AI Model`
+2. `learn:Big Data`
+3. `build:Build your own Search Engine`
+4. `build:Build your own Template Engine`
+5. `build:Build your own Text Editor`
+6. `learn:Hardware`
+7. `learn:Work`
+8. `build:Build your own Blockchain / Cryptocurrency`
+9. `build:Build your own Operating System`
+10. `learn:Databases`
+11. `learn:Decentralized Systems`
+12. `learn:Security`
+13. `build:Build your own Bot`
+14. `build:Build your own Database`
+15. `build:Build your own Emulator / Virtual Machine`
+16. `learn:Health and Social Science`
+17. `learn:Business`
+18. `build:Build your own Command-Line Tool`
+19. `build:Build your own Regex Engine`
+20. `build:Build your own Git`
+21. `build:Build your own Docker`
+22. `build:Build your own Shell`
+23. `build:Build your own BitTorrent Client`
+24. `learn:Editors`
+25. `learn:Entertainment`
+26. `learn:Networking`
+27. `learn:Related`
+28. `build:Build your own Network Stack`
+29. `learn:Events`
+30. `build:Build your own Visual Recognition System`
+31. `build:Build your own Web Browser`
+32. `build:Build your own Distributed Systems`
+33. `build:Build your own Memory Allocator`
+34. `build:Build your own Processor`
+35. `build:Build your own Voxel Engine`
 
 ## Done groups
 
@@ -90,3 +80,13 @@ the tests, `python scripts/guide_progress.py`, then commit.
 - `build:Build your own 3D Renderer`
 - `build:Build your own Programming Language`
 - `learn:Books`
+- `build:Build your own Augmented Reality`
+- `learn:Development Environment`
+- `build:Build your own Physics Engine`
+- `build:Build your own Web Server`
+- `kids:CS Unplugged: Data structures for searching`
+- `learn:Back-End Development`
+- `learn:Content Management Systems`
+- `build:Build your own Neural Network`
+- `build:Build your own Front-end Framework / Library`
+- `learn:Testing`

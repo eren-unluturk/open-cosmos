@@ -16,6 +16,7 @@ app.secret_key = os.environ.get("SECRET_KEY") or secrets.token_hex(32)
 app.config.update(SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE="Lax",
                   SESSION_COOKIE_SECURE=os.environ.get("COOKIE_SECURE") == "1")  # on in production (HTTPS)
 SIDES = store.SIDES
+TOPICS = ("games", "art", "web", "general", "systems", "security", "other")
 LANGS = {"en": "English", "es": "Español", "ar": "العربية", "hi": "हिन्दी", "pt": "Português"}
 RTL = {"ar"}
 LEVELS = ["Beginner", "Intermediate", "Advanced"]
@@ -46,7 +47,9 @@ def is_adult():
 
 @app.route("/")
 def index():
-    return redirect(url_for("home", lang="en"))
+    # Pick the best supported language from the browser, default English.
+    lang = request.accept_languages.best_match(list(LANGS)) or "en"
+    return redirect(url_for("home", lang=lang))
 
 
 @app.route("/<lang>/")
@@ -60,12 +63,13 @@ def home(lang):
 def listing(lang, side):
     if lang not in LANGS or side not in SIDES:
         abort(404)
-    level, q = filters()
-    items = select(lang, side, level, q)
+    level, q, age, topic = filters()
+    items = select(lang, side, level, q, age, topic)
     groups = {}
     for e in items:
         groups.setdefault(e["category"], []).append(e)
-    return render_template("listing.html", side=side, groups=groups, level=level, q=q, **ctx(lang))
+    return render_template("listing.html", side=side, groups=groups, level=level, q=q,
+                           age=age, topic=topic, **ctx(lang))
 
 
 def filters():
@@ -73,13 +77,21 @@ def filters():
     level = request.args.get("level")
     level = level if level in LEVELS else None
     q = (request.args.get("q") or "").strip()[:80]
-    return level, q
+    age = request.args.get("age")
+    age = age if age in guide.AGES else None
+    topic = request.args.get("topic")
+    topic = topic if topic in TOPICS else None
+    return level, q, age, topic
 
 
-def select(lang, side, level, q):
+def select(lang, side, level, q, age=None, topic=None):
     items = gate.filter_visible(store.entries(side), is_adult())
     if level:
         items = [e for e in items if e.get("level") == level]
+    if age:  # entries suited to this age or younger
+        items = [e for e in items if guide.age_fits(e, age)]
+    if topic:
+        items = [e for e in items if e.get("topic") == topic]
     if q:
         items = [e for e in items if store.matches(e, q, lang)]
     return items
@@ -102,8 +114,8 @@ def api_entries():
     side = request.args.get("side")
     if lang not in LANGS or (side and side not in SIDES):
         abort(404)
-    level, q = filters()
-    items = select(lang, side, level, q)
+    level, q, age, topic = filters()
+    items = select(lang, side, level, q, age, topic)
     return {"count": len(items), "entries": [
         {"id": e["id"], "side": e["side"], "title": store.text(e, "title", lang)[0],
          "desc": store.text(e, "desc", lang)[0], "level": e.get("level"), "age_group": e.get("age_group"),
@@ -137,6 +149,13 @@ def grownup():
     return redirect(nxt)
 
 
+@app.errorhandler(404)
+def not_found(_):
+    if request.path.startswith("/api/"):
+        return {"error": "not found"}, 404
+    return "Not found", 404
+
+
 @app.get("/healthz")
 def healthz():
     return {"ok": True}
@@ -152,7 +171,7 @@ def security_headers(resp):
 
 
 def ctx(lang):
-    return {"lang": lang, "langs": LANGS, "rtl": lang in RTL, "ui": UI[lang], "levels": LEVELS, "adult": is_adult()}
+    return {"lang": lang, "langs": LANGS, "rtl": lang in RTL, "ui": {**UI["en"], **UI[lang]}, "levels": LEVELS, "adult": is_adult()}
 
 
 if __name__ == "__main__":

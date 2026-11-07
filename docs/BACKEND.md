@@ -121,3 +121,29 @@ Rule lives in `src/delivery.py`. `store.py` adds `delivery`, `kind` and `attribu
 Hostable lessons have no body text yet. The entry page links to the original until the body is added. Rule for adding one: copy only markdown under `csunplugged/topics/content/` and images under `csunplugged/static/img/`, and show `attribution` on the page.
 
 Routes: `/<lang>/catalogue` (two sections, grouped Beginner, Intermediate, Advanced), `/<lang>/howto/<kind>` (steps, accessibility tips, per-level tips, safety), `/api/catalogue`. The safety gate and the age, topic and level filters apply to all of them.
+
+## Guides and lessons (docs/GUIDE_SPEC.md)
+- `store.guides()`, `store.lessons()`, `store.lesson_by_id()`, `store.lesson_for_entry()` load `guides.json` and `lessons.json` once. Every entry also gets `lesson_id` (or `None`) at load time.
+- `/<lang>/entry/<id>` now calls Eren's `scripts/guide_helpers.py` (`guide_for`, `build_timeline`, `related_entries`, `fill`). It passes localized slides to the template as a stacked list; Isabella turns that into the slide viewer. `?age=` sets the age for the timeline. "Explore next" only lists `kid-safe` entries, even after the grown-up gate.
+- `/<lang>/lessons` (filter `?age=`) and `/<lang>/lesson/<id>`. A lesson is served only if its entry is `reuse == "open-content"` and visible through the gate. Every lesson page has the CC BY-SA credit box (`attribution`, `source_url`, `license_url`, `changes_made`).
+- Missing languages fall back to English per field, and the page says "This text is in English for now."
+- Guide path (`src/guide.py`): ages 5-10 get Beginner only. A short path is shown as is, with a "more is coming" line, never padded with unsafe entries.
+- Labels for these pages are in `src/i18n_lessons.py` (en, es, ar, hi, pt; AI-written, not native-checked). How-to guides and catalogue labels are in `src/i18n_guides.py`.
+
+## Coding problems (in-browser IDE)
+Learners write Python or JavaScript on `/<lang>/problem/<id>`, run it, check it against tests, ask for hints one at a time, or switch to "Guide me" for small steps. No accounts. **Learner code runs in their browser** in a Web Worker (`src/static/runner.js`); it is never sent to our server. The page stops it after 5 seconds. Python uses Pyodide 0.26.4 from cdn.jsdelivr.net (about 10 MB, first run only; no integrity check is possible for a worker script). JavaScript runs with `new Function` inside the worker.
+
+| Piece | Where |
+|-------|-------|
+| Problem text and code (we wrote it) | `scripts/problem_content.py` |
+| Build and proof | `python scripts/build_problems.py` writes `src/data/problems.json` and proves each solution passes, each starter fails, each guided step works (needs `node` for the JavaScript ones) |
+| Format and server-side checks | `src/problems.py` |
+| Pages and API | `/<lang>/problems`, `/<lang>/problem/<id>`, `/api/problems`, `/api/problems/<id>`, `/api/problems/<id>/hint/<n>`, `/api/problems/<id>/solution[?stage=k]` |
+| Page code | `src/static/problem.js`, `src/templates/problem.html` |
+| Labels (en, es, ar, hi, pt) | `src/i18n_problems.py` (keys starting `p_` also go to the browser) |
+
+Hints and answers are not in the page. They are fetched when asked. Tests are in the page (they run in the browser), so the page is not cheat-proof; this is a learning app, not an exam.
+
+Progress: this code does not save anything. When every test passes it fires `document` event `problem:solved` (`detail.id`) and calls `window.HackProgress.markSolved(id)` if that exists. Whoever builds the cookie progress (Eren) only has to define that function.
+
+Add a problem: add it to `scripts/problem_content.py`, run `python scripts/build_problems.py`, commit the JSON. The script refuses a problem whose starter already passes or whose solution fails.

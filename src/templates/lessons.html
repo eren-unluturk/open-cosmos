@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1 class="text-2xl font-bold my-4">{{ ui.lessons_title }}</h1>
+  <p>{{ ui.lessons_intro }}</p>
+  <form method="get" class="my-4 flex flex-wrap gap-2 items-center">
+    <label for="age">{{ ui.age_label }}</label>
+    <select id="age" name="age" class="border rounded px-2 py-1">
+      <option value="">{{ ui.all }}</option>
+      {% for a in ages %}<option value="{{ a }}" {{ 'selected' if a == age }}>{{ a }}</option>{% endfor %}
+    </select>
+    <button class="border rounded px-2 py-1">{{ ui.search }}</button>
+  </form>
+  <ul class="space-y-3">
+    {% for ls in lessons %}
+      <li>
+        <a class="underline font-medium" href="{{ url_for('lesson_page', lang=lang, lesson_id=ls.id) }}">{{ ls.title.get(lang) or ls.title.en }}</a>
+        <span class="text-xs border rounded px-1">{{ ui.ages }} {{ ls.age_group }}</span>
+        <span class="text-xs">{{ ui.lesson_minutes.format(n=ls.duration_minutes) }}</span>
+        <p>{{ ls.summary.get(lang) or ls.summary.en }}</p>
+      </li>
+    {% else %}<li>{{ ui.lessons_none }}</li>{% endfor %}
+  </ul>
+{% endblock %}

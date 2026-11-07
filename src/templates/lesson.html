@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block content %}
+  <article>
+    <h1 class="text-2xl font-bold my-4">{{ v.title }}</h1>
+    <p class="text-sm">{{ ui.ages }} {{ ls.age_group }} · {{ ui.lesson_minutes.format(n=ls.duration_minutes) }}</p>
+    <p class="text-sm text-slate-600">{{ ui.lessons_intro }}</p>
+    {% if english_only %}<p class="text-sm text-slate-600">{{ ui.english_only }}</p>{% endif %}
+    <p class="my-3">{{ v.summary }}</p>
+
+    <h2 class="text-xl font-semibold mt-5">{{ ui.lesson_objectives }}</h2>
+    <ul class="list-disc ps-6">{% for x in v.objectives %}<li>{{ x }}</li>{% endfor %}</ul>
+
+    <h2 class="text-xl font-semibold mt-5">{{ ui.lesson_materials }}</h2>
+    <ul class="list-disc ps-6">{% for x in v.materials %}<li>{{ x }}</li>{% endfor %}</ul>
+
+    <h2 class="text-xl font-semibold mt-5">{{ ui.lesson_steps }}</h2>
+    <ol class="list-decimal ps-6 space-y-2">{% for x in v.steps %}<li>{{ x }}</li>{% endfor %}</ol>
+
+    <h2 class="text-xl font-semibold mt-5">{{ ui.lesson_talk }}</h2>
+    <ul class="list-disc ps-6">{% for x in v.talk_about %}<li>{{ x }}</li>{% endfor %}</ul>
+
+    <h2 class="text-xl font-semibold mt-5">{{ ui.lesson_grown_up }}</h2>
+    <p>{{ v.grown_up_note }}</p>
+
+    <p class="text-sm text-slate-600 mt-4">{{ ui.lesson_pictures }}</p>
+
+    {# CC BY-SA 4.0 credit box. Required on every lesson page. #}
+    <aside class="border rounded p-3 mt-6 text-sm" aria-labelledby="credit-h">
+      <h2 id="credit-h" class="font-semibold">{{ ui.license }}: CC BY-SA 4.0</h2>
+      <p>{{ ls.attribution }}</p>
+      <p>{{ ls.changes_made }}.</p>
+      <p><a class="underline" href="{{ ls.source_url }}" rel="noopener noreferrer">{{ ui.lesson_original }}</a></p>
+      <p><a class="underline" href="{{ ls.license_url }}" rel="noopener noreferrer">{{ ui.lesson_license_link }}</a></p>
+    </aside>
+    <p class="mt-4"><a class="underline" href="{{ url_for('entry_page', lang=lang, entry_id=entry.id) }}">{{ v.title }}</a></p>
+  </article>
+{% endblock %}

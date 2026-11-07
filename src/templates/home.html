@@ -53,6 +53,10 @@
       <span class="gdisc">{{ icon('book') }}</span>
       <span><span class="gname">{{ ui.lessons }}</span><span class="gcount">{{ lesson_count }} {{ ui.kind_unplugged|lower }}</span></span>
     </a>
+    <a class="gtile hue-teal" href="{{ url_for('problems_page', lang=lang) }}">
+      <span class="gdisc">{{ icon('compass') }}</span>
+      <span><span class="gname">{{ ui.problems_title }}</span><span class="gcount">Python · JavaScript</span></span>
+    </a>
     {% for g in galaxies if g.id != (first[0].id if first else '') %}
       <a class="gtile hue-{{ g.hue }}" href="{{ url_for('galaxy', lang=lang, gid=g.id) }}">
         <span class="gdisc">{{ icon(g.icon) }}</span>

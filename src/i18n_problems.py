@@ -51,6 +51,7 @@ UI_EN = {
     "p_too_long": "Your code is too long.",
     "p_cannot_load": "The code runner could not start. Check your connection and try again.",
     "p_english": "This text is in English for now.",
+    "p_solved": "Solved",
 }
 
 UI = {
@@ -99,6 +100,7 @@ UI = {
         "p_too_long": "Tu código es demasiado largo.",
         "p_cannot_load": "No se pudo iniciar el ejecutor de código. Revisa tu conexión e inténtalo de nuevo.",
         "p_english": "Por ahora este texto está en inglés.",
+        "p_solved": "Resuelto",
     },
     "ar": {
         "problems_title": "مسائل البرمجة",
@@ -145,6 +147,7 @@ UI = {
         "p_too_long": "الكود طويل جدًا.",
         "p_cannot_load": "تعذّر تشغيل مشغّل الكود. تحقق من اتصالك وحاول مرة أخرى.",
         "p_english": "هذا النص بالإنجليزية حاليًا.",
+        "p_solved": "تم الحل",
     },
     "hi": {
         "problems_title": "कोडिंग समस्याएँ",
@@ -191,6 +194,7 @@ UI = {
         "p_too_long": "आपका कोड बहुत लंबा है।",
         "p_cannot_load": "कोड चलाने वाला शुरू नहीं हो सका। अपना कनेक्शन जाँचें और फिर कोशिश करें।",
         "p_english": "अभी यह पाठ अंग्रेज़ी में है।",
+        "p_solved": "हल हो गया",
     },
     "pt": {
         "problems_title": "Problemas de programação",
@@ -237,5 +241,6 @@ UI = {
         "p_too_long": "Seu código é muito longo.",
         "p_cannot_load": "Não foi possível iniciar o executor de código. Verifique sua conexão e tente de novo.",
         "p_english": "Por enquanto este texto está em inglês.",
+        "p_solved": "Resolvido",
     },
 }

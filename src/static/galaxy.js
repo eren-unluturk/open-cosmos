@@ -44,6 +44,20 @@
     paint();
   }
 
+  // Only same-site paths may be used as a link target (the store lives in the browser, so treat it as untrusted).
+  function safeUrl(u) { return typeof u === "string" && u.charAt(0) === "/" && u.charAt(1) !== "/" ? u : ""; }
+
+  // Hook for the coding problems (problem.js calls this when every test passes). Same store as "mark explored".
+  window.HackProgress = {
+    markSolved: function (id, meta) {
+      meta = meta || {};
+      var d = read();
+      d[id] = { t: meta.title || id, g: meta.galaxy || "code", s: "", at: Date.now(), u: safeUrl(meta.url), solved: true };
+      write(d);
+      paint();
+    }
+  };
+
   function renderLog(d, galaxies, log) {
     var ids = Object.keys(d).sort(function (a, b) { return d[b].at - d[a].at; });
     var nG = Object.keys(galaxies).length;
@@ -56,7 +70,7 @@
     ids.forEach(function (id) {
       var li = document.createElement("li");
       var a = document.createElement("a");
-      a.href = "/" + lang + "/entry/" + encodeURIComponent(id) + (d[id].g ? "?g=" + encodeURIComponent(d[id].g) + "&s=" + encodeURIComponent(d[id].s || "") : "");
+      a.href = safeUrl(d[id].u) || ("/" + lang + "/entry/" + encodeURIComponent(id) + (d[id].g ? "?g=" + encodeURIComponent(d[id].g) + "&s=" + encodeURIComponent(d[id].s || "") : ""));
       a.textContent = d[id].t || id;
       li.appendChild(a);
       log.appendChild(li);

@@ -1,37 +1,52 @@
 {% extends "base.html" %}
+{% from "macros.html" import icon with context %}
+{% block title %}{{ ui.problems_title }} · {{ ui.brand }}{% endblock %}
 {% block content %}
-  <h1 class="text-2xl font-bold my-4">{{ ui.problems_title }}</h1>
-  <p>{{ ui.problems_intro }}</p>
-  <form method="get" role="search" class="my-4 flex flex-wrap gap-2 items-center">
-    <label for="q" class="sr-only">{{ ui.search }}</label>
-    <input id="q" name="q" value="{{ q }}" maxlength="80" class="border rounded px-2 py-1" placeholder="{{ ui.search }}">
-    <label for="language">{{ ui.p_language }}</label>
-    <select id="language" name="language" class="border rounded px-2 py-1">
+<link rel="stylesheet" href="{{ url_for('static', filename='problems.css') }}">
+<h1 class="bubble">{{ ui.problems_title }}</h1>
+<p class="lede">{{ ui.problems_intro }}</p>
+
+<form class="prob-filters" method="get" role="search">
+  <label>{{ ui.search }}
+    <input class="field" name="q" value="{{ q }}" maxlength="80" type="search">
+  </label>
+  <label>{{ ui.p_language }}
+    <select class="field" name="language">
       <option value="">{{ ui.all }}</option>
       {% for l in languages %}<option value="{{ l }}" {{ 'selected' if l == language }}>{{ ui['p_lang_' ~ l] }}</option>{% endfor %}
     </select>
-    <label for="level">Level</label>
-    <select id="level" name="level" class="border rounded px-2 py-1">
+  </label>
+  <label>Level
+    <select class="field" name="level">
       <option value="">{{ ui.all }}</option>
-      {% for l in levels %}<option value="{{ l }}" {{ 'selected' if l == level }}>{{ l }}</option>{% endfor %}
+      {% for l in levels %}<option value="{{ l }}" {{ 'selected' if l == level }}>{{ ui['lvl_' ~ l] }}</option>{% endfor %}
     </select>
-    <label for="age">{{ ui.age_label }}</label>
-    <select id="age" name="age" class="border rounded px-2 py-1">
+  </label>
+  <label>{{ ui.age_label }}
+    <select class="field" name="age">
       <option value="">{{ ui.all }}</option>
       {% for a in ages %}<option value="{{ a }}" {{ 'selected' if a == age }}>{{ a }}</option>{% endfor %}
     </select>
-    <button class="border rounded px-2 py-1">{{ ui.search }}</button>
-  </form>
-  {% if lang != 'en' %}<p class="text-sm text-slate-600">{{ ui.p_english }}</p>{% endif %}
-  <ul class="space-y-3">
-    {% for p in problems %}
-      <li>
-        <a class="underline font-medium" href="{{ url_for('problem_page', lang=lang, problem_id=p.id) }}">{{ p.title.get(lang) or p.title.en }}</a>
-        <span class="text-xs border rounded px-1">{{ ui['p_lang_' ~ p.language] }}</span>
-        <span class="text-xs border rounded px-1">{{ p.level }}</span>
-        <span class="text-xs">{{ ui.ages }} {{ p.age_group }}</span>
-        <p class="text-sm">{{ (p.concepts.get(lang) or p.concepts.en) | join(', ') }}</p>
-      </li>
-    {% else %}<li>{{ ui.problems_none }}</li>{% endfor %}
-  </ul>
+  </label>
+  <button class="btn btn-gold" type="submit">{{ icon('search') }} {{ ui.search }}</button>
+</form>
+{% if lang != 'en' %}<p class="attrib">{{ ui.p_english }}</p>{% endif %}
+
+<div class="grid">
+  {% for p in problems %}
+    <article class="panel prob-card" data-id="{{ p.id }}">
+      <div class="meta">
+        <span class="chip teal">{{ ui['p_lang_' ~ p.language] }}</span>
+        <span class="chip">{{ icon(level_icon[p.level]) }} {{ ui['lvl_' ~ p.level] }}</span>
+        <span class="chip">{{ ui.ages }} {{ p.age_group }}</span>
+        <span class="chip gold solved-badge">{{ icon('star-f') }} {{ ui.p_solved }}</span>
+      </div>
+      <h2><a href="{{ url_for('problem_page', lang=lang, problem_id=p.id) }}">{{ tr(p.title, lang) }}</a></h2>
+      <p class="concepts">{{ tr(p.concepts, lang) | join(', ') }}</p>
+      <a class="btn btn-ghost btn-sm" href="{{ url_for('problem_page', lang=lang, problem_id=p.id) }}">{{ ui.p_start }}</a>
+    </article>
+  {% else %}
+    <div class="panel"><p>{{ ui.problems_none }}</p></div>
+  {% endfor %}
+</div>
 {% endblock %}

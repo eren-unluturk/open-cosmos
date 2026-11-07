@@ -459,6 +459,49 @@ class ProblemTests(unittest.TestCase):
         self.assertIn("{i}", i18n_problems.UI["ar"]["p_hint_n"])
 
 
+class ProblemGalaxyThemeTests(unittest.TestCase):
+    def setUp(self):
+        app.config["TESTING"] = True
+        self.c = app.test_client()
+
+    def test_problem_pages_use_the_galaxy_theme(self):
+        for path in ("/en/problems", "/en/problem/py-double", "/ar/problem/js-add"):
+            html = self.c.get(path).get_data(as_text=True)
+            self.assertIn("galaxy.css", html, path)
+            self.assertIn("problems.css", html, path)
+            self.assertNotIn("cdn.tailwindcss.com", html, path)
+
+    def test_every_hook_problem_js_needs_is_in_the_page(self):
+        import re
+        js = (Path(SRC) / "static" / "problem.js").read_text(encoding="utf-8")
+        wanted = set(re.findall(r'\$\("([a-z-]+)"\)', js))
+        html = self.c.get("/en/problem/py-double").get_data(as_text=True)
+        for ident in wanted:
+            self.assertIn(f'id="{ident}"', html, ident)
+        self.assertIn('name="mode"', html)
+        self.assertIn("data-needs-idle", html)
+
+    def test_links_to_problems_exist(self):
+        self.assertIn("/en/problems", self.c.get("/en/").get_data(as_text=True))
+        self.assertIn("/es/problems", self.c.get("/es/lessons").get_data(as_text=True))
+
+    def test_solved_badge_hook(self):
+        html = self.c.get("/en/problems").get_data(as_text=True)
+        self.assertIn('data-id="py-hello"', html)
+        self.assertIn("solved-badge", html)
+
+    def test_progress_hook_is_defined_and_only_same_site_links(self):
+        js = (Path(SRC) / "static" / "galaxy.js").read_text(encoding="utf-8")
+        self.assertIn("window.HackProgress", js)
+        self.assertIn("markSolved", js)
+        self.assertIn("function safeUrl", js)
+
+    def test_solved_label_in_every_language(self):
+        import i18n_problems
+        for lang, labels in i18n_problems.UI.items():
+            self.assertTrue(labels["p_solved"] and "?" not in labels["p_solved"], lang)
+
+
 class TranslationParityTests(unittest.TestCase):
     def test_ui_labels_complete(self):
         import i18n_guides

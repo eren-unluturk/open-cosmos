@@ -277,7 +277,8 @@ def problem_page(lang, problem_id):
         "preamble": p.get("preamble", ""),
         "prelude": problem_kit.PRELUDE_PY if p["language"] == "python" else problem_kit.PRELUDE_JS,
         "tests": localize_tests(p["tests"], lang), "stages": stages, "hint_count": len(p["hints"]["en"]),
-        "max_code": problem_kit.MAX_CODE,
+        "max_code": problem_kit.MAX_CODE, "title": title, "galaxy": "code",
+        "url": url_for("problem_page", lang=lang, problem_id=p["id"]),
         "ui": {k: v for k, v in ctx(lang)["ui"].items() if k.startswith("p_")},
     }
     return render_template("problem.html", p=p, title=title, prompt=prompt, concepts=concepts, config=config,

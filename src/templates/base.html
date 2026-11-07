@@ -89,6 +89,7 @@
     </p>
     <p>{{ ui.footer_3 }}</p>
     <nav class="footer-links" aria-label="More">
+      <a href="{{ url_for('problems_page', lang=lang) }}">{{ ui.problems_title }}</a>
       <a href="{{ url_for('lessons_page', lang=lang) }}">{{ ui.lessons }}</a>
       <a href="{{ url_for('guide_page', lang=lang) }}">{{ ui.guide }}</a>
       <a href="{{ url_for('catalogue', lang=lang) }}">{{ ui.catalogue }}</a>

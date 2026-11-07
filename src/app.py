@@ -2,6 +2,7 @@
 import os
 import secrets
 import sys
+from functools import lru_cache
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -15,6 +16,8 @@ import i18n_lessons
 import i18n_problems
 import problems as problem_kit
 import store
+import tracks
+from ui_strings import UI as GALAXY_UI
 
 # The data lead owns scripts/guide_helpers.py (pure Python). We import it as is.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
@@ -32,19 +35,8 @@ LANGS = {"en": "English", "es": "Español", "ar": "العربية", "hi": "ह�
 RTL = {"ar"}
 LEVELS = ["Beginner", "Intermediate", "Advanced"]
 
-# UI strings per language. Backend/frontend leads: extend as pages grow.
-UI = {
-    "en": {"guide": "What should I learn?", "start": "Show my path", "learn": "Learn", "build": "Build", "all": "All levels", "source": "Source", "license": "License",
-           "tagline": "Open-source programming resources, in your language."},
-    "es": {"guide": "¿Qué debo aprender?", "start": "Mostrar mi ruta", "learn": "Aprender", "build": "Construir", "all": "Todos los niveles", "source": "Fuente", "license": "Licencia",
-           "tagline": "Recursos de programación de código abierto, en tu idioma."},
-    "ar": {"guide": "ماذا أتعلّم؟", "start": "اعرض مساري", "learn": "تعلّم", "build": "ابنِ", "all": "كل المستويات", "source": "المصدر", "license": "الرخصة",
-           "tagline": "موارد برمجة مفتوحة المصدر بلغتك."},
-    "hi": {"guide": "मुझे क्या सीखना चाहिए?", "start": "मेरा रास्ता दिखाएँ", "learn": "सीखें", "build": "बनाएँ", "all": "सभी स्तर", "source": "स्रोत", "license": "लाइसेंस",
-           "tagline": "ओपन-सोर्स प्रोग्रामिंग संसाधन, आपकी भाषा में।"},
-    "pt": {"guide": "O que devo aprender?", "start": "Mostrar meu caminho", "learn": "Aprender", "build": "Construir", "all": "Todos os níveis", "source": "Fonte", "license": "Licença",
-           "tagline": "Recursos de programação open source, no seu idioma."},
-}
+# UI strings: galaxy frontend strings live in ui_strings.py; guide/lesson labels in i18n_*.py are layered on top.
+UI = GALAXY_UI
 
 
 KIDS_LABEL = {"en": "For kids", "es": "Para niños", "ar": "للأطفال", "hi": "बच्चों के लिए", "pt": "Para crianças"}
@@ -76,7 +68,10 @@ def index():
 def home(lang):
     if lang not in LANGS:
         abort(404)
-    return render_template("home.html", **ctx(lang))
+    u, lv = universe(), level_pref()
+    rows = [(g, u.row(g, lv)) for g in u.galaxies]
+    return render_template("home.html", suggestions=u.suggestions(3, lv), rows=rows,
+                           lesson_count=len(store.lessons()), **ctx(lang))
 
 
 @app.route("/<lang>/<side>")
@@ -168,11 +163,24 @@ def entry_page(lang, entry_id):
     slides, english_only, timeline = localize_slides(resolved["slides"], e, age, lang)
     visible_entries = [x for x in store.entries() if x.get("safety") == "kid-safe"]  # never the grown-up tier
     related = guide_helpers.related_entries(e, visible_entries, age=age)
+    # where this entry sits on the galaxy map (breadcrumbs + path strip)
+    u = universe()
+    gid, sid = request.args.get("g"), request.args.get("s")
+    if (gid, sid) not in u.membership.get(entry_id, []):
+        gid, sid = u.home_of(entry_id)
+    nb = u.neighbours(gid, sid, entry_id) if gid else {"index": None, "stops": [], "suggested": []}
     return render_template("entry.html", e=e, title=title, desc=desc, fell_back=fb_title or fb_desc,
+                           gid=gid, sid=sid, nb=nb,
                            guide=delivery.guide_for(e["kind"], lang), slides=slides, timeline=timeline,
                            guide_english_only=english_only and lang != "en", related=related, age=age,
                            lesson=store.lesson_for_entry(e["id"]) if e.get("reuse") == "open-content" else None,
                            is_ai=lang in e.get("ai_translated", []), **ctx(lang))
+
+
+@app.route("/<lang>/stop/<entry_id>")
+def stop_redirect(lang, entry_id):
+    """Old galaxy URL; kept so saved progress links keep working."""
+    return redirect(url_for("entry_page", lang=lang, entry_id=entry_id, **request.args))
 
 
 @app.route("/<lang>/lessons")
@@ -399,6 +407,92 @@ def guide_page(lang):
                            age=age, goal=goal, level=level, **ctx(lang))
 
 
+# --- galaxy pages (frontend, docs/FRONTEND.md) ---
+@lru_cache(maxsize=2)
+def _universe(adult):
+    return tracks.Universe(store.entries(), adult)
+
+
+def universe():
+    return _universe(is_adult())
+
+
+def level_pref():
+    lv = request.args.get("level") or session.get("level")
+    return lv if lv in LEVELS else None
+
+
+@app.route("/<lang>/constellation")
+def constellation(lang):
+    if lang not in LANGS:
+        abort(404)
+    return render_template("constellation.html", links=tracks.LINKS, **ctx(lang))
+
+
+@app.route("/<lang>/galaxy/<gid>")
+def galaxy(lang, gid):
+    u = universe()
+    g = u.g.get(gid)
+    if lang not in LANGS or g is None:
+        abort(404)
+    return render_template("galaxy.html", g=g, layout=u.orbit_layout(g), **ctx(lang))
+
+
+@app.route("/<lang>/galaxy/<gid>/<sid>")
+def system(lang, gid, sid):
+    u = universe()
+    s = u.system(gid, sid)
+    if lang not in LANGS or s is None:
+        abort(404)
+    return render_template("system.html", g=u.g[gid], s=s, **ctx(lang))
+
+
+@app.route("/<lang>/library")
+def library(lang):
+    if lang not in LANGS:
+        abort(404)
+    u = universe()
+    q = (request.args.get("q") or "").strip()[:80]
+    gid = request.args.get("g")
+    gid = gid if gid in u.g else None
+    lv = level_pref()
+    pool = u.all if not gid else [e for s in u.g[gid]["systems"] for e in s["stops"]]
+    seen, results = set(), []
+    for e in sorted(pool, key=tracks.stop_sort_key):
+        if e["id"] in seen or not u.visible(e) or (lv and e.get("level") != lv) or (q and not store.matches(e, q, lang)):
+            continue
+        seen.add(e["id"])
+        g, s = u.home_of(e["id"])
+        results.append({"e": e, "galaxy": g, "system": s})
+    page = max(1, request.args.get("page", 1, type=int))
+    hidden = 0 if (q or gid or is_adult()) else len([e for e in u.all if not u.visible(e)])
+    return render_template("library.html", q=q, gid=gid, results=results[: page * 48], total=len(results),
+                           page=page, hidden=hidden, **ctx(lang))
+
+
+@app.route("/<lang>/me")
+def me(lang):
+    if lang not in LANGS:
+        abort(404)
+    return render_template("me.html", **ctx(lang))
+
+
+@app.post("/<lang>/prefs")
+def prefs(lang):
+    """Level filter (Beginner robot / Intermediate alien / Advanced astronaut). Session only."""
+    if lang not in LANGS:
+        abort(404)
+    lv = request.form.get("level", "")
+    if lv in LEVELS:
+        session["level"] = lv
+    else:
+        session.pop("level", None)
+    nxt = request.form.get("next") or url_for("home", lang=lang)
+    if not nxt.startswith("/") or nxt.startswith("//"):  # block open redirects
+        nxt = "/"
+    return redirect(nxt)
+
+
 @app.post("/grownup")
 def grownup():
     # Session-only flag. No account, nothing stored on the server.
@@ -434,7 +528,27 @@ def security_headers(resp):
 
 
 def ctx(lang):
-    return {"lang": lang, "langs": LANGS, "rtl": lang in RTL, "ui": {**UI["en"], **UI[lang]}, "levels": LEVELS, "adult": is_adult()}
+    u = universe()
+    return {"lang": lang, "langs": LANGS, "rtl": lang in RTL, "ui": UI[lang], "levels": LEVELS, "adult": is_adult(),
+            "grownup": is_adult(), "u": u, "galaxies": u.galaxies, "cur_level": level_pref(),
+            "difficulty": tracks.difficulty, "kind_of": tracks.kind, "level_icon": tracks.LEVEL_ICON}
+
+
+@app.context_processor
+def helpers():
+    def switch_lang(code):
+        path = request.path
+        if request.view_args and "lang" in request.view_args:
+            path = path.replace("/" + request.view_args["lang"], "/" + code, 1)
+        qs = request.query_string.decode()
+        return path + ("?" + qs if qs else "")
+
+    def tr(field, lang):
+        if not isinstance(field, dict):
+            return field or ""
+        return field.get(lang) or field.get("en", "")
+
+    return {"switch_lang": switch_lang, "tr": tr}
 
 
 if __name__ == "__main__":

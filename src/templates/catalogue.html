@@ -1,47 +1,39 @@
 {% extends "base.html" %}
+{% block title %}{{ ui.catalogue }} · {{ ui.brand }}{% endblock %}
 {% block content %}
-  <h1 class="text-2xl font-bold my-4">{{ ui.cat_title }}</h1>
-  <form method="get" role="search" class="mb-4 flex flex-wrap gap-2">
-    <label for="q" class="sr-only">{{ ui.search }}</label>
-    <input id="q" name="q" value="{{ q }}" maxlength="80" class="border rounded px-2 py-1" placeholder="{{ ui.search }}">
-    <label for="level" class="sr-only">Level</label>
-    <select id="level" name="level" class="border rounded px-2 py-1">
-      <option value="">{{ ui.all }}</option>
-      {% for l in levels %}<option value="{{ l }}" {{ 'selected' if l == level }}>{{ l }}</option>{% endfor %}
-    </select>
-    <button class="border rounded px-2 py-1">{{ ui.search }}</button>
-  </form>
+<h1 class="bubble">{{ ui.catalogue }}</h1>
+<form method="get" role="search" class="filters">
+  <label for="cq" class="sr-only">{{ ui.search_btn }}</label>
+  <input id="cq" name="q" value="{{ q }}" maxlength="80" class="field" placeholder="{{ ui.search_btn }}">
+  <label for="level" class="sr-only">{{ ui.level }}</label>
+  <select id="level" name="level" class="field">
+    <option value="">{{ ui.all }}</option>
+    {% for l in levels %}<option value="{{ l }}" {{ 'selected' if l == level }}>{{ ui['lvl_' ~ l] }}</option>{% endfor %}
+  </select>
+  <button class="btn btn-gold btn-sm">{{ ui.search_btn }}</button>
+</form>
 
-  <section aria-labelledby="hostable-h">
-    <h2 id="hostable-h" class="text-xl font-semibold mt-6">{{ ui.cat_here }}</h2>
-    <p class="text-sm">{{ ui.cat_here_note }}</p>
-    {% for lvl, items in groups.hostable.items() %}
-      <h3 class="font-semibold mt-4">{{ lvl }} ({{ items|length }})</h3>
-      <ul class="space-y-2 mt-1">
-        {% for e in items %}
-          <li><a class="underline" href="{{ url_for('entry_page', lang=lang, entry_id=e.id) }}">{{ e.title.get(lang) or e.title.en }}</a>
-            <span class="text-xs border rounded px-1">{{ ui['kind_' ~ e.kind] }}</span>
-            <span class="text-xs">{{ ui.ages }} {{ e.age_group }}</span>
-            {% if e.lesson_id %}<span class="text-xs border rounded px-1">{{ ui.has_lesson }}</span>{% endif %}</li>
-        {% endfor %}
-      </ul>
-    {% else %}<p>{{ ui.no_matches }}</p>{% endfor %}
-  </section>
+<section aria-labelledby="hostable-h">
+  <h2 id="hostable-h" class="section-title">{{ ui.on_this_site }}</h2>
+  <p class="muted">{{ ui.hostable_note }}</p>
+  {% for lvl, items in groups.hostable.items() %}
+    <h3 class="sub-h">{{ ui['lvl_' ~ lvl] }} <span class="muted">({{ items|length }})</span></h3>
+    <ul class="plain-list">
+      {% for e in items %}<li><a href="{{ url_for('entry_page', lang=lang, entry_id=e.id) }}">{{ e.title.get(lang) or e.title.en }}</a> <span class="flag">{{ e.kind }}</span> <span class="flag">{{ ui.ages }} {{ e.age_group }}</span></li>{% endfor %}
+    </ul>
+  {% else %}<p>{{ ui.no_results }}</p>{% endfor %}
+</section>
 
-  <section aria-labelledby="external-h">
-    <h2 id="external-h" class="text-xl font-semibold mt-8">{{ ui.cat_other }}</h2>
-    <p class="text-sm">{{ ui.cat_other_note }}
-      {% for k in kinds %}<a class="underline" href="{{ url_for('howto', lang=lang, kind=k) }}">{{ ui['kind_' ~ k] }}</a>{{ ', ' if not loop.last }}{% endfor %}
-    </p>
-    {% for lvl, items in groups.external.items() %}
-      <h3 class="font-semibold mt-4">{{ lvl }} ({{ items|length }})</h3>
-      <ul class="space-y-2 mt-1">
-        {% for e in items[:50] %}
-          <li><a class="underline" href="{{ url_for('entry_page', lang=lang, entry_id=e.id) }}">{{ e.title.get(lang) or e.title.en }}</a>
-            <span class="text-xs border rounded px-1">{{ ui['kind_' ~ e.kind] }}</span></li>
-        {% endfor %}
-        {% if items|length > 50 %}<li class="text-sm">{{ ui.more.format(n=items|length - 50) }}</li>{% endif %}
-      </ul>
-    {% else %}<p>{{ ui.no_matches }}</p>{% endfor %}
-  </section>
+<section aria-labelledby="external-h">
+  <h2 id="external-h" class="section-title">{{ ui.on_other_site }}</h2>
+  <p class="muted">{{ ui.external_note }}
+    {% for k, g in kinds.items() %}<a href="{{ url_for('howto', lang=lang, kind=k) }}">{{ k }}</a>{{ ', ' if not loop.last }}{% endfor %}.</p>
+  {% for lvl, items in groups.external.items() %}
+    <h3 class="sub-h">{{ ui['lvl_' ~ lvl] }} <span class="muted">({{ items|length }})</span></h3>
+    <ul class="plain-list">
+      {% for e in items[:50] %}<li><a href="{{ url_for('entry_page', lang=lang, entry_id=e.id) }}">{{ e.title.get(lang) or e.title.en }}</a> <span class="flag">{{ e.kind }}</span></li>{% endfor %}
+      {% if items|length > 50 %}<li class="muted">+{{ items|length - 50 }}</li>{% endif %}
+    </ul>
+  {% else %}<p>{{ ui.no_results }}</p>{% endfor %}
+</section>
 {% endblock %}

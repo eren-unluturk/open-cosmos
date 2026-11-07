@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% from "macros.html" import card, grownup_notice with context %}
+{% block title %}{{ ui.everything }} · {{ ui.brand }}{% endblock %}
+{% block content %}
+<h1 class="bubble">{{ ui.everything }}</h1>
+<nav class="filters" aria-label="{{ ui.subjects }}">
+  <a class="pill" href="{{ url_for('library', lang=lang, q=q or None) }}" {% if not gid %}aria-current="page"{% endif %}>{{ ui.all_galaxies }}</a>
+  {% for g in galaxies %}
+    <a class="pill" href="{{ url_for('library', lang=lang, q=q or None, g=g.id) }}" {% if gid == g.id %}aria-current="page"{% endif %}>{{ ui['g_' ~ g.id] }}</a>
+  {% endfor %}
+</nav>
+<p class="muted" role="status"><strong style="color:var(--gold)">{{ total }}</strong> {{ ui.results }}{% if q %} · “{{ q }}”{% endif %}{% if cur_level %} · {{ ui['lvl_' ~ cur_level] }}{% endif %}</p>
+<div class="grid">
+  {% for item in results %}{{ card(item, lang, ui, u, difficulty, kind_of, level_icon, chip=(ui['g_' ~ item.galaxy] if item.galaxy else None)) }}{% endfor %}
+</div>
+{% if not results %}<div class="panel"><p>{{ ui.no_results }}</p></div>{% endif %}
+{% if total > results|length %}
+  <p style="text-align:center;margin-top:24px"><a class="btn btn-violet" href="{{ url_for('library', lang=lang, q=q or None, g=gid, page=page + 1) }}">{{ ui.more }}</a></p>
+{% endif %}
+{{ grownup_notice(hidden, lang, ui) }}
+{% endblock %}

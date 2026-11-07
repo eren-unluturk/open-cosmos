@@ -1,37 +1,54 @@
 {% extends "base.html" %}
+{% from "macros.html" import icon with context %}
+{% block title %}{{ tr(ls.title, lang) }} · {{ ui.brand }}{% endblock %}
 {% block content %}
-  <article>
-    <h1 class="text-2xl font-bold my-4">{{ v.title }}</h1>
-    <p class="text-sm">{{ ui.ages }} {{ ls.age_group }} · {{ ui.lesson_minutes.format(n=ls.duration_minutes) }}</p>
-    <p class="text-sm text-slate-600">{{ ui.lessons_intro }}</p>
-    {% if english_only %}<p class="text-sm text-slate-600">{{ ui.english_only }}</p>{% endif %}
-    <p class="my-3">{{ v.summary }}</p>
+<nav class="crumbs" aria-label="Breadcrumb">
+  <a href="{{ url_for('lessons_page', lang=lang) }}">{{ ui.lessons }}</a>
+  {% if entry %}<span aria-hidden="true">›</span><a href="{{ url_for('entry_page', lang=lang, entry_id=entry.id) }}">{{ tr(entry.title, lang) }}</a>{% endif %}
+</nav>
+<h1 class="bubble" lang="{{ lang if ls.title.get(lang) else 'en' }}">{{ tr(ls.title, lang) }}</h1>
+<div class="meta">
+  <span class="chip teal">{{ ui.ages }} {{ ls.age_group }}</span>
+  <span class="chip">{{ ls.duration_minutes }} {{ ui.min }}</span><span class="flag warn">{{ ui.estimate }}</span>
+  <span class="chip">{{ ui.kind_unplugged }}</span>
+</div>
+<p class="lede">{{ tr(ls.summary, lang) }}</p>
+{% if english_only %}<p class="attrib">{{ ui.english_only }}</p>{% endif %}
+{% if entry %}
+<p><button class="btn btn-ghost" type="button" data-explore="{{ entry.id }}" data-g="science" data-s="" data-title="{{ tr(ls.title, lang) }}"
+   data-on="{{ ui.unmark }}" data-off="{{ ui.mark_explored }}" aria-pressed="false">{{ icon('star-o', 'off') }}{{ icon('star-f', 'onstar') }} <span class="lab">{{ ui.mark_explored }}</span></button></p>
+{% endif %}
 
-    <h2 class="text-xl font-semibold mt-5">{{ ui.lesson_objectives }}</h2>
-    <ul class="list-disc ps-6">{% for x in v.objectives %}<li>{{ x }}</li>{% endfor %}</ul>
+<div class="lesson-grid">
+  <div class="lesson-main">
+    <h2 class="section-title">{{ ui.steps_h }}</h2>
+    <ol class="steps big">{% for st in tr(ls.steps, lang) %}<li>{{ st }}</li>{% endfor %}</ol>
 
-    <h2 class="text-xl font-semibold mt-5">{{ ui.lesson_materials }}</h2>
-    <ul class="list-disc ps-6">{% for x in v.materials %}<li>{{ x }}</li>{% endfor %}</ul>
+    <h2 class="section-title">{{ ui.talk_about }}</h2>
+    <ul class="talk">{% for q in tr(ls.talk_about, lang) %}<li>{{ q }}</li>{% endfor %}</ul>
+  </div>
+  <aside class="lesson-side">
+    <div class="panel">
+      <h2 class="side-h">{{ ui.objectives }}</h2>
+      <ul class="ticks">{% for o in tr(ls.objectives, lang) %}<li>{{ o }}</li>{% endfor %}</ul>
+    </div>
+    <div class="panel">
+      <h2 class="side-h">{{ ui.materials }}</h2>
+      <ul class="ticks">{% for m in tr(ls.materials, lang) %}<li>{{ m }}</li>{% endfor %}</ul>
+    </div>
+    <div class="panel adult-panel">
+      <h2 class="side-h with-i">{{ icon('grownup') }} {{ ui.grown_up_note }}</h2>
+      <p>{{ tr(ls.grown_up_note, lang) }}</p>
+    </div>
+  </aside>
+</div>
 
-    <h2 class="text-xl font-semibold mt-5">{{ ui.lesson_steps }}</h2>
-    <ol class="list-decimal ps-6 space-y-2">{% for x in v.steps %}<li>{{ x }}</li>{% endfor %}</ol>
-
-    <h2 class="text-xl font-semibold mt-5">{{ ui.lesson_talk }}</h2>
-    <ul class="list-disc ps-6">{% for x in v.talk_about %}<li>{{ x }}</li>{% endfor %}</ul>
-
-    <h2 class="text-xl font-semibold mt-5">{{ ui.lesson_grown_up }}</h2>
-    <p>{{ v.grown_up_note }}</p>
-
-    <p class="text-sm text-slate-600 mt-4">{{ ui.lesson_pictures }}</p>
-
-    {# CC BY-SA 4.0 credit box. Required on every lesson page. #}
-    <aside class="border rounded p-3 mt-6 text-sm" aria-labelledby="credit-h">
-      <h2 id="credit-h" class="font-semibold">{{ ui.license }}: CC BY-SA 4.0</h2>
-      <p>{{ ls.attribution }}</p>
-      <p>{{ ls.changes_made }}.</p>
-      <p><a class="underline" href="{{ ls.source_url }}" rel="noopener noreferrer">{{ ui.lesson_original }}</a></p>
-      <p><a class="underline" href="{{ ls.license_url }}" rel="noopener noreferrer">{{ ui.lesson_license_link }}</a></p>
-    </aside>
-    <p class="mt-4"><a class="underline" href="{{ url_for('entry_page', lang=lang, entry_id=entry.id) }}">{{ v.title }}</a></p>
-  </article>
+<section class="panel cc-box" aria-labelledby="cc-h">
+  <h2 id="cc-h" class="side-h">CC BY-SA 4.0</h2>
+  <p>{{ ls.attribution }}</p>
+  <p><a href="{{ ls.source_url }}" rel="noopener noreferrer">{{ ui.lesson_original }}</a> · <a href="{{ ls.license_url }}" rel="noopener noreferrer">{{ ui.lesson_license_link }}</a></p>
+  <p class="attrib">{{ ui.lesson_pictures }}</p>
+  <p><strong>{{ ui.changes }}:</strong> {{ ls.changes_made }}</p>
+  <p class="attrib">{{ ui.sharealike }}</p>
+</section>
 {% endblock %}

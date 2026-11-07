@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% from "macros.html" import card, flow, grownup_notice, icon with context %}
+{% block title %}{{ ui['s_' ~ s.id] }} · {{ ui.brand }}{% endblock %}
+{% block content %}
+<nav class="crumbs" aria-label="Breadcrumb">
+  <a href="{{ url_for('constellation', lang=lang) }}">{{ ui.constellation }}</a> <span aria-hidden="true">›</span>
+  <a href="{{ url_for('galaxy', lang=lang, gid=g.id) }}">{{ ui['g_' ~ g.id] }}</a> <span aria-hidden="true">›</span>
+  <span>{{ ui['s_' ~ s.id] }}</span>
+</nav>
+<h1 class="bubble">{{ ui['s_' ~ s.id] }}</h1>
+<p class="lede">{{ ui['gb_' ~ g.id] }}</p>
+
+{% if s.stops %}
+  <h2 class="section-title">{{ ui.path_title }} {{ ui['s_' ~ s.id] }}</h2>
+  {{ flow(s.stops, 0, 10, g.id, s.id, lang, ui) }}
+  <div class="launch-row"><a class="btn btn-gold" href="{{ url_for('entry_page', lang=lang, entry_id=s.stops[0].id, g=g.id, s=s.id) }}">{{ icon('rocket') }} {{ ui.stop }} 1</a></div>
+{% endif %}
+
+{{ grownup_notice(s.hidden, lang, ui) }}
+
+<h2 class="section-title">{{ s.stops|length }} {{ ui.stops }}</h2>
+<div class="grid">
+  {% for e in s.stops[:60] %}{{ card({'e': e, 'galaxy': g.id, 'system': s.id}, lang, ui, u, difficulty, kind_of, level_icon, chip=ui.stop ~ ' ' ~ loop.index) }}{% endfor %}
+</div>
+{% if s.stops|length > 60 %}<p><a class="btn btn-ghost" href="{{ url_for('library', lang=lang, g=g.id) }}">{{ ui.more }} →</a></p>{% endif %}
+{% endblock %}

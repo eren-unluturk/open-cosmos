@@ -1,72 +1,82 @@
 {% extends "base.html" %}
+{% block title %}{{ title }} · {{ ui.brand }}{% endblock %}
 {% block content %}
-  <article>
-    <h1 class="text-2xl font-bold my-4">{{ title }}</h1>
-    <p class="text-sm">
-      <span class="border rounded px-1">{{ ui['p_lang_' ~ p.language] }}</span>
-      <span class="border rounded px-1">{{ p.level }}</span>
-      {{ ui.ages }} {{ p.age_group }}
-    </p>
-    {% if english_only %}<p class="text-sm text-slate-600">{{ ui.p_english }}</p>{% endif %}
+<nav class="crumbs" aria-label="Breadcrumb"><a href="{{ url_for('problems_page', lang=lang) }}">{{ ui.problems_title }}</a></nav>
+<article class="problem">
+  <h1 class="bubble">{{ title }}</h1>
+  <div class="meta">
+    <span class="chip {{ 'gold' if p.language == 'python' else 'teal' }}">{{ ui['p_lang_' ~ p.language] }}</span>
+    <span class="chip">{{ ui['lvl_' ~ p.level] }}</span>
+    <span class="flag">{{ ui.ages }} {{ p.age_group }}</span>
+    {% if english_only %}<span class="flag">{{ ui.p_english }}</span>{% endif %}
+  </div>
 
-    <noscript><p class="my-4 border rounded p-3">{{ ui.p_noscript }}</p></noscript>
+  <noscript><p class="panel notice">{{ ui.p_noscript }}</p></noscript>
 
-    <section class="my-4" aria-labelledby="prompt-h">
-      <h2 id="prompt-h" class="text-xl font-semibold">{{ ui.p_prompt }}</h2>
-      <p>{{ prompt }}</p>
-      {% if concepts %}<p class="text-sm mt-2">{{ ui.p_concepts }}: {{ concepts | join(', ') }}</p>{% endif %}
-    </section>
+  <section class="slide prompt-box" aria-labelledby="prompt-h">
+    <h2 id="prompt-h" class="slide-title">{{ ui.p_prompt }}</h2>
+    <p class="slide-body">{{ prompt }}</p>
+    {% if concepts %}<p class="attrib">{{ ui.p_concepts }}: {{ concepts | join(', ') }}</p>{% endif %}
+  </section>
 
-    <fieldset class="my-4">
-      <legend class="sr-only">Mode</legend>
-      <label class="me-4"><input type="radio" name="mode" value="alone" checked> {{ ui.p_solve_alone }}</label>
-      <label id="mode-guided-wrap"><input type="radio" name="mode" value="guided"> {{ ui.p_guide_me }}</label>
-    </fieldset>
-
-    <section id="guide-panel" class="border rounded p-3 my-4" aria-labelledby="stage-count" hidden>
-      <h2 id="stage-count" class="font-semibold"></h2>
-      <p id="stage-goal" class="font-medium"></p>
-      <p id="stage-explain"></p>
-      <div class="mt-2 flex flex-wrap gap-2">
-        <button type="button" id="prev" class="border rounded px-2 py-1">{{ ui.p_prev }}</button>
-        <button type="button" id="next" class="border rounded px-2 py-1">{{ ui.p_next }}</button>
-        <button type="button" id="example" class="border rounded px-2 py-1">{{ ui.p_example }}</button>
-      </div>
-    </section>
-
-    <label for="code" class="font-semibold block mt-4">{{ ui.p_editor }}</label>
-    <textarea id="code" class="w-full border rounded p-2 font-mono text-sm" rows="14" spellcheck="false"
-              autocapitalize="off" autocomplete="off" autocorrect="off" dir="ltr" aria-describedby="tab-tip privacy"></textarea>
-    <p id="tab-tip" class="text-xs text-slate-600">{{ ui.p_tab_tip }}</p>
-    <p id="privacy" class="text-xs text-slate-600">{{ ui.p_privacy }}{% if p.language == 'python' %} {{ ui.p_python_note }}{% endif %}</p>
-
-    <div class="my-3 flex flex-wrap gap-2">
-      <button type="button" id="run" data-needs-idle class="border rounded px-3 py-1">{{ ui.p_run }}</button>
-      <button type="button" id="check" data-needs-idle class="border rounded px-3 py-1 font-semibold">{{ ui.p_check }}</button>
-      <button type="button" id="hint" class="border rounded px-3 py-1">{{ ui.p_hint }}</button>
-      <button type="button" id="solution" class="border rounded px-3 py-1">{{ ui.p_solution }}</button>
-      <button type="button" id="reset" class="border rounded px-3 py-1">{{ ui.p_reset }}</button>
+  <fieldset class="mode-pick">
+    <legend class="sr-only">Mode</legend>
+    <div class="choices">
+      <label class="choice"><input type="radio" name="mode" value="alone" checked><span>{{ ui.p_solve_alone }}</span></label>
+      <label class="choice" id="mode-guided-wrap"><input type="radio" name="mode" value="guided"><span>{{ ui.p_guide_me }}</span></label>
     </div>
+  </fieldset>
 
-    <div aria-live="polite" class="my-2">
-      <p id="status" class="text-sm"></p>
-      <p id="summary" class="font-semibold"></p>
+  <section id="guide-panel" class="panel guide-panel" aria-labelledby="stage-count" hidden>
+    <h2 id="stage-count" class="side-h"></h2>
+    <p id="stage-goal" class="stage-goal"></p>
+    <p id="stage-explain"></p>
+    <div class="btn-row">
+      <button type="button" id="prev" class="btn btn-ghost btn-sm">{{ ui.p_prev }}</button>
+      <button type="button" id="next" class="btn btn-ghost btn-sm">{{ ui.p_next }}</button>
+      <button type="button" id="example" class="btn btn-ghost btn-sm">{{ ui.p_example }}</button>
     </div>
+  </section>
 
-    <h2 class="text-lg font-semibold mt-3">{{ ui.p_results }}</h2>
-    <ul id="results" class="space-y-1"></ul>
+  <div class="ide">
+    <div class="ide-bar"><span class="ide-dots" aria-hidden="true"><i></i><i></i><i></i></span><label for="code">{{ ui.p_editor }}</label></div>
+    <textarea id="code" class="code-input" rows="14" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off"
+              dir="ltr" aria-describedby="tab-tip privacy"></textarea>
+  </div>
+  <p id="tab-tip" class="attrib">{{ ui.p_tab_tip }}</p>
+  <p id="privacy" class="attrib">{{ ui.p_privacy }}{% if p.language == 'python' %} {{ ui.p_python_note }}{% endif %}</p>
 
-    <h2 class="text-lg font-semibold mt-3">{{ ui.p_output }}</h2>
-    <pre id="output" class="border rounded p-2 text-sm overflow-x-auto" dir="ltr"></pre>
+  <div class="btn-row">
+    <button type="button" id="run" data-needs-idle class="btn btn-violet">{{ ui.p_run }}</button>
+    <button type="button" id="check" data-needs-idle class="btn btn-gold">{{ ui.p_check }}</button>
+    <button type="button" id="hint" class="btn btn-ghost">{{ ui.p_hint }}</button>
+    <button type="button" id="solution" class="btn btn-ghost">{{ ui.p_solution }}</button>
+    <button type="button" id="reset" class="btn btn-ghost">{{ ui.p_reset }}</button>
+  </div>
 
-    <ol id="hint-list" class="list-decimal ps-6 my-3 space-y-1" aria-live="polite"></ol>
+  <div aria-live="polite" class="status-box">
+    <p id="status" class="attrib"></p>
+    <p id="summary" class="summary"></p>
+  </div>
 
-    <section id="answer" class="border rounded p-3 my-3" hidden>
-      <pre id="answer-code" class="text-sm overflow-x-auto" dir="ltr"></pre>
-      <p id="answer-note" class="text-sm"></p>
-    </section>
-  </article>
+  <div class="lesson-grid">
+    <div>
+      <h2 class="section-title">{{ ui.p_results }}</h2>
+      <ul id="results" class="results"></ul>
+      <ol id="hint-list" class="steps" aria-live="polite"></ol>
+    </div>
+    <div>
+      <h2 class="section-title">{{ ui.p_output }}</h2>
+      <pre id="output" class="console" dir="ltr"></pre>
+    </div>
+  </div>
 
-  <script type="application/json" id="problem-data">{{ config | tojson }}</script>
-  <script src="{{ url_for('static', filename='problem.js') }}" defer></script>
+  <section id="answer" class="panel" hidden>
+    <pre id="answer-code" class="console" dir="ltr"></pre>
+    <p id="answer-note" class="attrib"></p>
+  </section>
+</article>
+
+<script type="application/json" id="problem-data">{{ config | tojson }}</script>
+<script src="{{ url_for('static', filename='problem.js') }}" defer></script>
 {% endblock %}

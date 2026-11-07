@@ -49,6 +49,10 @@
 <section aria-labelledby="more" class="more">
   <h2 id="more" class="section-title small">{{ ui.more_galaxies }}</h2>
   <div class="galaxy-tiles">
+    <a class="gtile hue-teal" href="{{ url_for('problems_page', lang=lang) }}">
+      <span class="gdisc">{{ icon('g-code') }}</span>
+      <span><span class="gname">{{ ui.problems_title }}</span><span class="gcount">Python · JavaScript</span></span>
+    </a>
     <a class="gtile hue-gold" href="{{ url_for('lessons_page', lang=lang) }}">
       <span class="gdisc">{{ icon('book') }}</span>
       <span><span class="gname">{{ ui.lessons }}</span><span class="gcount">{{ lesson_count }} {{ ui.kind_unplugged|lower }}</span></span>

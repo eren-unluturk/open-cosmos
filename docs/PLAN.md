@@ -19,7 +19,8 @@ Track details come at opening remarks (Sat 12:30 PM). Judging criteria: _TBD —
 **What we add (our only contribution):**
 1. **Translation** of entry titles and descriptions into multiple languages (code and technical terms kept in English). Done ahead of time with AI help and labeled as AI-generated.
 2. **A level-based path** (Beginner / Intermediate / Advanced) plus age and topic tags and a child-safety tier, so newcomers know where to start.
-3. **Clear sourcing**: every lesson links to the original repo, author, and license.
+3. **Clear sourcing**: every entry links to the original, its author and license.
+4. **Guides and roadmaps**: every entry opens a short slide guide with a recommended timeline (Day 1, Week 1, ...), personalised by age and level with simple rules. Link-only entries end with a "you are leaving our site" slide; CS Unplugged (CC BY-SA 4.0) is adapted into our own lessons. See "Guides, roadmaps and lessons" below.
 
 **Who it's for (details in `docs/PITCH.md`):** (1) a student who needs tutoring and finds GitHub repos unapproachable, and (2) international students who struggle with English-only resources.
 
@@ -36,6 +37,14 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - **Child safety:** no accounts, no free-text input, no personal data stored, no ads/tracking. Keep language simple and friendly. Mention that adults should supervise.
 - **Kid content:** `awesome` and `build-your-own-x` are written for adult developers and are NOT kid-focused, so we added `uccser/cs-unplugged` (CC BY-SA 4.0 content, verified) as the kid-targeted source and keep the other two as the "older learners" tier. Real kid content for games/art/web at ages 5-10 is still thin; the guide uses backfill rules (see Coverage and Ask the team).
 - `scripts/categorize.py` tags every entry with `topic`, `level`, `age_group` and a safety tier (see Decisions).
+
+## Guides, roadmaps and lessons (the system)
+- **Two paths per entry.** A. *Link-only* (`reuse = "link-only"`; all awesome and build-your-own-x entries): an AI-written overview guide plus a roadmap, ending in a leaving-our-site slide. B. *Open-content* (`reuse = "open-content"`; CS Unplugged): our own simplified lesson in `src/data/lessons.json`, ending in a slide to our lesson page.
+- **Guaranteed coverage.** `src/data/guides.json` has 65 handwritten group guides (one per `side:category`, so 100% of visible entries) plus 7 topic fallbacks as a safety net. `scripts/guide_helpers.py` (`guide_for`, `build_timeline`, `related_entries`, `lesson_for`, `fill`) resolves them with no runtime AI.
+- **Roadmap = the timeline slide + `build_timeline`.** The guide gives a 3-5 step plan; the helper turns level and age into minutes per session and number of sessions. All times are labeled estimates.
+- **Honest limits.** Guides are written from catalog data only (title, description, category, level, topic), not from the linked pages. Slide text never contains URLs. "Explore next" is computed by the backend, not written by hand.
+- **Files:** `docs/GUIDE_SPEC.md` (app tasks), `docs/GUIDE_PROGRESS.md` (coverage), `docs/GUIDE_DECISIONS.md`, `docs/DEMO_SLICE.md`, `docs/PITCH_DATA.md`, `docs/REUSE_CANDIDATES.md`.
+- **Rebuild order:** `categorize.py --no-ai` -> `mark_reuse.py` -> `fetch_lessons.py` -> `build_guides.py` -> tests.
 
 ## Principles
 - Open data only. Only use content under licenses that allow translation/redistribution (CC-BY, MIT, etc.). Record license per source.
@@ -55,7 +64,7 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 **Pipeline:** `scripts/fetch.py` downloads the two CC0 lists and `scripts/fetch_kids.py` the CS Unplugged lessons -> `scripts/categorize.py --no-ai` tags topic, level, age group and safety (rules + a committed label cache + human overrides) -> translations for es/ar/hi/pt are written into the JSON in `src/data/` and labeled `ai_translated` -> Flask renders it. Everything is done **ahead of time**, so the site runs on static JSON with no API key and no live AI calls.
 
 ## Team split (4 people)
-1. **Data lead** — `scripts/fetch.py`: fetch + parse both READMEs into JSON; keep `docs/SOURCES.md` accurate.
+1. **Data lead** — `scripts/` data pipeline: fetch + parse the sources into JSON, categorize and safety-tag, reuse flag, guides (`guides.json`) and adapted lessons (`lessons.json`); keep `docs/SOURCES.md` accurate.
 2. **AI lead** — translation quality and queue: `scripts/translate.py` (optional, needs an API key nobody has right now), translation batches from `docs/TRANSLATE_QUEUE.md`, native-speaker spot checks; and `src/guide.py` if an AI-assisted path is kept.
 3. **Backend lead** — `src/app.py`: Flask routes, language/level filtering, UI strings, RTL, deploy. **Also owns the safety gate and guide filtering:** hide non-`kid-safe` entries by default, add the session-only grown-up gate, and make `src/guide.py` use only `kid-safe` entries that fit the chosen age (entry `age_group` <= chosen age) and goal. Otherwise the guide can show teen+ material to a 6-year-old. Details in "Ask the team".
 4. **Frontend + pitch lead** — `src/templates/`, `src/static/`: pages, level badges, language switcher, attribution footer, accessibility; then README, slides, demo video, submission.
@@ -96,9 +105,9 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - [x] Guides foundation: `reuse` flag, fallback guides, helpers, tests (`docs/GUIDE_SPEC.md`)
 - [x] Lessons from CS Unplugged (`lessons.json`, 26) and handwritten guides (65 of 65 groups, 100% of visible entries; `docs/GUIDE_PROGRESS.md`)
 - [ ] App: guide slide viewer, `/<lang>/lessons` and lesson page with the CC BY-SA attribution box (Tobi and Isabella, see `docs/GUIDE_SPEC.md`)
-- [ ] Lesson page with language switcher + level tag
-- [ ] Level path: Beginner -> Intermediate -> Advanced ordering of lessons
-- [ ] Attribution/license footer + link to source repo on every lesson
+- [ ] Lesson page with language switcher + level tag (Tobi/Isabella; data ready in `lessons.json`)
+- [ ] Level path / roadmap: the guide timeline slide + `build_timeline` + "Explore next" (Tobi/Isabella; data ready)
+- [ ] Attribution/license footer + CC BY-SA attribution box on every lesson and a link to the source on every entry
 - [ ] Deployed link + demo video
 
 ## Stretch

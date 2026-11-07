@@ -96,3 +96,9 @@ Every entry gets one of three tiers: **kid-safe** (nothing risky in the listing)
 - Real kid content for games, art and web at ages 5-10 is thin (see `docs/PLAN.md` "Coverage gaps"); the guide backfills with general beginner material.
 - The CC0 licenses cover the lists, not the pages they link to. We copy no page content and always link out.
 - Translations are AI-generated and unreviewed by native speakers; the UI labels them.
+
+## Guides and lessons
+- **65 handwritten group guides** + 7 topic fallbacks: 100% of the 1,070 visible entries resolve to a guide (1,044 end in "go to the learning site", 26 end in "go to our lesson").
+- **26 adapted lessons** (CS Unplugged, CC BY-SA 4.0): ages 5-7: 12, 8-10: 13, 11-13: 1.
+- **Reuse flag:** 1,028 link-only entries, 57 open-content entries.
+- Guides and lessons are English only so far; guides are written from catalog data only and time estimates are estimates. More in `docs/PITCH_DATA.md`.

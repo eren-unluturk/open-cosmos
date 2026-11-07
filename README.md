@@ -10,7 +10,15 @@ A website (Hackcessability, **Information Access** track) with two sides, built 
 - **Learn**: curated learning lists from [sindresorhus/awesome](https://github.com/sindresorhus/awesome) (CC0)
 - **Build**: "build your own X" tutorials from [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) (CC0)
 
-For young beginners (and the parents and teachers helping them), we add a **"What should I learn?" guide** that builds a short, ordered path from open resources. We also add translated titles and descriptions (Spanish, Arabic, Hindi, Portuguese; AI-generated and labeled as such), a Beginner / Intermediate / Advanced level, an age group, and a child-safety tier on every entry. Kid-targeted lessons come from [CS Unplugged](https://github.com/uccser/cs-unplugged) (CC BY-SA 4.0). We claim none of the content as ours. Every entry links to its source and license (see `docs/SOURCES.md`).
+For young beginners (and the parents and teachers helping them), we add a **"What should I learn?" guide** that builds a short, ordered path from open resources. We also add translated titles and descriptions (Spanish, Arabic, Hindi, Portuguese; AI-generated and labeled as such), a Beginner / Intermediate / Advanced level, an age group, and a child-safety tier on every entry. Kid-targeted lessons come from [CS Unplugged](https://github.com/uccser/cs-unplugged) (CC BY-SA 4.0). 
+
+**Guides, roadmaps and lessons (our contribution on top of the lists):**
+- Every entry opens a short slide **guide**: what it is, is it for me, how to start, how much time, and a recommended **roadmap** (e.g. Day 1, Week 1, Week 2) that adapts to the child's age and level. Guides are AI-written ahead of time from the catalog data and are labeled as such.
+- For link-only content (almost everything) the last slide says **"you are leaving our site"** with a grown-up note and sends the learner to the original, so we never copy it.
+- For CS Unplugged (CC BY-SA 4.0) we go further: **26 adapted lessons** in our own simple words, shown on our own lesson pages with attribution and a "changes were made" note.
+- Each guide ends with **Explore next**, a computed list of related kid-safe entries.
+
+We claim none of the content as ours. Every entry links to its source and license (see `docs/SOURCES.md`).
 
 ## Demo
 - Live link: _TBD_
@@ -37,7 +45,7 @@ python -m unittest discover -s tests
 Setup once: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`. Nothing in the pipeline needs an API key. Translations are written into the JSON ahead of time (see `docs/PLAN.md`); `scripts/translate.py` is an optional API-based alternative nobody is using. If you ever need a secret, keep it in a local `.env` (git-ignored, never committed).
 
 ## Guides and lessons
-Every learning entry has a short slide **guide** with a recommended timeline (`src/data/guides.json`, written ahead of time, no live AI). Link-only entries end with a "leaving our site" slide; CS Unplugged lessons (CC BY-SA 4.0) are adapted into our own lessons in `src/data/lessons.json`. Spec for the app: `docs/GUIDE_SPEC.md`. Demo items: `docs/DEMO_SLICE.md`. Numbers for slides: `docs/PITCH_DATA.md`.
+Every learning entry has a short slide **guide** with a recommended roadmap/timeline (`src/data/guides.json`: 65 handwritten group guides plus 7 topic fallbacks, so every visible entry has one; written ahead of time, no live AI). Link-only entries end with a "leaving our site" slide; CS Unplugged lessons (CC BY-SA 4.0) are adapted into our own lessons in `src/data/lessons.json` (26 lessons). Spec for the app: `docs/GUIDE_SPEC.md`. Demo items: `docs/DEMO_SLICE.md`. Numbers for slides: `docs/PITCH_DATA.md`.
 
 ## Project Structure
 ```

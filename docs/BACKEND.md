@@ -1,5 +1,7 @@
 # Backend design (Tobi)
 
+> **Update (Nov 7):** the data has grown since this was written: 1,085 entries (475 kid-safe), plus `src/data/guides.json` and `src/data/lessons.json`, and every entry has a `reuse` flag. The new tasks (guide slides, lesson routes, "Explore next") are in `docs/GUIDE_SPEC.md`; the plan and decisions are in `docs/PLAN.md`.
+
 Scope: `src/app.py`, `src/guide.py`, `requirements.txt`. Hackathon rule: simple, no database, no accounts.
 
 ## What the data really is

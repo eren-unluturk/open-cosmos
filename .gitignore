@@ -24,3 +24,4 @@ venv/
 *.log
 .cache/
 coverage/
+scripts/cache/link_report.json

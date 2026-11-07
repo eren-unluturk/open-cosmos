@@ -11,14 +11,38 @@ Accessibility. Pick ONE track to submit to on Sunday:
 Track details come at opening remarks (Sat 12:30 PM). Judging criteria: _TBD — add after opening remarks_.
 
 ## Idea
-_One sentence._  Track: _TBD_
+**Track: Information Access.** An AI-powered site that makes existing open-source "intro to programming" repos easier to approach and available in many languages. We claim none of the content as ours. Everything is open data, linked to its source repo with its license and attribution.
+
+**What we add (our only contribution):**
+1. **Translation** of open-licensed lessons into multiple languages (code and technical terms preserved, short glossary for terms).
+2. **A level-based path** (Beginner / Intermediate / Advanced) that sequences existing repo material so newcomers know where to start.
+3. **Clear sourcing**: every lesson links to the original repo, author, and license.
+
+**Why it matters:** repos are free but hard to approach and mostly English-only. We lower both barriers.
+
+## Two sides
+- **Learn** — sourced from [sindresorhus/awesome](https://github.com/sindresorhus/awesome) (CC0): curated "awesome" lists for learning topics.
+- **Build** — sourced from [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) (CC0): "build your own X" tutorials (databases, git, shell, etc.).
+- Both are link lists. We translate + level-tag the list entries and link out. Details in `docs/SOURCES.md`.
+
+## Principles
+- Open data only. Only use content under licenses that allow translation/redistribution (CC-BY, MIT, etc.). Record license per source.
+- Never present content as ours. Show attribution + "translated from" on every page. Note translations are AI-generated.
+- Keep code blocks untouched; translate prose only.
 
 ## MVP (must ship)
-- [ ]
-- [ ]
+- [ ] Pick 1-2 open-licensed intro-to-programming repos; record license + attribution in `docs/SOURCES.md`
+- [ ] Translation pipeline (Claude API): prose translated, code preserved, glossary for terms
+- [ ] 3-4 languages (e.g. Spanish, Arabic, Hindi, Portuguese)
+- [ ] Lesson page with language switcher + level tag
+- [ ] Level path: Beginner -> Intermediate -> Advanced ordering of lessons
+- [ ] Attribution/license footer + link to source repo on every lesson
+- [ ] Deployed link + demo video
 
 ## Stretch
-- [ ]
+- [ ] Low-bandwidth / offline-friendly pages
+- [ ] Community translation corrections
+- [ ] Search across lessons
 
 ## Timeline (official)
 **Saturday, Nov 7**

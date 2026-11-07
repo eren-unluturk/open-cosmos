@@ -503,6 +503,60 @@ class ProgressHookTests(unittest.TestCase):
         self.assertTrue(ids and all(re.fullmatch(r"[a-z]+-[0-9a-f]{8}", i) for i in ids), ids)
 
 
+class WhereFilterTests(unittest.TestCase):
+    """Everything page: split "do it here" (coding problems + our lessons) from "on other sites"."""
+
+    def setUp(self):
+        app.config["TESTING"] = True
+        self.c = app.test_client()
+
+    def page(self, path):
+        r = self.c.get(path)
+        self.assertEqual(r.status_code, 200, path)
+        return r.get_data(as_text=True)
+
+    def test_site_shows_problems_and_lesson_entries_only(self):
+        import re
+        html = self.page("/en/library?where=site")
+        for p in store.problems():
+            self.assertIn(f"/en/problem/{p['id']}", html)
+        for eid in re.findall(r'/en/entry/([a-z]+-[0-9a-f]{8})', html):
+            self.assertTrue(store.get(eid)["lesson_id"], eid)
+
+    def test_external_has_no_problems_and_no_lesson_entries(self):
+        import re
+        html = self.page("/en/library?where=external")
+        self.assertNotIn("/en/problem/", html)
+        ids = re.findall(r'/en/entry/([a-z]+-[0-9a-f]{8})', html)
+        self.assertTrue(ids)
+        for eid in ids:
+            self.assertIsNone(store.get(eid)["lesson_id"], eid)
+
+    def test_counts_add_up(self):
+        import re
+        html = self.page("/en/library")
+        site = int(re.search(r"Do it here \((\d+)\)", html).group(1))
+        ext = int(re.search(r"On other sites \((\d+)\)", html).group(1))
+        visible_lessons = sum(1 for ls in store.lessons() if store.get(ls["entry_id"])["safety"] == "kid-safe")
+        self.assertEqual(site, len(store.problems()) + visible_lessons)
+        self.assertGreater(ext, 0)
+
+    def test_search_works_inside_each_group(self):
+        html = self.page("/en/library?where=site&q=binary")
+        self.assertIn("/en/problem/py-to-binary", html)
+        self.assertIn("/en/problem/js-binary-search", html)
+        self.assertNotIn("/en/problem/py-hello", html)
+
+    def test_bad_value_and_every_language(self):
+        self.assertIn("/en/problem/", self.page("/en/library?where=<script>"))
+        for lang in LANGS:
+            self.page(f"/{lang}/library?where=site")
+            self.page(f"/{lang}/library?where=external")
+
+    def test_other_galaxy_hides_problems(self):
+        self.assertNotIn("/en/problem/", self.page("/en/library?g=art"))
+
+
 class TranslationParityTests(unittest.TestCase):
     def test_ui_labels_complete(self):
         import i18n_guides

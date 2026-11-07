@@ -26,6 +26,7 @@ from urllib.parse import urlparse
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "src" / "data"
 CACHE = ROOT / "scripts" / "cache" / "categorize.json"
+OVERRIDES = ROOT / "scripts" / "cache" / "safety_overrides.json"  # human decisions, applied LAST
 MODEL = "claude-haiku-5-5"
 PROMPT_VERSION = 1  # bump to invalidate the cache after changing the AI prompt
 BATCH = 20
@@ -261,6 +262,14 @@ def apply(e, rules, ai):
               "safety": safety, "safety_reasons": list(dict.fromkeys(reasons))})
 
 
+def apply_override(e, ov):
+    """Human override (id -> {"safety": tier, "reason": text}). May loosen OR tighten; applied last."""
+    if ov["safety"] not in SAFETY:
+        raise ValueError(f"bad override safety for {e['id']}: {ov['safety']}")
+    e["safety"] = ov["safety"]
+    e["safety_reasons"] = [] if ov["safety"] == "kid-safe" else ["human-review: " + ov.get("reason", "reviewed")]
+
+
 # Sources whose age_group comes from the source itself (fetch_kids.py): categorize must not overwrite it.
 PRESET_AGE_SOURCES = {"https://github.com/uccser/cs-unplugged"}
 
@@ -308,7 +317,12 @@ def main():
             CACHE.write_text(json.dumps(cache, indent=1, sort_keys=True))
             print(f"AI: {min(i + BATCH, len(todo))}/{len(todo)}")
 
-    used_ai = 0
+    overrides = json.loads(OVERRIDES.read_text()) if OVERRIDES.exists() else {}
+    known = {e["id"] for es in files.values() for e in es}
+    for oid in overrides:
+        if oid not in known:
+            print(f"WARNING: override for unknown id {oid} ignored")
+    used_ai = changed = 0
     for name, es in files.items():
         for e in es:
             ai = cache.get(cache_key(e)) if not rules[e["id"]]["decided"] else None
@@ -317,10 +331,15 @@ def main():
             apply(e, rules[e["id"]], ai)
             if preset_age in AGES:
                 e["age_group"] = preset_age
+            if e["id"] in overrides:
+                before = e["safety"]
+                apply_override(e, overrides[e["id"]])
+                changed += before != e["safety"]
         es.sort(key=sort_key)
         (DATA / f"{name}.json").write_text(json.dumps(es, ensure_ascii=False, indent=2) + "\n")
         print(f"{name}: {len(es)} entries categorized")
     print(f"rules decided: {len(rules) - len(undecided)}, undecided: {len(undecided)}, resolved by AI/cache: {used_ai}")
+    print(f"human overrides: {len(overrides)} entries listed, {changed} changed the rules' safety tier")
 
 
 if __name__ == "__main__":

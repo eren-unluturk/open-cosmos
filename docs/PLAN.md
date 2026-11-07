@@ -142,6 +142,8 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - **Title keywords can raise safety, too:** Slack/Telegram/Twitter/etc. in a title now add `social-platform` (found when a Slack-bot tutorial slipped through as kid-safe).
 - **Heuristic caveat:** for the two CC0 sources, `age_group` "11-13" means "Beginner-level web/games/general material", not "written for kids". Only CS Unplugged is actually kid-targeted.
 
+- **Human safety spot-check.** `docs/SAFETY_REVIEW.md` lists 30 random kid-safe, 15 random ask-a-grown-up, all 15 adult-only and 10 youngest/rarest kid-safe entries. Eren reviewed all rows: every one was `ok` (no loosening or tightening needed). Corrections would go in `scripts/cache/safety_overrides.json` (`{"<id>": {"safety": "<tier>", "reason": "..."}}`); `categorize.py` applies it LAST and it may loosen or tighten. The file is currently empty (`{}`). A sample of about 70 of 1,068 entries is a spot-check, not a full review.
+
 ## Ask the team (changes needed in files Eren doesn't own)
 - **Tobi (`src/app.py`, `src/guide.py`):**
   - Load `kids.json` alongside `learn.json` and `build.json`.

@@ -752,5 +752,1244 @@
       "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
     }
   },
-  "groups": {}
+  "groups": {
+    "kids:CS Unplugged: Binary numbers": {
+      "id": "group-kids:cs-unplugged:-binary-numbers",
+      "kind": "group",
+      "title": {
+        "en": "Binary numbers (CS Unplugged)"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is part of a CS Unplugged unit about binary numbers. Binary is how computers store numbers using only two states, on and off. The activities use cards, movement and games, with no screen."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is made for children about {age} and up, and it is meant to be done together with a grown-up or teacher. You do not need to know any coding. It is a {level} activity."
+          },
+          "adult_note": {
+            "en": "Grown-ups: these are teacher and parent lesson plans. Be the guide, let the child discover patterns, and do not worry about correct answers at first."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Ask a grown-up to read the lesson or open our simple version with you."
+            },
+            {
+              "en": "Gather what you need, like paper cards with dots, and clear a little space."
+            },
+            {
+              "en": "Do the activity together and say out loud what you notice."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Most lessons take 30 to 60 minutes. Plan about {minutes} minutes for a session. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Do the first lesson of the unit together."
+              }
+            },
+            {
+              "when": {
+                "en": "Day 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Do it again and teach someone at home."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Try the next lesson in the unit."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Make up your own binary game."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates.",
+      "go_lesson_slide": {
+        "type": "go_lesson",
+        "title": {
+          "en": "Start the lesson"
+        },
+        "body": {
+          "en": "Open our lesson page for {entry_title}. It is a short, simple version of an open lesson you can do together."
+        },
+        "adult_note": {
+          "en": "Adapted from CS Unplugged by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0. Changes were made: simplified, shortened and translated by Hackcessability with AI."
+        },
+        "attribution": true
+      }
+    },
+    "kids:CS Unplugged: Kidbots": {
+      "id": "group-kids:cs-unplugged:-kidbots",
+      "kind": "group",
+      "title": {
+        "en": "Kidbots (CS Unplugged)"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is part of a CS Unplugged unit about giving clear instructions to a robot, like a toy bot or a friend pretending to be one. You learn what a program is by writing one for a friend to follow."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for children about {age} and up who like moving around and giving or following instructions. You do not need a computer. It is a {level} activity to do with a grown-up or teacher."
+          },
+          "adult_note": {
+            "en": "Grown-ups: bugs are good. Praise finding and fixing mistakes, not only getting it right the first time."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Make a grid on the floor with tape or chalk."
+            },
+            {
+              "en": "Choose who is the programmer and who is the robot, and agree on simple commands."
+            },
+            {
+              "en": "Write the program, run it, and fix any mistakes you find."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Most lessons take 30 to 45 minutes. Plan about {minutes} minutes for a session. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Be the robot and follow a friend's instructions."
+              }
+            },
+            {
+              "when": {
+                "en": "Day 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Write a longer program for a new route."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Add a rule and find the bugs."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Teach someone else the game."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates.",
+      "go_lesson_slide": {
+        "type": "go_lesson",
+        "title": {
+          "en": "Start the lesson"
+        },
+        "body": {
+          "en": "Open our lesson page for {entry_title}. It is a short, simple version of an open lesson you can do together."
+        },
+        "adult_note": {
+          "en": "Adapted from CS Unplugged by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0. Changes were made: simplified, shortened and translated by Hackcessability with AI."
+        },
+        "attribution": true
+      }
+    },
+    "kids:CS Unplugged: Error detection and correction": {
+      "id": "group-kids:cs-unplugged:-error-detection-and-correction",
+      "kind": "group",
+      "title": {
+        "en": "Error detection and correction (CS Unplugged)"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is part of a CS Unplugged unit about how computers notice and fix mistakes in the information they store and send. The activities use card tricks and number games."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for children about {age} and up who like puzzles and magic tricks, with a grown-up or teacher to help. It is a {level} activity and needs no computer."
+          },
+          "adult_note": {
+            "en": "Grown-ups: practise the trick before you show it. Some activities in this unit use arithmetic, so a calculator is fine."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Get a set of two-sided cards or make some from paper."
+            },
+            {
+              "en": "Try the card trick or number game with a grown-up."
+            },
+            {
+              "en": "Swap roles, and try to explain why it works."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Most lessons take about 30 minutes. Plan about {minutes} minutes for a session. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Learn the card trick."
+              }
+            },
+            {
+              "when": {
+                "en": "Day 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Show the trick to a friend or family member."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Try the next activity in the unit."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Look for where mistakes get fixed in real life."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates.",
+      "go_lesson_slide": {
+        "type": "go_lesson",
+        "title": {
+          "en": "Start the lesson"
+        },
+        "body": {
+          "en": "Open our lesson page for {entry_title}. It is a short, simple version of an open lesson you can do together."
+        },
+        "adult_note": {
+          "en": "Adapted from CS Unplugged by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0. Changes were made: simplified, shortened and translated by Hackcessability with AI."
+        },
+        "attribution": true
+      }
+    },
+    "kids:CS Unplugged: Searching algorithms": {
+      "id": "group-kids:cs-unplugged:-searching-algorithms",
+      "kind": "group",
+      "title": {
+        "en": "Searching algorithms (CS Unplugged)"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is part of a CS Unplugged unit about how computers find things in a list. You play guessing games with number cards and find out why putting things in order makes finding them faster."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for children about {age} and up who like games and guessing, with a grown-up or teacher. No computer is needed. It is a {level} activity."
+          },
+          "adult_note": {
+            "en": "Grown-ups: change the numbers to match what your child is learning in maths, and keep another game ready for fast finishers."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Make number cards, or print the sheets from the lesson page."
+            },
+            {
+              "en": "Play the finding game and count how many guesses you need."
+            },
+            {
+              "en": "Try again with the cards in order, and compare."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Most lessons take 30 to 45 minutes. Plan about {minutes} minutes for a session. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Play the hide-and-find game with cards in no order."
+              }
+            },
+            {
+              "when": {
+                "en": "Day 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Play again with the cards in order."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Compare your guess counts and chart them."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Invent a new searching game."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates.",
+      "go_lesson_slide": {
+        "type": "go_lesson",
+        "title": {
+          "en": "Start the lesson"
+        },
+        "body": {
+          "en": "Open our lesson page for {entry_title}. It is a short, simple version of an open lesson you can do together."
+        },
+        "adult_note": {
+          "en": "Adapted from CS Unplugged by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0. Changes were made: simplified, shortened and translated by Hackcessability with AI."
+        },
+        "attribution": true
+      }
+    },
+    "kids:CS Unplugged: Sorting networks": {
+      "id": "group-kids:cs-unplugged:-sorting-networks",
+      "kind": "group",
+      "title": {
+        "en": "Sorting networks (CS Unplugged)"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is part of a CS Unplugged unit about sorting. You walk through a path drawn on the ground, comparing numbers with other people, until everyone ends up in order."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for children about {age} and up who like moving around and working in a team, with a grown-up or teacher. It is a {level} activity and needs chalk or tape and some space."
+          },
+          "adult_note": {
+            "en": "Grown-ups: only one team walks the path at a time, so give the watchers a job, like checking the results."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Draw the sorting path on the ground with chalk or tape."
+            },
+            {
+              "en": "Give six people a number each and let them walk through, comparing at each meeting."
+            },
+            {
+              "en": "Check if everyone ended up in order, then try new numbers."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Most lessons take 30 to 45 minutes. Plan about {minutes} minutes for a session. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Walk through the path with six numbers."
+              }
+            },
+            {
+              "when": {
+                "en": "Day 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Try different cards, such as bigger numbers."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Sort other things, like heights."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Draw your own bigger network."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates.",
+      "go_lesson_slide": {
+        "type": "go_lesson",
+        "title": {
+          "en": "Start the lesson"
+        },
+        "body": {
+          "en": "Open our lesson page for {entry_title}. It is a short, simple version of an open lesson you can do together."
+        },
+        "adult_note": {
+          "en": "Adapted from CS Unplugged by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0. Changes were made: simplified, shortened and translated by Hackcessability with AI."
+        },
+        "attribution": true
+      }
+    },
+    "kids:CS Unplugged: Image Representation": {
+      "id": "group-kids:cs-unplugged:-image-representation",
+      "kind": "group",
+      "title": {
+        "en": "Image representation (CS Unplugged)"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is part of a CS Unplugged unit about how computers store pictures. You colour squares using number codes and learn that a picture on a screen is a grid of tiny squares called pixels."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for children about {age} and up who like drawing and colouring, with a grown-up. It is a {level} activity, and you only need paper and pencils."
+          },
+          "adult_note": {
+            "en": "Grown-ups: pencil is easier than pen, because mistakes can be rubbed out. The original lesson page has the printable pictures."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Print the grid, or draw one on squared paper."
+            },
+            {
+              "en": "Colour the squares using the number code."
+            },
+            {
+              "en": "Swap with a friend and see if you got the same picture."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Most lessons take about 45 minutes. Plan about {minutes} minutes for a session. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Colour a small picture from its numbers."
+              }
+            },
+            {
+              "when": {
+                "en": "Day 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Make up a picture and write its number code."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Try the next lesson on squeezing pictures into less space."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Look for pixels on a screen with a magnifying glass."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates.",
+      "go_lesson_slide": {
+        "type": "go_lesson",
+        "title": {
+          "en": "Start the lesson"
+        },
+        "body": {
+          "en": "Open our lesson page for {entry_title}. It is a short, simple version of an open lesson you can do together."
+        },
+        "adult_note": {
+          "en": "Adapted from CS Unplugged by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0. Changes were made: simplified, shortened and translated by Hackcessability with AI."
+        },
+        "attribution": true
+      }
+    },
+    "learn:Gaming": {
+      "id": "group-learn:gaming",
+      "kind": "group",
+      "title": {
+        "en": "Gaming and game making"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Gaming group, a list of resources about making games and learning with games. These are listings, so we only know the title, the short description and the level."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for anyone who likes games and wants to see how they are made. Most items here are Intermediate or Beginner, for about age {age} and up. Pick one that sounds fun and not too hard."
+          },
+          "adult_note": {
+            "en": "Grown-ups: some game tools ask for accounts or downloads. Please check the site before your child uses it."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Read the title and description and pick one that sounds fun."
+            },
+            {
+              "en": "Go to the original site with a grown-up and look at the first page."
+            },
+            {
+              "en": "Try the first small thing you find and stop when it gets too hard."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time, over about {sessions} sessions (a first try is usually shorter). (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 20,
+              "goal": {
+                "en": "Look around and pick one thing to try."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 40,
+              "goal": {
+                "en": "Follow a first small tutorial or example."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 40,
+              "goal": {
+                "en": "Change one thing to make it your own."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 40,
+              "goal": {
+                "en": "Share what you made with a friend."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Platforms": {
+      "id": "group-learn:platforms",
+      "kind": "group",
+      "title": {
+        "en": "Computers and platforms"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Platforms group, a list about computers, boards and systems you can build things on, such as small computers. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for curious people who want to know what to build on. Many items are Intermediate, so it is best for about age {age} and up, with a grown-up for setup and buying anything."
+          },
+          "adult_note": {
+            "en": "Grown-ups: some of these involve buying hardware or making an account. That is your decision, not ours."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Read the description and decide whether it matches what you want to build."
+            },
+            {
+              "en": "Look at the site with a grown-up and check what you would need first."
+            },
+            {
+              "en": "Start with the beginner page if there is one."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. Setting up can take longer than the first project. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 20,
+              "goal": {
+                "en": "Read about what it is and what it can do."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 40,
+              "goal": {
+                "en": "Check what you need and ask a grown-up about it."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Set it up if you can, or watch someone set it up."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Try a first small project."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Learn": {
+      "id": "group-learn:learn",
+      "kind": "group",
+      "title": {
+        "en": "Learning resources"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Learn group, a general list of places and tools for learning to program. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for beginners and for anyone who wants a place to start. Many items are Beginner. It is a good choice for about age {age} and up, ideally with a grown-up nearby for the first try."
+          },
+          "adult_note": {
+            "en": "Grown-ups: some learning sites ask for an account. Please check the site's rules before your child signs up."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Choose one that looks fun or that matches something you already like."
+            },
+            {
+              "en": "Open it with a grown-up and spend a few minutes looking around."
+            },
+            {
+              "en": "Try the first activity and then talk about what you learned."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 20,
+              "goal": {
+                "en": "Explore and try one activity."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Do a few more activities."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Pick a goal, like making a tiny game or story."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Show someone what you made."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    },
+    "learn:Front-End Development": {
+      "id": "group-learn:front-end-development",
+      "kind": "group",
+      "title": {
+        "en": "Making websites (front-end)"
+      },
+      "slides": [
+        {
+          "type": "what_is_it",
+          "title": {
+            "en": "What is it?"
+          },
+          "body": {
+            "en": "{entry_title} is in our Front-End Development group, a long list of tools and resources for building the part of a website that people see and click. We only know the title, short description and level from our list."
+          }
+        },
+        {
+          "type": "is_it_for_me",
+          "title": {
+            "en": "Is it for me?"
+          },
+          "body": {
+            "en": "It is for people who want to build web pages. Many items are Intermediate, so some web basics help. It suits about age {age} and up, and the beginner items are the best start."
+          },
+          "adult_note": {
+            "en": "Grown-ups: many of these are tools for developers. Look at the page first and help with installs."
+          }
+        },
+        {
+          "type": "how_to_start",
+          "title": {
+            "en": "How to start"
+          },
+          "steps": [
+            {
+              "en": "Start with the Beginner items if you are new to web pages."
+            },
+            {
+              "en": "Open the original site with a grown-up and read the first page."
+            },
+            {
+              "en": "Try one small change, like a colour or a heading, and see it in the browser."
+            }
+          ]
+        },
+        {
+          "type": "time",
+          "title": {
+            "en": "How much time?"
+          },
+          "body": {
+            "en": "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)"
+          },
+          "estimate": true
+        },
+        {
+          "type": "timeline",
+          "title": {
+            "en": "A plan you can follow"
+          },
+          "timeline": [
+            {
+              "when": {
+                "en": "Day 1"
+              },
+              "minutes": 30,
+              "goal": {
+                "en": "Look at what the tool does and try the very first example."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 1"
+              },
+              "minutes": 45,
+              "goal": {
+                "en": "Build a tiny page."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 2"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Add one new feature, like a button."
+              }
+            },
+            {
+              "when": {
+                "en": "Week 3"
+              },
+              "minutes": 60,
+              "goal": {
+                "en": "Share the page with a friend or family member."
+              }
+            }
+          ],
+          "estimate": true
+        },
+        {
+          "type": "go_external",
+          "title": {
+            "en": "Go to the learning site"
+          },
+          "body": {
+            "en": "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details."
+          },
+          "adult_note": {
+            "en": "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first."
+          },
+          "leaving_site": true
+        }
+      ],
+      "_note": "AI-written (Claude Code) from catalog data only (titles, descriptions, categories, levels, topics). We have not read the linked pages. Time estimates are estimates."
+    }
+  }
 }

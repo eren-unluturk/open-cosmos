@@ -19,19 +19,6 @@ We add AI translation into multiple languages and a Beginner / Intermediate / Ad
 ## Tech Stack
 Next.js + TypeScript, Tailwind CSS, Claude API (translation + level tagging), static JSON data, Vercel. Details in `docs/PLAN.md`.
 
-## Getting Started
-```bash
-git clone https://github.com/eren-unluturk/ktp-hackcessability-2026.git
-cd ktp-hackcessability-2026
-npm install
-# create a local .env (git-ignored, NEVER commit) with:
-#   ANTHROPIC_API_KEY=...   (get it from a teammate privately)
-npm run dev
-# regenerate translations (needs the API key):
-# npm run translate
-```
-_Note: the app scaffold and the npm scripts are not created yet; this section is the target setup._
-
 ## Project Structure
 ```
 src/      application code

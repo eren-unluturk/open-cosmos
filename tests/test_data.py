@@ -120,6 +120,37 @@ class CategorizeUnits(unittest.TestCase):
         categorize.apply(e, rules, ai)
         self.assertEqual(e["safety"], "adult-only")
 
+    def test_human_override_can_loosen_and_tighten(self):
+        e = self.mk("Hacking tools")
+        categorize.apply(e, categorize.rule_pass(e), None)
+        categorize.apply_override(e, {"safety": "ask-a-grown-up", "reason": "reviewed, ok with an adult"})
+        self.assertEqual(e["safety"], "ask-a-grown-up")
+        self.assertTrue(e["safety_reasons"][0].startswith("human-review"))
+        categorize.apply_override(e, {"safety": "kid-safe"})
+        self.assertEqual((e["safety"], e["safety_reasons"]), ("kid-safe", []))
+        categorize.apply_override(e, {"safety": "adult-only", "reason": "too risky"})
+        self.assertEqual(e["safety"], "adult-only")
+        with self.assertRaises(ValueError):
+            categorize.apply_override(e, {"safety": "nope"})
+
+
+class OverridesFile(unittest.TestCase):
+    def test_overrides_are_applied_and_valid(self):
+        p = ROOT / "scripts" / "cache" / "safety_overrides.json"
+        ov = json.loads(p.read_text())
+        by_id = {e["id"]: e for e in entries()}
+        for oid, o in ov.items():
+            self.assertIn(oid, by_id, f"override for unknown id {oid}")
+            self.assertIn(o["safety"], categorize.SAFETY)
+            self.assertEqual(by_id[oid]["safety"], o["safety"], f"override for {oid} not applied; re-run categorize.py")
+
+
+class RemovedLinks(unittest.TestCase):
+    def test_removed_links_stay_out(self):
+        removed = json.loads((ROOT / "scripts" / "cache" / "removed_links.json").read_text())
+        urls = {e["url"] for e in entries()}
+        self.assertFalse(urls & set(removed))
+
 
 if __name__ == "__main__":
     unittest.main()

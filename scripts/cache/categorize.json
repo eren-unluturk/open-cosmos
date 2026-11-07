@@ -744,6 +744,13 @@
   "safety_reasons": [],
   "topic": "other"
  },
+ "19f3957e9672c759f3237fac276b5556633049ae": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
  "1a2f00553b9b1db99009bf3ecd4a7010a7d48e54": {
   "age_group": "teen+",
   "level": "Intermediate",
@@ -1966,6 +1973,13 @@
   "safety_reasons": [],
   "topic": "web"
  },
+ "46c5ce2ae88b46c250232f888b7c7beff8943a43": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
  "46ea19d3e667b32d2714923f3afabcb255654126": {
   "age_group": "teen+",
   "level": "Intermediate",
@@ -2786,6 +2800,13 @@
   "safety": "kid-safe",
   "safety_reasons": [],
   "topic": "art"
+ },
+ "623d4324652f6ade737707654857a9c41862fab5": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
  },
  "624c3a51938cf75091c2a8673da3462001c2a365": {
   "age_group": "teen+",
@@ -4205,6 +4226,13 @@
   "safety_reasons": [],
   "topic": "general"
  },
+ "9a1d01c4916b03931484a204c62c3f2f0777ac28": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
  "9a79a7bf240f7b34ce8236dd461482a5578a9d8e": {
   "age_group": "teen+",
   "level": "Advanced",
@@ -4429,6 +4457,13 @@
   "safety": "kid-safe",
   "safety_reasons": [],
   "topic": "other"
+ },
+ "a11a3686316c9c59fb911e730c1bc23c750e7bb2": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
  },
  "a18e8de8fd2dc44cb2fe182a35b94fa4b0e00958": {
   "age_group": "teen+",
@@ -4751,6 +4786,13 @@
   "safety": "kid-safe",
   "safety_reasons": [],
   "topic": "systems"
+ },
+ "ad37d9004bfd42de60353456176c600a32759355": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
  },
  "ad8f9e01cb9868473d30ab7e8d27e3ca59682334": {
   "age_group": "teen+",
@@ -5256,6 +5298,13 @@
   ],
   "topic": "other"
  },
+ "c12851e6e67177c67992621a3acc2da092a441a5": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
  "c1c3d03de629c0fc0641a842bbbb1989b54dd79f": {
   "age_group": "teen+",
   "level": "Advanced",
@@ -5446,6 +5495,13 @@
   "safety": "kid-safe",
   "safety_reasons": [],
   "topic": "systems"
+ },
+ "c76b5d4c73dc2738377d69851c0821d775646d5a": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
  },
  "c788ca916b9a6f76e185b29d19ba9c374f7c3213": {
   "age_group": "teen+",
@@ -6118,6 +6174,13 @@
   "safety_reasons": [],
   "topic": "web"
  },
+ "dfc01f9c5c5555710e00fbbe055756d04665043e": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
  "dfc26d561d1095ef27711517f5b0d47651681127": {
   "age_group": "teen+",
   "level": "Advanced",
@@ -6256,6 +6319,13 @@
   "safety": "kid-safe",
   "safety_reasons": [],
   "topic": "systems"
+ },
+ "e59a03ace359a23c805a2ee4afc3cdb6129a3040": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
  },
  "e5e6a240a63c7b81aeb2213f4800ae5d40c31da6": {
   "age_group": "11-13",
@@ -6949,6 +7019,13 @@
   "safety_reasons": [],
   "topic": "games"
  },
+ "fba4062018f4e4fbc54af3769de84c4e06af2190": {
+  "age_group": "5-7",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
  "fbf08023f8cc6d55b30f7e88d87f43a47e99295c": {
   "age_group": "teen+",
   "level": "Advanced",
@@ -7065,6 +7142,13 @@
   "topic": "other"
  },
  "ff7ade842d4a7a573440ddf90078cda8809f4500": {
+  "age_group": "8-10",
+  "level": "Beginner",
+  "safety": "kid-safe",
+  "safety_reasons": [],
+  "topic": "general"
+ },
+ "ff869b089ede845c0e0791cd857daa1a65f2c487": {
   "age_group": "8-10",
   "level": "Beginner",
   "safety": "kid-safe",

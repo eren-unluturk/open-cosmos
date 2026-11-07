@@ -78,6 +78,14 @@ def parse(markdown: str, source: str, repo: str, license_: str):
     return entries
 
 
+REMOVED = Path(__file__).resolve().parent / "cache" / "removed_links.json"  # url -> reason (dead links)
+
+
+def drop_removed(entries):
+    removed = json.loads(REMOVED.read_text()) if REMOVED.exists() else {}
+    return [e for e in entries if e["url"] not in removed]
+
+
 def merge(new, path: Path):
     """Keep enrichment (level, topic, safety, translations...) from a previous run."""
     if not path.exists():
@@ -103,7 +111,7 @@ def main():
         text = requests.get(cfg["url"], timeout=30).text
         entries = parse(text, name, cfg["repo"], cfg["license"])
         path = DATA / f"{name}.json"
-        entries = merge(entries, path)
+        entries = merge(drop_removed(entries), path)
         path.write_text(json.dumps(entries, ensure_ascii=False, indent=2) + "\n")
         print(f"{name}: {len(entries)} entries")
 

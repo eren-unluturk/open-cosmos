@@ -13,4 +13,8 @@ Hackathon project: speed matters more than polish. Working demo > perfect code.
 See README "Project Structure".
 
 ## Commands
-_Fill in once the stack is chosen (install, dev, test, build)._
+- Setup: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`
+- Data pipeline (run in order): `scripts/fetch.py`, `scripts/fetch_kids.py`, `scripts/categorize.py --no-ai`, then `scripts/coverage.py`, `scripts/check_links.py`
+- Test: `.venv/bin/python -m unittest discover -s tests`
+- Run the site: `.venv/bin/flask --app src/app run`
+- No paid API: do not call the Anthropic API; any AI-style classification or translation is done by hand by Claude Code and committed.

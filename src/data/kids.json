@@ -297,6 +297,25 @@
     ]
   },
   {
+    "id": "kids-4245fca0",
+    "category": "CS Unplugged: Kidbots",
+    "tag": "",
+    "title": {
+      "en": "Finding shapes"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Kidbots' unit with geometry (ages 5-7). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/kidbots/integrations/finding-shapes/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
     "id": "kids-1ee79a47",
     "category": "CS Unplugged: Kidbots",
     "tag": "",
@@ -363,6 +382,44 @@
     ]
   },
   {
+    "id": "kids-caecb6de",
+    "category": "CS Unplugged: Kidbots",
+    "tag": "",
+    "title": {
+      "en": "Move to a number"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Kidbots' unit with numeracy (ages 5-7). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/kidbots/integrations/move-to-a-number/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "kids-38975fea",
+    "category": "CS Unplugged: Kidbots",
+    "tag": "",
+    "title": {
+      "en": "Moving in a shape"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Kidbots' unit with geometry (ages 5-7). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/kidbots/integrations/moving-in-a-shape/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
     "id": "kids-b49ee0d4",
     "category": "CS Unplugged: Kidbots",
     "tag": "",
@@ -394,6 +451,25 @@
       "hi",
       "pt"
     ]
+  },
+  {
+    "id": "kids-db747678",
+    "category": "CS Unplugged: Kidbots",
+    "tag": "",
+    "title": {
+      "en": "Storytelling"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Kidbots' unit with speaking (ages 5-7). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/kidbots/integrations/storytelling/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
   },
   {
     "id": "kids-3135230d",
@@ -495,6 +571,25 @@
     ]
   },
   {
+    "id": "kids-74ac9c1a",
+    "category": "CS Unplugged: Sorting networks",
+    "tag": "",
+    "title": {
+      "en": "Growing into a butterfly"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Sorting networks' unit with biology (ages 5-7). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/sorting-networks/integrations/growing-into-a-butterfly/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
     "id": "kids-08675e89",
     "category": "CS Unplugged: Sorting networks",
     "tag": "",
@@ -561,6 +656,25 @@
     ]
   },
   {
+    "id": "kids-d76340f4",
+    "category": "CS Unplugged: Sorting networks",
+    "tag": "",
+    "title": {
+      "en": "Retelling a story"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Sorting networks' unit with speaking (ages 5-7). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "5-7",
+    "url": "https://www.csunplugged.org/en/topics/sorting-networks/integrations/retelling-a-story/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
     "id": "kids-48abfa01",
     "category": "CS Unplugged: Sorting networks",
     "tag": "",
@@ -592,6 +706,101 @@
       "hi",
       "pt"
     ]
+  },
+  {
+    "id": "kids-0e0fd64c",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "Binary Art"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Binary numbers' unit with art (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/integrations/binary-art/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "art",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "kids-1f9fce96",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "Binary Candles or Normal Candles on your Cake"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Binary numbers' unit with writing (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/integrations/binary-or-normal-candles/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "kids-f336b2e4",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "Binary Name Necklaces"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Binary numbers' unit with art (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/integrations/binary-name-necklaces/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "art",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "kids-d9fc78be",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "Binary Patterns"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Binary numbers' unit with art (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/integrations/binary-patterns/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "art",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "kids-5cc52bdb",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "Binary Tunes"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Binary numbers' unit with music (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/integrations/binary-tunes/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "art",
+    "safety": "kid-safe",
+    "safety_reasons": []
   },
   {
     "id": "kids-982181c8",
@@ -660,6 +869,25 @@
     ]
   },
   {
+    "id": "kids-1fa4226b",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "How binary digits work: programming challenges"
+    },
+    "desc": {
+      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'How binary digits work' lesson, from the 'Binary numbers' unit. Best done with a grown-up."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/how-binary-digits-work/programming/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
     "id": "kids-1d63d1ba",
     "category": "CS Unplugged: Binary numbers",
     "tag": "",
@@ -691,6 +919,44 @@
       "hi",
       "pt"
     ]
+  },
+  {
+    "id": "kids-1e418bb2",
+    "category": "CS Unplugged: Binary numbers",
+    "tag": "",
+    "title": {
+      "en": "Whose cake is it"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Binary numbers' unit with writing (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/binary-numbers/integrations/whose-cake-is-it/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "kids-882ed275",
+    "category": "CS Unplugged: Error detection and correction",
+    "tag": "",
+    "title": {
+      "en": "Instructional writing"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Error detection and correction' unit with writing (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/error-detection-and-correction/integrations/instructional-writing/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
   },
   {
     "id": "kids-c04ee384",
@@ -726,6 +992,25 @@
     ]
   },
   {
+    "id": "kids-a25e1b00",
+    "category": "CS Unplugged: Error detection and correction",
+    "tag": "",
+    "title": {
+      "en": "Parity magic: programming challenges"
+    },
+    "desc": {
+      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'Parity magic' lesson, from the 'Error detection and correction' unit. Best done with a grown-up."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/error-detection-and-correction/parity-magic/programming/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
     "id": "kids-0f5a4341",
     "category": "CS Unplugged: Error detection and correction",
     "tag": "",
@@ -757,6 +1042,82 @@
       "hi",
       "pt"
     ]
+  },
+  {
+    "id": "kids-dec7dc4e",
+    "category": "CS Unplugged: Error detection and correction",
+    "tag": "",
+    "title": {
+      "en": "Product code check digits: programming challenges"
+    },
+    "desc": {
+      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'Product code check digits' lesson, from the 'Error detection and correction' unit. Best done with a grown-up."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/error-detection-and-correction/product-code-check-digits/programming/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "kids-e7a2b929",
+    "category": "CS Unplugged: Error detection and correction",
+    "tag": "",
+    "title": {
+      "en": "Quick card flip magic"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Error detection and correction' unit with numeracy (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/error-detection-and-correction/integrations/quick-card-flip-magic/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "kids-15f1c61e",
+    "category": "CS Unplugged: Error detection and correction",
+    "tag": "",
+    "title": {
+      "en": "What if?"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Error detection and correction' unit with writing (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/error-detection-and-correction/integrations/what-if/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
+    "id": "kids-62b8fce9",
+    "category": "CS Unplugged: Error detection and correction",
+    "tag": "",
+    "title": {
+      "en": "Word study activity"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Error detection and correction' unit with word study (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/error-detection-and-correction/integrations/word-study-activity/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
   },
   {
     "id": "kids-294ef399",
@@ -792,6 +1153,25 @@
     ]
   },
   {
+    "id": "kids-888168fc",
+    "category": "CS Unplugged: Kidbots",
+    "tag": "",
+    "title": {
+      "en": "Sending a rocket to Mars: programming challenges"
+    },
+    "desc": {
+      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'Sending a rocket to Mars' lesson, from the 'Kidbots' unit. Best done with a grown-up."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/kidbots/sending-a-rocket-to-mars/programming/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
     "id": "kids-35cb46bb",
     "category": "CS Unplugged: Kidbots",
     "tag": "",
@@ -823,6 +1203,25 @@
       "hi",
       "pt"
     ]
+  },
+  {
+    "id": "kids-d72c2c6b",
+    "category": "CS Unplugged: Kidbots",
+    "tag": "",
+    "title": {
+      "en": "The Modulo operator Unplugged: programming challenges"
+    },
+    "desc": {
+      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'The Modulo operator Unplugged' lesson, from the 'Kidbots' unit. Best done with a grown-up."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/kidbots/modulo/programming/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
   },
   {
     "id": "kids-3e9e326c",
@@ -858,6 +1257,25 @@
     ]
   },
   {
+    "id": "kids-628ca386",
+    "category": "CS Unplugged: Searching algorithms",
+    "tag": "",
+    "title": {
+      "en": "Drama or video activity"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Searching algorithms' unit with drama, art (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/searching-algorithms/integrations/drama-video/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
+  },
+  {
     "id": "kids-774bf776",
     "category": "CS Unplugged: Searching algorithms",
     "tag": "",
@@ -889,6 +1307,25 @@
       "hi",
       "pt"
     ]
+  },
+  {
+    "id": "kids-4a52187c",
+    "category": "CS Unplugged: Searching algorithms",
+    "tag": "",
+    "title": {
+      "en": "Music activity"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Searching algorithms' unit with music (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/searching-algorithms/integrations/music/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "art",
+    "safety": "kid-safe",
+    "safety_reasons": []
   },
   {
     "id": "kids-001ee380",
@@ -955,6 +1392,25 @@
       "hi",
       "pt"
     ]
+  },
+  {
+    "id": "kids-ebc5a5ff",
+    "category": "CS Unplugged: Searching algorithms",
+    "tag": "",
+    "title": {
+      "en": "Where is my hat?"
+    },
+    "desc": {
+      "en": "A classroom activity linking the 'Searching algorithms' unit with writing (ages 8-10). For an adult to run with children."
+    },
+    "level": "Beginner",
+    "age_group": "8-10",
+    "url": "https://www.csunplugged.org/en/topics/searching-algorithms/integrations/where-is-my-hat/",
+    "source": "https://github.com/uccser/cs-unplugged",
+    "license": "CC-BY-SA-4.0",
+    "topic": "general",
+    "safety": "kid-safe",
+    "safety_reasons": []
   },
   {
     "id": "kids-d6fe1dbf",

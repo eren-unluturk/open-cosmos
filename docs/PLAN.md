@@ -73,7 +73,7 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - `license`: "CC0-1.0" for learn/build, "CC-BY-SA-4.0" for kids. `source` is the repo URL, `url` the original page (we link out, never copy content).
 - Entries are sorted kid-safe first, then Beginner first (translate.py works in file order).
 
-**Pipeline order:** `fetch.py` -> `fetch_kids.py` -> `categorize.py --no-ai` (applies rules, then the committed label cache, then `safety_overrides.json` last) -> translations (by hand; `translate.py` is optional and needs a key) -> `coverage.py`, `check_links.py`, `python -m unittest discover -s tests`. **After the data freeze do not re-run `fetch.py`** (it re-downloads the upstream lists; new entries would only get fail-closed rules).
+**Pipeline order:** `fetch.py` -> `fetch_kids.py` -> `categorize.py --no-ai` (applies rules, then the committed label cache, then `safety_overrides.json` last) -> `mark_reuse.py` -> `fetch_lessons.py` -> `build_guides.py` -> translations (by hand; `translate.py` is optional and needs a key) -> `coverage.py`, `check_links.py`, `python -m unittest discover -s tests`. **After the data freeze do not re-run `fetch.py`** (it re-downloads the upstream lists; new entries would only get fail-closed rules).
 
 **Git:** branch per person (`data`, `ai`, `backend`, `frontend`), small commits, pull before push, merge to `main` often.
 
@@ -94,7 +94,8 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - [ ] Translate the remaining kid-safe entries (Intermediate) and check translations with native speakers
 - [x] Data docs for the pitch: `docs/STATS.md`, `docs/SAFETY_REVIEW.md`, `docs/TRANSLATE_QUEUE.md`
 - [x] Guides foundation: `reuse` flag, fallback guides, helpers, tests (`docs/GUIDE_SPEC.md`)
-- [ ] Lessons from CS Unplugged (`lessons.json`) and handwritten guides (see `docs/GUIDE_PROGRESS.md`)
+- [x] Lessons from CS Unplugged (`lessons.json`, 26) and handwritten guides (65 of 65 groups, 100% of visible entries; `docs/GUIDE_PROGRESS.md`)
+- [ ] App: guide slide viewer, `/<lang>/lessons` and lesson page with the CC BY-SA attribution box (Tobi and Isabella, see `docs/GUIDE_SPEC.md`)
 - [ ] Lesson page with language switcher + level tag
 - [ ] Level path: Beginner -> Intermediate -> Advanced ordering of lessons
 - [ ] Attribution/license footer + link to source repo on every lesson

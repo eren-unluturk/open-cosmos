@@ -24,12 +24,20 @@ Python (Flask + Jinja2), Tailwind via CDN, static JSON data produced ahead of ti
 python scripts/fetch.py        # download + parse the two CC0 lists
 python scripts/fetch_kids.py   # CS Unplugged lessons (CC BY-SA 4.0) -> src/data/kids.json
 python scripts/categorize.py --no-ai  # topic, level, age_group, safety (uses the committed cache + human overrides)
+python scripts/mark_reuse.py   # reuse flag: open-content (CS Unplugged) vs link-only
+python scripts/fetch_lessons.py # src/data/lessons.json (26 adapted CS Unplugged lessons)
+python scripts/build_guides.py # src/data/guides.json (7 fallbacks + 65 handwritten group guides)
 python scripts/coverage.py     # stats + guide coverage gaps
+python scripts/guide_progress.py # docs/GUIDE_PROGRESS.md (guide coverage)
+python scripts/freeze_check.py  # final checks before submitting
 python scripts/check_links.py  # polite link report; re-checks only non-ok links (never edits data)
 # After the data freeze, do NOT re-run fetch.py (new upstream entries would only get fail-closed rules).
 python -m unittest discover -s tests
 ```
 Setup once: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`. Nothing in the pipeline needs an API key. Translations are written into the JSON ahead of time (see `docs/PLAN.md`); `scripts/translate.py` is an optional API-based alternative nobody is using. If you ever need a secret, keep it in a local `.env` (git-ignored, never committed).
+
+## Guides and lessons
+Every learning entry has a short slide **guide** with a recommended timeline (`src/data/guides.json`, written ahead of time, no live AI). Link-only entries end with a "leaving our site" slide; CS Unplugged lessons (CC BY-SA 4.0) are adapted into our own lessons in `src/data/lessons.json`. Spec for the app: `docs/GUIDE_SPEC.md`. Demo items: `docs/DEMO_SLICE.md`. Numbers for slides: `docs/PITCH_DATA.md`.
 
 ## Project Structure
 ```

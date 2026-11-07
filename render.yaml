@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: learning-lab
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --chdir src --bind 0.0.0.0:$PORT app:app
+    healthCheckPath: /healthz
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: COOKIE_SECURE
+        value: "1"
+      # Optional. Without it the guide uses the rule-based picker, which works fine.
+      - key: ANTHROPIC_API_KEY
+        sync: false

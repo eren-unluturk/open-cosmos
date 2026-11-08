@@ -1,5 +1,6 @@
 """Backend tests: store + safety gate + routes. Run: python -m unittest discover -s tests -v"""
 import sys
+import json
 import unittest
 from pathlib import Path
 
@@ -256,7 +257,14 @@ class GuidesAndLessonsTests(unittest.TestCase):
         e = self.link_only()
         html = self.c.get(f"/es/entry/{e['id']}").get_data(as_text=True)
         self.assertIn("Vas a salir de nuestro sitio", html)
-        self.assertIn("Por ahora este texto está en inglés", html)
+        # Guides are translated through an overlay: the notice appears only for a guide that is not translated yet.
+        from app import localize_slides
+        import guide_helpers
+        resolved = guide_helpers.guide_for(e, {"fallback": {}, "groups": {guide_helpers.group_of(e): {
+            "slides": [{"type": "what_is_it", "title": {"en": "What is it?"}, "body": {"en": "x"}}]}}}, [])
+        _, english_only, _ = localize_slides(resolved["slides"], e, None, "es")
+        self.assertTrue(english_only)
+        self.assertNotIn("Por ahora este texto está en inglés", html)  # this entry's guide is translated
 
     def test_hidden_entries_have_no_guide_page(self):
         ask = next(e for e in store.entries("build") if e["safety"] == "ask-a-grown-up")

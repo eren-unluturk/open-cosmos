@@ -3,7 +3,7 @@
 {% block title %}{{ ui.everything }} · {{ ui.brand }}{% endblock %}
 {% block content %}
 <h1 class="bubble">{{ ui.everything }}</h1>
-<nav class="filters" aria-label="{{ ui.subjects }}">
+<nav class="filters" aria-label="{{ ui.nav_filter_subjects }}">
   <a class="pill" href="{{ url_for('library', lang=lang, q=q or None, where=where) }}" {% if not gid %}aria-current="page"{% endif %}>{{ ui.all_galaxies }}</a>
   {% for g in galaxies %}
     <a class="pill" href="{{ url_for('library', lang=lang, q=q or None, g=g.id, where=where) }}" {% if gid == g.id %}aria-current="page"{% endif %}>{{ ui['g_' ~ g.id] }}</a>

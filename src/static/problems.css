@@ -3,44 +3,44 @@
    Only the pieces galaxy.css does not have live here: the code editor, the output box, test results. */
 
 .prob-filters { display: flex; flex-wrap: wrap; gap: 14px; align-items: end; margin: 18px 0 8px; }
-.prob-filters label { display: grid; gap: 4px; font-weight: 800; font-size: 14px; color: var(--lilac); }
+.prob-filters label { display: grid; gap: 4px; font-weight: 800; font-size: 0.875rem; color: var(--lilac); }
 .prob-filters .field { border-radius: 999px; min-width: 150px; }
 
 .prob-card { display: grid; gap: 8px; align-content: start; }
-.prob-card h2 { margin: 0; font-family: var(--display); font-size: 22px; line-height: 1.2; }
+.prob-card h2 { margin: 0; font-family: var(--display); font-size: 1.375rem; line-height: 1.2; }
 .prob-card h2 a { color: var(--moon); text-decoration: none; }
 .prob-card h2 a:hover { color: var(--gold); }
-.prob-card .concepts { margin: 0; font-size: 15px; color: #cfd3dc; }
+.prob-card .concepts { margin: 0; font-size: 0.9375rem; color: var(--soft); }
 
 .solved-badge { display: none; align-items: center; gap: 6px; color: var(--teal); }
 [data-id].done .solved-badge { display: inline-flex; }
 
 .prob-mode { margin: 18px 0; }
-.code-label { display: block; font-weight: 800; margin: 18px 0 6px; font-family: var(--display); font-size: 20px; }
+.code-label { display: block; font-weight: 800; margin: 18px 0 6px; font-family: var(--display); font-size: 1.25rem; }
 .code-editor {
   width: 100%; min-height: 280px; resize: vertical;
-  background: #0a1320; color: var(--moon);
+  background: var(--code-bg-2); color: var(--moon);
   border: 2px solid var(--slate); border-radius: 20px; padding: 14px 16px;
   font: 15px/1.55 ui-monospace, SFMono-Regular, Consolas, Menlo, monospace;
   tab-size: 4; direction: ltr; text-align: left;
 }
 .code-editor:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
-.code-note { font-size: 14px; color: var(--mist); margin: 6px 0; }
+.code-note { font-size: 0.875rem; color: var(--mist); margin: 6px 0; }
 .code-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
 .code-actions .btn:disabled { opacity: .55; cursor: wait; }
 
-.code-status { min-height: 1.4em; margin: 0; font-size: 15px; color: var(--lilac); }
-.code-summary { margin: 4px 0 10px; font-family: var(--display); font-size: 22px; color: var(--gold); }
+.code-status { min-height: 1.4em; margin: 0; font-size: 0.9375rem; color: var(--lilac); }
+.code-summary { margin: 4px 0 10px; font-family: var(--display); font-size: 1.375rem; color: var(--gold); }
 
 .results { list-style: none; padding: 0; margin: 0 0 14px; display: grid; gap: 8px; max-width: 760px; }
 .results li { padding: 10px 14px; border-radius: 16px; border: 2px solid var(--slate); background: var(--navy); }
 .results li.ok { border-color: var(--teal); }
 .results li.no { border-color: var(--pink); }
-.results li div { margin-top: 4px; color: #cfd3dc; font-family: ui-monospace, Consolas, monospace; font-size: 14px; direction: ltr; text-align: left; }
+.results li div { margin-top: 4px; color: var(--soft); font-family: ui-monospace, Consolas, monospace; font-size: 0.875rem; direction: ltr; text-align: left; }
 
 .code-out, .answer-code {
   margin: 0 0 14px; padding: 12px 16px; min-height: 48px; overflow-x: auto;
-  background: #0a1320; border: 2px solid var(--slate); border-radius: 18px;
+  background: var(--code-bg-2); border: 2px solid var(--slate); border-radius: 18px;
   color: var(--moon); font: 14px/1.5 ui-monospace, SFMono-Regular, Consolas, Menlo, monospace; direction: ltr; text-align: left;
 }
 .hint-list { margin: 8px 0; padding-inline-start: 24px; display: grid; gap: 8px; }
@@ -48,4 +48,4 @@
 .answer-panel[hidden], .guide-step[hidden] { display: none; }
 .guide-step { margin: 14px 0; }
 .guide-step h2 { margin: 0 0 6px; }
-.guide-step .goal { font-weight: 800; font-size: 19px; margin: 0 0 4px; }
+.guide-step .goal { font-weight: 800; font-size: 1.1875rem; margin: 0 0 4px; }

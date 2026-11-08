@@ -3,7 +3,7 @@
 {% block content %}
 <h1 class="bubble">{{ ui.problems_title }}</h1>
 <p class="lede">{{ ui.problems_intro }}</p>
-<form method="get" role="search" class="filters">
+<form method="get" role="search" class="filters" aria-label="{{ ui.list_search }}">
   <label for="pq" class="sr-only">{{ ui.search }}</label>
   <input id="pq" name="q" value="{{ q }}" maxlength="80" class="field" placeholder="{{ ui.search }}">
   <label for="language" class="sr-only">{{ ui.p_language }}</label>
@@ -24,6 +24,7 @@
   <button class="btn btn-gold btn-sm">{{ ui.search }}</button>
 </form>
 {% if lang != 'en' %}<p class="attrib">{{ ui.p_english }}</p>{% endif %}
+<h2 class="sr-only">{{ ui.problems_title }}</h2>
 <div class="grid">
   {% for p in problems %}
     <article class="card">

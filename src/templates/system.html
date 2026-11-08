@@ -2,7 +2,7 @@
 {% from "macros.html" import card, flow, grownup_notice, icon with context %}
 {% block title %}{{ ui['s_' ~ s.id] }} · {{ ui.brand }}{% endblock %}
 {% block content %}
-<nav class="crumbs" aria-label="Breadcrumb">
+<nav class="crumbs" aria-label="{{ ui.nav_breadcrumb }}">
   <a href="{{ url_for('constellation', lang=lang) }}">{{ ui.constellation }}</a> <span aria-hidden="true">›</span>
   <a href="{{ url_for('galaxy', lang=lang, gid=g.id) }}">{{ ui['g_' ~ g.id] }}</a> <span aria-hidden="true">›</span>
   <span>{{ ui['s_' ~ s.id] }}</span>

@@ -61,15 +61,38 @@
 {%- endmacro %}
 
 {% macro flow(stops, start, stop_at, gid, sid, lang, ui, here=None) -%}
-<div class="flow" role="list">
+<div class="flow">
   {% for e in stops[start:stop_at] %}
     {% set n = start + loop.index %}
-    <a role="listitem" class="flow-step {{ 'here' if e.id == here }}" data-id="{{ e.id }}" href="{{ url_for('entry_page', lang=lang, entry_id=e.id, g=gid, s=sid) }}" {% if e.id == here %}aria-current="step"{% endif %}>
+    <a class="flow-step {{ 'here' if e.id == here }}" data-id="{{ e.id }}" href="{{ url_for('entry_page', lang=lang, entry_id=e.id, g=gid, s=sid) }}" {% if e.id == here %}aria-current="step"{% endif %}>
       <span class="num">{{ ui.stop }} {{ n }}</span>
       <span class="t">{{ tr(e.title, lang) }}</span>
       <span class="kind" style="font-size:12px;color:var(--mist)">{{ ui[kind_of(e)] }}</span>
     </a>
     {% if not loop.last %}<svg class="flow-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>{% endif %}
   {% endfor %}
+</div>
+{%- endmacro %}
+
+
+{# Read-aloud controls (browser speech synthesis). Hidden until listen.js finds speech support. target = CSS selector of the content to read. #}
+{% macro listen(target, lang, ui, tags) -%}
+<div class="listen" data-listen data-target="{{ target }}" data-lang-tag="{{ tags[lang] }}" role="group" aria-label="{{ ui.listen_group }}" hidden
+     data-msg-playing="{{ ui.listen_playing }}" data-msg-paused="{{ ui.listen_paused }}" data-msg-stopped="{{ ui.listen_stopped }}"
+     data-msg-done="{{ ui.listen_done }}" data-msg-novoice="{{ ui.listen_no_voice }}" data-msg-nothing="{{ ui.listen_nothing }}"
+     data-msg-pause="{{ ui.listen_pause }}" data-msg-resume="{{ ui.listen_resume }}">
+  <span class="listen-label" aria-hidden="true">{{ icon('speaker') }} {{ ui.listen_group }}</span>
+  <button type="button" class="btn btn-ghost btn-sm" data-act="play">{{ icon('speaker') }} {{ ui.listen_btn }}</button>
+  <button type="button" class="btn btn-ghost btn-sm" data-act="pause" aria-pressed="false" disabled>{{ ui.listen_pause }}</button>
+  <button type="button" class="btn btn-ghost btn-sm" data-act="stop" disabled>{{ ui.listen_stop }}</button>
+  <label class="listen-speed">{{ ui.listen_speed }}
+    <select data-speed>
+      <option value="0.75">{{ ui.listen_speed_slow }}</option>
+      <option value="1" selected>{{ ui.listen_speed_normal }}</option>
+      <option value="1.25">{{ ui.listen_speed_fast }}</option>
+      <option value="1.5">{{ ui.listen_speed_faster }}</option>
+    </select>
+  </label>
+  <p class="listen-msg" role="status" aria-live="polite"></p>
 </div>
 {%- endmacro %}

@@ -45,6 +45,9 @@ python -m unittest discover -s tests
 ```
 Setup once: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`. Nothing in the pipeline needs an API key. Translations are written into the JSON ahead of time (see `docs/PLAN.md`); `scripts/translate.py` is an optional API-based alternative nobody is using. If you ever need a secret, keep it in a local `.env` (git-ignored, never committed).
 
+## Accessibility
+Settings panel, read-aloud and a statement page in five languages. Audit tools are dev-only (see `docs/ACCESSIBILITY.md`): `python scripts/check_contrast.py` needs nothing extra; the axe/keyboard/read-aloud scripts need Playwright installed in a separate venv.
+
 ## Optional: Supabase content store and feedback
 The bundled JSON always works with no setup. If you want a cloud copy of the catalog and the grown-ups' feedback form, follow `docs/SUPABASE.md` (`supabase/schema.sql`, then `python scripts/seed_supabase.py` and `python scripts/verify_supabase.py`). Without `SUPABASE_URL` and `SUPABASE_ANON_KEY` in your local `.env` the site just uses the JSON, and the feedback form shows a friendly "could not send" message.
 

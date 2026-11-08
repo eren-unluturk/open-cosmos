@@ -1,0 +1,143 @@
+/* Accessibility: colour themes, text size and spacing, the easy-to-read font, the settings panel, read-aloud controls.
+   The page script (a11y-settings.js) sets data attributes on <html>:
+     data-theme   galaxy | light | contrast | cb      (the default look is galaxy: see :root in galaxy.css)
+     data-size    100 | 125 | 150
+     data-spacing normal | wide
+     data-font    default | easy
+     data-motion  reduce | full  (rules for that live in galaxy.css)
+   Themes only redefine tokens. scripts/check_contrast.py reads the token blocks below and fails under WCAG AA. */
+
+/* ---------- Easy-to-read font (self-hosted, SIL OFL 1.1: see fonts/OFL.txt). Downloaded only when the font is used. ---------- */
+@font-face { font-family: "Atkinson Hyperlegible"; font-weight: 400; font-style: normal; font-display: swap;
+  src: url("fonts/AtkinsonHyperlegible-Regular-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Atkinson Hyperlegible"; font-weight: 400; font-style: normal; font-display: swap;
+  src: url("fonts/AtkinsonHyperlegible-Regular-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Atkinson Hyperlegible"; font-weight: 700; font-style: normal; font-display: swap;
+  src: url("fonts/AtkinsonHyperlegible-Bold-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Atkinson Hyperlegible"; font-weight: 700; font-style: normal; font-display: swap;
+  src: url("fonts/AtkinsonHyperlegible-Bold-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+html[data-font="easy"] {
+  --display: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ---------- Text size and spacing ---------- */
+html[data-size="125"] { font-size: 125%; }
+html[data-size="150"] { font-size: 150%; }
+/* WCAG 1.4.12 text spacing: line height 1.5+, paragraph spacing 2x, letter 0.12em, word 0.16em */
+html[data-spacing="wide"] body { line-height: 1.9; letter-spacing: .04em; word-spacing: .12em; }
+html[data-spacing="wide"] p, html[data-spacing="wide"] li { line-height: 1.9; }
+html[data-spacing="wide"] p { margin-block: 0 1.4em; }
+html[lang="ar"][data-spacing="wide"] body, html[lang="hi"][data-spacing="wide"] body { letter-spacing: 0; } /* never add letter spacing to joined scripts */
+
+/* ---------- Themes (tokens only; galaxy = :root in galaxy.css) ---------- */
+html[data-theme="light"] {
+  color-scheme: light;
+  --night: #F6F7FB; --navy: #FFFFFF; --slate: #5A6B85; --mist: #475569; --moon: #14213D;
+  --gold: #7A4A00; --amber: #B45309; --sun: #5C3700;
+  --violet: #5B21B6; --purple: #6D28D9; --lilac: #4C1D95; --nebula: #3B0764; --pink: #9D174D; --teal: #0F766E;
+  --card: rgba(255, 255, 255, .95); --line: #6B7A90; --ui-border: #6B7A90;
+  --soft: #334155; --soft-2: #334155;
+  --code-bg: #EEF1F7; --code-bg-2: #EEF1F7;
+  --disc-a: #E5EAF5; --disc-b: #DFE6F3; --disc-c: #E5EAF5; --robot-line: #B45309; --alien: #EDE9FE;
+  --astro-a: #FFFFFF; --astro-b: #D6DAE3; --btn-edge: #7A4A00; --visited: #FDE9B8;
+  --on-violet: #FFFFFF; --on-gold: #FFFFFF;
+  --notice-bg: color-mix(in srgb, var(--violet) 9%, var(--navy)); --violet-tint: color-mix(in srgb, var(--violet) 7%, var(--navy));
+  --bg-image: none; --bg-size: auto;
+}
+html[data-theme="contrast"] {
+  color-scheme: dark;
+  --night: #000000; --navy: #000000; --slate: #FFFFFF; --mist: #E8E8E8; --moon: #FFFFFF;
+  --gold: #FFFF00; --amber: #FFD400; --sun: #FFFF8A;
+  --violet: #5A00B8; --purple: #B98CFF; --lilac: #E0CCFF; --nebula: #2A0A5C; --pink: #FFB8EA; --teal: #86FFF6;
+  --card: #000000; --line: #FFFFFF; --ui-border: #FFFFFF;
+  --soft: #FFFFFF; --soft-2: #FFFFFF;
+  --code-bg: #000000; --code-bg-2: #000000;
+  --disc-a: #000000; --disc-b: #000000; --disc-c: #000000; --robot-line: #FFFF00; --alien: #2A0A5C;
+  --astro-a: #FFFFFF; --astro-b: #E8E8E8; --btn-edge: #FFFFFF; --visited: #3D3D00;
+  --on-violet: #FFFFFF; --on-gold: #000000;
+  --notice-bg: #000000; --violet-tint: #000000;
+  --bg-image: none; --bg-size: auto;
+}
+html[data-theme="cb"] {
+  /* Okabe-Ito based accents on the dark galaxy base: distinguishable with the common kinds of colour blindness */
+  color-scheme: dark;
+  --gold: #F0E442; --amber: #E69F00; --sun: #FFF6A8;
+  --violet: #0072B2; --purple: #56B4E9; --lilac: #A9D8F5; --nebula: #0B3A66; --pink: #F0B7D6; --teal: #66D9C4;
+  --btn-edge: #9A6B00;
+  --on-violet: #FFFFFF; --on-gold: #0D1B2A;
+  --bg-image:
+    radial-gradient(1.5px 1.5px at 20px 30px, #fff 50%, transparent 51%),
+    radial-gradient(1px 1px at 120px 80px, var(--sun) 50%, transparent 51%),
+    radial-gradient(1.2px 1.2px at 200px 150px, var(--lilac) 50%, transparent 51%),
+    radial-gradient(1px 1px at 60px 190px, #fff 50%, transparent 51%),
+    radial-gradient(1.6px 1.6px at 250px 40px, var(--gold) 50%, transparent 51%),
+    radial-gradient(900px 600px at 85% -10%, rgba(86, 180, 233, .22), transparent 60%),
+    radial-gradient(800px 600px at 60% 110%, rgba(65, 90, 119, .45), transparent 60%);
+  --bg-size: 280px 220px, 280px 220px, 280px 220px, 280px 220px, 280px 220px, auto, auto;
+}
+html[data-theme="light"] .btn-gold { background: linear-gradient(180deg, #FFE08A, #F4B942); color: #231600; box-shadow: 0 4px 0 #7A4A00; }
+html[data-theme="light"] .btn-gold:hover { color: #231600; }
+html[data-theme="light"] .topbar { background: color-mix(in srgb, var(--navy) 94%, transparent); }
+html[data-theme="light"] .disc-sky, html[data-theme="light"] .lvl .disc { color: var(--moon); }
+html[data-theme="contrast"] a { text-decoration: underline; }
+html[data-theme="contrast"] .bubble, html[data-theme="light"] .bubble { -webkit-text-stroke: 0; text-shadow: none; }
+html[data-theme="contrast"] :focus-visible { outline: 4px solid #FFFF00; outline-offset: 3px; }
+html[data-theme="light"] :focus-visible { outline-color: #5B21B6; }
+html[data-theme="contrast"] .card-body, html[data-theme="contrast"] .panel, html[data-theme="contrast"] .btn { border-width: 2px; border-color: #FFFFFF; }
+
+/* ---------- Header button + settings panel ---------- */
+.a11y-open .disc { color: var(--sun); }
+.a11y-backdrop { position: fixed; inset: 0; background: rgba(0, 0, 0, .55); z-index: 60; }
+.a11y-panel {
+  position: fixed; inset-block: 0; inset-inline-end: 0; z-index: 61; width: min(440px, 100%);
+  overflow-y: auto; padding: 22px 22px 28px; background: var(--navy); color: var(--moon);
+  border-inline-start: 2px solid var(--line); box-shadow: -10px 0 40px rgba(0, 0, 0, .45);
+}
+[dir="rtl"] .a11y-panel { box-shadow: 10px 0 40px rgba(0, 0, 0, .45); }
+.a11y-panel[hidden], .a11y-backdrop[hidden] { display: none; }
+.a11y-panel h2 { font-family: var(--display); margin: 0 0 6px; font-size: 1.5rem; }
+.a11y-panel .a11y-intro { color: var(--soft); margin: 0 0 16px; }
+.a11y-panel fieldset { border: 0; margin: 0 0 18px; padding: 0; min-inline-size: 0; }
+.a11y-panel legend { font-weight: 800; padding: 0; margin-bottom: 6px; }
+.a11y-opt { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 6px 12px; border: 1.5px solid var(--ui-border); border-radius: 14px; margin-bottom: 6px; cursor: pointer; background: color-mix(in srgb, var(--night) 55%, transparent); }
+.a11y-opt:hover { border-color: var(--gold); }
+.a11y-opt:has(input:checked) { border-color: var(--gold); box-shadow: inset 0 0 0 1px var(--gold); }
+.a11y-opt input { width: 24px; height: 24px; flex: none; margin: 0; accent-color: var(--gold); }
+.a11y-panel .a11y-note { font-size: .875rem; color: var(--mist); margin: 4px 0 0; }
+.a11y-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.a11y-panel .btn, .listen .btn { min-height: 44px; min-width: 44px; }
+.a11y-status { min-height: 1.4em; font-weight: 700; color: var(--gold); margin: 10px 0 0; }
+body.a11y-locked { overflow: hidden; }
+/* the open button needs the same 44px target as other header buttons */
+.a11y-open { min-width: 44px; min-height: 44px; }
+
+/* ---------- Read aloud ---------- */
+.listen { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 10px 0; padding: 8px 10px; border: 1.5px solid var(--line); border-radius: 18px; background: color-mix(in srgb, var(--navy) 80%, transparent); }
+.listen[hidden] { display: none; }
+.listen .listen-label { font-weight: 800; margin-inline-end: 4px; display: inline-flex; align-items: center; gap: 6px; }
+.listen select { min-height: 44px; border-radius: 12px; border: 1.5px solid var(--ui-border); background: var(--navy); color: var(--moon); font: inherit; padding: 0 10px; }
+.listen label.listen-speed { display: inline-flex; align-items: center; gap: 6px; }
+.listen .listen-msg { flex-basis: 100%; margin: 0; font-size: .9375rem; color: var(--soft); }
+.listen .listen-msg:empty { display: none; }
+.listen-hl { background: color-mix(in srgb, var(--gold) 28%, transparent); border-radius: 4px; }
+@media (max-width: 640px) { .a11y-panel { padding: 18px 16px 24px; } }
+
+/* ---------- Reflow: nothing forces sideways scrolling at 320 CSS px (400% zoom) or with large text ---------- */
+@media (max-width: 640px) {
+  .topbar-row { flex-wrap: wrap; justify-content: center; }
+  .topbar-row .search { flex: 1 1 100%; order: -1; }
+}
+.btn { max-width: 100%; white-space: normal; }
+h1, h2, h3, .headline, .hl, .card-title, .lede, .hero-sub { overflow-wrap: anywhere; }
+main, .hero-text { min-width: 0; }
+.lang ul { max-width: calc(100vw - 24px); }
+.pill { max-width: 100%; }
+.filters { flex-wrap: wrap; }
+.filters .pill { white-space: normal; }
+.deck-nav { flex-wrap: wrap; justify-content: center; gap: 8px; }

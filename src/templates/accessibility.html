@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}{{ ui.a11y_page_title }} · {{ ui.brand }}{% endblock %}
+{% block content %}
+<h1 class="bubble">{{ ui.a11y_page_title }}</h1>
+<p class="lede">{{ ui.a11y_page_intro }}</p>
+
+<section aria-labelledby="h-supports">
+  <h2 id="h-supports" class="section-title">{{ ui.a11y_h_supports }}</h2>
+  <ul class="ticks">
+    {% for k in ['keyboard', 'colours', 'text', 'motion', 'listen', 'languages', 'screenreader'] %}<li>{{ ui['a11y_p_' ~ k] }}</li>{% endfor %}
+  </ul>
+</section>
+
+<section aria-labelledby="h-change">
+  <h2 id="h-change" class="section-title">{{ ui.a11y_h_change }}</h2>
+  <p>{{ ui.a11y_p_change }}</p>
+</section>
+
+<section aria-labelledby="h-limits">
+  <h2 id="h-limits" class="section-title">{{ ui.a11y_h_limits }}</h2>
+  <ul class="ticks">
+    {% for k in ['voices', 'ai', 'external', 'code', 'font', 'standard'] %}<li>{{ ui['a11y_p_' ~ k] }}</li>{% endfor %}
+  </ul>
+</section>
+
+<section aria-labelledby="h-report">
+  <h2 id="h-report" class="section-title">{{ ui.a11y_h_report }}</h2>
+  <p>{{ ui.a11y_p_report }}</p>
+  {% if grownup %}
+    <p><a class="btn btn-ghost" href="{{ url_for('feedback_page', lang=lang, page=request.path) }}">{{ ui.a11y_report_link }}</a></p>
+  {% else %}
+    <p class="attrib">{{ ui.a11y_report_hint }}</p>
+  {% endif %}
+</section>
+{% endblock %}

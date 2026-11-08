@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% from "macros.html" import card, flow, dots, flags, icon with context %}
+{% from "macros.html" import card, flow, dots, flags, icon, listen with context %}
 {% block title %}{{ title }} · {{ ui.brand }}{% endblock %}
 {% block content %}
 {% set allowed = true %}
-<nav class="crumbs" aria-label="Breadcrumb">
+<nav class="crumbs" aria-label="{{ ui.nav_breadcrumb }}">
   <a href="{{ url_for('constellation', lang=lang) }}">{{ ui.constellation }}</a>
   {% if gid %}
     <span aria-hidden="true">›</span><a href="{{ url_for('galaxy', lang=lang, gid=gid) }}">{{ ui['g_' ~ gid] }}</a>
@@ -11,7 +11,7 @@
   {% endif %}
 </nav>
 
-<h1 class="bubble" lang="{{ 'en' if fell_back else lang }}">{{ title }}</h1>
+<h1 class="bubble" id="entry-title" lang="{{ 'en' if fell_back else lang }}">{{ title }}</h1>
 
 <div class="meta">
   <span class="chip gold with-i">{{ icon(level_icon[e.level]) }} {{ ui['lvl_' ~ e.level] }}</span>
@@ -22,7 +22,8 @@
   {% if fell_back %}<span class="flag">{{ ui.shown_en }}</span>{% endif %}
 </div>
 
-<p class="lede">{{ desc or ui.no_desc }}</p>
+<p class="lede" id="entry-desc">{{ desc or ui.no_desc }}</p>
+{{ listen("#entry-title, #entry-desc", lang, ui, listen_tags) }}
 {% if e.side == 'kids' %}<p class="lede with-i">{{ icon('grownup') }} <strong>{{ ui.with_adult }}.</strong></p>{% endif %}
 
 {% if allowed %}
@@ -56,7 +57,8 @@
   </div>
 
   {% if guide_english_only %}<p class="attrib">{{ ui.english_only }}</p>{% endif %}
-  <div class="deck" data-deck data-rtl="{{ '1' if rtl else '0' }}" data-of="{{ ui.of }}" aria-roledescription="carousel" aria-label="{{ ui.guide_h }}">
+  {{ listen("#guide .deck", lang, ui, listen_tags) }}
+  <div class="deck" role="group" data-deck data-rtl="{{ '1' if rtl else '0' }}" data-of="{{ ui.of }}" aria-roledescription="carousel" aria-label="{{ ui.guide_h }}">
     <p class="sr-only" aria-live="polite" data-live></p>
     {% for sl in slides %}
     {% set n = loop.index %}

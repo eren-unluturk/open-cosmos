@@ -9,6 +9,7 @@
   {% for a in ages %}<a class="pill" href="{{ url_for('lessons_page', lang=lang, age=a) }}" {% if age == a %}aria-current="page"{% endif %}>{{ ui.ages }} {{ a }}</a>{% endfor %}
 </nav>
 <p class="muted" role="status" data-count-for="#lesson-grid" data-text="{{ progress_text.summary }}"></p>
+<h2 class="sr-only">{{ ui.lessons }}</h2>
 <div class="grid" id="lesson-grid">
   {% for ls in lessons %}
     <article class="card" data-id="{{ ls.entry_id }}">

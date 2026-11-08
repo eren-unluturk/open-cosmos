@@ -100,6 +100,7 @@
   function renderResults(results) {
     for (const r of results) {
       const li = document.createElement("li");
+      li.className = r.passed ? "ok" : "no";
       li.textContent = `${r.passed ? ui.p_ok : ui.p_notok}: ${r.name}`;
       if (!r.passed && r.message) {
         const why = document.createElement("div");
@@ -119,7 +120,7 @@
   function announceSolved() {
     document.dispatchEvent(new CustomEvent("problem:solved", { detail: { id: data.id } }));
     if (window.HackProgress && typeof window.HackProgress.markSolved === "function") {
-      window.HackProgress.markSolved(data.id);
+      window.HackProgress.markSolved(data.id, { title: data.title, galaxy: data.galaxy, url: data.url });
     }
   }
 

@@ -13,6 +13,7 @@ LEVELS = ["Beginner", "Intermediate", "Advanced"]
 PLACEHOLDERS = {"age", "level", "minutes", "sessions", "entry_title"}
 TOPICS = ["games", "art", "web", "general", "systems", "security", "other"]
 LEAVING = ("We don't control that site. Ask a grown-up before you go. Check the original for details.")
+LANGUAGE_TIP = ("This site may not be in your language. Your browser can translate the page: look for the translate button near the address bar, or ask a grown-up to help.")
 
 
 def side_of(entry):

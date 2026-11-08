@@ -76,6 +76,10 @@ class Guides(unittest.TestCase):
             self.assertIn("Check the original for details", body)
             self.assertTrue(last.get("leaving_site"))
 
+    def test_external_slide_has_translate_tip(self):
+        for g in ALL_GUIDES:
+            self.assertIn("Your browser can translate the page", g["slides"][-1]["body"]["en"])
+
     def test_go_lesson_only_with_a_lesson(self):
         for e in VISIBLE:
             r = gh.guide_for(e, GUIDES, LESSONS)

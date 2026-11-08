@@ -43,7 +43,7 @@ def slide(kind, title, body=None, **kw):
 
 def external_slide():
     return slide("go_external", "Go to the learning site",
-                 "You are about to leave our site to visit {entry_title} on another website. " + gh.LEAVING,
+                 "You are about to leave our site to visit {entry_title} on another website. " + gh.LEAVING + " " + gh.LANGUAGE_TIP,
                  adult_note="Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first.",
                  leaving_site=True)
 

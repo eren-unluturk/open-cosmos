@@ -7,6 +7,8 @@ Supabase project name: `open-cosmos`. It does two jobs only:
 
 It never holds anything about children, accounts, progress or code that learners write. Progress stays in the browser (`localStorage`).
 
+**Status (Nov 8): live.** The project is set up, `supabase/schema.sql` has been run, the catalogue is seeded (1,265 rows) and `scripts/verify_supabase.py` reports it matches the bundled JSON; the deployed site reads it with the anon key and feedback sent from the live site arrives in the `feedback` table. The bundled JSON remains the fallback.
+
 ## Safe by default
 
 The bundled JSON in `src/data` stays the source of truth and always works. `CONTENT_SOURCE` picks where the site reads from:
@@ -55,13 +57,16 @@ Stored per feedback: category, message, the page path, the language and the time
 | `SUPABASE_SERVICE_KEY` | **local only, never deployed** | Seeding. Bypasses RLS. |
 | `CONTENT_SOURCE` | optional | `json`, `supabase` or `auto` (default) |
 
-## What you must do by hand
+## Setup steps (done for the live project; repeat them for a new one)
 
 1. Create a Supabase project named `open-cosmos` (supabase.com, free tier).
 2. Open SQL editor, paste `supabase/schema.sql`, run it.
 3. In Project settings > API, copy the project URL, the `anon` key and the `service_role` key into your local `.env` as `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_KEY`.
 4. `python scripts/seed_supabase.py` (try `--dry-run` first).
 5. `python scripts/verify_supabase.py` and expect `OK`.
-6. On Render, set only `SUPABASE_URL` and `SUPABASE_ANON_KEY` (and optionally `CONTENT_SOURCE`). Do not set the service key there.
+6. On Vercel, set only `SUPABASE_URL` and `SUPABASE_ANON_KEY` (and optionally `CONTENT_SOURCE`). Do not set the service key there.
 
 To change content later: edit through the normal scripts, then run `seed_supabase.py` again (the site picks it up within 10 minutes). Deleting a row in the dashboard hides it only after the bundled JSON is also updated, since a missing kind makes the site fall back to JSON.
+
+## Verified: what the public (anon) key can and cannot do
+There are no user accounts, so there is no "user A reads user B" case; the question is what the public key can do. `python scripts/check_rls.py` (needs only `SUPABASE_URL` and `SUPABASE_ANON_KEY`; never prints a key) tests it against the live project: anon can select `content`; anon cannot insert, update or delete `content` (the row count is checked before and after); anon can insert a valid `feedback` row but cannot select, update or delete feedback, cannot insert it with a status other than `new`, and a too-short message is rejected. Result on Nov 8: 11 of 11 checks pass. The script inserts one clearly marked test row into `feedback`; delete it in the dashboard (the anon key cannot, by design).

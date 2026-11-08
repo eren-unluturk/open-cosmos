@@ -103,7 +103,8 @@ class VercelConfig(unittest.TestCase):
         for needed in ("flask", "requests", "python-dotenv"):
             self.assertIn(needed, reqs)
         self.assertEqual((ROOT / ".python-version").read_text().strip(), "3.12")
-        self.assertTrue((ROOT / "render.yaml").exists())
+        self.assertFalse((ROOT / "render.yaml").exists())  # Render was retired at the cutover
+        self.assertNotIn("gunicorn", reqs)
 
     def test_smoke_remote_fails_when_nothing_is_listening(self):
         sys.path.insert(0, str(ROOT / "scripts"))

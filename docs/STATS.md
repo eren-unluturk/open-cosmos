@@ -1,13 +1,13 @@
-# Stats for the pitch (Nov 7 2026)
+# Stats for the pitch (Nov 8 2026)
 
-Generated from `src/data/*.json`, `scripts/cache/link_report.json` and `python scripts/coverage.py`. Numbers feed the slides; rerun after any data change.
+Generated from `src/data/*.json`, `scripts/cache/link_report.json` and `python scripts/coverage.py`; translation, guide and problem counts were recounted on Nov 8 for the final submission. Numbers feed the slides; rerun after any data change.
 
 ## Headline
 - **1,085 open-licensed entries** from 3 sources, each linking out to the original with its license.
 - **475 kid-safe** entries (44%); 595 ask-a-grown-up; 15 adult-only (never shown).
-- **57 kid-targeted** CS Unplugged entries (ages 5-13); 33 of them are already translated into Spanish, Arabic, Hindi and Portuguese.
-- **1,076 of 1,085 links** respond (OK or bot-blocked); 1,046 confirmed OK; 9 unreachable right now; 7 dead links removed.
-- Translated (title + description): Spanish 74, Arabic 74, Hindi 74, Portuguese 74.
+- **57 kid-targeted** CS Unplugged entries (ages 5-13), **26 adapted lessons** and **76 coding problems** (24 ours, 52 adapted from CS Unplugged).
+- **1,078 of 1,085 links** respond (OK or bot-blocked); 1,048 confirmed OK; 7 unreachable right now (all ask-a-grown-up); 7 dead links removed earlier.
+- **Translated (title + description): all 1,085 entries in Spanish, Arabic, Hindi and Portuguese** (475 kid-safe and 610 behind the grown-up gate), plus all 72 guides, 26 lessons, 76 coding problems and the interface. AI-written, labelled, not checked by native speakers.
 
 ## By source
 
@@ -67,22 +67,22 @@ Kid-safe ages 5-10 are almost entirely CS Unplugged: 5-7: 24 of 24 are CS Unplug
 
 ## Translation status
 
-| Language | Entries fully translated (title + description) | Of them kid-safe |
-|---|---|---|
-| Spanish | 74 | 74 |
-| Arabic | 74 | 74 |
-| Hindi | 74 | 74 |
-| Portuguese | 74 | 74 |
+| Language | Entries fully translated (title + description) | Of them kid-safe | Guides (72) | Lessons (26) | Coding problems (76) |
+|---|---|---|---|---|---|
+| Spanish | 1,085 of 1,085 | 475 of 475 | 72 | 26 | 76 |
+| Arabic | 1,085 of 1,085 | 475 of 475 | 72 | 26 | 76 |
+| Hindi | 1,085 of 1,085 | 475 of 475 | 72 | 26 | 76 |
+| Portuguese | 1,085 of 1,085 | 475 of 475 | 72 | 26 | 76 |
 
-All translations are AI-generated and labeled with `ai_translated`; none has had a native-speaker check yet. 401 kid-safe entries are still untranslated (`docs/TRANSLATE_QUEUE.md`).
+All translations are AI-generated, written by hand by Claude Code (no paid API) and labelled with `ai_translated`; **none has had a native-speaker check yet**. A page is shown in a language only when everything on it is translated, so pages never mix two languages.
 
 ## Link verification
 
 | Result | Links |
 |---|---|
-| OK | 1046 |
+| OK | 1048 |
 | Bot-blocked (403, usually Medium; probably fine) | 30 |
-| Unreachable now (timeouts, SSL, 5xx; rechecked Sunday) | 9 |
+| Unreachable now (timeouts, SSL, 5xx; rechecked Nov 8) | 7 |
 | Removed as dead (404/DNS/SSL) | 7 |
 
 All 57 CS Unplugged links are OK. Checked politely (one request per second per host, backoff on 429).
@@ -101,5 +101,5 @@ Every entry gets one of three tiers: **kid-safe** (nothing risky in the listing)
 - **65 handwritten group guides** + 7 topic fallbacks: 100% of the 1,070 visible entries resolve to a guide (1,044 end in "go to the learning site", 26 end in "go to our lesson").
 - **26 adapted lessons** (CS Unplugged, CC BY-SA 4.0): ages 5-7: 12, 8-10: 13, 11-13: 1.
 - **Reuse flag:** 1,028 link-only entries, 57 open-content entries.
-- Guides and lessons are English only so far; guides are written from catalog data only and time estimates are estimates. More in `docs/PITCH_DATA.md`.
+- Guides, lessons, coding problems and the interface are available in all five languages (AI-written, not checked by native speakers). Guides are written from catalogue data only and time estimates are estimates. More in `docs/PITCH_DATA.md`.
 - **Guide translations:** all 72 guides are translated into Spanish, Arabic, Hindi and Portuguese (AI-written, not yet checked by native speakers). All 26 lessons are translated too.

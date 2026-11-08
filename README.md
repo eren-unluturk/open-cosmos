@@ -1,92 +1,83 @@
-# Open Cosmos Project (KTP Hackathon, Nov 7-8 2026)
+# Open Cosmos
 
-> One-line pitch: Open-source programming education, made approachable and available in every language. Level-based, age-aware and safety-tagged paths, with translated titles, built on existing open repos. Nothing here is ours; everything links back to its source and license.
+**Live site: https://open-cosmos.vercel.app** · Track: **Information Access** · KTP Hackathon, Nov 7-8 2026
 
-## Problem
-Great open-source programming resources exist, but they are mostly English-only and hard for beginners to approach: huge lists with no clear starting point.
+Open Cosmos turns the best free programming resources, which are open on GitHub but hard for a beginner to approach and almost all in English, into a safe, space-themed learning map for young beginners (about ages 5-13), the parents and teachers who help them, and anyone who reads English as a second language. Every one of the 1,085 entries is open-licensed, tagged by level, age, topic and **child-safety tier**, translated into Spanish, Arabic, Hindi and Portuguese, and opens a short **guide with a roadmap**. Adults unlock the less kid-friendly material with a session-only **grown-up switch**. We claim none of the content: every entry links to its original and its license.
 
-## Solution
-A website (Open Cosmos, **Information Access** track) with two sides, built only on open data:
-- **Learn**: curated learning lists from [sindresorhus/awesome](https://github.com/sindresorhus/awesome) (CC0)
-- **Build**: "build your own X" tutorials from [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) (CC0)
+## What it does
+- **Five languages:** English, Spanish, Arabic (right to left), Hindi and Portuguese: titles, descriptions, guides, lessons, coding problems and the interface. All translations are AI-written and **not yet checked by native speakers**; the site labels them.
+- **Open data only:** the **Learn** side ([sindresorhus/awesome](https://github.com/sindresorhus/awesome), CC0), the **Build** side ([codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x), CC0) and **CS Unplugged** ([University of Canterbury CSER Group](https://github.com/uccser/cs-unplugged), CC BY-SA 4.0). See `NOTICE.md` and `docs/SOURCES.md`.
+- **Safety tiers and the grown-up gate:** each entry is `kid-safe`, `ask-a-grown-up` or `adult-only`. Safety **fails closed** (unclear means ask a grown-up; rules and the AI-written labels can only tighten a tag). Kids see only kid-safe entries; a grown-up can reveal the middle tier for the session; adult-only is never shown.
+- **"What should I learn?"** Three multiple-choice questions (age, goal, level) build an ordered path with simple rules. No free text, nothing stored, no AI at runtime.
+- **Guides and roadmaps:** every entry has a slide guide (what it is, is it for me, how to start, how much time) and a timeline (Day 1, Week 1...). Link-only entries end with a "you are leaving our site" slide.
+- **Adapted lessons:** 26 CS Unplugged lessons rewritten in our own simple words, with a CC BY-SA attribution box and a "changes were made" note.
+- **Coding problems:** 76 problems (39 Python, 37 JavaScript) that run **in your browser** (your code never reaches our server), with hints and a guided mode.
+- **Browser-only progress:** stars and badges are saved in `localStorage` only. No accounts, no cookies for progress, nothing sent to us.
+- **Accessibility:** colour modes (galaxy, light, high contrast, colour-blind-safe), text size and spacing, an easy-to-read font, reduced motion, **read-aloud** with the browser's own voices, and an accessibility statement. See `docs/ACCESSIBILITY.md`.
 
-For young beginners (and the parents and teachers helping them), we add a **"What should I learn?" guide** that builds a short, ordered path from open resources. We also add translated titles and descriptions (Spanish, Arabic, Hindi, Portuguese; AI-generated and labeled as such), a Beginner / Intermediate / Advanced level, an age group, and a child-safety tier on every entry. Kid-targeted lessons come from [CS Unplugged](https://github.com/uccser/cs-unplugged) (CC BY-SA 4.0). 
+## 2-minute demo path
+1. **Home** at https://open-cosmos.vercel.app: pick **"What should I learn?"** (age 5-7, any goal) and see a short ordered path.
+2. Open **"How binary digits work"** (`/en/entry/kids-0d3a63dc`): swipe the guide and roadmap, press **Listen**, then **Go to the lesson**: our adapted lesson with its CC BY-SA box.
+3. Switch the language to **Arabic**: the whole page flips right to left; "Open Cosmos" stays in Latin letters.
+4. Open **Accessibility** in the header: try **High contrast** and **150%** text.
+5. Open **"2D breakout game using Phaser"** (`/en/entry/build-74d1338b`): a link-only entry with the leaving-our-site notice.
+6. Press **"I'm a grown-up"** in the footer: the hidden entries and the **feedback form** appear.
+7. Open a **coding problem** (`/en/problem/py-hello`), run and check your code in the browser.
 
-**Guides, roadmaps and lessons (our contribution on top of the lists):**
-- Every entry opens a short slide **guide**: what it is, is it for me, how to start, how much time, and a recommended **roadmap** (e.g. Day 1, Week 1, Week 2) that adapts to the child's age and level. Guides are AI-written ahead of time from the catalog data and are labeled as such.
-- For link-only content (almost everything) the last slide says **"you are leaving our site"** with a grown-up note and sends the learner to the original, so we never copy it.
-- For CS Unplugged (CC BY-SA 4.0) we go further: **26 adapted lessons** in our own simple words, shown on our own lesson pages with attribution and a "changes were made" note.
-- Each guide ends with **Explore next**, a computed list of related kid-safe entries.
+(The specific entries and links: `docs/DEMO_SLICE.md`.)
 
-We claim none of the content as ours. Every entry links to its source and license (see `docs/SOURCES.md`).
-
-## Demo
-- Live link: _TBD_
-- Video: _TBD_
-
-## Tech Stack
-Python (Flask + Jinja2), Tailwind via CDN, static JSON data produced ahead of time by `scripts/` (no database, no paid API, no key needed to run or rebuild), Render. Details in `docs/PLAN.md`.
-
-## Data Pipeline (run in order)
+## Run it locally
 ```bash
-python scripts/fetch.py        # download + parse the two CC0 lists
-python scripts/fetch_kids.py   # CS Unplugged lessons (CC BY-SA 4.0) -> src/data/kids.json
-python scripts/categorize.py --no-ai  # topic, level, age_group, safety (uses the committed cache + human overrides)
-python scripts/apply_translations.py # hand-written es/ar/hi/pt translations from scripts/translation_content/ (no API key)
-python scripts/mark_reuse.py   # reuse flag: open-content (CS Unplugged) vs link-only
-python scripts/fetch_lessons.py # src/data/lessons.json (26 adapted CS Unplugged lessons)
-python scripts/build_guides.py # src/data/guides.json (7 fallbacks + 65 handwritten group guides)
-python scripts/coverage.py     # stats + guide coverage gaps
-python scripts/guide_progress.py # docs/GUIDE_PROGRESS.md (guide coverage)
-python scripts/freeze_check.py  # final checks before submitting
-python scripts/check_links.py  # polite link report; re-checks only non-ok links (never edits data)
-# After the data freeze, do NOT re-run fetch.py (new upstream entries would only get fail-closed rules).
-python -m unittest discover -s tests
+git clone https://github.com/eren-unluturk/open-cosmos.git && cd open-cosmos
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+.venv/bin/flask --app src/app run -p 5001      # then open http://127.0.0.1:5001
+.venv/bin/python -m unittest discover -s tests # tests
 ```
-Setup once: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`. Nothing in the pipeline needs an API key. Translations are written into the JSON ahead of time (see `docs/PLAN.md`); `scripts/translate.py` is an optional API-based alternative nobody is using. If you ever need a secret, keep it in a local `.env` (git-ignored, never committed).
+No keys, database or account are needed: the site reads the JSON in `src/data/`. Optional features (Supabase catalog and feedback) switch on only if you add `SUPABASE_URL` and `SUPABASE_ANON_KEY` to a local `.env` (never commit it): see `docs/SUPABASE.md`.
 
-## Accessibility
-Settings panel, read-aloud and a statement page in five languages. Audit tools are dev-only (see `docs/ACCESSIBILITY.md`): `python scripts/check_contrast.py` needs nothing extra; the axe/keyboard/read-aloud scripts need Playwright installed in a separate venv.
+## How it is built
+- **Flask + Jinja2**, server-rendered, no JavaScript framework and no build step; static files in `public/static/`.
+- **Data:** `src/data/*.json`, produced ahead of time by `scripts/` (fetch, categorize, safety-tag, translate, build guides and lessons) and committed. No paid API anywhere.
+- **Hosting: Vercel** (`index.py` is the entry point, `vercel.json` sets headers for static files, `src/csp.py` the Content-Security-Policy for pages). Setup: `docs/DEPLOY.md`.
+- **Supabase (optional):** a copy of the catalogue (read-only to the public) and the grown-ups' feedback table (insert-only), both behind Row Level Security. **The bundled JSON is always the fallback**: any Supabase error, timeout or empty result and the site just uses the JSON (`CONTENT_SOURCE=auto`).
+- **Quality checks:** Python and Node tests, `scripts/check_contrast.py` (WCAG AA colours), `scripts/smoke_remote.py` (1,000+ checks against a running site), axe-core accessibility audits, `scripts/check_rls.py`, `scripts/freeze_check.py`.
 
-## Deploy
-Vercel setup: `docs/DEPLOY.md`; cutover checklist: `docs/CUTOVER.md`; check a running site with `python scripts/smoke_remote.py BASE_URL`. `render.yaml` stays until the cutover.
+More: `docs/PLAN.md` (decisions), `docs/BACKEND.md`, `docs/FRONTEND.md`, `docs/GUIDE_SPEC.md`, `docs/STATS.md`.
 
-## Optional: Supabase content store and feedback
-The bundled JSON always works with no setup. If you want a cloud copy of the catalog and the grown-ups' feedback form, follow `docs/SUPABASE.md` (`supabase/schema.sql`, then `python scripts/seed_supabase.py` and `python scripts/verify_supabase.py`). Without `SUPABASE_URL` and `SUPABASE_ANON_KEY` in your local `.env` the site just uses the JSON, and the feedback form shows a friendly "could not send" message.
+## Team
+| Name | Role | What they did |
+|---|---|---|
+| **Eren** | **Data lead** | Led the data pipeline: sourcing the open lists and CS Unplugged, categorizing every entry, safety tagging and the grown-up gate's rules. Designed the guides, lessons and roadmaps. Set up the Supabase catalogue and feedback form, the Vercel deployment and the cutover, and set the direction for the accessibility features. |
+| Brian | **AI lead** | Translation quality and queue, native-speaker spot checks. |
+| Tobi | **Backend lead** | Flask routes, language and level filtering, UI strings, right-to-left support, search, the safety gate and guide filtering, deployment. |
+| Isabella | **Frontend + pitch lead** | Pages, the galaxy theme, level badges, language switcher, attribution footer; README, slides, demo video and submission. |
 
-## Guides and lessons
-Every learning entry has a short slide **guide** with a recommended roadmap/timeline (`src/data/guides.json`: 65 handwritten group guides plus 7 topic fallbacks, so every visible entry has one; written ahead of time, no live AI). Link-only entries end with a "leaving our site" slide; CS Unplugged lessons (CC BY-SA 4.0) are adapted into our own lessons in `src/data/lessons.json` (26 lessons). Spec for the app: `docs/GUIDE_SPEC.md`. Demo items: `docs/DEMO_SLICE.md`. Numbers for slides: `docs/PITCH_DATA.md`.
+## Honest limitations
+- **Translations are AI-written and not reviewed by native speakers.** Some wording will be unnatural or wrong.
+- **"Kid-safe" is a judgement about the listing** (title, description and host), not a review of the linked pages. A person checked 70 entries (`docs/SAFETY_REVIEW.md`). The grown-up switch is a convenience, not security.
+- **Kid content is thin** for games, art and web at ages 5-10 (26 of 36 age/goal/level combinations have fewer than 6 kid-safe entries; `docs/STATS.md`). The guide backfills with general beginner material and says so.
+- **Guides are written from catalogue data only** (we did not read the linked pages) and time estimates are estimates.
+- **We link out, we do not host** most content; the linked sites may not be in the learner's language.
+- **Accessibility** was checked with automated audits, a keyboard-only walk-through and a contrast script. We have had no outside audit and have not tested with a real screen reader ourselves (a VoiceOver checklist is in `docs/ACCESSIBILITY.md`). Read-aloud voices depend on the device.
+- Python problems need an internet connection the first time (Python is downloaded to your browser).
+- No accounts means progress does not sync between devices (a progress code moves it by hand).
 
-## Frontend (galaxy theme)
-Space-themed UI: palette `#0D1B2A #1B263B #415A77 #778DA9 #E0E1DD` plus galaxy yellows and purples. Map of every file and where to change things: `docs/FRONTEND.md`.
+## Privacy
+No accounts, no analytics, no ads, no tracking, no location. Learning progress and accessibility settings stay in your browser. The only thing we ever receive is a **grown-up's feedback message** (category, message, page, language, time; no name or email). Details and what is not perfect: `docs/SECURITY.md`.
 
-## Project Structure
-```
-src/      application code
-docs/     plan, notes, pitch
-assets/   images, logos, demo media
-scripts/  setup / seed / helper scripts
-tests/    tests
-```
+## Security
+There is nothing to log in to and no user data to steal; the keys are server-side only and were never committed; the database is insert-only for feedback and read-only for the catalogue (tested with the public key). Read the short, honest answers in **`docs/SECURITY.md`**.
 
-## How to request changes
-- Open a GitHub issue and assign it to the person who owns the file (see the roles table below), or mention them in an issue or PR.
-- Say what you need and which URL, file or data field it touches.
-- Backend files: `src/app.py`, `src/store.py`, `src/gate.py`, `src/guide.py`. Pull `main` before you start and run `python -m unittest discover -s tests`.
-- Never commit `.env` or any secret.
+## What we learned
+- **We categorized instead of filtering, and made safety fail closed.** Keeping every entry and tagging it let us serve young learners and still offer advanced material. Rules and the AI-written labels can only make a tag stricter, and a test enforces it. False matches taught us a lot ("from scratch" is not Scratch; a Slack-bot tutorial is not kid-safe).
+- **Parsing is never as clean as it looks.** Our first parser silently dropped about 30 build entries; counting lines in the source found it.
+- **Free and static beat clever.** No paid API: classification and translation were done ahead of time and committed, so anyone can rebuild with no key, and the site is fast and cheap to host.
+- **ShareAlike is a real constraint.** CS Unplugged is CC BY-SA, so we attribute, say "changes were made", keep it apart from the CC0 lists and share our adaptations (and their translations) the same way.
+- **Supabase tables need explicit GRANTs and Row Level Security.** A policy alone is not enough when "expose new tables" is off, and we proved the rules by attacking them with the public key.
+- **Keep secrets server-side and in `.env`**, and scan the git history, not just the files.
+- **Commit often.** A day of Vercel work was nearly lost because it sat uncommitted when we switched branches (it survived in a git stash).
+- **A strict Content-Security-Policy breaks things quietly**: our self-hosted font was blocked until `font-src 'self'` was added in both places the policy lives (Flask and `vercel.json`), and a test now keeps the two in step.
+- **Accessibility needs real audits** (axe, a contrast script, keyboard walk-throughs), not just good intentions: the audits found missing button names on phones, hard-coded English labels and low-contrast borders that we had not noticed.
 
-## Team & Roles
-| Name | Role | Responsibilities | Files |
-|------|------|------------------|-------|
-| Eren | **Data lead** | Fetch and parse the two CC0 lists and CS Unplugged into JSON; categorize every entry (topic, level, age, safety tier); hand-label what rules can't decide; link checks; stats; keep `docs/SOURCES.md` accurate. | `scripts/` (except `translate.py`), `src/data/`, `docs/SOURCES.md`, `docs/SAFETY_REVIEW.md` |
-| Brian | **AI lead** | Translation quality and queue (`docs/TRANSLATE_QUEUE.md`), native-speaker spot checks, and the guide's AI-or-rules path. `translate.py` is optional (needs a key). | `scripts/translate.py`, `src/guide.py` (with Tobi) |
-| Tobi | **Backend lead** | Flask routes, language and level filtering, UI strings, right-to-left support, search, deployment. Also the safety gate (hide non-kid-safe by default) and guide filtering by safety, age fit and goal. | `src/app.py`, `requirements.txt` |
-| Isabella | **Frontend + pitch lead** | Pages, level badges, language switcher, attribution footer, accessibility; then README, slides, demo video, and submission. | `src/templates/`, `public/static/`, `docs/PITCH.md` |
-
-## Challenges / What We Learned
-**Data**
-- *Parsing is never as clean as it looks.* The two lists are hand-edited Markdown: language tags in bold (`**Python**: title`), `[video]` and `[pdf]` markers, `#` anchors and duplicate links. Our first parser silently dropped about 30 build entries; we found it by counting lines in the source.
-- *Safety fails closed.* Every entry is `kid-safe`, `ask-a-grown-up` or `adult-only`; anything unclear is ask-a-grown-up. Rules were only ever allowed to get stricter (a test enforces it), and false matches taught us a lot ("from scratch" is not Scratch, "child process" is not a child, a Slack-bot tutorial is not kid-safe).
-- *No paid API, so no API in the pipeline.* Classification and translation are done ahead of time by hand with Claude Code and committed (`scripts/cache/`, `src/data/`), so anyone can rebuild with no key.
-- *ShareAlike is a constraint.* CS Unplugged is CC BY-SA 4.0 and the lists are CC0, so they live in separate files, we copy no lesson text, and translations carry attribution and a "changes were made" note.
-- *Hand-labeling has limits.* We label titles, descriptions and hosts, never the linked pages, and a person spot-checked only 70 entries. "Kid-safe" means nothing in the listing looks risky. Real kid content for games, art and web at ages 5-10 is thin, so the guide backfills and we say so (see `docs/STATS.md`).
+## Licensing
+Our code: **MIT** (`LICENSE`). Content: CS Unplugged under **CC BY-SA 4.0** (University of Canterbury CSER Group; our adaptations and translations are shared the same way), the two link lists under **CC0**, the easy-to-read font under the **SIL OFL**. Full list in `NOTICE.md` and `docs/SOURCES.md`.

@@ -59,6 +59,12 @@ scripts/  setup / seed / helper scripts
 tests/    tests
 ```
 
+## How to request changes
+- Open a GitHub issue and assign it to the person who owns the file (see the roles table below), or mention them in an issue or PR.
+- Say what you need and which URL, file or data field it touches.
+- Backend files: `src/app.py`, `src/store.py`, `src/gate.py`, `src/guide.py`. Pull `main` before you start and run `python -m unittest discover -s tests`.
+- Never commit `.env` or any secret.
+
 ## Team & Roles
 | Name | Role | Responsibilities | Files |
 |------|------|------------------|-------|

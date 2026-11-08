@@ -611,15 +611,22 @@ def accessibility(lang):
 @app.before_request
 def block_cross_site_posts():
     """CSRF defence for every POST (grown-up switch, level choice, feedback): a form on another website cannot make
-    a visitor's browser change this site's session. Browsers always say where a POST came from (Sec-Fetch-Site and
-    Origin); a missing header (curl, tests) is not a browser cross-site attack, so it is allowed. The session cookie is
-    also SameSite=Lax, and the feedback form has its own token on top."""
+    a visitor's browser change this site's session.
+
+    Browsers say where a POST came from in `Sec-Fetch-Site`. When it is present we trust it: same-origin is fine, anything
+    else is refused. We do NOT use the `Origin` header in that case, because with `Referrer-Policy: no-referrer` (which
+    we send) browsers send `Origin: null` even for our own forms. Old browsers without `Sec-Fetch-Site` fall back to
+    checking a real `Origin` against our host. The session cookie is also SameSite=Lax and the feedback form has its
+    own token. A missing header (curl, tests) is not a browser cross-site attack, so it is allowed."""
     if request.method != "POST":
         return None
-    if request.headers.get("Sec-Fetch-Site", "same-origin") not in ("same-origin", "none"):
-        abort(403)
+    site = request.headers.get("Sec-Fetch-Site")
+    if site is not None:
+        if site not in ("same-origin", "none"):
+            abort(403)
+        return None
     origin = request.headers.get("Origin")
-    if origin and urlparse(origin).netloc != request.host:
+    if origin and origin != "null" and urlparse(origin).netloc != request.host:
         abort(403)
     return None
 

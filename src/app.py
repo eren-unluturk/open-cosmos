@@ -84,8 +84,11 @@ def listing(lang, side):
     groups = {}
     for e in items:
         groups.setdefault(e["category"], []).append(e)
+    hidden = 0
+    if not is_adult():  # entries a grown-up could reveal (adult-only is never counted or shown)
+        hidden = len(select(lang, side, level, q, age, topic, adult=True)) - len(items)
     return render_template("listing.html", side=side, groups=groups, level=level, q=q,
-                           age=age, topic=topic, **ctx(lang))
+                           age=age, topic=topic, ages=guide.AGES, topics=TOPICS, hidden=hidden, **ctx(lang))
 
 
 def filters():
@@ -100,8 +103,8 @@ def filters():
     return level, q, age, topic
 
 
-def select(lang, side, level, q, age=None, topic=None):
-    items = gate.filter_visible(store.entries(side), is_adult())
+def select(lang, side, level, q, age=None, topic=None, adult=None):
+    items = gate.filter_visible(store.entries(side), is_adult() if adult is None else adult)
     if level:
         items = [e for e in items if e.get("level") == level]
     if age:  # entries suited to this age or younger

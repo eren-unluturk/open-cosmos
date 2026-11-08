@@ -1,0 +1,63 @@
+{
+  "_note": "AI-generated (Claude Code) UI strings for the browser-only progress feature; not yet checked by native speakers. Keep {placeholders} as they are.",
+  "en": {
+    "mark_done": "Mark as done", "done": "Done", "marked_done": "Marked as done", "marked_undone": "Marked as not done", "done_label": "done",
+    "summary": "{done} of {total} done", "steps_summary": "{done} of {total} steps done", "stars_label": "{stars} of 5 stars",
+    "panel_title": "My progress", "items_done": "{count} done",
+    "start_again": "Start again", "start_again_confirm": "Yes, clear my progress", "cancel": "Cancel", "cleared": "Progress cleared",
+    "copy_code": "Copy my progress code", "use_code": "Use a progress code", "apply_code": "Use this code", "code_label": "Paste a progress code",
+    "copied": "Progress code copied", "copy_failed": "Could not copy. Select the code and copy it by hand.",
+    "code_ok": "Progress added", "code_bad": "That code didn't work",
+    "storage_unavailable": "Progress can't be saved in this browser.",
+    "privacy": "Your progress is saved only in this browser. Nothing is sent to us.",
+    "grown_up_note": "A grown-up can use the progress code to move progress to another device."
+  },
+  "es": {
+    "mark_done": "Marcar como hecho", "done": "Hecho", "marked_done": "Marcado como hecho", "marked_undone": "Marcado como no hecho", "done_label": "hecho",
+    "summary": "{done} de {total} hechos", "steps_summary": "{done} de {total} pasos hechos", "stars_label": "{stars} de 5 estrellas",
+    "panel_title": "Mi progreso", "items_done": "{count} hechos",
+    "start_again": "Empezar de nuevo", "start_again_confirm": "Sí, borrar mi progreso", "cancel": "Cancelar", "cleared": "Progreso borrado",
+    "copy_code": "Copiar mi código de progreso", "use_code": "Usar un código de progreso", "apply_code": "Usar este código", "code_label": "Pega un código de progreso",
+    "copied": "Código de progreso copiado", "copy_failed": "No se pudo copiar. Selecciona el código y cópialo a mano.",
+    "code_ok": "Progreso añadido", "code_bad": "Ese código no funcionó",
+    "storage_unavailable": "No se puede guardar el progreso en este navegador.",
+    "privacy": "Tu progreso se guarda solo en este navegador. No se nos envía nada.",
+    "grown_up_note": "Un adulto puede usar el código de progreso para llevar el progreso a otro dispositivo."
+  },
+  "ar": {
+    "mark_done": "وضع علامة تم", "done": "تم", "marked_done": "تم وضع علامة تم", "marked_undone": "تمت إزالة علامة تم", "done_label": "تم",
+    "summary": "تم {done} من {total}", "steps_summary": "تمت {done} من {total} خطوات", "stars_label": "{stars} من 5 نجوم",
+    "panel_title": "تقدّمي", "items_done": "تم {count}",
+    "start_again": "ابدأ من جديد", "start_again_confirm": "نعم، امسح تقدّمي", "cancel": "إلغاء", "cleared": "تم مسح التقدّم",
+    "copy_code": "انسخ رمز تقدّمي", "use_code": "استخدم رمز تقدّم", "apply_code": "استخدم هذا الرمز", "code_label": "الصق رمز التقدّم",
+    "copied": "تم نسخ رمز التقدّم", "copy_failed": "تعذّر النسخ. حدّد الرمز وانسخه يدويًا.",
+    "code_ok": "تمت إضافة التقدّم", "code_bad": "لم يعمل هذا الرمز",
+    "storage_unavailable": "لا يمكن حفظ التقدّم في هذا المتصفح.",
+    "privacy": "يُحفظ تقدّمك في هذا المتصفح فقط. لا يُرسل إلينا أي شيء.",
+    "grown_up_note": "يمكن لشخص بالغ استخدام رمز التقدّم لنقل التقدّم إلى جهاز آخر."
+  },
+  "hi": {
+    "mark_done": "पूरा हुआ चिह्नित करें", "done": "पूरा हुआ", "marked_done": "पूरा हुआ चिह्नित किया", "marked_undone": "पूरा नहीं हुआ चिह्नित किया", "done_label": "पूरा हुआ",
+    "summary": "{total} में से {done} पूरे", "steps_summary": "{total} में से {done} चरण पूरे", "stars_label": "5 में से {stars} सितारे",
+    "panel_title": "मेरी प्रगति", "items_done": "{count} पूरे",
+    "start_again": "फिर से शुरू करें", "start_again_confirm": "हाँ, मेरी प्रगति मिटाएँ", "cancel": "रद्द करें", "cleared": "प्रगति मिटा दी गई",
+    "copy_code": "मेरा प्रगति कोड कॉपी करें", "use_code": "प्रगति कोड इस्तेमाल करें", "apply_code": "यह कोड इस्तेमाल करें", "code_label": "प्रगति कोड यहाँ चिपकाएँ",
+    "copied": "प्रगति कोड कॉपी हो गया", "copy_failed": "कॉपी नहीं हो सका। कोड चुनकर हाथ से कॉपी करें।",
+    "code_ok": "प्रगति जोड़ दी गई", "code_bad": "यह कोड काम नहीं किया",
+    "storage_unavailable": "इस ब्राउज़र में प्रगति सहेजी नहीं जा सकती।",
+    "privacy": "आपकी प्रगति केवल इस ब्राउज़र में सहेजी जाती है। हमें कुछ नहीं भेजा जाता।",
+    "grown_up_note": "कोई बड़ा प्रगति कोड से प्रगति को दूसरे डिवाइस पर ले जा सकता है।"
+  },
+  "pt": {
+    "mark_done": "Marcar como feito", "done": "Feito", "marked_done": "Marcado como feito", "marked_undone": "Marcado como não feito", "done_label": "feito",
+    "summary": "{done} de {total} feitos", "steps_summary": "{done} de {total} passos feitos", "stars_label": "{stars} de 5 estrelas",
+    "panel_title": "Meu progresso", "items_done": "{count} feitos",
+    "start_again": "Começar de novo", "start_again_confirm": "Sim, apagar meu progresso", "cancel": "Cancelar", "cleared": "Progresso apagado",
+    "copy_code": "Copiar meu código de progresso", "use_code": "Usar um código de progresso", "apply_code": "Usar este código", "code_label": "Cole um código de progresso",
+    "copied": "Código de progresso copiado", "copy_failed": "Não foi possível copiar. Selecione o código e copie à mão.",
+    "code_ok": "Progresso adicionado", "code_bad": "Esse código não funcionou",
+    "storage_unavailable": "Não é possível salvar o progresso neste navegador.",
+    "privacy": "Seu progresso é salvo apenas neste navegador. Nada é enviado para nós.",
+    "grown_up_note": "Um adulto pode usar o código de progresso para levar o progresso a outro dispositivo."
+  }
+}

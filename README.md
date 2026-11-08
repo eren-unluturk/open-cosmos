@@ -32,6 +32,7 @@ Python (Flask + Jinja2), Tailwind via CDN, static JSON data produced ahead of ti
 python scripts/fetch.py        # download + parse the two CC0 lists
 python scripts/fetch_kids.py   # CS Unplugged lessons (CC BY-SA 4.0) -> src/data/kids.json
 python scripts/categorize.py --no-ai  # topic, level, age_group, safety (uses the committed cache + human overrides)
+python scripts/apply_translations.py # hand-written es/ar/hi/pt translations from scripts/translation_content/ (no API key)
 python scripts/mark_reuse.py   # reuse flag: open-content (CS Unplugged) vs link-only
 python scripts/fetch_lessons.py # src/data/lessons.json (26 adapted CS Unplugged lessons)
 python scripts/build_guides.py # src/data/guides.json (7 fallbacks + 65 handwritten group guides)
@@ -58,6 +59,12 @@ assets/   images, logos, demo media
 scripts/  setup / seed / helper scripts
 tests/    tests
 ```
+
+## How to request changes
+- Open a GitHub issue and assign it to the person who owns the file (see the roles table below), or mention them in an issue or PR.
+- Say what you need and which URL, file or data field it touches.
+- Backend files: `src/app.py`, `src/store.py`, `src/gate.py`, `src/guide.py`. Pull `main` before you start and run `python -m unittest discover -s tests`.
+- Never commit `.env` or any secret.
 
 ## Team & Roles
 | Name | Role | Responsibilities | Files |

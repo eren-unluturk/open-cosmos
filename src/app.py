@@ -1,4 +1,5 @@
 """Flask app. Run: flask --app src/app run --debug"""
+import json
 import os
 import secrets
 import sys
@@ -83,8 +84,11 @@ def listing(lang, side):
     groups = {}
     for e in items:
         groups.setdefault(e["category"], []).append(e)
+    hidden = 0
+    if not is_adult():  # entries a grown-up could reveal (adult-only is never counted or shown)
+        hidden = len(select(lang, side, level, q, age, topic, adult=True)) - len(items)
     return render_template("listing.html", side=side, groups=groups, level=level, q=q,
-                           age=age, topic=topic, **ctx(lang))
+                           age=age, topic=topic, ages=guide.AGES, topics=TOPICS, hidden=hidden, **ctx(lang))
 
 
 def filters():
@@ -99,8 +103,8 @@ def filters():
     return level, q, age, topic
 
 
-def select(lang, side, level, q, age=None, topic=None):
-    items = gate.filter_visible(store.entries(side), is_adult())
+def select(lang, side, level, q, age=None, topic=None, adult=None):
+    items = gate.filter_visible(store.entries(side), is_adult() if adult is None else adult)
     if level:
         items = [e for e in items if e.get("level") == level]
     if age:  # entries suited to this age or younger
@@ -457,18 +461,52 @@ def library(lang):
     gid = request.args.get("g")
     gid = gid if gid in u.g else None
     lv = level_pref()
+    where = request.args.get("where")
+    where = where if where in WHERE else None
     pool = u.all if not gid else [e for s in u.g[gid]["systems"] for e in s["stops"]]
-    seen, results = set(), []
+    seen, matched = set(), []
     for e in sorted(pool, key=tracks.stop_sort_key):
         if e["id"] in seen or not u.visible(e) or (lv and e.get("level") != lv) or (q and not store.matches(e, q, lang)):
             continue
         seen.add(e["id"])
         g, s = u.home_of(e["id"])
-        results.append({"e": e, "galaxy": g, "system": s})
+        matched.append({"e": e, "galaxy": g, "system": s, "where": where_of(e)})
+    probs = problem_hits(lang, q, lv) if (not gid or gid == PROBLEM_GALAXY) else []
+    counts = {"site": len(probs) + sum(1 for r in matched if r["where"] == "site"),
+              "external": sum(1 for r in matched if r["where"] == "external")}
+    results = [r for r in matched if not where or r["where"] == where]
+    if where == "external":
+        probs = []
     page = max(1, request.args.get("page", 1, type=int))
     hidden = 0 if (q or gid or is_adult()) else len([e for e in u.all if not u.visible(e)])
-    return render_template("library.html", q=q, gid=gid, results=results[: page * 48], total=len(results),
+    return render_template("library.html", q=q, gid=gid, where=where, counts=counts, problems=probs,
+                           results=results[: page * 48], total=len(results) + len(probs),
                            page=page, hidden=hidden, **ctx(lang))
+
+
+# "Where do you do it?" filter on the Everything page.
+#   site      you can do it here: our coding problems, and entries that have one of our adapted lessons
+#   external  a link to another site (the lesson is done there)
+WHERE = ("site", "external")
+PROBLEM_GALAXY = "code"  # coding problems live in the "code" galaxy
+
+
+def where_of(entry):
+    return "site" if entry.get("lesson_id") else "external"
+
+
+def problem_hits(lang, q, level):
+    """Coding problems that match the search box and level filter."""
+    out = []
+    for p in store.problems():
+        if level and p["level"] != level:
+            continue
+        if q and not store.matches({"title": p["title"], "desc": p["prompt"], "category": " ".join(p["concepts"]["en"]),
+                                    "tag": p["language"]}, q, lang):
+            continue
+        out.append(p)
+    order = {l: i for i, l in enumerate(problem_kit.LEVELS)}
+    return sorted(out, key=lambda p: (order[p["level"]], p["title"]["en"].lower()))
 
 
 @app.route("/<lang>/me")
@@ -528,11 +566,17 @@ def security_headers(resp):
     return resp
 
 
+# Strings for Eren's browser-only progress (static/progress.js, docs/PROGRESS_SPEC.md). "_note" is for humans.
+PROGRESS_TEXT = {k: v for k, v in json.loads((Path(__file__).parent / "data" / "progress_text.json")
+                                             .read_text(encoding="utf-8")).items() if k != "_note"}
+
+
 def ctx(lang):
     u = universe()
     return {"lang": lang, "langs": LANGS, "rtl": lang in RTL, "ui": UI[lang], "levels": LEVELS, "adult": is_adult(),
             "grownup": is_adult(), "u": u, "galaxies": u.galaxies, "cur_level": level_pref(),
-            "difficulty": tracks.difficulty, "kind_of": tracks.kind, "level_icon": tracks.LEVEL_ICON}
+            "difficulty": tracks.difficulty, "kind_of": tracks.kind, "level_icon": tracks.LEVEL_ICON,
+            "progress_text": {**PROGRESS_TEXT["en"], **PROGRESS_TEXT.get(lang, {})}}
 
 
 @app.context_processor

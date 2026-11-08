@@ -495,3 +495,31 @@ footer.site form { margin: 0; }
   .deck-nav .btn { padding: 10px 16px; }
   .slide-body { font-size: 17px; }
 }
+
+/* ---------- Coding problems (in-browser editor) ---------- */
+.prompt-box { margin: 8px 0 18px; }
+.mode-pick { margin: 0 0 14px; }
+.guide-panel { margin: 0 0 16px; border-color: var(--lilac); }
+.stage-goal { font-weight: 800; color: var(--gold); margin: 4px 0; }
+.btn-row { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0; }
+.btn[disabled] { opacity: .45; cursor: default; }
+.ide { border-radius: 22px; overflow: hidden; border: 2px solid var(--slate); background: #0a1522; }
+.ide:focus-within { border-color: var(--gold); }
+.ide-bar { display: flex; align-items: center; gap: 12px; padding: 8px 14px; background: var(--navy); font-weight: 800; font-size: 14px; color: var(--mist); }
+.ide-dots { display: flex; gap: 6px; }
+.ide-dots i { width: 11px; height: 11px; border-radius: 50%; background: var(--slate); }
+.ide-dots i:nth-child(1) { background: var(--pink); } .ide-dots i:nth-child(2) { background: var(--gold); } .ide-dots i:nth-child(3) { background: var(--teal); }
+.code-input { display: block; width: 100%; min-height: 280px; border: 0; resize: vertical; padding: 16px; background: transparent; color: var(--moon);
+  font: 15px/1.6 ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; tab-size: 4; }
+.code-input:focus { outline: none; }
+.status-box { margin: 6px 0; }
+.summary { font-family: var(--display); font-size: 22px; font-weight: 600; color: var(--gold); margin: 4px 0; }
+.results { list-style: none; padding: 0; display: grid; gap: 8px; }
+.results li { padding: 10px 14px; border-radius: 14px; background: var(--card); border: 1.5px solid var(--slate); }
+.console { margin: 0; min-height: 120px; padding: 14px 16px; border-radius: 18px; background: #0a1522; border: 1.5px solid var(--slate);
+  color: var(--moon); font: 14px/1.5 ui-monospace, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-x: auto; }
+
+/* List pages: search box + age/topic filters (issue #7). Logical properties, 44px targets. */
+.list-filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-block: 12px; }
+.list-filters .field { min-block-size: 44px; max-inline-size: 100%; }
+.list-filters input[type="search"] { flex: 1 1 220px; }

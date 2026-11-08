@@ -38,6 +38,7 @@
     <h3 class="card-title" lang="{{ lang if e.title.get(lang) else 'en' }}">{{ tr(e.title, lang) }}</h3>
     <div class="card-foot">
       {{ dots(difficulty(e), ui) }}
+      {% if item.where %}<span class="flag">{{ ui['where_' ~ item.where] }}</span>{% endif %}
       <span class="kind">{{ ui[kind_of(e)] }}</span>
     </div>
     {% if show_url %}<span class="orig" title="{{ e.url }}">{{ e.url }}</span>{% endif %}

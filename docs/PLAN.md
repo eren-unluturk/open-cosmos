@@ -104,11 +104,17 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - [x] Data docs for the pitch: `docs/STATS.md`, `docs/SAFETY_REVIEW.md`, `docs/TRANSLATE_QUEUE.md`
 - [x] Guides foundation: `reuse` flag, fallback guides, helpers, tests (`docs/GUIDE_SPEC.md`)
 - [x] Lessons from CS Unplugged (`lessons.json`, 26) and handwritten guides (65 of 65 groups, 100% of visible entries; `docs/GUIDE_PROGRESS.md`)
-- [ ] App: guide slide viewer, `/<lang>/lessons` and lesson page with the CC BY-SA attribution box (Tobi and Isabella, see `docs/GUIDE_SPEC.md`)
-- [ ] Lesson page with language switcher + level tag (Tobi/Isabella; data ready in `lessons.json`)
-- [ ] Level path / roadmap: the guide timeline slide + `build_timeline` + "Explore next" (Tobi/Isabella; data ready)
-- [ ] Attribution/license footer + CC BY-SA attribution box on every lesson and a link to the source on every entry
+- [x] Browser-only progress (`progress.js`, spec in `docs/PROGRESS_SPEC.md`); Tobi must add the template hooks listed there
+- [x] App: guide slide viewer, `/<lang>/lessons` and lesson page with the CC BY-SA attribution box (merged, PR #14)
+- [x] List pages: search box and age/topic/level filters, hidden-entry notice (issue #7)
+- [ ] Deploy on Render (needs the owner's Render sign-in, issue #8; steps in `docs/ISSUES_TRIAGE.md`)
+- [x] Lesson page with language switcher + level tag (`/<lang>/lesson/<id>`)
+- [x] Level path / roadmap: the guide slides, timeline strip and "Explore next"
+- [x] Attribution/license footer + CC BY-SA attribution box on every lesson and a link to the source on every entry
 - [ ] Deployed link + demo video
+
+## Next steps (after the hackathon)
+- Optional **parent accounts with child profiles** (opt-in, with consent), to sync progress across devices. Until then progress is browser-only.
 
 ## Stretch
 - [ ] Low-bandwidth / offline-friendly pages
@@ -159,6 +165,10 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - **CS Unplugged activities added** (Nov 7): programming-challenge pages and classroom integration activities, using the same rules (own short description, repo-stated age, link only). Only 5 lessons really have programming challenges; the rest of the site's `/programming/` pages are empty, so they are skipped. Integrations without a stated age are skipped.
 - **Link-check policy.** `check_links.py` is polite (1 request/second/host, backoff on 429, one retry) and classifies results as ok / rate_limited / blocked_bot / broken / error. 429 and 403 are NOT treated as broken. It never edits data; confirmed-dead links (404, DNS, bad SSL) are removed by hand and listed in `scripts/cache/removed_links.json`, which `fetch.py` skips. Timeouts and 5xx are rechecked before removal. 7 removed so far; 9 temporary errors remain, all ask-a-grown-up.
 - **Guides and lessons (decided).** Link-only entries get an AI-written overview guide (slides + a rule-based timeline) ending in a "leaving our site" slide. Open-content entries (CS Unplugged, CC BY-SA 4.0) are adapted into our own lessons in `src/data/lessons.json`. Every visible entry always resolves to a guide (fallback per topic in `src/data/guides.json`). Guides are written from catalog data only and never claim what is on the linked page. Details: `docs/GUIDE_SPEC.md`; progress: `docs/GUIDE_PROGRESS.md`.
+- **Progress is browser-only.** A child can mark entries and lessons as done and see stars; it is stored only in their own browser (`localStorage`, key `hc_progress_v1`, ids only), with a progress code to move it between devices. No accounts, no cookies, no server storage. Spec: `docs/PROGRESS_SPEC.md`; hooks for Tobi are listed there.
+- **Site name (issue #7).** The page title and footer use "Learning Lab" (the project name in the issue and the Render service name `learning-lab`). It is one string, `brand` in `src/ui_strings.py`, so a space-themed rename later is a one-line change.
+- **List pages (issue #7).** `/<lang>/learn`, `/build` and `/kids` have a search box and age/topic/level filters (`?q=`, `?age=`, `?topic=`, `?level=`), and explain how many entries are hidden until grown-up mode (adult-only is never counted or shown).
+- **translate.py (issue #6).** It strips code fences, retries once, runs 5 requests at a time, defaults to `claude-haiku-5-5` (env `ANTHROPIC_MODEL` overrides) and translates only kid-safe entries unless `--all`. It still needs an API key; hand translations go in an overlay file (see below).
 - **Heuristic caveat:** for the two CC0 sources, `age_group` "11-13" means "Beginner-level web/games/general material", not "written for kids". Only CS Unplugged is actually kid-targeted.
 
 - **Human safety spot-check.** `docs/SAFETY_REVIEW.md` lists 30 random kid-safe, 15 random ask-a-grown-up, all 15 adult-only and 10 youngest/rarest kid-safe entries. Eren reviewed all rows: every one was `ok` (no loosening or tightening needed). Corrections would go in `scripts/cache/safety_overrides.json` (`{"<id>": {"safety": "<tier>", "reason": "..."}}`); `categorize.py` applies it LAST and it may loosen or tighten. The file is currently empty (`{}`). A sample of about 70 of 1,068 entries is a spot-check, not a full review.
@@ -184,6 +194,13 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
   - Guide: `candidates()` should use only `kid-safe` entries whose `age_group` is <= the chosen age (teen+ never shown to kids) and match the goal's `topic`. **Coverage today:** 26 of 36 age/goal/level combinations have fewer than 6 matching entries (run `python scripts/coverage.py`). Two simple rules fix all of them (simulated against the current data): (A) if the goal has fewer than 6 matches, backfill with `topic == "general"` entries at the same level; (B) if still short, backfill with the next lower level at the same age. For ages 5-10 you may also want to offer only Beginner.
   - Note `topic` also has systems/security/other values.
   - `src/guide.py` still has an optional Claude path (`anthropic`, `ANTHROPIC_API_KEY`). We have no key, so the rule-based path above is the real one: make it the default, and drop the AI path and `anthropic` from `requirements.txt` if nobody will use it (also keeps the deploy simple).
+- **Tobi: browser-only progress (read `docs/PROGRESS_SPEC.md`, section "Hooks Tobi must add").** `src/static/progress.js`, `progress.css` and `src/data/progress_text.json` are done and tested; nothing shows until you add these:
+  1. `app.py`: load `progress_text.json` and add `"progress_text": {**PT["en"], **PT.get(lang, {})}` to `ctx()` (skip the `_note` key).
+  2. `base.html`: the CSS `<link>`, the `<script type="application/json" id="hc-progress-text">{{ progress_text | tojson }}</script>` block, `<script src=".../progress.js" defer>`, and a footer `<p data-progress-privacy>{{ progress_text.privacy }}</p>`.
+  3. `entry.html` and the lesson page: `<article data-progress-item="{{ id }}">`.
+  4. `/<lang>/lessons`: `<section data-progress-panel></section>`, `<p data-progress-summary></p>`, and `<ul data-progress-list>` with `<li data-progress-id="{{ lesson.id }}">`.
+  5. Home page: `<span data-progress-stars></span>`.
+  6. No change to the headers: `app.py` sets no CSP today, and the script is CSP-friendly (an external file, no inline script). Nothing is stored on the server and there are no cookies.
 - **Tobi and Isabella: guides and lessons.** Full task lists in `docs/GUIDE_SPEC.md` (load `guides.json` and `lessons.json`, entry page uses `guide_for`/`build_timeline`/`related_entries`, `/<lang>/lessons` routes, slide viewer, CC BY-SA attribution box on every lesson).
 - **Isabella (`src/templates/`):**
   - Footer/attribution line: "Lessons from CS Unplugged (University of Canterbury CSER Group), licensed CC BY-SA 4.0. Titles and descriptions translated and level-tagged by Hackcessability with AI; changes were made. Other lists: CC0." Link https://creativecommons.org/licenses/by-sa/4.0/.
@@ -194,7 +211,7 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - **Brian (`scripts/translate.py`, and `src/guide.py` / `requirements.txt` with Tobi):**
   - 74 kid-safe Beginner and CS Unplugged entries are already translated in es/ar/hi/pt, so translate.py skips them (it translates only entries missing a language). Remaining kid-safe Intermediate entries are the next batch.
   - **Translation queue:** `docs/TRANSLATE_QUEUE.md` lists the 401 kid-safe entries still untranslated (24 CS Unplugged, 258+36 Intermediate, 65+18 Advanced), in priority order, with counts per level and source. Pick row ranges with Eren so nobody edits the same JSON entries.
-  - `translate.py` needs an API key and we have none, so remaining translations are done by hand (Claude Code in Eren's session) in batches. Agree with Eren which languages/entries to take from `docs/TRANSLATE_QUEUE.md` and arrange native-speaker checks. If you ever do use the script, known problems (not fixed): it crashes if the model wraps its JSON in a code fence and makes one call at a time (strip fences, retry once, `ThreadPoolExecutor(max_workers=5)`).
+  - `translate.py` needs an API key and we have none, so translations are done by hand (Claude Code in Eren's session) as overlay modules in `scripts/translation_content/`, merged by `python scripts/apply_translations.py`; the 24 newest CS Unplugged entries are done this way. 377 kid-safe entries remain (`docs/TRANSLATE_QUEUE.md`, regenerate with `python scripts/translate_queue.py`). The script's problems from issue #6 are fixed (code fences, one retry, 5 requests at a time, model `claude-haiku-5-5`); native-speaker checks are still needed.
   - Eren's minimal changes to your file: `kids` is included, `level`/`age_group` set by categorize.py are not overwritten, entries are chosen by missing languages, and `ai_translated` is set. Please keep those.
 
 - **Isabella (`docs/PITCH.md`):** the pitch says the AI picks the path in the guide. Change it to: the guide builds a path from our tagged open data using simple rules and can only pick real entries; AI was used ahead of time to translate and classify (no live AI, no key, no personal data).

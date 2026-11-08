@@ -22,7 +22,7 @@ GOALS = {"games": "games", "art": "art", "web": "web", "general": "general"}
 AGES = ["5-7", "8-10", "11-13"]
 LEVELS = ["Beginner", "Intermediate", "Advanced"]
 AGE_ORDER = ["5-7", "8-10", "11-13", "teen+"]
-MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-4-5")
+MODEL = os.environ.get("ANTHROPIC_MODEL", "claude-haiku-5-5")
 PATH_LEN = 6
 
 

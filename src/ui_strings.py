@@ -24,7 +24,7 @@ EN = {
     "all": "All levels", "source": "Source", "license": "License",
     "tagline": "Open-source lessons for every explorer, in your language.",
     # header
-    "brand": "Open Learn", "skip": "Skip to content",
+    "brand": "Learning Lab", "skip": "Skip to content",
     "search_ph": "What part of the galaxy do you want to explore today?", "search_btn": "Explore",
     "constellation": "Constellation", "everything": "Everything", "profile": "My space log",
     "language": "Language", "levels": "Levels", "any_level": "Any level",
@@ -328,6 +328,28 @@ HI = {
     "g_robotics": "रोबोटिक्स प्रोजेक्ट", "g_electricity": "बिजली", "g_environment": "पर्यावरण", "g_health": "स्वास्थ्य और समाज",
     "s_web": "वेब डेवलपमेंट", "s_more-langs": "और भाषाएँ", "s_binary": "बाइनरी संख्याएँ", "s_robots": "रोबोट",
 }
+
+
+# Search/filter labels for the list pages (Learn, Build, Kids). AI-written; native review still welcome.
+LIST_FILTERS = {
+    "en": {"list_search": "Search this list", "list_filter": "Filter", "any_age": "Any age", "any_topic": "Any topic", "topic_label": "Topic",
+           "topic_games": "Games", "topic_art": "Art", "topic_web": "Web", "topic_general": "General coding",
+           "topic_systems": "How computers work", "topic_security": "Security", "topic_other": "Other"},
+    "es": {"list_search": "Buscar en esta lista", "list_filter": "Filtrar", "any_age": "Cualquier edad", "any_topic": "Cualquier tema", "topic_label": "Tema",
+           "topic_games": "Juegos", "topic_art": "Arte", "topic_web": "Web", "topic_general": "Programación general",
+           "topic_systems": "Cómo funcionan las computadoras", "topic_security": "Seguridad", "topic_other": "Otros"},
+    "pt": {"list_search": "Pesquisar nesta lista", "list_filter": "Filtrar", "any_age": "Qualquer idade", "any_topic": "Qualquer tema", "topic_label": "Tema",
+           "topic_games": "Jogos", "topic_art": "Arte", "topic_web": "Web", "topic_general": "Programação geral",
+           "topic_systems": "Como os computadores funcionam", "topic_security": "Segurança", "topic_other": "Outros"},
+    "ar": {"list_search": "ابحث في هذه القائمة", "list_filter": "تصفية", "any_age": "أي عمر", "any_topic": "أي موضوع", "topic_label": "الموضوع",
+           "topic_games": "ألعاب", "topic_art": "فن", "topic_web": "ويب", "topic_general": "برمجة عامة",
+           "topic_systems": "كيف تعمل الحواسيب", "topic_security": "الأمان", "topic_other": "أخرى"},
+    "hi": {"list_search": "इस सूची में खोजें", "list_filter": "फ़िल्टर करें", "any_age": "कोई भी उम्र", "any_topic": "कोई भी विषय", "topic_label": "विषय",
+           "topic_games": "खेल", "topic_art": "कला", "topic_web": "वेब", "topic_general": "सामान्य कोडिंग",
+           "topic_systems": "कंप्यूटर कैसे काम करते हैं", "topic_security": "सुरक्षा", "topic_other": "अन्य"},
+}
+for _code, _d in {"en": EN, "es": ES, "pt": PT, "ar": AR, "hi": HI}.items():
+    _d.update(LIST_FILTERS[_code])
 
 
 class _UI(dict):

@@ -459,47 +459,102 @@ class ProblemTests(unittest.TestCase):
         self.assertIn("{i}", i18n_problems.UI["ar"]["p_hint_n"])
 
 
-class ProblemGalaxyThemeTests(unittest.TestCase):
+class ProgressHookTests(unittest.TestCase):
+    """docs/PROGRESS_SPEC.md "Hooks Tobi must add"."""
+
     def setUp(self):
         app.config["TESTING"] = True
         self.c = app.test_client()
 
-    def test_problem_pages_use_the_galaxy_theme(self):
-        for path in ("/en/problems", "/en/problem/py-double", "/ar/problem/js-add"):
-            html = self.c.get(path).get_data(as_text=True)
-            self.assertIn("galaxy.css", html, path)
-            self.assertIn("problems.css", html, path)
-            self.assertNotIn("cdn.tailwindcss.com", html, path)
+    def page(self, path):
+        r = self.c.get(path)
+        self.assertEqual(r.status_code, 200, path)
+        return r.get_data(as_text=True)
 
-    def test_every_hook_problem_js_needs_is_in_the_page(self):
+    def test_every_page_loads_the_script_text_and_privacy_line(self):
+        import json, re
+        for lang in LANGS:
+            html = self.page(f"/{lang}/")
+            self.assertIn("progress.css", html)
+            self.assertIn("progress.js", html)
+            self.assertIn("data-progress-privacy", html)
+            block = re.search(r'id="hc-progress-text">(.*?)</script>', html, re.S).group(1)
+            text = json.loads(block)
+            self.assertNotIn("_note", text)
+            self.assertTrue(text["privacy"], lang)
+        self.assertIn("data-progress-stars", self.page("/en/"))
+
+    def test_entry_and_lesson_pages_have_the_toggle_hook(self):
+        ls = store.lessons()[0]
+        self.assertIn(f'data-progress-item="{ls["id"]}"', self.page(f"/en/lesson/{ls['id']}"))
+        self.assertIn(f'data-progress-item="{ls["entry_id"]}"', self.page(f"/en/entry/{ls['entry_id']}"))
+
+    def test_lessons_list_has_panel_summary_and_ids(self):
+        html = self.page("/en/lessons")
+        for hook in ("data-progress-panel", "data-progress-list", "data-progress-summary"):
+            self.assertIn(hook, html)
+        for ls in store.lessons():
+            self.assertIn(f'data-progress-id="{ls["id"]}"', html)
+
+    def test_guide_path_is_a_roadmap_of_valid_ids(self):
         import re
-        js = (Path(SRC) / "static" / "problem.js").read_text(encoding="utf-8")
-        wanted = set(re.findall(r'\$\("([a-z-]+)"\)', js))
-        html = self.c.get("/en/problem/py-double").get_data(as_text=True)
-        for ident in wanted:
-            self.assertIn(f'id="{ident}"', html, ident)
-        self.assertIn('name="mode"', html)
-        self.assertIn("data-needs-idle", html)
+        html = self.page("/en/guide?age=8-10&goal=games&level=Beginner")
+        ids = re.search(r'data-progress-roadmap="([^"]*)"', html).group(1).split(",")
+        self.assertTrue(ids and all(re.fullmatch(r"[a-z]+-[0-9a-f]{8}", i) for i in ids), ids)
 
-    def test_links_to_problems_exist(self):
-        self.assertIn("/en/problems", self.c.get("/en/").get_data(as_text=True))
-        self.assertIn("/es/problems", self.c.get("/es/lessons").get_data(as_text=True))
 
-    def test_solved_badge_hook(self):
-        html = self.c.get("/en/problems").get_data(as_text=True)
-        self.assertIn('data-id="py-hello"', html)
-        self.assertIn("solved-badge", html)
+class WhereFilterTests(unittest.TestCase):
+    """Everything page: split "do it here" (coding problems + our lessons) from "on other sites"."""
 
-    def test_progress_hook_is_defined_and_only_same_site_links(self):
-        js = (Path(SRC) / "static" / "galaxy.js").read_text(encoding="utf-8")
-        self.assertIn("window.HackProgress", js)
-        self.assertIn("markSolved", js)
-        self.assertIn("function safeUrl", js)
+    def setUp(self):
+        app.config["TESTING"] = True
+        self.c = app.test_client()
 
-    def test_solved_label_in_every_language(self):
-        import i18n_problems
-        for lang, labels in i18n_problems.UI.items():
-            self.assertTrue(labels["p_solved"] and "?" not in labels["p_solved"], lang)
+    def page(self, path):
+        r = self.c.get(path)
+        self.assertEqual(r.status_code, 200, path)
+        return r.get_data(as_text=True)
+
+    def test_site_shows_problems_and_lesson_entries_only(self):
+        import re
+        html = self.page("/en/library?where=site")
+        for p in store.problems():
+            self.assertIn(f"/en/problem/{p['id']}", html)
+        for eid in re.findall(r'/en/entry/([a-z]+-[0-9a-f]{8})', html):
+            self.assertTrue(store.get(eid)["lesson_id"], eid)
+
+    def test_external_has_no_problems_and_no_lesson_entries(self):
+        import re
+        html = self.page("/en/library?where=external")
+        self.assertNotIn("/en/problem/", html)
+        ids = re.findall(r'/en/entry/([a-z]+-[0-9a-f]{8})', html)
+        self.assertTrue(ids)
+        for eid in ids:
+            self.assertIsNone(store.get(eid)["lesson_id"], eid)
+
+    def test_counts_add_up(self):
+        import re
+        html = self.page("/en/library")
+        site = int(re.search(r"Do it here \((\d+)\)", html).group(1))
+        ext = int(re.search(r"On other sites \((\d+)\)", html).group(1))
+        visible_lessons = sum(1 for ls in store.lessons() if store.get(ls["entry_id"])["safety"] == "kid-safe")
+        self.assertEqual(site, len(store.problems()) + visible_lessons)
+        self.assertGreater(ext, 0)
+
+    def test_search_works_inside_each_group(self):
+        html = self.page("/en/library?where=site&q=binary")
+        self.assertIn("/en/problem/py-to-binary", html)
+        self.assertIn("/en/problem/js-binary-search", html)
+        self.assertNotIn("/en/problem/py-hello", html)
+
+    def test_bad_value_and_every_language(self):
+        self.assertIn("/en/problem/", self.page("/en/library?where=<script>"))
+        for lang in LANGS:
+            self.page(f"/{lang}/library?where=site")
+            self.page(f"/{lang}/library?where=external")
+
+    def test_other_galaxy_hides_problems(self):
+        self.assertNotIn("/en/problem/", self.page("/en/library?g=art"))
 
 
 class TranslationParityTests(unittest.TestCase):

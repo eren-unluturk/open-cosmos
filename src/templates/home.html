@@ -5,6 +5,7 @@
   <div class="hero-text">
     <h1 class="headline">{{ ui.home_h1_a }} <span class="hl">{{ ui.home_h1_b }}</span></h1>
     <p class="hero-sub">{{ ui.home_sub }}</p>
+    <span data-progress-stars></span>
     <div class="actions">
       <a class="btn btn-gold btn-lg" href="{{ url_for('guide_page', lang=lang) }}">{{ icon('compass') }} {{ ui.cta_start }}</a>
       <a class="textlink" href="{{ url_for('constellation', lang=lang) }}">{{ ui.cta_wander }} <span aria-hidden="true">→</span></a>
@@ -49,13 +50,13 @@
 <section aria-labelledby="more" class="more">
   <h2 id="more" class="section-title small">{{ ui.more_galaxies }}</h2>
   <div class="galaxy-tiles">
+    <a class="gtile hue-teal" href="{{ url_for('problems_page', lang=lang) }}">
+      <span class="gdisc">{{ icon('g-code') }}</span>
+      <span><span class="gname">{{ ui.problems_title }}</span><span class="gcount">Python · JavaScript</span></span>
+    </a>
     <a class="gtile hue-gold" href="{{ url_for('lessons_page', lang=lang) }}">
       <span class="gdisc">{{ icon('book') }}</span>
       <span><span class="gname">{{ ui.lessons }}</span><span class="gcount">{{ lesson_count }} {{ ui.kind_unplugged|lower }}</span></span>
-    </a>
-    <a class="gtile hue-teal" href="{{ url_for('problems_page', lang=lang) }}">
-      <span class="gdisc">{{ icon('compass') }}</span>
-      <span><span class="gname">{{ ui.problems_title }}</span><span class="gcount">Python · JavaScript</span></span>
     </a>
     {% for g in galaxies if g.id != (first[0].id if first else '') %}
       <a class="gtile hue-{{ g.hue }}" href="{{ url_for('galaxy', lang=lang, gid=g.id) }}">

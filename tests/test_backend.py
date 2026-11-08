@@ -469,8 +469,8 @@ class ProblemTests(unittest.TestCase):
         self.assertIn("{i}", i18n_problems.UI["ar"]["p_hint_n"])
 
 
-class ProgressHookTests(unittest.TestCase):
-    """docs/PROGRESS_SPEC.md "Hooks Tobi must add"."""
+class StarProgressTests(unittest.TestCase):
+    """One progress system: Isabella's stars in galaxy.js (issue #26). Eren's extras kept inside it."""
 
     def setUp(self):
         app.config["TESTING"] = True
@@ -481,38 +481,46 @@ class ProgressHookTests(unittest.TestCase):
         self.assertEqual(r.status_code, 200, path)
         return r.get_data(as_text=True)
 
-    def test_every_page_loads_the_script_text_and_privacy_line(self):
-        import json, re
-        for lang in LANGS:
-            html = self.page(f"/{lang}/")
-            self.assertIn("progress.css", html)
-            self.assertIn("progress.js", html)
-            self.assertIn("data-progress-privacy", html)
-            block = re.search(r'id="hc-progress-text">(.*?)</script>', html, re.S).group(1)
-            text = json.loads(block)
-            self.assertNotIn("_note", text)
-            self.assertTrue(text["privacy"], lang)
-        self.assertIn("data-progress-stars", self.page("/en/"))
-
-    def test_entry_and_lesson_pages_have_the_toggle_hook(self):
+    def test_old_system_is_gone(self):
+        for path in ("/en/", "/en/lessons", "/en/me", "/en/guide?age=8-10&goal=games&level=Beginner"):
+            html = self.page(path)
+            self.assertNotIn("progress.js", html)
+            self.assertNotIn("data-progress-", html)
         ls = store.lessons()[0]
-        self.assertIn(f'data-progress-item="{ls["id"]}"', self.page(f"/en/lesson/{ls['id']}"))
-        self.assertIn(f'data-progress-item="{ls["entry_id"]}"', self.page(f"/en/entry/{ls['entry_id']}"))
+        self.assertNotIn("data-progress-item", self.page(f"/en/lesson/{ls['id']}"))
+        self.assertFalse((Path(SRC) / "static" / "progress.js").exists())
 
-    def test_lessons_list_has_panel_summary_and_ids(self):
+    def test_star_button_still_on_lesson_page(self):
+        ls = store.lessons()[0]
+        self.assertIn("data-explore=", self.page(f"/en/lesson/{ls['id']}"))
+
+    def test_privacy_line_in_every_language(self):
+        import json
+        text = json.loads((Path(SRC) / "data" / "progress_text.json").read_text(encoding="utf-8"))
+        for lang in LANGS:
+            self.assertIn(text[lang]["privacy"], self.page(f"/{lang}/"))
+
+    def test_counts_on_lessons_and_guide(self):
         html = self.page("/en/lessons")
-        for hook in ("data-progress-panel", "data-progress-list", "data-progress-summary"):
+        self.assertIn('data-count-for="#lesson-grid"', html)
+        self.assertIn('id="lesson-grid"', html)
+        g = self.page("/en/guide?age=8-10&goal=games&level=Beginner")
+        self.assertIn('data-count-for="#route"', g)
+        self.assertIn('<li data-id="', g)
+
+    def test_me_page_has_code_storage_note_and_safe_clear(self):
+        html = self.page("/es/me")
+        for hook in ("data-copy-code", "data-use-code", 'id="progress-code-in"', "data-storage-note",
+                     "data-clear-cancel", "data-confirm=", 'id="progress-live"'):
             self.assertIn(hook, html)
-        for ls in store.lessons():
-            self.assertIn(f'data-progress-id="{ls["id"]}"', html)
 
-    def test_guide_path_is_a_roadmap_of_valid_ids(self):
-        import re
-        html = self.page("/en/guide?age=8-10&goal=games&level=Beginner")
-        ids = re.search(r'data-progress-roadmap="([^"]*)"', html).group(1).split(",")
-        self.assertTrue(ids and all(re.fullmatch(r"[a-z]+-[0-9a-f]{8}", i) for i in ids), ids)
-
-
+    def test_galaxy_js_has_the_kept_features(self):
+        js = (Path(SRC) / "static" / "galaxy.js").read_text(encoding="utf-8")
+        for needle in ("window.HackProgress", "markSolved", "function safeUrl", "function clean",
+                       "hc_progress_v1", "MAX_ITEMS", "data-count-for"):
+            self.assertIn(needle, js)
+        self.assertNotIn("eval(", js)
+        self.assertNotIn("fetch(", js)
 class AdaptedProblemTests(unittest.TestCase):
     """Problems adapted from CS Unplugged must carry and show the CC BY-SA 4.0 credit."""
 

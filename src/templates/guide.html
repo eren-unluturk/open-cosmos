@@ -17,10 +17,11 @@
   <button class="btn btn-gold" type="submit">{{ icon('rocket') }} {{ ui.start }}</button>
 </form>
 {% if path is not none %}
-  <ol class="route" data-progress-roadmap="{{ path | map(attribute='id') | join(',') }}">
+  <p class="muted" role="status" data-count-for="#route" data-text="{{ progress_text.steps_summary }}"></p>
+  <ol class="route" id="route">
     {% for e in path %}
       {% set gid, sid = u.home_of(e.id) %}
-      <li><div class="panel">
+      <li data-id="{{ e.id }}"><div class="panel">
         <a class="card-title" style="color:var(--moon);text-decoration:none" href="{{ url_for('entry_page', lang=lang, entry_id=e.id, g=gid, s=sid) }}">{{ tr(e.title, lang) }}</a>
         <p style="margin:6px 0">{{ tr(e.desc, lang) or ui.no_desc }}</p>
         <p class="attrib">{{ ui.source }}: <a href="{{ e.source }}">{{ e.source.split('github.com/')[1] }}</a> · {{ ui.license }}: {{ e.license }}</p>

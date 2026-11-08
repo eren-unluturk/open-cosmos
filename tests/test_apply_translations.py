@@ -17,8 +17,8 @@ class Overlay(unittest.TestCase):
     def setUp(self):
         self.tr = at.collect()
 
-    def test_covers_the_24_activities_and_the_377_queued_entries(self):
-        self.assertEqual(len(self.tr), 24 + 377)
+    def test_covers_the_24_activities_377_queued_and_610_grownup_entries(self):
+        self.assertEqual(len(self.tr), 24 + 377 + 610)
         self.assertEqual(sum(1 for i in self.tr if i.startswith("kids-")), 24)
 
     def test_every_language_title_and_desc_present_and_clean(self):

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}{{ ui.fb_title }} · {{ ui.brand }}{% endblock %}
+{% block content %}
+<h1 class="bubble">{{ ui.fb_title }}</h1>
+<p class="lede">{{ ui.fb_intro }}</p>
+{% if status %}
+  <p class="panel" role="status">{{ ui['fb_' ~ status] }}</p>
+{% endif %}
+{% if status != 'sent' %}
+<form method="post" action="{{ url_for('feedback_page', lang=lang) }}" class="panel" autocomplete="off">
+  <input type="hidden" name="csrf" value="{{ csrf }}">
+  <input type="hidden" name="page" value="{{ page }}">
+  <div aria-hidden="true" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden">
+    <label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+  </div>
+  <p><label for="fb-kind"><strong>{{ ui.fb_kind }}</strong></label><br>
+    <select id="fb-kind" name="kind" required>
+      {% for k in kinds %}<option value="{{ k }}">{{ ui['fb_kind_' ~ k] }}</option>{% endfor %}
+    </select></p>
+  <p><label for="fb-message"><strong>{{ ui.fb_message }}</strong></label><br>
+    <textarea id="fb-message" name="message" rows="6" minlength="5" maxlength="1000" required style="width:100%"></textarea><br>
+    <span class="muted">{{ ui.fb_message_hint }}</span></p>
+  <p class="muted">{{ ui.fb_page }}: <bdi dir="ltr">{{ page }}</bdi> · <bdi dir="ltr">{{ lang }}</bdi></p>
+  <p><button class="btn" type="submit">{{ ui.fb_send }}</button></p>
+</form>
+{% endif %}
+<p class="attrib">{{ ui.fb_privacy }}</p>
+<p><a href="{{ page }}">{{ ui.fb_back }}</a></p>
+{% endblock %}

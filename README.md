@@ -45,6 +45,9 @@ python -m unittest discover -s tests
 ```
 Setup once: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`. Nothing in the pipeline needs an API key. Translations are written into the JSON ahead of time (see `docs/PLAN.md`); `scripts/translate.py` is an optional API-based alternative nobody is using. If you ever need a secret, keep it in a local `.env` (git-ignored, never committed).
 
+## Optional: Supabase content store and feedback
+The bundled JSON always works with no setup. If you want a cloud copy of the catalog and the grown-ups' feedback form, follow `docs/SUPABASE.md` (`supabase/schema.sql`, then `python scripts/seed_supabase.py` and `python scripts/verify_supabase.py`). Without `SUPABASE_URL` and `SUPABASE_ANON_KEY` in your local `.env` the site just uses the JSON, and the feedback form shows a friendly "could not send" message.
+
 ## Guides and lessons
 Every learning entry has a short slide **guide** with a recommended roadmap/timeline (`src/data/guides.json`: 65 handwritten group guides plus 7 topic fallbacks, so every visible entry has one; written ahead of time, no live AI). Link-only entries end with a "leaving our site" slide; CS Unplugged lessons (CC BY-SA 4.0) are adapted into our own lessons in `src/data/lessons.json` (26 lessons). Spec for the app: `docs/GUIDE_SPEC.md`. Demo items: `docs/DEMO_SLICE.md`. Numbers for slides: `docs/PITCH_DATA.md`.
 

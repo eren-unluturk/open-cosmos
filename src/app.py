@@ -1,4 +1,5 @@
 """Flask app. Run: flask --app src/app run --debug"""
+import hmac
 import json
 import os
 import secrets
@@ -15,6 +16,9 @@ import guide
 import i18n_guides
 import i18n_lessons
 import i18n_problems
+import feedback
+import i18n_feedback
+import supabase_client
 import problems as problem_kit
 import store
 import tracks
@@ -46,11 +50,14 @@ for _code, _label in KIDS_LABEL.items():
 UI["en"].update(i18n_guides.UI_EN)
 UI["en"].update(i18n_lessons.UI_EN)
 UI["en"].update(i18n_problems.UI_EN)
+UI["en"].update(i18n_feedback.UI_EN)
 for _code, _extra in i18n_guides.UI.items():
     UI[_code].update(_extra)
 for _code, _extra in i18n_lessons.UI.items():
     UI[_code].update(_extra)
 for _code, _extra in i18n_problems.UI.items():
+    UI[_code].update(_extra)
+for _code, _extra in i18n_feedback.UI.items():
     UI[_code].update(_extra)
 
 
@@ -543,6 +550,45 @@ def grownup():
     if not nxt.startswith("/") or nxt.startswith("//"):  # block open redirects
         nxt = "/"
     return redirect(nxt)
+
+
+# ---- Grown-ups' feedback (adults only). Stored in Supabase, never shown back on any page. ----
+limiter = feedback.RateLimiter()
+
+
+def _csrf_token():
+    if not session.get("csrf"):
+        session["csrf"] = secrets.token_hex(16)
+    return session["csrf"]
+
+
+@app.route("/<lang>/feedback", methods=["GET", "POST"])
+def feedback_page(lang):
+    if lang not in LANGS or not is_adult():
+        abort(404)  # the form does not exist until the grown-up session is on
+    status = request.args.get("status") if request.method == "GET" else None
+    if status not in ("sent", "down", "invalid", "rate", "expired"):
+        status = None
+    if request.method == "POST":
+        sent = request.form
+        if sent.get("website"):  # honeypot: bots fill hidden fields; pretend it worked, store nothing
+            return redirect(url_for("feedback_page", lang=lang, status="sent"))
+        token = session.get("csrf") or ""
+        if not token or not hmac.compare_digest(token, str(sent.get("csrf", ""))):
+            return redirect(url_for("feedback_page", lang=lang, status="expired"))
+        payload, err = feedback.validate(sent.get("kind"), sent.get("message"), sent.get("page"), lang)
+        if err:
+            return redirect(url_for("feedback_page", lang=lang, status="invalid"))
+        if not session.get("sid"):
+            session["sid"] = secrets.token_hex(8)
+        if not limiter.allow(session["sid"]):
+            return redirect(url_for("feedback_page", lang=lang, status="rate"))
+        url, key = os.environ.get("SUPABASE_URL"), os.environ.get("SUPABASE_ANON_KEY")
+        ok = bool(url and key) and supabase_client.insert_feedback(url, key, payload)
+        return redirect(url_for("feedback_page", lang=lang, status="sent" if ok else "down"))
+    page = feedback.clean_page(request.args.get("page", "/"))
+    return render_template("feedback.html", status=status, page=page, csrf=_csrf_token(),
+                           kinds=feedback.KINDS, **ctx(lang))
 
 
 @app.errorhandler(404)

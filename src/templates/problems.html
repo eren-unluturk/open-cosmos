@@ -29,7 +29,7 @@
     <article class="card">
       <a class="card-body" href="{{ url_for('problem_page', lang=lang, problem_id=p.id) }}">
         <div class="card-top">
-          <span class="chip {{ 'gold' if p.language == 'python' else 'teal' }}">{{ ui['p_lang_' ~ p.language] }}</span>
+          <span class="chip {{ 'gold' if p.language == 'python' else 'teal' }}">{{ ui['p_lang_' ~ p.language] }}</span>{% if p.attribution %}<span class="flag">{{ ui.p_adapted }}</span>{% endif %}
           <span class="badge lvl-{{ level_icon.get(p.level, 'robot') }}" title="{{ ui['lvl_' ~ p.level] }}"><span class="sr-only">{{ ui['lvl_' ~ p.level] }}</span><svg class="i" aria-hidden="true"><use href="#{{ level_icon.get(p.level, 'robot') }}"/></svg></span>
         </div>
         <h3 class="card-title">{{ p.title.get(lang) or p.title.en }}</h3>

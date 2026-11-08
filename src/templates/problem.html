@@ -9,6 +9,7 @@
     <span class="chip">{{ ui['lvl_' ~ p.level] }}</span>
     <span class="flag">{{ ui.ages }} {{ p.age_group }}</span>
     {% if english_only %}<span class="flag">{{ ui.p_english }}</span>{% endif %}
+    {% if p.attribution %}<span class="flag">{{ ui.p_adapted }}</span>{% endif %}
   </div>
 
   <noscript><p class="panel notice">{{ ui.p_noscript }}</p></noscript>
@@ -75,6 +76,16 @@
     <pre id="answer-code" class="console" dir="ltr"></pre>
     <p id="answer-note" class="attrib"></p>
   </section>
+
+  {% if p.attribution %}
+  {# CC BY-SA 4.0 credit box. Required on every adapted problem. #}
+  <section class="panel cc-box" aria-labelledby="cc-h">
+    <h2 id="cc-h" class="side-h">CC BY-SA 4.0</h2>
+    <p>{{ p.attribution }}</p>
+    <p><a href="{{ p.source }}" rel="noopener noreferrer">{{ ui.p_original }}</a> · <a href="{{ p.license_url }}" rel="noopener noreferrer">{{ ui.lesson_license_link }}</a></p>
+    <p><strong>{{ ui.p_changes }}:</strong> {{ p.changes_made }}</p>
+  </section>
+  {% endif %}
 </article>
 
 <script type="application/json" id="problem-data">{{ config | tojson }}</script>

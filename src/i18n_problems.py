@@ -57,6 +57,9 @@ UI_EN = {
     "where_label": "Where you do it",
     "where_problems_h": "Coding problems you can solve here",
     "where_more_h": "More from the library",
+    "p_adapted": "From CS Unplugged",
+    "p_original": "Original challenge",
+    "p_changes": "Changes",
 }
 
 UI = {
@@ -111,6 +114,9 @@ UI = {
         "where_label": "Dónde lo haces",
         "where_problems_h": "Problemas de programación para resolver aquí",
         "where_more_h": "Más de la biblioteca",
+        "p_adapted": "De CS Unplugged",
+        "p_original": "Reto original",
+        "p_changes": "Cambios",
     },
     "ar": {
         "problems_title": "مسائل البرمجة",
@@ -163,6 +169,9 @@ UI = {
         "where_label": "أين تقوم به",
         "where_problems_h": "مسائل برمجة يمكنك حلّها هنا",
         "where_more_h": "المزيد من المكتبة",
+        "p_adapted": "من CS Unplugged",
+        "p_original": "التحدي الأصلي",
+        "p_changes": "التغييرات",
     },
     "hi": {
         "problems_title": "कोडिंग समस्याएँ",
@@ -215,6 +224,9 @@ UI = {
         "where_label": "आप इसे कहाँ करते हैं",
         "where_problems_h": "कोडिंग समस्याएँ जिन्हें आप यहीं हल कर सकते हैं",
         "where_more_h": "लाइब्रेरी से और",
+        "p_adapted": "CS Unplugged से",
+        "p_original": "मूल चुनौती",
+        "p_changes": "बदलाव",
     },
     "pt": {
         "problems_title": "Problemas de programação",
@@ -267,5 +279,8 @@ UI = {
         "where_label": "Onde você faz",
         "where_problems_h": "Problemas de programação para resolver aqui",
         "where_more_h": "Mais da biblioteca",
+        "p_adapted": "Do CS Unplugged",
+        "p_original": "Desafio original",
+        "p_changes": "Mudanças",
     },
 }

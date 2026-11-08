@@ -503,6 +503,46 @@ class ProgressHookTests(unittest.TestCase):
         self.assertTrue(ids and all(re.fullmatch(r"[a-z]+-[0-9a-f]{8}", i) for i in ids), ids)
 
 
+class AdaptedProblemTests(unittest.TestCase):
+    """Problems adapted from CS Unplugged must carry and show the CC BY-SA 4.0 credit."""
+
+    def setUp(self):
+        app.config["TESTING"] = True
+        self.c = app.test_client()
+
+    def adapted(self):
+        return [p for p in store.problems() if p["license"] == "CC-BY-SA-4.0"]
+
+    def test_there_are_many_and_both_languages(self):
+        ids = {p["id"] for p in self.adapted()}
+        self.assertGreaterEqual(len(ids), 50)
+        for p in self.adapted():
+            twin = ("js-" if p["language"] == "python" else "py-") + p["id"].split("-", 1)[1]
+            self.assertIn(twin, ids)
+
+    def test_every_adapted_problem_has_full_credit(self):
+        for p in self.adapted():
+            self.assertIn("CS Unplugged", p["attribution"], p["id"])
+            self.assertTrue(p["source"].startswith("https://github.com/uccser/cs-unplugged/"), p["id"])
+            self.assertEqual(p["license_url"], "https://creativecommons.org/licenses/by-sa/4.0/")
+            self.assertIn("CC BY-SA 4.0", p["changes_made"])
+
+    def test_page_shows_the_credit_box(self):
+        p = self.adapted()[0]
+        html = self.c.get(f"/en/problem/{p['id']}").get_data(as_text=True)
+        self.assertIn('class="panel cc-box"', html)
+        self.assertIn(p["source"], html)
+        self.assertIn(p["license_url"], html)
+        self.assertNotIn('class="panel cc-box"', self.c.get("/en/problem/py-hello").get_data(as_text=True))
+
+    def test_python_text_uses_python_words(self):
+        import re
+        for p in self.adapted():
+            if p["language"] == "python":
+                text = p["prompt"]["en"] + " ".join(p["hints"]["en"])
+                self.assertIsNone(re.search(r"\b(true|false|null)\b", text), p["id"])
+
+
 class WhereFilterTests(unittest.TestCase):
     """Everything page: split "do it here" (coding problems + our lessons) from "on other sites"."""
 

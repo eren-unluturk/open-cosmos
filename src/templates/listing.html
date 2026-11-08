@@ -1,10 +1,27 @@
 {% extends "base.html" %}
-{% from "macros.html" import card, icon with context %}
+{% from "macros.html" import card, grownup_notice, icon with context %}
+{% block title %}{{ ui[side] }} · {{ ui.brand }}{% endblock %}
 {% block content %}
 <h1 class="bubble">{{ ui[side] }}</h1>
+<form class="panel list-filters" method="get" action="{{ url_for('listing', lang=lang, side=side) }}" role="search" aria-label="{{ ui.list_search }}">
+  {% if level %}<input type="hidden" name="level" value="{{ level }}">{% endif %}
+  <label for="list-q" class="sr-only">{{ ui.list_search }}</label>
+  <input class="field" id="list-q" name="q" type="search" value="{{ q }}" maxlength="80" placeholder="{{ ui.list_search }}" autocomplete="off">
+  <label for="list-age" class="sr-only">{{ ui.age }}</label>
+  <select class="field" id="list-age" name="age">
+    <option value="">{{ ui.any_age }}</option>
+    {% for a in ages %}<option value="{{ a }}" {% if age == a %}selected{% endif %}>{{ ui.age }} {{ a }}</option>{% endfor %}
+  </select>
+  <label for="list-topic" class="sr-only">{{ ui.topic_label }}</label>
+  <select class="field" id="list-topic" name="topic">
+    <option value="">{{ ui.any_topic }}</option>
+    {% for t in topics %}<option value="{{ t }}" {% if topic == t %}selected{% endif %}>{{ ui['topic_' ~ t] }}</option>{% endfor %}
+  </select>
+  <button class="btn btn-gold btn-sm" type="submit">{{ ui.list_filter }}</button>
+</form>
 <nav class="filters" aria-label="{{ ui.levels }}">
-  <a class="pill" href="{{ url_for('listing', lang=lang, side=side) }}" {% if not level %}aria-current="page"{% endif %}>{{ ui.all }}</a>
-  {% for l in levels %}<a class="pill" href="{{ url_for('listing', lang=lang, side=side, level=l) }}" {% if level == l %}aria-current="page"{% endif %}>{{ ui['lvl_' ~ l] }}</a>{% endfor %}
+  <a class="pill" href="{{ url_for('listing', lang=lang, side=side, q=q or None, age=age, topic=topic) }}" {% if not level %}aria-current="page"{% endif %}>{{ ui.all }}</a>
+  {% for l in levels %}<a class="pill" href="{{ url_for('listing', lang=lang, side=side, level=l, q=q or None, age=age, topic=topic) }}" {% if level == l %}aria-current="page"{% endif %}>{{ ui['lvl_' ~ l] }}</a>{% endfor %}
 </nav>
 {% for category, items in groups.items() %}
   <h2 class="section-title">{{ category }}</h2>
@@ -14,4 +31,5 @@
 {% else %}
   <div class="panel"><p>{{ ui.no_results }}</p></div>
 {% endfor %}
+{{ grownup_notice(hidden, lang, ui) }}
 {% endblock %}

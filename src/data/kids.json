@@ -319,10 +319,18 @@
     "category": "CS Unplugged: Kidbots",
     "tag": "",
     "title": {
-      "en": "Finding shapes"
+      "en": "Finding shapes",
+      "es": "Encontrar formas",
+      "ar": "إيجاد الأشكال",
+      "hi": "आकार ढूँढना",
+      "pt": "Encontrar formas"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Kidbots' unit with geometry (ages 5-7). For an adult to run with children."
+      "en": "A classroom activity linking the 'Kidbots' unit with geometry (ages 5-7). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Kidbots» con geometría (edades 5-7). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «Kidbots» بمادة الهندسة (الأعمار 5-7). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «Kidbots» को ज्यामिति से जोड़ती है (उम्र 5-7)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Kidbots» a geometria (idades 5-7). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "5-7",
@@ -333,7 +341,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-1ee79a47",
@@ -410,10 +424,18 @@
     "category": "CS Unplugged: Kidbots",
     "tag": "",
     "title": {
-      "en": "Move to a number"
+      "en": "Move to a number",
+      "es": "Muévete a un número",
+      "ar": "تحرّك إلى رقم",
+      "hi": "किसी संख्या तक चलें",
+      "pt": "Mova-se até um número"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Kidbots' unit with numeracy (ages 5-7). For an adult to run with children."
+      "en": "A classroom activity linking the 'Kidbots' unit with numeracy (ages 5-7). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Kidbots» con números y cálculo (edades 5-7). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «Kidbots» بمادة الحساب والأعداد (الأعمار 5-7). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «Kidbots» को संख्या ज्ञान से जोड़ती है (उम्र 5-7)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Kidbots» a números e cálculo (idades 5-7). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "5-7",
@@ -424,17 +446,31 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-38975fea",
     "category": "CS Unplugged: Kidbots",
     "tag": "",
     "title": {
-      "en": "Moving in a shape"
+      "en": "Moving in a shape",
+      "es": "Moverse formando una figura",
+      "ar": "التحرك على شكل",
+      "hi": "किसी आकार में चलना",
+      "pt": "Mover-se em uma forma"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Kidbots' unit with geometry (ages 5-7). For an adult to run with children."
+      "en": "A classroom activity linking the 'Kidbots' unit with geometry (ages 5-7). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Kidbots» con geometría (edades 5-7). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «Kidbots» بمادة الهندسة (الأعمار 5-7). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «Kidbots» को ज्यामिति से जोड़ती है (उम्र 5-7)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Kidbots» a geometria (idades 5-7). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "5-7",
@@ -445,7 +481,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-b49ee0d4",
@@ -487,10 +529,18 @@
     "category": "CS Unplugged: Kidbots",
     "tag": "",
     "title": {
-      "en": "Storytelling"
+      "en": "Storytelling",
+      "es": "Narración de cuentos",
+      "ar": "رواية القصص",
+      "hi": "कहानी सुनाना",
+      "pt": "Contar histórias"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Kidbots' unit with speaking (ages 5-7). For an adult to run with children."
+      "en": "A classroom activity linking the 'Kidbots' unit with speaking (ages 5-7). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Kidbots» con expresión oral (edades 5-7). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «Kidbots» بمادة التحدث (الأعمار 5-7). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «Kidbots» को बोलना से जोड़ती है (उम्र 5-7)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Kidbots» a expressão oral (idades 5-7). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "5-7",
@@ -501,7 +551,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-3135230d",
@@ -613,10 +669,18 @@
     "category": "CS Unplugged: Sorting networks",
     "tag": "",
     "title": {
-      "en": "Growing into a butterfly"
+      "en": "Growing into a butterfly",
+      "es": "Convertirse en mariposa",
+      "ar": "التحوّل إلى فراشة",
+      "hi": "तितली बनना",
+      "pt": "Virando borboleta"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Sorting networks' unit with biology (ages 5-7). For an adult to run with children."
+      "en": "A classroom activity linking the 'Sorting networks' unit with biology (ages 5-7). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Redes de ordenación» con biología (edades 5-7). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «شبكات الفرز» بمادة علم الأحياء (الأعمار 5-7). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «सॉर्टिंग नेटवर्क» को जीव विज्ञान से जोड़ती है (उम्र 5-7)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Redes de ordenação» a biologia (idades 5-7). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "5-7",
@@ -627,7 +691,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-08675e89",
@@ -704,10 +774,18 @@
     "category": "CS Unplugged: Sorting networks",
     "tag": "",
     "title": {
-      "en": "Retelling a story"
+      "en": "Retelling a story",
+      "es": "Volver a contar un cuento",
+      "ar": "إعادة سرد قصة",
+      "hi": "कहानी दोबारा सुनाना",
+      "pt": "Recontar uma história"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Sorting networks' unit with speaking (ages 5-7). For an adult to run with children."
+      "en": "A classroom activity linking the 'Sorting networks' unit with speaking (ages 5-7). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Redes de ordenación» con expresión oral (edades 5-7). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «شبكات الفرز» بمادة التحدث (الأعمار 5-7). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «सॉर्टिंग नेटवर्क» को बोलना से जोड़ती है (उम्र 5-7)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Redes de ordenação» a expressão oral (idades 5-7). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "5-7",
@@ -718,7 +796,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-48abfa01",
@@ -760,10 +844,18 @@
     "category": "CS Unplugged: Binary numbers",
     "tag": "",
     "title": {
-      "en": "Binary Art"
+      "en": "Binary Art",
+      "es": "Arte binario",
+      "ar": "الفن الثنائي",
+      "hi": "बाइनरी कला",
+      "pt": "Arte binária"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Binary numbers' unit with art (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Binary numbers' unit with art (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Números binarios» con arte (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «الأعداد الثنائية» بمادة الفن (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «बाइनरी संख्याएँ» को कला से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Números binários» a arte (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -774,17 +866,31 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-1f9fce96",
     "category": "CS Unplugged: Binary numbers",
     "tag": "",
     "title": {
-      "en": "Binary Candles or Normal Candles on your Cake"
+      "en": "Binary Candles or Normal Candles on your Cake",
+      "es": "Velas binarias o velas normales en tu pastel",
+      "ar": "شموع ثنائية أم شموع عادية على كعكتك",
+      "hi": "आपके केक पर बाइनरी मोमबत्तियाँ या सामान्य मोमबत्तियाँ",
+      "pt": "Velas binárias ou velas normais no seu bolo"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Binary numbers' unit with writing (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Binary numbers' unit with writing (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Números binarios» con escritura (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «الأعداد الثنائية» بمادة الكتابة (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «बाइनरी संख्याएँ» को लेखन से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Números binários» a escrita (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -795,17 +901,31 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-f336b2e4",
     "category": "CS Unplugged: Binary numbers",
     "tag": "",
     "title": {
-      "en": "Binary Name Necklaces"
+      "en": "Binary Name Necklaces",
+      "es": "Collares binarios con tu nombre",
+      "ar": "قلادات الأسماء الثنائية",
+      "hi": "बाइनरी नाम वाले हार",
+      "pt": "Colares binários com seu nome"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Binary numbers' unit with art (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Binary numbers' unit with art (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Números binarios» con arte (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «الأعداد الثنائية» بمادة الفن (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «बाइनरी संख्याएँ» को कला से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Números binários» a arte (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -816,17 +936,31 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-d9fc78be",
     "category": "CS Unplugged: Binary numbers",
     "tag": "",
     "title": {
-      "en": "Binary Patterns"
+      "en": "Binary Patterns",
+      "es": "Patrones binarios",
+      "ar": "أنماط ثنائية",
+      "hi": "बाइनरी पैटर्न",
+      "pt": "Padrões binários"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Binary numbers' unit with art (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Binary numbers' unit with art (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Números binarios» con arte (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «الأعداد الثنائية» بمادة الفن (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «बाइनरी संख्याएँ» को कला से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Números binários» a arte (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -837,17 +971,31 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-5cc52bdb",
     "category": "CS Unplugged: Binary numbers",
     "tag": "",
     "title": {
-      "en": "Binary Tunes"
+      "en": "Binary Tunes",
+      "es": "Melodías binarias",
+      "ar": "ألحان ثنائية",
+      "hi": "बाइनरी धुनें",
+      "pt": "Melodias binárias"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Binary numbers' unit with music (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Binary numbers' unit with music (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Números binarios» con música (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «الأعداد الثنائية» بمادة الموسيقى (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «बाइनरी संख्याएँ» को संगीत से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Números binários» a música (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -858,7 +1006,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-982181c8",
@@ -935,10 +1089,18 @@
     "category": "CS Unplugged: Binary numbers",
     "tag": "",
     "title": {
-      "en": "How binary digits work: programming challenges"
+      "en": "How binary digits work: programming challenges",
+      "es": "Cómo funcionan los dígitos binarios: retos de programación",
+      "ar": "كيف تعمل الأرقام الثنائية: تحديات البرمجة",
+      "hi": "बाइनरी अंक कैसे काम करते हैं: प्रोग्रामिंग चुनौतियाँ",
+      "pt": "Como funcionam os dígitos binários: desafios de programação"
     },
     "desc": {
-      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'How binary digits work' lesson, from the 'Binary numbers' unit. Best done with a grown-up."
+      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'How binary digits work' lesson, from the 'Binary numbers' unit. Best done with a grown-up.",
+      "es": "Retos de programación (Scratch, Python o bloques) para acompañar la lección «Cómo funcionan los dígitos binarios» de la unidad «Números binarios». Mejor hacerlos con un adulto.",
+      "ar": "تحديات برمجة (سكراتش أو بايثون أو الكتل) مرافقة لدرس «كيف تعمل الأرقام الثنائية» من وحدة «الأعداد الثنائية». الأفضل أن تُنجز مع شخص بالغ.",
+      "hi": "पाठ «बाइनरी अंक कैसे काम करते हैं» के साथ करने के लिए प्रोग्रामिंग चुनौतियाँ (Scratch, Python या ब्लॉक), इकाई «बाइनरी संख्याएँ» से। किसी बड़े के साथ करना बेहतर है।",
+      "pt": "Desafios de programação (Scratch, Python ou blocos) para acompanhar a lição «Como funcionam os dígitos binários» da unidade «Números binários». Melhor fazer com um adulto."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -949,7 +1111,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-1d63d1ba",
@@ -991,10 +1159,18 @@
     "category": "CS Unplugged: Binary numbers",
     "tag": "",
     "title": {
-      "en": "Whose cake is it"
+      "en": "Whose cake is it",
+      "es": "¿De quién es el pastel?",
+      "ar": "لمن هذه الكعكة؟",
+      "hi": "यह केक किसका है?",
+      "pt": "De quem é o bolo?"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Binary numbers' unit with writing (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Binary numbers' unit with writing (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Números binarios» con escritura (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «الأعداد الثنائية» بمادة الكتابة (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «बाइनरी संख्याएँ» को लेखन से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Números binários» a escrita (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -1005,17 +1181,31 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-882ed275",
     "category": "CS Unplugged: Error detection and correction",
     "tag": "",
     "title": {
-      "en": "Instructional writing"
+      "en": "Instructional writing",
+      "es": "Escritura de instrucciones",
+      "ar": "كتابة التعليمات",
+      "hi": "निर्देश लिखना",
+      "pt": "Escrita de instruções"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Error detection and correction' unit with writing (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Error detection and correction' unit with writing (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Detección y corrección de errores» con escritura (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «اكتشاف الأخطاء وتصحيحها» بمادة الكتابة (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «त्रुटि पहचान और सुधार» को लेखन से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Detecção e correção de erros» a escrita (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -1026,7 +1216,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-c04ee384",
@@ -1068,10 +1264,18 @@
     "category": "CS Unplugged: Error detection and correction",
     "tag": "",
     "title": {
-      "en": "Parity magic: programming challenges"
+      "en": "Parity magic: programming challenges",
+      "es": "La magia de la paridad: retos de programación",
+      "ar": "سحر التماثل (الزوجية): تحديات البرمجة",
+      "hi": "पैरिटी का जादू: प्रोग्रामिंग चुनौतियाँ",
+      "pt": "A mágica da paridade: desafios de programação"
     },
     "desc": {
-      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'Parity magic' lesson, from the 'Error detection and correction' unit. Best done with a grown-up."
+      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'Parity magic' lesson, from the 'Error detection and correction' unit. Best done with a grown-up.",
+      "es": "Retos de programación (Scratch, Python o bloques) para acompañar la lección «La magia de la paridad» de la unidad «Detección y corrección de errores». Mejor hacerlos con un adulto.",
+      "ar": "تحديات برمجة (سكراتش أو بايثون أو الكتل) مرافقة لدرس «سحر التماثل (الزوجية)» من وحدة «اكتشاف الأخطاء وتصحيحها». الأفضل أن تُنجز مع شخص بالغ.",
+      "hi": "पाठ «पैरिटी का जादू» के साथ करने के लिए प्रोग्रामिंग चुनौतियाँ (Scratch, Python या ब्लॉक), इकाई «त्रुटि पहचान और सुधार» से। किसी बड़े के साथ करना बेहतर है।",
+      "pt": "Desafios de programação (Scratch, Python ou blocos) para acompanhar a lição «A mágica da paridade» da unidade «Detecção e correção de erros». Melhor fazer com um adulto."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -1082,7 +1286,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-0f5a4341",
@@ -1124,10 +1334,18 @@
     "category": "CS Unplugged: Error detection and correction",
     "tag": "",
     "title": {
-      "en": "Product code check digits: programming challenges"
+      "en": "Product code check digits: programming challenges",
+      "es": "Dígitos de control de los códigos de producto: retos de programación",
+      "ar": "أرقام التحقق في رموز المنتجات: تحديات البرمجة",
+      "hi": "उत्पाद कोड के जाँच अंक: प्रोग्रामिंग चुनौतियाँ",
+      "pt": "Dígitos verificadores de códigos de produto: desafios de programação"
     },
     "desc": {
-      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'Product code check digits' lesson, from the 'Error detection and correction' unit. Best done with a grown-up."
+      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'Product code check digits' lesson, from the 'Error detection and correction' unit. Best done with a grown-up.",
+      "es": "Retos de programación (Scratch, Python o bloques) para acompañar la lección «Dígitos de control de los códigos de producto» de la unidad «Detección y corrección de errores». Mejor hacerlos con un adulto.",
+      "ar": "تحديات برمجة (سكراتش أو بايثون أو الكتل) مرافقة لدرس «أرقام التحقق في رموز المنتجات» من وحدة «اكتشاف الأخطاء وتصحيحها». الأفضل أن تُنجز مع شخص بالغ.",
+      "hi": "पाठ «उत्पाद कोड के जाँच अंक» के साथ करने के लिए प्रोग्रामिंग चुनौतियाँ (Scratch, Python या ब्लॉक), इकाई «त्रुटि पहचान और सुधार» से। किसी बड़े के साथ करना बेहतर है।",
+      "pt": "Desafios de programação (Scratch, Python ou blocos) para acompanhar a lição «Dígitos verificadores de códigos de produto» da unidade «Detecção e correção de erros». Melhor fazer com um adulto."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -1138,17 +1356,31 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-e7a2b929",
     "category": "CS Unplugged: Error detection and correction",
     "tag": "",
     "title": {
-      "en": "Quick card flip magic"
+      "en": "Quick card flip magic",
+      "es": "Magia rápida de voltear cartas",
+      "ar": "سحر قلب البطاقات السريع",
+      "hi": "कार्ड पलटने का तेज़ जादू",
+      "pt": "Mágica rápida de virar cartas"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Error detection and correction' unit with numeracy (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Error detection and correction' unit with numeracy (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Detección y corrección de errores» con números y cálculo (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «اكتشاف الأخطاء وتصحيحها» بمادة الحساب والأعداد (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «त्रुटि पहचान और सुधार» को संख्या ज्ञान से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Detecção e correção de erros» a números e cálculo (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -1159,17 +1391,31 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-15f1c61e",
     "category": "CS Unplugged: Error detection and correction",
     "tag": "",
     "title": {
-      "en": "What if?"
+      "en": "What if?",
+      "es": "¿Y si…?",
+      "ar": "ماذا لو؟",
+      "hi": "अगर ऐसा हो तो?",
+      "pt": "E se…?"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Error detection and correction' unit with writing (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Error detection and correction' unit with writing (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Detección y corrección de errores» con escritura (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «اكتشاف الأخطاء وتصحيحها» بمادة الكتابة (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «त्रुटि पहचान और सुधार» को लेखन से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Detecção e correção de erros» a escrita (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -1180,17 +1426,31 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-62b8fce9",
     "category": "CS Unplugged: Error detection and correction",
     "tag": "",
     "title": {
-      "en": "Word study activity"
+      "en": "Word study activity",
+      "es": "Actividad de estudio de palabras",
+      "ar": "نشاط دراسة الكلمات",
+      "hi": "शब्द अध्ययन गतिविधि",
+      "pt": "Atividade de estudo de palavras"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Error detection and correction' unit with word study (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Error detection and correction' unit with word study (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Detección y corrección de errores» con estudio de palabras (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «اكتشاف الأخطاء وتصحيحها» بمادة دراسة الكلمات (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «त्रुटि पहचान और सुधार» को शब्द अध्ययन से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Detecção e correção de erros» a estudo de palavras (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -1201,7 +1461,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-294ef399",
@@ -1243,10 +1509,18 @@
     "category": "CS Unplugged: Kidbots",
     "tag": "",
     "title": {
-      "en": "Sending a rocket to Mars: programming challenges"
+      "en": "Sending a rocket to Mars: programming challenges",
+      "es": "Enviar un cohete a Marte: retos de programación",
+      "ar": "إرسال صاروخ إلى المريخ: تحديات البرمجة",
+      "hi": "मंगल ग्रह पर रॉकेट भेजना: प्रोग्रामिंग चुनौतियाँ",
+      "pt": "Enviando um foguete a Marte: desafios de programação"
     },
     "desc": {
-      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'Sending a rocket to Mars' lesson, from the 'Kidbots' unit. Best done with a grown-up."
+      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'Sending a rocket to Mars' lesson, from the 'Kidbots' unit. Best done with a grown-up.",
+      "es": "Retos de programación (Scratch, Python o bloques) para acompañar la lección «Enviar un cohete a Marte» de la unidad «Kidbots». Mejor hacerlos con un adulto.",
+      "ar": "تحديات برمجة (سكراتش أو بايثون أو الكتل) مرافقة لدرس «إرسال صاروخ إلى المريخ» من وحدة «Kidbots». الأفضل أن تُنجز مع شخص بالغ.",
+      "hi": "पाठ «मंगल ग्रह पर रॉकेट भेजना» के साथ करने के लिए प्रोग्रामिंग चुनौतियाँ (Scratch, Python या ब्लॉक), इकाई «Kidbots» से। किसी बड़े के साथ करना बेहतर है।",
+      "pt": "Desafios de programação (Scratch, Python ou blocos) para acompanhar a lição «Enviando um foguete a Marte» da unidade «Kidbots». Melhor fazer com um adulto."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -1257,7 +1531,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-35cb46bb",
@@ -1299,10 +1579,18 @@
     "category": "CS Unplugged: Kidbots",
     "tag": "",
     "title": {
-      "en": "The Modulo operator Unplugged: programming challenges"
+      "en": "The Modulo operator Unplugged: programming challenges",
+      "es": "El operador módulo sin pantallas: retos de programación",
+      "ar": "عامل باقي القسمة بدون شاشات: تحديات البرمجة",
+      "hi": "बिना स्क्रीन के मॉड्यूलो ऑपरेटर: प्रोग्रामिंग चुनौतियाँ",
+      "pt": "O operador módulo sem telas: desafios de programação"
     },
     "desc": {
-      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'The Modulo operator Unplugged' lesson, from the 'Kidbots' unit. Best done with a grown-up."
+      "en": "Programming challenges (Scratch, Python or blocks) to go with the 'The Modulo operator Unplugged' lesson, from the 'Kidbots' unit. Best done with a grown-up.",
+      "es": "Retos de programación (Scratch, Python o bloques) para acompañar la lección «El operador módulo sin pantallas» de la unidad «Kidbots». Mejor hacerlos con un adulto.",
+      "ar": "تحديات برمجة (سكراتش أو بايثون أو الكتل) مرافقة لدرس «عامل باقي القسمة بدون شاشات» من وحدة «Kidbots». الأفضل أن تُنجز مع شخص بالغ.",
+      "hi": "पाठ «बिना स्क्रीन के मॉड्यूलो ऑपरेटर» के साथ करने के लिए प्रोग्रामिंग चुनौतियाँ (Scratch, Python या ब्लॉक), इकाई «Kidbots» से। किसी बड़े के साथ करना बेहतर है।",
+      "pt": "Desafios de programação (Scratch, Python ou blocos) para acompanhar a lição «O operador módulo sem telas» da unidade «Kidbots». Melhor fazer com um adulto."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -1313,7 +1601,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-3e9e326c",
@@ -1355,10 +1649,18 @@
     "category": "CS Unplugged: Searching algorithms",
     "tag": "",
     "title": {
-      "en": "Drama or video activity"
+      "en": "Drama or video activity",
+      "es": "Actividad de teatro o video",
+      "ar": "نشاط تمثيل أو فيديو",
+      "hi": "नाटक या वीडियो गतिविधि",
+      "pt": "Atividade de teatro ou vídeo"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Searching algorithms' unit with drama, art (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Searching algorithms' unit with drama, art (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Algoritmos de búsqueda» con teatro y arte (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «خوارزميات البحث» بمادة الدراما والفن (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «खोज एल्गोरिदम» को नाटक और कला से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Algoritmos de busca» a teatro e arte (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -1369,7 +1671,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-774bf776",
@@ -1411,10 +1719,18 @@
     "category": "CS Unplugged: Searching algorithms",
     "tag": "",
     "title": {
-      "en": "Music activity"
+      "en": "Music activity",
+      "es": "Actividad de música",
+      "ar": "نشاط موسيقي",
+      "hi": "संगीत गतिविधि",
+      "pt": "Atividade de música"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Searching algorithms' unit with music (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Searching algorithms' unit with music (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Algoritmos de búsqueda» con música (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «خوارزميات البحث» بمادة الموسيقى (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «खोज एल्गोरिदम» को संगीत से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Algoritmos de busca» a música (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -1425,7 +1741,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-001ee380",
@@ -1502,10 +1824,18 @@
     "category": "CS Unplugged: Searching algorithms",
     "tag": "",
     "title": {
-      "en": "Where is my hat?"
+      "en": "Where is my hat?",
+      "es": "¿Dónde está mi sombrero?",
+      "ar": "أين قبعتي؟",
+      "hi": "मेरी टोपी कहाँ है?",
+      "pt": "Onde está meu chapéu?"
     },
     "desc": {
-      "en": "A classroom activity linking the 'Searching algorithms' unit with writing (ages 8-10). For an adult to run with children."
+      "en": "A classroom activity linking the 'Searching algorithms' unit with writing (ages 8-10). For an adult to run with children.",
+      "es": "Una actividad de aula que une la unidad «Algoritmos de búsqueda» con escritura (edades 8-10). Para que un adulto la haga con niños.",
+      "ar": "نشاط صفّي يربط وحدة «خوارزميات البحث» بمادة الكتابة (الأعمار 8-10). يقوم به شخص بالغ مع الأطفال.",
+      "hi": "एक कक्षा गतिविधि जो इकाई «खोज एल्गोरिदम» को लेखन से जोड़ती है (उम्र 8-10)। बच्चों के साथ किसी बड़े द्वारा कराने के लिए।",
+      "pt": "Uma atividade de sala de aula que liga a unidade «Algoritmos de busca» a escrita (idades 8-10). Para um adulto fazer com as crianças."
     },
     "level": "Beginner",
     "age_group": "8-10",
@@ -1516,7 +1846,13 @@
     "safety": "kid-safe",
     "safety_reasons": [],
     "reuse": "open-content",
-    "reuse_license": "CC-BY-SA-4.0"
+    "reuse_license": "CC-BY-SA-4.0",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "kids-d6fe1dbf",

@@ -44,6 +44,9 @@ No keys, database or account are needed: the site reads the JSON in `src/data/`.
 
 More: `docs/PLAN.md` (decisions), `docs/BACKEND.md`, `docs/FRONTEND.md`, `docs/GUIDE_SPEC.md`, `docs/STATS.md`.
 
+## Accessibility
+Settings panel (four colour modes, text size and spacing, an easy-to-read font, reduced motion), read-aloud, and a statement page in five languages. **Automated result: 1,115 page states audited with axe-core in all five languages, colour modes and text settings (WCAG 2.0/2.1/2.2 A and AA plus best-practice rules): 0 violations; all four colour modes pass the WCAG AA contrast check; 66 automated keyboard-only and Arabic right-to-left checks pass.** Manual screen-reader (VoiceOver) and 200% zoom testing is still pending, and automated tools catch only some problems. How we tested, the checklist and the limits: [`docs/ACCESSIBILITY.md`](docs/ACCESSIBILITY.md). Barrier reports are welcome (grown-up view, then the feedback form).
+
 ## Team
 | Name | Role | What they did |
 |---|---|---|
@@ -58,7 +61,7 @@ More: `docs/PLAN.md` (decisions), `docs/BACKEND.md`, `docs/FRONTEND.md`, `docs/G
 - **Kid content is thin** for games, art and web at ages 5-10 (26 of 36 age/goal/level combinations have fewer than 6 kid-safe entries; `docs/STATS.md`). The guide backfills with general beginner material and says so.
 - **Guides are written from catalogue data only** (we did not read the linked pages) and time estimates are estimates.
 - **We link out, we do not host** most content; the linked sites may not be in the learner's language.
-- **Accessibility** was checked with automated audits, a keyboard-only walk-through and a contrast script. We have had no outside audit and have not tested with a real screen reader ourselves (a VoiceOver checklist is in `docs/ACCESSIBILITY.md`). Read-aloud voices depend on the device.
+- **Accessibility** was checked with automated audits (axe-core, 0 violations), automated keyboard-only and right-to-left tests and a contrast script. We have had no outside audit and have not tested with a real screen reader ourselves (a VoiceOver checklist is in `docs/ACCESSIBILITY.md`). Read-aloud voices depend on the device.
 - Python problems need an internet connection the first time (Python is downloaded to your browser).
 - No accounts means progress does not sync between devices (a progress code moves it by hand).
 

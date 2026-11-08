@@ -16,6 +16,7 @@ import sys
 from playwright.sync_api import sync_playwright
 
 DEMO = {
+    "0 home page": ["/"],
     "1 child, lesson-backed": ["/entry/kids-0d3a63dc", "/lesson/lesson-0d3a63dc"],
     "2 teen, link-only": ["/entry/build-74d1338b"],
     "3 Arabic example": ["/entry/build-74d1338b"],  # opened with --lang ar below as well
@@ -90,10 +91,10 @@ def main():
             for name, paths in DEMO.items():
                 if name.startswith("3") and lang != "ar":
                     continue
-                if not name.startswith("3") and lang == "ar":
+                if not name.startswith("3") and lang == "ar" and not name.startswith("0"):
                     continue
                 for path in paths:
-                    page.goto(f"{base}/{lang}{path}")
+                    page.goto(f"{base}/{lang}{path}" if path != "/" else f"{base}/{lang}/")
                     seen, noring = [], []
                     for i in range(120):
                         page.keyboard.press("Tab")
@@ -122,6 +123,57 @@ def main():
                 page.keyboard.press("Enter")
                 after = page.evaluate("document.querySelector('.slide.is-active')?.id || ''")
                 check(after != "", f"[{lang}] no active slide after keyboard use")
+            # 5. the grown-up gate by keyboard: Tab to the footer button, Enter turns grown-up view on, a visible bar and
+            #    the feedback link appear, and the switch-off button works with the keyboard too
+            page.goto(f"{base}/{lang}/")
+            reached = False
+            for _ in range(200):
+                page.keyboard.press("Tab")
+                if page.evaluate("document.activeElement && document.activeElement.closest('.grow') !== null && document.activeElement.tagName === 'BUTTON'"):
+                    reached = True
+                    check(page.evaluate(FOCUS_INFO)["outline"], f"[{lang}] grown-up button has no visible focus")
+                    break
+            check(reached, f"[{lang}] could not Tab to the grown-up button")
+            if reached:
+                with page.expect_navigation():
+                    page.keyboard.press("Enter")
+                check(page.locator(".grownup-bar").count() == 1, f"[{lang}] Enter on the grown-up button did not turn the view on")
+                check(page.locator('a[href*="/feedback"]').count() >= 1, f"[{lang}] feedback link missing in grown-up view")
+                page.goto(f"{base}/{lang}/feedback")
+                check(page.locator("#fb-kind, select[name=kind]").count() == 1 and page.locator("textarea").count() == 1, f"[{lang}] feedback form fields missing")
+                check(page.evaluate("[...document.querySelectorAll('select, textarea')].every(e => e.labels && e.labels.length > 0)"), f"[{lang}] feedback field without a label")
+                page.keyboard.press("Tab")  # fields are reachable and not a trap
+                stops = 0
+                for _ in range(40):
+                    page.keyboard.press("Tab")
+                    stops += 1
+                    if page.evaluate("document.activeElement.type === 'submit'"):
+                        break
+                check(page.evaluate("document.activeElement.type") == "submit", f"[{lang}] could not Tab to the feedback Send button")
+                page.goto(f"{base}/{lang}/")
+                for _ in range(200):
+                    page.keyboard.press("Tab")
+                    if page.evaluate("document.activeElement.closest('.grownup-bar') !== null && document.activeElement.tagName === 'BUTTON'"):
+                        with page.expect_navigation():
+                            page.keyboard.press("Enter")
+                        break
+                check(page.locator(".grownup-bar").count() == 0, f"[{lang}] keyboard could not turn the grown-up view off")
+            # 6. right-to-left layout (Arabic) is real, not just a dir attribute
+            if lang == "ar":
+                page.goto(f"{base}/ar/")
+                check(page.evaluate("document.documentElement.dir") == "rtl" and page.evaluate("document.documentElement.lang") == "ar", "[ar] html is not lang=ar dir=rtl")
+                check(page.evaluate("getComputedStyle(document.body).direction") == "rtl", "[ar] body direction is not rtl")
+                first_left = page.evaluate("document.querySelector('.topbar .navbtn').getBoundingClientRect().left")
+                check(first_left > 640, f"[ar] first header button is not on the right side (left={first_left})")
+                check(page.evaluate("document.querySelector('.lede, .hero-sub').getBoundingClientRect().right") > 640, "[ar] intro text is not right-aligned")
+                check(page.evaluate("[...document.querySelectorAll('bdi')].some(b => b.dir === 'ltr' && b.textContent.includes('Open Cosmos'))"), "[ar] app name is not isolated as left-to-right")
+                page.locator("#a11y-open").click()
+                panel_left = page.evaluate("document.getElementById('a11y-panel').getBoundingClientRect().left")
+                check(panel_left <= 1, f"[ar] settings panel does not open from the left edge in RTL (left={panel_left})")
+                page.keyboard.press("Escape")
+                page.goto(f"{base}/ar/lesson/lesson-0d3a63dc")
+                check(page.evaluate("document.querySelector('.lede').getBoundingClientRect().right") > 640, "[ar] lesson text is not right-aligned")
+                check(page.evaluate("document.documentElement.scrollWidth <= document.documentElement.clientWidth + 1"), "[ar] lesson page scrolls sideways")
             ctx.close()
         browser.close()
     print(f"\n{checks} keyboard checks, {len([f for f in fails if f])} failed")

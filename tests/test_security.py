@@ -16,8 +16,9 @@ class CrossSitePosts(unittest.TestCase):
 
     def test_cross_site_posts_are_refused(self):
         for path in ("/grownup", "/en/prefs", "/en/feedback"):
-            for headers in ({"Origin": "https://evil.example"}, {"Sec-Fetch-Site": "cross-site"}, {"Origin": "null"},
-                            {"Sec-Fetch-Site": "same-site"}):
+            for headers in ({"Origin": "https://evil.example"}, {"Sec-Fetch-Site": "cross-site"},
+                            {"Sec-Fetch-Site": "cross-site", "Origin": "null"}, {"Sec-Fetch-Site": "same-site"},
+                            {"Sec-Fetch-Site": "cross-site", "Origin": "http://localhost"}):
                 r = self.c.post(path, data={"on": "1"}, headers=headers)
                 self.assertEqual(r.status_code, 403, (path, headers))
         with self.c.session_transaction() as s:
@@ -29,6 +30,16 @@ class CrossSitePosts(unittest.TestCase):
         with self.c.session_transaction() as s:
             self.assertTrue(s.get("adult"))
         self.assertEqual(self.c.post("/grownup", data={"on": "0"}).status_code, 302)  # no browser headers (curl, tests)
+
+    def test_real_browser_form_posts_work_even_though_origin_is_null(self):
+        """With Referrer-Policy: no-referrer, browsers send `Origin: null` on our own same-origin forms (this broke the
+        live grown-up button once). Sec-Fetch-Site says same-origin, so it must be accepted."""
+        for path, data in (("/grownup", {"on": "1", "next": "/en/"}), ("/en/prefs", {"level": "Beginner", "next": "/en/"})):
+            r = self.c.post(path, data=data, headers={"Origin": "null", "Sec-Fetch-Site": "same-origin"})
+            self.assertEqual(r.status_code, 302, path)
+        r = self.c.post("/es/feedback", data={"message": "x"}, headers={"Origin": "null", "Sec-Fetch-Site": "same-origin"})
+        self.assertNotEqual(r.status_code, 403)  # reaches the form's own checks (token), which redirect with a message
+        self.assertEqual(self.c.post("/grownup", data={"on": "1"}, headers={"Sec-Fetch-Site": "none"}).status_code, 302)
 
     def test_session_cookie_flags(self):
         r = self.c.post("/grownup", data={"on": "1"})

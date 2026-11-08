@@ -76,6 +76,7 @@
       <input type="hidden" name="on" value="0"><input type="hidden" name="next" value="{{ request.full_path }}">
       <button class="btn btn-ghost btn-sm" type="submit" style="color:#fff;border-color:#fff">{{ ui.grownup_off }}</button>
     </form>
+    <a class="btn btn-ghost btn-sm" style="color:#fff;border-color:#fff" href="{{ url_for('feedback_page', lang=lang, page=request.full_path.rstrip('?')) }}">{{ ui.fb_link }}</a>
   </div>
 </div>
 {% endif %}

@@ -19,7 +19,7 @@
 *With us:* they switch the site to their language and find titles and descriptions they can understand. Code and key technical terms stay in English, so what they learn still matches their course and the documentation they'll meet later.
 
 ## 4. Solution / Demo (walk through live)
-1. Start at **"What should I learn?"**: pick an age, a goal (games, art, web), and a level, and get an ordered 6-step path.
+1. Start with **"Find my first lesson"** (the yellow button): pick an age, a goal (games, art, web), and a level, press **"Show my path"**, and get an ordered 6-step path.
 2. Open a **child lesson** (CS Unplugged, e.g. "How binary digits work", age 5-7): swipe through the guide, then open our adapted lesson page with its CC BY-SA attribution box.
 3. Open a **teen resource** (e.g. a 2D breakout game tutorial): read its guide and roadmap, then see the "you are leaving our site" slide before going to the original.
 4. Switch to Spanish, then Arabic (watch it flip right-to-left). Titles, descriptions, guides, lessons, coding problems and the interface are all translated (AI-written, labelled, not yet checked by native speakers). Open **Accessibility** in the header: high contrast, bigger text, and a **Listen** button that reads a lesson aloud.

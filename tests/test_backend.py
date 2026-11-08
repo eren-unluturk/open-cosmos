@@ -622,7 +622,7 @@ class TranslationParityTests(unittest.TestCase):
         for mod in (i18n_guides, i18n_lessons):
             for lang, labels in mod.UI.items():
                 self.assertEqual(set(labels), set(mod.UI_EN), (mod.__name__, lang))
-        self.assertIn("{n}", i18n_guides.UI["ar"]["more"])
+        self.assertIn("{n}", i18n_guides.UI["ar"]["more_n"])
         self.assertIn("{n}", i18n_lessons.UI["hi"]["lesson_minutes"])
         self.assertIn("{i}", i18n_lessons.UI["pt"]["slide_n"])
 

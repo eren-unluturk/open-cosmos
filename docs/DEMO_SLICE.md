@@ -24,7 +24,7 @@ Both entries above have title, description, guide and lesson text in es, ar, hi 
 
 ## Extras worth 30 seconds each
 - **Accessibility:** the header button opens the panel (high contrast, 150% text, easy-to-read font, reduce motion); **Listen** reads a lesson aloud.
-- **Grown-up gate:** press "I'm a grown-up" in the footer: hidden entries and the **feedback form** appear. Turn it off again.
+- **Grown-up gate:** press "I'm a grown-up, show them" in the footer: hidden entries and the **feedback form** appear. Turn it off again.
 - **Coding problem:** `/en/problem/py-hello` runs your code in the browser.
 
 ## Caveats to say out loud

@@ -1,8 +1,10 @@
 # Open Cosmos
 
+**Winner, Information Access track, Hackcessability (Nov 2026)**
+
 **Live site: https://open-cosmos.vercel.app** · Track: **Information Access** · KTP Hackathon, Nov 7-8 2026
 
-Open Cosmos turns the best free programming resources, which are open on GitHub but hard for a beginner to approach and almost all in English, into a safe, space-themed learning map for young beginners (about ages 5-13), the parents and teachers who help them, and anyone who reads English as a second language. Every one of the 1,085 entries is open-licensed, tagged by level, age, topic and **child-safety tier**, translated into Spanish, Arabic, Hindi and Portuguese, and opens a short **guide with a roadmap**. Adults unlock the less kid-friendly material with a session-only **grown-up switch**. We claim none of the content: every entry links to its original and its license.
+Open Cosmos, winner of the Information Access track at Hackcessability (Nov 2026), turns the best free programming resources, which are open on GitHub but hard for a beginner to approach and almost all in English, into a safe, space-themed learning map for young beginners (about ages 5-13), the parents and teachers who help them, and anyone who reads English as a second language. Every one of the 1,085 entries is open-licensed, tagged by level, age, topic and **child-safety tier**, translated into Spanish, Arabic, Hindi and Portuguese, and opens a short **guide with a roadmap**. Adults unlock the less kid-friendly material with a session-only **grown-up switch**. We claim none of the content: every entry links to its original and its license.
 
 ## What it does
 - **Five languages:** English, Spanish, Arabic (right to left), Hindi and Portuguese: titles, descriptions, guides, lessons, coding problems and the interface. All translations are AI-written and **not yet checked by native speakers**; the site labels them.
@@ -16,12 +18,12 @@ Open Cosmos turns the best free programming resources, which are open on GitHub 
 - **Accessibility:** colour modes (galaxy, light, high contrast, colour-blind-safe), text size and spacing, an easy-to-read font, reduced motion, **read-aloud** with the browser's own voices, and an accessibility statement. See `docs/ACCESSIBILITY.md`.
 
 ## 2-minute demo path
-1. **Home** at https://open-cosmos.vercel.app: pick **"What should I learn?"** (age 5-7, any goal) and see a short ordered path.
+1. **Home** at https://open-cosmos.vercel.app: press **"Find my first lesson"** (the yellow button), choose an age (5-7), a goal and a level, then press **"Show my path"** to see a short ordered path.
 2. Open **"How binary digits work"** (`/en/entry/kids-0d3a63dc`): swipe the guide and roadmap, press **Listen**, then **Go to the lesson**: our adapted lesson with its CC BY-SA box.
 3. Switch the language to **Arabic**: the whole page flips right to left; "Open Cosmos" stays in Latin letters.
 4. Open **Accessibility** in the header: try **High contrast** and **150%** text.
 5. Open **"2D breakout game using Phaser"** (`/en/entry/build-74d1338b`): a link-only entry with the leaving-our-site notice.
-6. Press **"I'm a grown-up"** in the footer: the hidden entries and the **feedback form** appear.
+6. Press **"I'm a grown-up, show them"** in the footer: the hidden entries and the **feedback form** appear.
 7. Open a **coding problem** (`/en/problem/py-hello`), run and check your code in the browser.
 
 (The specific entries and links: `docs/DEMO_SLICE.md`.)

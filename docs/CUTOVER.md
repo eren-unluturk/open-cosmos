@@ -1,6 +1,6 @@
 # Cutover: Render to Vercel
 
-Live site: **https://open-cosmos.vercel.app**. Status on Nov 8 2026: running on Vercel; the Render service is retired (see the last section).
+Live site: **https://open-cosmos.vercel.app**. Status on Nov 8 2026: running on Vercel; the Render configuration is gone from the repo, and the old Render service still has to be **deleted by hand** (see "Render" below).
 
 ## Before (preconditions)
 
@@ -28,7 +28,8 @@ Live site: **https://open-cosmos.vercel.app**. Status on Nov 8 2026: running on 
 
 ## Render
 
-The Render service is deleted from the Render dashboard (Dashboard > the web service > Settings > scroll to the bottom > Delete Web Service > type the service name to confirm). Do it only after `scripts/smoke_remote.py` passes on the Vercel URL. Render's free service name was `learning-lab`; nothing in the repo refers to it any more.
+- [x] `render.yaml` and the Render-only settings are removed from the repo.
+- [ ] **Delete the old Render service by hand** (nothing here could do it: no Render login was available). It is safe to delete now that `scripts/smoke_remote.py` passes on the Vercel URL. Render dashboard (dashboard.render.com) > click the web service (`learning-lab`) > **Settings** (left menu) > scroll to the bottom > **Delete Web Service** > type the service name when asked > confirm. Also delete any Render environment group or Blueprint with the same name (Blueprints > the blueprint > Settings > Delete). Nothing in the repo refers to Render any more.
 
 ## Run the remote smoke test
 

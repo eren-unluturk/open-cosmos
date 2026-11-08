@@ -86,7 +86,7 @@ A site that makes existing open-source "intro to programming" resources easier t
 - [x] Grown-up gate (session-only) and feedback form for adults
 - [x] Supabase catalogue + feedback with RLS, JSON fallback (`docs/SUPABASE.md`)
 - [x] Accessibility (`docs/ACCESSIBILITY.md`), security review (`docs/SECURITY.md`)
-- [x] Renamed to Open Cosmos; deployed on Vercel; Render removed
+- [x] Renamed to Open Cosmos; deployed on Vercel; Render configuration removed from the repo (the old Render service still has to be deleted by hand, see `docs/CUTOVER.md`)
 - [x] README, pitch docs, NOTICE and LICENSE
 
 ## Not done / next
@@ -116,7 +116,7 @@ A site that makes existing open-source "intro to programming" resources easier t
 
 - **Human safety spot-check.** `docs/SAFETY_REVIEW.md` lists 30 random kid-safe, 15 random ask-a-grown-up, all 15 adult-only and 10 youngest/rarest kid-safe entries. Eren reviewed all rows: every one was `ok` (no loosening or tightening needed). Corrections would go in `scripts/cache/safety_overrides.json` (`{"<id>": {"safety": "<tier>", "reason": "..."}}`); `categorize.py` applies it LAST and it may loosen or tighten. The file is currently empty (`{}`). A sample of about 70 of 1,068 entries is a spot-check, not a full review.
 - **No AI at runtime (final).** The "What should I learn?" guide is rule-based only; the old optional Claude path and the `anthropic` dependency were removed.
-- **Hosting: Vercel (Nov 8).** Flask detected from `requirements.txt`, entry `index.py`, static files in `public/static/`, headers and the Content-Security-Policy in `src/csp.py` (pages) and `vercel.json` (static files; a test keeps them equal), Python 3.12. Render and `render.yaml` were removed at the cutover. Steps: `docs/DEPLOY.md`.
+- **Hosting: Vercel (Nov 8).** Flask detected from `requirements.txt`, entry `index.py`, static files in `public/static/`, headers and the Content-Security-Policy in `src/csp.py` (pages) and `vercel.json` (static files; a test keeps them equal), Python 3.12. `render.yaml` was removed at the cutover (the old Render service is deleted by hand). Steps: `docs/DEPLOY.md`.
 - **Site name: Open Cosmos (renamed from "Learning Lab", Nov 8).** Always in Latin script in every language (wrapped in a bidi isolate or `<bdi>` in right-to-left text). The localStorage keys keep their old names (`openlearn-explored-v1`, `hc_a11y_v1`) so nobody's saved progress is lost.
 - **Accessibility (Nov 8).** Settings panel, four colour modes, text size and spacing, a self-hosted easy-to-read font (Atkinson Hyperlegible, SIL OFL, loaded only when chosen), reduced motion, read-aloud with the browser's own voices, a statement page. Settings live in `localStorage` key `hc_a11y_v1` and are applied by a small external script before first paint (no inline scripts). Checked with axe-core, a contrast script and keyboard walk-throughs.
 - **Security (Nov 8).** Every POST is refused if the browser says it came from another site; the session cookie is HttpOnly and SameSite=Lax; feedback has a token, a honeypot, size limits and a rate limit. See `docs/SECURITY.md`.

@@ -1,6 +1,6 @@
 # Deploying Open Cosmos on Vercel
 
-Vercel project name: `open-cosmos`. Live: https://open-cosmos.vercel.app. Render and `render.yaml` were removed at the cutover (`docs/CUTOVER.md`).
+Vercel project name: `open-cosmos`. Live: https://open-cosmos.vercel.app. `render.yaml` was removed at the cutover; the old Render service is deleted by hand (`docs/CUTOVER.md`).
 
 ## How the repo is set up for Vercel
 

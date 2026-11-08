@@ -1,0 +1,392 @@
+{
+ "Build your own 3D Renderer": {
+  "es": "Crea tu propio motor de render 3D",
+  "ar": "ابنِ محرّك عرض ثلاثي الأبعاد خاصًا بك",
+  "hi": "अपना खुद का 3D रेंडरर बनाएँ",
+  "pt": "Construa o seu próprio renderizador 3D"
+ },
+ "Build your own AI Model": {
+  "es": "Crea tu propio modelo de IA",
+  "ar": "ابنِ نموذج ذكاء اصطناعي خاصًا بك",
+  "hi": "अपना खुद का AI मॉडल बनाएँ",
+  "pt": "Construa o seu próprio modelo de IA"
+ },
+ "Build your own Augmented Reality": {
+  "es": "Crea tu propia realidad aumentada",
+  "ar": "ابنِ واقعًا معزّزًا خاصًا بك",
+  "hi": "अपनी खुद की ऑगमेंटेड रियलिटी बनाएँ",
+  "pt": "Construa a sua própria realidade aumentada"
+ },
+ "Build your own BitTorrent Client": {
+  "es": "Crea tu propio cliente de BitTorrent",
+  "ar": "ابنِ عميل BitTorrent خاصًا بك",
+  "hi": "अपना खुद का BitTorrent क्लाइंट बनाएँ",
+  "pt": "Construa o seu próprio cliente BitTorrent"
+ },
+ "Build your own Blockchain / Cryptocurrency": {
+  "es": "Crea tu propia blockchain / criptomoneda",
+  "ar": "ابنِ بلوكتشين / عملة رقمية مشفّرة خاصة بك",
+  "hi": "अपना खुद का ब्लॉकचेन / क्रिप्टोकरेंसी बनाएँ",
+  "pt": "Construa a sua própria blockchain / criptomoeda"
+ },
+ "Build your own Bot": {
+  "es": "Crea tu propio bot",
+  "ar": "ابنِ بوتًا خاصًا بك",
+  "hi": "अपना खुद का बॉट बनाएँ",
+  "pt": "Construa o seu próprio bot"
+ },
+ "Build your own Command-Line Tool": {
+  "es": "Crea tu propia herramienta de línea de comandos",
+  "ar": "ابنِ أداة سطر أوامر خاصة بك",
+  "hi": "अपना खुद का कमांड-लाइन टूल बनाएँ",
+  "pt": "Construa a sua própria ferramenta de linha de comando"
+ },
+ "Build your own Database": {
+  "es": "Crea tu propia base de datos",
+  "ar": "ابنِ قاعدة بيانات خاصة بك",
+  "hi": "अपना खुद का डेटाबेस बनाएँ",
+  "pt": "Construa o seu próprio banco de dados"
+ },
+ "Build your own Distributed Systems": {
+  "es": "Crea tus propios sistemas distribuidos",
+  "ar": "ابنِ أنظمة موزّعة خاصة بك",
+  "hi": "अपने खुद के वितरित सिस्टम बनाएँ",
+  "pt": "Construa os seus próprios sistemas distribuídos"
+ },
+ "Build your own Docker": {
+  "es": "Crea tu propio Docker",
+  "ar": "ابنِ Docker الخاص بك",
+  "hi": "अपना खुद का Docker बनाएँ",
+  "pt": "Construa o seu próprio Docker"
+ },
+ "Build your own Emulator / Virtual Machine": {
+  "es": "Crea tu propio emulador / máquina virtual",
+  "ar": "ابنِ محاكيًا / آلة افتراضية خاصة بك",
+  "hi": "अपना खुद का एमुलेटर / वर्चुअल मशीन बनाएँ",
+  "pt": "Construa o seu próprio emulador / máquina virtual"
+ },
+ "Build your own Front-end Framework / Library": {
+  "es": "Crea tu propio framework / biblioteca de front-end",
+  "ar": "ابنِ إطار عمل / مكتبة واجهة أمامية خاصة بك",
+  "hi": "अपना खुद का फ्रंट-एंड फ़्रेमवर्क / लाइब्रेरी बनाएँ",
+  "pt": "Construa o seu próprio framework / biblioteca de front-end"
+ },
+ "Build your own Game": {
+  "es": "Crea tu propio juego",
+  "ar": "ابنِ لعبتك الخاصة",
+  "hi": "अपना खुद का गेम बनाएँ",
+  "pt": "Construa o seu próprio jogo"
+ },
+ "Build your own Git": {
+  "es": "Crea tu propio Git",
+  "ar": "ابنِ Git الخاص بك",
+  "hi": "अपना खुद का Git बनाएँ",
+  "pt": "Construa o seu próprio Git"
+ },
+ "Build your own Memory Allocator": {
+  "es": "Crea tu propio asignador de memoria",
+  "ar": "ابنِ مخصّص ذاكرة خاصًا بك",
+  "hi": "अपना खुद का मेमोरी एलोकेटर बनाएँ",
+  "pt": "Construa o seu próprio alocador de memória"
+ },
+ "Build your own Network Stack": {
+  "es": "Crea tu propia pila de red",
+  "ar": "ابنِ مكدّس شبكة خاصًا بك",
+  "hi": "अपना खुद का नेटवर्क स्टैक बनाएँ",
+  "pt": "Construa a sua própria pilha de rede"
+ },
+ "Build your own Neural Network": {
+  "es": "Crea tu propia red neuronal",
+  "ar": "ابنِ شبكة عصبية خاصة بك",
+  "hi": "अपना खुद का न्यूरल नेटवर्क बनाएँ",
+  "pt": "Construa a sua própria rede neural"
+ },
+ "Build your own Operating System": {
+  "es": "Crea tu propio sistema operativo",
+  "ar": "ابنِ نظام تشغيل خاصًا بك",
+  "hi": "अपना खुद का ऑपरेटिंग सिस्टम बनाएँ",
+  "pt": "Construa o seu próprio sistema operacional"
+ },
+ "Build your own Physics Engine": {
+  "es": "Crea tu propio motor de física",
+  "ar": "ابنِ محرّك فيزياء خاصًا بك",
+  "hi": "अपना खुद का फ़िज़िक्स इंजन बनाएँ",
+  "pt": "Construa o seu próprio motor de física"
+ },
+ "Build your own Processor": {
+  "es": "Crea tu propio procesador",
+  "ar": "ابنِ معالجًا خاصًا بك",
+  "hi": "अपना खुद का प्रोसेसर बनाएँ",
+  "pt": "Construa o seu próprio processador"
+ },
+ "Build your own Programming Language": {
+  "es": "Crea tu propio lenguaje de programación",
+  "ar": "ابنِ لغة برمجة خاصة بك",
+  "hi": "अपनी खुद की प्रोग्रामिंग भाषा बनाएँ",
+  "pt": "Construa a sua própria linguagem de programação"
+ },
+ "Build your own Regex Engine": {
+  "es": "Crea tu propio motor de expresiones regulares",
+  "ar": "ابنِ محرّك تعابير نمطية خاصًا بك",
+  "hi": "अपना खुद का रेगुलर एक्सप्रेशन इंजन बनाएँ",
+  "pt": "Construa o seu próprio motor de expressões regulares"
+ },
+ "Build your own Search Engine": {
+  "es": "Crea tu propio motor de búsqueda",
+  "ar": "ابنِ محرّك بحث خاصًا بك",
+  "hi": "अपना खुद का सर्च इंजन बनाएँ",
+  "pt": "Construa o seu próprio mecanismo de busca"
+ },
+ "Build your own Shell": {
+  "es": "Crea tu propio shell",
+  "ar": "ابنِ صدفة أوامر (Shell) خاصة بك",
+  "hi": "अपना खुद का शेल बनाएँ",
+  "pt": "Construa o seu próprio shell"
+ },
+ "Build your own Template Engine": {
+  "es": "Crea tu propio motor de plantillas",
+  "ar": "ابنِ محرّك قوالب خاصًا بك",
+  "hi": "अपना खुद का टेम्पलेट इंजन बनाएँ",
+  "pt": "Construa o seu próprio motor de templates"
+ },
+ "Build your own Text Editor": {
+  "es": "Crea tu propio editor de texto",
+  "ar": "ابنِ محرّر نصوص خاصًا بك",
+  "hi": "अपना खुद का टेक्स्ट एडिटर बनाएँ",
+  "pt": "Construa o seu próprio editor de texto"
+ },
+ "Build your own Visual Recognition System": {
+  "es": "Crea tu propio sistema de reconocimiento visual",
+  "ar": "ابنِ نظام تعرّف بصري خاصًا بك",
+  "hi": "अपना खुद का विज़ुअल रिकग्निशन सिस्टम बनाएँ",
+  "pt": "Construa o seu próprio sistema de reconhecimento visual"
+ },
+ "Build your own Voxel Engine": {
+  "es": "Crea tu propio motor de vóxeles",
+  "ar": "ابنِ محرّك فوكسل خاصًا بك",
+  "hi": "अपना खुद का वॉक्सेल इंजन बनाएँ",
+  "pt": "Construa o seu próprio motor de voxels"
+ },
+ "Build your own Web Browser": {
+  "es": "Crea tu propio navegador web",
+  "ar": "ابنِ متصفح ويب خاصًا بك",
+  "hi": "अपना खुद का वेब ब्राउज़र बनाएँ",
+  "pt": "Construa o seu próprio navegador web"
+ },
+ "Build your own Web Server": {
+  "es": "Crea tu propio servidor web",
+  "ar": "ابنِ خادم ويب خاصًا بك",
+  "hi": "अपना खुद का वेब सर्वर बनाएँ",
+  "pt": "Construa o seu próprio servidor web"
+ },
+ "CS Unplugged: Binary numbers": {
+  "es": "CS Unplugged: números binarios",
+  "ar": "CS Unplugged: الأعداد الثنائية",
+  "hi": "CS Unplugged: बाइनरी संख्याएँ",
+  "pt": "CS Unplugged: números binários"
+ },
+ "CS Unplugged: Data structures for searching": {
+  "es": "CS Unplugged: estructuras de datos para buscar",
+  "ar": "CS Unplugged: بنى البيانات للبحث",
+  "hi": "CS Unplugged: खोजने के लिए डेटा संरचनाएँ",
+  "pt": "CS Unplugged: estruturas de dados para busca"
+ },
+ "CS Unplugged: Error detection and correction": {
+  "es": "CS Unplugged: detección y corrección de errores",
+  "ar": "CS Unplugged: اكتشاف الأخطاء وتصحيحها",
+  "hi": "CS Unplugged: त्रुटि पहचान और सुधार",
+  "pt": "CS Unplugged: detecção e correção de erros"
+ },
+ "CS Unplugged: Image Representation": {
+  "es": "CS Unplugged: representación de imágenes",
+  "ar": "CS Unplugged: تمثيل الصور",
+  "hi": "CS Unplugged: इमेज का निरूपण",
+  "pt": "CS Unplugged: representação de imagens"
+ },
+ "CS Unplugged: Kidbots": {
+  "es": "CS Unplugged: Kidbots",
+  "ar": "CS Unplugged: Kidbots",
+  "hi": "CS Unplugged: Kidbots",
+  "pt": "CS Unplugged: Kidbots"
+ },
+ "CS Unplugged: Searching algorithms": {
+  "es": "CS Unplugged: algoritmos de búsqueda",
+  "ar": "CS Unplugged: خوارزميات البحث",
+  "hi": "CS Unplugged: खोज एल्गोरिदम",
+  "pt": "CS Unplugged: algoritmos de busca"
+ },
+ "CS Unplugged: Sorting networks": {
+  "es": "CS Unplugged: redes de ordenación",
+  "ar": "CS Unplugged: شبكات الفرز",
+  "hi": "CS Unplugged: सॉर्टिंग नेटवर्क",
+  "pt": "CS Unplugged: redes de ordenação"
+ },
+ "Back-End Development": {
+  "es": "Desarrollo back-end",
+  "ar": "تطوير الواجهة الخلفية",
+  "hi": "बैक-एंड डेवलपमेंट",
+  "pt": "Desenvolvimento back-end"
+ },
+ "Big Data": {
+  "es": "Big data",
+  "ar": "البيانات الضخمة",
+  "hi": "बिग डेटा",
+  "pt": "Big data"
+ },
+ "Books": {
+  "es": "Libros",
+  "ar": "الكتب",
+  "hi": "किताबें",
+  "pt": "Livros"
+ },
+ "Business": {
+  "es": "Negocios",
+  "ar": "الأعمال",
+  "hi": "व्यवसाय",
+  "pt": "Negócios"
+ },
+ "Computer Science": {
+  "es": "Informática",
+  "ar": "علوم الحاسوب",
+  "hi": "कंप्यूटर विज्ञान",
+  "pt": "Ciência da computação"
+ },
+ "Content Management Systems": {
+  "es": "Sistemas de gestión de contenidos",
+  "ar": "أنظمة إدارة المحتوى",
+  "hi": "कंटेंट मैनेजमेंट सिस्टम",
+  "pt": "Sistemas de gerenciamento de conteúdo"
+ },
+ "Databases": {
+  "es": "Bases de datos",
+  "ar": "قواعد البيانات",
+  "hi": "डेटाबेस",
+  "pt": "Bancos de dados"
+ },
+ "Decentralized Systems": {
+  "es": "Sistemas descentralizados",
+  "ar": "الأنظمة اللامركزية",
+  "hi": "विकेंद्रीकृत सिस्टम",
+  "pt": "Sistemas descentralizados"
+ },
+ "Development Environment": {
+  "es": "Entorno de desarrollo",
+  "ar": "بيئة التطوير",
+  "hi": "डेवलपमेंट एनवायरनमेंट",
+  "pt": "Ambiente de desenvolvimento"
+ },
+ "Editors": {
+  "es": "Editores",
+  "ar": "المحرّرات",
+  "hi": "एडिटर",
+  "pt": "Editores"
+ },
+ "Entertainment": {
+  "es": "Entretenimiento",
+  "ar": "الترفيه",
+  "hi": "मनोरंजन",
+  "pt": "Entretenimento"
+ },
+ "Events": {
+  "es": "Eventos",
+  "ar": "الفعاليات",
+  "hi": "इवेंट",
+  "pt": "Eventos"
+ },
+ "Front-End Development": {
+  "es": "Desarrollo front-end",
+  "ar": "تطوير الواجهة الأمامية",
+  "hi": "फ्रंट-एंड डेवलपमेंट",
+  "pt": "Desenvolvimento front-end"
+ },
+ "Gaming": {
+  "es": "Videojuegos",
+  "ar": "الألعاب",
+  "hi": "गेमिंग",
+  "pt": "Jogos"
+ },
+ "Hardware": {
+  "es": "Hardware",
+  "ar": "العتاد",
+  "hi": "हार्डवेयर",
+  "pt": "Hardware"
+ },
+ "Health and Social Science": {
+  "es": "Salud y ciencias sociales",
+  "ar": "الصحة والعلوم الاجتماعية",
+  "hi": "स्वास्थ्य और सामाजिक विज्ञान",
+  "pt": "Saúde e ciências sociais"
+ },
+ "Learn": {
+  "es": "Aprender",
+  "ar": "تعلّم",
+  "hi": "सीखें",
+  "pt": "Aprender"
+ },
+ "Media": {
+  "es": "Medios",
+  "ar": "الوسائط",
+  "hi": "मीडिया",
+  "pt": "Mídia"
+ },
+ "Miscellaneous": {
+  "es": "Varios",
+  "ar": "متنوّعات",
+  "hi": "विविध",
+  "pt": "Diversos"
+ },
+ "Networking": {
+  "es": "Redes",
+  "ar": "الشبكات",
+  "hi": "नेटवर्किंग",
+  "pt": "Redes"
+ },
+ "Platforms": {
+  "es": "Plataformas",
+  "ar": "المنصات",
+  "hi": "प्लेटफ़ॉर्म",
+  "pt": "Plataformas"
+ },
+ "Programming Languages": {
+  "es": "Lenguajes de programación",
+  "ar": "لغات البرمجة",
+  "hi": "प्रोग्रामिंग भाषाएँ",
+  "pt": "Linguagens de programação"
+ },
+ "Related": {
+  "es": "Relacionado",
+  "ar": "ذات صلة",
+  "hi": "संबंधित",
+  "pt": "Relacionado"
+ },
+ "Security": {
+  "es": "Seguridad",
+  "ar": "الأمان",
+  "hi": "सुरक्षा",
+  "pt": "Segurança"
+ },
+ "Testing": {
+  "es": "Pruebas",
+  "ar": "الاختبار",
+  "hi": "टेस्टिंग",
+  "pt": "Testes"
+ },
+ "Theory": {
+  "es": "Teoría",
+  "ar": "النظرية",
+  "hi": "सिद्धांत",
+  "pt": "Teoria"
+ },
+ "Work": {
+  "es": "Trabajo",
+  "ar": "العمل",
+  "hi": "काम",
+  "pt": "Trabalho"
+ },
+ "Uncategorized": {
+  "es": "Sin categoría",
+  "ar": "بدون تصنيف",
+  "hi": "अवर्गीकृत",
+  "pt": "Sem categoria"
+ }
+}

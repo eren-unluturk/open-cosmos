@@ -81,9 +81,9 @@
   {# CC BY-SA 4.0 credit box. Required on every adapted problem. #}
   <section class="panel cc-box" aria-labelledby="cc-h">
     <h2 id="cc-h" class="side-h">CC BY-SA 4.0</h2>
-    <p>{{ p.attribution }}</p>
+    <p>{{ ui.p_attribution_text }}</p>
     <p><a href="{{ p.source }}" rel="noopener noreferrer">{{ ui.p_original }}</a> · <a href="{{ p.license_url }}" rel="noopener noreferrer">{{ ui.lesson_license_link }}</a></p>
-    <p><strong>{{ ui.p_changes }}:</strong> {{ p.changes_made }}</p>
+    <p><strong>{{ ui.p_changes }}:</strong> {{ ui.p_changes_text }}</p>
   </section>
   {% endif %}
 </article>

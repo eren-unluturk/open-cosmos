@@ -2,7 +2,7 @@
 
 Keys that start with "p_" are also sent to the browser for the code runner.
 AI-written, not checked by native speakers yet. The problems themselves (prompt, hints, steps)
-are English only for now; the pages fall back to English and say so.
+are translated in src/data/problems_overlay.json and merged by store.py.
 Every language must have exactly the keys of UI_EN (tests check this).
 """
 

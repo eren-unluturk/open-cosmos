@@ -1,0 +1,1442 @@
+{
+ "A plan you can follow": {
+  "ar": "خطة يمكنك اتباعها",
+  "es": "Un plan que puedes seguir",
+  "hi": "एक योजना जिसे आप अपना सकते हैं",
+  "pt": "Um plano que você pode seguir"
+ },
+ "Adapted from CS Unplugged by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0. Changes were made: simplified, shortened and translated by Hackcessability with AI.": {
+  "ar": "مقتبس من CS Unplugged لمجموعة أبحاث تعليم علوم الحاسوب في جامعة كانتربري، بترخيص CC BY-SA 4.0. أُجريت تغييرات: التبسيط والاختصار والترجمة بواسطة Hackcessability بالذكاء الاصطناعي.",
+  "es": "Adaptado de CS Unplugged, del Grupo de Investigación en Educación en Ciencias de la Computación de la Universidad de Canterbury, con licencia CC BY-SA 4.0. Se hicieron cambios: simplificado, acortado y traducido por Hackcessability con IA.",
+  "hi": "CS Unplugged से अनुकूलित, जिसे यूनिवर्सिटी ऑफ़ कैंटरबरी के कंप्यूटर साइंस एजुकेशन रिसर्च ग्रुप ने बनाया है, लाइसेंस CC BY-SA 4.0। बदलाव किए गए: Hackcessability ने AI की मदद से इसे सरल, छोटा और अनुवादित किया।",
+  "pt": "Adaptado do CS Unplugged, do Grupo de Pesquisa em Educação em Ciência da Computação da Universidade de Canterbury, com licença CC BY-SA 4.0. Foram feitas alterações: simplificado, encurtado e traduzido pela Hackcessability com IA."
+ },
+ "Add a rule and find the bugs.": {
+  "ar": "أضف قاعدة وابحث عن الأخطاء.",
+  "es": "Añade una regla y busca los errores.",
+  "hi": "एक नियम जोड़ें और गलतियाँ ढूँढें।",
+  "pt": "Adicione uma regra e procure os erros."
+ },
+ "Add a rule or score.": {
+  "ar": "أضف قاعدة أو نتيجة.",
+  "es": "Añade una regla o una puntuación.",
+  "hi": "एक नियम या स्कोर जोड़ें।",
+  "pt": "Adicione uma regra ou uma pontuação."
+ },
+ "Add colour and light.": {
+  "ar": "أضف اللون والضوء.",
+  "es": "Añade color y luz.",
+  "hi": "रंग और रोशनी जोड़ें।",
+  "pt": "Adicione cor e luz."
+ },
+ "Add one new feature, like a button.": {
+  "ar": "أضف ميزة جديدة، مثل زر.",
+  "es": "Añade una función nueva, como un botón.",
+  "hi": "एक नई सुविधा जोड़ें, जैसे बटन।",
+  "pt": "Adicione um recurso novo, como um botão."
+ },
+ "Add variables or commands.": {
+  "ar": "أضف متغيّرات أو أوامر.",
+  "es": "Añade variables o comandos.",
+  "hi": "वेरिएबल या कमांड जोड़ें।",
+  "pt": "Adicione variáveis ou comandos."
+ },
+ "Ask a grown-up to read the lesson or open our simple version with you.": {
+  "ar": "اطلب من شخص بالغ أن يقرأ الدرس أو أن يفتح معك نسختنا المبسّطة.",
+  "es": "Pide a un adulto que lea la lección o abra contigo nuestra versión sencilla.",
+  "hi": "किसी बड़े से कहें कि वह पाठ पढ़े या हमारा आसान संस्करण आपके साथ खोले।",
+  "pt": "Peça a um adulto que leia a lição ou abra com você a nossa versão simples."
+ },
+ "Be the robot and follow a friend's instructions.": {
+  "ar": "كن أنت الروبوت واتّبع تعليمات صديقك.",
+  "es": "Sé el robot y sigue las instrucciones de un amigo.",
+  "hi": "रोबोट बनें और दोस्त के निर्देशों का पालन करें।",
+  "pt": "Seja o robô e siga as instruções de um amigo."
+ },
+ "Binary numbers (CS Unplugged)": {
+  "ar": "الأعداد الثنائية (CS Unplugged)",
+  "es": "Números binarios (CS Unplugged)",
+  "hi": "बाइनरी संख्याएँ (CS Unplugged)",
+  "pt": "Números binários (CS Unplugged)"
+ },
+ "Browse and pick one you like.": {
+  "ar": "تصفّح واختر ما يعجبك.",
+  "es": "Explora y elige uno que te guste.",
+  "hi": "देखें और जो पसंद आए उसे चुनें।",
+  "pt": "Navegue e escolha um de que você goste."
+ },
+ "Build a tiny calculator.": {
+  "ar": "ابنِ آلة حاسبة صغيرة.",
+  "es": "Construye una calculadora diminuta.",
+  "hi": "एक छोटा कैलकुलेटर बनाएँ।",
+  "pt": "Construa uma calculadora minúscula."
+ },
+ "Build a tiny page.": {
+  "ar": "ابنِ صفحة صغيرة جدًا.",
+  "es": "Construye una página diminuta.",
+  "hi": "एक छोटा-सा पेज बनाएँ।",
+  "pt": "Construa uma páginazinha."
+ },
+ "Build the first part.": {
+  "ar": "ابنِ الجزء الأول.",
+  "es": "Construye la primera parte.",
+  "hi": "पहला हिस्सा बनाएँ।",
+  "pt": "Construa a primeira parte."
+ },
+ "Build the first small part and test it.": {
+  "ar": "ابنِ أول جزء صغير واختبره.",
+  "es": "Construye la primera parte pequeña y pruébala.",
+  "hi": "पहला छोटा हिस्सा बनाएँ और उसे परखें।",
+  "pt": "Construa a primeira parte pequena e teste."
+ },
+ "Build the next part and fix problems.": {
+  "ar": "ابنِ الجزء التالي وأصلح المشكلات.",
+  "es": "Construye la siguiente parte y resuelve los problemas.",
+  "hi": "अगला हिस्सा बनाएँ और समस्याएँ ठीक करें।",
+  "pt": "Construa a próxima parte e resolva os problemas."
+ },
+ "Build the smallest part first, like reading numbers.": {
+  "ar": "ابنِ أصغر جزء أولًا، مثل قراءة الأعداد.",
+  "es": "Construye primero la parte más pequeña, como leer números.",
+  "hi": "पहले सबसे छोटा हिस्सा बनाएँ, जैसे संख्याएँ पढ़ना।",
+  "pt": "Construa primeiro a menor parte, como ler números."
+ },
+ "Build your own 3D renderer": {
+  "ar": "ابنِ مُصيِّر ثلاثي الأبعاد خاصًا بك",
+  "es": "Crea tu propio renderizador 3D",
+  "hi": "अपना खुद का 3D रेंडरर बनाएँ",
+  "pt": "Crie o seu próprio renderizador 3D"
+ },
+ "Build your own game": {
+  "ar": "ابنِ لعبتك الخاصة",
+  "es": "Crea tu propio juego",
+  "hi": "अपना खुद का खेल बनाएँ",
+  "pt": "Crie o seu próprio jogo"
+ },
+ "Build your own programming language": {
+  "ar": "ابنِ لغة برمجة خاصة بك",
+  "es": "Crea tu propio lenguaje de programación",
+  "hi": "अपनी खुद की प्रोग्रामिंग भाषा बनाएँ",
+  "pt": "Crie a sua própria linguagem de programação"
+ },
+ "Build your own tree with new numbers.": {
+  "ar": "ابنِ شجرتك الخاصة بأعداد جديدة.",
+  "es": "Construye tu propio árbol con números nuevos.",
+  "hi": "नई संख्याओं से अपना पेड़ बनाएँ।",
+  "pt": "Construa a sua própria árvore com números novos."
+ },
+ "Build-it tutorials": {
+  "ar": "دروس للبناء",
+  "es": "Tutoriales para construir",
+  "hi": "बनाने के ट्यूटोरियल",
+  "pt": "Tutoriais para construir"
+ },
+ "Change one thing to make it your own.": {
+  "ar": "غيّر شيئًا واحدًا ليصبح عملك الخاص.",
+  "es": "Cambia una cosa para hacerlo tuyo.",
+  "hi": "उसे अपना बनाने के लिए एक चीज़ बदलें।",
+  "pt": "Mude uma coisa para torná-lo seu."
+ },
+ "Change the look and play it with a friend.": {
+  "ar": "غيّر المظهر والعبوها مع صديق.",
+  "es": "Cambia el aspecto y juéguenlo con un amigo.",
+  "hi": "रूप बदलें और किसी दोस्त के साथ खेलें।",
+  "pt": "Mude o visual e jogue com um amigo."
+ },
+ "Check if everyone ended up in order, then try new numbers.": {
+  "ar": "تحقّقوا هل أصبح الجميع مرتّبين، ثم جرّبوا أعدادًا جديدة.",
+  "es": "Comprueben si todos quedaron en orden y luego prueben con números nuevos.",
+  "hi": "जाँचें कि सब क्रम में आए या नहीं, फिर नई संख्याएँ आज़माएँ।",
+  "pt": "Verifiquem se todos ficaram em ordem e depois tentem com números novos."
+ },
+ "Check what you need and ask a grown-up about it.": {
+  "ar": "تحقّق مما تحتاج إليه واسأل شخصًا بالغًا.",
+  "es": "Revisa qué necesitas y pregunta a un adulto.",
+  "hi": "देखें कि आपको क्या चाहिए और किसी बड़े से पूछें।",
+  "pt": "Confira o que você precisa e pergunte a um adulto."
+ },
+ "Choose one that looks fun or that matches something you already like.": {
+  "ar": "اختر ما يبدو ممتعًا أو ما يتصل بشيء تحبه بالفعل.",
+  "es": "Elige uno que parezca divertido o que se relacione con algo que ya te gusta.",
+  "hi": "जो मज़ेदार लगे या जो आपकी पसंद की किसी चीज़ से जुड़ा हो, उसे चुनें।",
+  "pt": "Escolha um que pareça divertido ou que combine com algo de que você já gosta."
+ },
+ "Choose who is the programmer and who is the robot, and agree on simple commands.": {
+  "ar": "اختر من سيكون المبرمج ومن سيكون الروبوت، واتفقا على أوامر بسيطة.",
+  "es": "Elige quién será el programador y quién el robot, y acuerden comandos sencillos.",
+  "hi": "तय करें कि प्रोग्रामर कौन होगा और रोबोट कौन, और कुछ आसान आदेश चुन लें।",
+  "pt": "Escolha quem será o programador e quem será o robô, e combinem comandos simples."
+ },
+ "Colour a small picture from its numbers.": {
+  "ar": "لوّن صورة صغيرة انطلاقًا من أعدادها.",
+  "es": "Colorea un dibujo pequeño a partir de sus números.",
+  "hi": "संख्याओं से एक छोटा चित्र रंगें।",
+  "pt": "Colora um desenho pequeno a partir dos seus números."
+ },
+ "Colour the squares using the number code.": {
+  "ar": "لوّن المربعات باستخدام رمز الأعداد.",
+  "es": "Colorea los cuadros usando el código de números.",
+  "hi": "संख्या-कोड के अनुसार खाने रंगें।",
+  "pt": "Colora os quadradinhos usando o código de números."
+ },
+ "Compare it with another resource.": {
+  "ar": "قارنه بمورد آخر.",
+  "es": "Compáralo con otro recurso.",
+  "hi": "इसकी तुलना किसी दूसरे संसाधन से करें।",
+  "pt": "Compare com outro recurso."
+ },
+ "Compare with searching a sorted list.": {
+  "ar": "قارن ذلك بالبحث في قائمة مرتّبة.",
+  "es": "Compáralo con buscar en una lista ordenada.",
+  "hi": "इसकी तुलना क्रम में लगी सूची में खोजने से करें।",
+  "pt": "Compare com a busca em uma lista ordenada."
+ },
+ "Compare with the sorted list game.": {
+  "ar": "قارنه بلعبة القائمة المرتّبة.",
+  "es": "Compáralo con el juego de la lista ordenada.",
+  "hi": "इसकी तुलना क्रम वाली सूची के खेल से करें।",
+  "pt": "Compare com o jogo da lista ordenada."
+ },
+ "Compare your guess counts and chart them.": {
+  "ar": "قارنوا عدد محاولاتكم وارسموها في مخطط.",
+  "es": "Comparen cuántos intentos hizo cada uno y háganlo en un gráfico.",
+  "hi": "अपनी कोशिशों की गिनती की तुलना करें और उसका चार्ट बनाएँ।",
+  "pt": "Comparem quantas tentativas cada um fez e façam um gráfico."
+ },
+ "Computer science": {
+  "ar": "علوم الحاسوب",
+  "es": "Ciencias de la computación",
+  "hi": "कंप्यूटर विज्ञान",
+  "pt": "Ciência da computação"
+ },
+ "Computer theory": {
+  "ar": "نظرية الحاسوب",
+  "es": "Teoría de la computación",
+  "hi": "कंप्यूटर सिद्धांत",
+  "pt": "Teoria da computação"
+ },
+ "Computers and platforms": {
+  "ar": "الحواسيب والمنصّات",
+  "es": "Computadoras y plataformas",
+  "hi": "कंप्यूटर और प्लेटफ़ॉर्म",
+  "pt": "Computadores e plataformas"
+ },
+ "Data structures for searching (CS Unplugged)": {
+  "ar": "بنى البيانات للبحث (CS Unplugged)",
+  "es": "Estructuras de datos para buscar (CS Unplugged)",
+  "hi": "खोज के लिए डेटा संरचनाएँ (CS Unplugged)",
+  "pt": "Estruturas de dados para busca (CS Unplugged)"
+ },
+ "Day 1": {
+  "ar": "اليوم 1",
+  "es": "Día 1",
+  "hi": "दिन 1",
+  "pt": "Dia 1"
+ },
+ "Day 2": {
+  "ar": "اليوم 2",
+  "es": "Día 2",
+  "hi": "दिन 2",
+  "pt": "Dia 2"
+ },
+ "Do a few more activities.": {
+  "ar": "أنجز بضعة أنشطة أخرى.",
+  "es": "Haz algunas actividades más.",
+  "hi": "कुछ और गतिविधियाँ करें।",
+  "pt": "Faça mais algumas atividades."
+ },
+ "Do it again and teach someone at home.": {
+  "ar": "أعد النشاط وعلّمه لشخص في المنزل.",
+  "es": "Hazla otra vez y enséñasela a alguien en casa.",
+  "hi": "इसे फिर से करें और घर पर किसी को सिखाएँ।",
+  "pt": "Faça de novo e ensine a alguém em casa."
+ },
+ "Do the activity together and say out loud what you notice.": {
+  "ar": "قوما بالنشاط معًا وقل بصوت عالٍ ما تلاحظه.",
+  "es": "Hagan la actividad juntos y di en voz alta lo que notas.",
+  "hi": "गतिविधि साथ मिलकर करें और जो आप देखें उसे ज़ोर से बोलें।",
+  "pt": "Façam a atividade juntos e diga em voz alta o que você percebe."
+ },
+ "Do the first lesson of the unit together.": {
+  "ar": "قوما معًا بالدرس الأول من الوحدة.",
+  "es": "Hagan juntos la primera lección de la unidad.",
+  "hi": "इकाई का पहला पाठ साथ मिलकर करें।",
+  "pt": "Façam juntos a primeira lição da unidade."
+ },
+ "Draw a big tree on the ground with chalk or tape.": {
+  "ar": "ارسم شجرة كبيرة على الأرض بالطباشير أو بشريط لاصق.",
+  "es": "Dibuja un árbol grande en el suelo con tiza o cinta.",
+  "hi": "ज़मीन पर चॉक या टेप से एक बड़ा पेड़ बनाएँ।",
+  "pt": "Desenhe uma árvore grande no chão com giz ou fita."
+ },
+ "Draw a cube or a simple scene.": {
+  "ar": "ارسم مكعبًا أو مشهدًا بسيطًا.",
+  "es": "Dibuja un cubo o una escena sencilla.",
+  "hi": "एक घन या कोई सरल दृश्य बनाएँ।",
+  "pt": "Desenhe um cubo ou uma cena simples."
+ },
+ "Draw a single shape on the screen before anything else.": {
+  "ar": "ارسم شكلًا واحدًا على الشاشة قبل أي شيء آخر.",
+  "es": "Dibuja una sola figura en la pantalla antes que nada.",
+  "hi": "सबसे पहले स्क्रीन पर एक आकृति बनाएँ।",
+  "pt": "Desenhe uma única forma na tela antes de qualquer coisa."
+ },
+ "Draw or write the main idea in your own words.": {
+  "ar": "ارسم الفكرة الرئيسية أو اكتبها بكلماتك.",
+  "es": "Dibuja o escribe la idea principal con tus propias palabras.",
+  "hi": "मुख्य विचार को अपने शब्दों में बनाएँ या लिखें।",
+  "pt": "Desenhe ou escreva a ideia principal com as suas palavras."
+ },
+ "Draw the sorting path on the ground with chalk or tape.": {
+  "ar": "ارسم مسار الفرز على الأرض بالطباشير أو بشريط لاصق.",
+  "es": "Dibuja en el suelo el camino de ordenación con tiza o cinta.",
+  "hi": "ज़मीन पर चॉक या टेप से सॉर्टिंग का रास्ता बनाएँ।",
+  "pt": "Desenhe o caminho de ordenação no chão com giz ou fita."
+ },
+ "Draw your own bigger network.": {
+  "ar": "ارسم شبكتك الخاصة الأكبر.",
+  "es": "Dibuja tu propia red más grande.",
+  "hi": "अपना खुद का बड़ा नेटवर्क बनाएँ।",
+  "pt": "Desenhe a sua própria rede maior."
+ },
+ "Error detection and correction (CS Unplugged)": {
+  "ar": "اكتشاف الأخطاء وتصحيحها (CS Unplugged)",
+  "es": "Detección y corrección de errores (CS Unplugged)",
+  "hi": "त्रुटि पहचान और सुधार (CS Unplugged)",
+  "pt": "Detecção e correção de erros (CS Unplugged)"
+ },
+ "Explain the idea to someone.": {
+  "ar": "اشرح الفكرة لشخص ما.",
+  "es": "Explícale la idea a alguien.",
+  "hi": "यह विचार किसी को समझाएँ।",
+  "pt": "Explique a ideia a alguém."
+ },
+ "Explore and try one activity.": {
+  "ar": "استكشف وجرّب نشاطًا واحدًا.",
+  "es": "Explora y prueba una actividad.",
+  "hi": "खोजबीन करें और एक गतिविधि आज़माएँ।",
+  "pt": "Explore e experimente uma atividade."
+ },
+ "Finish and change something to make it yours.": {
+  "ar": "أنهِ المشروع وغيّر شيئًا ليصبح عملك الخاص.",
+  "es": "Termina y cambia algo para hacerlo tuyo.",
+  "hi": "पूरा करें और उसे अपना बनाने के लिए कुछ बदलें।",
+  "pt": "Termine e mude algo para torná-lo seu."
+ },
+ "Fix one bug and show someone.": {
+  "ar": "أصلح خطأً واحدًا وأرِه لشخص ما.",
+  "es": "Corrige un error y muéstraselo a alguien.",
+  "hi": "एक गलती ठीक करें और किसी को दिखाएँ।",
+  "pt": "Corrija um erro e mostre a alguém."
+ },
+ "Follow a first small tutorial or example.": {
+  "ar": "اتبع أول درس أو مثال صغير.",
+  "es": "Sigue un primer tutorial o ejemplo pequeño.",
+  "hi": "एक पहला छोटा ट्यूटोरियल या उदाहरण करें।",
+  "pt": "Siga um primeiro tutorial ou exemplo pequeno."
+ },
+ "Follow it step by step and run it often to see what changes.": {
+  "ar": "اتبعه خطوة بخطوة وشغّله كثيرًا لترى ما الذي يتغيّر.",
+  "es": "Síguelo paso a paso y ejecútalo a menudo para ver qué cambia.",
+  "hi": "इसे चरण-दर-चरण करें और बार-बार चलाएँ ताकि देख सकें कि क्या बदलता है।",
+  "pt": "Siga passo a passo e execute com frequência para ver o que muda."
+ },
+ "Free programming books": {
+  "ar": "كتب برمجة مجانية",
+  "es": "Libros gratuitos de programación",
+  "hi": "प्रोग्रामिंग की मुफ़्त किताबें",
+  "pt": "Livros gratuitos de programação"
+ },
+ "Gaming and game making": {
+  "ar": "الألعاب وصناعتها",
+  "es": "Juegos y creación de juegos",
+  "hi": "खेल और खेल बनाना",
+  "pt": "Jogos e criação de jogos"
+ },
+ "Gather what you need, like paper cards with dots, and clear a little space.": {
+  "ar": "اجمع ما تحتاج إليه، مثل بطاقات ورقية عليها نقاط، وافسح مكانًا صغيرًا.",
+  "es": "Reúne lo que necesitas, como cartas de papel con puntos, y despeja un poco de espacio.",
+  "hi": "ज़रूरी चीज़ें इकट्ठा करें, जैसे बिंदुओं वाले काग़ज़ के कार्ड, और थोड़ी जगह खाली कर लें।",
+  "pt": "Reúna o que você precisa, como cartas de papel com pontos, e abra um pouco de espaço."
+ },
+ "Get a set of two-sided cards or make some from paper.": {
+  "ar": "احصل على مجموعة بطاقات ذات وجهين أو اصنعها من الورق.",
+  "es": "Consigue un juego de cartas con dos caras o hazlas con papel.",
+  "hi": "दो-रंग वाले कार्डों का एक सेट लें या काग़ज़ से बना लें।",
+  "pt": "Pegue um conjunto de cartas de dois lados ou faça algumas com papel."
+ },
+ "Get something moving on the screen.": {
+  "ar": "اجعل شيئًا يتحرّك على الشاشة.",
+  "es": "Consigue que algo se mueva en la pantalla.",
+  "hi": "स्क्रीन पर कुछ चलता हुआ बनाएँ।",
+  "pt": "Faça algo se mover na tela."
+ },
+ "Give six people a number each and let them walk through, comparing at each meeting.": {
+  "ar": "أعطِ ستة أشخاص رقمًا لكلٍّ منهم ودعهم يمشون في المسار ويقارنون عند كل لقاء.",
+  "es": "Da un número a cada una de seis personas y déjalas recorrer el camino, comparando en cada encuentro.",
+  "hi": "छह लोगों को एक-एक संख्या दें और उन्हें चलने दें, हर मुलाक़ात पर तुलना करते हुए।",
+  "pt": "Dê um número a cada uma de seis pessoas e deixe que percorram o caminho, comparando a cada encontro."
+ },
+ "Go to the learning site": {
+  "ar": "اذهب إلى موقع التعلّم",
+  "es": "Ir al sitio de aprendizaje",
+  "hi": "सीखने की साइट पर जाएँ",
+  "pt": "Ir ao site de aprendizado"
+ },
+ "Go to the original site with a grown-up and look at the first page.": {
+  "ar": "اذهب إلى الموقع الأصلي مع شخص بالغ وانظر إلى الصفحة الأولى.",
+  "es": "Ve al sitio original con un adulto y mira la primera página.",
+  "hi": "किसी बड़े के साथ मूल साइट पर जाएँ और पहला पेज देखें।",
+  "pt": "Vá ao site original com um adulto e veja a primeira página."
+ },
+ "Grown-ups: bugs are good. Praise finding and fixing mistakes, not only getting it right the first time.": {
+  "ar": "للكبار: الأخطاء أمر جيد. امدحوا اكتشاف الأخطاء وإصلاحها، لا النجاح من المرة الأولى فحسب.",
+  "es": "Adultos: los errores son buenos. Elogien el hecho de encontrarlos y corregirlos, no solo acertar a la primera.",
+  "hi": "बड़ों के लिए: गलतियाँ (बग) अच्छी होती हैं। केवल पहली बार में सही करने की नहीं, गलती ढूँढने और सुधारने की भी तारीफ़ करें।",
+  "pt": "Para adultos: erros são bons. Elogiem o ato de encontrar e corrigir os erros, e não só acertar de primeira."
+ },
+ "Grown-ups: change the numbers to match what your child is learning in maths, and keep another game ready for fast finishers.": {
+  "ar": "للكبار: غيّروا الأعداد لتناسب ما يتعلّمه طفلكم في الرياضيات، وجهّزوا لعبة أخرى لمن ينتهي بسرعة.",
+  "es": "Adultos: cambien los números para que coincidan con lo que su hijo aprende en matemáticas, y tengan otro juego listo para quienes terminen rápido.",
+  "hi": "बड़ों के लिए: संख्याएँ बदलकर वही रखें जो आपका बच्चा गणित में सीख रहा है, और जल्दी खत्म करने वालों के लिए एक और खेल तैयार रखें।",
+  "pt": "Para adultos: troquem os números para combinar com o que a criança está aprendendo em matemática e deixem outro jogo pronto para quem terminar rápido."
+ },
+ "Grown-ups: check the licenses of any pictures or sounds before sharing a project.": {
+  "ar": "للكبار: تحقّقوا من تراخيص أي صور أو أصوات قبل مشاركة المشروع.",
+  "es": "Adultos: revisen las licencias de las imágenes o sonidos antes de compartir un proyecto.",
+  "hi": "बड़ों के लिए: प्रोजेक्ट साझा करने से पहले चित्रों या ध्वनियों के लाइसेंस जाँच लें।",
+  "pt": "Para adultos: confiram as licenças de quaisquer imagens ou sons antes de compartilhar um projeto."
+ },
+ "Grown-ups: children often mix up binary search and binary search trees. They are related, but not the same.": {
+  "ar": "للكبار: كثيرًا ما يخلط الأطفال بين البحث الثنائي وأشجار البحث الثنائية. هما مرتبطان لكنهما ليسا الشيء نفسه.",
+  "es": "Adultos: los niños suelen confundir la búsqueda binaria con los árboles de búsqueda binaria. Están relacionados, pero no son lo mismo.",
+  "hi": "बड़ों के लिए: बच्चे अक्सर बाइनरी सर्च और बाइनरी सर्च ट्री को एक समझ लेते हैं। ये जुड़े हुए हैं, पर एक जैसे नहीं।",
+  "pt": "Para adultos: as crianças costumam confundir a busca binária com as árvores de busca binária. Elas são relacionadas, mas não são a mesma coisa."
+ },
+ "Grown-ups: graphics tutorials usually need a programming language installed.": {
+  "ar": "للكبار: تتطلّب دروس الرسوميات عادةً تثبيت لغة برمجة.",
+  "es": "Adultos: los tutoriales de gráficos suelen necesitar un lenguaje de programación instalado.",
+  "hi": "बड़ों के लिए: ग्राफ़िक्स ट्यूटोरियल में आम तौर पर कोई प्रोग्रामिंग भाषा इंस्टॉल होनी चाहिए।",
+  "pt": "Para adultos: os tutoriais de gráficos geralmente precisam de uma linguagem de programação instalada."
+ },
+ "Grown-ups: many of these are tools for developers. Look at the page first and help with installs.": {
+  "ar": "للكبار: كثير من هذه أدوات للمطوّرين. اطّلعوا على الصفحة أولًا وساعدوا في التثبيت.",
+  "es": "Adultos: muchas de estas son herramientas para desarrolladores. Miren primero la página y ayuden con las instalaciones.",
+  "hi": "बड़ों के लिए: इनमें से कई डेवलपर के औज़ार हैं। पहले पेज देखें और इंस्टॉल करने में मदद करें।",
+  "pt": "Para adultos: muitas destas são ferramentas para desenvolvedores. Vejam a página primeiro e ajudem com as instalações."
+ },
+ "Grown-ups: only one team walks the path at a time, so give the watchers a job, like checking the results.": {
+  "ar": "للكبار: يمشي فريق واحد فقط في المسار في كل مرة، فأعطوا المتفرّجين مهمة، مثل التحقق من النتائج.",
+  "es": "Adultos: solo un equipo recorre el camino a la vez, así que den una tarea a quienes observan, como comprobar los resultados.",
+  "hi": "बड़ों के लिए: एक समय में केवल एक टीम रास्ते पर चलती है, इसलिए देखने वालों को कोई काम दें, जैसे नतीजे जाँचना।",
+  "pt": "Para adultos: só uma equipe percorre o caminho por vez, então deem uma tarefa a quem está observando, como conferir os resultados."
+ },
+ "Grown-ups: pencil is easier than pen, because mistakes can be rubbed out. The original lesson page has the printable pictures.": {
+  "ar": "للكبار: القلم الرصاص أسهل من قلم الحبر لأن الأخطاء يمكن محوها. تحتوي صفحة الدرس الأصلية على الصور القابلة للطباعة.",
+  "es": "Adultos: el lápiz es más fácil que el bolígrafo, porque los errores se pueden borrar. La página original de la lección tiene las imágenes para imprimir.",
+  "hi": "बड़ों के लिए: पेंसिल पेन से आसान है, क्योंकि गलतियाँ मिटाई जा सकती हैं। मूल पाठ-पेज पर छापने लायक चित्र हैं।",
+  "pt": "Para adultos: o lápis é mais fácil que a caneta, porque os erros podem ser apagados. A página original da lição tem as imagens para imprimir."
+ },
+ "Grown-ups: please look at the tutorial before your child starts.": {
+  "ar": "للكبار: يُرجى الاطّلاع على الدرس قبل أن يبدأ طفلكم.",
+  "es": "Adultos: miren el tutorial antes de que su hijo empiece.",
+  "hi": "बड़ों के लिए: बच्चे के शुरू करने से पहले कृपया ट्यूटोरियल देख लें।",
+  "pt": "Para adultos: vejam o tutorial antes de a criança começar."
+ },
+ "Grown-ups: practise the trick before you show it. Some activities in this unit use arithmetic, so a calculator is fine.": {
+  "ar": "للكبار: تدرّبوا على الحيلة قبل عرضها. بعض أنشطة هذه الوحدة تستخدم الحساب، فلا بأس باستخدام آلة حاسبة.",
+  "es": "Adultos: practiquen el truco antes de mostrarlo. Algunas actividades de esta unidad usan aritmética, así que una calculadora está bien.",
+  "hi": "बड़ों के लिए: करतब दिखाने से पहले उसका अभ्यास कर लें। इस इकाई की कुछ गतिविधियों में गणित है, इसलिए कैलकुलेटर चलेगा।",
+  "pt": "Para adultos: pratiquem o truque antes de mostrá-lo. Algumas atividades desta unidade usam aritmética, então uma calculadora é bem-vinda."
+ },
+ "Grown-ups: some game tools ask for accounts or downloads. Please check the site before your child uses it.": {
+  "ar": "للكبار: بعض أدوات الألعاب تطلب حسابات أو تنزيلات. يُرجى التحقق من الموقع قبل أن يستخدمه طفلكم.",
+  "es": "Adultos: algunas herramientas de juegos piden cuentas o descargas. Revisen el sitio antes de que su hijo lo use.",
+  "hi": "बड़ों के लिए: कुछ गेम टूल खाते या डाउनलोड माँगते हैं। बच्चे के इस्तेमाल से पहले कृपया साइट देख लें।",
+  "pt": "Para adultos: algumas ferramentas de jogos pedem contas ou downloads. Confiram o site antes que a criança o use."
+ },
+ "Grown-ups: some learning sites ask for an account. Please check the site's rules before your child signs up.": {
+  "ar": "للكبار: بعض مواقع التعلّم تطلب حسابًا. يُرجى مراجعة قواعد الموقع قبل أن يسجّل طفلكم.",
+  "es": "Adultos: algunos sitios de aprendizaje piden una cuenta. Revisen las reglas del sitio antes de que su hijo se registre.",
+  "hi": "बड़ों के लिए: कुछ सीखने की साइटें खाता माँगती हैं। बच्चे के साइन अप करने से पहले साइट के नियम देख लें।",
+  "pt": "Para adultos: alguns sites de aprendizado pedem uma conta. Confiram as regras do site antes que a criança se cadastre."
+ },
+ "Grown-ups: some material is university level. A hard item is not a problem; just choose an easier one.": {
+  "ar": "للكبار: بعض المواد بمستوى جامعي. لا بأس إن كان عنصر ما صعبًا؛ اختاروا ببساطة عنصرًا أسهل.",
+  "es": "Adultos: parte del material es de nivel universitario. Un elemento difícil no es un problema; simplemente elijan uno más fácil.",
+  "hi": "बड़ों के लिए: कुछ सामग्री विश्वविद्यालय स्तर की है। कठिन चीज़ होना कोई समस्या नहीं; बस कोई आसान चुन लें।",
+  "pt": "Para adultos: parte do material é de nível universitário. Um item difícil não é problema; é só escolher um mais fácil."
+ },
+ "Grown-ups: some of these involve buying hardware or making an account. That is your decision, not ours.": {
+  "ar": "للكبار: بعض هذه العناصر يتضمّن شراء أجهزة أو إنشاء حساب. هذا قراركم أنتم لا قرارنا.",
+  "es": "Adultos: algunos de estos implican comprar equipo o crear una cuenta. Esa decisión es suya, no nuestra.",
+  "hi": "बड़ों के लिए: इनमें से कुछ में हार्डवेयर खरीदना या खाता बनाना शामिल है। यह फ़ैसला आपका है, हमारा नहीं।",
+  "pt": "Para adultos: alguns destes envolvem comprar equipamentos ou criar uma conta. Essa decisão é de vocês, não nossa."
+ },
+ "Grown-ups: these are teacher and parent lesson plans. Be the guide, let the child discover patterns, and do not worry about correct answers at first.": {
+  "ar": "للكبار: هذه خطط دروس للمعلّمين والآباء. كونوا المرشدين، واتركوا الطفل يكتشف الأنماط بنفسه، ولا تقلقوا في البداية بشأن الإجابات الصحيحة.",
+  "es": "Adultos: son planes de clase para maestros y padres. Sean la guía, dejen que el niño descubra los patrones y no se preocupen al principio por las respuestas correctas.",
+  "hi": "बड़ों के लिए: ये शिक्षकों और माता-पिता के लिए पाठ योजनाएँ हैं। मार्गदर्शक बनें, बच्चे को खुद पैटर्न खोजने दें, और शुरू में सही उत्तरों की चिंता न करें।",
+  "pt": "Para adultos: são planos de aula para professores e pais. Sejam o guia, deixem a criança descobrir os padrões e não se preocupem no início com as respostas certas."
+ },
+ "Grown-ups: this group is mixed, so some items are not for children. Please look first.": {
+  "ar": "للكبار: هذه المجموعة متنوّعة، لذا بعض العناصر ليست للأطفال. يُرجى الاطّلاع عليها أولًا.",
+  "es": "Adultos: este grupo es mixto, así que algunos elementos no son para niños. Por favor, miren primero.",
+  "hi": "बड़ों के लिए: यह समूह मिला-जुला है, इसलिए कुछ चीज़ें बच्चों के लिए नहीं हैं। कृपया पहले खुद देखें।",
+  "pt": "Para adultos: este grupo é misto, então alguns itens não são para crianças. Por favor, olhem primeiro."
+ },
+ "Grown-ups: this is an advanced topic. It is fine to take it slowly or leave it for later.": {
+  "ar": "للكبار: هذا موضوع متقدّم. لا بأس بالتمهّل أو تأجيله لوقت لاحق.",
+  "es": "Adultos: este es un tema avanzado. Está bien ir despacio o dejarlo para más adelante.",
+  "hi": "बड़ों के लिए: यह उन्नत विषय है। धीरे चलना या इसे बाद के लिए छोड़ देना ठीक है।",
+  "pt": "Para adultos: este é um tema avançado. Tudo bem ir devagar ou deixar para depois."
+ },
+ "Grown-ups: this link goes to a site we do not control and have not reviewed beyond its listing. Please look at it first.": {
+  "ar": "للكبار: يؤدي هذا الرابط إلى موقع لا نتحكّم فيه ولم نراجعه إلا من خلال وصفه في قائمتنا. يُرجى إلقاء نظرة عليه أولًا.",
+  "es": "Adultos: este enlace lleva a un sitio que no controlamos y que no hemos revisado más allá de su ficha. Por favor, échenle un vistazo primero.",
+  "hi": "बड़ों के लिए: यह लिंक ऐसी साइट पर जाता है जिस पर हमारा नियंत्रण नहीं है और जिसे हमने सूची के विवरण से आगे नहीं देखा है। कृपया पहले खुद उसे देख लें।",
+  "pt": "Para adultos: este link leva a um site que não controlamos e que não revisamos além da sua descrição na lista. Por favor, deem uma olhada nele primeiro."
+ },
+ "Grown-ups: this material can be abstract. Easier items are fine to start with.": {
+  "ar": "للكبار: قد تكون هذه المواد مجرّدة. لا بأس بالبدء بعناصر أسهل.",
+  "es": "Adultos: este material puede ser abstracto. Está bien empezar con elementos más fáciles.",
+  "hi": "बड़ों के लिए: यह सामग्री अमूर्त हो सकती है। आसान चीज़ों से शुरू करना ठीक है।",
+  "pt": "Para adultos: este material pode ser abstrato. Tudo bem começar por itens mais fáceis."
+ },
+ "Grown-ups: tutorials may need software installed. Please check before your child downloads anything.": {
+  "ar": "للكبار: قد تتطلّب الدروس تثبيت برامج. يُرجى التحقق قبل أن ينزّل طفلكم أي شيء.",
+  "es": "Adultos: los tutoriales pueden requerir instalar software. Comprueben antes de que su hijo descargue algo.",
+  "hi": "बड़ों के लिए: ट्यूटोरियल में सॉफ़्टवेयर इंस्टॉल करना पड़ सकता है। बच्चे के कुछ भी डाउनलोड करने से पहले जाँच लें।",
+  "pt": "Para adultos: os tutoriais podem exigir a instalação de programas. Confiram antes de a criança baixar qualquer coisa."
+ },
+ "Grown-ups: you may need to help install software. Please check the site first.": {
+  "ar": "للكبار: قد تحتاجون إلى المساعدة في تثبيت البرامج. يُرجى التحقق من الموقع أولًا.",
+  "es": "Adultos: puede que tengan que ayudar a instalar software. Revisen primero el sitio.",
+  "hi": "बड़ों के लिए: हो सकता है आपको सॉफ़्टवेयर इंस्टॉल करने में मदद करनी पड़े। कृपया पहले साइट देख लें।",
+  "pt": "Para adultos: talvez precisem ajudar a instalar programas. Confiram o site primeiro."
+ },
+ "How much time?": {
+  "ar": "كم من الوقت؟",
+  "es": "¿Cuánto tiempo?",
+  "hi": "कितना समय लगेगा?",
+  "pt": "Quanto tempo?"
+ },
+ "How to start": {
+  "ar": "كيف تبدأ",
+  "es": "Cómo empezar",
+  "hi": "शुरू कैसे करें",
+  "pt": "Como começar"
+ },
+ "Image representation (CS Unplugged)": {
+  "ar": "تمثيل الصور (CS Unplugged)",
+  "es": "Representación de imágenes (CS Unplugged)",
+  "hi": "चित्रों का निरूपण (CS Unplugged)",
+  "pt": "Representação de imagens (CS Unplugged)"
+ },
+ "Invent a new searching game.": {
+  "ar": "اخترع لعبة بحث جديدة.",
+  "es": "Inventa un nuevo juego de búsqueda.",
+  "hi": "खोज का एक नया खेल बनाएँ।",
+  "pt": "Invente um novo jogo de busca."
+ },
+ "Is it for me?": {
+  "ar": "هل هو مناسب لي؟",
+  "es": "¿Es para mí?",
+  "hi": "क्या यह मेरे लिए है?",
+  "pt": "É para mim?"
+ },
+ "It is for anyone ready to learn a language. Most items are Intermediate, so some coding experience helps. The Beginner items are the best start, and it suits about age {age} and up.": {
+  "ar": "مناسب لمن هو مستعد لتعلّم لغة. معظم العناصر من المستوى المتوسط، لذا تفيد بعض الخبرة في البرمجة. عناصر المبتدئين أفضل بداية، ويناسب عمر {age} تقريبًا فما فوق.",
+  "es": "Es para quien está listo para aprender un lenguaje. La mayoría de los elementos son de nivel Intermedio, así que ayuda algo de experiencia programando. Los elementos para principiantes son el mejor comienzo, y va bien para unos {age} años en adelante.",
+  "hi": "यह हर उस व्यक्ति के लिए है जो कोई भाषा सीखने को तैयार है। ज़्यादातर चीज़ें मध्यम स्तर की हैं, इसलिए कोडिंग का थोड़ा अनुभव काम आता है। शुरुआती चीज़ें सबसे अच्छी शुरुआत हैं, और यह लगभग {age} साल और उससे ऊपर के लिए ठीक है।",
+  "pt": "É para quem está pronto para aprender uma linguagem. A maioria dos itens é de nível Intermediário, então alguma experiência com programação ajuda. Os itens para iniciantes são o melhor começo, e serve para cerca de {age} anos em diante."
+ },
+ "It is for anyone who likes games and wants to see how they are made. Most items here are Intermediate or Beginner, for about age {age} and up. Pick one that sounds fun and not too hard.": {
+  "ar": "مناسب لكل من يحب الألعاب ويريد أن يرى كيف تُصنع. معظم العناصر هنا من المستوى المتوسط أو المبتدئ، لعمر {age} تقريبًا فما فوق. اختر ما يبدو ممتعًا وليس صعبًا جدًا.",
+  "es": "Es para quien disfruta de los juegos y quiere ver cómo se hacen. La mayoría de los elementos son de nivel Intermedio o Principiante, para unos {age} años en adelante. Elige uno que parezca divertido y no demasiado difícil.",
+  "hi": "यह हर उस व्यक्ति के लिए है जिसे खेल पसंद हैं और जो देखना चाहता है कि वे कैसे बनते हैं। यहाँ ज़्यादातर चीज़ें मध्यम या शुरुआती स्तर की हैं, लगभग {age} साल और उससे ऊपर के लिए। जो मज़ेदार लगे और बहुत कठिन न हो, उसे चुनें।",
+  "pt": "É para quem gosta de jogos e quer ver como eles são feitos. A maioria dos itens aqui é de nível Intermediário ou Iniciante, para cerca de {age} anos em diante. Escolha um que pareça divertido e não muito difícil."
+ },
+ "It is for anyone who wants to make a game, not only play one. There are Beginner, Intermediate and Advanced items. It suits about age {age} and up, and a little programming experience helps.": {
+  "ar": "مناسب لمن يريد صنع لعبة لا مجرد لعب واحدة. هناك عناصر للمبتدئين والمتوسطين والمتقدّمين. يناسب عمر {age} تقريبًا فما فوق، وتفيد بعض الخبرة في البرمجة.",
+  "es": "Es para quien quiere crear un juego, no solo jugar uno. Hay elementos de nivel Principiante, Intermedio y Avanzado. Va bien para unos {age} años en adelante, y ayuda tener algo de experiencia programando.",
+  "hi": "यह उन लोगों के लिए है जो खेल बनाना चाहते हैं, केवल खेलना नहीं। शुरुआती, मध्यम और उन्नत, तीनों स्तर की चीज़ें हैं। यह लगभग {age} साल और उससे ऊपर के लिए ठीक है, और थोड़ा प्रोग्रामिंग अनुभव काम आता है।",
+  "pt": "É para quem quer criar um jogo, e não só jogar. Há itens de nível Iniciante, Intermediário e Avançado. Serve para cerca de {age} anos em diante, e ajuda ter alguma experiência com programação."
+ },
+ "It is for beginners and for anyone who wants a place to start. Many items are Beginner. It is a good choice for about age {age} and up, ideally with a grown-up nearby for the first try.": {
+  "ar": "مناسب للمبتدئين ولكل من يبحث عن مكان للبدء. كثير من العناصر من مستوى المبتدئ. خيار جيد لعمر {age} تقريبًا فما فوق، ويُفضَّل وجود شخص بالغ قريب في المحاولة الأولى.",
+  "es": "Es para principiantes y para quien busca un punto de partida. Muchos elementos son de nivel Principiante. Es una buena opción para unos {age} años en adelante, idealmente con un adulto cerca en el primer intento.",
+  "hi": "यह शुरुआत करने वालों और हर उस व्यक्ति के लिए है जिसे शुरू करने की जगह चाहिए। कई चीज़ें शुरुआती स्तर की हैं। यह लगभग {age} साल और उससे ऊपर के लिए अच्छा विकल्प है, पहली कोशिश में किसी बड़े के पास रहने के साथ।",
+  "pt": "É para iniciantes e para quem quer um ponto de partida. Muitos itens são de nível Iniciante. É uma boa escolha para cerca de {age} anos em diante, de preferência com um adulto por perto na primeira tentativa."
+ },
+ "It is for children about {age} and up who like drawing and colouring, with a grown-up. It is a {level} activity, and you only need paper and pencils.": {
+  "ar": "مناسب للأطفال من عمر {age} تقريبًا فما فوق ممن يحبون الرسم والتلوين، مع شخص بالغ. إنه نشاط من مستوى {level} ولا تحتاج إلا إلى ورق وأقلام.",
+  "es": "Es para niños de unos {age} años en adelante a quienes les gusta dibujar y colorear, con un adulto. Es una actividad de nivel {level} y solo necesitas papel y lápices.",
+  "hi": "यह लगभग {age} साल और उससे बड़े उन बच्चों के लिए है जिन्हें चित्र बनाना और रंगना पसंद है, किसी बड़े के साथ। यह {level} स्तर की गतिविधि है और इसमें बस काग़ज़ और पेंसिलें चाहिए।",
+  "pt": "É para crianças a partir de cerca de {age} anos que gostam de desenhar e colorir, com um adulto. É uma atividade de nível {level} e você só precisa de papel e lápis."
+ },
+ "It is for children about {age} and up who like games and guessing, with a grown-up or teacher. No computer is needed. It is a {level} activity.": {
+  "ar": "مناسب للأطفال من عمر {age} تقريبًا فما فوق ممن يحبون الألعاب والتخمين، مع شخص بالغ أو معلّم. لا حاجة إلى حاسوب. إنه نشاط من مستوى {level}.",
+  "es": "Es para niños de unos {age} años en adelante a quienes les gustan los juegos y adivinar, con un adulto o maestro. No hace falta computadora. Es una actividad de nivel {level}.",
+  "hi": "यह लगभग {age} साल और उससे बड़े उन बच्चों के लिए है जिन्हें खेल और अंदाज़ा लगाना पसंद है, किसी बड़े या शिक्षक के साथ। कंप्यूटर की ज़रूरत नहीं है। यह {level} स्तर की गतिविधि है।",
+  "pt": "É para crianças a partir de cerca de {age} anos que gostam de jogos e de adivinhar, com um adulto ou professor. Não precisa de computador. É uma atividade de nível {level}."
+ },
+ "It is for children about {age} and up who like moving around and giving or following instructions. You do not need a computer. It is a {level} activity to do with a grown-up or teacher.": {
+  "ar": "مناسب للأطفال من عمر {age} تقريبًا فما فوق ممن يحبون الحركة وإعطاء التعليمات أو اتّباعها. لا تحتاج إلى حاسوب. إنه نشاط من مستوى {level} يُنفَّذ مع شخص بالغ أو معلّم.",
+  "es": "Es para niños de unos {age} años en adelante a quienes les gusta moverse y dar o seguir instrucciones. No necesitas computadora. Es una actividad de nivel {level} para hacer con un adulto o maestro.",
+  "hi": "यह लगभग {age} साल और उससे बड़े उन बच्चों के लिए है जिन्हें हिलना-डुलना और निर्देश देना या मानना पसंद है। कंप्यूटर की ज़रूरत नहीं है। यह {level} स्तर की गतिविधि है, किसी बड़े या शिक्षक के साथ करने के लिए।",
+  "pt": "É para crianças a partir de cerca de {age} anos que gostam de se mexer e de dar ou seguir instruções. Você não precisa de computador. É uma atividade de nível {level} para fazer com um adulto ou professor."
+ },
+ "It is for children about {age} and up who like moving around and working in a team, with a grown-up or teacher. It is a {level} activity and needs chalk or tape and some space.": {
+  "ar": "مناسب للأطفال من عمر {age} تقريبًا فما فوق ممن يحبون الحركة والعمل ضمن فريق، مع شخص بالغ أو معلّم. إنه نشاط من مستوى {level} ويحتاج إلى طباشير أو شريط لاصق ومساحة.",
+  "es": "Es para niños de unos {age} años en adelante a quienes les gusta moverse y trabajar en equipo, con un adulto o maestro. Es una actividad de nivel {level} y necesita tiza o cinta y algo de espacio.",
+  "hi": "यह लगभग {age} साल और उससे बड़े उन बच्चों के लिए है जिन्हें हिलना-डुलना और टीम में काम करना पसंद है, किसी बड़े या शिक्षक के साथ। यह {level} स्तर की गतिविधि है और इसमें चॉक या टेप और थोड़ी जगह चाहिए।",
+  "pt": "É para crianças a partir de cerca de {age} anos que gostam de se mexer e de trabalhar em equipe, com um adulto ou professor. É uma atividade de nível {level} e precisa de giz ou fita e um pouco de espaço."
+ },
+ "It is for children about {age} and up who like puzzles and magic tricks, with a grown-up or teacher to help. It is a {level} activity and needs no computer.": {
+  "ar": "مناسب للأطفال من عمر {age} تقريبًا فما فوق ممن يحبون الألغاز والحيل السحرية، بمساعدة شخص بالغ أو معلّم. إنه نشاط من مستوى {level} ولا يحتاج إلى حاسوب.",
+  "es": "Es para niños de unos {age} años en adelante a quienes les gustan los acertijos y los trucos de magia, con un adulto o maestro que ayude. Es una actividad de nivel {level} y no necesita computadora.",
+  "hi": "यह लगभग {age} साल और उससे बड़े उन बच्चों के लिए है जिन्हें पहेलियाँ और जादू के करतब पसंद हैं, किसी बड़े या शिक्षक की मदद से। यह {level} स्तर की गतिविधि है और इसमें कंप्यूटर नहीं चाहिए।",
+  "pt": "É para crianças a partir de cerca de {age} anos que gostam de quebra-cabeças e truques de mágica, com a ajuda de um adulto ou professor. É uma atividade de nível {level} e não precisa de computador."
+ },
+ "It is for curious people who like puzzles and maths. Items are mostly Intermediate or Advanced, so it suits about age {age} and up and can be hard.": {
+  "ar": "مناسب للفضوليين الذين يحبون الألغاز والرياضيات. معظم العناصر من المستوى المتوسط أو المتقدّم، لذا يناسب عمر {age} تقريبًا فما فوق وقد يكون صعبًا.",
+  "es": "Es para personas curiosas a quienes les gustan los acertijos y las matemáticas. Los elementos son sobre todo de nivel Intermedio o Avanzado, así que va bien para unos {age} años en adelante y puede ser difícil.",
+  "hi": "यह जिज्ञासु लोगों के लिए है जिन्हें पहेलियाँ और गणित पसंद हैं। ज़्यादातर चीज़ें मध्यम या उन्नत स्तर की हैं, इसलिए यह लगभग {age} साल और उससे ऊपर के लिए ठीक है और कठिन हो सकता है।",
+  "pt": "É para pessoas curiosas que gostam de quebra-cabeças e matemática. Os itens são na maioria de nível Intermediário ou Avançado, então serve para cerca de {age} anos em diante e pode ser difícil."
+ },
+ "It is for curious people who want to know what to build on. Many items are Intermediate, so it is best for about age {age} and up, with a grown-up for setup and buying anything.": {
+  "ar": "مناسب للفضوليين الذين يريدون معرفة ما يبنون عليه. كثير من العناصر من المستوى المتوسط، لذا الأفضل لعمر {age} تقريبًا فما فوق، مع شخص بالغ للإعداد وللشراء.",
+  "es": "Es para personas curiosas que quieren saber sobre qué construir. Muchos elementos son de nivel Intermedio, así que es mejor para unos {age} años en adelante, con un adulto para la instalación y para comprar cualquier cosa.",
+  "hi": "यह जिज्ञासु लोगों के लिए है जो जानना चाहते हैं कि किस पर कुछ बनाया जाए। कई चीज़ें मध्यम स्तर की हैं, इसलिए यह लगभग {age} साल और उससे ऊपर के लिए बेहतर है, सेटअप और कुछ भी खरीदने के लिए किसी बड़े के साथ।",
+  "pt": "É para pessoas curiosas que querem saber em que construir. Muitos itens são de nível Intermediário, então é melhor para cerca de {age} anos em diante, com um adulto para a configuração e para comprar qualquer coisa."
+ },
+ "It is for curious people who want to know why computers work, not only how to use them. Many items are Advanced or Intermediate, so it suits about age {age} and up.": {
+  "ar": "مناسب للفضوليين الذين يريدون معرفة لماذا تعمل الحواسيب لا كيف تُستخدم فحسب. كثير من العناصر من المستوى المتقدّم أو المتوسط، لذا يناسب عمر {age} تقريبًا فما فوق.",
+  "es": "Es para personas curiosas que quieren saber por qué funcionan los ordenadores, no solo cómo usarlos. Muchos elementos son de nivel Avanzado o Intermedio, así que va bien para unos {age} años en adelante.",
+  "hi": "यह जिज्ञासु लोगों के लिए है जो जानना चाहते हैं कि कंप्यूटर क्यों काम करते हैं, केवल यह नहीं कि उन्हें कैसे इस्तेमाल करें। कई चीज़ें उन्नत या मध्यम स्तर की हैं, इसलिए यह लगभग {age} साल और उससे ऊपर के लिए ठीक है।",
+  "pt": "É para pessoas curiosas que querem saber por que os computadores funcionam, e não só como usá-los. Muitos itens são de nível Avançado ou Intermediário, então serve para cerca de {age} anos em diante."
+ },
+ "It is for older children, about {age} and up, who have already tried the searching games, with a grown-up or teacher. It is an {level} activity.": {
+  "ar": "مناسب للأطفال الأكبر سنًا، من عمر {age} تقريبًا فما فوق، ممن جرّبوا ألعاب البحث، مع شخص بالغ أو معلّم. إنه نشاط من مستوى {level}.",
+  "es": "Es para niños mayores, de unos {age} años en adelante, que ya probaron los juegos de búsqueda, con un adulto o maestro. Es una actividad de nivel {level}.",
+  "hi": "यह बड़े बच्चों के लिए है, लगभग {age} साल और उससे ऊपर, जो खोज के खेल पहले आज़मा चुके हैं, किसी बड़े या शिक्षक के साथ। यह {level} स्तर की गतिविधि है।",
+  "pt": "É para crianças mais velhas, a partir de cerca de {age} anos, que já experimentaram os jogos de busca, com um adulto ou professor. É uma atividade de nível {level}."
+ },
+ "It is for people who already know a bit of programming and want to see how languages work inside. Most items are Intermediate or Advanced, so it suits about age {age} and up.": {
+  "ar": "مناسب لمن يعرف قليلًا من البرمجة ويريد أن يرى كيف تعمل اللغات من الداخل. معظم العناصر من المستوى المتوسط أو المتقدّم، لذا يناسب عمر {age} تقريبًا فما فوق.",
+  "es": "Es para quien ya sabe un poco de programación y quiere ver cómo funcionan los lenguajes por dentro. La mayoría de los elementos son de nivel Intermedio o Avanzado, así que va bien para unos {age} años en adelante.",
+  "hi": "यह उन लोगों के लिए है जो थोड़ी प्रोग्रामिंग जानते हैं और देखना चाहते हैं कि भाषाएँ अंदर से कैसे काम करती हैं। ज़्यादातर चीज़ें मध्यम या उन्नत स्तर की हैं, इसलिए यह लगभग {age} साल और उससे ऊपर के लिए ठीक है।",
+  "pt": "É para quem já sabe um pouco de programação e quer ver como as linguagens funcionam por dentro. A maioria dos itens é de nível Intermediário ou Avançado, então serve para cerca de {age} anos em diante."
+ },
+ "It is for people who learn by making things. Most items are Intermediate, so some programming experience helps. It suits about age {age} and up.": {
+  "ar": "مناسب لمن يتعلّم بصنع الأشياء. معظم العناصر من المستوى المتوسط، لذا تفيد بعض الخبرة في البرمجة. يناسب عمر {age} تقريبًا فما فوق.",
+  "es": "Es para quien aprende haciendo cosas. La mayoría de los elementos son de nivel Intermedio, así que ayuda algo de experiencia programando. Va bien para unos {age} años en adelante.",
+  "hi": "यह उन लोगों के लिए है जो चीज़ें बनाकर सीखते हैं। ज़्यादातर चीज़ें मध्यम स्तर की हैं, इसलिए प्रोग्रामिंग का थोड़ा अनुभव काम आता है। यह लगभग {age} साल और उससे ऊपर के लिए ठीक है।",
+  "pt": "É para quem aprende fazendo coisas. A maioria dos itens é de nível Intermediário, então alguma experiência com programação ajuda. Serve para cerca de {age} anos em diante."
+ },
+ "It is for people who like design, drawing or music and want to use them in their projects. It suits about age {age} and up, and the art-minded will like it.": {
+  "ar": "مناسب لمن يحب التصميم أو الرسم أو الموسيقى ويريد استخدامها في مشاريعه. يناسب عمر {age} تقريبًا فما فوق، وسيعجب أصحاب الميول الفنية.",
+  "es": "Es para quien disfruta del diseño, el dibujo o la música y quiere usarlos en sus proyectos. Va bien para unos {age} años en adelante, y a quienes tienen alma artística les gustará.",
+  "hi": "यह उन लोगों के लिए है जिन्हें डिज़ाइन, चित्रकारी या संगीत पसंद है और जो उन्हें अपने प्रोजेक्ट में इस्तेमाल करना चाहते हैं। यह लगभग {age} साल और उससे ऊपर के लिए ठीक है, और कला-प्रेमियों को पसंद आएगा।",
+  "pt": "É para quem gosta de design, desenho ou música e quer usá-los em seus projetos. Serve para cerca de {age} anos em diante, e quem tem alma artística vai gostar."
+ },
+ "It is for people who like graphics and maths. There are Beginner items, but most take some programming experience. It suits about age {age} and up.": {
+  "ar": "مناسب لمن يحب الرسوميات والرياضيات. توجد عناصر للمبتدئين لكن معظمها يحتاج إلى بعض الخبرة في البرمجة. يناسب عمر {age} تقريبًا فما فوق.",
+  "es": "Es para quien disfruta de los gráficos y las matemáticas. Hay elementos para principiantes, pero la mayoría requiere algo de experiencia programando. Va bien para unos {age} años en adelante.",
+  "hi": "यह उन लोगों के लिए है जिन्हें ग्राफ़िक्स और गणित पसंद हैं। शुरुआती चीज़ें भी हैं, लेकिन ज़्यादातर में प्रोग्रामिंग का कुछ अनुभव चाहिए। यह लगभग {age} साल और उससे ऊपर के लिए ठीक है।",
+  "pt": "É para quem gosta de gráficos e matemática. Há itens para iniciantes, mas a maioria exige alguma experiência com programação. Serve para cerca de {age} anos em diante."
+ },
+ "It is for people who want to build web pages. Many items are Intermediate, so some web basics help. It suits about age {age} and up, and the beginner items are the best start.": {
+  "ar": "مناسب لمن يريد بناء صفحات ويب. كثير من العناصر من المستوى المتوسط، لذا تفيد بعض أساسيات الويب. يناسب عمر {age} تقريبًا فما فوق، وعناصر المبتدئين أفضل بداية.",
+  "es": "Es para quien quiere crear páginas web. Muchos elementos son de nivel Intermedio, así que ayudan unas nociones básicas de web. Va bien para unos {age} años en adelante, y los elementos para principiantes son el mejor comienzo.",
+  "hi": "यह उन लोगों के लिए है जो वेब पेज बनाना चाहते हैं। कई चीज़ें मध्यम स्तर की हैं, इसलिए वेब की कुछ बुनियादी जानकारी काम आती है। यह लगभग {age} साल और उससे ऊपर के लिए ठीक है, और शुरुआती चीज़ें सबसे अच्छी शुरुआत हैं।",
+  "pt": "É para quem quer criar páginas web. Muitos itens são de nível Intermediário, então algumas noções básicas de web ajudam. Serve para cerca de {age} anos em diante, e os itens para iniciantes são o melhor começo."
+ },
+ "It is for readers who like to learn from a book. Items are mostly Intermediate, so it suits about age {age} and up, with a grown-up to help find a good one.": {
+  "ar": "مناسب للقرّاء الذين يحبون التعلّم من كتاب. معظم العناصر من المستوى المتوسط، لذا يناسب عمر {age} تقريبًا فما فوق، مع شخص بالغ يساعد في اختيار كتاب جيد.",
+  "es": "Es para lectores que prefieren aprender con un libro. Los elementos son sobre todo de nivel Intermedio, así que va bien para unos {age} años en adelante, con un adulto que ayude a encontrar uno bueno.",
+  "hi": "यह उन पाठकों के लिए है जिन्हें किताब से सीखना पसंद है। ज़्यादातर चीज़ें मध्यम स्तर की हैं, इसलिए यह लगभग {age} साल और उससे ऊपर के लिए ठीक है, अच्छी किताब ढूँढने में किसी बड़े की मदद के साथ।",
+  "pt": "É para leitores que gostam de aprender com um livro. Os itens são na maioria de nível Intermediário, então serve para cerca de {age} anos em diante, com um adulto para ajudar a achar um bom."
+ },
+ "It is made for children about {age} and up, and it is meant to be done together with a grown-up or teacher. You do not need to know any coding. It is a {level} activity.": {
+  "ar": "صُمّم للأطفال من عمر {age} تقريبًا فما فوق، ويُنفَّذ بمشاركة شخص بالغ أو معلّم. لا تحتاج إلى معرفة البرمجة. إنه نشاط من مستوى {level}.",
+  "es": "Está pensado para niños de unos {age} años en adelante, y para hacerlo junto con un adulto o un maestro. No necesitas saber programar. Es una actividad de nivel {level}.",
+  "hi": "यह लगभग {age} साल और उससे बड़े बच्चों के लिए बना है, और किसी बड़े या शिक्षक के साथ मिलकर करने के लिए है। कोडिंग आना ज़रूरी नहीं है। यह {level} स्तर की गतिविधि है।",
+  "pt": "Foi feito para crianças a partir de cerca de {age} anos, para fazer junto com um adulto ou professor. Você não precisa saber programar. É uma atividade de nível {level}."
+ },
+ "It might be for you if you like exploring. Items vary a lot in difficulty, so check the level ({level}) and ask a grown-up if you are unsure. It is marked for about age {age} and up.": {
+  "ar": "قد يناسبك إن كنت تحب الاستكشاف. تتفاوت العناصر كثيرًا في الصعوبة، لذا تحقّق من المستوى ({level}) واسأل شخصًا بالغًا إن لم تكن متأكدًا. مُصنَّف لعمر {age} تقريبًا فما فوق.",
+  "es": "Puede ser para ti si te gusta explorar. Los elementos varían mucho en dificultad, así que revisa el nivel ({level}) y pregunta a un adulto si no estás seguro. Está indicado para unos {age} años en adelante.",
+  "hi": "अगर आपको खोजबीन पसंद है तो यह आपके लिए हो सकता है। चीज़ों की कठिनाई बहुत अलग-अलग होती है, इसलिए स्तर ({level}) देखें और पक्का न हो तो किसी बड़े से पूछें। यह लगभग {age} साल और उससे ऊपर के लिए चिह्नित है।",
+  "pt": "Pode ser para você se gosta de explorar. Os itens variam muito em dificuldade, então confira o nível ({level}) e pergunte a um adulto se tiver dúvida. Está indicado para cerca de {age} anos em diante."
+ },
+ "Kidbots (CS Unplugged)": {
+  "ar": "Kidbots (CS Unplugged)",
+  "es": "Kidbots (CS Unplugged)",
+  "hi": "Kidbots (CS Unplugged)",
+  "pt": "Kidbots (CS Unplugged)"
+ },
+ "Learn the card trick.": {
+  "ar": "تعلّم حيلة الورق.",
+  "es": "Aprende el truco de cartas.",
+  "hi": "ताश का करतब सीखें।",
+  "pt": "Aprenda o truque de cartas."
+ },
+ "Learning resources": {
+  "ar": "موارد للتعلّم",
+  "es": "Recursos para aprender",
+  "hi": "सीखने के संसाधन",
+  "pt": "Recursos para aprender"
+ },
+ "Look around and pick one thing to try.": {
+  "ar": "تجوّل واختر شيئًا واحدًا لتجربته.",
+  "es": "Echa un vistazo y elige una cosa para probar.",
+  "hi": "चारों ओर देखें और आज़माने के लिए एक चीज़ चुनें।",
+  "pt": "Dê uma olhada e escolha uma coisa para experimentar."
+ },
+ "Look at the original site with a grown-up before you start.": {
+  "ar": "انظر إلى الموقع الأصلي مع شخص بالغ قبل أن تبدأ.",
+  "es": "Mira el sitio original con un adulto antes de empezar.",
+  "hi": "शुरू करने से पहले किसी बड़े के साथ मूल साइट देखें।",
+  "pt": "Veja o site original com um adulto antes de começar."
+ },
+ "Look at the site with a grown-up and check what you would need first.": {
+  "ar": "انظر إلى الموقع مع شخص بالغ وتحقّقا أولًا مما ستحتاج إليه.",
+  "es": "Mira el sitio con un adulto y comprueben primero qué necesitarías.",
+  "hi": "किसी बड़े के साथ साइट देखें और पहले जाँचें कि आपको क्या चाहिए होगा।",
+  "pt": "Veja o site com um adulto e confira primeiro o que você precisaria."
+ },
+ "Look at what the tool does and try the very first example.": {
+  "ar": "اطّلع على ما تفعله الأداة وجرّب المثال الأول.",
+  "es": "Mira qué hace la herramienta y prueba el primer ejemplo.",
+  "hi": "देखें कि औज़ार क्या करता है और पहला उदाहरण आज़माएँ।",
+  "pt": "Veja o que a ferramenta faz e experimente o primeiro exemplo."
+ },
+ "Look for pixels on a screen with a magnifying glass.": {
+  "ar": "ابحث عن البكسلات على الشاشة بعدسة مكبّرة.",
+  "es": "Busca los píxeles en una pantalla con una lupa.",
+  "hi": "आवर्धक काँच से स्क्रीन पर पिक्सल ढूँढें।",
+  "pt": "Procure os pixels em uma tela com uma lupa."
+ },
+ "Look for the idea in a program you know.": {
+  "ar": "ابحث عن الفكرة في برنامج تعرفه.",
+  "es": "Busca la idea en un programa que conozcas.",
+  "hi": "इस विचार को किसी ऐसे प्रोग्राम में ढूँढें जिसे आप जानते हों।",
+  "pt": "Procure a ideia em um programa que você conhece."
+ },
+ "Look for where mistakes get fixed in real life.": {
+  "ar": "ابحث عن الأماكن التي تُصحَّح فيها الأخطاء في الحياة الواقعية.",
+  "es": "Busca dónde se corrigen errores en la vida real.",
+  "hi": "देखें कि असली ज़िंदगी में गलतियाँ कहाँ सुधारी जाती हैं।",
+  "pt": "Procure onde os erros são corrigidos na vida real."
+ },
+ "Make a grid on the floor with tape or chalk.": {
+  "ar": "ارسم شبكة على الأرض بشريط لاصق أو بالطباشير.",
+  "es": "Haz una cuadrícula en el suelo con cinta o tiza.",
+  "hi": "फ़र्श पर टेप या चॉक से एक ग्रिड बनाएँ।",
+  "pt": "Faça uma grade no chão com fita ou giz."
+ },
+ "Make number cards, or print the sheets from the lesson page.": {
+  "ar": "اصنع بطاقات أعداد أو اطبع الأوراق من صفحة الدرس.",
+  "es": "Haz cartas con números o imprime las hojas de la página de la lección.",
+  "hi": "संख्या वाले कार्ड बनाएँ या पाठ के पेज से शीट छापें।",
+  "pt": "Faça cartas com números ou imprima as folhas da página da lição."
+ },
+ "Make something that uses it.": {
+  "ar": "اصنع شيئًا يستخدمه.",
+  "es": "Crea algo que lo use.",
+  "hi": "कुछ ऐसा बनाएँ जो उसका इस्तेमाल करे।",
+  "pt": "Crie algo que o use."
+ },
+ "Make sure you can write a simple program in some language.": {
+  "ar": "تأكّد من أنك تستطيع كتابة برنامج بسيط بأي لغة.",
+  "es": "Asegúrate de poder escribir un programa sencillo en algún lenguaje.",
+  "hi": "पक्का करें कि आप किसी भाषा में एक सरल प्रोग्राम लिख सकते हैं।",
+  "pt": "Certifique-se de que você consegue escrever um programa simples em alguma linguagem."
+ },
+ "Make up a picture and write its number code.": {
+  "ar": "ابتكر صورة واكتب رمزها العددي.",
+  "es": "Inventa una imagen y escribe su código de números.",
+  "hi": "एक चित्र बनाएँ और उसका संख्या-कोड लिखें।",
+  "pt": "Invente uma imagem e escreva o seu código de números."
+ },
+ "Make up your own binary game.": {
+  "ar": "اخترع لعبتك الثنائية الخاصة.",
+  "es": "Inventa tu propio juego binario.",
+  "hi": "अपना खुद का बाइनरी खेल बनाएँ।",
+  "pt": "Invente o seu próprio jogo binário."
+ },
+ "Making websites (front-end)": {
+  "ar": "إنشاء المواقع (الواجهة الأمامية)",
+  "es": "Crear sitios web (front-end)",
+  "hi": "वेबसाइट बनाना (फ्रंट-एंड)",
+  "pt": "Criar sites (front-end)"
+ },
+ "More resources": {
+  "ar": "المزيد من الموارد",
+  "es": "Más recursos",
+  "hi": "और संसाधन",
+  "pt": "Mais recursos"
+ },
+ "Most lessons take 30 to 45 minutes. Plan about {minutes} minutes for a session. (estimate)": {
+  "ar": "تستغرق معظم الدروس من 30 إلى 45 دقيقة. خطّط لنحو {minutes} دقيقة في الجلسة الواحدة. (تقدير)",
+  "es": "La mayoría de las lecciones duran de 30 a 45 minutos. Calcula unos {minutes} minutos por sesión. (estimación)",
+  "hi": "ज़्यादातर पाठों में 30 से 45 मिनट लगते हैं। हर बार लगभग {minutes} मिनट का समय रखें। (अनुमान)",
+  "pt": "A maioria das lições leva de 30 a 45 minutos. Planeje cerca de {minutes} minutos por sessão. (estimativa)"
+ },
+ "Most lessons take 30 to 60 minutes. Plan about {minutes} minutes for a session. (estimate)": {
+  "ar": "تستغرق معظم الدروس من 30 إلى 60 دقيقة. خطّط لنحو {minutes} دقيقة في الجلسة الواحدة. (تقدير)",
+  "es": "La mayoría de las lecciones duran de 30 a 60 minutos. Calcula unos {minutes} minutos por sesión. (estimación)",
+  "hi": "ज़्यादातर पाठों में 30 से 60 मिनट लगते हैं। हर बार लगभग {minutes} मिनट का समय रखें। (अनुमान)",
+  "pt": "A maioria das lições leva de 30 a 60 minutos. Planeje cerca de {minutes} minutos por sessão. (estimativa)"
+ },
+ "Most lessons take about 30 minutes. Plan about {minutes} minutes for a session. (estimate)": {
+  "ar": "تستغرق معظم الدروس نحو 30 دقيقة. خطّط لنحو {minutes} دقيقة في الجلسة الواحدة. (تقدير)",
+  "es": "La mayoría de las lecciones duran unos 30 minutos. Calcula unos {minutes} minutos por sesión. (estimación)",
+  "hi": "ज़्यादातर पाठों में लगभग 30 मिनट लगते हैं। हर बार लगभग {minutes} मिनट का समय रखें। (अनुमान)",
+  "pt": "A maioria das lições leva cerca de 30 minutos. Planeje cerca de {minutes} minutos por sessão. (estimativa)"
+ },
+ "Most lessons take about 45 minutes. Plan about {minutes} minutes for a session. (estimate)": {
+  "ar": "تستغرق معظم الدروس نحو 45 دقيقة. خطّط لنحو {minutes} دقيقة في الجلسة الواحدة. (تقدير)",
+  "es": "La mayoría de las lecciones duran unos 45 minutos. Calcula unos {minutes} minutos por sesión. (estimación)",
+  "hi": "ज़्यादातर पाठों में लगभग 45 मिनट लगते हैं। हर बार लगभग {minutes} मिनट का समय रखें। (अनुमान)",
+  "pt": "A maioria das lições leva cerca de 45 minutos. Planeje cerca de {minutes} minutos por sessão. (estimativa)"
+ },
+ "Move the camera and share your picture.": {
+  "ar": "حرّك الكاميرا وشارك صورتك.",
+  "es": "Mueve la cámara y comparte tu imagen.",
+  "hi": "कैमरा हिलाएँ और अपनी तस्वीर साझा करें।",
+  "pt": "Mova a câmera e compartilhe a sua imagem."
+ },
+ "Open it with a grown-up and read the first step.": {
+  "ar": "افتحه مع شخص بالغ واقرأ الخطوة الأولى.",
+  "es": "Ábrelo con un adulto y lee el primer paso.",
+  "hi": "किसी बड़े के साथ उसे खोलें और पहला चरण पढ़ें।",
+  "pt": "Abra com um adulto e leia o primeiro passo."
+ },
+ "Open it with a grown-up and spend a few minutes looking around.": {
+  "ar": "افتحه مع شخص بالغ وقضِ بضع دقائق في الاطّلاع.",
+  "es": "Ábrelo con un adulto y dedica unos minutos a mirar.",
+  "hi": "किसी बड़े के साथ उसे खोलें और कुछ मिनट इधर-उधर देखें।",
+  "pt": "Abra com um adulto e passe alguns minutos olhando."
+ },
+ "Open our lesson page for {entry_title}. It is a short, simple version of an open lesson you can do together.": {
+  "ar": "افتح صفحة درس {entry_title} عندنا. إنها نسخة قصيرة وبسيطة من درس مفتوح يمكنكما إنجازه معًا.",
+  "es": "Abre nuestra página de la lección {entry_title}. Es una versión corta y sencilla de una lección abierta que pueden hacer juntos.",
+  "hi": "{entry_title} का हमारा पाठ-पेज खोलें। यह एक खुले पाठ का छोटा और आसान रूप है जिसे आप साथ मिलकर कर सकते हैं।",
+  "pt": "Abra a nossa página da lição {entry_title}. É uma versão curta e simples de uma lição aberta que vocês podem fazer juntos."
+ },
+ "Open the original site with a grown-up and read the first page.": {
+  "ar": "افتح الموقع الأصلي مع شخص بالغ واقرأ الصفحة الأولى.",
+  "es": "Abre el sitio original con un adulto y lee la primera página.",
+  "hi": "किसी बड़े के साथ मूल साइट खोलें और पहला पेज पढ़ें।",
+  "pt": "Abra o site original com um adulto e leia a primeira página."
+ },
+ "Open the original site with a grown-up and read the first section.": {
+  "ar": "افتح الموقع الأصلي مع شخص بالغ واقرأ القسم الأول.",
+  "es": "Abre el sitio original con un adulto y lee la primera sección.",
+  "hi": "किसी बड़े के साथ मूल साइट खोलें और पहला भाग पढ़ें।",
+  "pt": "Abra o site original com um adulto e leia a primeira seção."
+ },
+ "Open the original site with a grown-up.": {
+  "ar": "افتح الموقع الأصلي مع شخص بالغ.",
+  "es": "Abre el sitio original con un adulto.",
+  "hi": "किसी बड़े के साथ मूल साइट खोलें।",
+  "pt": "Abra o site original com um adulto."
+ },
+ "Open the site with a grown-up and look at examples.": {
+  "ar": "افتح الموقع مع شخص بالغ وانظر إلى الأمثلة.",
+  "es": "Abre el sitio con un adulto y mira los ejemplos.",
+  "hi": "किसी बड़े के साथ साइट खोलें और उदाहरण देखें।",
+  "pt": "Abra o site com um adulto e veja os exemplos."
+ },
+ "Open the tutorial with a grown-up and check what you need to install.": {
+  "ar": "افتح الدرس مع شخص بالغ وتحقّق مما تحتاج إلى تثبيته.",
+  "es": "Abre el tutorial con un adulto y comprueba qué necesitas instalar.",
+  "hi": "किसी बड़े के साथ ट्यूटोरियल खोलें और देखें कि क्या इंस्टॉल करना है।",
+  "pt": "Abra o tutorial com um adulto e confira o que você precisa instalar."
+ },
+ "Open the tutorial with a grown-up and read the first step.": {
+  "ar": "افتح الدرس مع شخص بالغ واقرأ الخطوة الأولى.",
+  "es": "Abre el tutorial con un adulto y lee el primer paso.",
+  "hi": "किसी बड़े के साथ ट्यूटोरियल खोलें और पहला चरण पढ़ें।",
+  "pt": "Abra o tutorial com um adulto e leia o primeiro passo."
+ },
+ "Pick a Beginner tutorial.": {
+  "ar": "اختر درسًا للمبتدئين.",
+  "es": "Elige un tutorial para Principiantes.",
+  "hi": "शुरुआती स्तर का कोई ट्यूटोरियल चुनें।",
+  "pt": "Escolha um tutorial para Iniciantes."
+ },
+ "Pick a game idea that looks small, like a simple arcade game.": {
+  "ar": "اختر فكرة لعبة تبدو صغيرة، مثل لعبة أركيد بسيطة.",
+  "es": "Elige una idea de juego que parezca pequeña, como un arcade sencillo.",
+  "hi": "ऐसा खेल-विचार चुनें जो छोटा लगे, जैसे कोई सरल आर्केड खेल।",
+  "pt": "Escolha uma ideia de jogo que pareça pequena, como um arcade simples."
+ },
+ "Pick a goal, like making a tiny game or story.": {
+  "ar": "اختر هدفًا، مثل صنع لعبة أو قصة صغيرة.",
+  "es": "Elige una meta, como crear un juego o una historia pequeños.",
+  "hi": "एक लक्ष्य चुनें, जैसे छोटा खेल या कहानी बनाना।",
+  "pt": "Escolha uma meta, como criar um joguinho ou uma história."
+ },
+ "Pick a language you have heard of or are curious about.": {
+  "ar": "اختر لغة سمعت بها أو تثير فضولك.",
+  "es": "Elige un lenguaje del que hayas oído hablar o que te dé curiosidad.",
+  "hi": "कोई ऐसी भाषा चुनें जिसके बारे में आपने सुना हो या जिसमें आपकी जिज्ञासा हो।",
+  "pt": "Escolha uma linguagem de que você já ouviu falar ou que lhe dê curiosidade."
+ },
+ "Pick a target number and walk the tree, turning over nodes.": {
+  "ar": "اختر عددًا مستهدفًا وامشِ في الشجرة وأنت تقلب العُقَد.",
+  "es": "Elige un número objetivo y recorre el árbol dando la vuelta a los nodos.",
+  "hi": "एक लक्ष्य संख्या चुनें और नोड पलटते हुए पेड़ में चलें।",
+  "pt": "Escolha um número-alvo e percorra a árvore virando os nós."
+ },
+ "Pick a type of media you like, such as pictures or sound.": {
+  "ar": "اختر نوع الوسائط الذي تحبه، مثل الصور أو الصوت.",
+  "es": "Elige un tipo de medio que te guste, como imágenes o sonido.",
+  "hi": "कोई मीडिया चुनें जो आपको पसंद हो, जैसे चित्र या ध्वनि।",
+  "pt": "Escolha um tipo de mídia de que você goste, como imagens ou som."
+ },
+ "Pictures, sound and media": {
+  "ar": "الصور والصوت والوسائط",
+  "es": "Imágenes, sonido y medios",
+  "hi": "चित्र, ध्वनि और मीडिया",
+  "pt": "Imagens, som e mídia"
+ },
+ "Plan about {minutes} minutes at a time over about {sessions} sessions. (estimate)": {
+  "ar": "خطّط لنحو {minutes} دقيقة في كل مرة، على مدى نحو {sessions} جلسات. (تقدير)",
+  "es": "Calcula unos {minutes} minutos cada vez, durante unas {sessions} sesiones. (estimación)",
+  "hi": "हर बार लगभग {minutes} मिनट रखें, कुल लगभग {sessions} बार में। (अनुमान)",
+  "pt": "Planeje cerca de {minutes} minutos por vez, ao longo de cerca de {sessions} sessões. (estimativa)"
+ },
+ "Plan about {minutes} minutes at a time over about {sessions} sessions. Setting up can take longer than the first project. (estimate)": {
+  "ar": "خطّط لنحو {minutes} دقيقة في كل مرة، على مدى نحو {sessions} جلسات. قد يستغرق الإعداد وقتًا أطول من المشروع الأول. (تقدير)",
+  "es": "Calcula unos {minutes} minutos cada vez, durante unas {sessions} sesiones. Prepararlo puede llevar más tiempo que el primer proyecto. (estimación)",
+  "hi": "हर बार लगभग {minutes} मिनट रखें, कुल लगभग {sessions} बार में। सेटअप में पहले प्रोजेक्ट से ज़्यादा समय लग सकता है। (अनुमान)",
+  "pt": "Planeje cerca de {minutes} minutos por vez, ao longo de cerca de {sessions} sessões. A configuração pode levar mais tempo que o primeiro projeto. (estimativa)"
+ },
+ "Plan about {minutes} minutes at a time, over about {sessions} sessions (a first try is usually shorter). (estimate)": {
+  "ar": "خطّط لنحو {minutes} دقيقة في كل مرة، على مدى نحو {sessions} جلسات (المحاولة الأولى تكون عادةً أقصر). (تقدير)",
+  "es": "Calcula unos {minutes} minutos cada vez, durante unas {sessions} sesiones (el primer intento suele ser más corto). (estimación)",
+  "hi": "हर बार लगभग {minutes} मिनट रखें, कुल लगभग {sessions} बार में (पहली कोशिश आम तौर पर छोटी होती है)। (अनुमान)",
+  "pt": "Planeje cerca de {minutes} minutos por vez, ao longo de cerca de {sessions} sessões (a primeira tentativa costuma ser mais curta). (estimativa)"
+ },
+ "Play again with the cards in order.": {
+  "ar": "العب مرة أخرى والبطاقات مرتّبة.",
+  "es": "Juega de nuevo con las cartas en orden.",
+  "hi": "कार्डों को क्रम में रखकर फिर खेलें।",
+  "pt": "Jogue de novo com as cartas em ordem."
+ },
+ "Play the finding game and count how many guesses you need.": {
+  "ar": "العب لعبة البحث وعُدّ كم محاولة تحتاج.",
+  "es": "Juega al juego de encontrar y cuenta cuántos intentos necesitas.",
+  "hi": "खोजने का खेल खेलें और गिनें कि आपको कितनी कोशिशें लगीं।",
+  "pt": "Jogue o jogo de encontrar e conte quantas tentativas você precisa."
+ },
+ "Play the hide-and-find game with cards in no order.": {
+  "ar": "العب لعبة الإخفاء والعثور والبطاقات غير مرتّبة.",
+  "es": "Juega al juego de esconder y encontrar con las cartas desordenadas.",
+  "hi": "बिना क्रम वाले कार्डों के साथ छुपा-कर-ढूँढने का खेल खेलें।",
+  "pt": "Jogue o jogo de esconder e encontrar com as cartas fora de ordem."
+ },
+ "Print the grid, or draw one on squared paper.": {
+  "ar": "اطبع الشبكة أو ارسم واحدة على ورق مربّعات.",
+  "es": "Imprime la cuadrícula o dibuja una en papel cuadriculado.",
+  "hi": "जाली छापें या चौखाने वाले काग़ज़ पर बनाएँ।",
+  "pt": "Imprima a grade ou desenhe uma em papel quadriculado."
+ },
+ "Programming languages": {
+  "ar": "لغات البرمجة",
+  "es": "Lenguajes de programación",
+  "hi": "प्रोग्रामिंग भाषाएँ",
+  "pt": "Linguagens de programação"
+ },
+ "Read about what it is and what it can do.": {
+  "ar": "اقرأ ما هو وما الذي يمكنه فعله.",
+  "es": "Lee qué es y qué puede hacer.",
+  "hi": "पढ़ें कि यह क्या है और क्या कर सकता है।",
+  "pt": "Leia o que é e o que pode fazer."
+ },
+ "Read the description and decide whether it matches what you want to build.": {
+  "ar": "اقرأ الوصف وقرّر هل يناسب ما تريد بناءه.",
+  "es": "Lee la descripción y decide si coincide con lo que quieres construir.",
+  "hi": "विवरण पढ़ें और तय करें कि क्या यह उससे मेल खाता है जो आप बनाना चाहते हैं।",
+  "pt": "Leia a descrição e decida se combina com o que você quer construir."
+ },
+ "Read the description and see if the idea sounds interesting.": {
+  "ar": "اقرأ الوصف وانظر هل تبدو لك الفكرة مثيرة.",
+  "es": "Lee la descripción y mira si la idea te parece interesante.",
+  "hi": "विवरण पढ़ें और देखें कि क्या विचार दिलचस्प लगता है।",
+  "pt": "Leia a descrição e veja se a ideia parece interessante."
+ },
+ "Read the description and the level.": {
+  "ar": "اقرأ الوصف والمستوى.",
+  "es": "Lee la descripción y el nivel.",
+  "hi": "विवरण और स्तर पढ़ें।",
+  "pt": "Leia a descrição e o nível."
+ },
+ "Read the description to decide if it sounds interesting.": {
+  "ar": "اقرأ الوصف لتقرّر هل يبدو مثيرًا للاهتمام.",
+  "es": "Lee la descripción para decidir si suena interesante.",
+  "hi": "विवरण पढ़कर तय करें कि यह दिलचस्प लगता है या नहीं।",
+  "pt": "Leia a descrição para decidir se parece interessante."
+ },
+ "Read the description to see what the item is about.": {
+  "ar": "اقرأ الوصف لتعرف عن ماذا يدور هذا العنصر.",
+  "es": "Lee la descripción para ver de qué trata el elemento.",
+  "hi": "विवरण पढ़ें और देखें कि यह चीज़ किस बारे में है।",
+  "pt": "Leia a descrição para ver do que o item trata."
+ },
+ "Read the first page and run one tiny example.": {
+  "ar": "اقرأ الصفحة الأولى وشغّل مثالًا صغيرًا جدًا.",
+  "es": "Lee la primera página y ejecuta un ejemplo diminuto.",
+  "hi": "पहला पेज पढ़ें और एक छोटा उदाहरण चलाएँ।",
+  "pt": "Leia a primeira página e execute um exemplo bem pequeno."
+ },
+ "Read the first section.": {
+  "ar": "اقرأ القسم الأول.",
+  "es": "Lee la primera sección.",
+  "hi": "पहला भाग पढ़ें।",
+  "pt": "Leia a primeira seção."
+ },
+ "Read the first step and set up what you need.": {
+  "ar": "اقرأ الخطوة الأولى وجهّز ما تحتاج إليه.",
+  "es": "Lee el primer paso y prepara lo que necesitas.",
+  "hi": "पहला चरण पढ़ें और ज़रूरी चीज़ें तैयार करें।",
+  "pt": "Leia o primeiro passo e prepare o que você precisa."
+ },
+ "Read the intro and set up.": {
+  "ar": "اقرأ المقدّمة وجهّز كل شيء.",
+  "es": "Lee la introducción y prepáralo todo.",
+  "hi": "परिचय पढ़ें और तैयारी करें।",
+  "pt": "Leia a introdução e configure tudo."
+ },
+ "Read the title and description and pick one that sounds fun.": {
+  "ar": "اقرأ العنوان والوصف واختر ما يبدو ممتعًا.",
+  "es": "Lee el título y la descripción y elige uno que parezca divertido.",
+  "hi": "शीर्षक और विवरण पढ़ें और जो मज़ेदार लगे उसे चुनें।",
+  "pt": "Leia o título e a descrição e escolha um que pareça divertido."
+ },
+ "Read the tutorial and set up.": {
+  "ar": "اقرأ الدرس وجهّز كل شيء.",
+  "es": "Lee el tutorial y prepáralo todo.",
+  "hi": "ट्यूटोरियल पढ़ें और तैयारी करें।",
+  "pt": "Leia o tutorial e configure tudo."
+ },
+ "Searching algorithms (CS Unplugged)": {
+  "ar": "خوارزميات البحث (CS Unplugged)",
+  "es": "Algoritmos de búsqueda (CS Unplugged)",
+  "hi": "खोज एल्गोरिदम (CS Unplugged)",
+  "pt": "Algoritmos de busca (CS Unplugged)"
+ },
+ "Set it up if you can, or watch someone set it up.": {
+  "ar": "أعدّه إن استطعت، أو شاهد شخصًا وهو يُعدّه.",
+  "es": "Prepáralo si puedes, o mira a alguien mientras lo prepara.",
+  "hi": "हो सके तो खुद सेटअप करें, या किसी को सेटअप करते देखें।",
+  "pt": "Configure-o se puder, ou veja alguém configurando."
+ },
+ "Set up and draw one shape.": {
+  "ar": "جهّز كل شيء وارسم شكلًا واحدًا.",
+  "es": "Prepara todo y dibuja una figura.",
+  "hi": "तैयारी करें और एक आकृति बनाएँ।",
+  "pt": "Configure tudo e desenhe uma forma."
+ },
+ "Share the page with a friend or family member.": {
+  "ar": "شارك الصفحة مع صديق أو أحد أفراد العائلة.",
+  "es": "Comparte la página con un amigo o un familiar.",
+  "hi": "पेज किसी दोस्त या परिवार के सदस्य के साथ साझा करें।",
+  "pt": "Compartilhe a página com um amigo ou familiar."
+ },
+ "Share what you made with a friend.": {
+  "ar": "شارك ما صنعته مع صديق.",
+  "es": "Comparte lo que hiciste con un amigo.",
+  "hi": "जो बनाया उसे किसी दोस्त के साथ साझा करें।",
+  "pt": "Compartilhe o que você fez com um amigo."
+ },
+ "Show someone what you made.": {
+  "ar": "أرِ شخصًا ما صنعته.",
+  "es": "Muéstrale a alguien lo que hiciste.",
+  "hi": "जो बनाया उसे किसी को दिखाएँ।",
+  "pt": "Mostre a alguém o que você fez."
+ },
+ "Show the trick to a friend or family member.": {
+  "ar": "أرِ الحيلة لصديق أو لأحد أفراد عائلتك.",
+  "es": "Muéstrale el truco a un amigo o a alguien de tu familia.",
+  "hi": "यह करतब किसी दोस्त या परिवार के सदस्य को दिखाएँ।",
+  "pt": "Mostre o truque a um amigo ou a alguém da família."
+ },
+ "Show your work to a friend.": {
+  "ar": "أرِ صديقًا عملك.",
+  "es": "Muéstrale tu trabajo a un amigo.",
+  "hi": "अपना काम किसी दोस्त को दिखाएँ।",
+  "pt": "Mostre o seu trabalho a um amigo."
+ },
+ "Sort other things, like heights.": {
+  "ar": "رتّبوا أشياء أخرى، مثل الأطوال.",
+  "es": "Ordenen otras cosas, como alturas.",
+  "hi": "दूसरी चीज़ें क्रम में लगाएँ, जैसे ऊँचाई।",
+  "pt": "Ordenem outras coisas, como alturas."
+ },
+ "Sorting networks (CS Unplugged)": {
+  "ar": "شبكات الفرز (CS Unplugged)",
+  "es": "Redes de ordenación (CS Unplugged)",
+  "hi": "सॉर्टिंग नेटवर्क (CS Unplugged)",
+  "pt": "Redes de ordenação (CS Unplugged)"
+ },
+ "Start the lesson": {
+  "ar": "ابدأ الدرس",
+  "es": "Empezar la lección",
+  "hi": "पाठ शुरू करें",
+  "pt": "Começar a lição"
+ },
+ "Start with the Beginner items if you are new to web pages.": {
+  "ar": "ابدأ بعناصر المبتدئين إن كنت جديدًا على صفحات الويب.",
+  "es": "Empieza por los elementos para Principiantes si eres nuevo con las páginas web.",
+  "hi": "अगर आप वेब पेज में नए हैं तो शुरुआती चीज़ों से शुरू करें।",
+  "pt": "Comece pelos itens para Iniciantes se você é novo em páginas web."
+ },
+ "Start with the beginner page if there is one.": {
+  "ar": "ابدأ بصفحة المبتدئين إن وُجدت.",
+  "es": "Empieza por la página para principiantes si la hay.",
+  "hi": "अगर शुरुआती पेज हो तो उसी से शुरू करें।",
+  "pt": "Comece pela página para iniciantes, se houver."
+ },
+ "Stop if it feels too hard and pick something easier.": {
+  "ar": "توقّف إن بدا صعبًا جدًا واختر شيئًا أسهل.",
+  "es": "Para si te parece demasiado difícil y elige algo más fácil.",
+  "hi": "अगर बहुत कठिन लगे तो रुक जाएँ और कुछ आसान चुनें।",
+  "pt": "Pare se parecer difícil demais e escolha algo mais fácil."
+ },
+ "Swap roles, and try to explain why it works.": {
+  "ar": "بدّلا الأدوار وحاول أن تشرح لماذا تنجح الحيلة.",
+  "es": "Cambien de papel e intenta explicar por qué funciona.",
+  "hi": "भूमिकाएँ बदलें और समझाने की कोशिश करें कि यह क्यों काम करता है।",
+  "pt": "Troquem de papel e tente explicar por que funciona."
+ },
+ "Swap with a friend and see if you got the same picture.": {
+  "ar": "بدّل مع صديق وانظر هل خرجت الصورة نفسها.",
+  "es": "Intercambia con un amigo y mira si salió la misma imagen.",
+  "hi": "किसी दोस्त से अदला-बदली करें और देखें कि क्या वही चित्र बना।",
+  "pt": "Troque com um amigo e veja se saiu a mesma imagem."
+ },
+ "Take notes and try one example.": {
+  "ar": "دوّن ملاحظات وجرّب مثالًا.",
+  "es": "Toma notas y prueba un ejemplo.",
+  "hi": "नोट्स बनाएँ और एक उदाहरण आज़माएँ।",
+  "pt": "Faça anotações e experimente um exemplo."
+ },
+ "Teach someone else the game.": {
+  "ar": "علّم شخصًا آخر هذه اللعبة.",
+  "es": "Enséñale el juego a otra persona.",
+  "hi": "यह खेल किसी और को सिखाएँ।",
+  "pt": "Ensine o jogo a outra pessoa."
+ },
+ "Tell someone about it.": {
+  "ar": "أخبر شخصًا ما عنه.",
+  "es": "Cuéntaselo a alguien.",
+  "hi": "किसी को इसके बारे में बताएँ।",
+  "pt": "Conte a alguém sobre isso."
+ },
+ "Try a first small project.": {
+  "ar": "جرّب أول مشروع صغير.",
+  "es": "Prueba un primer proyecto pequeño.",
+  "hi": "पहला छोटा प्रोजेक्ट आज़माएँ।",
+  "pt": "Experimente um primeiro projeto pequeno."
+ },
+ "Try again with the cards in order, and compare.": {
+  "ar": "حاول مرة أخرى والبطاقات مرتّبة، ثم قارن.",
+  "es": "Inténtalo de nuevo con las cartas en orden y compara.",
+  "hi": "कार्डों को क्रम में रखकर फिर कोशिश करें और तुलना करें।",
+  "pt": "Tente de novo com as cartas em ordem e compare."
+ },
+ "Try different cards, such as bigger numbers.": {
+  "ar": "جرّبوا بطاقات مختلفة، مثل أعداد أكبر.",
+  "es": "Prueben con cartas distintas, como números más grandes.",
+  "hi": "अलग कार्ड आज़माएँ, जैसे बड़ी संख्याएँ।",
+  "pt": "Experimentem cartas diferentes, como números maiores."
+ },
+ "Try it in a small project.": {
+  "ar": "جرّبه في مشروع صغير.",
+  "es": "Pruébalo en un proyecto pequeño.",
+  "hi": "उसे किसी छोटे प्रोजेक्ट में आज़माएँ।",
+  "pt": "Experimente em um projeto pequeno."
+ },
+ "Try one small change, like a colour or a heading, and see it in the browser.": {
+  "ar": "جرّب تغييرًا صغيرًا، كلون أو عنوان، وشاهده في المتصفح.",
+  "es": "Prueba un cambio pequeño, como un color o un título, y míralo en el navegador.",
+  "hi": "एक छोटा बदलाव आज़माएँ, जैसे रंग या शीर्षक, और उसे ब्राउज़र में देखें।",
+  "pt": "Experimente uma pequena mudança, como uma cor ou um título, e veja no navegador."
+ },
+ "Try one small idea or visualization and stop when it gets hard.": {
+  "ar": "جرّب فكرة صغيرة أو تصويرًا بصريًا وتوقّف عندما يصبح صعبًا.",
+  "es": "Prueba una idea pequeña o una visualización y para cuando se ponga difícil.",
+  "hi": "एक छोटा विचार या विज़ुअलाइज़ेशन आज़माएँ और कठिन लगे तो रुक जाएँ।",
+  "pt": "Experimente uma ideia pequena ou uma visualização e pare quando ficar difícil."
+ },
+ "Try the card trick or number game with a grown-up.": {
+  "ar": "جرّب حيلة الورق أو لعبة الأعداد مع شخص بالغ.",
+  "es": "Prueba el truco de cartas o el juego de números con un adulto.",
+  "hi": "किसी बड़े के साथ ताश का करतब या संख्या का खेल आज़माएँ।",
+  "pt": "Experimente o truque de cartas ou o jogo de números com um adulto."
+ },
+ "Try the first activity and then talk about what you learned.": {
+  "ar": "جرّب النشاط الأول ثم تحدّثا عمّا تعلّمته.",
+  "es": "Prueba la primera actividad y luego hablen de lo que aprendiste.",
+  "hi": "पहली गतिविधि आज़माएँ और फिर बात करें कि आपने क्या सीखा।",
+  "pt": "Experimente a primeira atividade e depois conversem sobre o que você aprendeu."
+ },
+ "Try the first part and note what you learned.": {
+  "ar": "جرّب الجزء الأول ودوّن ما تعلّمته.",
+  "es": "Prueba la primera parte y anota lo que aprendiste.",
+  "hi": "पहला हिस्सा आज़माएँ और लिखें कि क्या सीखा।",
+  "pt": "Experimente a primeira parte e anote o que aprendeu."
+ },
+ "Try the first small thing you find and stop when it gets too hard.": {
+  "ar": "جرّب أول شيء صغير تجده وتوقّف عندما يصبح صعبًا جدًا.",
+  "es": "Prueba lo primero pequeño que encuentres y para cuando se ponga demasiado difícil.",
+  "hi": "जो पहली छोटी चीज़ मिले उसे आज़माएँ और जब बहुत कठिन लगे तो रुक जाएँ।",
+  "pt": "Experimente a primeira coisa pequena que encontrar e pare quando ficar difícil demais."
+ },
+ "Try the next activity in the unit.": {
+  "ar": "جرّب النشاط التالي في الوحدة.",
+  "es": "Prueba la siguiente actividad de la unidad.",
+  "hi": "इकाई की अगली गतिविधि आज़माएँ।",
+  "pt": "Experimente a próxima atividade da unidade."
+ },
+ "Try the next lesson in the unit.": {
+  "ar": "جرّبا الدرس التالي في الوحدة.",
+  "es": "Prueben la siguiente lección de la unidad.",
+  "hi": "इकाई का अगला पाठ आज़माएँ।",
+  "pt": "Experimentem a próxima lição da unidade."
+ },
+ "Try the next lesson on squeezing pictures into less space.": {
+  "ar": "جرّب الدرس التالي عن ضغط الصور في مساحة أقل.",
+  "es": "Prueba la siguiente lección sobre cómo meter imágenes en menos espacio.",
+  "hi": "अगला पाठ आज़माएँ, जिसमें चित्रों को कम जगह में समेटना सिखाया जाता है।",
+  "pt": "Experimente a próxima lição, sobre como colocar imagens em menos espaço."
+ },
+ "Try to make or change something small.": {
+  "ar": "حاول أن تصنع أو تغيّر شيئًا صغيرًا.",
+  "es": "Intenta crear o cambiar algo pequeño.",
+  "hi": "कुछ छोटा बनाने या बदलने की कोशिश करें।",
+  "pt": "Tente criar ou mudar algo pequeno."
+ },
+ "Try to use one in a project you already have.": {
+  "ar": "حاول استخدام أحدها في مشروع لديك بالفعل.",
+  "es": "Intenta usar uno en un proyecto que ya tengas.",
+  "hi": "उनमें से किसी को अपने किसी मौजूदा प्रोजेक्ट में इस्तेमाल करने की कोशिश करें।",
+  "pt": "Tente usar um em um projeto que você já tem."
+ },
+ "Type in one tiny example and see what it does.": {
+  "ar": "اكتب مثالًا صغيرًا جدًا وانظر ماذا يفعل.",
+  "es": "Escribe un ejemplo diminuto y mira qué hace.",
+  "hi": "एक छोटा-सा उदाहरण लिखें और देखें कि वह क्या करता है।",
+  "pt": "Digite um exemplo bem pequeno e veja o que ele faz."
+ },
+ "Walk through the path with six numbers.": {
+  "ar": "امشوا في المسار بستة أعداد.",
+  "es": "Recorran el camino con seis números.",
+  "hi": "छह संख्याओं के साथ रास्ते पर चलें।",
+  "pt": "Percorram o caminho com seis números."
+ },
+ "Walk through the tree.": {
+  "ar": "امشوا في الشجرة.",
+  "es": "Recorran el árbol.",
+  "hi": "पेड़ में चलें।",
+  "pt": "Percorram a árvore."
+ },
+ "Week 1": {
+  "ar": "الأسبوع 1",
+  "es": "Semana 1",
+  "hi": "सप्ताह 1",
+  "pt": "Semana 1"
+ },
+ "Week 2": {
+  "ar": "الأسبوع 2",
+  "es": "Semana 2",
+  "hi": "सप्ताह 2",
+  "pt": "Semana 2"
+ },
+ "Week 3": {
+  "ar": "الأسبوع 3",
+  "es": "Semana 3",
+  "hi": "सप्ताह 3",
+  "pt": "Semana 3"
+ },
+ "What is it?": {
+  "ar": "ما هو؟",
+  "es": "¿Qué es?",
+  "hi": "यह क्या है?",
+  "pt": "O que é?"
+ },
+ "Work through one example.": {
+  "ar": "اعمل على مثال واحد حتى نهايته.",
+  "es": "Trabaja un ejemplo completo.",
+  "hi": "एक उदाहरण पूरा करें।",
+  "pt": "Trabalhe um exemplo até o fim."
+ },
+ "Work through the first few lessons.": {
+  "ar": "تابع الدروس الأولى.",
+  "es": "Avanza por las primeras lecciones.",
+  "hi": "पहले कुछ पाठ पूरे करें।",
+  "pt": "Faça as primeiras lições."
+ },
+ "Write a longer program for a new route.": {
+  "ar": "اكتب برنامجًا أطول لمسار جديد.",
+  "es": "Escribe un programa más largo para una ruta nueva.",
+  "hi": "नए रास्ते के लिए एक लंबा प्रोग्राम लिखें।",
+  "pt": "Escreva um programa mais longo para um novo caminho."
+ },
+ "Write a program in your new language.": {
+  "ar": "اكتب برنامجًا بلغتك الجديدة.",
+  "es": "Escribe un programa en tu nuevo lenguaje.",
+  "hi": "अपनी नई भाषा में एक प्रोग्राम लिखें।",
+  "pt": "Escreva um programa na sua nova linguagem."
+ },
+ "Write a very short program of your own.": {
+  "ar": "اكتب برنامجًا قصيرًا جدًا من تأليفك.",
+  "es": "Escribe un programa muy corto propio.",
+  "hi": "अपना एक बहुत छोटा प्रोग्राम लिखें।",
+  "pt": "Escreva um programa muito curto seu."
+ },
+ "Write the program, run it, and fix any mistakes you find.": {
+  "ar": "اكتب البرنامج ونفّذه وصحّح أي أخطاء تجدها.",
+  "es": "Escribe el programa, ejecútalo y corrige los errores que encuentres.",
+  "hi": "प्रोग्राम लिखें, उसे चलाएँ और जो गलतियाँ मिलें उन्हें ठीक करें।",
+  "pt": "Escreva o programa, execute-o e corrija os erros que encontrar."
+ },
+ "You are about to leave our site to visit {entry_title} on another website. We don't control that site. Ask a grown-up before you go. Check the original for details. This site may not be in your language. Your browser can translate the page: look for the translate button near the address bar, or ask a grown-up to help.": {
+  "ar": "أنت على وشك مغادرة موقعنا لزيارة {entry_title} على موقع آخر. نحن لا نتحكّم في ذلك الموقع. اسأل شخصًا بالغًا قبل أن تذهب. راجع المصدر الأصلي لمعرفة التفاصيل. قد لا يكون ذلك الموقع بلغتك. يمكن لمتصفحك ترجمة الصفحة: ابحث عن زر الترجمة قرب شريط العنوان، أو اطلب المساعدة من شخص بالغ.",
+  "es": "Estás a punto de salir de nuestro sitio para visitar {entry_title} en otro sitio web. No controlamos ese sitio. Pregunta a un adulto antes de ir. Revisa el original para ver los detalles. Puede que ese sitio no esté en tu idioma. Tu navegador puede traducir la página: busca el botón de traducir cerca de la barra de direcciones, o pide ayuda a un adulto.",
+  "hi": "आप हमारी साइट छोड़कर किसी दूसरी वेबसाइट पर {entry_title} देखने जा रहे हैं। उस साइट पर हमारा नियंत्रण नहीं है। जाने से पहले किसी बड़े से पूछें। ब्योरे के लिए मूल साइट देखें। हो सकता है वह साइट आपकी भाषा में न हो। आपका ब्राउज़र पेज का अनुवाद कर सकता है: पता-पट्टी के पास अनुवाद का बटन देखें, या किसी बड़े से मदद माँगें।",
+  "pt": "Você está prestes a sair do nosso site para visitar {entry_title} em outro site. Nós não controlamos esse site. Pergunte a um adulto antes de ir. Confira o original para ver os detalhes. Esse site pode não estar no seu idioma. O seu navegador pode traduzir a página: procure o botão de traduzir perto da barra de endereço ou peça ajuda a um adulto."
+ },
+ "{entry_title} is in our Books group, a list of free books about programming. We only know the title, short description and level from our list.": {
+  "ar": "{entry_title} ضمن مجموعة الكتب لدينا، وهي قائمة بكتب مجانية عن البرمجة. لا نعرف من قائمتنا سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo Libros, una lista de libros gratuitos sobre programación. Solo conocemos el título, la descripción breve y el nivel de nuestra lista.",
+  "hi": "{entry_title} हमारे किताबें समूह में है, जो प्रोग्रामिंग की मुफ़्त किताबों की सूची है। हमारी सूची से हमें केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo Livros, uma lista de livros gratuitos sobre programação. Só conhecemos o título, a descrição curta e o nível da nossa lista."
+ },
+ "{entry_title} is in our Build your own 3D Renderer group, a list of tutorials about making a program that draws 3D scenes. We only know the title, short description and level from our list.": {
+  "ar": "{entry_title} ضمن مجموعة «ابنِ مُصيِّرك ثلاثي الأبعاد» لدينا، وهي قائمة بدروس عن صناعة برنامج يرسم مشاهد ثلاثية الأبعاد. لا نعرف من قائمتنا سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo Crea tu propio renderizador 3D, una lista de tutoriales sobre cómo hacer un programa que dibuja escenas 3D. Solo conocemos el título, la descripción breve y el nivel de nuestra lista.",
+  "hi": "{entry_title} हमारे अपना 3D रेंडरर बनाएँ समूह में है, जो ऐसा प्रोग्राम बनाने के ट्यूटोरियल की सूची है जो 3D दृश्य बनाता है। हमारी सूची से हमें केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo Crie o seu próprio renderizador 3D, uma lista de tutoriais sobre como fazer um programa que desenha cenas 3D. Só conhecemos o título, a descrição curta e o nível da nossa lista."
+ },
+ "{entry_title} is in our Build your own Game group, a list of tutorials about making a game from the ground up. We only know the title, short description and level from our list.": {
+  "ar": "{entry_title} ضمن مجموعة «ابنِ لعبتك الخاصة» لدينا، وهي قائمة بدروس عن صناعة لعبة من الصفر. لا نعرف من قائمتنا سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo Crea tu propio juego, una lista de tutoriales sobre cómo hacer un juego desde cero. Solo conocemos el título, la descripción breve y el nivel de nuestra lista.",
+  "hi": "{entry_title} हमारे अपना खेल बनाएँ समूह में है, जो शुरू से खेल बनाने के ट्यूटोरियल की सूची है। हमारी सूची से हमें केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo Crie o seu próprio jogo, uma lista de tutoriais sobre como fazer um jogo do zero. Só conhecemos o título, a descrição curta e o nível da nossa lista."
+ },
+ "{entry_title} is in our Build your own Programming Language group, a list of tutorials about making your own tiny language and a program that runs it. We only know the title, short description and level from our list.": {
+  "ar": "{entry_title} ضمن مجموعة «ابنِ لغة برمجة خاصة بك» لدينا، وهي قائمة بدروس عن صناعة لغتك الصغيرة وبرنامج يشغّلها. لا نعرف من قائمتنا سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo Crea tu propio lenguaje de programación, una lista de tutoriales sobre cómo hacer tu propio lenguaje diminuto y un programa que lo ejecute. Solo conocemos el título, la descripción breve y el nivel de nuestra lista.",
+  "hi": "{entry_title} हमारे अपनी प्रोग्रामिंग भाषा बनाएँ समूह में है, जो अपनी एक छोटी भाषा और उसे चलाने वाला प्रोग्राम बनाने के ट्यूटोरियल की सूची है। हमारी सूची से हमें केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo Crie a sua própria linguagem de programação, uma lista de tutoriais sobre como fazer a sua própria linguagem minúscula e um programa que a execute. Só conhecemos o título, a descrição curta e o nível da nossa lista."
+ },
+ "{entry_title} is in our Computer Science group, a list of resources about the ideas behind computing, like how algorithms and data work. We only know the title, short description and level from our list.": {
+  "ar": "{entry_title} ضمن مجموعة علوم الحاسوب لدينا، وهي قائمة بموارد عن الأفكار وراء الحوسبة، مثل كيفية عمل الخوارزميات والبيانات. لا نعرف من قائمتنا سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo de Ciencias de la Computación, una lista de recursos sobre las ideas detrás de la informática, como el funcionamiento de los algoritmos y los datos. Solo conocemos el título, la descripción breve y el nivel de nuestra lista.",
+  "hi": "{entry_title} हमारे कंप्यूटर विज्ञान समूह में है, जो कंप्यूटिंग के पीछे के विचारों, जैसे एल्गोरिदम और डेटा कैसे काम करते हैं, के संसाधनों की सूची है। हमारी सूची से हमें केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo de Ciência da Computação, uma lista de recursos sobre as ideias por trás da computação, como o funcionamento de algoritmos e dados. Só conhecemos o título, a descrição curta e o nível da nossa lista."
+ },
+ "{entry_title} is in our Front-End Development group, a long list of tools and resources for building the part of a website that people see and click. We only know the title, short description and level from our list.": {
+  "ar": "{entry_title} ضمن مجموعة تطوير الواجهة الأمامية لدينا، وهي قائمة طويلة بأدوات وموارد لبناء الجزء الذي يراه الناس وينقرون عليه في الموقع. لا نعرف من قائمتنا سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo de Desarrollo Front-End, una larga lista de herramientas y recursos para construir la parte de un sitio web que la gente ve y toca. Solo conocemos el título, la descripción breve y el nivel de nuestra lista.",
+  "hi": "{entry_title} हमारे फ्रंट-एंड डेवलपमेंट समूह में है, जो वेबसाइट का वह हिस्सा बनाने के औज़ारों और संसाधनों की लंबी सूची है जिसे लोग देखते और क्लिक करते हैं। हमारी सूची से हमें केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo de Desenvolvimento Front-End, uma longa lista de ferramentas e recursos para construir a parte de um site que as pessoas veem e clicam. Só conhecemos o título, a descrição curta e o nível da nossa lista."
+ },
+ "{entry_title} is in our Gaming group, a list of resources about making games and learning with games. These are listings, so we only know the title, the short description and the level.": {
+  "ar": "{entry_title} ضمن مجموعة الألعاب لدينا، وهي قائمة بموارد لصناعة الألعاب والتعلّم بالألعاب. هذه عناصر قائمة، لذا لا نعرف سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo de Juegos, una lista de recursos para crear juegos y aprender con juegos. Son fichas de una lista, así que solo conocemos el título, la descripción breve y el nivel.",
+  "hi": "{entry_title} हमारे गेमिंग समूह में है, जो खेल बनाने और खेलों से सीखने के संसाधनों की सूची है। ये सूची की प्रविष्टियाँ हैं, इसलिए हमें केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo de Jogos, uma lista de recursos para criar jogos e aprender com jogos. São itens de uma lista, então só conhecemos o título, a descrição curta e o nível."
+ },
+ "{entry_title} is in our Learn group, a general list of places and tools for learning to program. We only know the title, short description and level from our list.": {
+  "ar": "{entry_title} ضمن مجموعة «تعلّم» لدينا، وهي قائمة عامة بأماكن وأدوات لتعلّم البرمجة. لا نعرف من قائمتنا سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo Aprender, una lista general de lugares y herramientas para aprender a programar. Solo conocemos el título, la descripción breve y el nivel de nuestra lista.",
+  "hi": "{entry_title} हमारे सीखें समूह में है, जो प्रोग्रामिंग सीखने की जगहों और औज़ारों की सामान्य सूची है। हमारी सूची से हमें केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo Aprender, uma lista geral de lugares e ferramentas para aprender a programar. Só conhecemos o título, a descrição curta e o nível da nossa lista."
+ },
+ "{entry_title} is in our Media group, a list of resources about images, icons, sound and other media for programs and websites. We only know the title, short description and level from our list.": {
+  "ar": "{entry_title} ضمن مجموعة الوسائط لدينا، وهي قائمة بموارد عن الصور والأيقونات والصوت وغيرها من الوسائط للبرامج والمواقع. لا نعرف من قائمتنا سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo Medios, una lista de recursos sobre imágenes, iconos, sonido y otros medios para programas y sitios web. Solo conocemos el título, la descripción breve y el nivel de nuestra lista.",
+  "hi": "{entry_title} हमारे मीडिया समूह में है, जो प्रोग्राम और वेबसाइट के लिए चित्रों, आइकन, ध्वनि और अन्य मीडिया के संसाधनों की सूची है। हमारी सूची से हमें केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo Mídia, uma lista de recursos sobre imagens, ícones, som e outras mídias para programas e sites. Só conhecemos o título, a descrição curta e o nível da nossa lista."
+ },
+ "{entry_title} is in our Miscellaneous group, a mixed bag of resources that did not fit in the other groups. We only know the title, short description, topic and level from our list, so the best way to find out more is to look.": {
+  "ar": "{entry_title} ضمن مجموعة «متنوّعات» لدينا، وهي مجموعة مختلطة من الموارد التي لم تناسب المجموعات الأخرى. لا نعرف من قائمتنا سوى العنوان والوصف القصير والموضوع والمستوى، لذا فأفضل طريقة لمعرفة المزيد هي الاطّلاع عليه.",
+  "es": "{entry_title} está en nuestro grupo Varios, un conjunto mixto de recursos que no encajaban en los otros grupos. Solo conocemos el título, la descripción breve, el tema y el nivel de nuestra lista, así que la mejor forma de saber más es mirarlo.",
+  "hi": "{entry_title} हमारे विविध समूह में है, जो उन संसाधनों का मिला-जुला संग्रह है जो दूसरे समूहों में नहीं बैठे। हमारी सूची से हमें केवल शीर्षक, छोटा विवरण, विषय और स्तर पता है, इसलिए और जानने का सबसे अच्छा तरीका उसे देखना है।",
+  "pt": "{entry_title} está no nosso grupo Variados, um conjunto misto de recursos que não coube nos outros grupos. Só conhecemos o título, a descrição curta, o tema e o nível da nossa lista, então a melhor forma de saber mais é olhar."
+ },
+ "{entry_title} is in our Platforms group, a list about computers, boards and systems you can build things on, such as small computers. We only know the title, short description and level from our list.": {
+  "ar": "{entry_title} ضمن مجموعة المنصّات لدينا، وهي قائمة عن حواسيب ولوحات وأنظمة يمكنك بناء أشياء عليها، مثل الحواسيب الصغيرة. لا نعرف من قائمتنا سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo de Plataformas, una lista sobre computadoras, placas y sistemas sobre los que puedes construir cosas, como las computadoras pequeñas. Solo conocemos el título, la descripción breve y el nivel de nuestra lista.",
+  "hi": "{entry_title} हमारे प्लेटफ़ॉर्म समूह में है, जो कंप्यूटर, बोर्ड और सिस्टम की सूची है जिन पर आप चीज़ें बना सकते हैं, जैसे छोटे कंप्यूटर। हमारी सूची से हमें केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo de Plataformas, uma lista sobre computadores, placas e sistemas nos quais você pode construir coisas, como computadores pequenos. Só conhecemos o título, a descrição curta e o nível da nossa lista."
+ },
+ "{entry_title} is in our Programming Languages group, a long list of resources for learning particular programming languages. We only know each item's title, short description and level from our list.": {
+  "ar": "{entry_title} ضمن مجموعة لغات البرمجة لدينا، وهي قائمة طويلة بموارد لتعلّم لغات برمجة محدّدة. لا نعرف عن كل عنصر سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo de Lenguajes de Programación, una larga lista de recursos para aprender lenguajes de programación concretos. Solo conocemos el título, la descripción breve y el nivel de cada elemento.",
+  "hi": "{entry_title} हमारे प्रोग्रामिंग भाषा समूह में है, जो किसी खास प्रोग्रामिंग भाषा को सीखने के संसाधनों की लंबी सूची है। हमें हर चीज़ का केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo de Linguagens de Programação, uma longa lista de recursos para aprender linguagens específicas. Só conhecemos o título, a descrição curta e o nível de cada item."
+ },
+ "{entry_title} is in our Theory group, a list of resources about the ideas and maths behind computing. We only know the title, short description and level from our list.": {
+  "ar": "{entry_title} ضمن مجموعة النظرية لدينا، وهي قائمة بموارد عن الأفكار والرياضيات وراء الحوسبة. لا نعرف من قائمتنا سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo de Teoría, una lista de recursos sobre las ideas y las matemáticas detrás de la informática. Solo conocemos el título, la descripción breve y el nivel de nuestra lista.",
+  "hi": "{entry_title} हमारे सिद्धांत समूह में है, जो कंप्यूटिंग के पीछे के विचारों और गणित के संसाधनों की सूची है। हमारी सूची से हमें केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo de Teoria, uma lista de recursos sobre as ideias e a matemática por trás da computação. Só conhecemos o título, a descrição curta e o nível da nossa lista."
+ },
+ "{entry_title} is in our Uncategorized build group, a collection of 'build it yourself' tutorials that did not fit a more specific group. We only know the title, short description and level from our list.": {
+  "ar": "{entry_title} ضمن مجموعة البناء «غير المصنّفة» لدينا، وهي مجموعة دروس «ابنِه بنفسك» لم تناسب مجموعة أكثر تحديدًا. لا نعرف من قائمتنا سوى العنوان والوصف القصير والمستوى.",
+  "es": "{entry_title} está en nuestro grupo de construcción Sin categoría, una colección de tutoriales de «constrúyelo tú mismo» que no encajaban en un grupo más específico. Solo conocemos el título, la descripción breve y el nivel de nuestra lista.",
+  "hi": "{entry_title} हमारे बिना श्रेणी वाले निर्माण समूह में है, जो «खुद बनाओ» ट्यूटोरियल का संग्रह है जो किसी खास समूह में नहीं बैठा। हमारी सूची से हमें केवल शीर्षक, छोटा विवरण और स्तर पता है।",
+  "pt": "{entry_title} está no nosso grupo de construção Sem categoria, uma coleção de tutoriais de «construa você mesmo» que não coube em um grupo mais específico. Só conhecemos o título, a descrição curta e o nível da nossa lista."
+ },
+ "{entry_title} is part of a CS Unplugged unit about binary numbers. Binary is how computers store numbers using only two states, on and off. The activities use cards, movement and games, with no screen.": {
+  "ar": "{entry_title} جزء من وحدة في CS Unplugged عن الأعداد الثنائية. النظام الثنائي هو الطريقة التي تخزّن بها الحواسيب الأعداد باستخدام حالتين فقط: تشغيل وإيقاف. تعتمد الأنشطة على البطاقات والحركة والألعاب، دون شاشة.",
+  "es": "{entry_title} forma parte de una unidad de CS Unplugged sobre números binarios. El sistema binario es la forma en que los ordenadores guardan números usando solo dos estados: encendido y apagado. Las actividades usan cartas, movimiento y juegos, sin pantalla.",
+  "hi": "{entry_title} CS Unplugged की एक इकाई का हिस्सा है जो बाइनरी संख्याओं के बारे में है। बाइनरी वह तरीका है जिससे कंप्यूटर केवल दो अवस्थाओं, चालू और बंद, से संख्याएँ सँजोते हैं। गतिविधियों में कार्ड, हलचल और खेल हैं, बिना स्क्रीन के।",
+  "pt": "{entry_title} faz parte de uma unidade do CS Unplugged sobre números binários. Binário é a forma como os computadores guardam números usando só dois estados: ligado e desligado. As atividades usam cartas, movimento e jogos, sem tela."
+ },
+ "{entry_title} is part of a CS Unplugged unit about giving clear instructions to a robot, like a toy bot or a friend pretending to be one. You learn what a program is by writing one for a friend to follow.": {
+  "ar": "{entry_title} جزء من وحدة في CS Unplugged عن إعطاء تعليمات واضحة لروبوت، مثل روبوت لعبة أو صديق يتظاهر بأنه روبوت. تتعلّم ما هو البرنامج بكتابة برنامج يتّبعه صديقك.",
+  "es": "{entry_title} forma parte de una unidad de CS Unplugged sobre dar instrucciones claras a un robot, como un robot de juguete o un amigo que finge serlo. Aprendes qué es un programa escribiendo uno para que lo siga un amigo.",
+  "hi": "{entry_title} CS Unplugged की एक इकाई का हिस्सा है जो रोबोट को साफ़ निर्देश देने के बारे में है, जैसे खिलौना रोबोट या रोबोट बनने का अभिनय करता दोस्त। आप दोस्त के लिए प्रोग्राम लिखकर सीखते हैं कि प्रोग्राम क्या होता है।",
+  "pt": "{entry_title} faz parte de uma unidade do CS Unplugged sobre dar instruções claras a um robô, como um robô de brinquedo ou um amigo que finge ser um. Você aprende o que é um programa escrevendo um para um amigo seguir."
+ },
+ "{entry_title} is part of a CS Unplugged unit about how computers find things in a list. You play guessing games with number cards and find out why putting things in order makes finding them faster.": {
+  "ar": "{entry_title} جزء من وحدة في CS Unplugged عن كيفية عثور الحواسيب على الأشياء في قائمة. تلعب ألعاب تخمين ببطاقات الأعداد وتكتشف لماذا يجعل ترتيب الأشياء العثور عليها أسرع.",
+  "es": "{entry_title} forma parte de una unidad de CS Unplugged sobre cómo los ordenadores encuentran cosas en una lista. Juegas a adivinar con cartas numeradas y descubres por qué ordenar las cosas hace que encontrarlas sea más rápido.",
+  "hi": "{entry_title} CS Unplugged की एक इकाई का हिस्सा है जो इस बारे में है कि कंप्यूटर सूची में चीज़ें कैसे ढूँढते हैं। आप संख्या-कार्डों से अंदाज़ा लगाने के खेल खेलते हैं और जानते हैं कि चीज़ों को क्रम में रखने से उन्हें ढूँढना तेज़ क्यों हो जाता है।",
+  "pt": "{entry_title} faz parte de uma unidade do CS Unplugged sobre como os computadores encontram coisas em uma lista. Você joga jogos de adivinhação com cartas numeradas e descobre por que colocar as coisas em ordem faz com que sejam encontradas mais rápido."
+ },
+ "{entry_title} is part of a CS Unplugged unit about how computers notice and fix mistakes in the information they store and send. The activities use card tricks and number games.": {
+  "ar": "{entry_title} جزء من وحدة في CS Unplugged عن كيفية ملاحظة الحواسيب للأخطاء في المعلومات التي تخزّنها وترسلها وتصحيحها. تعتمد الأنشطة على ألعاب الورق وألعاب الأعداد.",
+  "es": "{entry_title} forma parte de una unidad de CS Unplugged sobre cómo los ordenadores notan y corrigen errores en la información que guardan y envían. Las actividades usan trucos de cartas y juegos de números.",
+  "hi": "{entry_title} CS Unplugged की एक इकाई का हिस्सा है जो इस बारे में है कि कंप्यूटर अपनी सँजोई और भेजी जानकारी में गलतियाँ कैसे पहचानते और ठीक करते हैं। गतिविधियों में ताश के करतब और संख्याओं के खेल हैं।",
+  "pt": "{entry_title} faz parte de uma unidade do CS Unplugged sobre como os computadores percebem e corrigem erros nas informações que guardam e enviam. As atividades usam truques de cartas e jogos de números."
+ },
+ "{entry_title} is part of a CS Unplugged unit about how computers store pictures. You colour squares using number codes and learn that a picture on a screen is a grid of tiny squares called pixels.": {
+  "ar": "{entry_title} جزء من وحدة في CS Unplugged عن كيفية تخزين الحواسيب للصور. تلوّن مربعات باستخدام رموز الأعداد وتتعلّم أن الصورة على الشاشة شبكة من مربعات صغيرة تُسمّى البكسلات.",
+  "es": "{entry_title} forma parte de una unidad de CS Unplugged sobre cómo los ordenadores guardan imágenes. Coloreas cuadros con códigos de números y aprendes que una imagen en la pantalla es una cuadrícula de cuadritos llamados píxeles.",
+  "hi": "{entry_title} CS Unplugged की एक इकाई का हिस्सा है जो इस बारे में है कि कंप्यूटर चित्र कैसे सँजोते हैं। आप संख्या-कोड से खाने रंगते हैं और सीखते हैं कि स्क्रीन पर चित्र छोटे-छोटे खानों की जाली है, जिन्हें पिक्सल कहते हैं।",
+  "pt": "{entry_title} faz parte de uma unidade do CS Unplugged sobre como os computadores guardam imagens. Você colore quadradinhos com códigos de números e aprende que uma imagem na tela é uma grade de quadradinhos chamados pixels."
+ },
+ "{entry_title} is part of a CS Unplugged unit about organising data so it is quick to search. You act out a tree on the ground and walk through it.": {
+  "ar": "{entry_title} جزء من وحدة في CS Unplugged عن تنظيم البيانات لتصبح سريعة البحث. تمثّل شجرة على الأرض وتمشي فيها.",
+  "es": "{entry_title} forma parte de una unidad de CS Unplugged sobre organizar datos para buscarlos rápido. Representas un árbol en el suelo y lo recorres.",
+  "hi": "{entry_title} CS Unplugged की एक इकाई का हिस्सा है जो डेटा को इस तरह सजाने के बारे में है कि खोज तेज़ हो। आप ज़मीन पर एक पेड़ बनाकर उसमें चलते हैं।",
+  "pt": "{entry_title} faz parte de uma unidade do CS Unplugged sobre organizar dados para que sejam rápidos de buscar. Você representa uma árvore no chão e caminha por ela."
+ },
+ "{entry_title} is part of a CS Unplugged unit about sorting. You walk through a path drawn on the ground, comparing numbers with other people, until everyone ends up in order.": {
+  "ar": "{entry_title} جزء من وحدة في CS Unplugged عن الفرز. تمشي في مسار مرسوم على الأرض وتقارن الأعداد مع أشخاص آخرين حتى يصبح الجميع مرتّبين.",
+  "es": "{entry_title} forma parte de una unidad de CS Unplugged sobre ordenar. Recorres un camino dibujado en el suelo y comparas números con otras personas hasta que todos quedan en orden.",
+  "hi": "{entry_title} CS Unplugged की एक इकाई का हिस्सा है जो क्रम में लगाने (सॉर्टिंग) के बारे में है। आप ज़मीन पर बने रास्ते पर चलते हैं और दूसरों के साथ संख्याओं की तुलना करते हैं, जब तक सब क्रम में न आ जाएँ।",
+  "pt": "{entry_title} faz parte de uma unidade do CS Unplugged sobre ordenação. Você percorre um caminho desenhado no chão e compara números com outras pessoas até que todos fiquem em ordem."
+ }
+}

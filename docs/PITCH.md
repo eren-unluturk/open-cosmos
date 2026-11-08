@@ -22,33 +22,33 @@
 1. Start at **"What should I learn?"**: pick an age, a goal (games, art, web), and a level, and get an ordered 6-step path.
 2. Open a **child lesson** (CS Unplugged, e.g. "How binary digits work", age 5-7): swipe through the guide, then open our adapted lesson page with its CC BY-SA attribution box.
 3. Open a **teen resource** (e.g. a 2D breakout game tutorial): read its guide and roadmap, then see the "you are leaving our site" slide before going to the original.
-4. Switch to Spanish, then Arabic (watch it flip right-to-left). Titles and descriptions are translated; guides and lessons are English for now.
+4. Switch to Spanish, then Arabic (watch it flip right-to-left). Titles, descriptions, guides, lessons, coding problems and the interface are all translated (AI-written, labelled, not yet checked by native speakers). Open **Accessibility** in the header: high contrast, bigger text, and a **Listen** button that reads a lesson aloud.
 5. Filter by **Beginner / Intermediate / Advanced**; browse **Learn** (`sindresorhus/awesome`) and **Build** (`codecrafters-io/build-your-own-x`).
+   (Also show a coding problem running in the browser, and the grown-up feedback form.)
 6. Open the grown-up gate to show how non-kid-safe entries stay hidden by default.
 (Specific entry ids and URLs: `docs/DEMO_SLICE.md`.)
 
 ## 5. How it works (tech)
-Python + Flask with static JSON. Kids answer only multiple-choice questions, so we collect no personal data; the guide builds a path from our tagged open data with simple rules and can only pick real entries. A pipeline fetches the open sources (two CC0 lists plus CS Unplugged under CC BY-SA 4.0), tags every entry with topic, level, age group and a child-safety tier, and flags whether its content may be reused. AI (Claude Code) was used **ahead of time** to classify entries, translate titles and descriptions into Spanish, Arabic, Hindi and Portuguese (keeping code and technical terms), write 65 group guides with roadmaps, and adapt 26 CS Unplugged lessons. Everything is stored as JSON, so there is no live AI, no API key and no cost, and the site is fast.
+Python + Flask, server-rendered, with static JSON data produced ahead of time and committed (no paid API anywhere). Deployed on Vercel at https://open-cosmos.vercel.app; Supabase holds an optional copy of the catalogue and the grown-ups' feedback, and the site falls back to the bundled JSON on any error. Kids answer only multiple-choice questions, so we collect no personal data; the guide builds a path from our tagged open data with simple rules and can only pick real entries. AI was used ahead of time to translate and classify, never live. Security and privacy answers: `docs/SECURITY.md`.
 
 ## 6. Honesty & open data (say this out loud)
 - We use **only open data** (two CC0 lists and CS Unplugged under CC BY-SA 4.0). We claim none of the content.
 - We add: **translation**, a **level-, age- and safety-tagged path**, and **guides with roadmaps**. For link-only content we only describe it and link out; we never copy it.
 - **CS Unplugged lessons are adapted** (simplified in our own words, no images) under CC BY-SA 4.0, with attribution and a "changes were made" statement.
-- Guides are AI-written from catalog data only (we did not read the linked pages), and **time estimates are estimates**. Translations are AI-generated, labeled as such, and not yet checked by native speakers.
+- Guides are AI-written from catalogue data only (we did not read the linked pages), and **time estimates are estimates**. Translations (entries, guides, lessons, problems, interface) are AI-generated, labelled as such, and not yet checked by native speakers.
 - 'Kid-safe' means nothing in the listing looks risky, not that we reviewed the page. A grown-up gate hides everything else by default.
 
 ## 7. Impact / Next steps
 - More languages, with community corrections from native speakers.
 - More source repos (each license-checked), so more content can become adapted lessons instead of link-only.
-- Translate the guides and lessons (placeholders are kept intact), with native-speaker review.
 - Offline/low-bandwidth mode for places with poor connectivity.
-- Learner progress tracking and richer "next step" suggestions (today: computed "Explore next").
+- Optional parent accounts with child profiles (opt-in, with consent) to sync progress across devices; today progress is browser-only.
 
 ## Submission checklist
-- [ ] Repo access set up for judges (repo is currently private; make public or share if required)
-- [ ] README complete
+- [ ] Repo access set up for judges (make the repo public or share it, if required)
+- [x] README complete
 - [ ] Demo video
-- [ ] Deployed link works
+- [x] Deployed link works: https://open-cosmos.vercel.app
 - [ ] Devpost/submission form filled
 - [ ] Slides
 

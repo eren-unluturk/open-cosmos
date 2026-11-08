@@ -1,5 +1,7 @@
 # Browser-only progress (spec)
 
+> **Status (Nov 8): done.** Progress is implemented in `public/static/galaxy.js` (see "Update (Nov 8)" near the end). The sections below are the original design, kept for the reasoning; the hooks were wired in and the separate `progress.js` was removed.
+
 A child can mark entries and lessons as done, and see a count and stars, with **no account and nothing sent to the server**. Progress lives in the child's own browser (`localStorage`). This keeps our promise: no accounts, no personal data.
 
 Files (all new; no existing page was restyled and no existing template or `app.py` was edited):
@@ -41,12 +43,10 @@ All visible text comes from `window.HC_PROGRESS_TEXT`. The page fills it from a 
 - Motion: only a short colour transition, and only inside `@media (prefers-reduced-motion: no-preference)`.
 
 ## Content-Security-Policy
-`src/app.py` currently sets **no** CSP header (only `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `Permissions-Policy`), and Flask serves `/static/progress.js` and `/static/progress.css` with 200. **No change to `app.py` is needed.** If a CSP is added later, `progress.js` works with `script-src 'self'` (no inline script, no `eval`), and the JSON block is not executed. While Tailwind comes from the CDN the policy also needs that host:
-`Content-Security-Policy: default-src 'self'; script-src 'self' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'self'; frame-ancestors 'none'`
-(`'unsafe-inline'` for styles only because the Tailwind CDN script injects a `<style>`.)
+The site now sends a strict Content-Security-Policy (`src/csp.py`, mirrored in `vercel.json`): own scripts only, no inline scripts, which this script was designed for (an external file, no `eval`, no network).
 
-## Hooks Tobi must add
-The wired templates (entry page with the guide slides, lesson pages, `/<lang>/lessons`) are **not on `main` yet**, so none of these were edited. Nothing shows until they are added.
+## Hooks (done; kept for reference)
+These hooks were added to the templates when the pages were merged.
 
 1. **`app.py`**: load the strings and pass them to every template:
    ```python

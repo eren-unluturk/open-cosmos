@@ -1,6 +1,6 @@
 # Deploying Open Cosmos on Vercel
 
-Vercel project name: `open-cosmos`. Render stays in place (`render.yaml`) until the cutover in `docs/CUTOVER.md`.
+Vercel project name: `open-cosmos`. Live: https://open-cosmos.vercel.app. Render and `render.yaml` were removed at the cutover (`docs/CUTOVER.md`).
 
 ## How the repo is set up for Vercel
 
@@ -11,7 +11,7 @@ Based on Vercel's current docs for Flask ([Deploy a Flask app on Vercel](https:/
 | Entry point | Vercel detects Flask from `requirements.txt` and looks for a module-level `app` in `index.py`, `app.py`, `server.py`, ... (root, `src/` or `app/`). `index.py` at the root re-exports `src/app.py`'s `app` unchanged. `src/app.py` also puts its own folder on `sys.path`, so it works whichever file Vercel picks. No `builds` or `routes` in `vercel.json` (that is the old way). |
 | Static files | Vercel ignores Flask's static folder and serves `public/` from its CDN. Our files (including the accessibility CSS/JS and `fonts/`) moved from `src/static` to `public/static`, so `/static/galaxy.css` is the same URL. Flask is configured to serve the same folder locally. |
 | Python | `.python-version` pins 3.12 (Vercel supports 3.12, 3.13, 3.14; 3.12 is the default). |
-| Dependencies | `requirements.txt` has only `flask`, `requests`, `python-dotenv` and `gunicorn` (kept only because `render.yaml` still uses it). `anthropic` was removed: nothing at runtime needs it and we call no paid API. |
+| Dependencies | `requirements.txt` has only `flask`, `requests` and `python-dotenv` (`gunicorn` went with Render and `anthropic` was removed: nothing at runtime needs it and we call no paid API). |
 | Data files | `src/data/*.json` are read with paths relative to the code (`Path(__file__)`), and Python functions bundle all project files by default. Nothing is written at runtime (no database, no files; sessions are signed cookies; progress is in the browser; the rate limiter and caches are in memory). |
 | Headers | Flask sets the security headers and the Content-Security-Policy on dynamic pages (`src/csp.py`). `vercel.json` sets the same headers for static files under `/static/` (the CDN does not run Flask). A test (`tests/test_vercel_config.py`) fails if the two drift apart. |
 

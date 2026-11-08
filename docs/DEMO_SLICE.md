@@ -1,6 +1,6 @@
-# Demo slice (ready now)
+# Demo slice (ready)
 
-Every entry below already resolves to a guide. Use these three paths in the demo.
+Live site: **https://open-cosmos.vercel.app**. Every entry below resolves to a guide. Use these three paths in the demo (put `/en`, `/es`, `/ar`, `/hi` or `/pt` before the path).
 
 ## 1. Child 5-10, lesson-backed (path B: open content, adapted lesson)
 | | |
@@ -19,9 +19,15 @@ Every entry below already resolves to a guide. Use these three paths in the demo
 | Link | https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser |
 | Also good | `learn-1c1ace1d` "Learn Gamedev" (https://github.com/notpresident35/awesome-learn-gamedev#readme), `learn-90783668` "LÖVE" |
 
-## 3. Arabic-ready example
-Both entries above have title and description in es, ar, hi and pt (AI-translated, labeled in `ai_translated`). Show `build-74d1338b` or `kids-0d3a63dc` with the language switched to Arabic (right-to-left). Lesson and guide text is English only so far: the UI must fall back to English for those, and say so. See `docs/GUIDE_SPEC.md` "Translation later".
+## 3. Arabic example (right to left)
+Both entries above have title, description, guide and lesson text in es, ar, hi and pt (AI-translated, labelled in `ai_translated`, not yet checked by native speakers). Show `/ar/entry/kids-0d3a63dc` or `/ar/entry/build-74d1338b` with the language switched to Arabic: the page flips right to left and "Open Cosmos" stays in Latin letters.
+
+## Extras worth 30 seconds each
+- **Accessibility:** the header button opens the panel (high contrast, 150% text, easy-to-read font, reduce motion); **Listen** reads a lesson aloud.
+- **Grown-up gate:** press "I'm a grown-up" in the footer: hidden entries and the **feedback form** appear. Turn it off again.
+- **Coding problem:** `/en/problem/py-hello` runs your code in the browser.
 
 ## Caveats to say out loud
-- Guides were written from catalog data only (titles, descriptions, level, topic). We did not read the linked pages, and time estimates are estimates.
+- Guides were written from catalogue data only (titles, descriptions, level, topic). We did not read the linked pages, and time estimates are estimates.
 - The 26 lessons are our simplified adaptations of CS Unplugged under CC BY-SA 4.0. Everything else links out to the original site.
+- Translations are AI-written and have not been checked by native speakers.

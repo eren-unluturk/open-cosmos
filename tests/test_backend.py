@@ -661,7 +661,6 @@ class TranslationParityTests(unittest.TestCase):
 class GuideTests(unittest.TestCase):
     def setUp(self):
         import os
-        os.environ.pop("ANTHROPIC_API_KEY", None)  # test the rule-based path only
 
     def test_all_36_combos(self):
         import guide

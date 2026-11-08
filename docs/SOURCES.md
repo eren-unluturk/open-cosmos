@@ -35,3 +35,5 @@ So we:
 - 52 of our coding problems (26 in Python, 26 in JavaScript) are adapted from the CS Unplugged **programming challenges** (`csunplugged/topics/content/en/*/programming-challenges/`, markdown, so CC BY-SA 4.0 under `LICENCE-CONTENT`).
 - We rewrote each challenge in our own words as a function with our own tests, hints and steps. No long passages are copied. Drawing (Scratch turtle) challenges were left out.
 - Kept in their own source file, `scripts/problem_content_unplugged.py`. Each problem in `src/data/problems.json` carries `license: CC-BY-SA-4.0`, `attribution`, `source` (link to the original challenge folder), `license_url` and `changes_made`. The problem page shows these in a credit box. Our other problems keep `license: original`.
+## Fonts and other third-party pieces
+See `NOTICE.md` for the full list. In short: **Atkinson Hyperlegible** (self-hosted, SIL OFL 1.1, `public/static/fonts/OFL.txt`), Fredoka and Nunito (Google Fonts, SIL OFL) and Pyodide (Mozilla Public License 2.0, loaded from cdn.jsdelivr.net only when a Python problem runs). The **license and attribution for everything we adapted** is in `NOTICE.md`.

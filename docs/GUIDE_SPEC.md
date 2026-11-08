@@ -58,7 +58,7 @@ Every text field is `{"en": ...}` so translations can be added as extra language
 4. **Lesson page layout**: title, age, time, materials, numbered steps, "talk about it", the grown-up note, and a **CC BY-SA 4.0 attribution box on every lesson**: show `attribution`, a link to `source_url` ("Original lesson, with pictures"), a link to `license_url`, and the `changes_made` text ("Simplified, shortened and translated by Open Cosmos with AI"). The adapted lesson is itself CC BY-SA 4.0 (ShareAlike).
 5. Show "AI-written overview" on guides and an "estimate" tag on all times.
 
-## Translation later
+## Translation (done)
 Translate only `title`, `body`, `steps`, `when`, `goal`, `adult_note` (guides) and `title`, `summary`, `objectives`, `materials`, `steps`, `talk_about`, `grown_up_note` (lessons), adding `es/ar/hi/pt` keys next to `en`. **Keep the `{placeholders}` exactly as they are.** Lesson translations must keep the CC BY-SA 4.0 attribution. Never translate ids, `type`, URLs or numbers.
 
 ## Rebuild (Eren)

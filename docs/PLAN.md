@@ -1,73 +1,58 @@
-# Plan — Open Cosmos (Kappa Theta Pi x CDS StuGov x BUCyS)
+# Plan and decisions: Open Cosmos
 
-Location: CDS, 17th floor, room 1750.
+Built at the KTP Hackathon (Kappa Theta Pi x CDS StuGov x BUCyS), Nov 7-8 2026. Track: **Information Access**. Live: https://open-cosmos.vercel.app
 
-## Chosen track: Information Access
-We are submitting to **Information Access**. Project idea below.
-
-## Prompt / Theme
-Accessibility. Pick ONE track to submit to on Sunday:
-- **Community Access** — software that helps people connect, gather, and participate in their communities
-- **Tech Access** — help more people use technology; invent a new way to interact with software, or fix a tool that leaves people out today
-- **Information Access** — use open data to build a product that makes complex or hidden information easier to find, understand, or act on
-
-Track details come at opening remarks (Sat 12:30 PM). Judging criteria: _TBD — add after opening remarks_.
+## Status (Nov 8 2026)
+Submitted and deployed. Everything in the MVP below is done except what is listed under "Not done".
 
 ## Idea
-**Track: Information Access.** A site that makes existing open-source "intro to programming" repos easier to approach and available in many languages. We claim none of the content as ours. Everything is open data, linked to its source repo with its license and attribution.
+A site that makes existing open-source "intro to programming" resources easier to approach and available in many languages. We claim none of the content: everything is open data, linked to its source and license.
 
-**What we add (our only contribution):**
-1. **Translation** of entry titles and descriptions into multiple languages (code and technical terms kept in English). Done ahead of time with AI help and labeled as AI-generated.
+**What we add:**
+1. **Translation** of entry titles and descriptions, guides, lessons, coding problems and the interface into Spanish, Arabic (right to left), Hindi and Portuguese. Done ahead of time with AI help, labelled as AI-generated, **not checked by native speakers**.
 2. **A level-based path** (Beginner / Intermediate / Advanced) plus age and topic tags and a child-safety tier, so newcomers know where to start.
-3. **Clear sourcing**: every entry links to the original, its author and license.
-4. **Guides and roadmaps**: every entry opens a short slide guide with a recommended timeline (Day 1, Week 1, ...), personalised by age and level with simple rules. Link-only entries end with a "you are leaving our site" slide; CS Unplugged (CC BY-SA 4.0) is adapted into our own lessons. See "Guides, roadmaps and lessons" below.
+3. **Clear sourcing:** every entry links to the original, its author and license.
+4. **Guides and roadmaps:** every entry opens a short slide guide with a recommended timeline (Day 1, Week 1...), personalised by age and level with simple rules. Link-only entries end with a "you are leaving our site" slide; CS Unplugged entries with a lesson end with "go to our lesson".
+5. **Adapted lessons and coding problems** from CS Unplugged (CC BY-SA 4.0) plus 24 problems of our own; code runs in the learner's browser.
+6. **Accessibility:** colour modes, text size and spacing, an easy-to-read font, reduced motion, read-aloud, a statement page.
 
-**Who it's for (details in `docs/PITCH.md`):** (1) a student who needs tutoring and finds GitHub repos unapproachable, and (2) international students who struggle with English-only resources.
+**Who it is for (`docs/PITCH.md`):** (1) a young learner who needs free tutoring (and the parent or teacher helping), and (2) international students who struggle with English-only resources.
 
-**Why it matters:** repos are free but hard to approach and mostly English-only. We lower both barriers.
-
-## Two sides
-- **Learn** — sourced from [sindresorhus/awesome](https://github.com/sindresorhus/awesome) (CC0): curated "awesome" lists for learning topics.
-- **Build** — sourced from [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) (CC0): "build your own X" tutorials (databases, git, shell, etc.).
-- Both are link lists. We translate + level-tag the list entries and link out. Details in `docs/SOURCES.md`.
-
-## Audience update: children just starting to learn
-Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (about ages 5-13) and the parents/teachers who help them**, plus non-English speakers.
-- **Flagship feature: "What should I learn?" guide** (`/<lang>/guide`, `src/guide.py`). Multiple-choice only (age, goal, level) and it builds an ordered 6-step path from our data, using only existing entries, so it can't invent links. Matching is rule-based on the `kid-safe`, `age_group`, `topic` and `level` fields (no paid API needed). See "Ask the team" for the backfill rules.
-- **Child safety:** no accounts, no free-text input, no personal data stored, no ads/tracking. Keep language simple and friendly. Mention that adults should supervise.
-- **Kid content:** `awesome` and `build-your-own-x` are written for adult developers and are NOT kid-focused, so we added `uccser/cs-unplugged` (CC BY-SA 4.0 content, verified) as the kid-targeted source and keep the other two as the "older learners" tier. Real kid content for games/art/web at ages 5-10 is still thin; the guide uses backfill rules (see Coverage and Ask the team).
-- `scripts/categorize.py` tags every entry with `topic`, `level`, `age_group` and a safety tier (see Decisions).
+## Two sides plus kids
+- **Learn:** [sindresorhus/awesome](https://github.com/sindresorhus/awesome) (CC0). **Build:** [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) (CC0). **Kids:** [uccser/cs-unplugged](https://github.com/uccser/cs-unplugged) (CC BY-SA 4.0, kept in a separate file).
+- All are link lists or short catalogue records. We tag, translate and link out. Details in `docs/SOURCES.md`.
 
 ## Guides, roadmaps and lessons (the system)
-- **Two paths per entry.** A. *Link-only* (`reuse = "link-only"`; all awesome and build-your-own-x entries): an AI-written overview guide plus a roadmap, ending in a leaving-our-site slide. B. *Open-content* (`reuse = "open-content"`; CS Unplugged): our own simplified lesson in `src/data/lessons.json`, ending in a slide to our lesson page.
-- **Guaranteed coverage.** `src/data/guides.json` has 65 handwritten group guides (one per `side:category`, so 100% of visible entries) plus 7 topic fallbacks as a safety net. `scripts/guide_helpers.py` (`guide_for`, `build_timeline`, `related_entries`, `lesson_for`, `fill`) resolves them with no runtime AI.
-- **Roadmap = the timeline slide + `build_timeline`.** The guide gives a 3-5 step plan; the helper turns level and age into minutes per session and number of sessions. All times are labeled estimates.
-- **Honest limits.** Guides are written from catalog data only (title, description, category, level, topic), not from the linked pages. Slide text never contains URLs. "Explore next" is computed by the backend, not written by hand.
-- **Files:** `docs/GUIDE_SPEC.md` (app tasks), `docs/GUIDE_PROGRESS.md` (coverage), `docs/GUIDE_DECISIONS.md`, `docs/DEMO_SLICE.md`, `docs/PITCH_DATA.md`, `docs/REUSE_CANDIDATES.md`.
-- **Rebuild order:** `categorize.py --no-ai` -> `mark_reuse.py` -> `fetch_lessons.py` -> `build_guides.py` -> tests.
+- **Two paths per entry.** A. *Link-only* (`reuse = "link-only"`; all awesome and build-your-own-x entries): an overview guide plus a roadmap, ending in a leaving-our-site slide. B. *Open-content* (`reuse = "open-content"`; CS Unplugged): an adapted lesson of ours with a CC BY-SA attribution box.
+- **Guaranteed coverage.** `src/data/guides.json` has 65 handwritten group guides (one per `side:category`, so 100% of visible entries) plus 7 topic fallbacks as a safety net (`scripts/guide_helpers.py`: `guide_for`, `build_timeline`, `related_entries`).
+- **Roadmap = the timeline slide.** The guide gives a 3-5 step plan; the helper turns level and age into minutes per session and number of sessions. All times are labelled estimates.
+- **Honest limits.** Guides are written from catalogue data only (title, description, category, level, topic), not from the linked pages. Slide text never contains URLs. "Explore next" is computed by the backend.
+- **Files:** `docs/GUIDE_SPEC.md`, `docs/GUIDE_PROGRESS.md` (coverage), `docs/GUIDE_DECISIONS.md`, `docs/DEMO_SLICE.md`, `docs/PITCH_DATA.md`, `docs/REUSE_CANDIDATES.md`.
+- **Rebuild order:** `categorize.py --no-ai` -> `mark_reuse.py` -> `fetch_lessons.py` -> `build_guides.py` -> `build_problems.py` -> tests.
 
 ## Principles
-- Open data only. Only use content under licenses that allow translation/redistribution (CC-BY, MIT, etc.). Record license per source.
-- Never present content as ours. Show attribution + "translated from" on every page. Note translations are AI-generated.
-- Keep code blocks untouched; translate prose only.
+- Open data only: only content under licenses that allow translation and redistribution. License recorded per source.
+- Never present content as ours. Attribution on every page; translations are labelled AI-generated.
+- Keep code untouched in lessons and problems; translate the instructions only.
 
-## Tech Stack (Python)
+## Tech stack (final)
 | Layer | Choice | Why |
-|-------|--------|-----|
-| Language | Python 3.9+ | Whole team can contribute; one language for site and pipeline |
-| Web | Flask + Jinja2 (server-rendered) | Simple, fast to build; routes `/<lang>/learn`, `/<lang>/build` |
-| Styling | Tailwind via CDN | No build step; `dir="rtl"` for Arabic |
-| Categorizing + translating | Rules in `scripts/categorize.py`, plus classification and translation done by hand by Claude Code (no paid API) | No cost, no key; results are committed (`scripts/cache/`, `src/data/`) so anyone can rebuild |
-| Data | Static JSON in `src/data/`, generated by `scripts/` | No database, fast, free to host |
-| Hosting | Render (or Railway/Fly) | Free tier, deploys from GitHub |
+|---|---|---|
+| Language | Python 3.12 on Vercel (code works on 3.9+) | One language for site and pipeline |
+| Web | Flask + Jinja2, server-rendered; routes `/<lang>/...` | Simple, no build step; `dir="rtl"` for Arabic |
+| Front end | One CSS and a few small JS files in `public/static/`, no framework, no CDN scripts | Fast, CSP-friendly |
+| Data | Static JSON in `src/data/`, generated by `scripts/` and committed | No database needed, free, fast |
+| Categorizing + translating | Rules in `scripts/categorize.py`, plus classification and translation done by hand by Claude Code ahead of time (no paid API) | No cost, no key, rebuildable by anyone |
+| Cloud catalogue + feedback | Supabase (optional) with row-level security; bundled JSON as automatic fallback | Edit content without redeploying; adult feedback |
+| Hosting | **Vercel** (`index.py`, `vercel.json`, `src/csp.py`) | Free, deploys from GitHub |
 
-**Pipeline:** `scripts/fetch.py` downloads the two CC0 lists and `scripts/fetch_kids.py` the CS Unplugged lessons -> `scripts/categorize.py --no-ai` tags topic, level, age group and safety (rules + a committed label cache + human overrides) -> translations for es/ar/hi/pt are written into the JSON in `src/data/` and labeled `ai_translated` -> Flask renders it. Everything is done **ahead of time**, so the site runs on static JSON with no API key and no live AI calls.
+**Pipeline order:** `fetch.py` -> `fetch_kids.py` -> `categorize.py --no-ai` (applies rules, then the committed label cache, then `safety_overrides.json` last) -> `mark_reuse.py` -> `fetch_lessons.py` -> `build_guides.py` -> translations (by hand; `translate.py` is optional and needs a key) -> `coverage.py`, `check_links.py`, `python -m unittest discover -s tests`. **After the data freeze do not re-run `fetch.py`** (it re-downloads the upstream lists; new entries would only get fail-closed rules).
 
-## Team split (4 people)
-1. **Data lead** — `scripts/` data pipeline: fetch + parse the sources into JSON, categorize and safety-tag, reuse flag, guides (`guides.json`) and adapted lessons (`lessons.json`); keep `docs/SOURCES.md` accurate.
-2. **AI lead** — translation quality and queue: `scripts/translate.py` (optional, needs an API key nobody has right now), translation batches from `docs/TRANSLATE_QUEUE.md`, native-speaker spot checks; and `src/guide.py` if an AI-assisted path is kept.
-3. **Backend lead** — `src/app.py`: Flask routes, language/level filtering, UI strings, RTL, deploy. **Also owns the safety gate and guide filtering:** hide non-`kid-safe` entries by default, add the session-only grown-up gate, and make `src/guide.py` use only `kid-safe` entries that fit the chosen age (entry `age_group` <= chosen age) and goal. Otherwise the guide can show teen+ material to a 6-year-old. Details in "Ask the team".
-4. **Frontend + pitch lead** — `src/templates/`, `public/static/`: pages, level badges, language switcher, attribution footer, accessibility; then README, slides, demo video, submission.
+## Team
+1. **Eren, data lead:** the data pipeline (sourcing, categorizing, safety tagging, the gate's rules), guides, lessons and roadmaps, Supabase catalogue and feedback, Vercel deployment and cutover, accessibility direction; keeps `docs/SOURCES.md` accurate.
+2. **Brian, AI lead:** translation quality and queue, native-speaker spot checks.
+3. **Tobi, backend lead:** `src/app.py` routes, language and level filtering, UI strings, RTL, search, the safety gate and guide filtering, deployment.
+4. **Isabella, frontend + pitch lead:** templates and the galaxy theme, badges, language switcher, attribution footer; README, slides, demo video, submission.
 
 **Data contract** (`src/data/learn.json`, `build.json` = CC0; `kids.json` = CC BY-SA 4.0, kept separate; each a list of entries):
 `{id, category, tag, title:{en,...}, desc:{en,...}, level, age_group, topic, safety, safety_reasons, url, source, license}` plus optional `ai_translated`
@@ -82,75 +67,35 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - `license`: "CC0-1.0" for learn/build, "CC-BY-SA-4.0" for kids. `source` is the repo URL, `url` the original page (we link out, never copy content).
 - Entries are sorted kid-safe first, then Beginner first (translate.py works in file order).
 
-**Pipeline order:** `fetch.py` -> `fetch_kids.py` -> `categorize.py --no-ai` (applies rules, then the committed label cache, then `safety_overrides.json` last) -> `mark_reuse.py` -> `fetch_lessons.py` -> `build_guides.py` -> translations (by hand; `translate.py` is optional and needs a key) -> `coverage.py`, `check_links.py`, `python -m unittest discover -s tests`. **After the data freeze do not re-run `fetch.py`** (it re-downloads the upstream lists; new entries would only get fail-closed rules).
+**Git:** branch per feature, small commits, merge to `main` through pull requests.
 
-**Git:** branch per person (`data`, `ai`, `backend`, `frontend`), small commits, pull before push, merge to `main` often.
+**Languages:** English, Spanish, Arabic (RTL), Hindi, Portuguese.
 
-**Languages (start with):** Spanish, Arabic (RTL), Hindi, Portuguese.
+## MVP checklist
+- [x] Source repos picked, licenses recorded (`docs/SOURCES.md`)
+- [x] Parser cleaned: language tags split out, markdown stripped, deduped by URL
+- [x] `scripts/categorize.py`: topic, level, age_group, safety tier (rules + committed hand-labelled cache, no API key)
+- [x] Human safety spot-check (`docs/SAFETY_REVIEW.md`) and a human overrides file
+- [x] Polite link checker; 7 dead links removed
+- [x] Kid-friendly source added: CS Unplugged (57 entries)
+- [x] **All 1,085 entries translated** (title + description) into es, ar, hi, pt; all 72 guides, 26 lessons, 76 coding problems, category headings and interface strings too (AI-written, labelled `ai_translated`)
+- [x] Guides: 65 handwritten group guides + 7 fallbacks (100% of visible entries)
+- [x] 26 adapted lessons with CC BY-SA attribution box
+- [x] 76 coding problems that run in the browser (24 ours, 52 adapted from CS Unplugged)
+- [x] Browser-only progress (stars, badges, progress code)
+- [x] Grown-up gate (session-only) and feedback form for adults
+- [x] Supabase catalogue + feedback with RLS, JSON fallback (`docs/SUPABASE.md`)
+- [x] Accessibility (`docs/ACCESSIBILITY.md`), security review (`docs/SECURITY.md`)
+- [x] Renamed to Open Cosmos; deployed on Vercel; Render removed
+- [x] README, pitch docs, NOTICE and LICENSE
 
-## MVP (must ship)
-- [x] Source repos picked and licenses recorded in `docs/SOURCES.md` (awesome, build-your-own-x)
-- [x] Parser cleaned: language tags split out, markdown stripped, deduped by URL (Data lead)
-- [x] `scripts/categorize.py`: topic, level, age_group, safety tier (rules + committed hand-labeled cache, no API key needed)
-- [x] Human safety spot-check (`docs/SAFETY_REVIEW.md`, all rows ok) and a human overrides file
-- [x] Polite link checker; 7 dead links removed (`scripts/cache/removed_links.json`)
-- [x] Data tests, coverage report, link checker (Data lead)
-- [x] Translation approach: titles/descriptions translated by hand by Claude Code (no paid API), code and technical terms kept in English, labeled `ai_translated`
-- [x] 4 languages started (Spanish, Arabic, Hindi, Portuguese) for 74 entries
-- [x] Guide page skeleton (`src/guide.py`, done) — needs kid-friendly data + tagging to shine
-- [x] Kid-friendly source added: CS Unplugged (`scripts/fetch_kids.py` -> `src/data/kids.json`, 57 entries: 7 units, 26 lessons, 5 programming-challenge pages, 19 classroom integration activities; CC BY-SA 4.0)
-- [x] First translations done: 74 kid-safe Beginner + the first 33 CS Unplugged entries in es/ar/hi/pt (hand-written, labeled `ai_translated`); the 24 newer CS Unplugged entries and all other kid-safe entries are in `docs/TRANSLATE_QUEUE.md`
-- [ ] Translate the remaining kid-safe entries (Intermediate) and check translations with native speakers
-- [x] Data docs for the pitch: `docs/STATS.md`, `docs/SAFETY_REVIEW.md`, `docs/TRANSLATE_QUEUE.md`
-- [x] Guides foundation: `reuse` flag, fallback guides, helpers, tests (`docs/GUIDE_SPEC.md`)
-- [x] Lessons from CS Unplugged (`lessons.json`, 26) and handwritten guides (65 of 65 groups, 100% of visible entries; `docs/GUIDE_PROGRESS.md`)
-- [x] Browser-only progress (`progress.js`, spec in `docs/PROGRESS_SPEC.md`); Tobi must add the template hooks listed there
-- [x] App: guide slide viewer, `/<lang>/lessons` and lesson page with the CC BY-SA attribution box (merged, PR #14)
-- [x] List pages: search box and age/topic/level filters, hidden-entry notice (issue #7)
-- [ ] Deploy on Render (needs the owner's Render sign-in, issue #8; steps in `docs/ISSUES_TRIAGE.md`)
-- [x] Lesson page with language switcher + level tag (`/<lang>/lesson/<id>`)
-- [x] Level path / roadmap: the guide slides, timeline strip and "Explore next"
-- [x] Attribution/license footer + CC BY-SA attribution box on every lesson and a link to the source on every entry
-- [ ] Deployed link + demo video
-
-## Next steps (after the hackathon)
-- Optional **parent accounts with child profiles** (opt-in, with consent), to sync progress across devices. Until then progress is browser-only.
-
-## Stretch
-- [ ] Low-bandwidth / offline-friendly pages
-- [ ] Community translation corrections
-- [ ] Search across lessons
-
-## Timeline (official)
-**Saturday, Nov 7**
-| Time | Event |
-|------|-------|
-| 12:00 PM | Doors open / sign-in |
-| 12:30 PM | Opening remarks (track details) |
-| 1:15 PM | **Hacking begins** + team formation |
-| 1:30 PM | Chick-fil-A lunch |
-| 3:00 & 5:00 PM | Technical workshops |
-| 7:00 PM | Anna's Taqueria dinner |
-| 7:30 PM | Closing remarks; space closes shortly after |
-
-**Sunday, Nov 8**
-| Time | Event |
-|------|-------|
-| 8:00 AM | Working space reopens |
-| **9:00 AM** | **Projects due** + Dunkin' breakfast |
-| 9:30 AM | Judging begins |
-| ~11:15 AM | Prizes + closing remarks |
-| 12:00 PM | Space closes |
-
-## Our working schedule
-| When | Goal |
-|------|------|
-| Sat 12:30-1:15 | Listen to tracks, pick track + idea, form team |
-| Sat 1:15-3:00 | Pick stack, scaffold, split tasks, core happy path started |
-| Sat 3:00-7:30 | Core feature working end to end |
-| Sat night | Wrap up/sleep; plan Sunday fixes |
-| Sun 8:00-8:45 | Polish, deploy, README, demo video, submit |
-| Sun 9:00 | SUBMITTED (hard deadline) |
+## Not done / next
+- [ ] Native-speaker review of every translation; community corrections
+- [ ] Real screen-reader (VoiceOver, NVDA, TalkBack) testing and an outside accessibility audit
+- [ ] More open sources (each license-checked), so more content can become adapted lessons instead of link-only
+- [ ] Self-host the main fonts (today Fredoka and Nunito come from Google Fonts)
+- [ ] Optional parent accounts with child profiles (opt-in, with consent) to sync progress; until then progress is browser-only
+- [ ] Offline or low-bandwidth mode
 
 ## Decisions
 - **Categorize, don't filter.** We keep every entry from the two existing CC0 sources and tag each one, so the site serves young learners (5-13) and still offers advanced material. No new sources up front; add one only if coverage results show gaps (`python scripts/coverage.py`). Coverage showed gaps for young ages, so we added `uccser/cs-unplugged` (see below).
@@ -158,26 +103,24 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - **YouTube/Vimeo links are treated as normal (not flagged).** We rely on YouTube's own age restrictions rather than gating every video.
 - **Fail closed:** unclear means `ask-a-grown-up`, never `kid-safe`. `kid-safe` also requires a kid topic (games/art/web/general) and a vetted link host. The AI pass can only make an entry stricter, never looser than the rules. We classify titles, descriptions, categories and link hosts only, never the linked pages.
 - **Parental gate (design):** by default the site hides `ask-a-grown-up` and `adult-only` entries. An adult can reveal `ask-a-grown-up` entries for the current session only (a simple "I'm a grown-up" confirmation; `adult-only` stays hidden). No accounts, no personal data stored.
-- **No paid API.** Nothing in the data pipeline needs an API key. The AI-style classification in `categorize.py` was done by hand (by Claude Code in the Data lead's session): 953 entries the rules could not decide were labeled and stored in `scripts/cache/categorize.json` (same format the script's API pass uses), then `python scripts/categorize.py --no-ai` merges them. The cache is **committed**: it is small, holds only labels for public titles, and lets the whole team and the Sunday rebuild reproduce the data with no API key. New entries not in the cache fall back to fail-closed rules ("unclassified" -> ask-a-grown-up).
+- **No paid API (final).** Nothing in the data pipeline needs an API key. The AI-style classification in `categorize.py` was done by hand (by Claude Code in the Data lead's session): 953 entries the rules could not decide were labeled and stored in `scripts/cache/categorize.json` (same format the script's API pass uses), then `python scripts/categorize.py --no-ai` merges them. The cache is **committed**: it is small, holds only labels for public titles, and lets the whole team and the Sunday rebuild reproduce the data with no API key. New entries not in the cache fall back to fail-closed rules ("unclassified" -> ask-a-grown-up).
 - **Vetted hosts:** first tier only: aosabook.org, scratchapixel.com, fullstackpython.com, nand2tetris.org, developer.ibm.com, swtch.com (plus GitHub, MDN, Khan Academy, etc. already in `KNOWN_OK_HOSTS`). Medium family, paywalled, ad-heavy and community sites stay unvetted.
 - **CS Unplugged added** (`uccser/cs-unplugged`): content CC BY-SA 4.0 (`LICENCE-CONTENT`), code MIT (`LICENCE`), verified from the repo. Only titles, a short description we wrote, the repo's age group and a link to the lesson page are stored; no lesson text or images. Kept in `kids.json`, separate from the CC0 files. Translations of it must stay CC BY-SA 4.0 with attribution and a "changes were made" note (see `docs/SOURCES.md`).
 - **Title keywords can raise safety, too:** Slack/Telegram/Twitter/etc. in a title now add `social-platform` (found when a Slack-bot tutorial slipped through as kid-safe).
 - **CS Unplugged activities added** (Nov 7): programming-challenge pages and classroom integration activities, using the same rules (own short description, repo-stated age, link only). Only 5 lessons really have programming challenges; the rest of the site's `/programming/` pages are empty, so they are skipped. Integrations without a stated age are skipped.
-- **Link-check policy.** `check_links.py` is polite (1 request/second/host, backoff on 429, one retry) and classifies results as ok / rate_limited / blocked_bot / broken / error. 429 and 403 are NOT treated as broken. It never edits data; confirmed-dead links (404, DNS, bad SSL) are removed by hand and listed in `scripts/cache/removed_links.json`, which `fetch.py` skips. Timeouts and 5xx are rechecked before removal. 7 removed so far; 9 temporary errors remain, all ask-a-grown-up.
+- **Link-check policy.** `check_links.py` is polite (1 request/second/host, backoff on 429, one retry) and classifies results as ok / rate_limited / blocked_bot / broken / error. 429 and 403 are NOT treated as broken. It never edits data; confirmed-dead links (404, DNS, bad SSL) are removed by hand and listed in `scripts/cache/removed_links.json`, which `fetch.py` skips. Timeouts and 5xx are rechecked before removal. 7 removed; 7 links with errors remain after a recheck on Nov 8 (all ask-a-grown-up).
 - **Guides and lessons (decided).** Link-only entries get an AI-written overview guide (slides + a rule-based timeline) ending in a "leaving our site" slide. Open-content entries (CS Unplugged, CC BY-SA 4.0) are adapted into our own lessons in `src/data/lessons.json`. Every visible entry always resolves to a guide (fallback per topic in `src/data/guides.json`). Guides are written from catalog data only and never claim what is on the linked page. Details: `docs/GUIDE_SPEC.md`; progress: `docs/GUIDE_PROGRESS.md`.
 - **Progress is browser-only.** A child can mark entries and lessons as done and see stars; it is stored only in their own browser (`localStorage`, key `hc_progress_v1`, ids only), with a progress code to move it between devices. No accounts, no cookies, no server storage. Spec: `docs/PROGRESS_SPEC.md`; hooks for Tobi are listed there.
-- **Supabase (decided Nov 8).** Supabase holds a copy of the catalog and adult feedback only. The bundled JSON stays the source of truth and the automatic fallback on any error, timeout, empty result or schema mismatch (`CONTENT_SOURCE=json|supabase|auto`, default auto). No child data, no accounts and no progress are ever sent; feedback is adults-only, anonymous, insert-only and never shown back on the site. Anon key (read content, insert feedback) is server-side only; the service key is for local seeding and is never deployed. Details and manual steps: `docs/SUPABASE.md`.
-- **Accessibility (Nov 8).** An Accessibility button opens a settings panel: four colour modes (galaxy, light, high contrast, colour-blind-safe) with device defaults (`prefers-color-scheme`, `prefers-contrast`), text size 100/125/150%, roomy spacing, a self-hosted easy-to-read font (Atkinson Hyperlegible, SIL OFL, loaded only when chosen) and reduced motion. Settings live only in localStorage key `hc_a11y_v1` and are applied by a small external head script before first paint (no inline scripts, CSP-safe). A Listen button reads lessons, guide slides and entry descriptions with the browser's own speech synthesis (no network, no cost). Statement page at `/<lang>/accessibility`. Checked with `scripts/check_contrast.py`, axe-core via Playwright (dev only, not in requirements), keyboard walk-throughs and a reflow check. Details and the manual VoiceOver checklist: `docs/ACCESSIBILITY.md`.
-- **Hosting: moving to Vercel (prepared Nov 8; Render stays until cutover).** Flask detected from `requirements.txt`, entry `index.py`, static files in `public/static/`, headers (incl. a Content-Security-Policy that keeps scripts to our own origin) in `src/csp.py` for pages and `vercel.json` for static files, Python 3.12, `anthropic` dropped from requirements. Steps in `docs/DEPLOY.md`, checklist in `docs/CUTOVER.md`, check with `scripts/smoke_remote.py`.
-- **Site name: Open Cosmos (renamed from "Learning Lab", Nov 8).** The page title, meta tags, footer and generated attribution texts use "Open Cosmos", always in Latin script in every language (in right-to-left text it is wrapped in a bidi isolate or `<bdi>`). It is the `brand` string in `src/ui_strings.py`. The GitHub repo name (`ktp-hackcessability-2026`) and the Render service name (`learning-lab` in `render.yaml`) are unchanged on purpose, so the repo URL and the live service are not recreated. Generated data was rebuilt from the scripts; `build_problems.py --no-node` was used because node is not installed here (text-only change, JavaScript problems not re-checked).
 - **List pages (issue #7).** `/<lang>/learn`, `/build` and `/kids` have a search box and age/topic/level filters (`?q=`, `?age=`, `?topic=`, `?level=`), and explain how many entries are hidden until grown-up mode (adult-only is never counted or shown).
-- **translate.py (issue #6).** It strips code fences, retries once, runs 5 requests at a time, defaults to `claude-haiku-5-5` (env `ANTHROPIC_MODEL` overrides) and translates only kid-safe entries unless `--all`. It still needs an API key; hand translations go in an overlay file (see below).
-- **Guide translations (Nov 7).** All 72 guides (65 groups + 7 fallbacks) are translated into es, ar, hi and pt: 663 unique texts, written by hand by Claude Code (no API), AI-written and not yet checked by native speakers. They live in an overlay, `src/data/guides_translated.json` (English text -> {lang: text}), and `guides.json` stays English-only. `src/store.py` merges it at load, all or nothing per guide and language, so a guide never mixes two languages. Placeholders (`{entry_title}`, `{age}`, `{level}`, `{minutes}`, `{sessions}`) are kept; `{level}` is filled with the English level name. Lessons are translated too (see the next decision).
-- **Lessons and interface strings translated (Nov 7).** All 26 lessons (429 unique texts) are translated into es, ar, hi and pt in `src/data/lessons_overlay.json` (English text -> {lang: text}); `lessons.json` stays English-only and `store.py` merges the overlay, all or nothing per lesson and language. About 85 interface strings that were still falling back to English (Arabic 72, Hindi 87, Portuguese 17, Spanish 8: "Materials", "Steps", "Explore next", system names, hidden-link reasons, the CC BY-SA attribution texts and more) are in `src/data/ui_translated.json`. A test fails if any string is missing in any language (names such as Python or the brand may stay English). The titles and descriptions of the last 377 kid-safe entries are translated too (`scripts/translation_content/entries_queue.json`, merged by `scripts/apply_translations.py`), so `docs/TRANSLATE_QUEUE.md` is empty. The 76 coding problems (930 texts: titles, prompts, hints, steps, test names) are translated in `src/data/problems_overlay.json` (code stays English; `problems.json` stays English-only; merged by `store.py`). The titles and descriptions of the 610 grown-up-section (ask-a-grown-up) entries are translated too (`scripts/translation_content/entries_grownup.json`, merged by `scripts/apply_translations.py`). Nothing in the catalogue falls back to English any more, except product names. Native-speaker checks are still needed.
-- **Sites that are not in the learner's language.** The last slide of every guide now says the site may not be in their language and that the browser's own "translate this page" button can help (or ask a grown-up). We do not link to Google Translate or any translation proxy: that would send the page a child is visiting to a third party, and we promised not to track. Machine translation can garble code, so code stays in English. Later: link to a human translation when the source has one (CS Unplugged has es, fr, de, it and more).
 - **Heuristic caveat:** for the two CC0 sources, `age_group` "11-13" means "Beginner-level web/games/general material", not "written for kids". Only CS Unplugged is actually kid-targeted.
 
 - **Human safety spot-check.** `docs/SAFETY_REVIEW.md` lists 30 random kid-safe, 15 random ask-a-grown-up, all 15 adult-only and 10 youngest/rarest kid-safe entries. Eren reviewed all rows: every one was `ok` (no loosening or tightening needed). Corrections would go in `scripts/cache/safety_overrides.json` (`{"<id>": {"safety": "<tier>", "reason": "..."}}`); `categorize.py` applies it LAST and it may loosen or tighten. The file is currently empty (`{}`). A sample of about 70 of 1,068 entries is a spot-check, not a full review.
+- **No AI at runtime (final).** The "What should I learn?" guide is rule-based only; the old optional Claude path and the `anthropic` dependency were removed.
+- **Hosting: Vercel (Nov 8).** Flask detected from `requirements.txt`, entry `index.py`, static files in `public/static/`, headers and the Content-Security-Policy in `src/csp.py` (pages) and `vercel.json` (static files; a test keeps them equal), Python 3.12. Render and `render.yaml` were removed at the cutover. Steps: `docs/DEPLOY.md`.
+- **Site name: Open Cosmos (renamed from "Learning Lab", Nov 8).** Always in Latin script in every language (wrapped in a bidi isolate or `<bdi>` in right-to-left text). The localStorage keys keep their old names (`openlearn-explored-v1`, `hc_a11y_v1`) so nobody's saved progress is lost.
+- **Accessibility (Nov 8).** Settings panel, four colour modes, text size and spacing, a self-hosted easy-to-read font (Atkinson Hyperlegible, SIL OFL, loaded only when chosen), reduced motion, read-aloud with the browser's own voices, a statement page. Settings live in `localStorage` key `hc_a11y_v1` and are applied by a small external script before first paint (no inline scripts). Checked with axe-core, a contrast script and keyboard walk-throughs.
+- **Security (Nov 8).** Every POST is refused if the browser says it came from another site; the session cookie is HttpOnly and SameSite=Lax; feedback has a token, a honeypot, size limits and a rate limit. See `docs/SECURITY.md`.
+- **Guide and lesson translations (Nov 7-8).** All 72 guides (663 unique texts), 26 lessons (429 texts), 76 problems (930 texts), 1,085 entries and the interface are translated through overlay files keyed by the English text (`guides_translated.json`, `lessons_overlay.json`, `problems_overlay.json`, `ui_translated.json`, `categories_translated.json`, and the entry JSON for titles and descriptions). A page is shown in a language only when everything on it is translated, so a page never mixes two languages. Written by hand by Claude Code, no API. Not checked by native speakers.
 
 ## Coverage gaps (for Tobi; run `python scripts/coverage.py`)
 26 of 36 age/goal/level combinations have fewer than 6 kid-safe entries. What is real and what is short:
@@ -192,41 +135,3 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
   5. If a path still ends up under 6, show what exists plus a note ("more coming"), never an empty list, and never an entry that is not `kid-safe`.
   6. Say plainly in the UI that CS Unplugged lessons are for an adult to do with a child.
 - These gaps are real (no more open sources are planned), so the pitch should say "growing library" rather than imply full coverage.
-
-## Ask the team (changes needed in files Eren doesn't own)
-- **Tobi (`src/app.py`, `src/guide.py`):**
-  - Load `kids.json` alongside `learn.json` and `build.json`.
-  - Safety gate: hide `safety != "kid-safe"` by default; a session-only "I'm a grown-up" confirmation reveals `ask-a-grown-up`; `adult-only` is never shown. Filter by `safety`, `topic` and `age_group`.
-  - Guide: `candidates()` should use only `kid-safe` entries whose `age_group` is <= the chosen age (teen+ never shown to kids) and match the goal's `topic`. **Coverage today:** 26 of 36 age/goal/level combinations have fewer than 6 matching entries (run `python scripts/coverage.py`). Two simple rules fix all of them (simulated against the current data): (A) if the goal has fewer than 6 matches, backfill with `topic == "general"` entries at the same level; (B) if still short, backfill with the next lower level at the same age. For ages 5-10 you may also want to offer only Beginner.
-  - Note `topic` also has systems/security/other values.
-  - `src/guide.py` still has an optional Claude path (`anthropic`, `ANTHROPIC_API_KEY`). We have no key, so the rule-based path above is the real one: make it the default, and drop the AI path and `anthropic` from `requirements.txt` if nobody will use it (also keeps the deploy simple).
-- **Tobi: browser-only progress (read `docs/PROGRESS_SPEC.md`, section "Hooks Tobi must add").** `public/static/progress.js`, `progress.css` and `src/data/progress_text.json` are done and tested; nothing shows until you add these:
-  1. `app.py`: load `progress_text.json` and add `"progress_text": {**PT["en"], **PT.get(lang, {})}` to `ctx()` (skip the `_note` key).
-  2. `base.html`: the CSS `<link>`, the `<script type="application/json" id="hc-progress-text">{{ progress_text | tojson }}</script>` block, `<script src=".../progress.js" defer>`, and a footer `<p data-progress-privacy>{{ progress_text.privacy }}</p>`.
-  3. `entry.html` and the lesson page: `<article data-progress-item="{{ id }}">`.
-  4. `/<lang>/lessons`: `<section data-progress-panel></section>`, `<p data-progress-summary></p>`, and `<ul data-progress-list>` with `<li data-progress-id="{{ lesson.id }}">`.
-  5. Home page: `<span data-progress-stars></span>`.
-  6. No change to the headers: `app.py` sets no CSP today, and the script is CSP-friendly (an external file, no inline script). Nothing is stored on the server and there are no cookies.
-- **Tobi and Isabella: guides and lessons.** Full task lists in `docs/GUIDE_SPEC.md` (load `guides.json` and `lessons.json`, entry page uses `guide_for`/`build_timeline`/`related_entries`, `/<lang>/lessons` routes, slide viewer, CC BY-SA attribution box on every lesson).
-- **Isabella (`src/templates/`):**
-  - Footer/attribution line: "Lessons from CS Unplugged (University of Canterbury CSER Group), licensed CC BY-SA 4.0. Titles and descriptions translated and level-tagged by Open Cosmos with AI; changes were made. Other lists: CC0." Link https://creativecommons.org/licenses/by-sa/4.0/.
-  - Show an "AI-translated" badge on any entry whose current language is in `ai_translated`.
-  - Safety badges, the grown-up gate UI, and a short "why is this hidden?" text that explains `safety_reasons` in plain language.
-  - Show `tag` (programming language) on build entries.
-  - CS Unplugged lessons are teacher/parent lesson plans, so say "for an adult to do with a child".
-- **Brian (`scripts/translate.py`, and `src/guide.py` / `requirements.txt` with Tobi):**
-  - 74 kid-safe Beginner and CS Unplugged entries are already translated in es/ar/hi/pt, so translate.py skips them (it translates only entries missing a language). Remaining kid-safe Intermediate entries are the next batch.
-  - **Guide translations are done** (see Decisions): no need to translate guides. Native-speaker checks are still needed. Lesson text is translated too.
-  - **Translation queue:** `docs/TRANSLATE_QUEUE.md` lists the 401 kid-safe entries still untranslated (24 CS Unplugged, 258+36 Intermediate, 65+18 Advanced), in priority order, with counts per level and source. Pick row ranges with Eren so nobody edits the same JSON entries.
-  - `translate.py` needs an API key and we have none, so translations are done by hand (Claude Code in Eren's session) as overlay modules in `scripts/translation_content/`, merged by `python scripts/apply_translations.py`; the 24 newest CS Unplugged entries are done this way. 377 kid-safe entries remain (`docs/TRANSLATE_QUEUE.md`, regenerate with `python scripts/translate_queue.py`). The script's problems from issue #6 are fixed (code fences, one retry, 5 requests at a time, model `claude-haiku-5-5`); native-speaker checks are still needed.
-  - Eren's minimal changes to your file: `kids` is included, `level`/`age_group` set by categorize.py are not overwritten, entries are chosen by missing languages, and `ai_translated` is set. Please keep those.
-
-- **Isabella (`docs/PITCH.md`):** the pitch says the AI picks the path in the guide. Change it to: the guide builds a path from our tagged open data using simple rules and can only pick real entries; AI was used ahead of time to translate and classify (no live AI, no key, no personal data).
-
-## Blockers / Notes
-- Bring laptop + charger.
-
-## Frontend decisions (Isabella, Nov 7)
-- Galaxy UI on top of the team backend: subjects = galaxies, tracks = systems, entries = stops (`src/tracks.py`). Map in `docs/FRONTEND.md`.
-- Guide slides render on `/entry/<id>`; one slide at a time with JS, all stacked without JS. External link only on the last slide, after the leaving notice.
-- Card "time" from the sketch is the stop kind (screen-free lesson / build project / resource list); real times only appear as labeled estimates in the guide.

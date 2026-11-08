@@ -49,7 +49,7 @@ The Node tests (`node --test tests/js/*.test.js`) cover the settings module (def
 | Keyboard-only walk-through (`a11y_keyboard.py`) | **36 checks, 0 failed**: skip link, the three demo paths of `docs/DEMO_SLICE.md` (child lesson, teen link-only, Arabic example), 18 to 29 Tab stops per page with no trap and a visible focus on every stop, panel open/trap/Escape/return focus, keyboard theme and size changes, settings survive a reload |
 | Read-aloud (`a11y_listen.py`, fake speech engine) | **70 checks, 0 failed**: hidden without speech support, right voice per language, only main content, pause/resume/stop/speed, live-region messages, no-voice note |
 | Reflow (`a11y_reflow.py`) | **300 page states at 320 and 640 px, 0 with sideways scrolling**, with default and largest text settings, in en, es, ar, hi, pt |
-| Python tests | 225 tests pass (`tests/test_a11y.py`: markup hooks, statement page and strings in all five languages, theme and font CSS, contrast script) |
+| Python tests | 225 tests passed when this audit was run (the suite has grown since; run it for the current count) (`tests/test_a11y.py`: markup hooks, statement page and strings in all five languages, theme and font CSS, contrast script) |
 | Node tests | 11 tests pass (`tests/js/a11y-settings.test.js`: defaults, corrupt storage, unavailable storage, throwing storage getter, theme and motion resolution) |
 
 ### What the audit found and we fixed

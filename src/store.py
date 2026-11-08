@@ -174,7 +174,39 @@ def _load_problems():
     global _problems, _problem_by_id
     if _problems is None:
         _problems = _read_json("problems.json", [])
+        _add_problem_translations(_problems, _read_json("problems_overlay.json", {}))
         _problem_by_id = {p["id"]: p for p in _problems}
+
+
+def _problem_nodes(node, out):
+    """Every {"en": text-or-list} dict inside a problem (prompt, hints, steps, test names...)."""
+    if isinstance(node, dict):
+        en = node.get("en")
+        if isinstance(en, (str, list)) and all(len(k) == 2 for k in node):
+            out.append(node)
+            return
+        for v in node.values():
+            _problem_nodes(v, out)
+    elif isinstance(node, list):
+        for v in node:
+            _problem_nodes(v, out)
+
+
+def _add_problem_translations(problems, overlay):
+    """problems.json is English-only. Add other languages from problems_overlay.json (English text -> {lang: text}).
+
+    All or nothing per problem and language, so a problem page never mixes two languages. Code stays untouched.
+    """
+    for p in problems:
+        nodes = []
+        _problem_nodes(p, nodes)
+        for lang in ("es", "ar", "hi", "pt"):
+            pieces = [t for n in nodes for t in (n["en"] if isinstance(n["en"], list) else [n["en"]])]
+            if not pieces or not all(lang in overlay.get(t, {}) for t in pieces):
+                continue
+            for n in nodes:
+                en = n["en"]
+                n.setdefault(lang, [overlay[t][lang] for t in en] if isinstance(en, list) else overlay[en][lang])
 
 
 def problems():

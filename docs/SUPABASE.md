@@ -31,6 +31,10 @@ In every mode the site falls back to the bundled JSON on **any** error: timeout 
 
 `feedback(id, created_at, kind, message, page, lang, status)` has CHECK constraints: kind in bug/translation/content/other, message 5 to 1000 characters, page up to 200, lang one of en/es/ar/hi/pt. There is no name, email, IP or user id column. Read feedback in the Supabase dashboard (Table editor); the website cannot read it.
 
+### Grants
+
+`schema.sql` ends with explicit grants, so it works from scratch even when "Automatically expose new tables" is off in the project: `usage` on schema `public` for `anon` and `service_role`; `select` on `content` and `insert` on `feedback` for `anon`; everything on both tables for `service_role` (used only by local seeding); then `notify pgrst, 'reload schema'` so the API sees the change at once. Grants say which roles may reach a table at all; the row-level security policies still decide which rows. The grants are safe to re-run.
+
 ## Flow
 
 - **Seeding (your machine only):** `scripts/seed_supabase.py` reads `src/data/*.json` and the overlays and upserts them with the service key (idempotent). `--dry-run` prints counts and sends nothing. The JSON files are never edited by it.

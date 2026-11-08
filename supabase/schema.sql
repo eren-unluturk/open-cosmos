@@ -42,3 +42,11 @@ create policy "anyone may send feedback" on public.feedback
 
 revoke all on public.feedback from anon, authenticated;
 grant insert on public.feedback to anon, authenticated;
+
+-- 3. Grants. Needed when "Automatically expose new tables" is off (nothing is exposed to the API by default).
+--    Run after the tables and policies above. Row-level security still decides which rows each role may touch.
+grant usage on schema public to anon, service_role;
+grant select on public.content to anon;
+grant insert on public.feedback to anon;
+grant all on public.content, public.feedback to service_role;
+notify pgrst, 'reload schema';

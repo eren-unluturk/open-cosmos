@@ -218,3 +218,14 @@ def problems():
 def problem(problem_id):
     _load_problems()
     return _problem_by_id.get(problem_id)
+
+
+_categories = None
+
+
+def category(name, lang):
+    """Heading for a category: translated when we have it, else the English name."""
+    global _categories
+    if _categories is None:
+        _categories = _read_json("categories_translated.json", {})
+    return _categories.get(name, {}).get(lang) or name

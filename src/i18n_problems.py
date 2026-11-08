@@ -60,6 +60,8 @@ UI_EN = {
     "p_adapted": "From CS Unplugged",
     "p_original": "Original challenge",
     "p_changes": "Changes",
+    "p_attribution_text": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+    "p_changes_text": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0.",
 }
 
 UI = {
@@ -117,6 +119,8 @@ UI = {
         "p_adapted": "De CS Unplugged",
         "p_original": "Reto original",
         "p_changes": "Cambios",
+        "p_attribution_text": "Adaptado de un desafío de programación de CS Unplugged del Grupo de Investigación en Educación en Ciencias de la Computación de la Universidad de Canterbury, con licencia CC BY-SA 4.0.",
+        "p_changes_text": "Reescrito con nuestras propias palabras como una función con pruebas, pistas y pasos, en Python y JavaScript, por Hackcessability. Esta versión también es CC BY-SA 4.0.",
     },
     "ar": {
         "problems_title": "مسائل البرمجة",
@@ -172,6 +176,8 @@ UI = {
         "p_adapted": "من CS Unplugged",
         "p_original": "التحدي الأصلي",
         "p_changes": "التغييرات",
+        "p_attribution_text": "مقتبس من تحدٍّ برمجي في CS Unplugged أعدّته مجموعة أبحاث تعليم علوم الحاسوب في جامعة كانتربري، بترخيص CC BY-SA 4.0.",
+        "p_changes_text": "أُعيدت صياغته بكلماتنا على شكل دالة مع اختبارات وتلميحات وخطوات، بلغتي Python وJavaScript، بواسطة Hackcessability. وهذه النسخة أيضًا بترخيص CC BY-SA 4.0.",
     },
     "hi": {
         "problems_title": "कोडिंग समस्याएँ",
@@ -227,6 +233,8 @@ UI = {
         "p_adapted": "CS Unplugged से",
         "p_original": "मूल चुनौती",
         "p_changes": "बदलाव",
+        "p_attribution_text": "कैंटरबरी विश्वविद्यालय के कंप्यूटर साइंस एजुकेशन रिसर्च ग्रुप की CS Unplugged प्रोग्रामिंग चुनौती से रूपांतरित, CC BY-SA 4.0 लाइसेंस के अंतर्गत।",
+        "p_changes_text": "Hackcessability द्वारा हमारे अपने शब्दों में फ़ंक्शन, टेस्ट, संकेतों और चरणों के साथ Python और JavaScript में दोबारा लिखा गया। यह संस्करण भी CC BY-SA 4.0 है।",
     },
     "pt": {
         "problems_title": "Problemas de programação",
@@ -282,5 +290,7 @@ UI = {
         "p_adapted": "Do CS Unplugged",
         "p_original": "Desafio original",
         "p_changes": "Mudanças",
+        "p_attribution_text": "Adaptado de um desafio de programação do CS Unplugged do Grupo de Pesquisa em Educação em Ciência da Computação da Universidade de Canterbury, licenciado sob CC BY-SA 4.0.",
+        "p_changes_text": "Reescrito com nossas próprias palavras como uma função com testes, dicas e passos, em Python e JavaScript, pela Hackcessability. Esta versão também é CC BY-SA 4.0.",
     },
 }

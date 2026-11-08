@@ -579,6 +579,9 @@ def ctx(lang):
             "progress_text": {**PROGRESS_TEXT["en"], **PROGRESS_TEXT.get(lang, {})}}
 
 
+app.jinja_env.globals["category_label"] = lambda name, lang: store.category(name, lang)
+
+
 @app.context_processor
 def helpers():
     def switch_lang(code):

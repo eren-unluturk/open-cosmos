@@ -124,7 +124,7 @@
 
 <p class="attrib">
   <strong>{{ ui.on_this_site if e.delivery == 'hostable' else ui.on_other_site }}.</strong>
-  {{ ui.from_list }}: <a href="{{ e.source }}">{{ e.source.split('github.com/')[1] }}</a> · {{ ui.license }}: {{ e.license }} · {{ e.category }}
+  {{ ui.from_list }}: <a href="{{ e.source }}">{{ e.source.split('github.com/')[1] }}</a> · {{ ui.license }}: {{ e.license }} · {{ category_label(e.category, lang) }}
   {% if is_ai %} · {{ ui.footer_3 }}{% endif %}
 </p>
 {% if e.attribution %}<p class="attrib">{{ ui.entry_attribution }}</p>{% endif %}

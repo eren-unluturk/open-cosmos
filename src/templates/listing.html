@@ -24,7 +24,7 @@
   {% for l in levels %}<a class="pill" href="{{ url_for('listing', lang=lang, side=side, level=l, q=q or None, age=age, topic=topic) }}" {% if level == l %}aria-current="page"{% endif %}>{{ ui['lvl_' ~ l] }}</a>{% endfor %}
 </nav>
 {% for category, items in groups.items() %}
-  <h2 class="section-title">{{ category }}</h2>
+  <h2 class="section-title">{{ category_label(category, lang) }}</h2>
   <div class="grid">
     {% for e in items %}{% set gid, sid = u.home_of(e.id) %}{{ card({'e': e, 'galaxy': gid, 'system': sid}, lang, ui, u, difficulty, kind_of, level_icon, show_url=True) }}{% endfor %}
   </div>

@@ -1,8 +1,8 @@
 {% extends "base.html" %}
-{% from "macros.html" import icon with context %}
+{% from "macros.html" import icon, listen with context %}
 {% block title %}{{ tr(ls.title, lang) }} · {{ ui.brand }}{% endblock %}
 {% block content %}
-<nav class="crumbs" aria-label="Breadcrumb">
+<nav class="crumbs" aria-label="{{ ui.nav_breadcrumb }}">
   <a href="{{ url_for('lessons_page', lang=lang) }}">{{ ui.lessons }}</a>
   {% if entry %}<span aria-hidden="true">›</span><a href="{{ url_for('entry_page', lang=lang, entry_id=entry.id) }}">{{ tr(entry.title, lang) }}</a>{% endif %}
 </nav>
@@ -13,6 +13,7 @@
   <span class="chip">{{ ui.kind_unplugged }}</span>
 </div>
 <p class="lede">{{ tr(ls.summary, lang) }}</p>
+{{ listen("#main", lang, ui, listen_tags) }}
 {% if english_only %}<p class="attrib">{{ ui.english_only }}</p>{% endif %}
 {% if entry %}
 <p><button class="btn btn-ghost" type="button" data-explore="{{ entry.id }}" data-g="science" data-s="" data-title="{{ tr(ls.title, lang) }}"

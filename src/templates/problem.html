@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block title %}{{ title }} · {{ ui.brand }}{% endblock %}
 {% block content %}
-<nav class="crumbs" aria-label="Breadcrumb"><a href="{{ url_for('problems_page', lang=lang) }}">{{ ui.problems_title }}</a></nav>
+<nav class="crumbs" aria-label="{{ ui.nav_breadcrumb }}"><a href="{{ url_for('problems_page', lang=lang) }}">{{ ui.problems_title }}</a></nav>
 <article class="problem">
   <h1 class="bubble">{{ title }}</h1>
   <div class="meta">

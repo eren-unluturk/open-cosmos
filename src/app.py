@@ -17,6 +17,7 @@ import i18n_guides
 import i18n_lessons
 import i18n_problems
 import feedback
+import i18n_a11y
 import i18n_feedback
 import supabase_client
 import problems as problem_kit
@@ -51,6 +52,7 @@ UI["en"].update(i18n_guides.UI_EN)
 UI["en"].update(i18n_lessons.UI_EN)
 UI["en"].update(i18n_problems.UI_EN)
 UI["en"].update(i18n_feedback.UI_EN)
+UI["en"].update(i18n_a11y.UI_EN)
 for _code, _extra in i18n_guides.UI.items():
     UI[_code].update(_extra)
 for _code, _extra in i18n_lessons.UI.items():
@@ -58,6 +60,8 @@ for _code, _extra in i18n_lessons.UI.items():
 for _code, _extra in i18n_problems.UI.items():
     UI[_code].update(_extra)
 for _code, _extra in i18n_feedback.UI.items():
+    UI[_code].update(_extra)
+for _code, _extra in i18n_a11y.UI.items():
     UI[_code].update(_extra)
 
 
@@ -591,6 +595,13 @@ def feedback_page(lang):
                            kinds=feedback.KINDS, **ctx(lang))
 
 
+@app.route("/<lang>/accessibility")
+def accessibility(lang):
+    if lang not in LANGS:
+        abort(404)
+    return render_template("accessibility.html", **ctx(lang))
+
+
 @app.errorhandler(404)
 def not_found(_):
     if request.path.startswith("/api/"):
@@ -625,6 +636,8 @@ def ctx(lang):
             "progress_text": {**PROGRESS_TEXT["en"], **PROGRESS_TEXT.get(lang, {})}}
 
 
+# Voice language for read-aloud (the page language decides the voice)
+app.jinja_env.globals["listen_tags"] = {"en": "en-US", "es": "es-ES", "ar": "ar-SA", "hi": "hi-IN", "pt": "pt-BR"}
 app.jinja_env.globals["category_label"] = lambda name, lang: store.category(name, lang)
 
 

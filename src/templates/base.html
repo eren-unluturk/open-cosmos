@@ -14,6 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ url_for('static', filename='galaxy.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='a11y.css') }}">
+  <script src="{{ url_for('static', filename='a11y-settings.js') }}"></script>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-55 -55 110 110'%3E%3Cpolygon points='0,-50 13.5,-18.6 47.6,-15.5 21.9,7.1 29.4,40.5 0,23 -29.4,40.5 -21.9,7.1 -47.6,-15.5 -13.5,-18.6' fill='%23FFD166' stroke='%239D4EDD' stroke-width='8' stroke-linejoin='round'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -28,13 +30,13 @@
       <a class="navbtn" href="{{ url_for('me', lang=lang) }}" {% if request.endpoint == 'me' %}aria-current="page"{% endif %}>
         <span class="disc disc-me">{{ icon('person') }}</span><span class="cap">{{ ui.profile }}</span></a>
 
-      <form class="search" role="search" action="{{ url_for('library', lang=lang) }}" method="get">
+      <form class="search" role="search" aria-label="{{ ui.search_ph }}" action="{{ url_for('library', lang=lang) }}" method="get">
         {{ icon('search', 'search-i') }}
         <label for="q" class="sr-only">{{ ui.search_ph }}</label>
         <input id="q" name="q" type="search" placeholder="{{ ui.search_ph }}" value="{{ request.args.get('q', '') if request.endpoint == 'library' else '' }}" autocomplete="off">
       </form>
 
-      <nav class="navgroup" aria-label="Main">
+      <nav class="navgroup" aria-label="{{ ui.nav_main }}">
         <a class="navbtn" href="{{ url_for('constellation', lang=lang) }}" {% if request.endpoint in ('constellation', 'galaxy', 'system') %}aria-current="page"{% endif %}>
           <span class="disc disc-sky">{{ icon('constellation') }}</span><span class="cap">{{ ui.constellation }}</span></a>
         <a class="navbtn" href="{{ url_for('library', lang=lang) }}" {% if request.endpoint == 'library' %}aria-current="page"{% endif %}>
@@ -45,8 +47,11 @@
         {% for l in levels %}{{ level_form(l, lang, ui, cur_level, level_icon) }}{% endfor %}
       </div>
 
+      <button type="button" class="navbtn a11y-open" id="a11y-open" aria-haspopup="dialog" aria-expanded="false">
+        <span class="disc disc-sky">{{ icon('a11y') }}</span><span class="cap">{{ ui.a11y_btn }}</span></button>
+
       <details class="lang">
-        <summary aria-label="{{ ui.language }}: {{ langs[lang] }}">{{ icon('flag') }}<span class="lname">{{ ui.language }}</span><span class="code">{{ lang|upper }}</span></summary>
+        <summary>{{ icon('flag') }}<span class="lname">{{ ui.language }}</span> <span class="code">{{ lang|upper }}</span><span class="sr-only"> ({{ langs[lang] }})</span></summary>
         <ul>
           {% for code, name in langs.items() %}
             <li><a lang="{{ code }}" href="{{ switch_lang(code) }}" {% if code == lang %}aria-current="true"{% endif %}>{{ name }}</a></li>
@@ -99,6 +104,7 @@
       <a href="{{ url_for('problems_page', lang=lang) }}">{{ ui.problems_title }}</a>
       <a href="{{ url_for('guide_page', lang=lang) }}">{{ ui.guide }}</a>
       <a href="{{ url_for('catalogue', lang=lang) }}">{{ ui.catalogue }}</a>
+      <a href="{{ url_for('accessibility', lang=lang) }}"{% if request.endpoint == 'accessibility' %} aria-current="page"{% endif %}>{{ ui.a11y_footer }}</a>
       <a href="{{ url_for('listing', lang=lang, side='learn') }}">{{ ui.learn }}</a>
       <a href="{{ url_for('listing', lang=lang, side='build') }}">{{ ui.build }}</a>
       <a href="{{ url_for('listing', lang=lang, side='kids') }}">{{ ui.kids }}</a>
@@ -115,5 +121,47 @@
   </div>
 </footer>
 <script src="{{ url_for('static', filename='galaxy.js') }}" defer></script>
+<div id="a11y-backdrop" class="a11y-backdrop" hidden></div>
+<div id="a11y-panel" class="a11y-panel" role="dialog" aria-modal="true" aria-labelledby="a11y-title" tabindex="-1" hidden
+     data-msg-applied="{{ ui.a11y_applied }}" data-msg-reset="{{ ui.a11y_reset_done }}">
+  <h2 id="a11y-title">{{ ui.a11y_title }}</h2>
+  <p class="a11y-intro">{{ ui.a11y_intro }}</p>
+  <fieldset>
+    <legend>{{ ui.a11y_theme }}</legend>
+    {% for v in ['auto', 'galaxy', 'light', 'contrast', 'cb'] %}
+    <label class="a11y-opt"><input type="radio" name="a11y-theme" value="{{ v }}"><span>{{ ui['a11y_theme_' ~ v] }}</span></label>
+    {% endfor %}
+  </fieldset>
+  <fieldset>
+    <legend>{{ ui.a11y_size }}</legend>
+    {% for v in [100, 125, 150] %}
+    <label class="a11y-opt"><input type="radio" name="a11y-size" value="{{ v }}"><span><bdi dir="ltr">{{ v }}%</bdi></span></label>
+    {% endfor %}
+  </fieldset>
+  <fieldset>
+    <legend>{{ ui.a11y_spacing }}</legend>
+    {% for v in ['normal', 'wide'] %}
+    <label class="a11y-opt"><input type="radio" name="a11y-spacing" value="{{ v }}"><span>{{ ui['a11y_spacing_' ~ v] }}</span></label>
+    {% endfor %}
+  </fieldset>
+  <fieldset>
+    <legend>{{ ui.a11y_font }}</legend>
+    {% for v in ['default', 'easy'] %}
+    <label class="a11y-opt"><input type="radio" name="a11y-font" value="{{ v }}"><span>{{ ui['a11y_font_' ~ v] }}</span></label>
+    {% endfor %}
+    <p class="a11y-note">{{ ui.a11y_font_note }}</p>
+  </fieldset>
+  <div class="a11y-group">
+    <label class="a11y-opt"><input type="checkbox" id="a11y-motion" name="a11y-motion"><span>{{ ui.a11y_motion }}</span></label>
+    <p class="a11y-note">{{ ui.a11y_motion_hint }}</p>
+  </div>
+  <p id="a11y-status" class="a11y-status" role="status" aria-live="polite"></p>
+  <div class="a11y-actions">
+    <button type="button" class="btn btn-ghost" id="a11y-reset">{{ ui.a11y_reset }}</button>
+    <button type="button" class="btn btn-gold" id="a11y-close">{{ ui.a11y_close }}</button>
+  </div>
+</div>
+<script src="{{ url_for('static', filename='a11y.js') }}" defer></script>
+<script src="{{ url_for('static', filename='listen.js') }}" defer></script>
 </body>
 </html>

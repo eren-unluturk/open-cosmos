@@ -2,7 +2,7 @@
 {% block title %}{{ ui.catalogue }} · {{ ui.brand }}{% endblock %}
 {% block content %}
 <h1 class="bubble">{{ ui.catalogue }}</h1>
-<form method="get" role="search" class="filters">
+<form method="get" role="search" class="filters" aria-label="{{ ui.list_search }}">
   <label for="cq" class="sr-only">{{ ui.search_btn }}</label>
   <input id="cq" name="q" value="{{ q }}" maxlength="80" class="field" placeholder="{{ ui.search_btn }}">
   <label for="level" class="sr-only">{{ ui.level }}</label>

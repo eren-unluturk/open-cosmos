@@ -2,7 +2,7 @@
 {% from "macros.html" import grownup_notice, icon with context %}
 {% block title %}{{ ui['g_' ~ g.id] }} · {{ ui.brand }}{% endblock %}
 {% block content %}
-<nav class="crumbs" aria-label="Breadcrumb"><a href="{{ url_for('constellation', lang=lang) }}">{{ ui.constellation }}</a> <span aria-hidden="true">›</span> <span>{{ ui['g_' ~ g.id] }}</span></nav>
+<nav class="crumbs" aria-label="{{ ui.nav_breadcrumb }}"><a href="{{ url_for('constellation', lang=lang) }}">{{ ui.constellation }}</a> <span aria-hidden="true">›</span> <span>{{ ui['g_' ~ g.id] }}</span></nav>
 <h1 class="bubble">{{ ui['g_' ~ g.id] }}</h1>
 <p class="lede">{{ ui['gb_' ~ g.id] }} {{ ui.galaxy_sub }}</p>
 
@@ -47,8 +47,7 @@
       <text class="count" x="{{ p.x }}" y="{{ p.y + (150 if p.planets else 114) }}" text-anchor="middle">{% if s.stops %}{{ s.stops|length }} {{ ui.stops }}{% else %}{{ ui.uncharted }}{% endif %}</text>
     </a>
     {% for pl in p.planets %}
-      <a class="planet" data-id="{{ pl.e.id }}" href="{{ url_for('entry_page', lang=lang, entry_id=pl.e.id, g=g.id, s=s.id) }}" aria-label="{{ ui.stop }} {{ pl.n }}: {{ tr(pl.e.title, lang) }}">
-        <title>{{ pl.n }}. {{ tr(pl.e.title, lang) }}</title>
+      <a class="planet" data-id="{{ pl.e.id }}" href="{{ url_for('entry_page', lang=lang, entry_id=pl.e.id, g=g.id, s=s.id) }}" aria-label="{{ pl.n }} {{ tr(pl.e.title, lang) }}">
         <circle class="focus-ring" cx="{{ pl.x }}" cy="{{ pl.y }}" r="21"/>
         <text x="{{ pl.x }}" y="{{ pl.y + 6 }}" text-anchor="middle">{{ pl.n }}</text>
       </a>

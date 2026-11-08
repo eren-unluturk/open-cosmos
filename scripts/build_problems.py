@@ -14,7 +14,10 @@ sys.path.insert(0, str(ROOT / "scripts"))
 sys.path.insert(0, str(ROOT / "src"))
 
 import problems  # noqa: E402
-from problem_content import PROBLEMS  # noqa: E402
+from problem_content import PROBLEMS as OUR_PROBLEMS  # noqa: E402
+from problem_content_unplugged import PROBLEMS as UNPLUGGED  # noqa: E402  (CC BY-SA 4.0, adapted)
+
+PROBLEMS = OUR_PROBLEMS + UNPLUGGED
 
 
 def main():

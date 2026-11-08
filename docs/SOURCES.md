@@ -30,3 +30,8 @@ So we:
 - Every lesson carries: the license (`CC-BY-SA-4.0`), the attribution (University of Canterbury Computer Science Education Research Group, CS Unplugged), a link to the original lesson, a link to https://creativecommons.org/licenses/by-sa/4.0/ and a "changes were made" statement ("Simplified, shortened and translated by Hackcessability with AI"). The UI must show these on every lesson page.
 - Translations of lessons are also CC BY-SA 4.0 and must keep the same attribution and the changes statement.
 - Built by `scripts/fetch_lessons.py` from `scripts/lesson_content/` (text written by Claude Code, no paid API). Only `kid-safe`, `open-content` entries get a lesson.
+
+## Coding problems adapted from CS Unplugged (CC BY-SA 4.0)
+- 52 of our coding problems (26 in Python, 26 in JavaScript) are adapted from the CS Unplugged **programming challenges** (`csunplugged/topics/content/en/*/programming-challenges/`, markdown, so CC BY-SA 4.0 under `LICENCE-CONTENT`).
+- We rewrote each challenge in our own words as a function with our own tests, hints and steps. No long passages are copied. Drawing (Scratch turtle) challenges were left out.
+- Kept in their own source file, `scripts/problem_content_unplugged.py`. Each problem in `src/data/problems.json` carries `license: CC-BY-SA-4.0`, `attribution`, `source` (link to the original challenge folder), `license_url` and `changes_made`. The problem page shows these in a credit box. Our other problems keep `license: original`.

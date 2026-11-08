@@ -2448,5 +2448,4133 @@
   },
   "license": "original",
   "source": "Hackcessability"
+ },
+ {
+  "id": "py-card-values",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "8-10",
+  "topic": "general",
+  "title": {
+   "en": "Binary card values"
+  },
+  "prompt": {
+   "en": "Binary cards have 1, 2, 4, 8 ... dots. Each card has double the dots of the one before. Write a function card_values(count) that gives back a list of the dots on the first count cards, smallest first."
+  },
+  "concepts": {
+   "en": [
+    "lists",
+    "loops",
+    "doubling"
+   ]
+  },
+  "starter": "def card_values(count):\n    # give back a list like [1, 2, 4, 8]\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "card_values(4) gives [1, 2, 4, 8]"
+    },
+    "code": "check(card_values(4), [1, 2, 4, 8])"
+   },
+   {
+    "name": {
+     "en": "card_values(1) gives [1]"
+    },
+    "code": "check(card_values(1), [1])"
+   },
+   {
+    "name": {
+     "en": "card_values(8) gives [1, 2, 4, 8, 16, 32, 64, 128]"
+    },
+    "code": "check(card_values(8), [1, 2, 4, 8, 16, 32, 64, 128])"
+   },
+   {
+    "name": {
+     "en": "card_values(0) gives []"
+    },
+    "code": "check(card_values(0), [])"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Start with an empty list and a value of 1.",
+    "Repeat count times: add the value to the list.",
+    "After adding it, double the value (value times 2)."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Add the number 1 to the list count times."
+    },
+    "explain": {
+     "en": "Make an empty list. Loop count times and add 1 each time."
+    },
+    "solution": "def card_values(count):\n    cards = []\n    for i in range(count):\n        cards.append(1)\n    return cards\n",
+    "tests": [
+     {
+      "name": {
+       "en": "card_values(3) gives [1, 1, 1]"
+      },
+      "code": "check(card_values(3), [1, 1, 1])"
+     }
+    ],
+    "starter": "def card_values(count):\n    # give back a list like [1, 2, 4, 8]\n    pass\n"
+   }
+  ],
+  "solution": "def card_values(count):\n    cards = []\n    value = 1\n    for i in range(count):\n        cards.append(value)\n        value = value * 2\n    return cards\n",
+  "solution_note": {
+   "en": "Doubling the value each time gives the binary card values: 1, 2, 4, 8, 16 ..."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/dots-right-left",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-card-values",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "8-10",
+  "topic": "general",
+  "title": {
+   "en": "Binary card values"
+  },
+  "prompt": {
+   "en": "Binary cards have 1, 2, 4, 8 ... dots. Each card has double the dots of the one before. Write a function cardValues(count) that gives back a list of the dots on the first count cards, smallest first."
+  },
+  "concepts": {
+   "en": [
+    "lists",
+    "loops",
+    "doubling"
+   ]
+  },
+  "starter": "function cardValues(count) {\n  // give back a list like [1, 2, 4, 8]\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "cardValues(4) gives [1, 2, 4, 8]"
+    },
+    "code": "assertEqual(cardValues(4), [1, 2, 4, 8])"
+   },
+   {
+    "name": {
+     "en": "cardValues(1) gives [1]"
+    },
+    "code": "assertEqual(cardValues(1), [1])"
+   },
+   {
+    "name": {
+     "en": "cardValues(8) gives [1, 2, 4, 8, 16, 32, 64, 128]"
+    },
+    "code": "assertEqual(cardValues(8), [1, 2, 4, 8, 16, 32, 64, 128])"
+   },
+   {
+    "name": {
+     "en": "cardValues(0) gives []"
+    },
+    "code": "assertEqual(cardValues(0), [])"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Start with an empty list and a value of 1.",
+    "Repeat count times: add the value to the list.",
+    "After adding it, double the value (value times 2)."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Add the number 1 to the list count times."
+    },
+    "explain": {
+     "en": "Make an empty list. Loop count times and add 1 each time."
+    },
+    "solution": "function cardValues(count) {\n  const cards = [];\n  for (let i = 0; i < count; i++) {\n    cards.push(1);\n  }\n  return cards;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "cardValues(3) gives [1, 1, 1]"
+      },
+      "code": "assertEqual(cardValues(3), [1, 1, 1])"
+     }
+    ],
+    "starter": "function cardValues(count) {\n  // give back a list like [1, 2, 4, 8]\n}\n"
+   }
+  ],
+  "solution": "function cardValues(count) {\n  const cards = [];\n  let value = 1;\n  for (let i = 0; i < count; i++) {\n    cards.push(value);\n    value = value * 2;\n  }\n  return cards;\n}\n",
+  "solution_note": {
+   "en": "Doubling the value each time gives the binary card values: 1, 2, 4, 8, 16 ..."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/dots-right-left",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-cards-from-largest",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "8-10",
+  "topic": "general",
+  "title": {
+   "en": "Cards from the biggest down"
+  },
+  "prompt": {
+   "en": "Write a function cards_from_largest(largest). It gives back the binary card values from largest down to 1. Example: 8 gives [8, 4, 2, 1]. You can trust that largest is 1, 2, 4, 8, 16 and so on."
+  },
+  "concepts": {
+   "en": [
+    "lists",
+    "while loops",
+    "halving"
+   ]
+  },
+  "starter": "def cards_from_largest(largest):\n    # give back a list like [8, 4, 2, 1]\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "cards_from_largest(64) gives [64, 32, 16, 8, 4, 2, 1]"
+    },
+    "code": "check(cards_from_largest(64), [64, 32, 16, 8, 4, 2, 1])"
+   },
+   {
+    "name": {
+     "en": "cards_from_largest(8) gives [8, 4, 2, 1]"
+    },
+    "code": "check(cards_from_largest(8), [8, 4, 2, 1])"
+   },
+   {
+    "name": {
+     "en": "cards_from_largest(1) gives [1]"
+    },
+    "code": "check(cards_from_largest(1), [1])"
+   },
+   {
+    "name": {
+     "en": "cards_from_largest(16) gives [16, 8, 4, 2, 1]"
+    },
+    "code": "check(cards_from_largest(16), [16, 8, 4, 2, 1])"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Each card has half the dots of the card before it.",
+    "Keep going while the value is at least 1.",
+    "Add the value to the list, then halve it with whole-number division."
+   ]
+  },
+  "guided": [],
+  "solution": "def cards_from_largest(largest):\n    cards = []\n    value = largest\n    while value >= 1:\n        cards.append(value)\n        value = value // 2\n    return cards\n",
+  "solution_note": {
+   "en": "Halving until you reach 1 lists every card from the biggest down."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/left-right-given-largest",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-cards-from-largest",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "8-10",
+  "topic": "general",
+  "title": {
+   "en": "Cards from the biggest down"
+  },
+  "prompt": {
+   "en": "Write a function cardsFromLargest(largest). It gives back the binary card values from largest down to 1. Example: 8 gives [8, 4, 2, 1]. You can trust that largest is 1, 2, 4, 8, 16 and so on."
+  },
+  "concepts": {
+   "en": [
+    "lists",
+    "while loops",
+    "halving"
+   ]
+  },
+  "starter": "function cardsFromLargest(largest) {\n  // give back a list like [8, 4, 2, 1]\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "cardsFromLargest(64) gives [64, 32, 16, 8, 4, 2, 1]"
+    },
+    "code": "assertEqual(cardsFromLargest(64), [64, 32, 16, 8, 4, 2, 1])"
+   },
+   {
+    "name": {
+     "en": "cardsFromLargest(8) gives [8, 4, 2, 1]"
+    },
+    "code": "assertEqual(cardsFromLargest(8), [8, 4, 2, 1])"
+   },
+   {
+    "name": {
+     "en": "cardsFromLargest(1) gives [1]"
+    },
+    "code": "assertEqual(cardsFromLargest(1), [1])"
+   },
+   {
+    "name": {
+     "en": "cardsFromLargest(16) gives [16, 8, 4, 2, 1]"
+    },
+    "code": "assertEqual(cardsFromLargest(16), [16, 8, 4, 2, 1])"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Each card has half the dots of the card before it.",
+    "Keep going while the value is at least 1.",
+    "Add the value to the list, then halve it with Math.floor(value / 2)."
+   ]
+  },
+  "guided": [],
+  "solution": "function cardsFromLargest(largest) {\n  const cards = [];\n  let value = largest;\n  while (value >= 1) {\n    cards.push(value);\n    value = Math.floor(value / 2);\n  }\n  return cards;\n}\n",
+  "solution_note": {
+   "en": "Halving until you reach 1 lists every card from the biggest down."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/left-right-given-largest",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-bits-needed",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "How many cards do I need?"
+  },
+  "prompt": {
+   "en": "Write a function bits_needed(n). It gives back how many binary cards (bits) you need to show the number n. n is 1 or more. Example: 5 needs 3 cards (4, 2 and 1)."
+  },
+  "concepts": {
+   "en": [
+    "while loops",
+    "doubling",
+    "counting"
+   ]
+  },
+  "starter": "def bits_needed(n):\n    # give back how many cards are needed\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "bits_needed(5) gives 3"
+    },
+    "code": "check(bits_needed(5), 3)"
+   },
+   {
+    "name": {
+     "en": "bits_needed(31) gives 5"
+    },
+    "code": "check(bits_needed(31), 5)"
+   },
+   {
+    "name": {
+     "en": "bits_needed(32) gives 6"
+    },
+    "code": "check(bits_needed(32), 6)"
+   },
+   {
+    "name": {
+     "en": "bits_needed(1) gives 1"
+    },
+    "code": "check(bits_needed(1), 1)"
+   },
+   {
+    "name": {
+     "en": "bits_needed(255) gives 8"
+    },
+    "code": "check(bits_needed(255), 8)"
+   },
+   {
+    "name": {
+     "en": "bits_needed(256) gives 9"
+    },
+    "code": "check(bits_needed(256), 9)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "The cards are 1, 2, 4, 8 ... and each new card doubles the biggest one.",
+    "Start with one card worth 1. Count it.",
+    "While the next card (double the biggest) is not more than n, add that card and count it."
+   ]
+  },
+  "guided": [],
+  "solution": "def bits_needed(n):\n    count = 1\n    biggest = 1\n    while biggest * 2 <= n:\n        biggest = biggest * 2\n        count += 1\n    return count\n",
+  "solution_note": {
+   "en": "You keep adding cards while the next card still fits under n."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/number-bits-representing-number",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-bits-needed",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "How many cards do I need?"
+  },
+  "prompt": {
+   "en": "Write a function bitsNeeded(n). It gives back how many binary cards (bits) you need to show the number n. n is 1 or more. Example: 5 needs 3 cards (4, 2 and 1)."
+  },
+  "concepts": {
+   "en": [
+    "while loops",
+    "doubling",
+    "counting"
+   ]
+  },
+  "starter": "function bitsNeeded(n) {\n  // give back how many cards are needed\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "bitsNeeded(5) gives 3"
+    },
+    "code": "assertEqual(bitsNeeded(5), 3)"
+   },
+   {
+    "name": {
+     "en": "bitsNeeded(31) gives 5"
+    },
+    "code": "assertEqual(bitsNeeded(31), 5)"
+   },
+   {
+    "name": {
+     "en": "bitsNeeded(32) gives 6"
+    },
+    "code": "assertEqual(bitsNeeded(32), 6)"
+   },
+   {
+    "name": {
+     "en": "bitsNeeded(1) gives 1"
+    },
+    "code": "assertEqual(bitsNeeded(1), 1)"
+   },
+   {
+    "name": {
+     "en": "bitsNeeded(255) gives 8"
+    },
+    "code": "assertEqual(bitsNeeded(255), 8)"
+   },
+   {
+    "name": {
+     "en": "bitsNeeded(256) gives 9"
+    },
+    "code": "assertEqual(bitsNeeded(256), 9)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "The cards are 1, 2, 4, 8 ... and each new card doubles the biggest one.",
+    "Start with one card worth 1. Count it.",
+    "While the next card (double the biggest) is not more than n, add that card and count it."
+   ]
+  },
+  "guided": [],
+  "solution": "function bitsNeeded(n) {\n  let count = 1;\n  let biggest = 1;\n  while (biggest * 2 <= n) {\n    biggest = biggest * 2;\n    count++;\n  }\n  return count;\n}\n",
+  "solution_note": {
+   "en": "You keep adding cards while the next card still fits under n."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/number-bits-representing-number",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-binary-cards",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Show a number with five cards"
+  },
+  "prompt": {
+   "en": "Five binary cards have 16, 8, 4, 2 and 1 dots. A card is either showing its dots (W, white) or turned over (B, black). Write a function binary_cards(n) for a number from 0 to 31. It gives back five letters for the cards, biggest first. Example: 11 is 8 + 2 + 1, so it gives \"BWBWW\"."
+  },
+  "concepts": {
+   "en": [
+    "binary numbers",
+    "loops",
+    "if / else",
+    "building text"
+   ]
+  },
+  "starter": "def binary_cards(n):\n    # give back five letters, like BWBWW\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "binary_cards(11) gives 'BWBWW'"
+    },
+    "code": "check(binary_cards(11), 'BWBWW')"
+   },
+   {
+    "name": {
+     "en": "binary_cards(31) gives 'WWWWW'"
+    },
+    "code": "check(binary_cards(31), 'WWWWW')"
+   },
+   {
+    "name": {
+     "en": "binary_cards(0) gives 'BBBBB'"
+    },
+    "code": "check(binary_cards(0), 'BBBBB')"
+   },
+   {
+    "name": {
+     "en": "binary_cards(16) gives 'WBBBB'"
+    },
+    "code": "check(binary_cards(16), 'WBBBB')"
+   },
+   {
+    "name": {
+     "en": "binary_cards(1) gives 'BBBBW'"
+    },
+    "code": "check(binary_cards(1), 'BBBBW')"
+   },
+   {
+    "name": {
+     "en": "binary_cards(20) gives 'WBWBB'"
+    },
+    "code": "check(binary_cards(20), 'WBWBB')"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Look at the cards from the biggest (16) to the smallest (1).",
+    "If what is left of n is at least as big as the card, the card shows (W) and you take its dots away.",
+    "Otherwise the card is turned over (B). Add one letter for every card."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Look at the 16 card only."
+    },
+    "explain": {
+     "en": "Give back \"W\" if n is 16 or more, and \"B\" if not."
+    },
+    "solution": "def binary_cards(n):\n    if n >= 16:\n        return \"W\"\n    return \"B\"\n",
+    "tests": [
+     {
+      "name": {
+       "en": "binary_cards(20) gives 'W'"
+      },
+      "code": "check(binary_cards(20), 'W')"
+     },
+     {
+      "name": {
+       "en": "binary_cards(3) gives 'B'"
+      },
+      "code": "check(binary_cards(3), 'B')"
+     }
+    ],
+    "starter": "def binary_cards(n):\n    # give back five letters, like BWBWW\n    pass\n"
+   }
+  ],
+  "solution": "def binary_cards(n):\n    result = \"\"\n    for card in [16, 8, 4, 2, 1]:\n        if n >= card:\n            result += \"W\"\n            n -= card\n        else:\n            result += \"B\"\n    return result\n",
+  "solution_note": {
+   "en": "Going from the biggest card down, each card is used once if it fits. That is binary."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/binary-cards-representing-number",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-binary-cards",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Show a number with five cards"
+  },
+  "prompt": {
+   "en": "Five binary cards have 16, 8, 4, 2 and 1 dots. A card is either showing its dots (W, white) or turned over (B, black). Write a function binaryCards(n) for a number from 0 to 31. It gives back five letters for the cards, biggest first. Example: 11 is 8 + 2 + 1, so it gives \"BWBWW\"."
+  },
+  "concepts": {
+   "en": [
+    "binary numbers",
+    "loops",
+    "if / else",
+    "building text"
+   ]
+  },
+  "starter": "function binaryCards(n) {\n  // give back five letters, like BWBWW\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "binaryCards(11) gives \"BWBWW\""
+    },
+    "code": "assertEqual(binaryCards(11), \"BWBWW\")"
+   },
+   {
+    "name": {
+     "en": "binaryCards(31) gives \"WWWWW\""
+    },
+    "code": "assertEqual(binaryCards(31), \"WWWWW\")"
+   },
+   {
+    "name": {
+     "en": "binaryCards(0) gives \"BBBBB\""
+    },
+    "code": "assertEqual(binaryCards(0), \"BBBBB\")"
+   },
+   {
+    "name": {
+     "en": "binaryCards(16) gives \"WBBBB\""
+    },
+    "code": "assertEqual(binaryCards(16), \"WBBBB\")"
+   },
+   {
+    "name": {
+     "en": "binaryCards(1) gives \"BBBBW\""
+    },
+    "code": "assertEqual(binaryCards(1), \"BBBBW\")"
+   },
+   {
+    "name": {
+     "en": "binaryCards(20) gives \"WBWBB\""
+    },
+    "code": "assertEqual(binaryCards(20), \"WBWBB\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Look at the cards from the biggest (16) to the smallest (1).",
+    "If what is left of n is at least as big as the card, the card shows (W) and you take its dots away.",
+    "Otherwise the card is turned over (B). Add one letter for every card."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Look at the 16 card only."
+    },
+    "explain": {
+     "en": "Give back \"W\" if n is 16 or more, and \"B\" if not."
+    },
+    "solution": "function binaryCards(n) {\n  if (n >= 16) return \"W\";\n  return \"B\";\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "binaryCards(20) gives \"W\""
+      },
+      "code": "assertEqual(binaryCards(20), \"W\")"
+     },
+     {
+      "name": {
+       "en": "binaryCards(3) gives \"B\""
+      },
+      "code": "assertEqual(binaryCards(3), \"B\")"
+     }
+    ],
+    "starter": "function binaryCards(n) {\n  // give back five letters, like BWBWW\n}\n"
+   }
+  ],
+  "solution": "function binaryCards(n) {\n  let result = \"\";\n  for (const card of [16, 8, 4, 2, 1]) {\n    if (n >= card) {\n      result += \"W\";\n      n -= card;\n    } else {\n      result += \"B\";\n    }\n  }\n  return result;\n}\n",
+  "solution_note": {
+   "en": "Going from the biggest card down, each card is used once if it fits. That is binary."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/binary-cards-representing-number",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-count-dots",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Count the dots on the cards"
+  },
+  "prompt": {
+   "en": "A row of binary cards is written as letters: W means the card shows its dots, B means it is turned over. The last card is worth 1, the one before it 2, then 4, and so on. Write a function count_dots(cards) that gives back the number the row shows. Example: \"WBB\" is 4."
+  },
+  "concepts": {
+   "en": [
+    "binary to decimal",
+    "loops",
+    "doubling"
+   ]
+  },
+  "starter": "def count_dots(cards):\n    # give back the number the cards show\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "count_dots('WBB') gives 4"
+    },
+    "code": "check(count_dots('WBB'), 4)"
+   },
+   {
+    "name": {
+     "en": "count_dots('W') gives 1"
+    },
+    "code": "check(count_dots('W'), 1)"
+   },
+   {
+    "name": {
+     "en": "count_dots('B') gives 0"
+    },
+    "code": "check(count_dots('B'), 0)"
+   },
+   {
+    "name": {
+     "en": "count_dots('WWWWW') gives 31"
+    },
+    "code": "check(count_dots('WWWWW'), 31)"
+   },
+   {
+    "name": {
+     "en": "count_dots('BWBWW') gives 11"
+    },
+    "code": "check(count_dots('BWBWW'), 11)"
+   },
+   {
+    "name": {
+     "en": "count_dots('') gives 0"
+    },
+    "code": "check(count_dots(''), 0)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Start with a total of 0.",
+    "Go through the letters from left to right. Each step, double the total.",
+    "After doubling, add 1 if the letter is W. B adds nothing."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Count the W cards."
+    },
+    "explain": {
+     "en": "Loop over the letters and add 1 for every W. This is not the final answer yet."
+    },
+    "solution": "def count_dots(cards):\n    total = 0\n    for card in cards:\n        if card == \"W\":\n            total += 1\n    return total\n",
+    "tests": [
+     {
+      "name": {
+       "en": "count_dots('WBW') gives 2"
+      },
+      "code": "check(count_dots('WBW'), 2)"
+     }
+    ],
+    "starter": "def count_dots(cards):\n    # give back the number the cards show\n    pass\n"
+   }
+  ],
+  "solution": "def count_dots(cards):\n    total = 0\n    for card in cards:\n        total = total * 2\n        if card == \"W\":\n            total += 1\n    return total\n",
+  "solution_note": {
+   "en": "Doubling before each new card moves every earlier card one place to the left, so it is worth twice as much."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/count-bw-one-input-using-loop",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-count-dots",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Count the dots on the cards"
+  },
+  "prompt": {
+   "en": "A row of binary cards is written as letters: W means the card shows its dots, B means it is turned over. The last card is worth 1, the one before it 2, then 4, and so on. Write a function countDots(cards) that gives back the number the row shows. Example: \"WBB\" is 4."
+  },
+  "concepts": {
+   "en": [
+    "binary to decimal",
+    "loops",
+    "doubling"
+   ]
+  },
+  "starter": "function countDots(cards) {\n  // give back the number the cards show\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "countDots(\"WBB\") gives 4"
+    },
+    "code": "assertEqual(countDots(\"WBB\"), 4)"
+   },
+   {
+    "name": {
+     "en": "countDots(\"W\") gives 1"
+    },
+    "code": "assertEqual(countDots(\"W\"), 1)"
+   },
+   {
+    "name": {
+     "en": "countDots(\"B\") gives 0"
+    },
+    "code": "assertEqual(countDots(\"B\"), 0)"
+   },
+   {
+    "name": {
+     "en": "countDots(\"WWWWW\") gives 31"
+    },
+    "code": "assertEqual(countDots(\"WWWWW\"), 31)"
+   },
+   {
+    "name": {
+     "en": "countDots(\"BWBWW\") gives 11"
+    },
+    "code": "assertEqual(countDots(\"BWBWW\"), 11)"
+   },
+   {
+    "name": {
+     "en": "countDots(\"\") gives 0"
+    },
+    "code": "assertEqual(countDots(\"\"), 0)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Start with a total of 0.",
+    "Go through the letters from left to right. Each step, double the total.",
+    "After doubling, add 1 if the letter is W. B adds nothing."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Count the W cards."
+    },
+    "explain": {
+     "en": "Loop over the letters and add 1 for every W. This is not the final answer yet."
+    },
+    "solution": "function countDots(cards) {\n  let total = 0;\n  for (const card of cards) {\n    if (card === \"W\") total += 1;\n  }\n  return total;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "countDots(\"WBW\") gives 2"
+      },
+      "code": "assertEqual(countDots(\"WBW\"), 2)"
+     }
+    ],
+    "starter": "function countDots(cards) {\n  // give back the number the cards show\n}\n"
+   }
+  ],
+  "solution": "function countDots(cards) {\n  let total = 0;\n  for (const card of cards) {\n    total = total * 2;\n    if (card === \"W\") total += 1;\n  }\n  return total;\n}\n",
+  "solution_note": {
+   "en": "Doubling before each new card moves every earlier card one place to the left, so it is worth twice as much."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/count-bw-one-input-using-loop",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-parity-row",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Spot a parity error in a row"
+  },
+  "prompt": {
+   "en": "In the parity magic trick, every row should have an EVEN number of black cards. Write a function has_parity_error(row). row is made of B (black) and W (white). Give back True if the row has an error (an odd number of B), and False if it is fine."
+  },
+  "concepts": {
+   "en": [
+    "counting",
+    "remainder (%)",
+    "true and false"
+   ]
+  },
+  "starter": "def has_parity_error(row):\n    # give back true if the number of B is odd\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "has_parity_error('WWWBBW') gives False"
+    },
+    "code": "check(has_parity_error('WWWBBW'), False)"
+   },
+   {
+    "name": {
+     "en": "has_parity_error('WBBWBW') gives True"
+    },
+    "code": "check(has_parity_error('WBBWBW'), True)"
+   },
+   {
+    "name": {
+     "en": "has_parity_error('WWWWWW') gives False"
+    },
+    "code": "check(has_parity_error('WWWWWW'), False)"
+   },
+   {
+    "name": {
+     "en": "has_parity_error('B') gives True"
+    },
+    "code": "check(has_parity_error('B'), True)"
+   },
+   {
+    "name": {
+     "en": "has_parity_error('BBBB') gives False"
+    },
+    "code": "check(has_parity_error('BBBB'), False)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Count how many B letters are in the row.",
+    "A number is odd when its remainder after dividing by 2 is 1.",
+    "Give back the result of comparing: count % 2 == 1."
+   ]
+  },
+  "guided": [],
+  "solution": "def has_parity_error(row):\n    return row.count(\"B\") % 2 == 1\n",
+  "solution_note": {
+   "en": "An even number of black cards is the rule, so an odd count means one card was flipped."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/detect-parity-error-in-row",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-parity-row",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Spot a parity error in a row"
+  },
+  "prompt": {
+   "en": "In the parity magic trick, every row should have an EVEN number of black cards. Write a function hasParityError(row). row is made of B (black) and W (white). Give back true if the row has an error (an odd number of B), and false if it is fine."
+  },
+  "concepts": {
+   "en": [
+    "counting",
+    "remainder (%)",
+    "true and false"
+   ]
+  },
+  "starter": "function hasParityError(row) {\n  // give back true if the number of B is odd\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "hasParityError(\"WWWBBW\") gives false"
+    },
+    "code": "assertEqual(hasParityError(\"WWWBBW\"), false)"
+   },
+   {
+    "name": {
+     "en": "hasParityError(\"WBBWBW\") gives true"
+    },
+    "code": "assertEqual(hasParityError(\"WBBWBW\"), true)"
+   },
+   {
+    "name": {
+     "en": "hasParityError(\"WWWWWW\") gives false"
+    },
+    "code": "assertEqual(hasParityError(\"WWWWWW\"), false)"
+   },
+   {
+    "name": {
+     "en": "hasParityError(\"B\") gives true"
+    },
+    "code": "assertEqual(hasParityError(\"B\"), true)"
+   },
+   {
+    "name": {
+     "en": "hasParityError(\"BBBB\") gives false"
+    },
+    "code": "assertEqual(hasParityError(\"BBBB\"), false)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Count how many B letters are in the row with a loop.",
+    "A number is odd when its remainder after dividing by 2 is 1.",
+    "Give back the result of comparing: count % 2 === 1."
+   ]
+  },
+  "guided": [],
+  "solution": "function hasParityError(row) {\n  let count = 0;\n  for (const card of row) {\n    if (card === \"B\") count++;\n  }\n  return count % 2 === 1;\n}\n",
+  "solution_note": {
+   "en": "An even number of black cards is the rule, so an odd count means one card was flipped."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/detect-parity-error-in-row",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-find-flipped-card",
+  "language": "python",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Find the flipped card"
+  },
+  "prompt": {
+   "en": "A grid of cards is given as a list of rows, like [\"BBW\", \"BWB\", \"WBB\"]. Every row and every column should have an even number of B. Someone flipped one card. Write a function find_flipped_card(rows) that gives back [row, column] of that card, counting from 1. If every row and column is fine, give back None."
+  },
+  "concepts": {
+   "en": [
+    "lists of text",
+    "nested loops",
+    "parity",
+    "error correction"
+   ]
+  },
+  "starter": "def find_flipped_card(rows):\n    # give back [row, column] or null\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "find_flipped_card(['BBW', 'BWW', 'WBB']) gives [2, 3]"
+    },
+    "code": "check(find_flipped_card(['BBW', 'BWW', 'WBB']), [2, 3])"
+   },
+   {
+    "name": {
+     "en": "find_flipped_card(['WBW', 'BWB', 'WBB']) gives [1, 1]"
+    },
+    "code": "check(find_flipped_card(['WBW', 'BWB', 'WBB']), [1, 1])"
+   },
+   {
+    "name": {
+     "en": "find_flipped_card(['BBW', 'BWB', 'WBB']) gives None"
+    },
+    "code": "check(find_flipped_card(['BBW', 'BWB', 'WBB']), None)"
+   },
+   {
+    "name": {
+     "en": "find_flipped_card(['WWWW', 'WWWW', 'WBWW', 'WWWW']) gives [3, 2]"
+    },
+    "code": "check(find_flipped_card(['WWWW', 'WWWW', 'WBWW', 'WWWW']), [3, 2])"
+   }
+  ],
+  "hints": {
+   "en": [
+    "First find the row with an odd number of B. Then find the column with an odd number of B.",
+    "To count a column, look at the same position in every row.",
+    "If you found both, give back [row + 1, column + 1]. If not, nothing was flipped."
+   ]
+  },
+  "guided": [],
+  "solution": "def find_flipped_card(rows):\n    bad_row = None\n    bad_col = None\n    for r in range(len(rows)):\n        if rows[r].count(\"B\") % 2 == 1:\n            bad_row = r\n    for c in range(len(rows[0])):\n        count = 0\n        for row in rows:\n            if row[c] == \"B\":\n                count += 1\n        if count % 2 == 1:\n            bad_col = c\n    if bad_row is None or bad_col is None:\n        return None\n    return [bad_row + 1, bad_col + 1]\n",
+  "solution_note": {
+   "en": "The flipped card is where the odd row and the odd column cross. That is how the magic trick works."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/detect-parity-error-in-any-rows-or-columns",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-find-flipped-card",
+  "language": "javascript",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Find the flipped card"
+  },
+  "prompt": {
+   "en": "A grid of cards is given as a list of rows, like [\"BBW\", \"BWB\", \"WBB\"]. Every row and every column should have an even number of B. Someone flipped one card. Write a function findFlippedCard(rows) that gives back [row, column] of that card, counting from 1. If every row and column is fine, give back null (None in Python)."
+  },
+  "concepts": {
+   "en": [
+    "lists of text",
+    "nested loops",
+    "parity",
+    "error correction"
+   ]
+  },
+  "starter": "function findFlippedCard(rows) {\n  // give back [row, column] or null\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "findFlippedCard([\"BBW\", \"BWW\", \"WBB\"]) gives [2, 3]"
+    },
+    "code": "assertEqual(findFlippedCard([\"BBW\", \"BWW\", \"WBB\"]), [2, 3])"
+   },
+   {
+    "name": {
+     "en": "findFlippedCard([\"WBW\", \"BWB\", \"WBB\"]) gives [1, 1]"
+    },
+    "code": "assertEqual(findFlippedCard([\"WBW\", \"BWB\", \"WBB\"]), [1, 1])"
+   },
+   {
+    "name": {
+     "en": "findFlippedCard([\"BBW\", \"BWB\", \"WBB\"]) gives null"
+    },
+    "code": "assertEqual(findFlippedCard([\"BBW\", \"BWB\", \"WBB\"]), null)"
+   },
+   {
+    "name": {
+     "en": "findFlippedCard([\"WWWW\", \"WWWW\", \"WBWW\", \"WWWW\"]) gives [3, 2]"
+    },
+    "code": "assertEqual(findFlippedCard([\"WWWW\", \"WWWW\", \"WBWW\", \"WWWW\"]), [3, 2])"
+   }
+  ],
+  "hints": {
+   "en": [
+    "First find the row with an odd number of B. Then find the column with an odd number of B.",
+    "To count a column, look at the same position in every row.",
+    "If you found both, give back [row + 1, column + 1]. If not, nothing was flipped."
+   ]
+  },
+  "guided": [],
+  "solution": "function findFlippedCard(rows) {\n  let badRow = -1;\n  let badCol = -1;\n  rows.forEach((row, r) => {\n    let count = 0;\n    for (const card of row) if (card === \"B\") count++;\n    if (count % 2 === 1) badRow = r;\n  });\n  for (let c = 0; c < rows[0].length; c++) {\n    let count = 0;\n    for (const row of rows) if (row[c] === \"B\") count++;\n    if (count % 2 === 1) badCol = c;\n  }\n  if (badRow === -1 || badCol === -1) return null;\n  return [badRow + 1, badCol + 1];\n}\n",
+  "solution_note": {
+   "en": "The flipped card is where the odd row and the odd column cross. That is how the magic trick works."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/detect-parity-error-in-any-rows-or-columns",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-isbn-check-digit",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Book code: the last digit"
+  },
+  "prompt": {
+   "en": "An ISBN-10 book code has 10 digits. The last one is a check digit. Write a function isbn10_check_digit(first9) that gets the first 9 digits as text and gives back the check digit as text. How: multiply the digits by 10, 9, 8 ... 2 and add them up. The check digit is (11 - total % 11) % 11. If that is 10, give back \"X\"."
+  },
+  "concepts": {
+   "en": [
+    "check digits",
+    "loops",
+    "remainder (%)",
+    "text and numbers"
+   ]
+  },
+  "starter": "def isbn10_check_digit(first9):\n    # give back the check digit as text\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "isbn10_check_digit('020153082') gives '1'"
+    },
+    "code": "check(isbn10_check_digit('020153082'), '1')"
+   },
+   {
+    "name": {
+     "en": "isbn10_check_digit('014003219') gives '3'"
+    },
+    "code": "check(isbn10_check_digit('014003219'), '3')"
+   },
+   {
+    "name": {
+     "en": "isbn10_check_digit('052135741') gives '1'"
+    },
+    "code": "check(isbn10_check_digit('052135741'), '1')"
+   },
+   {
+    "name": {
+     "en": "isbn10_check_digit('043942089') gives 'X'"
+    },
+    "code": "check(isbn10_check_digit('043942089'), 'X')"
+   },
+   {
+    "name": {
+     "en": "isbn10_check_digit('000000000') gives '0'"
+    },
+    "code": "check(isbn10_check_digit('000000000'), '0')"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Go through the 9 digits. The first is multiplied by 10, the next by 9, and so on down to 2.",
+    "Turn each character into a number before you multiply.",
+    "Work out (11 - total % 11) % 11. Give back \"X\" for 10, otherwise the number as text."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Add up the digits with their weights."
+    },
+    "explain": {
+     "en": "Give back the total for now: digit 1 times 10, plus digit 2 times 9, ... plus digit 9 times 2."
+    },
+    "solution": "def isbn10_check_digit(first9):\n    total = 0\n    for i in range(9):\n        total += int(first9[i]) * (10 - i)\n    return total\n",
+    "tests": [
+     {
+      "name": {
+       "en": "isbn10_check_digit('020153082') gives 98"
+      },
+      "code": "check(isbn10_check_digit('020153082'), 98)"
+     }
+    ],
+    "starter": "def isbn10_check_digit(first9):\n    # give back the check digit as text\n    pass\n"
+   }
+  ],
+  "solution": "def isbn10_check_digit(first9):\n    total = 0\n    for i in range(9):\n        total += int(first9[i]) * (10 - i)\n    check = (11 - total % 11) % 11\n    if check == 10:\n        return \"X\"\n    return str(check)\n",
+  "solution_note": {
+   "en": "With the check digit added, the weighted total always divides by 11. One wrong digit breaks that."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/calculate-isbn-10-last-digit",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-isbn-check-digit",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Book code: the last digit"
+  },
+  "prompt": {
+   "en": "An ISBN-10 book code has 10 digits. The last one is a check digit. Write a function isbn10CheckDigit(first9) that gets the first 9 digits as text and gives back the check digit as text. How: multiply the digits by 10, 9, 8 ... 2 and add them up. The check digit is (11 - total % 11) % 11. If that is 10, give back \"X\"."
+  },
+  "concepts": {
+   "en": [
+    "check digits",
+    "loops",
+    "remainder (%)",
+    "text and numbers"
+   ]
+  },
+  "starter": "function isbn10CheckDigit(first9) {\n  // give back the check digit as text\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "isbn10CheckDigit(\"020153082\") gives \"1\""
+    },
+    "code": "assertEqual(isbn10CheckDigit(\"020153082\"), \"1\")"
+   },
+   {
+    "name": {
+     "en": "isbn10CheckDigit(\"014003219\") gives \"3\""
+    },
+    "code": "assertEqual(isbn10CheckDigit(\"014003219\"), \"3\")"
+   },
+   {
+    "name": {
+     "en": "isbn10CheckDigit(\"052135741\") gives \"1\""
+    },
+    "code": "assertEqual(isbn10CheckDigit(\"052135741\"), \"1\")"
+   },
+   {
+    "name": {
+     "en": "isbn10CheckDigit(\"043942089\") gives \"X\""
+    },
+    "code": "assertEqual(isbn10CheckDigit(\"043942089\"), \"X\")"
+   },
+   {
+    "name": {
+     "en": "isbn10CheckDigit(\"000000000\") gives \"0\""
+    },
+    "code": "assertEqual(isbn10CheckDigit(\"000000000\"), \"0\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Go through the 9 digits. The first is multiplied by 10, the next by 9, and so on down to 2.",
+    "Turn each character into a number before you multiply.",
+    "Work out (11 - total % 11) % 11. Give back \"X\" for 10, otherwise the number as text."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Add up the digits with their weights."
+    },
+    "explain": {
+     "en": "Give back the total for now: digit 1 times 10, plus digit 2 times 9, ... plus digit 9 times 2."
+    },
+    "solution": "function isbn10CheckDigit(first9) {\n  let total = 0;\n  for (let i = 0; i < 9; i++) {\n    total += Number(first9[i]) * (10 - i);\n  }\n  return total;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "isbn10CheckDigit(\"020153082\") gives 98"
+      },
+      "code": "assertEqual(isbn10CheckDigit(\"020153082\"), 98)"
+     }
+    ],
+    "starter": "function isbn10CheckDigit(first9) {\n  // give back the check digit as text\n}\n"
+   }
+  ],
+  "solution": "function isbn10CheckDigit(first9) {\n  let total = 0;\n  for (let i = 0; i < 9; i++) {\n    total += Number(first9[i]) * (10 - i);\n  }\n  const check = (11 - (total % 11)) % 11;\n  return check === 10 ? \"X\" : String(check);\n}\n",
+  "solution_note": {
+   "en": "With the check digit added, the weighted total always divides by 11. One wrong digit breaks that."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/calculate-isbn-10-last-digit",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-isbn-valid",
+  "language": "python",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Is this book code real?"
+  },
+  "prompt": {
+   "en": "Write a function is_valid_isbn10(code). code is an ISBN-10 as text. It is valid when it has 10 characters, the first 9 are digits, the last is a digit or X (which means 10), and digit 1 times 10 + digit 2 times 9 + ... + digit 10 times 1 divides by 11. Give back True or False."
+  },
+  "concepts": {
+   "en": [
+    "check digits",
+    "validation",
+    "loops",
+    "remainder (%)"
+   ]
+  },
+  "starter": "def is_valid_isbn10(code):\n    # give back true or false\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "is_valid_isbn10('0201530821') gives True"
+    },
+    "code": "check(is_valid_isbn10('0201530821'), True)"
+   },
+   {
+    "name": {
+     "en": "is_valid_isbn10('0140032193') gives True"
+    },
+    "code": "check(is_valid_isbn10('0140032193'), True)"
+   },
+   {
+    "name": {
+     "en": "is_valid_isbn10('0521357411') gives True"
+    },
+    "code": "check(is_valid_isbn10('0521357411'), True)"
+   },
+   {
+    "name": {
+     "en": "is_valid_isbn10('043942089X') gives True"
+    },
+    "code": "check(is_valid_isbn10('043942089X'), True)"
+   },
+   {
+    "name": {
+     "en": "is_valid_isbn10('0201530822') gives False"
+    },
+    "code": "check(is_valid_isbn10('0201530822'), False)"
+   },
+   {
+    "name": {
+     "en": "is_valid_isbn10('1234567890') gives False"
+    },
+    "code": "check(is_valid_isbn10('1234567890'), False)"
+   },
+   {
+    "name": {
+     "en": "is_valid_isbn10('12345') gives False"
+    },
+    "code": "check(is_valid_isbn10('12345'), False)"
+   },
+   {
+    "name": {
+     "en": "is_valid_isbn10('X201530821') gives False"
+    },
+    "code": "check(is_valid_isbn10('X201530821'), False)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "First check the length. Anything but 10 characters is not valid.",
+    "Only the last character may be X, and it counts as 10. Any other letter makes it invalid.",
+    "Multiply each value by 10, 9 ... 1, add them up, and check that total % 11 is 0."
+   ]
+  },
+  "guided": [],
+  "solution": "def is_valid_isbn10(code):\n    if len(code) != 10:\n        return False\n    total = 0\n    for i in range(10):\n        ch = code[i]\n        if ch == \"X\" and i == 9:\n            value = 10\n        elif ch.isdigit():\n            value = int(ch)\n        else:\n            return False\n        total += value * (10 - i)\n    return total % 11 == 0\n",
+  "solution_note": {
+   "en": "Checking the rules in order (length, letters, total) means a bad code is caught before any maths goes wrong."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/check-valid-isbn-10",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-isbn-valid",
+  "language": "javascript",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Is this book code real?"
+  },
+  "prompt": {
+   "en": "Write a function isValidIsbn10(code). code is an ISBN-10 as text. It is valid when it has 10 characters, the first 9 are digits, the last is a digit or X (which means 10), and digit 1 times 10 + digit 2 times 9 + ... + digit 10 times 1 divides by 11. Give back true or false."
+  },
+  "concepts": {
+   "en": [
+    "check digits",
+    "validation",
+    "loops",
+    "remainder (%)"
+   ]
+  },
+  "starter": "function isValidIsbn10(code) {\n  // give back true or false\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "isValidIsbn10(\"0201530821\") gives true"
+    },
+    "code": "assertEqual(isValidIsbn10(\"0201530821\"), true)"
+   },
+   {
+    "name": {
+     "en": "isValidIsbn10(\"0140032193\") gives true"
+    },
+    "code": "assertEqual(isValidIsbn10(\"0140032193\"), true)"
+   },
+   {
+    "name": {
+     "en": "isValidIsbn10(\"0521357411\") gives true"
+    },
+    "code": "assertEqual(isValidIsbn10(\"0521357411\"), true)"
+   },
+   {
+    "name": {
+     "en": "isValidIsbn10(\"043942089X\") gives true"
+    },
+    "code": "assertEqual(isValidIsbn10(\"043942089X\"), true)"
+   },
+   {
+    "name": {
+     "en": "isValidIsbn10(\"0201530822\") gives false"
+    },
+    "code": "assertEqual(isValidIsbn10(\"0201530822\"), false)"
+   },
+   {
+    "name": {
+     "en": "isValidIsbn10(\"1234567890\") gives false"
+    },
+    "code": "assertEqual(isValidIsbn10(\"1234567890\"), false)"
+   },
+   {
+    "name": {
+     "en": "isValidIsbn10(\"12345\") gives false"
+    },
+    "code": "assertEqual(isValidIsbn10(\"12345\"), false)"
+   },
+   {
+    "name": {
+     "en": "isValidIsbn10(\"X201530821\") gives false"
+    },
+    "code": "assertEqual(isValidIsbn10(\"X201530821\"), false)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "First check the length. Anything but 10 characters is not valid.",
+    "Only the last character may be X, and it counts as 10. Any other letter makes it invalid.",
+    "Multiply each value by 10, 9 ... 1, add them up, and check that total % 11 is 0."
+   ]
+  },
+  "guided": [],
+  "solution": "function isValidIsbn10(code) {\n  if (code.length !== 10) return false;\n  let total = 0;\n  for (let i = 0; i < 10; i++) {\n    const ch = code[i];\n    let value;\n    if (ch === \"X\" && i === 9) value = 10;\n    else if (ch >= \"0\" && ch <= \"9\") value = Number(ch);\n    else return false;\n    total += value * (10 - i);\n  }\n  return total % 11 === 0;\n}\n",
+  "solution_note": {
+   "en": "Checking the rules in order (length, letters, total) means a bad code is caught before any maths goes wrong."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/check-valid-isbn-10",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-card-check-digit",
+  "language": "python",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Card number: the last digit"
+  },
+  "prompt": {
+   "en": "Bank card numbers end in a check digit (the Luhn method). Write a function card_check_digit(first15) that gets the first 15 digits as text and gives back the last digit as a number. How: start from the RIGHT of first15. Double the 1st, 3rd, 5th ... digit from the right; if a doubled value is more than 9, subtract 9. Add everything up. The check digit is (10 - total % 10) % 10. (These are made-up test numbers, not real cards.)"
+  },
+  "concepts": {
+   "en": [
+    "check digits",
+    "Luhn method",
+    "loops from the right",
+    "remainder (%)"
+   ]
+  },
+  "starter": "def card_check_digit(first15):\n    # give back the check digit\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "card_check_digit('510510510510510') gives 0"
+    },
+    "code": "check(card_check_digit('510510510510510'), 0)"
+   },
+   {
+    "name": {
+     "en": "card_check_digit('411111111111111') gives 1"
+    },
+    "code": "check(card_check_digit('411111111111111'), 1)"
+   },
+   {
+    "name": {
+     "en": "card_check_digit('555555555555444') gives 4"
+    },
+    "code": "check(card_check_digit('555555555555444'), 4)"
+   },
+   {
+    "name": {
+     "en": "card_check_digit('000000000000000') gives 0"
+    },
+    "code": "check(card_check_digit('000000000000000'), 0)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Go through the digits from right to left. Keep track of the position: 0, 1, 2 ...",
+    "At positions 0, 2, 4 ... double the digit. If that gives more than 9, subtract 9.",
+    "Add all the values. The answer is (10 - total % 10) % 10."
+   ]
+  },
+  "guided": [],
+  "solution": "def card_check_digit(first15):\n    total = 0\n    for i, ch in enumerate(reversed(first15)):\n        value = int(ch)\n        if i % 2 == 0:\n            value *= 2\n            if value > 9:\n                value -= 9\n        total += value\n    return (10 - total % 10) % 10\n",
+  "solution_note": {
+   "en": "Doubling every other digit catches most single mistakes and most swaps of two neighbouring digits."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/calculate-credit-card-last-digit",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-card-check-digit",
+  "language": "javascript",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Card number: the last digit"
+  },
+  "prompt": {
+   "en": "Bank card numbers end in a check digit (the Luhn method). Write a function cardCheckDigit(first15) that gets the first 15 digits as text and gives back the last digit as a number. How: start from the RIGHT of first15. Double the 1st, 3rd, 5th ... digit from the right; if a doubled value is more than 9, subtract 9. Add everything up. The check digit is (10 - total % 10) % 10. (These are made-up test numbers, not real cards.)"
+  },
+  "concepts": {
+   "en": [
+    "check digits",
+    "Luhn method",
+    "loops from the right",
+    "remainder (%)"
+   ]
+  },
+  "starter": "function cardCheckDigit(first15) {\n  // give back the check digit\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "cardCheckDigit(\"510510510510510\") gives 0"
+    },
+    "code": "assertEqual(cardCheckDigit(\"510510510510510\"), 0)"
+   },
+   {
+    "name": {
+     "en": "cardCheckDigit(\"411111111111111\") gives 1"
+    },
+    "code": "assertEqual(cardCheckDigit(\"411111111111111\"), 1)"
+   },
+   {
+    "name": {
+     "en": "cardCheckDigit(\"555555555555444\") gives 4"
+    },
+    "code": "assertEqual(cardCheckDigit(\"555555555555444\"), 4)"
+   },
+   {
+    "name": {
+     "en": "cardCheckDigit(\"000000000000000\") gives 0"
+    },
+    "code": "assertEqual(cardCheckDigit(\"000000000000000\"), 0)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Go through the digits from right to left. Keep track of the position: 0, 1, 2 ...",
+    "At positions 0, 2, 4 ... double the digit. If that gives more than 9, subtract 9.",
+    "Add all the values. The answer is (10 - total % 10) % 10."
+   ]
+  },
+  "guided": [],
+  "solution": "function cardCheckDigit(first15) {\n  let total = 0;\n  const digits = first15.split(\"\").reverse();\n  digits.forEach((ch, i) => {\n    let value = Number(ch);\n    if (i % 2 === 0) {\n      value *= 2;\n      if (value > 9) value -= 9;\n    }\n    total += value;\n  });\n  return (10 - (total % 10)) % 10;\n}\n",
+  "solution_note": {
+   "en": "Doubling every other digit catches most single mistakes and most swaps of two neighbouring digits."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/calculate-credit-card-last-digit",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-card-valid",
+  "language": "python",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Is this card number possible?"
+  },
+  "prompt": {
+   "en": "Write a function is_valid_card(number). number is 16 digits as text. Check it with the Luhn method: from the RIGHT, double every SECOND digit (the 2nd, 4th ...), subtract 9 from any doubled value over 9, and add everything up. The number is valid if it has 16 digits and the total divides by 10. Give back True or False. (Made-up test numbers only.)"
+  },
+  "concepts": {
+   "en": [
+    "check digits",
+    "Luhn method",
+    "validation"
+   ]
+  },
+  "starter": "def is_valid_card(number):\n    # give back true or false\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "is_valid_card('5105105105105100') gives True"
+    },
+    "code": "check(is_valid_card('5105105105105100'), True)"
+   },
+   {
+    "name": {
+     "en": "is_valid_card('4111111111111111') gives True"
+    },
+    "code": "check(is_valid_card('4111111111111111'), True)"
+   },
+   {
+    "name": {
+     "en": "is_valid_card('5555555555554444') gives True"
+    },
+    "code": "check(is_valid_card('5555555555554444'), True)"
+   },
+   {
+    "name": {
+     "en": "is_valid_card('4111111111111112') gives False"
+    },
+    "code": "check(is_valid_card('4111111111111112'), False)"
+   },
+   {
+    "name": {
+     "en": "is_valid_card('1234567812345678') gives False"
+    },
+    "code": "check(is_valid_card('1234567812345678'), False)"
+   },
+   {
+    "name": {
+     "en": "is_valid_card('41111111') gives False"
+    },
+    "code": "check(is_valid_card('41111111'), False)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Check that there are exactly 16 characters and all are digits.",
+    "Go from right to left. Positions 1, 3, 5 ... (counting from 0) are doubled.",
+    "Subtract 9 from doubled values over 9, add everything, and check total % 10 is 0."
+   ]
+  },
+  "guided": [],
+  "solution": "def is_valid_card(number):\n    if len(number) != 16 or not number.isdigit():\n        return False\n    total = 0\n    for i, ch in enumerate(reversed(number)):\n        value = int(ch)\n        if i % 2 == 1:\n            value *= 2\n            if value > 9:\n                value -= 9\n        total += value\n    return total % 10 == 0\n",
+  "solution_note": {
+   "en": "This is the same method as the last-digit problem, run over the whole number."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/check-valid-credit-card",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-card-valid",
+  "language": "javascript",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Is this card number possible?"
+  },
+  "prompt": {
+   "en": "Write a function isValidCard(number). number is 16 digits as text. Check it with the Luhn method: from the RIGHT, double every SECOND digit (the 2nd, 4th ...), subtract 9 from any doubled value over 9, and add everything up. The number is valid if it has 16 digits and the total divides by 10. Give back true or false. (Made-up test numbers only.)"
+  },
+  "concepts": {
+   "en": [
+    "check digits",
+    "Luhn method",
+    "validation"
+   ]
+  },
+  "starter": "function isValidCard(number) {\n  // give back true or false\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "isValidCard(\"5105105105105100\") gives true"
+    },
+    "code": "assertEqual(isValidCard(\"5105105105105100\"), true)"
+   },
+   {
+    "name": {
+     "en": "isValidCard(\"4111111111111111\") gives true"
+    },
+    "code": "assertEqual(isValidCard(\"4111111111111111\"), true)"
+   },
+   {
+    "name": {
+     "en": "isValidCard(\"5555555555554444\") gives true"
+    },
+    "code": "assertEqual(isValidCard(\"5555555555554444\"), true)"
+   },
+   {
+    "name": {
+     "en": "isValidCard(\"4111111111111112\") gives false"
+    },
+    "code": "assertEqual(isValidCard(\"4111111111111112\"), false)"
+   },
+   {
+    "name": {
+     "en": "isValidCard(\"1234567812345678\") gives false"
+    },
+    "code": "assertEqual(isValidCard(\"1234567812345678\"), false)"
+   },
+   {
+    "name": {
+     "en": "isValidCard(\"41111111\") gives false"
+    },
+    "code": "assertEqual(isValidCard(\"41111111\"), false)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Check that there are exactly 16 characters and all are digits.",
+    "Go from right to left. Positions 1, 3, 5 ... (counting from 0) are doubled.",
+    "Subtract 9 from doubled values over 9, add everything, and check total % 10 is 0."
+   ]
+  },
+  "guided": [],
+  "solution": "function isValidCard(number) {\n  if (number.length !== 16 || !/^[0-9]+$/.test(number)) return false;\n  let total = 0;\n  number.split(\"\").reverse().forEach((ch, i) => {\n    let value = Number(ch);\n    if (i % 2 === 1) {\n      value *= 2;\n      if (value > 9) value -= 9;\n    }\n    total += value;\n  });\n  return total % 10 === 0;\n}\n",
+  "solution_note": {
+   "en": "This is the same method as the last-digit problem, run over the whole number."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/check-valid-credit-card",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-barcode-check-digit",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Barcode: the last digit"
+  },
+  "prompt": {
+   "en": "A 13-digit barcode ends in a check digit. Write a function barcode_check_digit(first12) that gets the first 12 digits as text and gives back the last digit as a number. How: add the digits, but multiply every second one (the 2nd, 4th, 6th ...) by 3. The check digit is (10 - total % 10) % 10."
+  },
+  "concepts": {
+   "en": [
+    "check digits",
+    "loops",
+    "remainder (%)"
+   ]
+  },
+  "starter": "def barcode_check_digit(first12):\n    # give back the check digit\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "barcode_check_digit('941887000085') gives 2"
+    },
+    "code": "check(barcode_check_digit('941887000085'), 2)"
+   },
+   {
+    "name": {
+     "en": "barcode_check_digit('941527700012') gives 6"
+    },
+    "code": "check(barcode_check_digit('941527700012'), 6)"
+   },
+   {
+    "name": {
+     "en": "barcode_check_digit('930072885454') gives 3"
+    },
+    "code": "check(barcode_check_digit('930072885454'), 3)"
+   },
+   {
+    "name": {
+     "en": "barcode_check_digit('932835000371') gives 9"
+    },
+    "code": "check(barcode_check_digit('932835000371'), 9)"
+   },
+   {
+    "name": {
+     "en": "barcode_check_digit('000000000000') gives 0"
+    },
+    "code": "check(barcode_check_digit('000000000000'), 0)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Go through the 12 digits with their position: 0, 1, 2 ...",
+    "Digits at positions 1, 3, 5 ... are multiplied by 3. The others count once.",
+    "Add them all. The answer is (10 - total % 10) % 10."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Add up the digits with weights 1 and 3."
+    },
+    "explain": {
+     "en": "Give back the total for now. Positions 0, 2, 4 ... count once; positions 1, 3, 5 ... count three times."
+    },
+    "solution": "def barcode_check_digit(first12):\n    total = 0\n    for i in range(12):\n        weight = 3 if i % 2 == 1 else 1\n        total += int(first12[i]) * weight\n    return total\n",
+    "tests": [
+     {
+      "name": {
+       "en": "barcode_check_digit('941887000085') gives 98"
+      },
+      "code": "check(barcode_check_digit('941887000085'), 98)"
+     }
+    ],
+    "starter": "def barcode_check_digit(first12):\n    # give back the check digit\n    pass\n"
+   }
+  ],
+  "solution": "def barcode_check_digit(first12):\n    total = 0\n    for i in range(12):\n        weight = 3 if i % 2 == 1 else 1\n        total += int(first12[i]) * weight\n    return (10 - total % 10) % 10\n",
+  "solution_note": {
+   "en": "The check digit makes the weighted total a multiple of 10, so a scanner can spot a misread digit."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/product-code-13-last-digit-one-line",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-barcode-check-digit",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Barcode: the last digit"
+  },
+  "prompt": {
+   "en": "A 13-digit barcode ends in a check digit. Write a function barcodeCheckDigit(first12) that gets the first 12 digits as text and gives back the last digit as a number. How: add the digits, but multiply every second one (the 2nd, 4th, 6th ...) by 3. The check digit is (10 - total % 10) % 10."
+  },
+  "concepts": {
+   "en": [
+    "check digits",
+    "loops",
+    "remainder (%)"
+   ]
+  },
+  "starter": "function barcodeCheckDigit(first12) {\n  // give back the check digit\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "barcodeCheckDigit(\"941887000085\") gives 2"
+    },
+    "code": "assertEqual(barcodeCheckDigit(\"941887000085\"), 2)"
+   },
+   {
+    "name": {
+     "en": "barcodeCheckDigit(\"941527700012\") gives 6"
+    },
+    "code": "assertEqual(barcodeCheckDigit(\"941527700012\"), 6)"
+   },
+   {
+    "name": {
+     "en": "barcodeCheckDigit(\"930072885454\") gives 3"
+    },
+    "code": "assertEqual(barcodeCheckDigit(\"930072885454\"), 3)"
+   },
+   {
+    "name": {
+     "en": "barcodeCheckDigit(\"932835000371\") gives 9"
+    },
+    "code": "assertEqual(barcodeCheckDigit(\"932835000371\"), 9)"
+   },
+   {
+    "name": {
+     "en": "barcodeCheckDigit(\"000000000000\") gives 0"
+    },
+    "code": "assertEqual(barcodeCheckDigit(\"000000000000\"), 0)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Go through the 12 digits with their position: 0, 1, 2 ...",
+    "Digits at positions 1, 3, 5 ... are multiplied by 3. The others count once.",
+    "Add them all. The answer is (10 - total % 10) % 10."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Add up the digits with weights 1 and 3."
+    },
+    "explain": {
+     "en": "Give back the total for now. Positions 0, 2, 4 ... count once; positions 1, 3, 5 ... count three times."
+    },
+    "solution": "function barcodeCheckDigit(first12) {\n  let total = 0;\n  for (let i = 0; i < 12; i++) {\n    const weight = i % 2 === 1 ? 3 : 1;\n    total += Number(first12[i]) * weight;\n  }\n  return total;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "barcodeCheckDigit(\"941887000085\") gives 98"
+      },
+      "code": "assertEqual(barcodeCheckDigit(\"941887000085\"), 98)"
+     }
+    ],
+    "starter": "function barcodeCheckDigit(first12) {\n  // give back the check digit\n}\n"
+   }
+  ],
+  "solution": "function barcodeCheckDigit(first12) {\n  let total = 0;\n  for (let i = 0; i < 12; i++) {\n    const weight = i % 2 === 1 ? 3 : 1;\n    total += Number(first12[i]) * weight;\n  }\n  return (10 - (total % 10)) % 10;\n}\n",
+  "solution_note": {
+   "en": "The check digit makes the weighted total a multiple of 10, so a scanner can spot a misread digit."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/product-code-13-last-digit-one-line",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-barcode-valid",
+  "language": "python",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Check any barcode"
+  },
+  "prompt": {
+   "en": "Barcodes can have 8, 12 or 13 digits. Write a function is_valid_barcode(code) that checks any of them. Start from the RIGHT: the last digit counts once, the next one three times, then once, then three times, and so on. The code is valid if the total divides by 10. Give back True or False."
+  },
+  "concepts": {
+   "en": [
+    "check digits",
+    "loops from the right",
+    "validation"
+   ]
+  },
+  "starter": "def is_valid_barcode(code):\n    # give back true or false\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "is_valid_barcode('50184385') gives True"
+    },
+    "code": "check(is_valid_barcode('50184385'), True)"
+   },
+   {
+    "name": {
+     "en": "is_valid_barcode('036000241457') gives True"
+    },
+    "code": "check(is_valid_barcode('036000241457'), True)"
+   },
+   {
+    "name": {
+     "en": "is_valid_barcode('50174385') gives False"
+    },
+    "code": "check(is_valid_barcode('50174385'), False)"
+   },
+   {
+    "name": {
+     "en": "is_valid_barcode('9330462119318') gives True"
+    },
+    "code": "check(is_valid_barcode('9330462119318'), True)"
+   },
+   {
+    "name": {
+     "en": "is_valid_barcode('9418870000852') gives True"
+    },
+    "code": "check(is_valid_barcode('9418870000852'), True)"
+   },
+   {
+    "name": {
+     "en": "is_valid_barcode('9418870000853') gives False"
+    },
+    "code": "check(is_valid_barcode('9418870000853'), False)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Going from the right works for every length, because the last digit always counts once.",
+    "Positions 0, 2, 4 ... from the right count once. Positions 1, 3, 5 ... count three times.",
+    "Give back whether total % 10 is 0."
+   ]
+  },
+  "guided": [],
+  "solution": "def is_valid_barcode(code):\n    total = 0\n    for i, ch in enumerate(reversed(code)):\n        weight = 3 if i % 2 == 1 else 1\n        total += int(ch) * weight\n    return total % 10 == 0\n",
+  "solution_note": {
+   "en": "Counting from the right lines up the weights for 8-, 12- and 13-digit codes alike."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/product-code-check-valid-any-length",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-barcode-valid",
+  "language": "javascript",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Check any barcode"
+  },
+  "prompt": {
+   "en": "Barcodes can have 8, 12 or 13 digits. Write a function isValidBarcode(code) that checks any of them. Start from the RIGHT: the last digit counts once, the next one three times, then once, then three times, and so on. The code is valid if the total divides by 10. Give back true or false."
+  },
+  "concepts": {
+   "en": [
+    "check digits",
+    "loops from the right",
+    "validation"
+   ]
+  },
+  "starter": "function isValidBarcode(code) {\n  // give back true or false\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "isValidBarcode(\"50184385\") gives true"
+    },
+    "code": "assertEqual(isValidBarcode(\"50184385\"), true)"
+   },
+   {
+    "name": {
+     "en": "isValidBarcode(\"036000241457\") gives true"
+    },
+    "code": "assertEqual(isValidBarcode(\"036000241457\"), true)"
+   },
+   {
+    "name": {
+     "en": "isValidBarcode(\"50174385\") gives false"
+    },
+    "code": "assertEqual(isValidBarcode(\"50174385\"), false)"
+   },
+   {
+    "name": {
+     "en": "isValidBarcode(\"9330462119318\") gives true"
+    },
+    "code": "assertEqual(isValidBarcode(\"9330462119318\"), true)"
+   },
+   {
+    "name": {
+     "en": "isValidBarcode(\"9418870000852\") gives true"
+    },
+    "code": "assertEqual(isValidBarcode(\"9418870000852\"), true)"
+   },
+   {
+    "name": {
+     "en": "isValidBarcode(\"9418870000853\") gives false"
+    },
+    "code": "assertEqual(isValidBarcode(\"9418870000853\"), false)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Going from the right works for every length, because the last digit always counts once.",
+    "Positions 0, 2, 4 ... from the right count once. Positions 1, 3, 5 ... count three times.",
+    "Give back whether total % 10 is 0."
+   ]
+  },
+  "guided": [],
+  "solution": "function isValidBarcode(code) {\n  let total = 0;\n  code.split(\"\").reverse().forEach((ch, i) => {\n    const weight = i % 2 === 1 ? 3 : 1;\n    total += Number(ch) * weight;\n  });\n  return total % 10 === 0;\n}\n",
+  "solution_note": {
+   "en": "Counting from the right lines up the weights for 8-, 12- and 13-digit codes alike."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/product-code-check-valid-any-length",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-add-in-parts",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Add in parts"
+  },
+  "prompt": {
+   "en": "A quick way to add is to make a ten first. Write a function add_in_parts(a, b) where a is under 100 and b is under 10. If the last digit of a plus b is MORE than 10, split b to make a ten first, like \"(87 + 3) + 4 = 94\". Otherwise just write it out, like \"75 + 4 = 79\". Give back the text."
+  },
+  "concepts": {
+   "en": [
+    "remainder (%)",
+    "if / else",
+    "building text"
+   ]
+  },
+  "starter": "def add_in_parts(a, b):\n    # give back the sum written out\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "add_in_parts(87, 7) gives '(87 + 3) + 4 = 94'"
+    },
+    "code": "check(add_in_parts(87, 7), '(87 + 3) + 4 = 94')"
+   },
+   {
+    "name": {
+     "en": "add_in_parts(54, 9) gives '(54 + 6) + 3 = 63'"
+    },
+    "code": "check(add_in_parts(54, 9), '(54 + 6) + 3 = 63')"
+   },
+   {
+    "name": {
+     "en": "add_in_parts(75, 4) gives '75 + 4 = 79'"
+    },
+    "code": "check(add_in_parts(75, 4), '75 + 4 = 79')"
+   },
+   {
+    "name": {
+     "en": "add_in_parts(76, 4) gives '76 + 4 = 80'"
+    },
+    "code": "check(add_in_parts(76, 4), '76 + 4 = 80')"
+   },
+   {
+    "name": {
+     "en": "add_in_parts(8, 5) gives '(8 + 2) + 3 = 13'"
+    },
+    "code": "check(add_in_parts(8, 5), '(8 + 2) + 3 = 13')"
+   }
+  ],
+  "hints": {
+   "en": [
+    "The last digit of a is a % 10.",
+    "To make a ten you need 10 - a % 10. The rest of b is b minus that.",
+    "Only split when a % 10 + b is more than 10. Put the numbers into the text with spaces exactly as shown."
+   ]
+  },
+  "guided": [],
+  "solution": "def add_in_parts(a, b):\n    if a % 10 + b > 10:\n        to_ten = 10 - a % 10\n        rest = b - to_ten\n        return f\"({a} + {to_ten}) + {rest} = {a + b}\"\n    return f\"{a} + {b} = {a + b}\"\n",
+  "solution_note": {
+   "en": "Making a ten first is a mental-maths trick. The program does the same steps you would do in your head."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/add-in-parts-2-digit-number",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-add-in-parts",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Add in parts"
+  },
+  "prompt": {
+   "en": "A quick way to add is to make a ten first. Write a function addInParts(a, b) where a is under 100 and b is under 10. If the last digit of a plus b is MORE than 10, split b to make a ten first, like \"(87 + 3) + 4 = 94\". Otherwise just write it out, like \"75 + 4 = 79\". Give back the text."
+  },
+  "concepts": {
+   "en": [
+    "remainder (%)",
+    "if / else",
+    "building text"
+   ]
+  },
+  "starter": "function addInParts(a, b) {\n  // give back the sum written out\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "addInParts(87, 7) gives \"(87 + 3) + 4 = 94\""
+    },
+    "code": "assertEqual(addInParts(87, 7), \"(87 + 3) + 4 = 94\")"
+   },
+   {
+    "name": {
+     "en": "addInParts(54, 9) gives \"(54 + 6) + 3 = 63\""
+    },
+    "code": "assertEqual(addInParts(54, 9), \"(54 + 6) + 3 = 63\")"
+   },
+   {
+    "name": {
+     "en": "addInParts(75, 4) gives \"75 + 4 = 79\""
+    },
+    "code": "assertEqual(addInParts(75, 4), \"75 + 4 = 79\")"
+   },
+   {
+    "name": {
+     "en": "addInParts(76, 4) gives \"76 + 4 = 80\""
+    },
+    "code": "assertEqual(addInParts(76, 4), \"76 + 4 = 80\")"
+   },
+   {
+    "name": {
+     "en": "addInParts(8, 5) gives \"(8 + 2) + 3 = 13\""
+    },
+    "code": "assertEqual(addInParts(8, 5), \"(8 + 2) + 3 = 13\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "The last digit of a is a % 10.",
+    "To make a ten you need 10 - a % 10. The rest of b is b minus that.",
+    "Only split when a % 10 + b is more than 10. Put the numbers into the text with spaces exactly as shown."
+   ]
+  },
+  "guided": [],
+  "solution": "function addInParts(a, b) {\n  if ((a % 10) + b > 10) {\n    const toTen = 10 - (a % 10);\n    const rest = b - toTen;\n    return `(${a} + ${toTen}) + ${rest} = ${a + b}`;\n  }\n  return `${a} + ${b} = ${a + b}`;\n}\n",
+  "solution_note": {
+   "en": "Making a ten first is a mental-maths trick. The program does the same steps you would do in your head."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/add-in-parts-2-digit-number",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-power",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Power of a number"
+  },
+  "prompt": {
+   "en": "Write a function power(base, exponent). It gives back base multiplied by itself exponent times. exponent is 0 or more, and anything to the power 0 is 1. Use a loop, not the built-in power operator."
+  },
+  "concepts": {
+   "en": [
+    "loops",
+    "multiplying",
+    "exponents"
+   ]
+  },
+  "starter": "def power(base, exponent):\n    # give back base to the power exponent\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "power(3, 5) gives 243"
+    },
+    "code": "check(power(3, 5), 243)"
+   },
+   {
+    "name": {
+     "en": "power(-2, 4) gives 16"
+    },
+    "code": "check(power(-2, 4), 16)"
+   },
+   {
+    "name": {
+     "en": "power(2, 0) gives 1"
+    },
+    "code": "check(power(2, 0), 1)"
+   },
+   {
+    "name": {
+     "en": "power(5, 1) gives 5"
+    },
+    "code": "check(power(5, 1), 5)"
+   },
+   {
+    "name": {
+     "en": "power(-3, 3) gives -27"
+    },
+    "code": "check(power(-3, 3), -27)"
+   },
+   {
+    "name": {
+     "en": "power(10, 3) gives 1000"
+    },
+    "code": "check(power(10, 3), 1000)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Start with result = 1.",
+    "Repeat exponent times: multiply result by base.",
+    "If exponent is 0 the loop never runs, so the answer stays 1."
+   ]
+  },
+  "guided": [],
+  "solution": "def power(base, exponent):\n    result = 1\n    for i in range(exponent):\n        result *= base\n    return result\n",
+  "solution_note": {
+   "en": "Repeated multiplying is exactly what a power means."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/calculate-exponents",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-power",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Power of a number"
+  },
+  "prompt": {
+   "en": "Write a function power(base, exponent). It gives back base multiplied by itself exponent times. exponent is 0 or more, and anything to the power 0 is 1. Use a loop, not the built-in power operator."
+  },
+  "concepts": {
+   "en": [
+    "loops",
+    "multiplying",
+    "exponents"
+   ]
+  },
+  "starter": "function power(base, exponent) {\n  // give back base to the power exponent\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "power(3, 5) gives 243"
+    },
+    "code": "assertEqual(power(3, 5), 243)"
+   },
+   {
+    "name": {
+     "en": "power(-2, 4) gives 16"
+    },
+    "code": "assertEqual(power(-2, 4), 16)"
+   },
+   {
+    "name": {
+     "en": "power(2, 0) gives 1"
+    },
+    "code": "assertEqual(power(2, 0), 1)"
+   },
+   {
+    "name": {
+     "en": "power(5, 1) gives 5"
+    },
+    "code": "assertEqual(power(5, 1), 5)"
+   },
+   {
+    "name": {
+     "en": "power(-3, 3) gives -27"
+    },
+    "code": "assertEqual(power(-3, 3), -27)"
+   },
+   {
+    "name": {
+     "en": "power(10, 3) gives 1000"
+    },
+    "code": "assertEqual(power(10, 3), 1000)"
+   },
+   {
+    "name": {
+     "en": "It uses a loop, not ** or Math.pow"
+    },
+    "code": "assert(!power.toString().includes(\"**\") && !power.toString().includes(\"Math.pow\"), \"Please use a loop.\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Start with result = 1.",
+    "Repeat exponent times: multiply result by base.",
+    "If exponent is 0 the loop never runs, so the answer stays 1."
+   ]
+  },
+  "guided": [],
+  "solution": "function power(base, exponent) {\n  let result = 1;\n  for (let i = 0; i < exponent; i++) {\n    result *= base;\n  }\n  return result;\n}\n",
+  "solution_note": {
+   "en": "Repeated multiplying is exactly what a power means."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/calculate-exponents",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-inside-angle",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Inside angle of a shape"
+  },
+  "prompt": {
+   "en": "In a regular shape all sides and angles are the same. Write a function inside_angle(sides) that gives back the size of each inside angle in degrees. The rule is (sides - 2) times 180, divided by sides. Example: a square (4 sides) has 90 degree angles."
+  },
+  "concepts": {
+   "en": [
+    "maths in code",
+    "functions",
+    "division"
+   ]
+  },
+  "starter": "def inside_angle(sides):\n    # give back the inside angle\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "inside_angle(3) gives 60"
+    },
+    "code": "check(inside_angle(3), 60)"
+   },
+   {
+    "name": {
+     "en": "inside_angle(4) gives 90"
+    },
+    "code": "check(inside_angle(4), 90)"
+   },
+   {
+    "name": {
+     "en": "inside_angle(5) gives 108"
+    },
+    "code": "check(inside_angle(5), 108)"
+   },
+   {
+    "name": {
+     "en": "inside_angle(6) gives 120"
+    },
+    "code": "check(inside_angle(6), 120)"
+   },
+   {
+    "name": {
+     "en": "inside_angle(10) gives 144"
+    },
+    "code": "check(inside_angle(10), 144)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "You only need the formula from the problem.",
+    "Work out sides - 2 first, then multiply by 180.",
+    "Divide by sides and give back the result."
+   ]
+  },
+  "guided": [],
+  "solution": "def inside_angle(sides):\n    return (sides - 2) * 180 / sides\n",
+  "solution_note": {
+   "en": "A shape with n sides can be cut into n - 2 triangles, and each triangle has 180 degrees."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/calculate-inside-angles-of-regular-polygons",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-inside-angle",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Inside angle of a shape"
+  },
+  "prompt": {
+   "en": "In a regular shape all sides and angles are the same. Write a function insideAngle(sides) that gives back the size of each inside angle in degrees. The rule is (sides - 2) times 180, divided by sides. Example: a square (4 sides) has 90 degree angles."
+  },
+  "concepts": {
+   "en": [
+    "maths in code",
+    "functions",
+    "division"
+   ]
+  },
+  "starter": "function insideAngle(sides) {\n  // give back the inside angle\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "insideAngle(3) gives 60"
+    },
+    "code": "assertEqual(insideAngle(3), 60)"
+   },
+   {
+    "name": {
+     "en": "insideAngle(4) gives 90"
+    },
+    "code": "assertEqual(insideAngle(4), 90)"
+   },
+   {
+    "name": {
+     "en": "insideAngle(5) gives 108"
+    },
+    "code": "assertEqual(insideAngle(5), 108)"
+   },
+   {
+    "name": {
+     "en": "insideAngle(6) gives 120"
+    },
+    "code": "assertEqual(insideAngle(6), 120)"
+   },
+   {
+    "name": {
+     "en": "insideAngle(10) gives 144"
+    },
+    "code": "assertEqual(insideAngle(10), 144)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "You only need the formula from the problem.",
+    "Work out sides - 2 first, then multiply by 180.",
+    "Divide by sides and give back the result."
+   ]
+  },
+  "guided": [],
+  "solution": "function insideAngle(sides) {\n  return (sides - 2) * 180 / sides;\n}\n",
+  "solution_note": {
+   "en": "A shape with n sides can be cut into n - 2 triangles, and each triangle has 180 degrees."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/calculate-inside-angles-of-regular-polygons",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-is-divisor",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "8-10",
+  "topic": "general",
+  "title": {
+   "en": "Does it divide?"
+  },
+  "prompt": {
+   "en": "Write a function is_divisor(number, divisor). Give back True if divisor goes into number with nothing left over, and False if not."
+  },
+  "concepts": {
+   "en": [
+    "remainder (%)",
+    "true and false"
+   ]
+  },
+  "starter": "def is_divisor(number, divisor):\n    # give back true or false\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "is_divisor(20, 4) gives True"
+    },
+    "code": "check(is_divisor(20, 4), True)"
+   },
+   {
+    "name": {
+     "en": "is_divisor(20, 6) gives False"
+    },
+    "code": "check(is_divisor(20, 6), False)"
+   },
+   {
+    "name": {
+     "en": "is_divisor(7, 7) gives True"
+    },
+    "code": "check(is_divisor(7, 7), True)"
+   },
+   {
+    "name": {
+     "en": "is_divisor(9, 1) gives True"
+    },
+    "code": "check(is_divisor(9, 1), True)"
+   },
+   {
+    "name": {
+     "en": "is_divisor(10, 3) gives False"
+    },
+    "code": "check(is_divisor(10, 3), False)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "The remainder of number divided by divisor is number % divisor.",
+    "Nothing left over means the remainder is 0.",
+    "Give back the result of comparing the remainder with 0."
+   ]
+  },
+  "guided": [],
+  "solution": "def is_divisor(number, divisor):\n    return number % divisor == 0\n",
+  "solution_note": {
+   "en": "% gives what is left over after dividing. Zero left over means it divides exactly."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/check-if-divisor",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-is-divisor",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "8-10",
+  "topic": "general",
+  "title": {
+   "en": "Does it divide?"
+  },
+  "prompt": {
+   "en": "Write a function isDivisor(number, divisor). Give back true if divisor goes into number with nothing left over, and false if not."
+  },
+  "concepts": {
+   "en": [
+    "remainder (%)",
+    "true and false"
+   ]
+  },
+  "starter": "function isDivisor(number, divisor) {\n  // give back true or false\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "isDivisor(20, 4) gives true"
+    },
+    "code": "assertEqual(isDivisor(20, 4), true)"
+   },
+   {
+    "name": {
+     "en": "isDivisor(20, 6) gives false"
+    },
+    "code": "assertEqual(isDivisor(20, 6), false)"
+   },
+   {
+    "name": {
+     "en": "isDivisor(7, 7) gives true"
+    },
+    "code": "assertEqual(isDivisor(7, 7), true)"
+   },
+   {
+    "name": {
+     "en": "isDivisor(9, 1) gives true"
+    },
+    "code": "assertEqual(isDivisor(9, 1), true)"
+   },
+   {
+    "name": {
+     "en": "isDivisor(10, 3) gives false"
+    },
+    "code": "assertEqual(isDivisor(10, 3), false)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "The remainder of number divided by divisor is number % divisor.",
+    "Nothing left over means the remainder is 0.",
+    "Give back the result of comparing the remainder with 0."
+   ]
+  },
+  "guided": [],
+  "solution": "function isDivisor(number, divisor) {\n  return number % divisor === 0;\n}\n",
+  "solution_note": {
+   "en": "% gives what is left over after dividing. Zero left over means it divides exactly."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/check-if-divisor",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-factors",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "All the factors"
+  },
+  "prompt": {
+   "en": "A factor of n is a whole number that divides n exactly. Write a function factors(n) that gives back all the factors of n, smallest first. n is 1 or more."
+  },
+  "concepts": {
+   "en": [
+    "loops",
+    "remainder (%)",
+    "lists"
+   ]
+  },
+  "starter": "def factors(n):\n    # give back a list of factors\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "factors(12) gives [1, 2, 3, 4, 6, 12]"
+    },
+    "code": "check(factors(12), [1, 2, 3, 4, 6, 12])"
+   },
+   {
+    "name": {
+     "en": "factors(61) gives [1, 61]"
+    },
+    "code": "check(factors(61), [1, 61])"
+   },
+   {
+    "name": {
+     "en": "factors(1) gives [1]"
+    },
+    "code": "check(factors(1), [1])"
+   },
+   {
+    "name": {
+     "en": "factors(16) gives [1, 2, 4, 8, 16]"
+    },
+    "code": "check(factors(16), [1, 2, 4, 8, 16])"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Try every number from 1 up to n.",
+    "A number d is a factor when n % d is 0.",
+    "Add each factor to a list, and give back the list at the end."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Make a list of every number from 1 to n."
+    },
+    "explain": {
+     "en": "Loop from 1 to n and add each number to a list. Next you will keep only the factors."
+    },
+    "solution": "def factors(n):\n    result = []\n    for d in range(1, n + 1):\n        result.append(d)\n    return result\n",
+    "tests": [
+     {
+      "name": {
+       "en": "factors(4) gives [1, 2, 3, 4]"
+      },
+      "code": "check(factors(4), [1, 2, 3, 4])"
+     }
+    ],
+    "starter": "def factors(n):\n    # give back a list of factors\n    pass\n"
+   }
+  ],
+  "solution": "def factors(n):\n    result = []\n    for d in range(1, n + 1):\n        if n % d == 0:\n            result.append(d)\n    return result\n",
+  "solution_note": {
+   "en": "Checking every number from 1 to n is slow for big n, but it is simple and always right."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/find-factors",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-factors",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "All the factors"
+  },
+  "prompt": {
+   "en": "A factor of n is a whole number that divides n exactly. Write a function factors(n) that gives back all the factors of n, smallest first. n is 1 or more."
+  },
+  "concepts": {
+   "en": [
+    "loops",
+    "remainder (%)",
+    "lists"
+   ]
+  },
+  "starter": "function factors(n) {\n  // give back a list of factors\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "factors(12) gives [1, 2, 3, 4, 6, 12]"
+    },
+    "code": "assertEqual(factors(12), [1, 2, 3, 4, 6, 12])"
+   },
+   {
+    "name": {
+     "en": "factors(61) gives [1, 61]"
+    },
+    "code": "assertEqual(factors(61), [1, 61])"
+   },
+   {
+    "name": {
+     "en": "factors(1) gives [1]"
+    },
+    "code": "assertEqual(factors(1), [1])"
+   },
+   {
+    "name": {
+     "en": "factors(16) gives [1, 2, 4, 8, 16]"
+    },
+    "code": "assertEqual(factors(16), [1, 2, 4, 8, 16])"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Try every number from 1 up to n.",
+    "A number d is a factor when n % d is 0.",
+    "Add each factor to a list, and give back the list at the end."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Make a list of every number from 1 to n."
+    },
+    "explain": {
+     "en": "Loop from 1 to n and add each number to a list. Next you will keep only the factors."
+    },
+    "solution": "function factors(n) {\n  const result = [];\n  for (let d = 1; d <= n; d++) {\n    result.push(d);\n  }\n  return result;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "factors(4) gives [1, 2, 3, 4]"
+      },
+      "code": "assertEqual(factors(4), [1, 2, 3, 4])"
+     }
+    ],
+    "starter": "function factors(n) {\n  // give back a list of factors\n}\n"
+   }
+  ],
+  "solution": "function factors(n) {\n  const result = [];\n  for (let d = 1; d <= n; d++) {\n    if (n % d === 0) result.push(d);\n  }\n  return result;\n}\n",
+  "solution_note": {
+   "en": "Checking every number from 1 to n is slow for big n, but it is simple and always right."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/find-factors",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-is-prime",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Is it a prime?"
+  },
+  "prompt": {
+   "en": "A prime is a whole number bigger than 1 whose only factors are 1 and itself. Write a function is_prime(n) that gives back True if n is prime, and False if not."
+  },
+  "concepts": {
+   "en": [
+    "loops",
+    "remainder (%)",
+    "early return"
+   ]
+  },
+  "starter": "def is_prime(n):\n    # give back true or false\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "is_prime(73) gives True"
+    },
+    "code": "check(is_prime(73), True)"
+   },
+   {
+    "name": {
+     "en": "is_prime(123) gives False"
+    },
+    "code": "check(is_prime(123), False)"
+   },
+   {
+    "name": {
+     "en": "is_prime(1) gives False"
+    },
+    "code": "check(is_prime(1), False)"
+   },
+   {
+    "name": {
+     "en": "is_prime(0) gives False"
+    },
+    "code": "check(is_prime(0), False)"
+   },
+   {
+    "name": {
+     "en": "is_prime(2) gives True"
+    },
+    "code": "check(is_prime(2), True)"
+   },
+   {
+    "name": {
+     "en": "is_prime(97) gives True"
+    },
+    "code": "check(is_prime(97), True)"
+   },
+   {
+    "name": {
+     "en": "is_prime(91) gives False"
+    },
+    "code": "check(is_prime(91), False)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Numbers below 2 are never prime.",
+    "Try dividing n by every number from 2 up to n - 1.",
+    "If any of them divides n exactly, give back False straight away. If none do, give back True."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Handle the small numbers."
+    },
+    "explain": {
+     "en": "Give back False if n is less than 2, and True otherwise (for now)."
+    },
+    "solution": "def is_prime(n):\n    if n < 2:\n        return False\n    return True\n",
+    "tests": [
+     {
+      "name": {
+       "en": "is_prime(1) gives False"
+      },
+      "code": "check(is_prime(1), False)"
+     },
+     {
+      "name": {
+       "en": "is_prime(0) gives False"
+      },
+      "code": "check(is_prime(0), False)"
+     },
+     {
+      "name": {
+       "en": "is_prime(7) gives True"
+      },
+      "code": "check(is_prime(7), True)"
+     }
+    ],
+    "starter": "def is_prime(n):\n    # give back true or false\n    pass\n"
+   }
+  ],
+  "solution": "def is_prime(n):\n    if n < 2:\n        return False\n    for d in range(2, n):\n        if n % d == 0:\n            return False\n    return True\n",
+  "solution_note": {
+   "en": "One factor is enough to prove a number is not prime, so the loop can stop early."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/check-prime",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-is-prime",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Is it a prime?"
+  },
+  "prompt": {
+   "en": "A prime is a whole number bigger than 1 whose only factors are 1 and itself. Write a function isPrime(n) that gives back true if n is prime, and false if not."
+  },
+  "concepts": {
+   "en": [
+    "loops",
+    "remainder (%)",
+    "early return"
+   ]
+  },
+  "starter": "function isPrime(n) {\n  // give back true or false\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "isPrime(73) gives true"
+    },
+    "code": "assertEqual(isPrime(73), true)"
+   },
+   {
+    "name": {
+     "en": "isPrime(123) gives false"
+    },
+    "code": "assertEqual(isPrime(123), false)"
+   },
+   {
+    "name": {
+     "en": "isPrime(1) gives false"
+    },
+    "code": "assertEqual(isPrime(1), false)"
+   },
+   {
+    "name": {
+     "en": "isPrime(0) gives false"
+    },
+    "code": "assertEqual(isPrime(0), false)"
+   },
+   {
+    "name": {
+     "en": "isPrime(2) gives true"
+    },
+    "code": "assertEqual(isPrime(2), true)"
+   },
+   {
+    "name": {
+     "en": "isPrime(97) gives true"
+    },
+    "code": "assertEqual(isPrime(97), true)"
+   },
+   {
+    "name": {
+     "en": "isPrime(91) gives false"
+    },
+    "code": "assertEqual(isPrime(91), false)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Numbers below 2 are never prime.",
+    "Try dividing n by every number from 2 up to n - 1.",
+    "If any of them divides n exactly, give back false straight away. If none do, give back true."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Handle the small numbers."
+    },
+    "explain": {
+     "en": "Give back false if n is less than 2, and true otherwise (for now)."
+    },
+    "solution": "function isPrime(n) {\n  if (n < 2) return false;\n  return true;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "isPrime(1) gives false"
+      },
+      "code": "assertEqual(isPrime(1), false)"
+     },
+     {
+      "name": {
+       "en": "isPrime(0) gives false"
+      },
+      "code": "assertEqual(isPrime(0), false)"
+     },
+     {
+      "name": {
+       "en": "isPrime(7) gives true"
+      },
+      "code": "assertEqual(isPrime(7), true)"
+     }
+    ],
+    "starter": "function isPrime(n) {\n  // give back true or false\n}\n"
+   }
+  ],
+  "solution": "function isPrime(n) {\n  if (n < 2) return false;\n  for (let d = 2; d < n; d++) {\n    if (n % d === 0) return false;\n  }\n  return true;\n}\n",
+  "solution_note": {
+   "en": "One factor is enough to prove a number is not prime, so the loop can stop early."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/check-prime",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-prime-factors",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Prime factors"
+  },
+  "prompt": {
+   "en": "Write a function prime_factors(n) that gives back the different prime numbers that divide n, smallest first. Example: 150 = 2 x 3 x 5 x 5, so it gives [2, 3, 5]. For n = 1 give back an empty list."
+  },
+  "concepts": {
+   "en": [
+    "helper functions",
+    "primes",
+    "loops",
+    "lists"
+   ]
+  },
+  "starter": "def prime_factors(n):\n    # give back a list of prime factors\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "prime_factors(26) gives [2, 13]"
+    },
+    "code": "check(prime_factors(26), [2, 13])"
+   },
+   {
+    "name": {
+     "en": "prime_factors(150) gives [2, 3, 5]"
+    },
+    "code": "check(prime_factors(150), [2, 3, 5])"
+   },
+   {
+    "name": {
+     "en": "prime_factors(7) gives [7]"
+    },
+    "code": "check(prime_factors(7), [7])"
+   },
+   {
+    "name": {
+     "en": "prime_factors(64) gives [2]"
+    },
+    "code": "check(prime_factors(64), [2])"
+   },
+   {
+    "name": {
+     "en": "prime_factors(1) gives []"
+    },
+    "code": "check(prime_factors(1), [])"
+   },
+   {
+    "name": {
+     "en": "prime_factors(30) gives [2, 3, 5]"
+    },
+    "code": "check(prime_factors(30), [2, 3, 5])"
+   }
+  ],
+  "hints": {
+   "en": [
+    "You can write a small helper function that checks if a number is prime.",
+    "Try every d from 2 up to n. Keep d if it divides n AND it is prime.",
+    "Each prime goes in the list once, even if it divides n many times."
+   ]
+  },
+  "guided": [],
+  "solution": "def prime_factors(n):\n    def is_prime(k):\n        if k < 2:\n            return False\n        for d in range(2, k):\n            if k % d == 0:\n                return False\n        return True\n    return [d for d in range(2, n + 1) if n % d == 0 and is_prime(d)]\n",
+  "solution_note": {
+   "en": "Splitting the job into 'is it prime?' and 'does it divide?' keeps each part simple."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/find-prime-factors",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-prime-factors",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Prime factors"
+  },
+  "prompt": {
+   "en": "Write a function primeFactors(n) that gives back the different prime numbers that divide n, smallest first. Example: 150 = 2 x 3 x 5 x 5, so it gives [2, 3, 5]. For n = 1 give back an empty list."
+  },
+  "concepts": {
+   "en": [
+    "helper functions",
+    "primes",
+    "loops",
+    "lists"
+   ]
+  },
+  "starter": "function primeFactors(n) {\n  // give back a list of prime factors\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "primeFactors(26) gives [2, 13]"
+    },
+    "code": "assertEqual(primeFactors(26), [2, 13])"
+   },
+   {
+    "name": {
+     "en": "primeFactors(150) gives [2, 3, 5]"
+    },
+    "code": "assertEqual(primeFactors(150), [2, 3, 5])"
+   },
+   {
+    "name": {
+     "en": "primeFactors(7) gives [7]"
+    },
+    "code": "assertEqual(primeFactors(7), [7])"
+   },
+   {
+    "name": {
+     "en": "primeFactors(64) gives [2]"
+    },
+    "code": "assertEqual(primeFactors(64), [2])"
+   },
+   {
+    "name": {
+     "en": "primeFactors(1) gives []"
+    },
+    "code": "assertEqual(primeFactors(1), [])"
+   },
+   {
+    "name": {
+     "en": "primeFactors(30) gives [2, 3, 5]"
+    },
+    "code": "assertEqual(primeFactors(30), [2, 3, 5])"
+   }
+  ],
+  "hints": {
+   "en": [
+    "You can write a small helper function that checks if a number is prime.",
+    "Try every d from 2 up to n. Keep d if it divides n AND it is prime.",
+    "Each prime goes in the list once, even if it divides n many times."
+   ]
+  },
+  "guided": [],
+  "solution": "function primeFactors(n) {\n  const isPrime = (k) => {\n    if (k < 2) return false;\n    for (let d = 2; d < k; d++) if (k % d === 0) return false;\n    return true;\n  };\n  const result = [];\n  for (let d = 2; d <= n; d++) {\n    if (n % d === 0 && isPrime(d)) result.push(d);\n  }\n  return result;\n}\n",
+  "solution_note": {
+   "en": "Splitting the job into 'is it prime?' and 'does it divide?' keeps each part simple."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/find-prime-factors",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-clock-12",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Add hours on a 12-hour clock"
+  },
+  "prompt": {
+   "en": "On a 12-hour clock, 11 o'clock plus 3 hours is 2 o'clock. Write a function add_hours_12(start, hours) that gives back the new hour, from 1 to 12."
+  },
+  "concepts": {
+   "en": [
+    "remainder (%)",
+    "clock arithmetic",
+    "special cases"
+   ]
+  },
+  "starter": "def add_hours_12(start, hours):\n    # give back the new hour (1 to 12)\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "add_hours_12(11, 1) gives 12"
+    },
+    "code": "check(add_hours_12(11, 1), 12)"
+   },
+   {
+    "name": {
+     "en": "add_hours_12(11, 4) gives 3"
+    },
+    "code": "check(add_hours_12(11, 4), 3)"
+   },
+   {
+    "name": {
+     "en": "add_hours_12(11, 12) gives 11"
+    },
+    "code": "check(add_hours_12(11, 12), 11)"
+   },
+   {
+    "name": {
+     "en": "add_hours_12(12, 12) gives 12"
+    },
+    "code": "check(add_hours_12(12, 12), 12)"
+   },
+   {
+    "name": {
+     "en": "add_hours_12(3, 25) gives 4"
+    },
+    "code": "check(add_hours_12(3, 25), 4)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Add the hours, then use % 12 to wrap round the clock.",
+    "% 12 gives a number from 0 to 11.",
+    "A clock has no 0 o'clock: when the answer is 0, give back 12."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Wrap round with % 12."
+    },
+    "explain": {
+     "en": "Give back (start + hours) % 12. This is right except when it gives 0."
+    },
+    "solution": "def add_hours_12(start, hours):\n    return (start + hours) % 12\n",
+    "tests": [
+     {
+      "name": {
+       "en": "add_hours_12(11, 4) gives 3"
+      },
+      "code": "check(add_hours_12(11, 4), 3)"
+     }
+    ],
+    "starter": "def add_hours_12(start, hours):\n    # give back the new hour (1 to 12)\n    pass\n"
+   }
+  ],
+  "solution": "def add_hours_12(start, hours):\n    hour = (start + hours) % 12\n    if hour == 0:\n        return 12\n    return hour\n",
+  "solution_note": {
+   "en": "% does the wrapping. The only fix needed is that 0 is written 12 on a clock."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-hours-12-hour-clock",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-clock-12",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Add hours on a 12-hour clock"
+  },
+  "prompt": {
+   "en": "On a 12-hour clock, 11 o'clock plus 3 hours is 2 o'clock. Write a function addHours12(start, hours) that gives back the new hour, from 1 to 12."
+  },
+  "concepts": {
+   "en": [
+    "remainder (%)",
+    "clock arithmetic",
+    "special cases"
+   ]
+  },
+  "starter": "function addHours12(start, hours) {\n  // give back the new hour (1 to 12)\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "addHours12(11, 1) gives 12"
+    },
+    "code": "assertEqual(addHours12(11, 1), 12)"
+   },
+   {
+    "name": {
+     "en": "addHours12(11, 4) gives 3"
+    },
+    "code": "assertEqual(addHours12(11, 4), 3)"
+   },
+   {
+    "name": {
+     "en": "addHours12(11, 12) gives 11"
+    },
+    "code": "assertEqual(addHours12(11, 12), 11)"
+   },
+   {
+    "name": {
+     "en": "addHours12(12, 12) gives 12"
+    },
+    "code": "assertEqual(addHours12(12, 12), 12)"
+   },
+   {
+    "name": {
+     "en": "addHours12(3, 25) gives 4"
+    },
+    "code": "assertEqual(addHours12(3, 25), 4)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Add the hours, then use % 12 to wrap round the clock.",
+    "% 12 gives a number from 0 to 11.",
+    "A clock has no 0 o'clock: when the answer is 0, give back 12."
+   ]
+  },
+  "guided": [
+   {
+    "goal": {
+     "en": "Wrap round with % 12."
+    },
+    "explain": {
+     "en": "Give back (start + hours) % 12. This is right except when it gives 0."
+    },
+    "solution": "function addHours12(start, hours) {\n  return (start + hours) % 12;\n}\n",
+    "tests": [
+     {
+      "name": {
+       "en": "addHours12(11, 4) gives 3"
+      },
+      "code": "assertEqual(addHours12(11, 4), 3)"
+     }
+    ],
+    "starter": "function addHours12(start, hours) {\n  // give back the new hour (1 to 12)\n}\n"
+   }
+  ],
+  "solution": "function addHours12(start, hours) {\n  const hour = (start + hours) % 12;\n  return hour === 0 ? 12 : hour;\n}\n",
+  "solution_note": {
+   "en": "% does the wrapping. The only fix needed is that 0 is written 12 on a clock."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-hours-12-hour-clock",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-clock-24",
+  "language": "python",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Add hours on a 24-hour clock"
+  },
+  "prompt": {
+   "en": "On a 24-hour clock, 22:00 plus 5 hours is 3:00. Write a function add_hours_24(start, hours) that gives back the new hour, from 0 to 23."
+  },
+  "concepts": {
+   "en": [
+    "remainder (%)",
+    "clock arithmetic"
+   ]
+  },
+  "starter": "def add_hours_24(start, hours):\n    # give back the new hour (0 to 23)\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "add_hours_24(11, 1) gives 12"
+    },
+    "code": "check(add_hours_24(11, 1), 12)"
+   },
+   {
+    "name": {
+     "en": "add_hours_24(11, 4) gives 15"
+    },
+    "code": "check(add_hours_24(11, 4), 15)"
+   },
+   {
+    "name": {
+     "en": "add_hours_24(11, 12) gives 23"
+    },
+    "code": "check(add_hours_24(11, 12), 23)"
+   },
+   {
+    "name": {
+     "en": "add_hours_24(22, 5) gives 3"
+    },
+    "code": "check(add_hours_24(22, 5), 3)"
+   },
+   {
+    "name": {
+     "en": "add_hours_24(0, 48) gives 0"
+    },
+    "code": "check(add_hours_24(0, 48), 0)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Add the hours together first.",
+    "The clock goes back to 0 after 23.",
+    "% 24 gives the remainder after dividing by 24, which wraps it round."
+   ]
+  },
+  "guided": [],
+  "solution": "def add_hours_24(start, hours):\n    return (start + hours) % 24\n",
+  "solution_note": {
+   "en": "% 24 keeps only what is left after taking out whole days."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-hours-24-hour-clock",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-clock-24",
+  "language": "javascript",
+  "level": "Beginner",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Add hours on a 24-hour clock"
+  },
+  "prompt": {
+   "en": "On a 24-hour clock, 22:00 plus 5 hours is 3:00. Write a function addHours24(start, hours) that gives back the new hour, from 0 to 23."
+  },
+  "concepts": {
+   "en": [
+    "remainder (%)",
+    "clock arithmetic"
+   ]
+  },
+  "starter": "function addHours24(start, hours) {\n  // give back the new hour (0 to 23)\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "addHours24(11, 1) gives 12"
+    },
+    "code": "assertEqual(addHours24(11, 1), 12)"
+   },
+   {
+    "name": {
+     "en": "addHours24(11, 4) gives 15"
+    },
+    "code": "assertEqual(addHours24(11, 4), 15)"
+   },
+   {
+    "name": {
+     "en": "addHours24(11, 12) gives 23"
+    },
+    "code": "assertEqual(addHours24(11, 12), 23)"
+   },
+   {
+    "name": {
+     "en": "addHours24(22, 5) gives 3"
+    },
+    "code": "assertEqual(addHours24(22, 5), 3)"
+   },
+   {
+    "name": {
+     "en": "addHours24(0, 48) gives 0"
+    },
+    "code": "assertEqual(addHours24(0, 48), 0)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Add the hours together first.",
+    "The clock goes back to 0 after 23.",
+    "% 24 gives the remainder after dividing by 24, which wraps it round."
+   ]
+  },
+  "guided": [],
+  "solution": "function addHours24(start, hours) {\n  return (start + hours) % 24;\n}\n",
+  "solution_note": {
+   "en": "% 24 keeps only what is left after taking out whole days."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-hours-24-hour-clock",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-month-after",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Months later"
+  },
+  "prompt": {
+   "en": "Write a function month_after(month, add). month is 1 (January) to 12 (December). Give back the NAME of the month that is add months later. Example: 4 months after October (10) is \"February\"."
+  },
+  "concepts": {
+   "en": [
+    "lists",
+    "indexes",
+    "remainder (%)"
+   ]
+  },
+  "starter": "def month_after(month, add):\n    # give back the month name\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "month_after(10, 4) gives 'February'"
+    },
+    "code": "check(month_after(10, 4), 'February')"
+   },
+   {
+    "name": {
+     "en": "month_after(12, 8) gives 'August'"
+    },
+    "code": "check(month_after(12, 8), 'August')"
+   },
+   {
+    "name": {
+     "en": "month_after(1, 6) gives 'July'"
+    },
+    "code": "check(month_after(1, 6), 'July')"
+   },
+   {
+    "name": {
+     "en": "month_after(5, 0) gives 'May'"
+    },
+    "code": "check(month_after(5, 0), 'May')"
+   },
+   {
+    "name": {
+     "en": "month_after(12, 1) gives 'January'"
+    },
+    "code": "check(month_after(12, 1), 'January')"
+   },
+   {
+    "name": {
+     "en": "month_after(3, 24) gives 'March'"
+    },
+    "code": "check(month_after(3, 24), 'March')"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Make a list of the 12 month names. January is at position 0.",
+    "Turn month into a position with month - 1, then add.",
+    "Use % 12 to wrap round to the start of the year, then look up the name."
+   ]
+  },
+  "guided": [],
+  "solution": "def month_after(month, add):\n    names = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n             \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"]\n    return names[(month - 1 + add) % 12]\n",
+  "solution_note": {
+   "en": "Counting from 0 makes % 12 line up with the list positions."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-months",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-month-after",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Months later"
+  },
+  "prompt": {
+   "en": "Write a function monthAfter(month, add). month is 1 (January) to 12 (December). Give back the NAME of the month that is add months later. Example: 4 months after October (10) is \"February\"."
+  },
+  "concepts": {
+   "en": [
+    "lists",
+    "indexes",
+    "remainder (%)"
+   ]
+  },
+  "starter": "function monthAfter(month, add) {\n  // give back the month name\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "monthAfter(10, 4) gives \"February\""
+    },
+    "code": "assertEqual(monthAfter(10, 4), \"February\")"
+   },
+   {
+    "name": {
+     "en": "monthAfter(12, 8) gives \"August\""
+    },
+    "code": "assertEqual(monthAfter(12, 8), \"August\")"
+   },
+   {
+    "name": {
+     "en": "monthAfter(1, 6) gives \"July\""
+    },
+    "code": "assertEqual(monthAfter(1, 6), \"July\")"
+   },
+   {
+    "name": {
+     "en": "monthAfter(5, 0) gives \"May\""
+    },
+    "code": "assertEqual(monthAfter(5, 0), \"May\")"
+   },
+   {
+    "name": {
+     "en": "monthAfter(12, 1) gives \"January\""
+    },
+    "code": "assertEqual(monthAfter(12, 1), \"January\")"
+   },
+   {
+    "name": {
+     "en": "monthAfter(3, 24) gives \"March\""
+    },
+    "code": "assertEqual(monthAfter(3, 24), \"March\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Make a list of the 12 month names. January is at position 0.",
+    "Turn month into a position with month - 1, then add.",
+    "Use % 12 to wrap round to the start of the year, then look up the name."
+   ]
+  },
+  "guided": [],
+  "solution": "function monthAfter(month, add) {\n  const names = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n    \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"];\n  return names[(month - 1 + add) % 12];\n}\n",
+  "solution_note": {
+   "en": "Counting from 0 makes % 12 line up with the list positions."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-months",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-add-durations",
+  "language": "python",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Add two video lengths"
+  },
+  "prompt": {
+   "en": "Video lengths are written \"hours:minutes:seconds\", like \"0:32:21\". Write a function add_durations(a, b) that adds two lengths and gives back the total in the same form, with no extra zeros. Example: \"0:32:21\" + \"0:33:20\" is \"1:5:41\"."
+  },
+  "concepts": {
+   "en": [
+    "splitting text",
+    "remainder (%)",
+    "whole-number division",
+    "units of time"
+   ]
+  },
+  "starter": "def add_durations(a, b):\n    # give back the total, like 1:5:41\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "add_durations('0:32:21', '0:33:20') gives '1:5:41'"
+    },
+    "code": "check(add_durations('0:32:21', '0:33:20'), '1:5:41')"
+   },
+   {
+    "name": {
+     "en": "add_durations('3:59:59', '2:13:3') gives '6:13:2'"
+    },
+    "code": "check(add_durations('3:59:59', '2:13:3'), '6:13:2')"
+   },
+   {
+    "name": {
+     "en": "add_durations('4:59:59', '2:59:59') gives '7:59:58'"
+    },
+    "code": "check(add_durations('4:59:59', '2:59:59'), '7:59:58')"
+   },
+   {
+    "name": {
+     "en": "add_durations('0:0:1', '0:0:59') gives '0:1:0'"
+    },
+    "code": "check(add_durations('0:0:1', '0:0:59'), '0:1:0')"
+   },
+   {
+    "name": {
+     "en": "add_durations('0:0:0', '0:0:0') gives '0:0:0'"
+    },
+    "code": "check(add_durations('0:0:0', '0:0:0'), '0:0:0')"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Split each text at the \":\" to get hours, minutes and seconds as numbers.",
+    "Turn both lengths into seconds (hours x 3600 + minutes x 60 + seconds) and add them.",
+    "Turn the total back: hours = total // 3600, minutes = (total % 3600) // 60, seconds = total % 60."
+   ]
+  },
+  "guided": [],
+  "solution": "def add_durations(a, b):\n    def seconds(text):\n        h, m, s = (int(x) for x in text.split(\":\"))\n        return h * 3600 + m * 60 + s\n    total = seconds(a) + seconds(b)\n    return f\"{total // 3600}:{total % 3600 // 60}:{total % 60}\"\n",
+  "solution_note": {
+   "en": "Working in one unit (seconds) and converting at the end avoids lots of carrying rules."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-video-timings",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-add-durations",
+  "language": "javascript",
+  "level": "Advanced",
+  "age_group": "teen+",
+  "topic": "general",
+  "title": {
+   "en": "Add two video lengths"
+  },
+  "prompt": {
+   "en": "Video lengths are written \"hours:minutes:seconds\", like \"0:32:21\". Write a function addDurations(a, b) that adds two lengths and gives back the total in the same form, with no extra zeros. Example: \"0:32:21\" + \"0:33:20\" is \"1:5:41\"."
+  },
+  "concepts": {
+   "en": [
+    "splitting text",
+    "remainder (%)",
+    "whole-number division",
+    "units of time"
+   ]
+  },
+  "starter": "function addDurations(a, b) {\n  // give back the total, like 1:5:41\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "addDurations(\"0:32:21\", \"0:33:20\") gives \"1:5:41\""
+    },
+    "code": "assertEqual(addDurations(\"0:32:21\", \"0:33:20\"), \"1:5:41\")"
+   },
+   {
+    "name": {
+     "en": "addDurations(\"3:59:59\", \"2:13:3\") gives \"6:13:2\""
+    },
+    "code": "assertEqual(addDurations(\"3:59:59\", \"2:13:3\"), \"6:13:2\")"
+   },
+   {
+    "name": {
+     "en": "addDurations(\"4:59:59\", \"2:59:59\") gives \"7:59:58\""
+    },
+    "code": "assertEqual(addDurations(\"4:59:59\", \"2:59:59\"), \"7:59:58\")"
+   },
+   {
+    "name": {
+     "en": "addDurations(\"0:0:1\", \"0:0:59\") gives \"0:1:0\""
+    },
+    "code": "assertEqual(addDurations(\"0:0:1\", \"0:0:59\"), \"0:1:0\")"
+   },
+   {
+    "name": {
+     "en": "addDurations(\"0:0:0\", \"0:0:0\") gives \"0:0:0\""
+    },
+    "code": "assertEqual(addDurations(\"0:0:0\", \"0:0:0\"), \"0:0:0\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Split each text at the \":\" to get hours, minutes and seconds as numbers.",
+    "Turn both lengths into seconds (hours x 3600 + minutes x 60 + seconds) and add them.",
+    "Turn the total back with Math.floor(total / 3600), Math.floor((total % 3600) / 60) and total % 60."
+   ]
+  },
+  "guided": [],
+  "solution": "function addDurations(a, b) {\n  const seconds = (text) => {\n    const [h, m, s] = text.split(\":\").map(Number);\n    return h * 3600 + m * 60 + s;\n  };\n  const total = seconds(a) + seconds(b);\n  return `${Math.floor(total / 3600)}:${Math.floor((total % 3600) / 60)}:${total % 60}`;\n}\n",
+  "solution_note": {
+   "en": "Working in one unit (seconds) and converting at the end avoids lots of carrying rules."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-video-timings",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-leap-year",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Leap years"
+  },
+  "prompt": {
+   "en": "Write a function is_leap_year(year) that gives back True for a leap year. The rule: a year that divides by 4 is a leap year, EXCEPT years that divide by 100, which are not, EXCEPT years that divide by 400, which are."
+  },
+  "concepts": {
+   "en": [
+    "remainder (%)",
+    "if / elif / else",
+    "rules with exceptions"
+   ]
+  },
+  "starter": "def is_leap_year(year):\n    # give back true or false\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "is_leap_year(1600) gives True"
+    },
+    "code": "check(is_leap_year(1600), True)"
+   },
+   {
+    "name": {
+     "en": "is_leap_year(2000) gives True"
+    },
+    "code": "check(is_leap_year(2000), True)"
+   },
+   {
+    "name": {
+     "en": "is_leap_year(2400) gives True"
+    },
+    "code": "check(is_leap_year(2400), True)"
+   },
+   {
+    "name": {
+     "en": "is_leap_year(1700) gives False"
+    },
+    "code": "check(is_leap_year(1700), False)"
+   },
+   {
+    "name": {
+     "en": "is_leap_year(2100) gives False"
+    },
+    "code": "check(is_leap_year(2100), False)"
+   },
+   {
+    "name": {
+     "en": "is_leap_year(2024) gives True"
+    },
+    "code": "check(is_leap_year(2024), True)"
+   },
+   {
+    "name": {
+     "en": "is_leap_year(2023) gives False"
+    },
+    "code": "check(is_leap_year(2023), False)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Check the most special rule first: dividing by 400 means leap year.",
+    "Next: dividing by 100 (but not 400) means NOT a leap year.",
+    "Last: dividing by 4 means leap year. Anything else is not."
+   ]
+  },
+  "guided": [],
+  "solution": "def is_leap_year(year):\n    if year % 400 == 0:\n        return True\n    if year % 100 == 0:\n        return False\n    return year % 4 == 0\n",
+  "solution_note": {
+   "en": "Checking the rarest rule first means the exceptions never get missed."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-check-leap-year",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-leap-year",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Leap years"
+  },
+  "prompt": {
+   "en": "Write a function isLeapYear(year) that gives back true for a leap year. The rule: a year that divides by 4 is a leap year, EXCEPT years that divide by 100, which are not, EXCEPT years that divide by 400, which are."
+  },
+  "concepts": {
+   "en": [
+    "remainder (%)",
+    "if / elif / else",
+    "rules with exceptions"
+   ]
+  },
+  "starter": "function isLeapYear(year) {\n  // give back true or false\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "isLeapYear(1600) gives true"
+    },
+    "code": "assertEqual(isLeapYear(1600), true)"
+   },
+   {
+    "name": {
+     "en": "isLeapYear(2000) gives true"
+    },
+    "code": "assertEqual(isLeapYear(2000), true)"
+   },
+   {
+    "name": {
+     "en": "isLeapYear(2400) gives true"
+    },
+    "code": "assertEqual(isLeapYear(2400), true)"
+   },
+   {
+    "name": {
+     "en": "isLeapYear(1700) gives false"
+    },
+    "code": "assertEqual(isLeapYear(1700), false)"
+   },
+   {
+    "name": {
+     "en": "isLeapYear(2100) gives false"
+    },
+    "code": "assertEqual(isLeapYear(2100), false)"
+   },
+   {
+    "name": {
+     "en": "isLeapYear(2024) gives true"
+    },
+    "code": "assertEqual(isLeapYear(2024), true)"
+   },
+   {
+    "name": {
+     "en": "isLeapYear(2023) gives false"
+    },
+    "code": "assertEqual(isLeapYear(2023), false)"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Check the most special rule first: dividing by 400 means leap year.",
+    "Next: dividing by 100 (but not 400) means NOT a leap year.",
+    "Last: dividing by 4 means leap year. Anything else is not."
+   ]
+  },
+  "guided": [],
+  "solution": "function isLeapYear(year) {\n  if (year % 400 === 0) return true;\n  if (year % 100 === 0) return false;\n  return year % 4 === 0;\n}\n",
+  "solution_note": {
+   "en": "Checking the rarest rule first means the exceptions never get missed."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-check-leap-year",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "py-note-name",
+  "language": "python",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Name the music note"
+  },
+  "prompt": {
+   "en": "Music programs number notes from 0 to 127 (60 is middle C). The names repeat every 12 notes: C, C#, D, Eb, E, F, F#, G, Ab, A, Bb, B. Write a function note_name(number) that gives back the note name."
+  },
+  "concepts": {
+   "en": [
+    "lists",
+    "remainder (%)",
+    "music and maths"
+   ]
+  },
+  "starter": "def note_name(number):\n    # give back the note name\n    pass\n",
+  "tests": [
+   {
+    "name": {
+     "en": "note_name(60) gives 'C'"
+    },
+    "code": "check(note_name(60), 'C')"
+   },
+   {
+    "name": {
+     "en": "note_name(34) gives 'Bb'"
+    },
+    "code": "check(note_name(34), 'Bb')"
+   },
+   {
+    "name": {
+     "en": "note_name(85) gives 'C#'"
+    },
+    "code": "check(note_name(85), 'C#')"
+   },
+   {
+    "name": {
+     "en": "note_name(127) gives 'G'"
+    },
+    "code": "check(note_name(127), 'G')"
+   },
+   {
+    "name": {
+     "en": "note_name(0) gives 'C'"
+    },
+    "code": "check(note_name(0), 'C')"
+   },
+   {
+    "name": {
+     "en": "note_name(69) gives 'A'"
+    },
+    "code": "check(note_name(69), 'A')"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Make a list of the 12 note names, starting with C.",
+    "The names repeat every 12 notes, so number % 12 tells you which one.",
+    "Use that remainder as the position in the list."
+   ]
+  },
+  "guided": [],
+  "solution": "def note_name(number):\n    names = [\"C\", \"C#\", \"D\", \"Eb\", \"E\", \"F\", \"F#\", \"G\", \"Ab\", \"A\", \"Bb\", \"B\"]\n    return names[number % 12]\n",
+  "solution_note": {
+   "en": "% 12 throws away whole octaves and keeps only the place inside one octave."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-display-midi-note",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+ },
+ {
+  "id": "js-note-name",
+  "language": "javascript",
+  "level": "Intermediate",
+  "age_group": "11-13",
+  "topic": "general",
+  "title": {
+   "en": "Name the music note"
+  },
+  "prompt": {
+   "en": "Music programs number notes from 0 to 127 (60 is middle C). The names repeat every 12 notes: C, C#, D, Eb, E, F, F#, G, Ab, A, Bb, B. Write a function noteName(number) that gives back the note name."
+  },
+  "concepts": {
+   "en": [
+    "lists",
+    "remainder (%)",
+    "music and maths"
+   ]
+  },
+  "starter": "function noteName(number) {\n  // give back the note name\n}\n",
+  "tests": [
+   {
+    "name": {
+     "en": "noteName(60) gives \"C\""
+    },
+    "code": "assertEqual(noteName(60), \"C\")"
+   },
+   {
+    "name": {
+     "en": "noteName(34) gives \"Bb\""
+    },
+    "code": "assertEqual(noteName(34), \"Bb\")"
+   },
+   {
+    "name": {
+     "en": "noteName(85) gives \"C#\""
+    },
+    "code": "assertEqual(noteName(85), \"C#\")"
+   },
+   {
+    "name": {
+     "en": "noteName(127) gives \"G\""
+    },
+    "code": "assertEqual(noteName(127), \"G\")"
+   },
+   {
+    "name": {
+     "en": "noteName(0) gives \"C\""
+    },
+    "code": "assertEqual(noteName(0), \"C\")"
+   },
+   {
+    "name": {
+     "en": "noteName(69) gives \"A\""
+    },
+    "code": "assertEqual(noteName(69), \"A\")"
+   }
+  ],
+  "hints": {
+   "en": [
+    "Make a list of the 12 note names, starting with C.",
+    "The names repeat every 12 notes, so number % 12 tells you which one.",
+    "Use that remainder as the position in the list."
+   ]
+  },
+  "guided": [],
+  "solution": "function noteName(number) {\n  const names = [\"C\", \"C#\", \"D\", \"Eb\", \"E\", \"F\", \"F#\", \"G\", \"Ab\", \"A\", \"Bb\", \"B\"];\n  return names[number % 12];\n}\n",
+  "solution_note": {
+   "en": "% 12 throws away whole octaves and keeps only the place inside one octave."
+  },
+  "license": "CC-BY-SA-4.0",
+  "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-display-midi-note",
+  "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
  }
 ]

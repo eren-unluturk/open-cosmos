@@ -105,10 +105,12 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - [x] Guides foundation: `reuse` flag, fallback guides, helpers, tests (`docs/GUIDE_SPEC.md`)
 - [x] Lessons from CS Unplugged (`lessons.json`, 26) and handwritten guides (65 of 65 groups, 100% of visible entries; `docs/GUIDE_PROGRESS.md`)
 - [x] Browser-only progress (`progress.js`, spec in `docs/PROGRESS_SPEC.md`); Tobi must add the template hooks listed there
-- [ ] App: guide slide viewer, `/<lang>/lessons` and lesson page with the CC BY-SA attribution box (Tobi and Isabella, see `docs/GUIDE_SPEC.md`)
-- [ ] Lesson page with language switcher + level tag (Tobi/Isabella; data ready in `lessons.json`)
-- [ ] Level path / roadmap: the guide timeline slide + `build_timeline` + "Explore next" (Tobi/Isabella; data ready)
-- [ ] Attribution/license footer + CC BY-SA attribution box on every lesson and a link to the source on every entry
+- [x] App: guide slide viewer, `/<lang>/lessons` and lesson page with the CC BY-SA attribution box (merged, PR #14)
+- [x] List pages: search box and age/topic/level filters, hidden-entry notice (issue #7)
+- [ ] Deploy on Render (needs the owner's Render sign-in, issue #8; steps in `docs/ISSUES_TRIAGE.md`)
+- [x] Lesson page with language switcher + level tag (`/<lang>/lesson/<id>`)
+- [x] Level path / roadmap: the guide slides, timeline strip and "Explore next"
+- [x] Attribution/license footer + CC BY-SA attribution box on every lesson and a link to the source on every entry
 - [ ] Deployed link + demo video
 
 ## Next steps (after the hackathon)
@@ -209,7 +211,7 @@ Most kids' coding tutoring is pay-to-use. We now focus on **young beginners (abo
 - **Brian (`scripts/translate.py`, and `src/guide.py` / `requirements.txt` with Tobi):**
   - 74 kid-safe Beginner and CS Unplugged entries are already translated in es/ar/hi/pt, so translate.py skips them (it translates only entries missing a language). Remaining kid-safe Intermediate entries are the next batch.
   - **Translation queue:** `docs/TRANSLATE_QUEUE.md` lists the 401 kid-safe entries still untranslated (24 CS Unplugged, 258+36 Intermediate, 65+18 Advanced), in priority order, with counts per level and source. Pick row ranges with Eren so nobody edits the same JSON entries.
-  - `translate.py` needs an API key and we have none, so remaining translations are done by hand (Claude Code in Eren's session) in batches. Agree with Eren which languages/entries to take from `docs/TRANSLATE_QUEUE.md` and arrange native-speaker checks. If you ever do use the script, known problems (not fixed): it crashes if the model wraps its JSON in a code fence and makes one call at a time (strip fences, retry once, `ThreadPoolExecutor(max_workers=5)`).
+  - `translate.py` needs an API key and we have none, so translations are done by hand (Claude Code in Eren's session) as overlay modules in `scripts/translation_content/`, merged by `python scripts/apply_translations.py`; the 24 newest CS Unplugged entries are done this way. 377 kid-safe entries remain (`docs/TRANSLATE_QUEUE.md`, regenerate with `python scripts/translate_queue.py`). The script's problems from issue #6 are fixed (code fences, one retry, 5 requests at a time, model `claude-haiku-5-5`); native-speaker checks are still needed.
   - Eren's minimal changes to your file: `kids` is included, `level`/`age_group` set by categorize.py are not overwritten, entries are chosen by missing languages, and `ai_translated` is set. Please keep those.
 
 - **Isabella (`docs/PITCH.md`):** the pitch says the AI picks the path in the guide. Change it to: the guide builds a path from our tagged open data using simple rules and can only pick real entries; AI was used ahead of time to translate and classify (no live AI, no key, no personal data).

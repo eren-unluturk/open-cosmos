@@ -16,4 +16,13 @@ Four open issues on `eren-unluturk/ktp-hackcessability-2026`, read in full. Issu
 
 ## Notes
 - #6 asks for an API key to run `translate.py`. Nothing here calls the API; translations in this branch were written by hand (Claude Code) as an overlay, labeled `ai_translated`.
-- Status per issue and commits are filled in at the end of this file.
+
+## Final status
+| # | Status | Commits |
+|---|---|---|
+| 9 | Fixed: README section "How to request changes" | `824bfd2` |
+| 6 | Fixed: code-fence crash, one retry, 5 workers, model `claude-haiku-5-5` (in `translate.py` and `src/guide.py`), kid-safe-first order, tests. "Next batch": partly done: the 24 newest CS Unplugged entries are translated (overlay + `apply_translations.py`); 377 kid-safe entries remain in `docs/TRANSLATE_QUEUE.md`. Native-speaker spot-check not done (needs people). The commit message says `fixes #6`, so merging closes the issue even though these two items remain: reopen it or split them into a new issue | `5777bc5`, `d5434e1` |
+| 7 | Fixed: search box and age/topic/level filters on `/learn`, `/build`, `/kids`; hidden-entry notice with the grown-up button; page title and footer say "Learning Lab". Already on main: grown-up button, why-hidden text, kids nav, entry page, AI badge | `a329c1b` |
+| 8 | SKIPPED (needs your Render sign-in), steps above | none |
+
+Also added: `tests/test_smoke_all.py` (every page in all 5 languages, the gate, 404s).

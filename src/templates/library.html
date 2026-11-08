@@ -1,21 +1,41 @@
 {% extends "base.html" %}
-{% from "macros.html" import card, grownup_notice with context %}
+{% from "macros.html" import card, grownup_notice, icon with context %}
 {% block title %}{{ ui.everything }} · {{ ui.brand }}{% endblock %}
 {% block content %}
 <h1 class="bubble">{{ ui.everything }}</h1>
 <nav class="filters" aria-label="{{ ui.subjects }}">
-  <a class="pill" href="{{ url_for('library', lang=lang, q=q or None) }}" {% if not gid %}aria-current="page"{% endif %}>{{ ui.all_galaxies }}</a>
+  <a class="pill" href="{{ url_for('library', lang=lang, q=q or None, where=where) }}" {% if not gid %}aria-current="page"{% endif %}>{{ ui.all_galaxies }}</a>
   {% for g in galaxies %}
-    <a class="pill" href="{{ url_for('library', lang=lang, q=q or None, g=g.id) }}" {% if gid == g.id %}aria-current="page"{% endif %}>{{ ui['g_' ~ g.id] }}</a>
+    <a class="pill" href="{{ url_for('library', lang=lang, q=q or None, g=g.id, where=where) }}" {% if gid == g.id %}aria-current="page"{% endif %}>{{ ui['g_' ~ g.id] }}</a>
   {% endfor %}
 </nav>
+<nav class="filters" aria-label="{{ ui.where_label }}">
+  <a class="pill" href="{{ url_for('library', lang=lang, q=q or None, g=gid) }}" {% if not where %}aria-current="page"{% endif %}>{{ ui.where_all }}</a>
+  <a class="pill" href="{{ url_for('library', lang=lang, q=q or None, g=gid, where='site') }}" {% if where == 'site' %}aria-current="page"{% endif %}>{{ ui.where_site }} ({{ counts.site }})</a>
+  <a class="pill" href="{{ url_for('library', lang=lang, q=q or None, g=gid, where='external') }}" {% if where == 'external' %}aria-current="page"{% endif %}>{{ ui.where_external }} ({{ counts.external }})</a>
+</nav>
 <p class="muted" role="status"><strong style="color:var(--gold)">{{ total }}</strong> {{ ui.results }}{% if q %} · “{{ q }}”{% endif %}{% if cur_level %} · {{ ui['lvl_' ~ cur_level] }}{% endif %}</p>
+{% if problems %}
+<h2 class="section-title">{{ ui.where_problems_h }}</h2>
+<div class="grid">
+  {% for p in problems %}
+    <article class="card" data-id="{{ p.id }}">
+      <a class="card-body" href="{{ url_for('problem_page', lang=lang, problem_id=p.id) }}">
+        <div class="card-top"><span class="chip teal">{{ ui['p_lang_' ~ p.language] }}</span><span class="badge lvl-{{ level_icon[p.level] }}" title="{{ ui['lvl_' ~ p.level] }}"><span class="sr-only">{{ ui['lvl_' ~ p.level] }}</span>{{ icon(level_icon[p.level]) }}</span></div>
+        <h3 class="card-title" lang="{{ lang if p.title.get(lang) else 'en' }}">{{ tr(p.title, lang) }}</h3>
+        <div class="card-foot"><span class="flag">{{ ui.where_site }}</span><span class="kind">{{ ui.problems_title }}</span></div>
+      </a>
+    </article>
+  {% endfor %}
+</div>
+{% if results %}<h2 class="section-title">{{ ui.where_more_h }}</h2>{% endif %}
+{% endif %}
 <div class="grid">
   {% for item in results %}{{ card(item, lang, ui, u, difficulty, kind_of, level_icon, chip=(ui['g_' ~ item.galaxy] if item.galaxy else None)) }}{% endfor %}
 </div>
-{% if not results %}<div class="panel"><p>{{ ui.no_results }}</p></div>{% endif %}
+{% if not results and not problems %}<div class="panel"><p>{{ ui.no_results }}</p></div>{% endif %}
 {% if total > results|length %}
-  <p style="text-align:center;margin-top:24px"><a class="btn btn-violet" href="{{ url_for('library', lang=lang, q=q or None, g=gid, page=page + 1) }}">{{ ui.more }}</a></p>
+  <p style="text-align:center;margin-top:24px"><a class="btn btn-violet" href="{{ url_for('library', lang=lang, q=q or None, g=gid, where=where, page=page + 1) }}">{{ ui.more }}</a></p>
 {% endif %}
 {{ grownup_notice(hidden, lang, ui) }}
 {% endblock %}

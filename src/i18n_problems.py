@@ -51,6 +51,12 @@ UI_EN = {
     "p_too_long": "Your code is too long.",
     "p_cannot_load": "The code runner could not start. Check your connection and try again.",
     "p_english": "This text is in English for now.",
+    "where_all": "All",
+    "where_site": "Do it here",
+    "where_external": "On other sites",
+    "where_label": "Where you do it",
+    "where_problems_h": "Coding problems you can solve here",
+    "where_more_h": "More from the library",
 }
 
 UI = {
@@ -99,6 +105,12 @@ UI = {
         "p_too_long": "Tu código es demasiado largo.",
         "p_cannot_load": "No se pudo iniciar el ejecutor de código. Revisa tu conexión e inténtalo de nuevo.",
         "p_english": "Por ahora este texto está en inglés.",
+        "where_all": "Todo",
+        "where_site": "Hazlo aquí",
+        "where_external": "En otros sitios",
+        "where_label": "Dónde lo haces",
+        "where_problems_h": "Problemas de programación para resolver aquí",
+        "where_more_h": "Más de la biblioteca",
     },
     "ar": {
         "problems_title": "مسائل البرمجة",
@@ -145,6 +157,12 @@ UI = {
         "p_too_long": "الكود طويل جدًا.",
         "p_cannot_load": "تعذّر تشغيل مشغّل الكود. تحقق من اتصالك وحاول مرة أخرى.",
         "p_english": "هذا النص بالإنجليزية حاليًا.",
+        "where_all": "الكل",
+        "where_site": "نفّذه هنا",
+        "where_external": "على مواقع أخرى",
+        "where_label": "أين تقوم به",
+        "where_problems_h": "مسائل برمجة يمكنك حلّها هنا",
+        "where_more_h": "المزيد من المكتبة",
     },
     "hi": {
         "problems_title": "कोडिंग समस्याएँ",
@@ -191,6 +209,12 @@ UI = {
         "p_too_long": "आपका कोड बहुत लंबा है।",
         "p_cannot_load": "कोड चलाने वाला शुरू नहीं हो सका। अपना कनेक्शन जाँचें और फिर कोशिश करें।",
         "p_english": "अभी यह पाठ अंग्रेज़ी में है।",
+        "where_all": "सभी",
+        "where_site": "यहीं करें",
+        "where_external": "दूसरी साइटों पर",
+        "where_label": "आप इसे कहाँ करते हैं",
+        "where_problems_h": "कोडिंग समस्याएँ जिन्हें आप यहीं हल कर सकते हैं",
+        "where_more_h": "लाइब्रेरी से और",
     },
     "pt": {
         "problems_title": "Problemas de programação",
@@ -237,5 +261,11 @@ UI = {
         "p_too_long": "Seu código é muito longo.",
         "p_cannot_load": "Não foi possível iniciar o executor de código. Verifique sua conexão e tente de novo.",
         "p_english": "Por enquanto este texto está em inglês.",
+        "where_all": "Tudo",
+        "where_site": "Faça aqui",
+        "where_external": "Em outros sites",
+        "where_label": "Onde você faz",
+        "where_problems_h": "Problemas de programação para resolver aqui",
+        "where_more_h": "Mais da biblioteca",
     },
 }

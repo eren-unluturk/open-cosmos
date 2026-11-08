@@ -63,7 +63,7 @@ def main():
         for lang in a.langs.split(","):
             for theme in THEMES:
                 for vname, (w, h) in VIEWPORTS.items():
-                    ctx = browser.new_context(viewport={"width": w, "height": h}, reduced_motion="reduce")
+                    ctx = browser.new_context(viewport={"width": w, "height": h}, reduced_motion="reduce", bypass_csp=True)  # axe is injected as an inline script, which the site's strict CSP would block (the CSP itself is tested elsewhere)
                     cfg = {"theme": theme, "size": 100, "spacing": "normal", "font": "default", "motion": "reduce"}
                     if theme == "max-text":
                         cfg.update(theme="galaxy", size=150, spacing="wide", font="easy")

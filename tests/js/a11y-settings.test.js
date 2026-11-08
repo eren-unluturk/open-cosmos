@@ -2,7 +2,7 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 const path = require("node:path");
-const A = require(path.join(__dirname, "..", "..", "src", "static", "a11y-settings.js"));
+const A = require(path.join(__dirname, "..", "..", "public", "static", "a11y-settings.js"));
 
 function memoryStorage(initial) {
   const data = Object.assign({}, initial);

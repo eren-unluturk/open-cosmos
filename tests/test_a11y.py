@@ -13,7 +13,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 import i18n_a11y  # noqa: E402
 from app import LANGS, app  # noqa: E402
 
-STATIC = ROOT / "src" / "static"
+STATIC = ROOT / "public" / "static"
 TAGS = {"en": "en-US", "es": "es-ES", "ar": "ar-SA", "hi": "hi-IN", "pt": "pt-BR"}
 
 

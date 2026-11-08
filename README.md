@@ -48,6 +48,9 @@ Setup once: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`
 ## Accessibility
 Settings panel, read-aloud and a statement page in five languages. Audit tools are dev-only (see `docs/ACCESSIBILITY.md`): `python scripts/check_contrast.py` needs nothing extra; the axe/keyboard/read-aloud scripts need Playwright installed in a separate venv.
 
+## Deploy
+Vercel setup: `docs/DEPLOY.md`; cutover checklist: `docs/CUTOVER.md`; check a running site with `python scripts/smoke_remote.py BASE_URL`. `render.yaml` stays until the cutover.
+
 ## Optional: Supabase content store and feedback
 The bundled JSON always works with no setup. If you want a cloud copy of the catalog and the grown-ups' feedback form, follow `docs/SUPABASE.md` (`supabase/schema.sql`, then `python scripts/seed_supabase.py` and `python scripts/verify_supabase.py`). Without `SUPABASE_URL` and `SUPABASE_ANON_KEY` in your local `.env` the site just uses the JSON, and the feedback form shows a friendly "could not send" message.
 
@@ -78,7 +81,7 @@ tests/    tests
 | Eren | **Data lead** | Fetch and parse the two CC0 lists and CS Unplugged into JSON; categorize every entry (topic, level, age, safety tier); hand-label what rules can't decide; link checks; stats; keep `docs/SOURCES.md` accurate. | `scripts/` (except `translate.py`), `src/data/`, `docs/SOURCES.md`, `docs/SAFETY_REVIEW.md` |
 | Brian | **AI lead** | Translation quality and queue (`docs/TRANSLATE_QUEUE.md`), native-speaker spot checks, and the guide's AI-or-rules path. `translate.py` is optional (needs a key). | `scripts/translate.py`, `src/guide.py` (with Tobi) |
 | Tobi | **Backend lead** | Flask routes, language and level filtering, UI strings, right-to-left support, search, deployment. Also the safety gate (hide non-kid-safe by default) and guide filtering by safety, age fit and goal. | `src/app.py`, `requirements.txt` |
-| Isabella | **Frontend + pitch lead** | Pages, level badges, language switcher, attribution footer, accessibility; then README, slides, demo video, and submission. | `src/templates/`, `src/static/`, `docs/PITCH.md` |
+| Isabella | **Frontend + pitch lead** | Pages, level badges, language switcher, attribution footer, accessibility; then README, slides, demo video, and submission. | `src/templates/`, `public/static/`, `docs/PITCH.md` |
 
 ## Challenges / What We Learned
 **Data**

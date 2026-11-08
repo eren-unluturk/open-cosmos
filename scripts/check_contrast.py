@@ -12,7 +12,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-STATIC = ROOT / "src" / "static"
+STATIC = ROOT / "public" / "static"
 THEMES = ("galaxy", "light", "contrast", "cb")
 
 

@@ -105,7 +105,7 @@
     document.getElementById("log-empty").hidden = ids.length > 0;
   }
 
-  // Coding problems call this when every test passes (src/static/problem.js).
+  // Coding problems call this when every test passes (public/static/problem.js).
   window.HackProgress = {
     markSolved: function (id, meta) {
       if (!ID_RE.test(id)) return;

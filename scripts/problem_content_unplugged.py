@@ -21,7 +21,7 @@ REPO = "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/c
 ATTRIBUTION = ("Adapted from a CS Unplugged programming challenge by the University of Canterbury "
                "Computer Science Education Research Group, licensed CC BY-SA 4.0.")
 CHANGES = ("Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, "
-           "by Hackcessability. This version is also CC BY-SA 4.0.")
+           "by Open Cosmos. This version is also CC BY-SA 4.0.")
 
 
 def T(s):

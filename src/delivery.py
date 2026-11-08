@@ -15,7 +15,7 @@ LEVELS = ["Beginner", "Intermediate", "Advanced"]
 ATTRIBUTION = (
     "Lesson from CS Unplugged, University of Canterbury CSER Group, licensed CC BY-SA 4.0 "
     "(https://creativecommons.org/licenses/by-sa/4.0/). Changes were made: translated and "
-    "level-tagged by Hackcessability, with AI. Shared under the same license."
+    "level-tagged by Open Cosmos, with AI. Shared under the same license."
 )
 
 VIDEO_HOSTS = ("youtube.com", "youtu.be", "vimeo.com")

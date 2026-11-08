@@ -55,11 +55,12 @@ class ListingUI(unittest.TestCase):
         self.assertEqual(r.status_code, 200)
         self.assertNotIn("<script>", r.get_data(as_text=True).split("<main")[1])
 
-    def test_brand_is_learning_lab(self):
+    def test_brand_is_open_cosmos(self):
         for lang in LANGS:
             html = self.c.get(f"/{lang}/").get_data(as_text=True)
-            self.assertRegex(html, r"<title>[^<]*Learning Lab", lang)
+            self.assertRegex(html, r"<title>[^<]*Open Cosmos", lang)
             self.assertNotIn("Open Learn", html)
+            self.assertNotIn("Learning Lab", html)
 
 
 if __name__ == "__main__":

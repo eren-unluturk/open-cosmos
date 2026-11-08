@@ -19,7 +19,7 @@ DATA = ROOT / "src" / "data"
 AGES = ["5-7", "8-10", "11-13"]
 ATTRIBUTION = ("Adapted from CS Unplugged by the University of Canterbury Computer Science Education Research Group "
                "(CS Unplugged), licensed CC BY-SA 4.0.")
-CHANGES = "Simplified, shortened and translated by Hackcessability with AI"
+CHANGES = "Simplified, shortened and translated by Open Cosmos with AI"
 LICENSE_URL = "https://creativecommons.org/licenses/by-sa/4.0/"
 
 

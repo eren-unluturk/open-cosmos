@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}{{ ui.brand }} — {{ ui.tagline }}{% endblock %}</title>
   <meta name="description" content="{{ ui.tagline }}">
+  <meta name="application-name" content="{{ ui.brand }}">
+  <meta property="og:site_name" content="{{ ui.brand }}">
+  <meta property="og:title" content="{{ self.title() }}">
+  <meta property="og:description" content="{{ ui.tagline }}">
   <meta name="theme-color" content="#0D1B2A">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -80,7 +84,7 @@
 
 <footer class="site">
   <div class="wrap">
-    <p><strong style="color:var(--moon)">{{ ui.brand }}</strong> · {{ ui.footer_1 }}</p>
+    <p><strong style="color:var(--moon)"><bdi dir="ltr">{{ ui.brand }}</bdi></strong> · {{ ui.footer_1 }}</p>
     <p>{{ ui.footer_2 }} <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
     <p>
       <a href="https://github.com/sindresorhus/awesome">sindresorhus/awesome</a> (CC0) ·

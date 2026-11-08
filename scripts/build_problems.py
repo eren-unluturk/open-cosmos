@@ -3,7 +3,9 @@
 For each problem this proves: the reference solution passes every test, the starter code does not,
 and each guided stage's solution passes that stage's tests. JavaScript needs `node` on PATH.
 
-Usage: python scripts/build_problems.py
+Usage: python scripts/build_problems.py [--no-node]
+--no-node: when node is missing, still write the file but check only the Python problems. Use it only for
+text-only changes (names, wording); never when a JavaScript solution or test changed.
 """
 import json
 import sys
@@ -22,8 +24,10 @@ PROBLEMS = OUR_PROBLEMS + UNPLUGGED
 
 def main():
     if not problems.node_available():
-        print("node was not found. JavaScript problems cannot be checked, so nothing was written.")
-        return 1
+        if "--no-node" not in sys.argv:
+            print("node was not found. JavaScript problems cannot be checked, so nothing was written.")
+            return 1
+        print("WARNING: node not found; JavaScript problems were NOT re-checked (--no-node, text-only change).")
     errors, seen = [], set()
     for p in PROBLEMS:
         if p["id"] in seen:

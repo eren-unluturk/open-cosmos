@@ -27,7 +27,7 @@ def stage(goal, explain, solution, tests, starter=None):
     return s
 
 
-COMMON = {"license": "original", "source": "Hackcessability"}
+COMMON = {"license": "original", "source": "Open Cosmos"}
 
 PROBLEMS = [
     # ------------------------------------------------------------------ Python

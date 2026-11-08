@@ -17,18 +17,21 @@ class Overlay(unittest.TestCase):
     def setUp(self):
         self.tr = at.collect()
 
-    def test_covers_the_24_cs_unplugged_activity_entries(self):
-        self.assertEqual(len(self.tr), 24)
-        self.assertTrue(all(i.startswith("kids-") for i in self.tr))
+    def test_covers_the_24_activities_and_the_377_queued_entries(self):
+        self.assertEqual(len(self.tr), 24 + 377)
+        self.assertEqual(sum(1 for i in self.tr if i.startswith("kids-")), 24)
 
     def test_every_language_title_and_desc_present_and_clean(self):
         for eid, t in self.tr.items():
             for lang in at.LANGS:
                 for field in ("title", "desc"):
                     s = t[field][lang]
+                    if field == "desc" and not ENTRIES[eid]["desc"]["en"]:
+                        self.assertEqual(s, "", (eid, lang))  # nothing to translate
+                        continue
                     self.assertTrue(s.strip(), (eid, lang, field))
                     self.assertNotRegex(s, r"[{}]", (eid, lang))  # no unfilled placeholders
-                    self.assertNotIn("http", s)
+                    self.assertNotRegex(s, r"https?://|www\.")
 
     def test_data_contains_them_and_labels_ai(self):
         for eid, t in self.tr.items():
@@ -37,16 +40,23 @@ class Overlay(unittest.TestCase):
                 self.assertEqual(e["title"][lang], t["title"][lang], eid)
                 self.assertEqual(e["desc"][lang], t["desc"][lang], eid)
             self.assertTrue(set(at.LANGS) <= set(e["ai_translated"]), eid)
-            self.assertEqual(e["license"], "CC-BY-SA-4.0")
+            if eid.startswith("kids-"):
+                self.assertEqual(e["license"], "CC-BY-SA-4.0")
 
     def test_arabic_keeps_arabic_script(self):
         for eid, t in self.tr.items():
-            self.assertTrue(re.search(r"[؀-ۿ]", t["desc"]["ar"]), eid)
+            if ENTRIES[eid]["desc"]["en"]:
+                self.assertTrue(re.search("[\u0600-\u06FF]", t["desc"]["ar"]), eid)
 
-    def test_queue_shrinks(self):
+    def test_the_kid_safe_queue_is_empty(self):
         import translate
-        left = [e for e in translate.pick_todo(list(ENTRIES.values())) if e["id"].startswith("kids-")]
-        self.assertEqual(left, [])
+        self.assertEqual(translate.pick_todo(list(ENTRIES.values())), [])
+
+    def test_empty_descriptions_stay_empty(self):
+        for eid, t in self.tr.items():
+            if not ENTRIES[eid]["desc"]["en"]:
+                for lang in at.LANGS:
+                    self.assertEqual(ENTRIES[eid]["desc"][lang], "", (eid, lang))
 
 
 if __name__ == "__main__":

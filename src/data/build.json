@@ -344,10 +344,18 @@
     "category": "Build your own Game",
     "tag": "JavaScript",
     "title": {
-      "en": "Build your own 8-Ball Pool game from scratch"
+      "en": "Build your own 8-Ball Pool game from scratch",
+      "es": "Crea tu propio juego de billar de la bola 8 desde cero",
+      "ar": "ابنِ لعبة بلياردو الكرة 8 الخاصة بك من الصفر",
+      "hi": "8-बॉल पूल का अपना खेल शुरू से बनाएँ",
+      "pt": "Crie o seu próprio jogo de sinuca com a bola 8 do zero"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/watch?v=aXwCrtAo4Wc",
@@ -357,17 +365,31 @@
     "age_group": "11-13",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-c238feec",
     "category": "Build your own 3D Renderer",
     "tag": "Python",
     "title": {
-      "en": "A 3D Modeller"
+      "en": "A 3D Modeller",
+      "es": "Un modelador 3D",
+      "ar": "مُنمذِج ثلاثي الأبعاد",
+      "hi": "एक 3D मॉडलर",
+      "pt": "Um modelador 3D"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "http://aosabook.org/en/500L/a-3d-modeller.html",
@@ -377,17 +399,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-4c870d39",
     "category": "Build your own 3D Renderer",
     "tag": "Java / JavaScript",
     "title": {
-      "en": "Build your own 3D renderer"
+      "en": "Build your own 3D renderer",
+      "es": "Crea tu propio renderizador 3D",
+      "ar": "ابنِ مُصيِّرك ثلاثي الأبعاد الخاص",
+      "hi": "अपना खुद का 3D रेंडरर बनाएँ",
+      "pt": "Crie o seu próprio renderizador 3D"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://avik-das.github.io/build-your-own-raytracer/",
@@ -397,17 +433,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-f9f9837c",
     "category": "Build your own 3D Renderer",
     "tag": "C++",
     "title": {
-      "en": "Rasterization: a Practical Implementation"
+      "en": "Rasterization: a Practical Implementation",
+      "es": "Rasterización: una implementación práctica",
+      "ar": "التنقيط: تطبيق عملي",
+      "hi": "रास्टराइज़ेशन: एक व्यावहारिक कार्यान्वयन",
+      "pt": "Rasterização: uma implementação prática"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.scratchapixel.com/lessons/3d-basic-rendering/rasterization-practical-implementation/overview-rasterization-algorithm",
@@ -417,17 +467,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-75ee0c25",
     "category": "Build your own Augmented Reality",
     "tag": "C#",
     "title": {
-      "en": "AR Portal Tutorial with Unity"
+      "en": "AR Portal Tutorial with Unity",
+      "es": "Tutorial de portal de RA con Unity",
+      "ar": "درس بوابة الواقع المعزَّز باستخدام Unity",
+      "hi": "Unity के साथ AR पोर्टल ट्यूटोरियल",
+      "pt": "Tutorial de portal de RA com Unity"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/playlist?list=PLPCqNOwwN794Gz5fzUSi1p4OqLU0HTmvn",
@@ -437,17 +501,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-2785ade2",
     "category": "Build your own Augmented Reality",
     "tag": "C#",
     "title": {
-      "en": "How to Augmented Reality AR Tutorial: ARKit Portal to the Upside Down"
+      "en": "How to Augmented Reality AR Tutorial: ARKit Portal to the Upside Down",
+      "es": "Tutorial de realidad aumentada (RA): portal de ARKit al Mundo del Revés",
+      "ar": "درس الواقع المعزَّز (AR): بوابة ARKit إلى العالم المقلوب",
+      "hi": "ऑगमेंटेड रियलिटी (AR) ट्यूटोरियल: ARKit पोर्टल उलटी दुनिया में",
+      "pt": "Tutorial de realidade aumentada (RA): portal do ARKit para o Mundo Invertido"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/watch?v=Z5AmqMuNi08",
@@ -457,17 +535,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-7ae22b77",
     "category": "Build your own Augmented Reality",
     "tag": "C#",
     "title": {
-      "en": "How to create a Dragon in Augmented Reality in Unity ARCore"
+      "en": "How to create a Dragon in Augmented Reality in Unity ARCore",
+      "es": "Cómo crear un dragón en realidad aumentada con Unity ARCore",
+      "ar": "كيفية صنع تنّين في الواقع المعزَّز باستخدام Unity ARCore",
+      "hi": "Unity ARCore में ऑगमेंटेड रियलिटी में ड्रैगन कैसे बनाएँ",
+      "pt": "Como criar um dragão em realidade aumentada com Unity ARCore"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/watch?v=qTSDPkPyPqs",
@@ -477,17 +569,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-15e24f81",
     "category": "Build your own Augmented Reality",
     "tag": "C#",
     "title": {
-      "en": "How To Unity ARCore"
+      "en": "How To Unity ARCore",
+      "es": "Cómo usar Unity ARCore",
+      "ar": "كيفية استخدام Unity ARCore",
+      "hi": "Unity ARCore का इस्तेमाल कैसे करें",
+      "pt": "Como usar o Unity ARCore"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/playlist?list=PLKIKuXdn4ZMjuUAtdQfK1vwTZPQn_rgSv",
@@ -497,17 +603,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-fdaf1687",
     "category": "Build your own Front-end Framework / Library",
     "tag": "JavaScript",
     "title": {
-      "en": "A DIY guide to build your own React"
+      "en": "A DIY guide to build your own React",
+      "es": "Una guía casera para crear tu propio React",
+      "ar": "دليل بنفسك لبناء React خاص بك",
+      "hi": "अपना खुद का React बनाने की घरेलू गाइड",
+      "pt": "Um guia caseiro para criar o seu próprio React"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://github.com/hexacta/didact",
@@ -517,17 +637,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-6a17accb",
     "category": "Build your own Front-end Framework / Library",
     "tag": "JavaScript",
     "title": {
-      "en": "Building a frontend framework, from scratch, with components (templating, state, VDOM)"
+      "en": "Building a frontend framework, from scratch, with components (templating, state, VDOM)",
+      "es": "Crear un framework front-end desde cero, con componentes (plantillas, estado, DOM virtual)",
+      "ar": "بناء إطار واجهة أمامية من الصفر بمكوّنات (قوالب وحالة وDOM افتراضي)",
+      "hi": "कंपोनेंट (टेम्पलेट, स्टेट, वर्चुअल DOM) के साथ शुरू से एक फ्रंट-एंड फ़्रेमवर्क बनाना",
+      "pt": "Criar um framework front-end do zero, com componentes (templates, estado, DOM virtual)"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://mfrachet.github.io/create-frontend-framework/",
@@ -537,17 +671,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-25d276a6",
     "category": "Build your own Game",
     "tag": "C",
     "title": {
-      "en": "Coding a Rogue/Nethack RPG in C"
+      "en": "Coding a Rogue/Nethack RPG in C",
+      "es": "Programar un RPG tipo Rogue/Nethack en C",
+      "ar": "برمجة لعبة تقمّص أدوار من نوع Rogue/Nethack بلغة C",
+      "hi": "C में Rogue/Nethack जैसा RPG बनाना",
+      "pt": "Programando um RPG estilo Rogue/Nethack em C"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/playlist?list=PLkTXsX7igf8erbWGYT4iSAhpnJLJ0Nk5G",
@@ -557,17 +705,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-6716814f",
     "category": "Build your own Game",
     "tag": "C",
     "title": {
-      "en": "Coding A Sudoku Solver in C"
+      "en": "Coding A Sudoku Solver in C",
+      "es": "Programar un solucionador de sudokus en C",
+      "ar": "برمجة حلّال سودوكو بلغة C",
+      "hi": "C में सुडोकू सॉल्वर बनाना",
+      "pt": "Programando um resolvedor de sudoku em C"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/playlist?list=PLkTXsX7igf8edTYU92nU-f5Ntzuf-RKvW",
@@ -577,17 +739,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-d12c8bbc",
     "category": "Build your own Game",
     "tag": "Go",
     "title": {
-      "en": "Games With Go"
+      "en": "Games With Go",
+      "es": "Juegos con Go",
+      "ar": "ألعاب بلغة Go",
+      "hi": "Go के साथ खेल",
+      "pt": "Jogos com Go"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/playlist?list=PLDZujg-VgQlZUy1iCqBbe5faZLMkA3g2x",
@@ -597,17 +773,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-e8ae0363",
     "category": "Build your own Game",
     "tag": "C",
     "title": {
-      "en": "Learn Video Game Programming in C"
+      "en": "Learn Video Game Programming in C",
+      "es": "Aprende programación de videojuegos en C",
+      "ar": "تعلّم برمجة ألعاب الفيديو بلغة C",
+      "hi": "C में वीडियो गेम प्रोग्रामिंग सीखें",
+      "pt": "Aprenda programação de videogames em C"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/playlist?list=PLT6WFYYZE6uLMcPGS3qfpYm7T_gViYMMt",
@@ -617,17 +807,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-961a5b5f",
     "category": "Build your own Game",
     "tag": "C",
     "title": {
-      "en": "Let's Make: Dangerous Dave"
+      "en": "Let's Make: Dangerous Dave",
+      "es": "Vamos a crear: Dangerous Dave",
+      "ar": "لنصنع: Dangerous Dave",
+      "hi": "चलो बनाएँ: Dangerous Dave",
+      "pt": "Vamos criar: Dangerous Dave"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/playlist?list=PLSkJey49cOgTSj465v2KbLZ7LMn10bCF9",
@@ -637,17 +841,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-27f27e0a",
     "category": "Build your own Game",
     "tag": "Rust",
     "title": {
-      "en": "Roguelike Tutorial in Rust + tcod"
+      "en": "Roguelike Tutorial in Rust + tcod",
+      "es": "Tutorial de roguelike en Rust + tcod",
+      "ar": "درس لعبة roguelike بلغة Rust مع tcod",
+      "hi": "Rust + tcod में रोगलाइक ट्यूटोरियल",
+      "pt": "Tutorial de roguelike em Rust + tcod"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://tomassedovic.github.io/roguelike-tutorial/",
@@ -657,17 +875,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-1eefac4d",
     "category": "Build your own Neural Network",
     "tag": "Python",
     "title": {
-      "en": "A Neural Network in 11 lines of Python"
+      "en": "A Neural Network in 11 lines of Python",
+      "es": "Una red neuronal en 11 líneas de Python",
+      "ar": "شبكة عصبية في 11 سطرًا من Python",
+      "hi": "Python की 11 पंक्तियों में एक न्यूरल नेटवर्क",
+      "pt": "Uma rede neural em 11 linhas de Python"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://iamtrask.github.io/2015/07/12/basic-python-network/",
@@ -677,17 +909,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-d51d79db",
     "category": "Build your own Neural Network",
     "tag": "JavaScript / Java",
     "title": {
-      "en": "Neural Networks - The Nature of Code"
+      "en": "Neural Networks - The Nature of Code",
+      "es": "Redes neuronales: la naturaleza del código",
+      "ar": "الشبكات العصبية: طبيعة الشيفرة",
+      "hi": "न्यूरल नेटवर्क: कोड की प्रकृति",
+      "pt": "Redes neurais: a natureza do código"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aCibgK1PTWWu9by6XFdCfh",
@@ -697,17 +943,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-67cc0442",
     "category": "Build your own Neural Network",
     "tag": "Python",
     "title": {
-      "en": "Neural Networks: Zero to Hero"
+      "en": "Neural Networks: Zero to Hero",
+      "es": "Redes neuronales: de cero a experto",
+      "ar": "الشبكات العصبية: من الصفر إلى الاحتراف",
+      "hi": "न्यूरल नेटवर्क: शून्य से विशेषज्ञ तक",
+      "pt": "Redes neurais: do zero ao herói"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
@@ -717,17 +977,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-6d17c1f0",
     "category": "Build your own Programming Language",
     "tag": "Go",
     "title": {
-      "en": "Lexical Scanning in Go"
+      "en": "Lexical Scanning in Go",
+      "es": "Análisis léxico en Go",
+      "ar": "التحليل المعجمي في Go",
+      "hi": "Go में लेक्सिकल स्कैनिंग",
+      "pt": "Análise léxica em Go"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/watch?v=HxaD_trXwRE",
@@ -737,17 +1011,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-c0c5d580",
     "category": "Build your own Programming Language",
     "tag": "(any)",
     "title": {
-      "en": "mal - Make a Lisp"
+      "en": "mal - Make a Lisp",
+      "es": "mal: crea un Lisp",
+      "ar": "mal: اصنع لغة Lisp",
+      "hi": "mal: एक Lisp बनाएँ",
+      "pt": "mal: crie um Lisp"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://github.com/kanaka/mal#mal---make-a-lisp",
@@ -757,17 +1045,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-a6c99700",
     "category": "Build your own Search Engine",
     "tag": "Python",
     "title": {
-      "en": "Building A Python-Based Search Engine"
+      "en": "Building A Python-Based Search Engine",
+      "es": "Crear un buscador basado en Python",
+      "ar": "بناء محرّك بحث مبني على Python",
+      "hi": "Python पर आधारित सर्च इंजन बनाना",
+      "pt": "Criando um mecanismo de busca baseado em Python"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/watch?v=cY7pE7vX6MU",
@@ -777,17 +1079,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-62aac5fc",
     "category": "Build your own Template Engine",
     "tag": "Python",
     "title": {
-      "en": "A Template Engine"
+      "en": "A Template Engine",
+      "es": "Un motor de plantillas",
+      "ar": "محرّك قوالب",
+      "hi": "एक टेम्पलेट इंजन",
+      "pt": "Um mecanismo de templates"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "http://aosabook.org/en/500L/a-template-engine.html",
@@ -797,17 +1113,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-d8acae03",
     "category": "Build your own Text Editor",
     "tag": "Python",
     "title": {
-      "en": "Python Tutorial: Make Your Own Text Editor"
+      "en": "Python Tutorial: Make Your Own Text Editor",
+      "es": "Tutorial de Python: crea tu propio editor de texto",
+      "ar": "درس Python: ابنِ محرّر نصوص خاصًا بك",
+      "hi": "Python ट्यूटोरियल: अपना खुद का टेक्स्ट एडिटर बनाएँ",
+      "pt": "Tutorial de Python: crie o seu próprio editor de texto"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://www.youtube.com/watch?v=xqDonHEYPgA",
@@ -817,17 +1147,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-05969466",
     "category": "Build your own Web Server",
     "tag": "Node.js",
     "title": {
-      "en": "lets-build-express"
+      "en": "lets-build-express",
+      "es": "lets-build-express",
+      "ar": "lets-build-express",
+      "hi": "lets-build-express",
+      "pt": "lets-build-express"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://github.com/antoaravinth/lets-build-express",
@@ -837,17 +1181,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-a11ba8c6",
     "category": "Uncategorized",
     "tag": "JavaScript",
     "title": {
-      "en": "Build Your Own Module Bundler - Minipack"
+      "en": "Build Your Own Module Bundler - Minipack",
+      "es": "Crea tu propio empaquetador de módulos: Minipack",
+      "ar": "ابنِ مُجمِّع وحدات خاصًا بك: Minipack",
+      "hi": "अपना खुद का मॉड्यूल बंडलर बनाएँ: Minipack",
+      "pt": "Crie o seu próprio empacotador de módulos: Minipack"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://github.com/ronami/minipack",
@@ -857,17 +1215,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-28a71ea2",
     "category": "Uncategorized",
     "tag": "Python",
     "title": {
-      "en": "Continuous Integration System"
+      "en": "Continuous Integration System",
+      "es": "Sistema de integración continua",
+      "ar": "نظام التكامل المستمر",
+      "hi": "कंटीन्युअस इंटीग्रेशन सिस्टम",
+      "pt": "Sistema de integração contínua"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "http://aosabook.org/en/500L/a-continuous-integration-system.html",
@@ -877,17 +1249,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-ccdcf9db",
     "category": "Uncategorized",
     "tag": "Node.js",
     "title": {
-      "en": "How to create a real-world Node CLI app with Node"
+      "en": "How to create a real-world Node CLI app with Node",
+      "es": "Cómo crear una aplicación de línea de comandos real con Node",
+      "ar": "كيفية صنع تطبيق سطر أوامر حقيقي باستخدام Node",
+      "hi": "Node से असली कमांड-लाइन ऐप कैसे बनाएँ",
+      "pt": "Como criar um aplicativo de linha de comando de verdade com Node"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://medium.freecodecamp.org/how-to-create-a-real-world-node-cli-app-with-node-391b727bbed3",
@@ -897,17 +1283,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-ab775371",
     "category": "Uncategorized",
     "tag": "JavaScript",
     "title": {
-      "en": "JavaScript Algorithms and Data Structures"
+      "en": "JavaScript Algorithms and Data Structures",
+      "es": "Algoritmos y estructuras de datos en JavaScript",
+      "ar": "الخوارزميات وبنى البيانات في JavaScript",
+      "hi": "JavaScript में एल्गोरिदम और डेटा संरचनाएँ",
+      "pt": "Algoritmos e estruturas de dados em JavaScript"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://github.com/trekhleb/javascript-algorithms",
@@ -917,17 +1317,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-c28cc666",
     "category": "Uncategorized",
     "tag": "Python",
     "title": {
-      "en": "JSON Decoding Algorithm"
+      "en": "JSON Decoding Algorithm",
+      "es": "Algoritmo de decodificación de JSON",
+      "ar": "خوارزمية فكّ ترميز JSON",
+      "hi": "JSON डिकोड करने का एल्गोरिदम",
+      "pt": "Algoritmo de decodificação de JSON"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://github.com/cheery/json-algorithm",
@@ -937,17 +1351,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-fdb2cd89",
     "category": "Uncategorized",
     "tag": "C",
     "title": {
-      "en": "Learn how to write a hash table in C"
+      "en": "Learn how to write a hash table in C",
+      "es": "Aprende a escribir una tabla hash en C",
+      "ar": "تعلّم كتابة جدول تجزئة بلغة C",
+      "hi": "C में हैश टेबल लिखना सीखें",
+      "pt": "Aprenda a escrever uma tabela hash em C"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://github.com/jamesroutley/write-a-hash-table",
@@ -957,17 +1385,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-760f10e2",
     "category": "Uncategorized",
     "tag": "TypeScript",
     "title": {
-      "en": "Tiny Package Manager: Learns how npm or Yarn works"
+      "en": "Tiny Package Manager: Learns how npm or Yarn works",
+      "es": "Gestor de paquetes diminuto: aprende cómo funciona npm o Yarn",
+      "ar": "مدير حزم صغير: تعلّم كيف يعمل npm أو Yarn",
+      "hi": "छोटा पैकेज मैनेजर: जानें npm या Yarn कैसे काम करते हैं",
+      "pt": "Gerenciador de pacotes minúsculo: aprenda como o npm ou o Yarn funcionam"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://github.com/g-plane/tiny-package-manager",
@@ -977,17 +1419,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-f3e0da40",
     "category": "Uncategorized",
     "tag": "PHP",
     "title": {
-      "en": "Write your own MVC from scratch in PHP"
+      "en": "Write your own MVC from scratch in PHP",
+      "es": "Escribe tu propio MVC desde cero en PHP",
+      "ar": "اكتب إطار MVC خاصًا بك من الصفر بلغة PHP",
+      "hi": "PHP में शुरू से अपना खुद का MVC लिखें",
+      "pt": "Escreva o seu próprio MVC do zero em PHP"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://chaitya62.github.io/2018/04/29/Writing-your-own-MVC-from-Scratch-in-PHP.html",
@@ -997,17 +1453,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-021ddad9",
     "category": "Uncategorized",
     "tag": "Nim",
     "title": {
-      "en": "Writing a Link Checker"
+      "en": "Writing a Link Checker",
+      "es": "Escribir un verificador de enlaces",
+      "ar": "كتابة أداة للتحقق من الروابط",
+      "hi": "लिंक चेकर लिखना",
+      "pt": "Escrevendo um verificador de links"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://xmonader.github.io/nimdays/day04_asynclinkschecker.html",
@@ -1017,17 +1487,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-361c58ea",
     "category": "Uncategorized",
     "tag": "Nim",
     "title": {
-      "en": "Writing a MiniTest Framework"
+      "en": "Writing a MiniTest Framework",
+      "es": "Escribir un framework de pruebas MiniTest",
+      "ar": "كتابة إطار اختبار MiniTest",
+      "hi": "MiniTest टेस्टिंग फ़्रेमवर्क लिखना",
+      "pt": "Escrevendo um framework de testes MiniTest"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://xmonader.github.io/nimdays/day08_minitest.html",
@@ -1037,17 +1521,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-55f98526",
     "category": "Uncategorized",
     "tag": "Nim",
     "title": {
-      "en": "Writing a URL Shortening Service"
+      "en": "Writing a URL Shortening Service",
+      "es": "Escribir un servicio para acortar URL",
+      "ar": "كتابة خدمة لاختصار الروابط",
+      "hi": "URL छोटा करने वाली सेवा लिखना",
+      "pt": "Escrevendo um serviço de encurtamento de URL"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Intermediate",
     "url": "https://xmonader.github.io/nimdays/day07_shorturl.html",
@@ -1057,17 +1555,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-aeccd2f8",
     "category": "Build your own 3D Renderer",
     "tag": "C++",
     "title": {
-      "en": "How OpenGL works: software rendering in 500 lines of code"
+      "en": "How OpenGL works: software rendering in 500 lines of code",
+      "es": "Cómo funciona OpenGL: renderizado por software en 500 líneas de código",
+      "ar": "كيف يعمل OpenGL: التصيير البرمجي في 500 سطر من الشيفرة",
+      "hi": "OpenGL कैसे काम करता है: 500 पंक्तियों के कोड में सॉफ़्टवेयर रेंडरिंग",
+      "pt": "Como o OpenGL funciona: renderização por software em 500 linhas de código"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://github.com/ssloy/tinyrenderer/wiki",
@@ -1077,17 +1589,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-514158f4",
     "category": "Build your own 3D Renderer",
     "tag": "C++",
     "title": {
-      "en": "Ray Tracing in One Weekend"
+      "en": "Ray Tracing in One Weekend",
+      "es": "Trazado de rayos en un fin de semana",
+      "ar": "تتبّع الأشعة في عطلة أسبوع واحدة",
+      "hi": "एक सप्ताहांत में रे ट्रेसिंग",
+      "pt": "Ray tracing em um fim de semana"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://raytracing.github.io/books/RayTracingInOneWeekend.html",
@@ -1097,17 +1623,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-1f1bc03a",
     "category": "Build your own AI Model",
     "tag": "Python",
     "title": {
-      "en": "A Large Language Model (LLM)"
+      "en": "A Large Language Model (LLM)",
+      "es": "Un modelo de lenguaje grande (LLM)",
+      "ar": "نموذج لغوي كبير (LLM)",
+      "hi": "एक बड़ा भाषा मॉडल (LLM)",
+      "pt": "Um modelo de linguagem grande (LLM)"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://github.com/rasbt/LLMs-from-scratch",
@@ -1117,17 +1657,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-9ab4653e",
     "category": "Build your own AI Model",
     "tag": "Python",
     "title": {
-      "en": "RAG for Document Search"
+      "en": "RAG for Document Search",
+      "es": "RAG para buscar en documentos",
+      "ar": "RAG للبحث في المستندات",
+      "hi": "दस्तावेज़ खोज के लिए RAG",
+      "pt": "RAG para busca em documentos"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://github.com/langchain-ai/rag-from-scratch",
@@ -1137,17 +1691,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-d68ab5c2",
     "category": "Build your own Front-end Framework / Library",
     "tag": "JavaScript",
     "title": {
-      "en": "Building a Custom React Renderer"
+      "en": "Building a Custom React Renderer",
+      "es": "Crear un renderizador de React personalizado",
+      "ar": "بناء مُصيِّر React مخصّص",
+      "hi": "अपनी पसंद का React रेंडरर बनाना",
+      "pt": "Criando um renderizador React personalizado"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://youtu.be/CGpMlWVcHok",
@@ -1157,17 +1725,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-2156aefb",
     "category": "Build your own Front-end Framework / Library",
     "tag": "JavaScript",
     "title": {
-      "en": "Building React From Scratch"
+      "en": "Building React From Scratch",
+      "es": "Crear React desde cero",
+      "ar": "بناء React من الصفر",
+      "hi": "शुरू से React बनाना",
+      "pt": "Criando o React do zero"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://www.youtube.com/watch?v=_MAD4Oly9yg",
@@ -1177,17 +1759,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-ebb0d512",
     "category": "Build your own Game",
     "tag": "C",
     "title": {
-      "en": "Chess Engine In C"
+      "en": "Chess Engine In C",
+      "es": "Motor de ajedrez en C",
+      "ar": "محرّك شطرنج بلغة C",
+      "hi": "C में शतरंज इंजन",
+      "pt": "Motor de xadrez em C"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://www.youtube.com/playlist?list=PLZ1QII7yudbc-Ky058TEaOstZHVbT-2hg",
@@ -1197,17 +1793,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-0dd2a748",
     "category": "Build your own Game",
     "tag": "C++",
     "title": {
-      "en": "Reconstructing Cave Story"
+      "en": "Reconstructing Cave Story",
+      "es": "Reconstruir Cave Story",
+      "ar": "إعادة بناء Cave Story",
+      "hi": "Cave Story का पुनर्निर्माण",
+      "pt": "Reconstruindo Cave Story"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://www.youtube.com/playlist?list=PL006xsVEsbKjSKBmLu1clo85yLrwjY67X",
@@ -1217,17 +1827,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-dbc6b593",
     "category": "Build your own Game",
     "tag": "C++",
     "title": {
-      "en": "Remaking Cavestory in C++"
+      "en": "Remaking Cavestory in C++",
+      "es": "Rehacer Cave Story en C++",
+      "ar": "إعادة صناعة Cave Story بلغة C++",
+      "hi": "C++ में Cave Story को फिर से बनाना",
+      "pt": "Refazendo Cave Story em C++"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://www.youtube.com/watch?v=ETvApbD5xRo&list=PLNOBk_id22bw6LXhrGfhVwqQIa-M2MsLa",
@@ -1237,17 +1861,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-69566814",
     "category": "Build your own Neural Network",
     "tag": "Python",
     "title": {
-      "en": "Build Deep Learning From Scratch (reimplement PyTorch internals across 34 stages)"
+      "en": "Build Deep Learning From Scratch (reimplement PyTorch internals across 34 stages)",
+      "es": "Crea aprendizaje profundo desde cero (reimplementa el interior de PyTorch en 34 etapas)",
+      "ar": "ابنِ التعلّم العميق من الصفر (أعد تنفيذ بنية PyTorch الداخلية في 34 مرحلة)",
+      "hi": "शुरू से डीप लर्निंग बनाएँ (34 चरणों में PyTorch के अंदरूनी हिस्सों को फिर से बनाएँ)",
+      "pt": "Crie aprendizado profundo do zero (reimplemente o interior do PyTorch em 34 etapas)"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://github.com/roiamiel1/Build-Deep-Learning-From-Scratch",
@@ -1257,17 +1895,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-2cf54114",
     "category": "Build your own Neural Network",
     "tag": "Python",
     "title": {
-      "en": "Optical Character Recognition (OCR)"
+      "en": "Optical Character Recognition (OCR)",
+      "es": "Reconocimiento óptico de caracteres (OCR)",
+      "ar": "التعرّف الضوئي على الحروف (OCR)",
+      "hi": "ऑप्टिकल कैरेक्टर रिकग्निशन (OCR)",
+      "pt": "Reconhecimento óptico de caracteres (OCR)"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "http://aosabook.org/en/500L/optical-character-recognition-ocr.html",
@@ -1277,17 +1929,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-0154ebfa",
     "category": "Build your own Neural Network",
     "tag": "Python",
     "title": {
-      "en": "SlowTorch: Implementation of PyTorch from the ground up in 100% pure Python"
+      "en": "SlowTorch: Implementation of PyTorch from the ground up in 100% pure Python",
+      "es": "SlowTorch: implementación de PyTorch desde cero en Python 100 % puro",
+      "ar": "SlowTorch: تنفيذ PyTorch من الصفر بلغة Python الصرفة 100%",
+      "hi": "SlowTorch: 100% शुद्ध Python में शुरू से PyTorch का कार्यान्वयन",
+      "pt": "SlowTorch: implementação do PyTorch do zero em Python 100% puro"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://github.com/xames3/slowtorch",
@@ -1297,17 +1963,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-28348eb1",
     "category": "Build your own Physics Engine",
     "tag": "C++",
     "title": {
-      "en": "3D Physics Engine Tutorial"
+      "en": "3D Physics Engine Tutorial",
+      "es": "Tutorial de motor de física 3D",
+      "ar": "درس محرّك فيزياء ثلاثي الأبعاد",
+      "hi": "3D फ़िज़िक्स इंजन ट्यूटोरियल",
+      "pt": "Tutorial de motor de física 3D"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://www.youtube.com/playlist?list=PLEETnX-uPtBXm1KEr_2zQ6K_0hoGH6JJ0",
@@ -1317,17 +1997,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-f459bc96",
     "category": "Build your own Programming Language",
     "tag": "Python",
     "title": {
-      "en": "A Python Interpreter Written in Python"
+      "en": "A Python Interpreter Written in Python",
+      "es": "Un intérprete de Python escrito en Python",
+      "ar": "مفسّر Python مكتوب بلغة Python",
+      "hi": "Python में लिखा Python इंटरप्रेटर",
+      "pt": "Um interpretador de Python escrito em Python"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "http://aosabook.org/en/500L/a-python-interpreter-written-in-python.html",
@@ -1337,17 +2031,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-bcb475f9",
     "category": "Build your own Programming Language",
     "tag": "Java",
     "title": {
-      "en": "Creating JVM Language"
+      "en": "Creating JVM Language",
+      "es": "Crear un lenguaje para la JVM",
+      "ar": "إنشاء لغة لآلة JVM",
+      "hi": "JVM के लिए एक भाषा बनाना",
+      "pt": "Criando uma linguagem para a JVM"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "http://jakubdziworski.github.io/categories.html#Enkel-ref",
@@ -1357,17 +2065,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-fb216e8e",
     "category": "Build your own Programming Language",
     "tag": "Assembly",
     "title": {
-      "en": "Jonesforth"
+      "en": "Jonesforth",
+      "es": "Jonesforth",
+      "ar": "Jonesforth",
+      "hi": "Jonesforth",
+      "pt": "Jonesforth"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://github.com/nornagon/jonesforth/blob/master/jonesforth.S",
@@ -1377,17 +2099,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-1b76c92d",
     "category": "Uncategorized",
     "tag": "Python",
     "title": {
-      "en": "Build a Deep Learning Library"
+      "en": "Build a Deep Learning Library",
+      "es": "Crea una biblioteca de aprendizaje profundo",
+      "ar": "ابنِ مكتبة تعلّم عميق",
+      "hi": "डीप लर्निंग लाइब्रेरी बनाएँ",
+      "pt": "Crie uma biblioteca de aprendizado profundo"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://www.youtube.com/watch?v=o64FV-ez6Gw",
@@ -1397,17 +2133,31 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-5ab37fe3",
     "category": "Uncategorized",
     "tag": "C++",
     "title": {
-      "en": "Make your own Game Engine"
+      "en": "Make your own Game Engine",
+      "es": "Crea tu propio motor de juegos",
+      "ar": "ابنِ محرّك ألعاب خاصًا بك",
+      "hi": "अपना खुद का गेम इंजन बनाएँ",
+      "pt": "Crie o seu próprio motor de jogos"
     },
     "desc": {
-      "en": ""
+      "en": "",
+      "es": "",
+      "ar": "",
+      "hi": "",
+      "pt": ""
     },
     "level": "Advanced",
     "url": "https://www.youtube.com/playlist?list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT",
@@ -1417,7 +2167,13 @@
     "age_group": "teen+",
     "safety": "kid-safe",
     "safety_reasons": [],
-    "reuse": "link-only"
+    "reuse": "link-only",
+    "ai_translated": [
+      "ar",
+      "es",
+      "hi",
+      "pt"
+    ]
   },
   {
     "id": "build-cc90863d",

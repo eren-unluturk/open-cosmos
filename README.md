@@ -1,4 +1,4 @@
-# Hackcessability Project (KTP Hackathon, Nov 7-8 2026)
+# Open Cosmos Project (KTP Hackathon, Nov 7-8 2026)
 
 > One-line pitch: Open-source programming education, made approachable and available in every language. Level-based, age-aware and safety-tagged paths, with translated titles, built on existing open repos. Nothing here is ours; everything links back to its source and license.
 
@@ -6,7 +6,7 @@
 Great open-source programming resources exist, but they are mostly English-only and hard for beginners to approach: huge lists with no clear starting point.
 
 ## Solution
-A website (Hackcessability, **Information Access** track) with two sides, built only on open data:
+A website (Open Cosmos, **Information Access** track) with two sides, built only on open data:
 - **Learn**: curated learning lists from [sindresorhus/awesome](https://github.com/sindresorhus/awesome) (CC0)
 - **Build**: "build your own X" tutorials from [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x) (CC0)
 

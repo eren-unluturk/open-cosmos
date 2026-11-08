@@ -24,7 +24,7 @@ EN = {
     "all": "All levels", "source": "Source", "license": "License",
     "tagline": "Open-source lessons for every explorer, in your language.",
     # header
-    "brand": "Learning Lab", "skip": "Skip to content",
+    "brand": "Open Cosmos", "skip": "Skip to content",
     "search_ph": "What part of the galaxy do you want to explore today?", "search_btn": "Explore",
     "constellation": "Constellation", "everything": "Everything", "profile": "My space log",
     "language": "Language", "levels": "Levels", "any_level": "Any level",
@@ -73,7 +73,7 @@ EN = {
     "goal_games": "Games", "goal_art": "Art", "goal_web": "Websites", "goal_general": "A bit of everything",
     # footer
     "footer_1": "Nothing here is ours. Every stop links to its original source and license.",
-    "footer_2": "Lessons from CS Unplugged (University of Canterbury CSER Group), licensed CC BY-SA 4.0. Titles and descriptions translated and level-tagged by Hackcessability with AI; changes were made. Other lists: CC0.",
+    "footer_2": "Lessons from CS Unplugged (University of Canterbury CSER Group), licensed CC BY-SA 4.0. Titles and descriptions translated and level-tagged by Open Cosmos with AI; changes were made. Other lists: CC0.",
     "footer_3": "Translations are AI-generated; always check the original.",
     # galaxies
     "g_code": "Programming languages", "g_art": "Digital art", "g_games": "Games",

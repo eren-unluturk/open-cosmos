@@ -52,7 +52,7 @@ def lesson_slide():
     return slide("go_lesson", "Start the lesson",
                  "Open our lesson page for {entry_title}. It is a short, simple version of an open lesson you can do together.",
                  adult_note=("Adapted from CS Unplugged by the University of Canterbury Computer Science Education Research Group, "
-                             "licensed CC BY-SA 4.0. Changes were made: simplified, shortened and translated by Hackcessability with AI."),
+                             "licensed CC BY-SA 4.0. Changes were made: simplified, shortened and translated by Open Cosmos with AI."),
                  attribution=True)
 
 

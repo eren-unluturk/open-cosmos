@@ -64,7 +64,7 @@
    "en": "print shows text. The words are inside quote marks so Python knows they are text."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-double",
@@ -161,7 +161,7 @@
    "en": "return n * 2 hands back the answer to whoever called the function."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-evens",
@@ -282,7 +282,7 @@
    "en": "n % 2 == 0 is true when n divides by 2 with nothing left over. The counter goes up only then."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-reverse-words",
@@ -379,7 +379,7 @@
    "en": "split makes a list, [::-1] reverses it, and join glues the words back into one string."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-fizzbuzz",
@@ -484,7 +484,7 @@
    "en": "A number that divides by both 3 and 5 divides by 15, so that check comes first."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-to-binary",
@@ -595,7 +595,7 @@
    "en": "Each step peels off the last binary digit. Putting new digits at the front fixes the order."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "js-hello",
@@ -662,7 +662,7 @@
    "en": "console.log shows text. The words are inside quote marks so JavaScript knows they are text."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "js-add",
@@ -742,7 +742,7 @@
    "en": "return a + b; hands the sum back to whoever called the function."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "js-find-max",
@@ -863,7 +863,7 @@
    "en": "The variable biggest always holds the largest number seen so far."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "js-count-vowels",
@@ -967,7 +967,7 @@
    "en": "toLowerCase makes A and a the same, so one check finds both."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "js-sort-numbers",
@@ -1089,7 +1089,7 @@
    "en": "Each pass pushes the biggest remaining number to the end. This is called bubble sort."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "js-binary-search",
@@ -1217,7 +1217,7 @@
    "en": "Each step throws away half of the list, so 1000 items need only about 10 looks."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-greet",
@@ -1314,7 +1314,7 @@
    "en": "+ joins pieces of text together, in the order you write them."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-is-even",
@@ -1406,7 +1406,7 @@
    "en": "n % 2 == 0 asks: is the remainder zero? The answer is True or False."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-palindrome",
@@ -1516,7 +1516,7 @@
    "en": "A palindrome is the same as its own reverse, so we compare the cleaned text with it."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-word-count",
@@ -1614,7 +1614,7 @@
    "en": "counts.get(word, 0) is the old count, or 0 for a new word. Adding 1 gives the new count."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-parity-bit",
@@ -1730,7 +1730,7 @@
    "en": "The extra digit makes the number of 1s even. If one digit gets flipped later, the count turns odd and the mistake shows."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-primes-up-to",
@@ -1840,7 +1840,7 @@
    "en": "If i has a divisor, it has one that is at most the square root of i. So we can stop trying at d * d > i."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-flatten",
@@ -1943,7 +1943,7 @@
    "en": "A list inside a list is flattened by the same function. That is called recursion."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "js-greet",
@@ -2040,7 +2040,7 @@
    "en": "+ joins pieces of text together, in the order you write them."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "js-sum",
@@ -2143,7 +2143,7 @@
    "en": "total collects the numbers one at a time, so after the loop it holds the whole sum."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "js-reverse-string",
@@ -2229,7 +2229,7 @@
    "en": "Each new letter goes in front of the ones before it, so the last letter ends up first."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "js-factorial",
@@ -2332,7 +2332,7 @@
    "en": "For 0 the loop does not run, so the answer stays 1, which is right."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "js-fibonacci",
@@ -2447,7 +2447,7 @@
    "en": "The loop only ever remembers the last two numbers, so it takes n steps. Calling the function twice from itself would take billions."
   },
   "license": "original",
-  "source": "Hackcessability"
+  "source": "Open Cosmos"
  },
  {
   "id": "py-card-values",
@@ -2530,7 +2530,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/dots-right-left",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-card-values",
@@ -2613,7 +2613,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/dots-right-left",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-cards-from-largest",
@@ -2677,7 +2677,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/left-right-given-largest",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-cards-from-largest",
@@ -2741,7 +2741,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/left-right-given-largest",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-bits-needed",
@@ -2817,7 +2817,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/number-bits-representing-number",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-bits-needed",
@@ -2893,7 +2893,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/number-bits-representing-number",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-binary-cards",
@@ -2995,7 +2995,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/binary-cards-representing-number",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-binary-cards",
@@ -3097,7 +3097,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/binary-cards-representing-number",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-count-dots",
@@ -3192,7 +3192,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/count-bw-one-input-using-loop",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-count-dots",
@@ -3287,7 +3287,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/binary-numbers/programming-challenges/count-bw-one-input-using-loop",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-parity-row",
@@ -3357,7 +3357,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/detect-parity-error-in-row",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-parity-row",
@@ -3427,7 +3427,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/detect-parity-error-in-row",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-find-flipped-card",
@@ -3492,7 +3492,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/detect-parity-error-in-any-rows-or-columns",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-find-flipped-card",
@@ -3557,7 +3557,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/detect-parity-error-in-any-rows-or-columns",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-isbn-check-digit",
@@ -3647,7 +3647,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/calculate-isbn-10-last-digit",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-isbn-check-digit",
@@ -3737,7 +3737,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/calculate-isbn-10-last-digit",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-isbn-valid",
@@ -3826,7 +3826,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/check-valid-isbn-10",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-isbn-valid",
@@ -3915,7 +3915,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/check-valid-isbn-10",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-card-check-digit",
@@ -3980,7 +3980,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/calculate-credit-card-last-digit",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-card-check-digit",
@@ -4045,7 +4045,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/calculate-credit-card-last-digit",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-card-valid",
@@ -4121,7 +4121,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/check-valid-credit-card",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-card-valid",
@@ -4197,7 +4197,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/check-valid-credit-card",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-barcode-check-digit",
@@ -4286,7 +4286,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/product-code-13-last-digit-one-line",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-barcode-check-digit",
@@ -4375,7 +4375,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/product-code-13-last-digit-one-line",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-barcode-valid",
@@ -4451,7 +4451,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/product-code-check-valid-any-length",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-barcode-valid",
@@ -4527,7 +4527,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/error-detection-and-correction/programming-challenges/product-code-check-valid-any-length",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-add-in-parts",
@@ -4597,7 +4597,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/add-in-parts-2-digit-number",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-add-in-parts",
@@ -4667,7 +4667,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/add-in-parts-2-digit-number",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-power",
@@ -4743,7 +4743,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/calculate-exponents",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-power",
@@ -4825,7 +4825,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/calculate-exponents",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-inside-angle",
@@ -4895,7 +4895,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/calculate-inside-angles-of-regular-polygons",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-inside-angle",
@@ -4965,7 +4965,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/calculate-inside-angles-of-regular-polygons",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-is-divisor",
@@ -5034,7 +5034,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/check-if-divisor",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-is-divisor",
@@ -5103,7 +5103,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/check-if-divisor",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-factors",
@@ -5186,7 +5186,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/find-factors",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-factors",
@@ -5269,7 +5269,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/find-factors",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-is-prime",
@@ -5382,7 +5382,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/check-prime",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-is-prime",
@@ -5495,7 +5495,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/check-prime",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-prime-factors",
@@ -5572,7 +5572,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/find-prime-factors",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-prime-factors",
@@ -5649,7 +5649,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/find-prime-factors",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-clock-12",
@@ -5738,7 +5738,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-hours-12-hour-clock",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-clock-12",
@@ -5827,7 +5827,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-hours-12-hour-clock",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-clock-24",
@@ -5896,7 +5896,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-hours-24-hour-clock",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-clock-24",
@@ -5965,7 +5965,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-hours-24-hour-clock",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-month-after",
@@ -6041,7 +6041,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-months",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-month-after",
@@ -6117,7 +6117,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-months",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-add-durations",
@@ -6188,7 +6188,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-video-timings",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-add-durations",
@@ -6259,7 +6259,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-add-video-timings",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-leap-year",
@@ -6341,7 +6341,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-check-leap-year",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-leap-year",
@@ -6423,7 +6423,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-check-leap-year",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "py-note-name",
@@ -6499,7 +6499,7 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-display-midi-note",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  },
  {
   "id": "js-note-name",
@@ -6575,6 +6575,6 @@
   "source": "https://github.com/uccser/cs-unplugged/tree/develop/csunplugged/topics/content/en/kidbots/programming-challenges/modulo-display-midi-note",
   "attribution": "Adapted from a CS Unplugged programming challenge by the University of Canterbury Computer Science Education Research Group, licensed CC BY-SA 4.0.",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Hackcessability. This version is also CC BY-SA 4.0."
+  "changes_made": "Rewritten in our own words as a function with tests, hints and steps, in Python and JavaScript, by Open Cosmos. This version is also CC BY-SA 4.0."
  }
 ]

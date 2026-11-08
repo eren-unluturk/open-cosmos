@@ -24,7 +24,7 @@ class Lessons(unittest.TestCase):
             self.assertIn("CS Unplugged", ls["attribution"])
             self.assertIn("University of Canterbury", ls["attribution"])
             self.assertEqual(ls["license_url"], "https://creativecommons.org/licenses/by-sa/4.0/")
-            self.assertIn("Hackcessability", ls["changes_made"])
+            self.assertIn("Open Cosmos", ls["changes_made"])
             self.assertTrue(ls["source_url"].startswith("https://www.csunplugged.org/"))
 
     def test_lessons_match_open_content_safe_entries(self):

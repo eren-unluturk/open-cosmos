@@ -55,7 +55,7 @@ Every text field is `{"en": ...}` so translations can be added as extra language
 1. **Slide viewer**: one slide at a time, previous/next buttons, keyboard arrows, swipe on touch, `aria-live` for slide changes, focus management, progress ("2 of 6"). **No-JavaScript fallback**: render all slides stacked in order. Right-to-left layouts for Arabic.
 2. **Timeline slide** as a visual strip (Day 1 -> Week 1 -> Week 2) with the minutes; label it "estimate".
 3. **go_external slide**: clear "You are leaving our site" notice, the adult note, and a big button. `go_lesson` slide: button to our lesson page plus the attribution text.
-4. **Lesson page layout**: title, age, time, materials, numbered steps, "talk about it", the grown-up note, and a **CC BY-SA 4.0 attribution box on every lesson**: show `attribution`, a link to `source_url` ("Original lesson, with pictures"), a link to `license_url`, and the `changes_made` text ("Simplified, shortened and translated by Hackcessability with AI"). The adapted lesson is itself CC BY-SA 4.0 (ShareAlike).
+4. **Lesson page layout**: title, age, time, materials, numbered steps, "talk about it", the grown-up note, and a **CC BY-SA 4.0 attribution box on every lesson**: show `attribution`, a link to `source_url` ("Original lesson, with pictures"), a link to `license_url`, and the `changes_made` text ("Simplified, shortened and translated by Open Cosmos with AI"). The adapted lesson is itself CC BY-SA 4.0 (ShareAlike).
 5. Show "AI-written overview" on guides and an "estimate" tag on all times.
 
 ## Translation later

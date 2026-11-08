@@ -6,8 +6,8 @@ Server-rendered Jinja + one CSS file + one small JS file. No build step, no fram
 ## Where things are
 | File | What it is | Tinker here to… |
 |------|------------|-----------------|
-| `src/static/galaxy.css` | All styles. Colors are the `:root` variables at the top. | Change colors, fonts, spacing, card shapes, button shapes |
-| `src/static/galaxy.js` | Progress stars (localStorage only), the guide slide viewer (buttons, arrow keys, swipe). | Change slide behavior or badges |
+| `public/static/galaxy.css` | All styles. Colors are the `:root` variables at the top. | Change colors, fonts, spacing, card shapes, button shapes |
+| `public/static/galaxy.js` | Progress stars (localStorage only), the guide slide viewer (buttons, arrow keys, swipe). | Change slide behavior or badges |
 | `src/templates/_icons.html` | Every drawn icon (robot, alien, astronaut, book, constellation, flag, subject icons) as SVG symbols. | Redraw an icon |
 | `src/templates/macros.html` | Reusable pieces: `card`, `icon`, level buttons, difficulty dots, path strip, grown-up notice. | Change what a card shows |
 | `src/templates/base.html` | Header (profile, search, constellation, everything, levels, language), moving subject bar, footer. | Header/footer layout |

@@ -10,7 +10,7 @@ Goal: WCAG 2.2 level AA. No outside audit yet. Everything below runs locally and
 | **Colours** | Match my device (default), Galaxy, Light, High contrast, Colour-blind friendly (Okabe-Ito accents). "Match my device" uses `prefers-contrast: more`, then `prefers-color-scheme: light`, otherwise Galaxy, and follows changes live. |
 | **Text size** | 100%, 125%, 150%: all text is in `rem`, so everything scales. |
 | **Line spacing** | "Roomy": WCAG 1.4.12 text spacing (line height 1.9, extra letter/word spacing; never letter spacing on Arabic or Hindi). |
-| **Easy-to-read font** | Atkinson Hyperlegible, self-hosted in `src/static/fonts/` (SIL OFL 1.1, licence in `OFL.txt`). The `@font-face` rules only download files when the font is chosen. It covers Latin letters only; Arabic and Hindi keep the device font (said in the panel and on the statement page). |
+| **Easy-to-read font** | Atkinson Hyperlegible, self-hosted in `public/static/fonts/` (SIL OFL 1.1, licence in `OFL.txt`). The `@font-face` rules only download files when the font is chosen. It covers Latin letters only; Arabic and Hindi keep the device font (said in the panel and on the statement page). |
 | **Reduce motion** | Stops the moving stars, spinning maps and transitions. Default follows `prefers-reduced-motion`; choosing "full motion" explicitly overrides the device. |
 | **Read aloud (Listen)** | On lessons, guide slides and entry descriptions. Browser `speechSynthesis` only: no network, no cost. Play, pause/resume, stop, speed (slow to faster). Voice language follows the page (`en-US`, `es-ES`, `ar-SA`, `hi-IN`, `pt-BR`). Reads only the main content (navigation, buttons, hidden slides and controls are skipped). Hidden if the browser has no speech synthesis; a translated note appears if the device has no voice for the language. Announced through a polite live region. |
 | **Statement page** | `/<lang>/accessibility` in five languages, linked from the footer. |
@@ -125,4 +125,4 @@ Do these on desktop Safari (best VoiceOver support) and, if you can, on Chrome. 
 - The translations (es, ar, hi, pt) are AI-written and not checked by native speakers.
 - The easy-to-read font does not cover Arabic or Devanagari.
 - We have not had an outside accessibility audit or tested with JAWS, NVDA or TalkBack ourselves.
-- When this branch is merged with the Vercel branch: static files move to `public/static/`, and the Content-Security-Policy there needs `font-src 'self' https://fonts.gstatic.com` (the self-hosted font) in `src/csp.py` and `vercel.json`.
+- Static files live in `public/static/` (Vercel serves that folder). The Content-Security-Policy (`src/csp.py` and `vercel.json`) allows `font-src 'self' https://fonts.gstatic.com`, so the self-hosted font loads; a test checks both places.

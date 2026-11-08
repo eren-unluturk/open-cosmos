@@ -7,9 +7,12 @@ import sys
 from functools import lru_cache
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # modules next to this file, however the entry point loads it
+
 from dotenv import load_dotenv
 from flask import Flask, abort, redirect, render_template, request, session, url_for
 
+import csp
 import delivery
 import gate
 import guide
@@ -30,7 +33,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 import guide_helpers  # noqa: E402
 
 load_dotenv()
-app = Flask(__name__)
+ROOT = Path(__file__).resolve().parent.parent
+# Static files live in public/static: Vercel serves public/ from its CDN, and Flask serves the same files locally.
+app = Flask(__name__, static_folder=str(ROOT / "public" / "static"), static_url_path="/static")
 # Set SECRET_KEY in .env for production. A random fallback only resets sessions on restart.
 app.secret_key = os.environ.get("SECRET_KEY") or secrets.token_hex(32)
 app.config.update(SESSION_COOKIE_HTTPONLY=True, SESSION_COOKIE_SAMESITE="Lax",
@@ -616,10 +621,8 @@ def healthz():
 
 @app.after_request
 def security_headers(resp):
-    resp.headers.setdefault("X-Content-Type-Options", "nosniff")
-    resp.headers.setdefault("X-Frame-Options", "DENY")
-    resp.headers.setdefault("Referrer-Policy", "no-referrer")
-    resp.headers.setdefault("Permissions-Policy", "camera=(), microphone=(), geolocation=()")
+    for name, value in csp.headers_for(request.path).items():
+        resp.headers.setdefault(name, value)
     return resp
 
 

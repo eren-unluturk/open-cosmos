@@ -1,6 +1,6 @@
 """Coding problems: format, checks, and a server-side runner used only by tests and the build script.
 
-The learner's code runs in THEIR browser (src/static/runner.js, in a Web Worker), never on our server.
+The learner's code runs in THEIR browser (public/static/runner.js, in a Web Worker), never on our server.
 This file never executes learner code. It only runs our own reference solutions, to prove every
 problem and every guided step can really be solved.
 

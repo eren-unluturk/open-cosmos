@@ -488,7 +488,7 @@ class StarProgressTests(unittest.TestCase):
             self.assertNotIn("data-progress-", html)
         ls = store.lessons()[0]
         self.assertNotIn("data-progress-item", self.page(f"/en/lesson/{ls['id']}"))
-        self.assertFalse((Path(SRC) / "static" / "progress.js").exists())
+        self.assertFalse((Path(SRC).parent / "public" / "static" / "progress.js").exists())
 
     def test_star_button_still_on_lesson_page(self):
         ls = store.lessons()[0]
@@ -515,7 +515,7 @@ class StarProgressTests(unittest.TestCase):
             self.assertIn(hook, html)
 
     def test_galaxy_js_has_the_kept_features(self):
-        js = (Path(SRC) / "static" / "galaxy.js").read_text(encoding="utf-8")
+        js = (Path(SRC).parent / "public" / "static" / "galaxy.js").read_text(encoding="utf-8")
         for needle in ("window.HackProgress", "markSolved", "function safeUrl", "function clean",
                        "hc_progress_v1", "MAX_ITEMS", "data-count-for"):
             self.assertIn(needle, js)

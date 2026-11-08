@@ -566,7 +566,7 @@ def security_headers(resp):
     return resp
 
 
-# Strings for Eren's browser-only progress (static/progress.js, docs/PROGRESS_SPEC.md). "_note" is for humans.
+# Progress strings (privacy line, counts, progress code). Used by galaxy.js, the one progress system (issue #26). "_note" is for humans.
 PROGRESS_TEXT = {k: v for k, v in json.loads((Path(__file__).parent / "data" / "progress_text.json")
                                              .read_text(encoding="utf-8")).items() if k != "_note"}
 

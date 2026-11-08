@@ -8,12 +8,10 @@
   <a class="pill" href="{{ url_for('lessons_page', lang=lang) }}" {% if not age %}aria-current="page"{% endif %}>{{ ui.all_ages }}</a>
   {% for a in ages %}<a class="pill" href="{{ url_for('lessons_page', lang=lang, age=a) }}" {% if age == a %}aria-current="page"{% endif %}>{{ ui.ages }} {{ a }}</a>{% endfor %}
 </nav>
-<section data-progress-panel></section>
-<div data-progress-list>
-<p data-progress-summary></p>
-<div class="grid">
+<p class="muted" role="status" data-count-for="#lesson-grid" data-text="{{ progress_text.summary }}"></p>
+<div class="grid" id="lesson-grid">
   {% for ls in lessons %}
-    <article class="card" data-id="{{ ls.entry_id }}" data-progress-id="{{ ls.id }}">
+    <article class="card" data-id="{{ ls.entry_id }}">
       <a class="card-body" href="{{ url_for('lesson_page', lang=lang, lesson_id=ls.id) }}">
         <div class="card-top"><span class="chip teal">{{ ui.ages }} {{ ls.age_group }}</span><span class="badge" aria-hidden="true">{{ icon('book') }}{{ icon('star-f', 'done-mark') }}</span></div>
         <h3 class="card-title">{{ tr(ls.title, lang) }}</h3>
@@ -22,7 +20,6 @@
       </a>
     </article>
   {% else %}<div class="panel"><p>{{ ui.lessons_none }}</p></div>{% endfor %}
-</div>
 </div>
 <p class="attrib" style="margin-top:24px">{{ ui.footer_2 }}</p>
 {% endblock %}

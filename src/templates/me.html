@@ -18,5 +18,23 @@
 <h2 class="section-title">{{ ui.explored_stops }}</h2>
 <p id="log-empty" class="muted">{{ ui.me_empty }} <a href="{{ url_for('home', lang=lang) }}">→</a></p>
 <ul id="log" data-lang="{{ lang }}" style="line-height:2"></ul>
-<p><button class="btn btn-ghost btn-sm" type="button" data-clear>{{ ui.me_clear }}</button></p>
+{% set pt = progress_text %}
+<p class="attrib" data-storage-note hidden>{{ pt.storage_unavailable }}</p>
+<p>
+  <button class="btn btn-ghost btn-sm" type="button" data-clear data-label="{{ ui.me_clear }}"
+          data-confirm="{{ pt.start_again_confirm }}" data-done="{{ pt.cleared }}">{{ ui.me_clear }}</button>
+  <button class="btn btn-ghost btn-sm" type="button" data-clear-cancel hidden>{{ pt.cancel }}</button>
+</p>
+
+<section class="panel" aria-labelledby="code-h">
+  <h2 id="code-h" class="side-h">{{ pt.copy_code }}</h2>
+  <p class="attrib">{{ pt.grown_up_note }}</p>
+  <p><button class="btn btn-violet btn-sm" type="button" data-copy-code data-ok="{{ pt.copied }}" data-fail="{{ pt.copy_failed }}">{{ pt.copy_code }}</button></p>
+  <label class="sr-only" for="progress-code">{{ pt.copy_code }}</label>
+  <textarea id="progress-code" class="field" rows="3" readonly hidden style="width:100%;border-radius:16px" dir="ltr"></textarea>
+  <label for="progress-code-in" style="display:block;margin-top:12px;font-weight:800">{{ pt.code_label }}</label>
+  <textarea id="progress-code-in" class="field" rows="3" maxlength="60000" style="width:100%;border-radius:16px" dir="ltr" autocomplete="off" spellcheck="false"></textarea>
+  <p><button class="btn btn-ghost btn-sm" type="button" data-use-code data-ok="{{ pt.code_ok }}" data-fail="{{ pt.code_bad }}">{{ pt.apply_code }}</button></p>
+</section>
+<p id="progress-live" class="attrib" role="status" aria-live="polite"></p>
 {% endblock %}

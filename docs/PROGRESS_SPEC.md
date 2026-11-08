@@ -83,3 +83,14 @@ The guide page says "We don't store your answers." That is still true: progress 
 ## Tests
 - `python -m unittest discover -s tests` runs `tests/test_progress_static.py` (no `innerHTML`, `eval(`, `fetch(`, `XMLHttpRequest`, cookies or URLs in `progress.js`; the key is exactly `hc_progress_v1`; every language has every string; the CSS uses logical properties). It also runs `node tests/progress.test.js` when `node` is installed and **skips with a clear message** when it isn't.
 - `node tests/progress.test.js` covers add/remove, corrupt JSON, unavailable storage, import validation and size limits, counts and stars.
+
+## Update (Nov 8): one progress system
+Decision in issue #26: keep Isabella's star system (`src/static/galaxy.js`, key `openlearn-explored-v1`). `progress.js`, `progress.css` and their tests were removed. These parts of this spec were kept and moved into `galaxy.js`:
+- **Privacy line** in the footer (server-rendered from `progress_text.json`).
+- **"Can't be saved" note** when storage is blocked (on "My space log").
+- **Progress code** to move progress to another device (copy and paste on "My space log"). Pasted codes are checked: base64 only, at most 60,000 characters, at most 2000 items, ids must match `^[a-z]+-[a-z0-9-]{1,40}$`, links must be same-site paths. Text is set with `textContent` only.
+- **Two-step "Start again"** (no `window.confirm`).
+- **Counts**: "3 of 26 done" on the lessons list and "2 of 5 steps done" on the guide path.
+- **Coding problems** count: `problem.js` calls `window.HackProgress.markSolved(id)`.
+- **Old data is moved**: anything saved under `hc_progress_v1` becomes a star once, then the old key is removed.
+Not kept: the "Mark as done" button (the star button does the same job) and the five-star bar on the home page ("My space log" has medals instead).

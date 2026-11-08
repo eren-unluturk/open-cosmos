@@ -401,6 +401,7 @@ footer.site form { margin: 0; }
   .lang summary .lname, .lang summary .code { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .lang { margin-inline-start: 0; }
   .navbtn .disc, .lang summary { width: 40px; height: 40px; }
+  .navbtn-home .cap { position: static; width: auto; height: auto; overflow: visible; clip: auto; } /* Home keeps its visible label */
   .topbar-row { gap: 6px; }
   .hero { grid-template-columns: 1fr; padding: 28px 0 8px; }
   .hero-art { display: none; }

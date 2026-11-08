@@ -36,6 +36,7 @@
 {% if not results and not problems %}<div class="panel"><p>{{ ui.no_results }}</p></div>{% endif %}
 {% if total > results|length %}
   <p style="text-align:center;margin-top:24px"><a class="btn btn-violet" href="{{ url_for('library', lang=lang, q=q or None, g=gid, where=where, page=page + 1) }}">{{ ui.more }}</a></p>
+  <p style="text-align:center">{{ ui.more_n|replace('{n}', (total - results|length)|string) }}</p>
 {% endif %}
 {{ grownup_notice(hidden, lang, ui) }}
 {% endblock %}

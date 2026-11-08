@@ -27,6 +27,9 @@
 <header class="topbar">
   <div class="wrap">
     <div class="topbar-row">
+      <a class="navbtn navbtn-home" href="{{ url_for('home', lang=lang) }}" {% if request.endpoint == 'home' %}aria-current="page"{% endif %}>
+        <span class="disc disc-sky">{{ icon('home') }}</span><span class="cap">{{ ui.home_btn }}</span></a>
+
       <a class="navbtn" href="{{ url_for('me', lang=lang) }}" {% if request.endpoint == 'me' %}aria-current="page"{% endif %}>
         <span class="disc disc-me">{{ icon('person') }}</span><span class="cap">{{ ui.profile }}</span></a>
 

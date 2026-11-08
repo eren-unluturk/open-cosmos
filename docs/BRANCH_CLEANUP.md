@@ -33,3 +33,7 @@ Deleted from GitHub because they are fully merged into `main` and have no open P
 | `where-filter` | `ac142a26f9d83ed3c4f5501f7d1af39e584202f5` |
 
 Kept: `main`, `deploy` (Render may track it, tip `686a468a28458a931f39813e50a06a26ee3e563c`), `more-problems` (open PR #18) and `lesson-text` (not merged, see below).
+
+## Round 3
+`more-problems` deleted after PR #18 was merged : restore with `git push origin f092d891acbd88299125929818abbc59007e7bb1:refs/heads/more-problems`.
+`lesson-text` (Tobi) is left for him to rework. `deploy` stays until the Render branch setting is checked.

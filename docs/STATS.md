@@ -102,3 +102,4 @@ Every entry gets one of three tiers: **kid-safe** (nothing risky in the listing)
 - **26 adapted lessons** (CS Unplugged, CC BY-SA 4.0): ages 5-7: 12, 8-10: 13, 11-13: 1.
 - **Reuse flag:** 1,028 link-only entries, 57 open-content entries.
 - Guides and lessons are English only so far; guides are written from catalog data only and time estimates are estimates. More in `docs/PITCH_DATA.md`.
+- **Guide translations:** all 72 guides are translated into Spanish, Arabic, Hindi and Portuguese (AI-written, not yet checked by native speakers). Lessons are English only.

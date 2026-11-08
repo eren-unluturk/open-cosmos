@@ -20,11 +20,40 @@ def _read_json(name, default):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
 
 
+def _text_nodes(node, out):
+    """Collect every {"en": ...} text dict inside a guide."""
+    if isinstance(node, dict):
+        if isinstance(node.get("en"), str) and all(len(k) == 2 for k in node):
+            out.append(node)
+            return
+        for v in node.values():
+            _text_nodes(v, out)
+    elif isinstance(node, list):
+        for v in node:
+            _text_nodes(v, out)
+
+
+def _add_guide_translations(guides, overlay):
+    """guides.json text is {"en": ...}. Add other languages from guides_translated.json (English text -> {lang: text}).
+
+    All or nothing per guide and language: a guide is shown in a language only when every one of its texts
+    is translated, so a half-translated guide never mixes two languages. guides.json itself stays English-only.
+    """
+    for guide in list(guides.get("fallback", {}).values()) + list(guides.get("groups", {}).values()):
+        nodes = []
+        _text_nodes(guide, nodes)
+        for lang in ("es", "ar", "hi", "pt"):
+            if nodes and all(lang in overlay.get(n["en"], {}) for n in nodes):
+                for n in nodes:
+                    n.setdefault(lang, overlay[n["en"]][lang])
+
+
 def _load_lessons():
     """guides.json and lessons.json are written by the data lead (scripts/build_guides.py, fetch_lessons.py)."""
     global _guides, _lessons, _lesson_by_id, _lesson_by_entry
     if _lessons is None:
         _guides = _read_json("guides.json", {"fallback": {}, "groups": {}})
+        _add_guide_translations(_guides, _read_json("guides_translated.json", {}))
         _lessons = _read_json("lessons.json", [])
         _lesson_by_id = {x["id"]: x for x in _lessons}
         _lesson_by_entry = {x["entry_id"]: x for x in _lessons}

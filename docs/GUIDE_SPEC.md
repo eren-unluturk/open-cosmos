@@ -63,3 +63,6 @@ Translate only `title`, `body`, `steps`, `when`, `goal`, `adult_note` (guides) a
 
 ## Rebuild (Eren)
 `python scripts/mark_reuse.py` -> `python scripts/build_guides.py` -> (lessons) `python scripts/fetch_lessons.py` -> tests. Handwritten guides live in `scripts/guide_content/` and lessons are rebuilt from CS Unplugged; progress is in `docs/GUIDE_PROGRESS.md`.
+
+## Update: guides are translated (Nov 7)
+`src/data/guides_translated.json` maps each English guide text to `{es, ar, hi, pt}`. `store.py` merges it at load (`_add_guide_translations`), all or nothing per guide and language, so the existing `tx()`/`localize_slides()` code shows the translation with no change. The English-only notice appears only if a guide has an untranslated text. The last slide also tells the learner that the site may not be in their language and that the browser can translate the page. When `guides.json` changes (new or edited text), new English strings need translations in the overlay; `tests/test_guide_translations.py` fails on stale keys and incomplete entries.

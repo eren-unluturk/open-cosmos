@@ -15,3 +15,4 @@ More numbers are in `docs/STATS.md`. Regenerate counts with `python scripts/guid
 - "'Kid-safe' means nothing in the listing looks risky; we did not review the linked pages." For ages 11-13 on the two CC0 lists, it means beginner-level material, not content written for kids.
 - "A child's progress (done items and stars) is saved only in their own browser; we have no accounts and nothing is sent to us."
 - "Every guide is available in English, Spanish, Arabic, Hindi and Portuguese (AI-written, not yet checked by native speakers). If the learning site itself is not in your language, our guide tells you to use your browser's translate button."
+- "All 26 lessons and every guide are available in English, Spanish, Arabic, Hindi and Portuguese (AI-written, not yet checked by native speakers)."

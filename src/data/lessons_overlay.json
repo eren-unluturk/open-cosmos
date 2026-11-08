@@ -1,0 +1,2576 @@
+{
+ "15 cards in order from lowest to highest, numbers between 1 and 100, animal side up": {
+  "ar": "15 بطاقة مرتّبة من الأدنى إلى الأعلى بأعداد بين 1 و100، وجانب الحيوان إلى الأعلى",
+  "es": "15 cartas ordenadas de menor a mayor, con números entre 1 y 100, con el lado del animal hacia arriba",
+  "hi": "15 कार्ड सबसे छोटे से सबसे बड़े क्रम में, 1 से 100 के बीच की संख्याओं के साथ, जानवर वाला हिस्सा ऊपर",
+  "pt": "15 cartas em ordem do menor para o maior, com números entre 1 e 100, com o lado do animal para cima"
+ },
+ "15 cards sorted from lowest to highest (spread between 1 and 100)": {
+  "ar": "15 بطاقة مرتّبة من الأدنى إلى الأعلى (موزّعة بين 1 و100)",
+  "es": "15 cartas ordenadas de menor a mayor (repartidas entre 1 y 100)",
+  "hi": "15 कार्ड सबसे छोटे से सबसे बड़े क्रम में (1 से 100 के बीच बिखरे हुए)",
+  "pt": "15 cartas em ordem do menor para o maior (espalhadas entre 1 e 100)"
+ },
+ "15 cards with a hidden number on the back, in no order": {
+  "ar": "15 بطاقة عليها عدد مخفي على الظهر، دون ترتيب",
+  "es": "15 cartas con un número escondido por detrás, sin orden",
+  "hi": "15 कार्ड जिनके पीछे छिपी संख्या है, बिना क्रम के",
+  "pt": "15 cartas com um número escondido no verso, sem ordem"
+ },
+ "15 cards with an animal on one side and a hidden number on the other, in no order": {
+  "ar": "15 بطاقة عليها حيوان من جانب وعدد مخفي من الجانب الآخر، دون ترتيب",
+  "es": "15 cartas con un animal por un lado y un número escondido por el otro, sin orden",
+  "hi": "15 कार्ड जिनके एक ओर जानवर और दूसरी ओर छिपी संख्या है, बिना किसी क्रम के",
+  "pt": "15 cartas com um animal de um lado e um número escondido do outro, sem ordem"
+ },
+ "36 two-sided cards (black and white)": {
+  "ar": "36 بطاقة ذات وجهين (سوداء وبيضاء)",
+  "es": "36 cartas de dos caras (negras y blancas)",
+  "hi": "36 दो-रंग वाले कार्ड (काले और सफ़ेद)",
+  "pt": "36 cartas de dois lados (pretas e brancas)"
+ },
+ "36 two-sided cards (for example black on one side and white on the other)": {
+  "ar": "36 بطاقة ذات وجهين (مثلًا أسود من جانب وأبيض من الآخر)",
+  "es": "36 cartas de dos caras (por ejemplo, negra por un lado y blanca por el otro)",
+  "hi": "36 दो-रंग वाले कार्ड (जैसे एक ओर काला और दूसरी ओर सफ़ेद)",
+  "pt": "36 cartas de dois lados (por exemplo, preta de um lado e branca do outro)"
+ },
+ "A big tree drawn on the ground with chalk or tape": {
+  "ar": "شجرة كبيرة مرسومة على الأرض بالطباشير أو الشريط",
+  "es": "Un árbol grande dibujado en el suelo con tiza o cinta",
+  "hi": "चॉक या टेप से ज़मीन पर बना बड़ा पेड़",
+  "pt": "Uma árvore grande desenhada no chão com giz ou fita"
+ },
+ "A card is either shown (on, 1) or hidden (off, 0). Call out a number and let the line show the right cards. Add the dots to check.": {
+  "ar": "البطاقة إما ظاهرة (مشغَّلة، 1) أو مخفية (مطفأة، 0). نادِ عددًا ودع الصف يُظهر البطاقات الصحيحة. اجمع النقاط للتحقق.",
+  "es": "Una carta se muestra (encendida, 1) o se oculta (apagada, 0). Di un número y deja que la fila muestre las cartas correctas. Suma los puntos para comprobarlo.",
+  "hi": "कार्ड या तो दिखाया जाता है (चालू, 1) या छिपाया जाता है (बंद, 0)। एक संख्या बोलें और पंक्ति सही कार्ड दिखाए। जाँचने के लिए बिंदु जोड़ें।",
+  "pt": "Uma carta fica à mostra (ligada, 1) ou escondida (desligada, 0). Diga um número e deixe a fila mostrar as cartas certas. Some os pontos para conferir."
+ },
+ "A card trick shows how a computer adds one extra row and column so it can find and fix a single mistake.": {
+  "ar": "حيلة ورق تُظهر كيف يضيف الحاسوب صفًّا وعمودًا إضافيين ليتمكّن من اكتشاف خطأ واحد وتصحيحه.",
+  "es": "Un truco de cartas muestra cómo un ordenador añade una fila y una columna extra para encontrar y corregir un único error.",
+  "hi": "ताश का एक करतब दिखाता है कि कंप्यूटर एक अतिरिक्त पंक्ति और स्तंभ जोड़कर एक अकेली गलती कैसे पकड़ और ठीक कर सकता है।",
+  "pt": "Um truque de cartas mostra como um computador adiciona uma linha e uma coluna extras para achar e corrigir um único erro."
+ },
+ "A card trick that shows how a computer can find a mistake and fix it by adding one extra row and one extra column.": {
+  "ar": "حيلة ورق تُظهر كيف يمكن للحاسوب اكتشاف خطأ وتصحيحه بإضافة صف وعمود إضافيين.",
+  "es": "Un truco de cartas que muestra cómo un ordenador puede encontrar un error y corregirlo añadiendo una fila y una columna extra.",
+  "hi": "ताश का एक करतब जो दिखाता है कि कंप्यूटर एक अतिरिक्त पंक्ति और एक अतिरिक्त स्तंभ जोड़कर गलती कैसे पकड़ और ठीक कर सकता है।",
+  "pt": "Um truque de cartas que mostra como um computador pode achar um erro e corrigi-lo adicionando uma linha e uma coluna extras."
+ },
+ "A class chart": {
+  "ar": "جدول للصف",
+  "es": "Una tabla de la clase",
+  "hi": "कक्षा का एक चार्ट",
+  "pt": "Uma tabela da turma"
+ },
+ "A class chart to record guesses": {
+  "ar": "جدول للصف لتسجيل المحاولات",
+  "es": "Una tabla de la clase para anotar los intentos",
+  "hi": "कोशिशें लिखने के लिए कक्षा का चार्ट",
+  "pt": "Uma tabela da turma para registrar as tentativas"
+ },
+ "A clear space to stand in a line": {
+  "ar": "مساحة فارغة للوقوف في صف",
+  "es": "Un espacio libre para ponerse en fila",
+  "hi": "पंक्ति में खड़े होने की खाली जगह",
+  "pt": "Um espaço livre para ficar em fila"
+ },
+ "A clock face with only 10 points (0 to 9)": {
+  "ar": "قرص ساعة بعشر نقاط فقط (من 0 إلى 9)",
+  "es": "Una esfera de reloj con solo 10 puntos (de 0 a 9)",
+  "hi": "केवल 10 बिंदुओं वाली घड़ी का चेहरा (0 से 9)",
+  "pt": "Um mostrador de relógio com apenas 10 pontos (de 0 a 9)"
+ },
+ "A grid on the floor (chalk or tape)": {
+  "ar": "شبكة على الأرض (طباشير أو شريط)",
+  "es": "Una cuadrícula en el suelo (tiza o cinta)",
+  "hi": "फ़र्श पर एक जाली (चॉक या टेप)",
+  "pt": "Uma grade no chão (giz ou fita)"
+ },
+ "A grid on the floor (chalk, masking tape or a chessboard pattern)": {
+  "ar": "شبكة على الأرض (طباشير أو شريط لاصق أو نمط رقعة شطرنج)",
+  "es": "Una cuadrícula en el suelo (tiza, cinta de carrocero o un patrón de tablero de ajedrez)",
+  "hi": "फ़र्श पर एक जाली (चॉक, मास्किंग टेप या शतरंज के बोर्ड जैसा पैटर्न)",
+  "pt": "Uma grade no chão (giz, fita crepe ou um padrão de tabuleiro de xadrez)"
+ },
+ "A helper": {
+  "ar": "مساعد",
+  "es": "Un ayudante",
+  "hi": "एक सहायक",
+  "pt": "Um ajudante"
+ },
+ "A hula hoop and whiteboards (optional)": {
+  "ar": "طوق وألواح (اختياري)",
+  "es": "Un aro y pizarras (opcional)",
+  "hi": "एक हुला हूप और व्हाइटबोर्ड (वैकल्पिक)",
+  "pt": "Um bambolê e quadros brancos (opcional)"
+ },
+ "A line on the board for predictions": {
+  "ar": "خط على السبّورة للتوقّعات",
+  "es": "Una línea en la pizarra para las predicciones",
+  "hi": "अनुमानों के लिए बोर्ड पर एक रेखा",
+  "pt": "Uma linha no quadro para as previsões"
+ },
+ "A line or graph on the board": {
+  "ar": "خط أو مخطّط على السبّورة",
+  "es": "Una línea o gráfico en la pizarra",
+  "hi": "बोर्ड पर एक रेखा या ग्राफ़",
+  "pt": "Uma linha ou gráfico no quadro"
+ },
+ "A megapixel camera has a million pixels. Pencil is easier than pen because children can rub out mistakes. Look at the original lesson page for the printable pictures.": {
+  "ar": "تحتوي كاميرا بدقة ميغابكسل على مليون بكسل. القلم الرصاص أسهل من قلم الحبر لأن الأطفال يستطيعون محو أخطائهم. انظر إلى صفحة الدرس الأصلية للحصول على الصور القابلة للطباعة.",
+  "es": "Una cámara de un megapíxel tiene un millón de píxeles. El lápiz es más fácil que el bolígrafo porque los niños pueden borrar los errores. Mira la página original de la lección para ver las imágenes imprimibles.",
+  "hi": "एक मेगापिक्सल कैमरे में दस लाख पिक्सल होते हैं। पेंसिल पेन से आसान है क्योंकि बच्चे गलतियाँ मिटा सकते हैं। छापने लायक चित्रों के लिए मूल पाठ-पेज देखें।",
+  "pt": "Uma câmera de um megapixel tem um milhão de pixels. O lápis é mais fácil que a caneta porque as crianças podem apagar os erros. Veja a página original da lição para as imagens para imprimir."
+ },
+ "A network of circles, lines and boxes drawn with chalk or tape": {
+  "ar": "شبكة من الدوائر والخطوط والصناديق مرسومة بالطباشير أو الشريط",
+  "es": "Una red de círculos, líneas y cajas dibujada con tiza o cinta",
+  "hi": "चॉक या टेप से बना गोलों, रेखाओं और डिब्बों का नेटवर्क",
+  "pt": "Uma rede de círculos, linhas e caixas desenhada com giz ou fita"
+ },
+ "A phone or camera (optional)": {
+  "ar": "هاتف أو كاميرا (اختياري)",
+  "es": "Un teléfono o cámara (opcional)",
+  "hi": "एक फ़ोन या कैमरा (वैकल्पिक)",
+  "pt": "Um celular ou câmera (opcional)"
+ },
+ "A sorting network drawn on the ground": {
+  "ar": "شبكة فرز مرسومة على الأرض",
+  "es": "Una red de ordenación dibujada en el suelo",
+  "hi": "ज़मीन पर बना सॉर्टिंग नेटवर्क",
+  "pt": "Uma rede de ordenação desenhada no chão"
+ },
+ "A table or whiteboard": {
+  "ar": "طاولة أو سبّورة",
+  "es": "Una mesa o pizarra",
+  "hi": "एक मेज़ या व्हाइटबोर्ड",
+  "pt": "Uma mesa ou quadro branco"
+ },
+ "A target number such as 52": {
+  "ar": "عدد مستهدف مثل 52",
+  "es": "Un número objetivo, como el 52",
+  "hi": "एक लक्ष्य संख्या, जैसे 52",
+  "pt": "Um número-alvo, como 52"
+ },
+ "A target square to mark 'Mars'": {
+  "ar": "مربّع هدف يُعلَّم بـ«المريخ»",
+  "es": "Un cuadro objetivo marcado como «Marte»",
+  "hi": "एक लक्ष्य खाना जिस पर «मंगल» लिखा हो",
+  "pt": "Um quadrado-alvo marcado como «Marte»"
+ },
+ "A whiteboard": {
+  "ar": "سبّورة",
+  "es": "Una pizarra",
+  "hi": "एक व्हाइटबोर्ड",
+  "pt": "Um quadro branco"
+ },
+ "A whiteboard or table": {
+  "ar": "سبّورة أو طاولة",
+  "es": "Una pizarra o una mesa",
+  "hi": "एक व्हाइटबोर्ड या मेज़",
+  "pt": "Um quadro branco ou uma mesa"
+ },
+ "Add a fifth card. What is the biggest number now?": {
+  "ar": "أضف بطاقة خامسة. ما أكبر عدد الآن؟",
+  "es": "Añade una quinta carta. ¿Cuál es ahora el número más grande?",
+  "hi": "पाँचवाँ कार्ड जोड़ें। अब सबसे बड़ी संख्या कौन-सी है?",
+  "pt": "Adicione uma quinta carta. Qual é agora o maior número?"
+ },
+ "Add a sixth row and a sixth column so every row and every column has an even number of black cards. (This extra card is called a parity bit.)": {
+  "ar": "أضف صفًّا سادسًا وعمودًا سادسًا ليحتوي كل صف وعمود على عدد زوجي من البطاقات السوداء. (تُسمّى هذه البطاقة الإضافية بت التكافؤ.)",
+  "es": "Añade una sexta fila y una sexta columna para que cada fila y columna tenga un número par de cartas negras. (Esta carta extra se llama bit de paridad.)",
+  "hi": "छठी पंक्ति और छठा स्तंभ जोड़ें ताकि हर पंक्ति और स्तंभ में काले कार्ड सम संख्या में हों। (इस अतिरिक्त कार्ड को पैरिटी बिट कहते हैं।)",
+  "pt": "Adicione uma sexta linha e uma sexta coluna para que cada linha e coluna tenha um número par de cartas pretas. (Essa carta extra se chama bit de paridade.)"
+ },
+ "Add up the top row. Add up the bottom row and multiply that total by 3. Add the two results together.": {
+  "ar": "اجمع الصف العلوي. اجمع الصف السفلي واضرب مجموعه في 3. اجمع النتيجتين.",
+  "es": "Suma la fila de arriba. Suma la de abajo y multiplica ese total por 3. Suma los dos resultados.",
+  "hi": "ऊपर की पंक्ति जोड़ें। नीचे की पंक्ति जोड़ें और उस कुल को 3 से गुणा करें। दोनों नतीजे जोड़ें।",
+  "pt": "Some a linha de cima. Some a de baixo e multiplique esse total por 3. Some os dois resultados."
+ },
+ "After each guess, the partner says higher or lower. Discard half the boxes every time.": {
+  "ar": "بعد كل تخمين يقول الشريك أعلى أو أدنى. تُستبعد نصف المربعات في كل مرة.",
+  "es": "Tras cada intento, el compañero dice mayor o menor. Se descarta la mitad de las casillas cada vez.",
+  "hi": "हर अंदाज़े के बाद साथी कहता है ज़्यादा या कम। हर बार आधे खाने हटा दिए जाते हैं।",
+  "pt": "Depois de cada palpite, o parceiro diz maior ou menor. Metade das caixas é descartada a cada vez."
+ },
+ "Agree on the commands: arrows for forward, turn left, turn right.": {
+  "ar": "اتفقوا على الأوامر: أسهم للتقدّم والانعطاف يسارًا ويمينًا.",
+  "es": "Acuerden los comandos: flechas para avanzar, girar a la izquierda y girar a la derecha.",
+  "hi": "कमांड तय करें: आगे, बाएँ मुड़ने और दाएँ मुड़ने के लिए तीर।",
+  "pt": "Combinem os comandos: setas para avançar, virar à esquerda e virar à direita."
+ },
+ "Always start with white so the code is clear. This idea is part of how pictures get small enough to send in messages.": {
+  "ar": "ابدأ دائمًا بالأبيض ليكون الرمز واضحًا. هذه الفكرة جزء مما يجعل الصور صغيرة بما يكفي لإرسالها في الرسائل.",
+  "es": "Empieza siempre por el blanco para que el código sea claro. Esta idea es parte de cómo las imágenes se hacen lo bastante pequeñas para enviarse en mensajes.",
+  "hi": "हमेशा सफ़ेद से शुरू करें ताकि कोड साफ़ रहे। यह विचार इस बात का हिस्सा है कि चित्र संदेशों में भेजे जाने लायक छोटे कैसे हो जाते हैं।",
+  "pt": "Comece sempre pelo branco para que o código fique claro. Essa ideia é parte de como as imagens ficam pequenas o bastante para serem enviadas em mensagens."
+ },
+ "An alphabet chart (A = 1, B = 2, ...)": {
+  "ar": "جدول أبجدية (أ = 1، ب = 2، ...)",
+  "es": "Una tabla del alfabeto (A = 1, B = 2, ...)",
+  "hi": "वर्णमाला की तालिका (A = 1, B = 2, ...)",
+  "pt": "Uma tabela do alfabeto (A = 1, B = 2, ...)"
+ },
+ "An alphabet strip (A = 1, B = 2, and so on)": {
+  "ar": "شريط أبجدية (أ = 1، ب = 2، وهكذا)",
+  "es": "Una tira del alfabeto (A = 1, B = 2, y así sucesivamente)",
+  "hi": "वर्णमाला की पट्टी (A = 1, B = 2, और आगे इसी तरह)",
+  "pt": "Uma tira do alfabeto (A = 1, B = 2, e assim por diante)"
+ },
+ "An object to rescue": {
+  "ar": "شيء لإنقاذه",
+  "es": "Un objeto para rescatar",
+  "hi": "बचाने के लिए एक वस्तु",
+  "pt": "Um objeto para resgatar"
+ },
+ "Anything with two states (hats, sounds, lights, counters)": {
+  "ar": "أي شيء له حالتان (قبعات أو أصوات أو أضواء أو قطع)",
+  "es": "Cualquier cosa con dos estados (sombreros, sonidos, luces, fichas)",
+  "hi": "दो अवस्थाओं वाली कोई भी चीज़ (टोपियाँ, आवाज़ें, रोशनी, गोटियाँ)",
+  "pt": "Qualquer coisa com dois estados (chapéus, sons, luzes, fichas)"
+ },
+ "Anything with two states: hats on or off, loud or quiet sounds, two kinds of counters": {
+  "ar": "أي شيء له حالتان: قبعات على الرأس أو بدونها، أصوات عالية أو منخفضة، نوعان من القطع",
+  "es": "Cualquier cosa con dos estados: sombreros puestos o quitados, sonidos fuertes o suaves, dos tipos de fichas",
+  "hi": "दो अवस्थाओं वाली कोई भी चीज़: टोपी पहनी या उतारी, तेज़ या धीमी आवाज़ें, दो तरह की गोटियाँ",
+  "pt": "Qualquer coisa com dois estados: chapéus postos ou tirados, sons altos ou baixos, dois tipos de fichas"
+ },
+ "Arrow cards or paper": {
+  "ar": "بطاقات أو ورق بأسهم",
+  "es": "Cartas o papel con flechas",
+  "hi": "तीर वाले कार्ड या काग़ज़",
+  "pt": "Cartas ou papel com setas"
+ },
+ "Arrow cards or paper: forward, turn left, turn right": {
+  "ar": "بطاقات أو ورق بأسهم: تقدّم، انعطف يسارًا، انعطف يمينًا",
+  "es": "Cartas o papel con flechas: avanzar, girar a la izquierda, girar a la derecha",
+  "hi": "तीर वाले कार्ड या काग़ज़: आगे, बाएँ मुड़ें, दाएँ मुड़ें",
+  "pt": "Cartas ou papel com setas: avançar, virar à esquerda, virar à direita"
+ },
+ "As a class, list exercises: running on the spot, star jumps, catching a bean bag.": {
+  "ar": "اكتبوا معًا قائمة تمارين: الركض في المكان وقفزات النجمة والتقاط كيس الحبوب.",
+  "es": "Como clase, hagan una lista de ejercicios: correr en el sitio, saltos de estrella, atrapar una bolsa de semillas.",
+  "hi": "पूरी कक्षा मिलकर व्यायामों की सूची बनाए: अपनी जगह पर दौड़ना, स्टार जंप, बीन बैग पकड़ना।",
+  "pt": "Em turma, façam uma lista de exercícios: correr no lugar, polichinelos, pegar um saquinho de feijão."
+ },
+ "Ask for jobs that finish sooner with more helpers, and jobs that do not.": {
+  "ar": "اسأل عن مهام تنتهي أسرع بمساعدين أكثر ومهام لا تنتهي أسرع.",
+  "es": "Pregunta por tareas que terminan antes con más ayudantes y por tareas que no.",
+  "hi": "ऐसे कामों के बारे में पूछें जो ज़्यादा मददगारों से जल्दी पूरे होते हैं, और ऐसे जो नहीं होते।",
+  "pt": "Pergunte sobre tarefas que terminam mais cedo com mais ajudantes e tarefas que não."
+ },
+ "Ask how a computer knows which letter to show. Number the alphabet from 1 to 26.": {
+  "ar": "اسأل كيف يعرف الحاسوب أي حرف يعرض. رقّم الأبجدية من 1 إلى 26.",
+  "es": "Pregunta cómo sabe un ordenador qué letra mostrar. Numera el alfabeto del 1 al 26.",
+  "hi": "पूछें कि कंप्यूटर को कैसे पता चलता है कि कौन-सा अक्षर दिखाना है। वर्णमाला को 1 से 26 तक क्रमांकित करें।",
+  "pt": "Pergunte como o computador sabe qual letra mostrar. Numere o alfabeto de 1 a 26."
+ },
+ "Ask how many house visits you would need to find a lent book among six houses. Everyone puts a prediction on a line.": {
+  "ar": "اسأل كم زيارة تحتاج للعثور على كتاب معار بين ست بيوت. يضع الجميع توقّعهم على خط.",
+  "es": "Pregunta cuántas visitas necesitarías para encontrar un libro prestado entre seis casas. Todos ponen su predicción en una línea.",
+  "hi": "पूछें कि छह घरों में उधार दी किताब ढूँढने के लिए कितनी बार जाना पड़ेगा। सब अपना अनुमान एक रेखा पर लगाएँ।",
+  "pt": "Pergunte quantas visitas seriam necessárias para achar um livro emprestado entre seis casas. Todos colocam o seu palpite em uma linha."
+ },
+ "Ask how you would find a book on a shelf if the books are in no order.": {
+  "ar": "اسأل كيف ستجد كتابًا على رف إن كانت الكتب بلا ترتيب.",
+  "es": "Pregunta cómo encontrarías un libro en una estantería si los libros no tienen orden.",
+  "hi": "पूछें कि अगर किताबें बिना क्रम की हों तो आप शेल्फ़ पर किताब कैसे ढूँढेंगे।",
+  "pt": "Pergunte como você acharia um livro em uma estante se os livros estivessem sem ordem."
+ },
+ "Ask the class to find 52 using as few turned cards as possible.": {
+  "ar": "اطلب من الصف إيجاد 52 بقلب أقل عدد ممكن من البطاقات.",
+  "es": "Pide a la clase que encuentre el 52 dando la vuelta a la menor cantidad posible de cartas.",
+  "hi": "कक्षा से कहें कि कम से कम कार्ड पलटकर 52 ढूँढे।",
+  "pt": "Peça à turma que encontre o 52 virando o menor número possível de cartas."
+ },
+ "Ask the class to predict the ending, then run it. The equal cards end up next to each other.": {
+  "ar": "اطلب من الصف توقّع النهاية ثم شغّلوها. تنتهي البطاقات المتساوية متجاورة.",
+  "es": "Pide a la clase que prediga el final y luego ejecútenlo. Las cartas iguales quedan una al lado de otra.",
+  "hi": "कक्षा से अंत का अनुमान लगवाएँ, फिर उसे चलाएँ। बराबर कार्ड एक-दूसरे के पास आ जाते हैं।",
+  "pt": "Peça à turma que preveja o final e depois executem. As cartas iguais ficam lado a lado."
+ },
+ "Ask them to find 52 by turning over as few cards as possible.": {
+  "ar": "اطلب منهم إيجاد 52 بقلب أقل عدد ممكن من البطاقات.",
+  "es": "Pídeles que encuentren el 52 dando la vuelta a la menor cantidad posible de cartas.",
+  "hi": "उनसे कहें कि कम से कम कार्ड पलटकर 52 ढूँढें।",
+  "pt": "Peça que encontrem o 52 virando o menor número possível de cartas."
+ },
+ "Ask: do you check your receipt at the shop? Barcodes are so reliable that we trust them.": {
+  "ar": "اسأل: هل تراجع الإيصال في المتجر؟ الباركود موثوق لدرجة أننا نثق به.",
+  "es": "Pregunta: ¿revisas el recibo en la tienda? Los códigos de barras son tan fiables que confiamos en ellos.",
+  "hi": "पूछें: क्या आप दुकान में अपनी रसीद जाँचते हैं? बारकोड इतने भरोसेमंद हैं कि हम उन पर यक़ीन करते हैं।",
+  "pt": "Pergunte: você confere o recibo na loja? Os códigos de barras são tão confiáveis que confiamos neles."
+ },
+ "Ask: have you ever had a disc or QR code that would not work? Computers often correct such mistakes automatically.": {
+  "ar": "اسأل: هل سبق أن تعطّل قرص أو رمز QR عندك؟ غالبًا ما تصحّح الحواسيب هذه الأخطاء تلقائيًا.",
+  "es": "Pregunta: ¿alguna vez un disco o un código QR no funcionó? Los ordenadores suelen corregir esos errores automáticamente.",
+  "hi": "पूछें: क्या कभी कोई डिस्क या QR कोड नहीं चला? कंप्यूटर ऐसी गलतियाँ अक्सर अपने आप ठीक कर लेते हैं।",
+  "pt": "Pergunte: você já teve um disco ou código QR que não funcionou? Os computadores costumam corrigir esses erros automaticamente."
+ },
+ "Ask: how does a computer know which letter to show? Count the letters of the alphabet together.": {
+  "ar": "اسأل: كيف يعرف الحاسوب أي حرف يعرض؟ عُدّوا معًا حروف الأبجدية.",
+  "es": "Pregunta: ¿cómo sabe un ordenador qué letra mostrar? Cuenten juntos las letras del alfabeto.",
+  "hi": "पूछें: कंप्यूटर को कैसे पता चलता है कि कौन-सा अक्षर दिखाना है? साथ मिलकर वर्णमाला के अक्षर गिनें।",
+  "pt": "Pergunte: como o computador sabe qual letra mostrar? Contem juntos as letras do alfabeto."
+ },
+ "Ask: how does a digital device store information? Write down every answer, then come back to them at the end.": {
+  "ar": "اسأل: كيف يخزّن الجهاز الرقمي المعلومات؟ دوّن كل الإجابات ثم عُد إليها في النهاية.",
+  "es": "Pregunta: ¿cómo guarda información un dispositivo digital? Anota todas las respuestas y vuelve a ellas al final.",
+  "hi": "पूछें: कोई डिजिटल उपकरण जानकारी कैसे सँजोता है? हर उत्तर लिख लें और अंत में उन पर लौटें।",
+  "pt": "Pergunte: como um dispositivo digital guarda informações? Anote todas as respostas e volte a elas no final."
+ },
+ "Ask: is it easier to find a book in a library if the books are in alphabetical order?": {
+  "ar": "اسأل: هل من الأسهل إيجاد كتاب في مكتبة إن كانت الكتب مرتّبة أبجديًا؟",
+  "es": "Pregunta: ¿es más fácil encontrar un libro en una biblioteca si los libros están en orden alfabético?",
+  "hi": "पूछें: क्या पुस्तकालय में किताब ढूँढना आसान है अगर किताबें वर्णानुक्रम में हों?",
+  "pt": "Pergunte: é mais fácil achar um livro em uma biblioteca se os livros estiverem em ordem alfabética?"
+ },
+ "Ask: what month comes after December? What day is 4 days before Friday?": {
+  "ar": "اسأل: أي شهر يأتي بعد ديسمبر؟ وأي يوم يسبق الجمعة بأربعة أيام؟",
+  "es": "Pregunta: ¿qué mes viene después de diciembre? ¿Qué día es 4 días antes del viernes?",
+  "hi": "पूछें: दिसंबर के बाद कौन-सा महीना आता है? शुक्रवार से 4 दिन पहले कौन-सा दिन होता है?",
+  "pt": "Pergunte: que mês vem depois de dezembro? Que dia é 4 dias antes de sexta-feira?"
+ },
+ "Ask: why is it important to give very clear instructions? Share a time when instructions were unclear.": {
+  "ar": "اسأل: لماذا من المهم إعطاء تعليمات واضحة جدًا؟ شاركوا موقفًا كانت فيه التعليمات غير واضحة.",
+  "es": "Pregunta: ¿por qué es importante dar instrucciones muy claras? Cuenten una vez en que las instrucciones no estaban claras.",
+  "hi": "पूछें: बहुत साफ़ निर्देश देना क्यों ज़रूरी है? कोई ऐसा समय बताएँ जब निर्देश साफ़ नहीं थे।",
+  "pt": "Pergunte: por que é importante dar instruções muito claras? Compartilhem uma vez em que as instruções não estavam claras."
+ },
+ "Ask: you lent a book to a friend and forgot who. You visit six houses. How many visits will you need?": {
+  "ar": "اسأل: أعرتَ كتابًا لصديق ونسيت لمن. ستزور ست بيوت. كم زيارة ستحتاج؟",
+  "es": "Pregunta: le prestaste un libro a un amigo y olvidaste a quién. Visitas seis casas. ¿Cuántas visitas necesitarás?",
+  "hi": "पूछें: आपने किसी दोस्त को किताब दी और भूल गए किसे। आप छह घर जाएँगे। कितनी बार जाना पड़ेगा?",
+  "pt": "Pergunte: você emprestou um livro a um amigo e esqueceu a quem. Você visita seis casas. Quantas visitas vai precisar?"
+ },
+ "Avoid using numbers 1 to 15 in order, since children will just count along. Spread the numbers out.": {
+  "ar": "تجنّب استخدام الأعداد من 1 إلى 15 بالترتيب، لأن الأطفال سيعدّون ببساطة. باعد بين الأعداد.",
+  "es": "Evita usar los números del 1 al 15 en orden, porque los niños simplemente contarán. Reparte bien los números.",
+  "hi": "1 से 15 तक की संख्याएँ क्रम से न रखें, वरना बच्चे बस गिनते चले जाएँगे। संख्याओं को दूर-दूर रखें।",
+  "pt": "Evite usar os números de 1 a 15 em ordem, porque as crianças vão só contar. Espalhe bem os números."
+ },
+ "Black and white pencils": {
+  "ar": "أقلام رصاص سوداء وبيضاء",
+  "es": "Lápices negros y blancos",
+  "hi": "काली और सफ़ेद पेंसिलें",
+  "pt": "Lápis pretos e brancos"
+ },
+ "Black pencils or felt tips": {
+  "ar": "أقلام رصاص سوداء أو أقلام تلوين",
+  "es": "Lápices negros o rotuladores",
+  "hi": "काली पेंसिलें या फ़ेल्ट पेन",
+  "pt": "Lápis pretos ou canetinhas"
+ },
+ "Brainstorm opposites together. A computer uses on and off in the same way.": {
+  "ar": "اعصفوا أذهانكم بالمتضادّات. يستخدم الحاسوب التشغيل والإيقاف بالطريقة نفسها.",
+  "es": "Lluvia de ideas sobre opuestos. Un ordenador usa encendido y apagado de la misma manera.",
+  "hi": "विपरीत चीज़ों पर मिलकर विचार करें। कंप्यूटर चालू और बंद को इसी तरह इस्तेमाल करता है।",
+  "pt": "Façam uma chuva de ideias sobre opostos. Um computador usa ligado e desligado da mesma forma."
+ },
+ "Cards with 1, 2, 4 and 8 dots (a fifth card with 16 dots for later)": {
+  "ar": "بطاقات بنقاط 1 و2 و4 و8 (وبطاقة خامسة بـ16 نقطة لاحقًا)",
+  "es": "Cartas de 1, 2, 4 y 8 puntos (y una quinta de 16 puntos para más adelante)",
+  "hi": "1, 2, 4 और 8 बिंदुओं वाले कार्ड (बाद के लिए 16 बिंदुओं वाला पाँचवाँ कार्ड)",
+  "pt": "Cartas de 1, 2, 4 e 8 pontos (e uma quinta de 16 pontos para depois)"
+ },
+ "Cards with repeated numbers": {
+  "ar": "بطاقات بأعداد مكرّرة",
+  "es": "Cartas con números repetidos",
+  "hi": "दोहराई संख्याओं वाले कार्ड",
+  "pt": "Cartas com números repetidos"
+ },
+ "Change the numbers to match what the children are learning. It is good if the numbers are not neatly spread out.": {
+  "ar": "غيّر الأعداد لتناسب ما يتعلّمه الأطفال. من الجيد ألا تكون الأعداد موزّعة بانتظام.",
+  "es": "Cambia los números para que coincidan con lo que aprenden los niños. Es bueno que los números no estén repartidos de forma pareja.",
+  "hi": "संख्याएँ ऐसी रखें जो बच्चे जो सीख रहे हैं उससे मेल खाएँ। अच्छा है कि संख्याएँ बराबर दूरी पर न हों।",
+  "pt": "Troque os números para combinar com o que as crianças estão aprendendo. É bom que os números não estejam espalhados de forma regular."
+ },
+ "Check: are they in order? Run it again with new cards.": {
+  "ar": "تحقّقوا: هل هم مرتّبون؟ أعيدوا التجربة ببطاقات جديدة.",
+  "es": "Comprueben: ¿están en orden? Repitan con cartas nuevas.",
+  "hi": "जाँचें: क्या वे क्रम में हैं? नए कार्डों के साथ फिर चलाएँ।",
+  "pt": "Confiram: estão em ordem? Repitam com cartas novas."
+ },
+ "Children act as programmer, tester and robot on a floor grid, and learn why clear step-by-step instructions matter.": {
+  "ar": "يؤدّي الأطفال أدوار المبرمج والمختبِر والروبوت على شبكة أرضية، ويتعلّمون لماذا تهمّ التعليمات الواضحة خطوة بخطوة.",
+  "es": "Los niños hacen de programador, probador y robot en una cuadrícula en el suelo, y aprenden por qué importan las instrucciones claras paso a paso.",
+  "hi": "बच्चे फ़र्श की जाली पर प्रोग्रामर, टेस्टर और रोबोट बनते हैं, और सीखते हैं कि साफ़, चरण-दर-चरण निर्देश क्यों मायने रखते हैं।",
+  "pt": "As crianças fazem o papel de programador, testador e robô em uma grade no chão e aprendem por que instruções claras, passo a passo, importam."
+ },
+ "Children colour grids using rows of 0s and 1s, and learn that a computer stores a picture as numbers.": {
+  "ar": "يلوّن الأطفال شبكات من صفوف أصفار وآحاد ويتعلّمون أن الحاسوب يخزّن الصورة على شكل أعداد.",
+  "es": "Los niños colorean cuadrículas con filas de 0 y 1, y aprenden que un ordenador guarda una imagen como números.",
+  "hi": "बच्चे 0 और 1 की पंक्तियों से जालियाँ रंगते हैं और सीखते हैं कि कंप्यूटर चित्र को संख्याओं के रूप में सँजोता है।",
+  "pt": "As crianças colorem grades com linhas de 0 e 1 e aprendem que o computador guarda uma imagem como números."
+ },
+ "Children explore 'clock arithmetic' and remainders, a calculation that computers use all the time.": {
+  "ar": "يستكشف الأطفال «حساب الساعة» والباقي، وهو عملية حسابية تستخدمها الحواسيب طوال الوقت.",
+  "es": "Los niños exploran la «aritmética del reloj» y los restos, un cálculo que los ordenadores usan todo el tiempo.",
+  "hi": "बच्चे «घड़ी का गणित» और शेषफल खोजते हैं, ऐसी गणना जो कंप्यूटर हर समय इस्तेमाल करते हैं।",
+  "pt": "As crianças exploram a «aritmética do relógio» e os restos, um cálculo que os computadores usam o tempo todo."
+ },
+ "Children often mix up binary search and binary search trees. They share a half-at-a-time idea, but they are different. This is the most advanced lesson in the set.": {
+  "ar": "كثيرًا ما يخلط الأطفال بين البحث الثنائي وأشجار البحث الثنائية. يشتركان في فكرة النصف في كل مرة لكنهما مختلفان. هذا أكثر دروس المجموعة تقدّمًا.",
+  "es": "Los niños suelen confundir la búsqueda binaria con los árboles binarios de búsqueda. Comparten la idea de ir por mitades, pero son distintos. Es la lección más avanzada del conjunto.",
+  "hi": "बच्चे अक्सर बाइनरी सर्च और बाइनरी सर्च ट्री को एक समझ लेते हैं। दोनों में हर बार आधा करने का विचार साझा है, पर वे अलग हैं। यह इस सेट का सबसे उन्नत पाठ है।",
+  "pt": "As crianças costumam confundir a busca binária com as árvores binárias de busca. Elas compartilham a ideia de ir pela metade, mas são diferentes. Esta é a lição mais avançada do conjunto."
+ },
+ "Children pretend to be tiny switches inside a computer. Cards with dots can be turned over, and together they show numbers.": {
+  "ar": "يتظاهر الأطفال بأنهم مفاتيح صغيرة داخل حاسوب. يمكن قلب البطاقات ذات النقاط، وتُظهر معًا أعدادًا.",
+  "es": "Los niños fingen ser interruptores diminutos dentro de un ordenador. Las cartas con puntos se pueden dar la vuelta y, juntas, muestran números.",
+  "hi": "बच्चे कंप्यूटर के अंदर छोटे-छोटे स्विच बनने का अभिनय करते हैं। बिंदुओं वाले कार्ड पलटे जा सकते हैं और मिलकर संख्याएँ दिखाते हैं।",
+  "pt": "As crianças fingem ser interruptores minúsculos dentro de um computador. As cartas com pontos podem ser viradas e, juntas, mostram números."
+ },
+ "Children program a 'rocket' to cross a floor grid, using clear instructions and debugging with three roles.": {
+  "ar": "يبرمج الأطفال «صاروخًا» ليعبر شبكة أرضية بتعليمات واضحة وتنقيح الأخطاء، مع ثلاثة أدوار.",
+  "es": "Los niños programan un «cohete» para cruzar una cuadrícula en el suelo, con instrucciones claras y depuración, con tres papeles.",
+  "hi": "बच्चे फ़र्श की जाली पर एक «रॉकेट» को पार कराने के लिए साफ़ निर्देशों और डिबगिंग के साथ प्रोग्राम करते हैं, तीन भूमिकाओं में।",
+  "pt": "As crianças programam um «foguete» para atravessar uma grade no chão, com instruções claras e depuração, em três papéis."
+ },
+ "Children search for a hidden number one card at a time and count how many guesses it takes.": {
+  "ar": "يبحث الأطفال عن عدد مخفي بطاقة بعد أخرى ويعدّون كم محاولة يحتاجون.",
+  "es": "Los niños buscan un número escondido carta por carta y cuentan cuántos intentos necesitan.",
+  "hi": "बच्चे एक-एक कार्ड पलटकर छिपी संख्या ढूँढते हैं और गिनते हैं कि कितनी कोशिशें लगीं।",
+  "pt": "As crianças procuram um número escondido carta por carta e contam quantas tentativas levam."
+ },
+ "Children search for a hidden number one card at a time and discover how many guesses it takes when the list is in no order.": {
+  "ar": "يبحث الأطفال عن عدد مخفي بطاقة بعد أخرى ويكتشفون كم محاولة تلزم حين لا تكون القائمة مرتّبة.",
+  "es": "Los niños buscan un número escondido carta por carta y descubren cuántos intentos hacen falta cuando la lista no tiene orden.",
+  "hi": "बच्चे एक-एक कार्ड पलटकर छिपी संख्या ढूँढते हैं और जानते हैं कि सूची बिना क्रम की हो तो कितनी कोशिशें लगती हैं।",
+  "pt": "As crianças procuram um número escondido carta por carta e descobrem quantas tentativas são necessárias quando a lista está sem ordem."
+ },
+ "Children shrink a picture by writing how many squares in a row are the same, a trick called run-length encoding.": {
+  "ar": "يقلّص الأطفال صورة بكتابة عدد المربعات المتتالية المتشابهة، وهي حيلة تُسمّى الترميز بطول التكرار.",
+  "es": "Los niños reducen una imagen escribiendo cuántos cuadros seguidos son iguales, un truco llamado codificación por longitud de series.",
+  "hi": "बच्चे यह लिखकर चित्र को छोटा करते हैं कि एक पंक्ति में कितने खाने एक जैसे हैं, इस तरकीब को रन-लेंथ एन्कोडिंग कहते हैं।",
+  "pt": "As crianças encolhem uma imagem escrevendo quantos quadradinhos seguidos são iguais, um truque chamado codificação por comprimento de sequência."
+ },
+ "Children test the sorting network with repeated numbers and with other things to sort, and predict what will happen.": {
+  "ar": "يجرّب الأطفال شبكة الفرز بأعداد مكرّرة وبأشياء أخرى للفرز ويتوقّعون ما سيحدث.",
+  "es": "Los niños prueban la red de ordenación con números repetidos y con otras cosas para ordenar, y predicen qué pasará.",
+  "hi": "बच्चे सॉर्टिंग नेटवर्क को दोहराई संख्याओं और क्रम में लगाने की दूसरी चीज़ों के साथ आज़माते हैं और अनुमान लगाते हैं कि क्या होगा।",
+  "pt": "As crianças testam a rede de ordenação com números repetidos e outras coisas para ordenar e preveem o que vai acontecer."
+ },
+ "Children try the sorting network with repeated numbers and with things that are not numbers, like heights.": {
+  "ar": "يجرّب الأطفال شبكة الفرز بأعداد مكرّرة وبأشياء ليست أعدادًا، مثل الأطوال.",
+  "es": "Los niños prueban la red de ordenación con números repetidos y con cosas que no son números, como las alturas.",
+  "hi": "बच्चे सॉर्टिंग नेटवर्क को दोहराई गई संख्याओं और संख्या न होने वाली चीज़ों, जैसे ऊँचाई, के साथ आज़माते हैं।",
+  "pt": "As crianças testam a rede de ordenação com números repetidos e com coisas que não são números, como alturas."
+ },
+ "Children turn letters into numbers, and numbers into on and off cards, to send a secret message.": {
+  "ar": "يحوّل الأطفال الحروف إلى أعداد، والأعداد إلى بطاقات مضاءة ومطفأة، ليرسلوا رسالة سرية.",
+  "es": "Los niños convierten letras en números, y números en cartas encendidas y apagadas, para enviar un mensaje secreto.",
+  "hi": "बच्चे अक्षरों को संख्याओं में और संख्याओं को चालू-बंद कार्डों में बदलकर एक गुप्त संदेश भेजते हैं।",
+  "pt": "As crianças transformam letras em números, e números em cartas ligadas e desligadas, para enviar uma mensagem secreta."
+ },
+ "Children use a short recipe of adding and multiplying to find the last digit of a barcode, which is how scanners notice mistakes.": {
+  "ar": "يستخدم الأطفال وصفة قصيرة من الجمع والضرب لإيجاد الرقم الأخير في الباركود، وهكذا تلاحظ الماسحات الأخطاء.",
+  "es": "Los niños usan una receta corta de sumas y multiplicaciones para hallar el último dígito de un código de barras, que es como los escáneres notan los errores.",
+  "hi": "बच्चे जोड़ और गुणा की छोटी विधि से बारकोड का आख़िरी अंक निकालते हैं, जिससे स्कैनर गलतियाँ पकड़ते हैं।",
+  "pt": "As crianças usam uma receita curta de somas e multiplicações para achar o último dígito de um código de barras, que é como os leitores percebem erros."
+ },
+ "Children use cards with 1, 2, 4 and 8 dots as 'bits' to make any number from 0 to 15, and see how a computer counts using only on and off.": {
+  "ar": "يستخدم الأطفال بطاقات بنقاط 1 و2 و4 و8 كـ«بتات» لتكوين أي عدد من 0 إلى 15، ويرون كيف يعدّ الحاسوب بالتشغيل والإيقاف فقط.",
+  "es": "Los niños usan cartas de 1, 2, 4 y 8 puntos como «bits» para formar cualquier número del 0 al 15 y ven cómo cuenta un ordenador usando solo encendido y apagado.",
+  "hi": "बच्चे 1, 2, 4 और 8 बिंदुओं वाले कार्डों को «बिट» की तरह इस्तेमाल करके 0 से 15 तक कोई भी संख्या बनाते हैं और देखते हैं कि कंप्यूटर केवल चालू-बंद से कैसे गिनता है।",
+  "pt": "As crianças usam cartas de 1, 2, 4 e 8 pontos como «bits» para formar qualquer número de 0 a 15 e veem como um computador conta usando só ligado e desligado."
+ },
+ "Children walk through a large tree drawn on the ground, turning over nodes, and learn how a binary search tree stores things so they are quick to find.": {
+  "ar": "يمشي الأطفال في شجرة كبيرة مرسومة على الأرض ويقلبون العُقَد، ويتعلّمون كيف تخزّن شجرة البحث الثنائية الأشياء لتُوجَد بسرعة.",
+  "es": "Los niños recorren un árbol grande dibujado en el suelo, dando la vuelta a los nodos, y aprenden cómo un árbol binario de búsqueda guarda las cosas para encontrarlas rápido.",
+  "hi": "बच्चे ज़मीन पर बने बड़े पेड़ में चलते हैं, नोड पलटते हैं, और सीखते हैं कि बाइनरी सर्च ट्री चीज़ों को ऐसे कैसे रखता है कि वे जल्दी मिल जाएँ।",
+  "pt": "As crianças percorrem uma árvore grande desenhada no chão, virando os nós, e aprendem como uma árvore binária de busca guarda as coisas para serem achadas rápido."
+ },
+ "Children write secret messages by turning letters into numbers and numbers into patterns of on and off.": {
+  "ar": "يكتب الأطفال رسائل سرية بتحويل الحروف إلى أعداد والأعداد إلى أنماط تشغيل وإيقاف.",
+  "es": "Los niños escriben mensajes secretos convirtiendo letras en números y números en patrones de encendido y apagado.",
+  "hi": "बच्चे अक्षरों को संख्याओं में और संख्याओं को चालू-बंद के पैटर्न में बदलकर गुप्त संदेश लिखते हैं।",
+  "pt": "As crianças escrevem mensagens secretas transformando letras em números e números em padrões de ligado e desligado."
+ },
+ "Choose a target number. One child turns cards over until they find it. The class counts the guesses.": {
+  "ar": "اختر عددًا مستهدفًا. يقلب طفل البطاقات حتى يجده. يعدّ الصف المحاولات.",
+  "es": "Elige un número objetivo. Un niño da la vuelta a las cartas hasta encontrarlo. La clase cuenta los intentos.",
+  "hi": "एक लक्ष्य संख्या चुनें। एक बच्चा मिलने तक कार्ड पलटता है। कक्षा कोशिशें गिनती है।",
+  "pt": "Escolha um número-alvo. Uma criança vira as cartas até encontrá-lo. A turma conta as tentativas."
+ },
+ "Choose something new to sort, like heights or the alphabet. Decide what 'smaller' means for it.": {
+  "ar": "اختر شيئًا جديدًا للفرز، مثل الأطوال أو الأبجدية. حدّد ماذا يعني «الأصغر» بالنسبة إليه.",
+  "es": "Elige algo nuevo para ordenar, como alturas o el alfabeto. Decide qué significa «menor» para eso.",
+  "hi": "क्रम में लगाने के लिए कुछ नया चुनें, जैसे ऊँचाई या वर्णमाला। तय करें कि उसके लिए «छोटा» का क्या मतलब है।",
+  "pt": "Escolha algo novo para ordenar, como alturas ou o alfabeto. Decida o que significa «menor» para isso."
+ },
+ "Choose three roles: the Developer who writes the program, the Tester who reads it out, and the Bot who follows it.": {
+  "ar": "اختاروا ثلاثة أدوار: المطوّر الذي يكتب البرنامج، والمختبِر الذي يقرؤه بصوت عالٍ، والروبوت الذي ينفّذه.",
+  "es": "Elijan tres papeles: el Programador que escribe el programa, el Probador que lo lee en voz alta y el Robot que lo sigue.",
+  "hi": "तीन भूमिकाएँ चुनें: डेवलपर जो प्रोग्राम लिखता है, टेस्टर जो उसे पढ़कर सुनाता है, और बॉट जो उसे मानता है।",
+  "pt": "Escolham três papéis: o Programador que escreve o programa, o Testador que o lê em voz alta e o Robô que o segue."
+ },
+ "Colour row by row. A picture should appear. Check with a neighbour.": {
+  "ar": "لوّنوا صفًّا بعد صف. ينبغي أن تظهر صورة. تحقّقوا مع زميل.",
+  "es": "Colorea fila por fila. Debería aparecer una imagen. Compárala con un compañero.",
+  "hi": "पंक्ति-दर-पंक्ति रंगें। एक चित्र उभरना चाहिए। पड़ोसी से मिलाकर देखें।",
+  "pt": "Colora linha por linha. Uma imagem deve aparecer. Confira com um colega."
+ },
+ "Compare how many nodes you visit with searching a list.": {
+  "ar": "قارنوا عدد العُقَد التي تزورونها بما يتطلّبه البحث في قائمة.",
+  "es": "Comparen cuántos nodos visitan con lo que costaría buscar en una lista.",
+  "hi": "तुलना करें कि आप कितने नोड देखते हैं और सूची में खोजने में कितना लगता।",
+  "pt": "Comparem quantos nós vocês visitam com a busca em uma lista."
+ },
+ "Compare it with searching a sorted list.": {
+  "ar": "مقارنته بالبحث في قائمة مرتّبة.",
+  "es": "Compararlo con buscar en una lista ordenada.",
+  "hi": "इसकी तुलना क्रम में लगी सूची में खोजने से करना।",
+  "pt": "Comparar com a busca em uma lista ordenada."
+ },
+ "Compare numbers and put them in order.": {
+  "ar": "مقارنة الأعداد وترتيبها.",
+  "es": "Comparar números y ponerlos en orden.",
+  "hi": "संख्याओं की तुलना करना और उन्हें क्रम में लगाना।",
+  "pt": "Comparar números e colocá-los em ordem."
+ },
+ "Compare this chart with the unsorted one.": {
+  "ar": "قارنوا هذا الجدول بجدول البحث غير المرتّب.",
+  "es": "Comparen esta tabla con la de la búsqueda sin orden.",
+  "hi": "इस चार्ट की तुलना बिना क्रम वाले चार्ट से करें।",
+  "pt": "Comparem esta tabela com a da busca sem ordem."
+ },
+ "Compare two numbers and say which is smaller.": {
+  "ar": "مقارنة عددين وتحديد الأصغر.",
+  "es": "Comparar dos números y decir cuál es menor.",
+  "hi": "दो संख्याओं की तुलना करना और बताना कि कौन-सी छोटी है।",
+  "pt": "Comparar dois números e dizer qual é menor."
+ },
+ "Compare with searching an unsorted list.": {
+  "ar": "المقارنة بالبحث في قائمة غير مرتّبة.",
+  "es": "Comparar con buscar en una lista desordenada.",
+  "hi": "बिना क्रम वाली सूची में खोजने से तुलना करना।",
+  "pt": "Comparar com a busca em uma lista desordenada."
+ },
+ "Compare with the covered digit. Then change one digit and see that the check fails.": {
+  "ar": "قارنه بالرقم المغطّى. ثم غيّر رقمًا واحدًا وتأكّد من أن التحقق يفشل.",
+  "es": "Compáralo con el dígito tapado. Luego cambia un dígito y comprueba que la verificación falla.",
+  "hi": "उसकी तुलना ढके हुए अंक से करें। फिर एक अंक बदलें और देखें कि जाँच विफल हो जाती है।",
+  "pt": "Compare com o dígito coberto. Depois mude um dígito e veja que a verificação falha."
+ },
+ "Compare with the unsorted game.": {
+  "ar": "المقارنة بلعبة غير المرتّبة.",
+  "es": "Comparar con el juego sin orden.",
+  "hi": "बिना क्रम वाले खेल से तुलना करना।",
+  "pt": "Comparar com o jogo sem ordem."
+ },
+ "Compare with the unsorted search. What changed?": {
+  "ar": "قارن بالبحث غير المرتّب. ما الذي تغيّر؟",
+  "es": "Compara con la búsqueda sin orden. ¿Qué cambió?",
+  "hi": "बिना क्रम वाली खोज से तुलना करें। क्या बदला?",
+  "pt": "Compare com a busca sem ordem. O que mudou?"
+ },
+ "Compare: did the code use fewer numbers than the 64 squares?": {
+  "ar": "قارنوا: هل استخدم الرمز أعدادًا أقل من المربعات الأربعة والستين؟",
+  "es": "Comparen: ¿el código usó menos números que los 64 cuadros?",
+  "hi": "तुलना करें: क्या कोड में 64 खानों से कम संख्याएँ लगीं?",
+  "pt": "Comparem: o código usou menos números do que os 64 quadradinhos?"
+ },
+ "Complete the first sorting network lesson first. Prediction is the heart of this lesson.": {
+  "ar": "أكملوا أولًا الدرس الأول عن شبكات الفرز. التوقّع هو قلب هذا الدرس.",
+  "es": "Completen primero la primera lección de redes de ordenación. Predecir es el corazón de esta lección.",
+  "hi": "पहले सॉर्टिंग नेटवर्क का पहला पाठ पूरा करें। अनुमान लगाना इस पाठ का मूल है।",
+  "pt": "Terminem primeiro a primeira lição sobre redes de ordenação. Prever é o coração desta lição."
+ },
+ "Connect to remainders: 23 divided by 10 leaves 3, which is the same as where you land after going round the ten-point clock.": {
+  "ar": "اربط ذلك بالباقي: 23 مقسومًا على 10 يبقى 3، وهو نفسه المكان الذي تصل إليه بعد الدوران حول الساعة ذات العشر نقاط.",
+  "es": "Conéctalo con los restos: 23 dividido entre 10 deja 3, que es lo mismo que dónde caes tras dar la vuelta al reloj de diez puntos.",
+  "hi": "इसे शेषफल से जोड़ें: 23 को 10 से भाग देने पर 3 बचता है, जो वही जगह है जहाँ दस बिंदुओं वाली घड़ी का चक्कर लगाकर आप पहुँचते हैं।",
+  "pt": "Ligue com os restos: 23 dividido por 10 deixa 3, que é o mesmo lugar onde você cai depois de dar a volta no relógio de dez pontos."
+ },
+ "Convert a letter to a binary pattern with five bits.": {
+  "ar": "تحويل حرف إلى نمط ثنائي من خمسة بتات.",
+  "es": "Convertir una letra en un patrón binario de cinco bits.",
+  "hi": "एक अक्षर को पाँच बिट के बाइनरी पैटर्न में बदलना।",
+  "pt": "Converter uma letra em um padrão binário de cinco bits."
+ },
+ "Could sorting the cards help?": {
+  "ar": "هل يمكن أن يساعد ترتيب البطاقات؟",
+  "es": "¿Podría ayudar ordenar las cartas?",
+  "hi": "क्या कार्डों को क्रम में लगाने से मदद मिल सकती है?",
+  "pt": "Ordenar as cartas poderia ajudar?"
+ },
+ "Could this work for billions of items?": {
+  "ar": "هل يمكن أن ينجح مع مليارات العناصر؟",
+  "es": "¿Podría funcionar con miles de millones de elementos?",
+  "hi": "क्या यह अरबों चीज़ों के साथ काम कर सकता है?",
+  "pt": "Isso funcionaria com bilhões de itens?"
+ },
+ "Could we use other words than yes and no, like up and down?": {
+  "ar": "هل يمكن أن نستخدم كلمات أخرى غير نعم ولا، مثل فوق وتحت؟",
+  "es": "¿Podríamos usar otras palabras además de sí y no, como arriba y abajo?",
+  "hi": "क्या हाँ और नहीं की जगह दूसरे शब्द, जैसे ऊपर और नीचे, इस्तेमाल हो सकते हैं?",
+  "pt": "Podemos usar outras palavras além de sim e não, como em cima e embaixo?"
+ },
+ "Could you show a number bigger than 15?": {
+  "ar": "هل يمكنك عرض عدد أكبر من 15؟",
+  "es": "¿Podrías mostrar un número mayor que 15?",
+  "hi": "क्या आप 15 से बड़ी संख्या दिखा सकते हैं?",
+  "pt": "Você conseguiria mostrar um número maior que 15?"
+ },
+ "Count and add cards in rows and columns.": {
+  "ar": "عدّ البطاقات وجمعها في صفوف وأعمدة.",
+  "es": "Contar y sumar cartas en filas y columnas.",
+  "hi": "पंक्तियों और स्तंभों में कार्ड गिनना और जोड़ना।",
+  "pt": "Contar e somar cartas em linhas e colunas."
+ },
+ "Count and record guesses.": {
+  "ar": "عدّ المحاولات وتسجيلها.",
+  "es": "Contar y anotar los intentos.",
+  "hi": "कोशिशें गिनना और लिखना।",
+  "pt": "Contar e registrar as tentativas."
+ },
+ "Count from 0 to 15 by changing as few cards as possible each time. Write the pattern of ones and zeros on the board.": {
+  "ar": "عُدّ من 0 إلى 15 مع تغيير أقل عدد ممكن من البطاقات في كل مرة. اكتب نمط الآحاد والأصفار على السبّورة.",
+  "es": "Cuenta de 0 a 15 cambiando el menor número posible de cartas cada vez. Escribe en la pizarra el patrón de unos y ceros.",
+  "hi": "हर बार कम से कम कार्ड बदलते हुए 0 से 15 तक गिनें। बोर्ड पर एक और शून्य का पैटर्न लिखें।",
+  "pt": "Conte de 0 a 15 mudando o menor número possível de cartas a cada vez. Escreva no quadro o padrão de uns e zeros."
+ },
+ "Count from 0 up to 8 or more using four 'bits'.": {
+  "ar": "العدّ من 0 حتى 8 أو أكثر بأربعة «بتات».",
+  "es": "Contar de 0 hasta 8 o más con cuatro «bits».",
+  "hi": "चार «बिट» से 0 से 8 या उससे आगे तक गिनना।",
+  "pt": "Contar de 0 até 8 ou mais com quatro «bits»."
+ },
+ "Count guesses and add them to the class chart.": {
+  "ar": "عُدّوا المحاولات وأضيفوها إلى جدول الصف.",
+  "es": "Cuenten los intentos y añádanlos a la tabla de la clase.",
+  "hi": "कोशिशें गिनें और कक्षा के चार्ट में जोड़ें।",
+  "pt": "Contem as tentativas e adicionem à tabela da turma."
+ },
+ "Count how many guesses it takes. Write it on the class chart or spreadsheet.": {
+  "ar": "عُدّ كم محاولة لزمت. دوّنها في جدول الصف أو في جدول بيانات.",
+  "es": "Cuenta cuántos intentos hizo falta. Anótalo en la tabla de la clase o en una hoja de cálculo.",
+  "hi": "गिनें कि कितनी कोशिशें लगीं। इसे कक्षा के चार्ट या स्प्रेडशीट में लिखें।",
+  "pt": "Conte quantas tentativas foram necessárias. Anote na tabela da turma ou em uma planilha."
+ },
+ "Count runs of the same colour in a row.": {
+  "ar": "عدّ تكرارات اللون نفسه في صف.",
+  "es": "Contar series del mismo color en una fila.",
+  "hi": "एक पंक्ति में एक ही रंग की शृंखलाएँ गिनना।",
+  "pt": "Contar sequências da mesma cor em uma linha."
+ },
+ "Count the guesses with the class. It is only a few.": {
+  "ar": "عُدّوا المحاولات مع الصف. إنها قليلة جدًا.",
+  "es": "Cuenta los intentos con la clase. Son muy pocos.",
+  "hi": "कक्षा के साथ कोशिशें गिनें। ये बहुत कम हैं।",
+  "pt": "Conte as tentativas com a turma. São bem poucas."
+ },
+ "Count the guesses with the class. Try other targets.": {
+  "ar": "عُدّ المحاولات مع الصف. جرّبوا أعدادًا مستهدفة أخرى.",
+  "es": "Cuenta los intentos con la clase. Prueben con otros números.",
+  "hi": "कक्षा के साथ कोशिशें गिनें। दूसरी संख्याएँ आज़माएँ।",
+  "pt": "Conte as tentativas com a turma. Tentem outros números."
+ },
+ "Count with cards of 1, 2, 4 and 8 dots.": {
+  "ar": "العدّ ببطاقات من 1 و2 و4 و8 نقاط.",
+  "es": "Contar con cartas de 1, 2, 4 y 8 puntos.",
+  "hi": "1, 2, 4 और 8 बिंदुओं वाले कार्डों से गिनना।",
+  "pt": "Contar com cartas de 1, 2, 4 e 8 pontos."
+ },
+ "Counters": {
+  "ar": "قطع عدّ",
+  "es": "Fichas",
+  "hi": "गोटियाँ",
+  "pt": "Fichas"
+ },
+ "Debug: find what went wrong and change the program. Swap roles and try a harder route.": {
+  "ar": "نقّحوا: اكتشفوا ما الذي حدث خطأً وغيّروا البرنامج. بدّلوا الأدوار وجرّبوا مسارًا أصعب.",
+  "es": "Depuren: averigüen qué salió mal y cambien el programa. Cambien de papel e intenten una ruta más difícil.",
+  "hi": "डिबग करें: पता करें कि क्या गलत हुआ और प्रोग्राम बदलें। भूमिकाएँ बदलें और कठिन रास्ता आज़माएँ।",
+  "pt": "Depurem: descubram o que deu errado e mudem o programa. Troquem de papel e tentem uma rota mais difícil."
+ },
+ "Decide the commands: an arrow for forward, and left and right turns.": {
+  "ar": "قرّروا الأوامر: سهم للتقدّم وانعطاف يسارًا ويمينًا.",
+  "es": "Decidan los comandos: una flecha para avanzar y giros a la izquierda y a la derecha.",
+  "hi": "कमांड तय करें: आगे के लिए एक तीर और बाएँ-दाएँ मुड़ने के लिए।",
+  "pt": "Decidam os comandos: uma seta para avançar e viradas à esquerda e à direita."
+ },
+ "Decode a row of numbers into black and white squares.": {
+  "ar": "فكّ ترميز صف من الأعداد إلى مربعات سوداء وبيضاء.",
+  "es": "Decodificar una fila de números en cuadros blancos y negros.",
+  "hi": "संख्याओं की एक पंक्ति को काले और सफ़ेद खानों में बदलना।",
+  "pt": "Decodificar uma linha de números em quadradinhos pretos e brancos."
+ },
+ "Define searching and a search algorithm.": {
+  "ar": "تعريف البحث وخوارزمية البحث.",
+  "es": "Definir qué es buscar y qué es un algoritmo de búsqueda.",
+  "hi": "खोज और खोज एल्गोरिदम को परिभाषित करना।",
+  "pt": "Definir o que é buscar e o que é um algoritmo de busca."
+ },
+ "Describe a binary search tree.": {
+  "ar": "وصف شجرة البحث الثنائية.",
+  "es": "Describir un árbol binario de búsqueda.",
+  "hi": "बाइनरी सर्च ट्री का वर्णन करना।",
+  "pt": "Descrever uma árvore binária de busca."
+ },
+ "Describe binary search.": {
+  "ar": "وصف البحث الثنائي.",
+  "es": "Describir la búsqueda binaria.",
+  "hi": "बाइनरी सर्च का वर्णन करना।",
+  "pt": "Descrever a busca binária."
+ },
+ "Detect a mistake in a barcode.": {
+  "ar": "اكتشاف خطأ في باركود.",
+  "es": "Detectar un error en un código de barras.",
+  "hi": "बारकोड में गलती पकड़ना।",
+  "pt": "Detectar um erro em um código de barras."
+ },
+ "Did you guess right?": {
+  "ar": "هل خمّنت صحيحًا؟",
+  "es": "¿Acertaste?",
+  "hi": "क्या आपका अंदाज़ा सही निकला?",
+  "pt": "Você acertou?"
+ },
+ "Did you need to know all the numbers to take part?": {
+  "ar": "هل احتجت إلى معرفة كل الأعداد لتشارك؟",
+  "es": "¿Necesitabas conocer todos los números para participar?",
+  "hi": "क्या हिस्सा लेने के लिए आपको सारी संख्याएँ जाननी ज़रूरी थीं?",
+  "pt": "Você precisou conhecer todos os números para participar?"
+ },
+ "Did your prediction match?": {
+  "ar": "هل طابق توقّعك النتيجة؟",
+  "es": "¿Coincidió tu predicción?",
+  "hi": "क्या आपका अनुमान सही निकला?",
+  "pt": "O seu palpite coincidiu?"
+ },
+ "Discuss how the number of guesses grows as the list gets bigger.": {
+  "ar": "ناقشوا كيف يزداد عدد المحاولات كلما كبرت القائمة.",
+  "es": "Hablen de cómo crece el número de intentos a medida que la lista es más grande.",
+  "hi": "बात करें कि सूची बड़ी होने पर कोशिशों की संख्या कैसे बढ़ती है।",
+  "pt": "Conversem sobre como o número de tentativas cresce à medida que a lista aumenta."
+ },
+ "Discuss what a computer must also store: capital letters, digits and punctuation, and letters of other languages.": {
+  "ar": "ناقشوا ما يجب أن يخزّنه الحاسوب أيضًا: الأحرف الكبيرة والأرقام وعلامات الترقيم وحروف اللغات الأخرى.",
+  "es": "Hablen de lo que un ordenador debe guardar además: mayúsculas, dígitos, signos de puntuación y letras de otros idiomas.",
+  "hi": "बात करें कि कंप्यूटर को और क्या सँजोना पड़ता है: बड़े अक्षर, अंक, विराम चिह्न और दूसरी भाषाओं के अक्षर।",
+  "pt": "Conversem sobre o que um computador também precisa guardar: letras maiúsculas, dígitos, pontuação e letras de outros idiomas."
+ },
+ "Discuss what stays the same each time and why.": {
+  "ar": "ناقشوا ما يبقى ثابتًا في كل مرة ولماذا.",
+  "es": "Hablen de qué permanece igual cada vez y por qué.",
+  "hi": "बात करें कि हर बार क्या एक जैसा रहता है और क्यों।",
+  "pt": "Conversem sobre o que fica igual a cada vez e por quê."
+ },
+ "Discuss where wrapping around is useful, like repeating patterns, turns and angles.": {
+  "ar": "ناقشوا أين يفيد الالتفاف، مثل الأنماط المتكرّرة والدورانات والزوايا.",
+  "es": "Hablen de dónde es útil dar la vuelta, como en patrones que se repiten, giros y ángulos.",
+  "hi": "बात करें कि घूमकर लौटना कहाँ काम आता है, जैसे दोहराते पैटर्न, मोड़ और कोण।",
+  "pt": "Conversem sobre onde dar a volta é útil, como em padrões que se repetem, giros e ângulos."
+ },
+ "Discuss: how did the numbers tell you the picture?": {
+  "ar": "ناقشوا: كيف دلّتكم الأعداد على الصورة؟",
+  "es": "Conversen: ¿cómo les dijeron los números cuál era la imagen?",
+  "hi": "बात करें: संख्याओं ने आपको चित्र कैसे बताया?",
+  "pt": "Conversem: como os números mostraram qual era a imagem?"
+ },
+ "Do not correct wrong guesses straight away. Keep going so the children discover the pattern. Counting dots one by one is fine.": {
+  "ar": "لا تصحّح الإجابات الخاطئة فورًا. تابع كي يكتشف الأطفال النمط. لا بأس بعدّ النقاط واحدة واحدة.",
+  "es": "No corrijas enseguida las respuestas equivocadas. Sigue adelante para que los niños descubran el patrón. Contar los puntos uno por uno está bien.",
+  "hi": "गलत उत्तरों को तुरंत न सुधारें। आगे बढ़ें ताकि बच्चे खुद पैटर्न खोजें। बिंदुओं को एक-एक करके गिनना ठीक है।",
+  "pt": "Não corrija logo as respostas erradas. Siga em frente para que as crianças descubram o padrão. Contar os pontos um por um está bem."
+ },
+ "Do the first row together. Start with white. For example, 3 white then 2 black then 3 white becomes 3, 2, 3.": {
+  "ar": "أنجزوا الصف الأول معًا. ابدأ بالأبيض. مثلًا 3 بيضاء ثم 2 سوداء ثم 3 بيضاء تصبح 3 و2 و3.",
+  "es": "Hagan juntos la primera fila. Empieza por el blanco. Por ejemplo, 3 blancos, luego 2 negros y luego 3 blancos se convierte en 3, 2, 3.",
+  "hi": "पहली पंक्ति साथ मिलकर करें। सफ़ेद से शुरू करें। जैसे 3 सफ़ेद, फिर 2 काले, फिर 3 सफ़ेद बनता है 3, 2, 3।",
+  "pt": "Façam juntos a primeira linha. Comece pelo branco. Por exemplo, 3 brancos, depois 2 pretos e depois 3 brancos vira 3, 2, 3."
+ },
+ "Do the first sorting network lesson first. Letting children predict is the key part.": {
+  "ar": "قم أولًا بالدرس الأول عن شبكات الفرز. ترك الأطفال يتوقّعون هو الجزء الأهم.",
+  "es": "Haz primero la primera lección de redes de ordenación. Dejar que los niños predigan es la parte clave.",
+  "hi": "पहले सॉर्टिंग नेटवर्क का पहला पाठ करें। बच्चों को अनुमान लगाने देना सबसे ज़रूरी हिस्सा है।",
+  "pt": "Faça primeiro a primeira lição sobre redes de ordenação. Deixar as crianças preverem é a parte principal."
+ },
+ "Does it work with any six numbers?": {
+  "ar": "هل تعمل مع أي ستة أعداد؟",
+  "es": "¿Funciona con cualquier grupo de seis números?",
+  "hi": "क्या यह किन्हीं भी छह संख्याओं के साथ काम करता है?",
+  "pt": "Funciona com quaisquer seis números?"
+ },
+ "Does the shape of the tree change the search?": {
+  "ar": "هل يغيّر شكل الشجرة عملية البحث؟",
+  "es": "¿Cambia la forma del árbol la búsqueda?",
+  "hi": "क्या पेड़ का आकार खोज को बदलता है?",
+  "pt": "O formato da árvore muda a busca?"
+ },
+ "Draw the network on the ground. Six circles at the start, lines that lead into boxes, six circles at the end.": {
+  "ar": "ارسم الشبكة على الأرض. ستّ دوائر في البداية، وخطوط تؤدي إلى الصناديق، وستّ دوائر في النهاية.",
+  "es": "Dibuja la red en el suelo. Seis círculos al principio, líneas que llevan a las cajas y seis círculos al final.",
+  "hi": "ज़मीन पर नेटवर्क बनाएँ। शुरू में छह गोले, डिब्बों तक जाती रेखाएँ, और अंत में छह गोले।",
+  "pt": "Desenhe a rede no chão. Seis círculos no início, linhas que levam às caixas e seis círculos no fim."
+ },
+ "Draw the network: six start circles, lines meeting in boxes, six end circles.": {
+  "ar": "ارسم الشبكة: ستّ دوائر للبداية وخطوط تلتقي في صناديق وستّ دوائر للنهاية.",
+  "es": "Dibuja la red: seis círculos de inicio, líneas que se encuentran en cajas y seis círculos finales.",
+  "hi": "नेटवर्क बनाएँ: शुरू के छह गोले, डिब्बों में मिलती रेखाएँ और अंत के छह गोले।",
+  "pt": "Desenhe a rede: seis círculos de início, linhas que se encontram em caixas e seis círculos de fim."
+ },
+ "Each bit can show its card or hide it (turn it over). Call out a number from 0 to 15 and let the bits show or hide cards to make it. Add up the dots you can see.": {
+  "ar": "يمكن لكل بت أن يُظهر بطاقته أو يخفيها (بقلبها). نادِ عددًا من 0 إلى 15 ودع البتات تُظهر البطاقات أو تخفيها لتكوينه. اجمع النقاط الظاهرة.",
+  "es": "Cada bit puede mostrar su carta u ocultarla (dándole la vuelta). Di un número del 0 al 15 y deja que los bits muestren u oculten cartas para formarlo. Suma los puntos que se ven.",
+  "hi": "हर बिट अपना कार्ड दिखा सकता है या छिपा सकता है (उलटकर)। 0 से 15 के बीच की कोई संख्या बोलें और बिट कार्ड दिखाकर या छिपाकर उसे बनाएँ। जो बिंदु दिखें उन्हें जोड़ें।",
+  "pt": "Cada bit pode mostrar a sua carta ou escondê-la (virando). Diga um número de 0 a 15 e deixe os bits mostrarem ou esconderem cartas para formá-lo. Some os pontos que aparecem."
+ },
+ "Each child picks one bit: 8, 4, 2 or 1. Line up from the biggest to the smallest.": {
+  "ar": "يختار كل طفل بتًا: 8 أو 4 أو 2 أو 1. اصطفّوا من الأكبر إلى الأصغر.",
+  "es": "Cada niño elige un bit: 8, 4, 2 o 1. Colóquense en fila del más grande al más pequeño.",
+  "hi": "हर बच्चा एक बिट चुनता है: 8, 4, 2 या 1। सबसे बड़े से सबसे छोटे के क्रम में खड़े हों।",
+  "pt": "Cada criança escolhe um bit: 8, 4, 2 ou 1. Fiquem em fila do maior para o menor."
+ },
+ "Each child writes a guess on a sticky note and puts it on a line from 1 to 6.": {
+  "ar": "يكتب كل طفل تخمينه على ورقة لاصقة ويضعها على خط من 1 إلى 6.",
+  "es": "Cada niño escribe su intento en una nota adhesiva y la pone en una línea del 1 al 6.",
+  "hi": "हर बच्चा चिपकने वाले नोट पर अपना अंदाज़ा लिखता है और उसे 1 से 6 की रेखा पर लगाता है।",
+  "pt": "Cada criança escreve um palpite em um post-it e o coloca em uma linha de 1 a 6."
+ },
+ "Each group shows their play and the class works out the number they are showing.": {
+  "ar": "تعرض كل مجموعة مسرحيتها ويكتشف الصف العدد الذي تمثّله.",
+  "es": "Cada grupo muestra su obra y la clase averigua el número que representan.",
+  "hi": "हर समूह अपना नाटक दिखाता है और कक्षा पता लगाती है कि वे कौन-सी संख्या दिखा रहे हैं।",
+  "pt": "Cada grupo apresenta sua peça e a turma descobre o número que estão mostrando."
+ },
+ "Everyone follows the lines and meets in more boxes until they reach the end.": {
+  "ar": "يتبع الجميع الخطوط ويلتقون في صناديق أخرى حتى يصلوا إلى النهاية.",
+  "es": "Todos siguen las líneas y se encuentran en más cajas hasta llegar al final.",
+  "hi": "सब रेखाओं पर चलते हैं और और डिब्बों में मिलते हैं जब तक अंत तक न पहुँच जाएँ।",
+  "pt": "Todos seguem as linhas e se encontram em mais caixas até chegarem ao fim."
+ },
+ "Everyone keeps following lines and meeting in boxes until they reach the end.": {
+  "ar": "يواصل الجميع اتّباع الخطوط والالتقاء في الصناديق حتى يصلوا إلى النهاية.",
+  "es": "Todos siguen las líneas y se encuentran en cajas hasta llegar al final.",
+  "hi": "सब रेखाओं पर चलते और डिब्बों में मिलते रहते हैं जब तक अंत तक न पहुँच जाएँ।",
+  "pt": "Todos seguem as linhas e se encontram nas caixas até chegarem ao fim."
+ },
+ "Explain binary search in their own words.": {
+  "ar": "شرح البحث الثنائي بكلماتهم.",
+  "es": "Explicar la búsqueda binaria con sus propias palabras.",
+  "hi": "बाइनरी सर्च को अपने शब्दों में समझाना।",
+  "pt": "Explicar a busca binária com as próprias palavras."
+ },
+ "Explain how binary digits (bits) represent numbers.": {
+  "ar": "شرح كيف تمثّل الأرقام الثنائية (البتات) الأعداد.",
+  "es": "Explicar cómo los dígitos binarios (bits) representan números.",
+  "hi": "समझाना कि बाइनरी अंक (बिट) संख्याओं को कैसे दर्शाते हैं।",
+  "pt": "Explicar como os dígitos binários (bits) representam números."
+ },
+ "Explain that A is 1, B is 2, C is 3, and so on.": {
+  "ar": "اشرح أن A هو 1 وB هو 2 وC هو 3، وهكذا.",
+  "es": "Explica que A es 1, B es 2, C es 3, y así sucesivamente.",
+  "hi": "समझाएँ कि A है 1, B है 2, C है 3, और आगे इसी तरह।",
+  "pt": "Explique que A é 1, B é 2, C é 3, e assim por diante."
+ },
+ "Explain that screens are made of tiny squares called pixels (short for picture elements).": {
+  "ar": "اشرح أن الشاشات مصنوعة من مربعات صغيرة تسمى البكسلات (اختصار «عناصر الصورة»).",
+  "es": "Explica que las pantallas están hechas de cuadritos diminutos llamados píxeles (abreviatura de «elementos de imagen»).",
+  "hi": "समझाएँ कि स्क्रीन छोटे-छोटे खानों से बनी होती हैं जिन्हें पिक्सल कहते हैं (यानी «चित्र के तत्व»)।",
+  "pt": "Explique que as telas são feitas de quadradinhos chamados pixels (abreviação de «elementos de imagem»)."
+ },
+ "Explain the pattern to someone else.": {
+  "ar": "شرح النمط لشخص آخر.",
+  "es": "Explicar el patrón a otra persona.",
+  "hi": "पैटर्न किसी और को समझाना।",
+  "pt": "Explicar o padrão a outra pessoa."
+ },
+ "Explain why computers need exact instructions.": {
+  "ar": "شرح لماذا تحتاج الحواسيب إلى تعليمات دقيقة.",
+  "es": "Explicar por qué los ordenadores necesitan instrucciones exactas.",
+  "hi": "समझाना कि कंप्यूटरों को सटीक निर्देश क्यों चाहिए।",
+  "pt": "Explicar por que os computadores precisam de instruções exatas."
+ },
+ "Explain why computers need to check data for errors.": {
+  "ar": "شرح لماذا تحتاج الحواسيب إلى فحص البيانات بحثًا عن الأخطاء.",
+  "es": "Explicar por qué los ordenadores necesitan comprobar si hay errores en los datos.",
+  "hi": "समझाना कि कंप्यूटरों को डेटा में गलतियाँ क्यों जाँचनी पड़ती हैं।",
+  "pt": "Explicar por que os computadores precisam verificar erros nos dados."
+ },
+ "Explain why the network works even with repeated values.": {
+  "ar": "شرح لماذا تعمل الشبكة حتى مع قيم مكرّرة.",
+  "es": "Explicar por qué la red funciona incluso con valores repetidos.",
+  "hi": "समझाना कि दोहराए गए मानों के साथ भी नेटवर्क क्यों काम करता है।",
+  "pt": "Explicar por que a rede funciona mesmo com valores repetidos."
+ },
+ "Extra children can film the plays or be the audience. Be open to unusual ideas.": {
+  "ar": "يمكن للأطفال الزائدين تصوير المسرحيات أو أن يكونوا الجمهور. كن منفتحًا على الأفكار غير المعتادة.",
+  "es": "Los niños sobrantes pueden grabar las obras o ser el público. Sé receptivo a las ideas poco habituales.",
+  "hi": "बचे हुए बच्चे नाटकों की फ़िल्म बना सकते हैं या दर्शक बन सकते हैं। अनोखे विचारों के लिए खुले रहें।",
+  "pt": "As crianças que sobrarem podem filmar as peças ou ser a plateia. Seja aberto a ideias incomuns."
+ },
+ "Find a flipped card using the odd row and odd column.": {
+  "ar": "إيجاد بطاقة قُلبت باستخدام الصف الفردي والعمود الفردي.",
+  "es": "Encontrar una carta que se dio la vuelta usando la fila impar y la columna impar.",
+  "hi": "विषम पंक्ति और विषम स्तंभ से पलटा हुआ कार्ड ढूँढना।",
+  "pt": "Achar uma carta virada usando a linha ímpar e a coluna ímpar."
+ },
+ "Find a remainder after dividing.": {
+  "ar": "إيجاد الباقي بعد القسمة.",
+  "es": "Hallar un resto después de dividir.",
+  "hi": "भाग देने के बाद शेषफल निकालना।",
+  "pt": "Achar um resto depois de dividir."
+ },
+ "Find and fix mistakes (debugging).": {
+  "ar": "اكتشاف الأخطاء وإصلاحها (التنقيح).",
+  "es": "Encontrar y corregir errores (depurar).",
+  "hi": "गलतियाँ ढूँढना और ठीक करना (डिबगिंग)।",
+  "pt": "Achar e corrigir erros (depurar)."
+ },
+ "Find the one row and the one column that now have an odd number of black cards. The card where they cross is the flipped one.": {
+  "ar": "اعثر على الصف الوحيد والعمود الوحيد اللذين صار فيهما عدد فردي من البطاقات السوداء. البطاقة التي يتقاطعان عندها هي التي قُلبت.",
+  "es": "Encuentra la única fila y la única columna que ahora tienen un número impar de cartas negras. La carta donde se cruzan es la que se dio la vuelta.",
+  "hi": "वह एकमात्र पंक्ति और एकमात्र स्तंभ ढूँढें जिनमें अब काले कार्ड विषम संख्या में हैं। जहाँ वे मिलते हैं, वही कार्ड पलटा गया था।",
+  "pt": "Ache a única linha e a única coluna que agora têm um número ímpar de cartas pretas. A carta onde se cruzam é a que foi virada."
+ },
+ "Five dot cards: 16, 8, 4, 2, 1": {
+  "ar": "خمس بطاقات نقاط: 16 و8 و4 و2 و1",
+  "es": "Cinco cartas de puntos: 16, 8, 4, 2, 1",
+  "hi": "बिंदुओं वाले पाँच कार्ड: 16, 8, 4, 2, 1",
+  "pt": "Cinco cartas de pontos: 16, 8, 4, 2, 1"
+ },
+ "Follow a fixed algorithm.": {
+  "ar": "اتباع خوارزمية ثابتة.",
+  "es": "Seguir un algoritmo fijo.",
+  "hi": "एक तय एल्गोरिदम का पालन करना।",
+  "pt": "Seguir um algoritmo fixo."
+ },
+ "Follow a step-by-step recipe (an algorithm).": {
+  "ar": "اتباع وصفة خطوة بخطوة (خوارزمية).",
+  "es": "Seguir una receta paso a paso (un algoritmo).",
+  "hi": "चरण-दर-चरण विधि (एल्गोरिदम) का पालन करना।",
+  "pt": "Seguir uma receita passo a passo (um algoritmo)."
+ },
+ "Follow a step-by-step set of rules.": {
+  "ar": "اتباع مجموعة قواعد خطوة بخطوة.",
+  "es": "Seguir un conjunto de reglas paso a paso.",
+  "hi": "नियमों का एक-एक चरण मानना।",
+  "pt": "Seguir um conjunto de regras passo a passo."
+ },
+ "Four cards with 1, 2, 4 and 8 dots (draw them on paper)": {
+  "ar": "أربع بطاقات بنقاط 1 و2 و4 و8 (ارسمها على الورق)",
+  "es": "Cuatro cartas con 1, 2, 4 y 8 puntos (dibújalas en papel)",
+  "hi": "1, 2, 4 और 8 बिंदुओं वाले चार कार्ड (काग़ज़ पर बना लें)",
+  "pt": "Quatro cartas com 1, 2, 4 e 8 pontos (desenhe-as no papel)"
+ },
+ "Four children stand in a line and hold the cards 8, 4, 2, 1 from left to right, with the dots hidden at first.": {
+  "ar": "يقف أربعة أطفال في صف ويحملون البطاقات 8 و4 و2 و1 من اليسار إلى اليمين، والنقاط مخفية في البداية.",
+  "es": "Cuatro niños se ponen en fila y sostienen las cartas 8, 4, 2, 1 de izquierda a derecha, con los puntos ocultos al principio.",
+  "hi": "चार बच्चे पंक्ति में खड़े होते हैं और बाएँ से दाएँ 8, 4, 2, 1 वाले कार्ड पकड़ते हैं, शुरू में बिंदु छिपे हुए।",
+  "pt": "Quatro crianças ficam em fila e seguram as cartas 8, 4, 2, 1 da esquerda para a direita, com os pontos escondidos no início."
+ },
+ "Four volunteers": {
+  "ar": "أربعة متطوّعين",
+  "es": "Cuatro voluntarios",
+  "hi": "चार स्वयंसेवक",
+  "pt": "Quatro voluntários"
+ },
+ "Give six children one number card each, in a mixed-up order, and let them stand at the start.": {
+  "ar": "أعطِ ستة أطفال بطاقة عدد لكل منهم، بترتيب مختلط، ودعهم يقفون عند البداية.",
+  "es": "Da a seis niños una carta de número cada uno, en desorden, y deja que se pongan al principio.",
+  "hi": "छह बच्चों को एक-एक संख्या कार्ड बिना क्रम के दें और उन्हें शुरुआत में खड़ा करें।",
+  "pt": "Dê a seis crianças uma carta de número cada uma, fora de ordem, e deixe-as ficar no início."
+ },
+ "Give the next child the 2-dot card. Ask: how many dots will the next card have? Let them guess without telling them they are wrong.": {
+  "ar": "أعطِ بطاقة النقطتين للطفل التالي. اسأل: كم نقطة ستكون في البطاقة التالية؟ دعهم يخمّنون دون أن تقول لهم إنهم أخطؤوا.",
+  "es": "Da la carta de 2 puntos al siguiente niño. Pregunta: ¿cuántos puntos tendrá la siguiente carta? Déjalos adivinar sin decirles que se equivocan.",
+  "hi": "अगले बच्चे को 2 बिंदु वाला कार्ड दें। पूछें: अगले कार्ड में कितने बिंदु होंगे? उन्हें अंदाज़ा लगाने दें, यह बताए बिना कि वे गलत हैं।",
+  "pt": "Dê a carta de 2 pontos à criança seguinte. Pergunte: quantos pontos terá a próxima carta? Deixe-as palpitar sem dizer que estão erradas."
+ },
+ "Grid paper or printed 8 by 8 grids": {
+  "ar": "ورق مربّعات أو شبكات 8 في 8 مطبوعة",
+  "es": "Papel cuadriculado o cuadrículas de 8 por 8 impresas",
+  "hi": "चौखाने वाला काग़ज़ या छपी हुई 8 बाई 8 की जालियाँ",
+  "pt": "Papel quadriculado ou grades de 8 por 8 impressas"
+ },
+ "Groups invent a play that counts in binary using any two opposite things, then perform it for the class.": {
+  "ar": "تبتكر المجموعات مسرحية تعدّ بالنظام الثنائي بأي شيئين متضادّين ثم تؤدّيها أمام الصف.",
+  "es": "Los grupos inventan una obra que cuenta en binario con dos cosas opuestas cualesquiera y la representan ante la clase.",
+  "hi": "समूह किन्हीं दो विपरीत चीज़ों से बाइनरी में गिनने वाला नाटक बनाते हैं और कक्षा के सामने प्रस्तुत करते हैं।",
+  "pt": "Os grupos inventam uma peça que conta em binário com quaisquer duas coisas opostas e a apresentam para a turma."
+ },
+ "Groups invent their own picture 'programming language' of exercises and then program a friend to follow it.": {
+  "ar": "تبتكر المجموعات «لغة برمجة» مصوّرة خاصة بها من التمارين ثم تبرمج صديقًا ليتّبعها.",
+  "es": "Los grupos inventan su propio «lenguaje de programación» con imágenes de ejercicios y luego programan a un amigo para que lo siga.",
+  "hi": "समूह व्यायामों की अपनी चित्र-वाली «प्रोग्रामिंग भाषा» बनाते हैं और फिर किसी दोस्त को उसे मानने के लिए प्रोग्राम करते हैं।",
+  "pt": "Os grupos inventam sua própria «linguagem de programação» de exercícios em imagens e depois programam um amigo para segui-la."
+ },
+ "Groups of four": {
+  "ar": "مجموعات من أربعة",
+  "es": "Grupos de cuatro",
+  "hi": "चार-चार के समूह",
+  "pt": "Grupos de quatro"
+ },
+ "Groups of four children": {
+  "ar": "مجموعات من أربعة أطفال",
+  "es": "Grupos de cuatro niños",
+  "hi": "चार-चार बच्चों के समूह",
+  "pt": "Grupos de quatro crianças"
+ },
+ "Groups walk round and try to work out what the other groups' cards mean. Some will be easy and some will need to be learned.": {
+  "ar": "تتجوّل المجموعات وتحاول معرفة معنى بطاقات المجموعات الأخرى. بعضها سهل وبعضها يحتاج إلى تعلّم.",
+  "es": "Los grupos recorren el aula e intentan descubrir qué significan las cartas de los demás. Algunas serán fáciles y otras habrá que aprenderlas.",
+  "hi": "समूह घूमकर दूसरे समूहों के कार्डों का मतलब समझने की कोशिश करते हैं। कुछ आसान होंगे और कुछ सीखने पड़ेंगे।",
+  "pt": "Os grupos circulam e tentam descobrir o que significam as cartas dos outros grupos. Algumas serão fáceis e outras precisarão ser aprendidas."
+ },
+ "Hand out a small grid. Each row has numbers. Colour a square black for 1 and leave it white for 0.": {
+  "ar": "وزّع شبكة صغيرة. في كل صف أعداد. لوّن المربع بالأسود إن كان 1 واتركه أبيض إن كان 0.",
+  "es": "Reparte una cuadrícula pequeña. Cada fila tiene números. Colorea un cuadro de negro si es 1 y déjalo blanco si es 0.",
+  "hi": "एक छोटी जाली बाँटें। हर पंक्ति में संख्याएँ हैं। 1 के लिए खाना काला रंगें और 0 के लिए सफ़ेद छोड़ दें।",
+  "pt": "Distribua uma grade pequena. Cada linha tem números. Pinte o quadradinho de preto se for 1 e deixe branco se for 0."
+ },
+ "Hand out the 4-dot and 8-dot cards. Talk about the pattern: each card has double the dots of the one before.": {
+  "ar": "وزّع بطاقتي 4 و8 نقاط. تحدّثوا عن النمط: لكل بطاقة ضعف نقاط التي قبلها.",
+  "es": "Reparte las cartas de 4 y 8 puntos. Hablen del patrón: cada carta tiene el doble de puntos que la anterior.",
+  "hi": "4 और 8 बिंदु वाले कार्ड बाँटें। पैटर्न पर बात करें: हर कार्ड में पिछले से दोगुने बिंदु हैं।",
+  "pt": "Distribua as cartas de 4 e 8 pontos. Conversem sobre o padrão: cada carta tem o dobro de pontos da anterior."
+ },
+ "Have other games ready for children who finish early, since some searches take many guesses.": {
+  "ar": "جهّز ألعابًا أخرى للأطفال الذين ينتهون مبكرًا لأن بعض عمليات البحث تحتاج إلى محاولات كثيرة.",
+  "es": "Ten otros juegos listos para los niños que terminen pronto, ya que algunas búsquedas necesitan muchos intentos.",
+  "hi": "जल्दी खत्म करने वाले बच्चों के लिए दूसरे खेल तैयार रखें, क्योंकि कुछ खोजों में बहुत कोशिशें लगती हैं।",
+  "pt": "Tenha outros jogos prontos para as crianças que terminarem cedo, já que algumas buscas levam muitas tentativas."
+ },
+ "How could we make searching faster?": {
+  "ar": "كيف يمكن أن نجعل البحث أسرع؟",
+  "es": "¿Cómo podríamos hacer la búsqueda más rápida?",
+  "hi": "हम खोज को तेज़ कैसे बना सकते हैं?",
+  "pt": "Como poderíamos deixar a busca mais rápida?"
+ },
+ "How could we show colours instead of black and white?": {
+  "ar": "كيف يمكن أن نعرض الألوان بدل الأبيض والأسود؟",
+  "es": "¿Cómo podríamos mostrar colores en vez de blanco y negro?",
+  "hi": "काले-सफ़ेद की जगह रंग कैसे दिखा सकते हैं?",
+  "pt": "Como poderíamos mostrar cores em vez de preto e branco?"
+ },
+ "How could you send your code to someone far away?": {
+  "ar": "كيف يمكنك إرسال رمزك إلى شخص بعيد؟",
+  "es": "¿Cómo podrías enviar tu código a alguien lejano?",
+  "hi": "आप अपना कोड किसी दूर के व्यक्ति को कैसे भेज सकते हैं?",
+  "pt": "Como você poderia enviar o seu código a alguém distante?"
+ },
+ "How is this different from binary search on a list?": {
+  "ar": "كيف يختلف هذا عن البحث الثنائي في قائمة؟",
+  "es": "¿En qué se diferencia de la búsqueda binaria en una lista?",
+  "hi": "यह किसी सूची में बाइनरी सर्च से कैसे अलग है?",
+  "pt": "Em que isso é diferente da busca binária em uma lista?"
+ },
+ "How many guesses at most for 15 cards?": {
+  "ar": "كم محاولة كحدّ أقصى مع 15 بطاقة؟",
+  "es": "¿Cuántos intentos como máximo con 15 cartas?",
+  "hi": "15 कार्डों के साथ ज़्यादा से ज़्यादा कितनी कोशिशें?",
+  "pt": "Quantas tentativas no máximo com 15 cartas?"
+ },
+ "How many guesses did it take at most?": {
+  "ar": "كم محاولة لزمت كحدّ أقصى؟",
+  "es": "¿Cuántos intentos hicieron falta como máximo?",
+  "hi": "ज़्यादा से ज़्यादा कितनी कोशिशें लगीं?",
+  "pt": "Quantas tentativas foram necessárias no máximo?"
+ },
+ "How many numbers do you need for a bigger picture?": {
+  "ar": "كم عددًا تحتاج لصورة أكبر؟",
+  "es": "¿Cuántos números necesitas para una imagen más grande?",
+  "hi": "बड़े चित्र के लिए कितनी संख्याएँ चाहिए?",
+  "pt": "Quantos números você precisa para uma imagem maior?"
+ },
+ "How would you sort twenty?": {
+  "ar": "كيف سترتّب عشرين؟",
+  "es": "¿Cómo ordenarías veinte?",
+  "hi": "आप बीस को कैसे क्रम में लगाएँगे?",
+  "pt": "Como você ordenaria vinte?"
+ },
+ "If a group has extra children, they can film the play or be the audience that guesses the number.": {
+  "ar": "إن كان في مجموعة أطفال زائدون، فيمكنهم تصوير المسرحية أو أن يكونوا الجمهور الذي يخمّن العدد.",
+  "es": "Si un grupo tiene niños de sobra, pueden grabar la obra o ser el público que adivina el número.",
+  "hi": "अगर किसी समूह में बच्चे बच जाएँ तो वे नाटक की फ़िल्म बना सकते हैं या दर्शक बनकर संख्या का अंदाज़ा लगा सकते हैं।",
+  "pt": "Se um grupo tiver crianças sobrando, elas podem filmar a peça ou ser a plateia que adivinha o número."
+ },
+ "If not, find the bug together and fix the program. Debugging is part of the fun.": {
+  "ar": "إن لم يصل، فابحثوا عن الخطأ معًا وأصلحوا البرنامج. التنقيح جزء من المتعة.",
+  "es": "Si no, busquen el error juntos y corrijan el programa. Depurar forma parte de la diversión.",
+  "hi": "अगर नहीं पहुँचा तो साथ मिलकर गलती ढूँढें और प्रोग्राम ठीक करें। डिबगिंग मज़े का हिस्सा है।",
+  "pt": "Se não chegar, procurem o erro juntos e corrijam o programa. Depurar faz parte da diversão."
+ },
+ "If the target is smaller, go left. If it is bigger, go right. Repeat until you find it.": {
+  "ar": "إن كان الهدف أصغر فاذهب يسارًا، وإن كان أكبر فاذهب يمينًا. كرّر حتى تجده.",
+  "es": "Si el objetivo es menor, ve a la izquierda. Si es mayor, a la derecha. Repite hasta encontrarlo.",
+  "hi": "अगर लक्ष्य छोटा है तो बाएँ जाएँ, बड़ा है तो दाएँ। मिलने तक दोहराएँ।",
+  "pt": "Se o alvo for menor, vá para a esquerda. Se for maior, para a direita. Repita até achar."
+ },
+ "If you park at 5pm for 8 hours, when does the ticket run out? Add 8 to 17 and wrap around the 24-hour clock.": {
+  "ar": "إن أوقفت سيارتك الساعة 5 مساءً لمدة 8 ساعات فمتى تنتهي التذكرة؟ اجمع 8 إلى 17 والتفّ حول ساعة الـ24 ساعة.",
+  "es": "Si aparcas a las 5 de la tarde durante 8 horas, ¿cuándo se acaba el ticket? Suma 8 a 17 y da la vuelta en el reloj de 24 horas.",
+  "hi": "अगर आप शाम 5 बजे 8 घंटे के लिए गाड़ी खड़ी करें तो टिकट कब खत्म होगा? 17 में 8 जोड़ें और 24 घंटे की घड़ी में घूम जाएँ।",
+  "pt": "Se você estaciona às 5 da tarde por 8 horas, quando o ticket acaba? Some 8 a 17 e dê a volta no relógio de 24 horas."
+ },
+ "If your alphabet has extra letters or accents, talk about how a code would need more bits. Real computers use a bigger standard code.": {
+  "ar": "إن كانت أبجديتك فيها حروف إضافية أو علامات تشكيل، فتحدّثوا عن أن الرمز سيحتاج إلى بتات أكثر. تستخدم الحواسيب الحقيقية رمزًا قياسيًا أكبر.",
+  "es": "Si tu alfabeto tiene letras extra o acentos, hablen de que un código necesitaría más bits. Los ordenadores reales usan un código estándar más grande.",
+  "hi": "अगर आपकी वर्णमाला में अतिरिक्त अक्षर या मात्राएँ हैं तो बात करें कि कोड को ज़्यादा बिट चाहिए होंगे। असली कंप्यूटर बड़ा मानक कोड इस्तेमाल करते हैं।",
+  "pt": "Se o seu alfabeto tem letras extras ou acentos, conversem sobre como um código precisaria de mais bits. Computadores de verdade usam um código padrão maior."
+ },
+ "In groups of four, choose how to show on and off. It must not be the dot cards.": {
+  "ar": "في مجموعات من أربعة، اختاروا كيف تُظهرون التشغيل والإيقاف. يجب ألا تكون بطاقات النقاط.",
+  "es": "En grupos de cuatro, elijan cómo mostrar encendido y apagado. No pueden ser las cartas con puntos.",
+  "hi": "चार-चार के समूह में तय करें कि चालू और बंद कैसे दिखाएँगे। यह बिंदु वाले कार्ड नहीं होने चाहिए।",
+  "pt": "Em grupos de quatro, escolham como mostrar ligado e desligado. Não podem ser as cartas com pontos."
+ },
+ "In groups of four, pick how to show on and off and decide who is the 8, 4, 2 and 1 bit.": {
+  "ar": "في مجموعات من أربعة، اختاروا كيف تُظهرون التشغيل والإيقاف وقرّروا من هو بت 8 و4 و2 و1.",
+  "es": "En grupos de cuatro, elijan cómo mostrar encendido y apagado y decidan quién es el bit 8, 4, 2 y 1.",
+  "hi": "चार-चार के समूह में तय करें कि चालू और बंद कैसे दिखाएँगे और कौन 8, 4, 2 और 1 वाला बिट होगा।",
+  "pt": "Em grupos de quatro, escolham como mostrar ligado e desligado e decidam quem é o bit 8, 4, 2 e 1."
+ },
+ "In groups of three, draw a GO card, four exercise cards and a finishing pose card.": {
+  "ar": "في مجموعات من ثلاثة، ارسموا بطاقة «انطلق» وأربع بطاقات تمارين وبطاقة وضعية ختامية.",
+  "es": "En grupos de tres, dibujen una carta GO, cuatro cartas de ejercicios y una carta de pose final.",
+  "hi": "तीन-तीन के समूह में, एक GO कार्ड, चार व्यायाम कार्ड और एक अंतिम मुद्रा कार्ड बनाएँ।",
+  "pt": "Em grupos de três, desenhem uma carta GO, quatro cartas de exercício e uma carta de pose final."
+ },
+ "Is it ever fast to search when nothing is in order?": {
+  "ar": "هل يكون البحث سريعًا أحيانًا عندما لا يكون شيء مرتّبًا؟",
+  "es": "¿Alguna vez es rápido buscar cuando nada está en orden?",
+  "hi": "जब कुछ भी क्रम में न हो, क्या खोज कभी तेज़ होती है?",
+  "pt": "Alguma vez é rápido buscar quando nada está em ordem?"
+ },
+ "Is there a smarter way to guess?": {
+  "ar": "هل توجد طريقة أذكى للتخمين؟",
+  "es": "¿Hay una forma más inteligente de adivinar?",
+  "hi": "क्या अंदाज़ा लगाने का कोई समझदार तरीक़ा है?",
+  "pt": "Existe um jeito mais inteligente de palpitar?"
+ },
+ "Join back together: this is like real programming languages, where some things look familiar and others must be learned.": {
+  "ar": "اجتمعوا من جديد: هذا يشبه لغات البرمجة الحقيقية، حيث تبدو بعض الأشياء مألوفة ويجب تعلّم أخرى.",
+  "es": "Vuelvan a reunirse: esto es como los lenguajes de programación reales, donde algunas cosas resultan familiares y otras hay que aprenderlas.",
+  "hi": "फिर इकट्ठा हों: असली प्रोग्रामिंग भाषाओं में भी ऐसा ही होता है, कुछ चीज़ें जानी-पहचानी लगती हैं और कुछ सीखनी पड़ती हैं।",
+  "pt": "Voltem a se reunir: isso é como as linguagens de programação de verdade, em que algumas coisas parecem familiares e outras precisam ser aprendidas."
+ },
+ "Keep activities gentle and safe. The learning is about commands and order, not about how fast the exercise is.": {
+  "ar": "اجعل الأنشطة لطيفة وآمنة. التعلّم يخصّ الأوامر والترتيب لا سرعة أداء التمرين.",
+  "es": "Mantén las actividades suaves y seguras. Lo que se aprende son los comandos y el orden, no la rapidez con que se hace el ejercicio.",
+  "hi": "गतिविधियाँ हल्की और सुरक्षित रखें। सीखने की बात कमांड और क्रम की है, व्यायाम की तेज़ी की नहीं।",
+  "pt": "Mantenha as atividades leves e seguras. O aprendizado é sobre comandos e ordem, não sobre a rapidez do exercício."
+ },
+ "Know that barcodes include a check digit.": {
+  "ar": "معرفة أن الباركود يتضمّن رقم تحقّق.",
+  "es": "Saber que los códigos de barras incluyen un dígito de control.",
+  "hi": "जानना कि बारकोड में एक जाँच-अंक होता है।",
+  "pt": "Saber que os códigos de barras incluem um dígito verificador."
+ },
+ "Know that computers can notice when data changes by mistake.": {
+  "ar": "معرفة أن الحواسيب تستطيع ملاحظة تغيّر البيانات عن طريق الخطأ.",
+  "es": "Saber que los ordenadores pueden notar cuando unos datos cambian por error.",
+  "hi": "जानना कि कंप्यूटर यह भाँप सकते हैं कि डेटा गलती से बदल गया है।",
+  "pt": "Saber que os computadores podem perceber quando dados mudam por engano."
+ },
+ "Know that screen pictures are made of tiny squares called pixels.": {
+  "ar": "معرفة أن صور الشاشة مصنوعة من مربعات صغيرة تسمى البكسلات.",
+  "es": "Saber que las imágenes de la pantalla están hechas de cuadritos diminutos llamados píxeles.",
+  "hi": "यह जानना कि स्क्रीन के चित्र छोटे-छोटे खानों से बने होते हैं जिन्हें पिक्सल कहते हैं।",
+  "pt": "Saber que as imagens da tela são feitas de quadradinhos chamados pixels."
+ },
+ "Know that sorted lists are quicker to search.": {
+  "ar": "معرفة أن القوائم المرتّبة أسرع في البحث.",
+  "es": "Saber que las listas ordenadas se buscan más rápido.",
+  "hi": "जानना कि क्रम में लगी सूचियों में खोज तेज़ होती है।",
+  "pt": "Saber que listas ordenadas são mais rápidas de pesquisar."
+ },
+ "Know why computers use the modulo operator.": {
+  "ar": "معرفة لماذا تستخدم الحواسيب عامل باقي القسمة.",
+  "es": "Saber por qué los ordenadores usan el operador módulo.",
+  "hi": "जानना कि कंप्यूटर मॉड्यूलो ऑपरेटर क्यों इस्तेमाल करते हैं।",
+  "pt": "Saber por que os computadores usam o operador módulo."
+ },
+ "Large cards or plates with a number hidden underneath": {
+  "ar": "بطاقات كبيرة أو صحون بعدد مخفي تحتها",
+  "es": "Cartas grandes o platos con un número escondido debajo",
+  "hi": "बड़े कार्ड या प्लेटें जिनके नीचे संख्या छिपी है",
+  "pt": "Cartas grandes ou pratos com um número escondido embaixo"
+ },
+ "Lay out 15 cards animal-side up. The numbers underneath are in no order.": {
+  "ar": "ضع 15 بطاقة وجانب الحيوان إلى الأعلى. الأعداد في الأسفل بلا ترتيب.",
+  "es": "Coloca 15 cartas con el animal hacia arriba. Los números de debajo no tienen orden.",
+  "hi": "15 कार्ड जानवर वाला हिस्सा ऊपर करके बिछाएँ। नीचे की संख्याएँ बिना क्रम की हैं।",
+  "pt": "Disponha 15 cartas com o lado do animal para cima. Os números embaixo estão sem ordem."
+ },
+ "Lay out a 5 by 5 square of black and white cards with no pattern.": {
+  "ar": "رتّب مربّعًا 5 في 5 من البطاقات السوداء والبيضاء دون نمط.",
+  "es": "Coloca un cuadrado de 5 por 5 de cartas negras y blancas sin ningún patrón.",
+  "hi": "काले और सफ़ेद कार्डों का 5 बाई 5 का वर्ग बिना किसी पैटर्न के बिछाएँ।",
+  "pt": "Disponha um quadrado de 5 por 5 de cartas pretas e brancas sem padrão."
+ },
+ "Lay out sorted cards face down. Say they run from small to large.": {
+  "ar": "ضع البطاقات المرتّبة مقلوبة. قل إنها تتدرّج من الصغير إلى الكبير.",
+  "es": "Coloca las cartas ordenadas boca abajo. Di que van de menor a mayor.",
+  "hi": "क्रम वाले कार्ड उलटे बिछाएँ। बताएँ कि वे छोटे से बड़े की ओर जाते हैं।",
+  "pt": "Disponha as cartas ordenadas viradas para baixo. Diga que vão do menor para o maior."
+ },
+ "Lay out the 15 cards in order. Tell the children the numbers go from small to large.": {
+  "ar": "رتّب البطاقات الخمس عشرة. أخبر الأطفال أن الأعداد تتدرّج من الصغير إلى الكبير.",
+  "es": "Coloca las 15 cartas en orden. Diles a los niños que los números van de pequeños a grandes.",
+  "hi": "15 कार्डों को क्रम में बिछाएँ। बच्चों को बताएँ कि संख्याएँ छोटी से बड़ी की ओर जाती हैं।",
+  "pt": "Disponha as 15 cartas em ordem. Diga às crianças que os números vão de pequenos a grandes."
+ },
+ "Lay out the cards face down with a picture up. The numbers underneath are not in order.": {
+  "ar": "ضع البطاقات مقلوبة وصورة إلى الأعلى. الأعداد في الأسفل غير مرتّبة.",
+  "es": "Coloca las cartas boca abajo con un dibujo hacia arriba. Los números de debajo no están en orden.",
+  "hi": "कार्डों को उलटा बिछाएँ, चित्र ऊपर की ओर। नीचे की संख्याएँ क्रम में नहीं हैं।",
+  "pt": "Disponha as cartas viradas para baixo com um desenho para cima. Os números embaixo não estão em ordem."
+ },
+ "Lay the cards in a row with GO first and the finishing pose last.": {
+  "ar": "ضعوا البطاقات في صف: «انطلق» أولًا والوضعية الختامية أخيرًا.",
+  "es": "Pongan las cartas en fila con GO primero y la pose final al último.",
+  "hi": "कार्डों को पंक्ति में रखें: पहले GO और आख़िर में अंतिम मुद्रा।",
+  "pt": "Coloquem as cartas em fila, com GO primeiro e a pose final por último."
+ },
+ "Let children arrange new numbers into their own tree shapes.": {
+  "ar": "دع الأطفال يرتّبون أعدادًا جديدة في أشكال شجرية خاصة بهم.",
+  "es": "Deja que los niños ordenen números nuevos en sus propias formas de árbol.",
+  "hi": "बच्चों को नई संख्याओं से अपने खुद के पेड़ बनाने दें।",
+  "pt": "Deixe as crianças organizarem números novos em suas próprias formas de árvore."
+ },
+ "Let children write the code for the other rows.": {
+  "ar": "دع الأطفال يكتبون رمز بقية الصفوف.",
+  "es": "Deja que los niños escriban el código de las demás filas.",
+  "hi": "बच्चों को बाकी पंक्तियों का कोड लिखने दें।",
+  "pt": "Deixe as crianças escreverem o código das outras linhas."
+ },
+ "Let pairs try the trick on their own.": {
+  "ar": "دع الأزواج يجرّبون الحيلة بأنفسهم.",
+  "es": "Deja que las parejas prueben el truco por su cuenta.",
+  "hi": "जोड़ियों को खुद करतब आज़माने दें।",
+  "pt": "Deixe as duplas tentarem o truque sozinhas."
+ },
+ "Let the children choose a short word, work out its codes, and send it to a partner who decodes it.": {
+  "ar": "دع الأطفال يختارون كلمة قصيرة ويستخرجون رموزها ويرسلونها إلى زميل يفكّ ترميزها.",
+  "es": "Deja que los niños elijan una palabra corta, averigüen sus códigos y se la envíen a un compañero que la decodifique.",
+  "hi": "बच्चों को कोई छोटा शब्द चुनने दें, उसके कोड निकालने दें और उसे ऐसे साथी को भेजने दें जो उसे समझे।",
+  "pt": "Deixe as crianças escolherem uma palavra curta, descobrirem os códigos e enviarem a um colega que a decodifique."
+ },
+ "Look at each row and column. Find the row that has an odd number of black cards, and the column that has an odd number.": {
+  "ar": "انظر إلى كل صف وعمود. اعثر على الصف الذي فيه عدد فردي من البطاقات السوداء والعمود الذي فيه عدد فردي.",
+  "es": "Mira cada fila y columna. Encuentra la fila que tiene un número impar de cartas negras y la columna que tiene un número impar.",
+  "hi": "हर पंक्ति और स्तंभ देखें। वह पंक्ति ढूँढें जिसमें काले कार्ड विषम संख्या में हैं, और वह स्तंभ जिसमें विषम संख्या है।",
+  "pt": "Olhe cada linha e coluna. Ache a linha que tem um número ímpar de cartas pretas e a coluna que tem um número ímpar."
+ },
+ "Look at the chart together. What do you notice?": {
+  "ar": "انظروا إلى الجدول معًا. ماذا تلاحظون؟",
+  "es": "Miren juntos la tabla. ¿Qué notan?",
+  "hi": "साथ मिलकर चार्ट देखें। आपने क्या देखा?",
+  "pt": "Olhem a tabela juntos. O que vocês notam?"
+ },
+ "Look at the middle of what is left and repeat until you find 52.": {
+  "ar": "انظر إلى منتصف ما تبقّى وكرّر حتى تجد 52.",
+  "es": "Mira el medio de lo que queda y repite hasta encontrar el 52.",
+  "hi": "जो बचा उसका बीच देखें और 52 मिलने तक दोहराएँ।",
+  "pt": "Olhe o meio do que sobrou e repita até achar o 52."
+ },
+ "Look at the results. Was it ever the first card? The last?": {
+  "ar": "انظروا إلى النتائج. هل كانت البطاقة الأولى يومًا؟ وهل كانت الأخيرة؟",
+  "es": "Miren los resultados. ¿Alguna vez fue la primera carta? ¿Y la última?",
+  "hi": "नतीजे देखें। क्या कभी पहला ही कार्ड निकला? और आख़िरी?",
+  "pt": "Olhem os resultados. Alguma vez foi a primeira carta? E a última?"
+ },
+ "Look at the spread: sometimes lucky, sometimes the last card. On average, about half the cards.": {
+  "ar": "انظروا إلى التوزّع: أحيانًا يحالفنا الحظ وأحيانًا تكون آخر بطاقة. وفي المتوسّط نحو نصف البطاقات.",
+  "es": "Miren la dispersión: a veces hay suerte, a veces es la última carta. De media, la mitad de las cartas.",
+  "hi": "फैलाव देखें: कभी किस्मत साथ देती है, कभी आख़िरी कार्ड निकलता है। औसतन करीब आधे कार्ड।",
+  "pt": "Olhem a dispersão: às vezes há sorte, às vezes é a última carta. Em média, cerca de metade das cartas."
+ },
+ "Look: are they in order? Try again with new cards.": {
+  "ar": "انظروا: هل هم مرتّبون؟ حاولوا مرة أخرى ببطاقات جديدة.",
+  "es": "Miren: ¿están en orden? Repitan con cartas nuevas.",
+  "hi": "देखें: क्या वे क्रम में हैं? नए कार्डों के साथ फिर कोशिश करें।",
+  "pt": "Vejam: estão em ordem? Tentem de novo com cartas novas."
+ },
+ "Make a floor grid and put an object to rescue on one square.": {
+  "ar": "اصنع شبكة على الأرض وضع شيئًا للإنقاذ على أحد المربعات.",
+  "es": "Haz una cuadrícula en el suelo y pon un objeto para rescatar en un cuadro.",
+  "hi": "फ़र्श पर जाली बनाएँ और किसी एक खाने पर बचाने की वस्तु रखें।",
+  "pt": "Faça uma grade no chão e coloque um objeto para resgatar em um quadrado."
+ },
+ "Make a grid and mark the target. One child is the rocket (the Bot), one is the Programmer, one is the Tester.": {
+  "ar": "اصنع شبكة وعلّم الهدف. طفل هو الصاروخ (الروبوت)، وآخر المبرمج، وآخر المختبِر.",
+  "es": "Haz una cuadrícula y marca el objetivo. Un niño es el cohete (el Robot), otro el Programador y otro el Probador.",
+  "hi": "एक जाली बनाएँ और लक्ष्य चिह्नित करें। एक बच्चा रॉकेट (बॉट) है, एक प्रोग्रामर और एक टेस्टर।",
+  "pt": "Faça uma grade e marque o alvo. Uma criança é o foguete (o Robô), uma o Programador e uma o Testador."
+ },
+ "Make every row and column have an even number of black cards.": {
+  "ar": "جعل كل صف وعمود يحتوي عددًا زوجيًا من البطاقات السوداء.",
+  "es": "Hacer que cada fila y columna tenga un número par de cartas negras.",
+  "hi": "हर पंक्ति और स्तंभ में काले कार्डों की संख्या सम बनाना।",
+  "pt": "Fazer com que cada linha e coluna tenha um número par de cartas pretas."
+ },
+ "Make numbers from 0 to 15 with four cards.": {
+  "ar": "تكوين أعداد من 0 إلى 15 بأربع بطاقات.",
+  "es": "Formar números del 0 al 15 con cuatro cartas.",
+  "hi": "चार कार्डों से 0 से 15 तक संख्याएँ बनाना।",
+  "pt": "Formar números de 0 a 15 com quatro cartas."
+ },
+ "Make picture cards that stand for actions.": {
+  "ar": "صنع بطاقات مصوّرة تمثّل الأفعال.",
+  "es": "Hacer cartas con dibujos que representen acciones.",
+  "hi": "ऐसे चित्र-कार्ड बनाना जो क्रियाओं को दर्शाएँ।",
+  "pt": "Fazer cartas com desenhos que representem ações."
+ },
+ "Notice that each card has double the dots of the one before.": {
+  "ar": "ملاحظة أن لكل بطاقة ضعف نقاط التي قبلها.",
+  "es": "Fijarse en que cada carta tiene el doble de puntos que la anterior.",
+  "hi": "ध्यान देना कि हर कार्ड में पिछले कार्ड से दोगुने बिंदु हैं।",
+  "pt": "Notar que cada carta tem o dobro de pontos da anterior."
+ },
+ "Now you have a 6 by 6 square. Ask the class to close their eyes while the helper flips exactly one card.": {
+  "ar": "أصبح لديك مربّع 6 في 6. اطلب من الصف إغلاق العيون بينما يقلب المساعد بطاقة واحدة بالضبط.",
+  "es": "Ahora tienes un cuadrado de 6 por 6. Pide a la clase que cierre los ojos mientras el ayudante da la vuelta a una sola carta.",
+  "hi": "अब आपके पास 6 बाई 6 का वर्ग है। कक्षा से आँखें बंद करने को कहें, जब तक सहायक ठीक एक कार्ड पलट दे।",
+  "pt": "Agora você tem um quadrado de 6 por 6. Peça à turma que feche os olhos enquanto o ajudante vira exatamente uma carta."
+ },
+ "Number cards (whole numbers, then bigger numbers, fractions or decimals)": {
+  "ar": "بطاقات أعداد (أعداد صحيحة ثم أعداد أكبر أو كسور أو كسور عشرية)",
+  "es": "Cartas de números (enteros, luego números más grandes, fracciones o decimales)",
+  "hi": "संख्या कार्ड (पूर्ण संख्याएँ, फिर बड़ी संख्याएँ, भिन्न या दशमलव)",
+  "pt": "Cartas de números (inteiros, depois números maiores, frações ou decimais)"
+ },
+ "Number cards with two the same, for example 1, 2, 3, 3, 4, 5": {
+  "ar": "بطاقات أعداد فيها عددان متساويان، مثل 1 و2 و3 و3 و4 و5",
+  "es": "Cartas con dos números iguales, por ejemplo 1, 2, 3, 3, 4, 5",
+  "hi": "दो बराबर संख्याओं वाले कार्ड, जैसे 1, 2, 3, 3, 4, 5",
+  "pt": "Cartas com dois números iguais, por exemplo 1, 2, 3, 3, 4, 5"
+ },
+ "One partner picks a number that the other must find by guessing boxes one at a time.": {
+  "ar": "يختار أحد الشريكين عددًا يجب على الآخر إيجاده بتخمين المربعات واحدًا تلو الآخر.",
+  "es": "Un compañero elige un número que el otro debe encontrar adivinando casillas de una en una.",
+  "hi": "एक साथी एक संख्या चुनता है जिसे दूसरा एक-एक खाना चुनकर ढूँढता है।",
+  "pt": "Um parceiro escolhe um número que o outro deve achar palpitando as caixas uma de cada vez."
+ },
+ "One partner picks a number that the other must find. Guess the middle box first.": {
+  "ar": "يختار أحد الشريكين عددًا يجب على الآخر إيجاده. خمّن الصندوق الأوسط أولًا.",
+  "es": "Un compañero elige un número que el otro debe encontrar. Se adivina primero la casilla del medio.",
+  "hi": "एक साथी एक संख्या चुनता है जिसे दूसरे को ढूँढना है। पहले बीच वाला खाना चुनें।",
+  "pt": "Um parceiro escolhe um número que o outro deve achar. Palpite primeiro a caixa do meio."
+ },
+ "Only one team uses the network at a time while others watch. Later try fractions, bigger numbers or other things to sort.": {
+  "ar": "يستخدم فريق واحد فقط الشبكة في كل مرة بينما يشاهد الآخرون. بعد ذلك جرّبوا الكسور أو أعدادًا أكبر أو أشياء أخرى للفرز.",
+  "es": "Solo un equipo usa la red a la vez mientras los demás miran. Después, prueben con fracciones, números más grandes u otras cosas para ordenar.",
+  "hi": "एक समय में केवल एक टीम नेटवर्क इस्तेमाल करती है और बाकी देखते हैं। बाद में भिन्न, बड़ी संख्याएँ या क्रम में लगाने की और चीज़ें आज़माएँ।",
+  "pt": "Só uma equipe usa a rede por vez enquanto as outras observam. Depois, tentem frações, números maiores ou outras coisas para ordenar."
+ },
+ "Optional camera or phone": {
+  "ar": "كاميرا أو هاتف اختياري",
+  "es": "Cámara o teléfono opcional",
+  "hi": "वैकल्पिक कैमरा या फ़ोन",
+  "pt": "Câmera ou celular opcional"
+ },
+ "Order four bits from biggest to smallest and count to 15.": {
+  "ar": "ترتيب أربعة بتات من الأكبر إلى الأصغر والعدّ حتى 15.",
+  "es": "Ordenar cuatro bits del mayor al menor y contar hasta 15.",
+  "hi": "चार बिट को बड़े से छोटे क्रम में लगाना और 15 तक गिनना।",
+  "pt": "Ordenar quatro bits do maior para o menor e contar até 15."
+ },
+ "Other things to sort: heights, colours, sizes": {
+  "ar": "أشياء أخرى للفرز: الأطوال والألوان والأحجام",
+  "es": "Otras cosas para ordenar: alturas, colores, tamaños",
+  "hi": "क्रम में लगाने के लिए और चीज़ें: ऊँचाई, रंग, आकार",
+  "pt": "Outras coisas para ordenar: alturas, cores, tamanhos"
+ },
+ "Pairs of children, each with their own set": {
+  "ar": "أزواج من الأطفال، لكل زوج مجموعته",
+  "es": "Parejas de niños, cada una con su propio juego",
+  "hi": "बच्चों की जोड़ियाँ, हर जोड़ी के पास अपना सेट",
+  "pt": "Duplas de crianças, cada uma com o seu próprio conjunto"
+ },
+ "Pairs play a guessing game on a sheet of 31 hidden numbers that are in no order, and count how many guesses they need.": {
+  "ar": "يلعب الأزواج لعبة تخمين على ورقة فيها 31 عددًا مخفيًا بلا ترتيب ويعدّون كم محاولة يحتاجون.",
+  "es": "Las parejas juegan a adivinar en una hoja con 31 números escondidos sin orden y cuentan cuántos intentos necesitan.",
+  "hi": "जोड़ियाँ 31 छिपी, बिना क्रम की संख्याओं वाली शीट पर अंदाज़े का खेल खेलती हैं और गिनती हैं कि कितनी कोशिशें लगीं।",
+  "pt": "As duplas jogam um jogo de adivinhação em uma folha com 31 números escondidos sem ordem e contam quantas tentativas precisam."
+ },
+ "Pairs play the same hunt game, but this time the numbers are in order, and they discover binary search.": {
+  "ar": "يلعب الأزواج لعبة البحث نفسها لكن الأعداد هذه المرة مرتّبة، ويكتشفون البحث الثنائي.",
+  "es": "Las parejas juegan al mismo juego de búsqueda, pero esta vez los números están en orden, y descubren la búsqueda binaria.",
+  "hi": "जोड़ियाँ वही खोज का खेल खेलती हैं, पर इस बार संख्याएँ क्रम में हैं, और वे बाइनरी सर्च खोज लेती हैं।",
+  "pt": "As duplas jogam o mesmo jogo de busca, mas desta vez os números estão em ordem, e descobrem a busca binária."
+ },
+ "Pairs practise. Then try flipping two cards. What happens?": {
+  "ar": "يتدرّب الأزواج. ثم جرّبوا قلب بطاقتين. ماذا يحدث؟",
+  "es": "Las parejas practican. Luego prueben a dar la vuelta a dos cartas. ¿Qué pasa?",
+  "hi": "जोड़ियाँ अभ्यास करें। फिर दो कार्ड पलटकर देखें। क्या होता है?",
+  "pt": "As duplas praticam. Depois tentem virar duas cartas. O que acontece?"
+ },
+ "Pairs sit back to back with a sheet of 31 sorted boxes.": {
+  "ar": "يجلس الأزواج ظهرًا إلى ظهر ومعهم ورقة فيها 31 مربعًا مرتّبًا.",
+  "es": "Las parejas se sientan espalda con espalda con una hoja de 31 casillas ordenadas.",
+  "hi": "जोड़ियाँ पीठ से पीठ टिकाकर बैठती हैं, हर एक के पास 31 क्रमबद्ध खानों वाली शीट है।",
+  "pt": "As duplas sentam de costas uma para a outra com uma folha de 31 caixas em ordem."
+ },
+ "Paper and pencil": {
+  "ar": "ورق وقلم رصاص",
+  "es": "Papel y lápiz",
+  "hi": "काग़ज़ और पेंसिल",
+  "pt": "Papel e lápis"
+ },
+ "Paper and pencils": {
+  "ar": "ورق وأقلام رصاص",
+  "es": "Papel y lápices",
+  "hi": "काग़ज़ और पेंसिलें",
+  "pt": "Papel e lápis"
+ },
+ "Paper to record results": {
+  "ar": "ورق لتدوين النتائج",
+  "es": "Papel para anotar los resultados",
+  "hi": "नतीजे लिखने के लिए काग़ज़",
+  "pt": "Papel para anotar os resultados"
+ },
+ "Paper, pencil and a calculator if needed": {
+  "ar": "ورق وقلم وآلة حاسبة عند الحاجة",
+  "es": "Papel, lápiz y una calculadora si hace falta",
+  "hi": "काग़ज़, पेंसिल और ज़रूरत हो तो कैलकुलेटर",
+  "pt": "Papel, lápis e uma calculadora, se necessário"
+ },
+ "Pencils": {
+  "ar": "أقلام رصاص",
+  "es": "Lápices",
+  "hi": "पेंसिलें",
+  "pt": "Lápis"
+ },
+ "Perform: the audience calls a number and the group shows it. Others work out which number it is.": {
+  "ar": "أدّوا: يطلب الجمهور عددًا ويعرضه الفريق. ويكتشف الآخرون أي عدد هو.",
+  "es": "Representen: el público dice un número y el grupo lo muestra. Los demás averiguan cuál es.",
+  "hi": "प्रस्तुत करें: दर्शक एक संख्या बोलते हैं और समूह उसे दिखाता है। बाकी पता लगाते हैं कि वह कौन-सी संख्या है।",
+  "pt": "Apresentem: a plateia diz um número e o grupo o mostra. Os outros descobrem qual é."
+ },
+ "Pick a target number. A child turns over cards one at a time until they find it, while the class counts.": {
+  "ar": "اختر عددًا مستهدفًا. يقلب طفل البطاقات واحدة تلو الأخرى حتى يجده، والصف يعدّ.",
+  "es": "Elige un número objetivo. Un niño da la vuelta a las cartas una por una hasta encontrarlo, mientras la clase cuenta.",
+  "hi": "एक लक्ष्य संख्या चुनें। एक बच्चा एक-एक कार्ड पलटता है जब तक वह मिल न जाए, और कक्षा गिनती करती है।",
+  "pt": "Escolha um número-alvo. Uma criança vira as cartas uma por uma até encontrá-lo, enquanto a turma conta."
+ },
+ "Pick a target. The child starts at the top node and turns it over.": {
+  "ar": "اختر هدفًا. يبدأ الطفل من العقدة العليا ويقلبها.",
+  "es": "Elige un objetivo. El niño empieza en el nodo superior y le da la vuelta.",
+  "hi": "एक लक्ष्य चुनें। बच्चा सबसे ऊपर के नोड से शुरू करता है और उसे पलटता है।",
+  "pt": "Escolha um alvo. A criança começa no nó de cima e o vira."
+ },
+ "Pick four children to be bits. Stand them in a row. Give the 1-dot card to the child on the right.": {
+  "ar": "اختر أربعة أطفال ليكونوا بتات. اجعلهم يقفون في صف. أعطِ بطاقة النقطة الواحدة للطفل الأيمن.",
+  "es": "Elige a cuatro niños para que sean bits. Ponlos en fila. Da la carta de 1 punto al niño de la derecha.",
+  "hi": "चार बच्चों को बिट बनने के लिए चुनें। उन्हें एक पंक्ति में खड़ा करें। दाईं ओर वाले बच्चे को 1 बिंदु वाला कार्ड दें।",
+  "pt": "Escolha quatro crianças para serem bits. Coloque-as em fila. Dê a carta de 1 ponto à criança da direita."
+ },
+ "Plain cards or paper and felt tips": {
+  "ar": "بطاقات سادة أو ورق وأقلام تلوين",
+  "es": "Cartulinas o papel y rotuladores",
+  "hi": "सादे कार्ड या काग़ज़ और फ़ेल्ट पेन",
+  "pt": "Cartões lisos ou papel e canetinhas"
+ },
+ "Practise counting from 1 to 8 together. Each bit turns on or off at the right moment.": {
+  "ar": "تدرّبوا على العدّ معًا من 1 إلى 8. يُشغَّل كل بت أو يُطفأ في اللحظة المناسبة.",
+  "es": "Practiquen contar juntos del 1 al 8. Cada bit se enciende o se apaga en el momento justo.",
+  "hi": "साथ मिलकर 1 से 8 तक गिनने का अभ्यास करें। हर बिट सही समय पर चालू या बंद होता है।",
+  "pt": "Pratiquem contar juntos de 1 a 8. Cada bit liga ou desliga na hora certa."
+ },
+ "Practise counting up from 0, with each person switching at the right time.": {
+  "ar": "تدرّبوا على العدّ من 0، ويبدّل كل شخص حالته في اللحظة المناسبة.",
+  "es": "Practiquen contar desde 0, con cada persona cambiando en el momento justo.",
+  "hi": "0 से गिनने का अभ्यास करें, हर व्यक्ति सही समय पर बदलता हुआ।",
+  "pt": "Pratiquem contar a partir do 0, com cada pessoa mudando na hora certa."
+ },
+ "Practise first so you can do the trick smoothly. Real systems use much better versions, but the idea is the same.": {
+  "ar": "تدرّب أولًا لتؤدي الحيلة بسلاسة. تستخدم الأنظمة الحقيقية نسخًا أفضل بكثير لكن الفكرة نفسها.",
+  "es": "Practica antes para hacer el truco con soltura. Los sistemas reales usan versiones mucho mejores, pero la idea es la misma.",
+  "hi": "पहले अभ्यास करें ताकि करतब सहजता से दिखा सकें। असली सिस्टम इससे कहीं बेहतर तरीके इस्तेमाल करते हैं, पर विचार वही है।",
+  "pt": "Pratique antes para fazer o truque com fluidez. Sistemas reais usam versões muito melhores, mas a ideia é a mesma."
+ },
+ "Practise the trick yourself first. Children enjoy a bit of magic patter. The aim is the idea that extra information lets a computer check itself.": {
+  "ar": "تدرّب أنت على الحيلة أولًا. يستمتع الأطفال ببعض كلام السحرة. الفكرة أن المعلومة الإضافية تتيح للحاسوب التحقق من نفسه.",
+  "es": "Practica tú primero el truco. A los niños les gusta algo de charla de mago. La idea es que la información extra permite que un ordenador se compruebe a sí mismo.",
+  "hi": "पहले खुद करतब का अभ्यास करें। बच्चों को जादूगर जैसी बातें अच्छी लगती हैं। मकसद यह विचार है कि अतिरिक्त जानकारी से कंप्यूटर खुद को जाँच सकता है।",
+  "pt": "Pratique você primeiro o truque. As crianças gostam de um pouco de conversa de mágico. A ideia é que informação extra permite ao computador se conferir sozinho."
+ },
+ "Practise with different clock sizes and numbers.": {
+  "ar": "تدرّبوا بساعات وأعداد بأحجام مختلفة.",
+  "es": "Practiquen con relojes y números de distintos tamaños.",
+  "hi": "अलग-अलग आकार की घड़ियों और संख्याओं के साथ अभ्यास करें।",
+  "pt": "Pratiquem com relógios e números de tamanhos diferentes."
+ },
+ "Predict an outcome before testing it.": {
+  "ar": "توقّع نتيجة قبل اختبارها.",
+  "es": "Predecir un resultado antes de probarlo.",
+  "hi": "परखने से पहले नतीजे का अनुमान लगाना।",
+  "pt": "Prever um resultado antes de testá-lo."
+ },
+ "Predict and count the number of guesses.": {
+  "ar": "توقّع عدد المحاولات وعدّها.",
+  "es": "Predecir y contar el número de intentos.",
+  "hi": "कोशिशों की संख्या का अनुमान लगाना और गिनना।",
+  "pt": "Prever e contar o número de tentativas."
+ },
+ "Predict what a program will do before running it.": {
+  "ar": "توقّع ما سيفعله البرنامج قبل تشغيله.",
+  "es": "Predecir lo que hará un programa antes de ejecutarlo.",
+  "hi": "प्रोग्राम चलाने से पहले अनुमान लगाना कि वह क्या करेगा।",
+  "pt": "Prever o que um programa fará antes de executá-lo."
+ },
+ "Predict, count and graph the number of guesses.": {
+  "ar": "توقّع عدد المحاولات وعدّه ورسمه في مخطّط.",
+  "es": "Predecir, contar y graficar el número de intentos.",
+  "hi": "कोशिशों की संख्या का अनुमान लगाना, गिनना और उसका ग्राफ़ बनाना।",
+  "pt": "Prever, contar e fazer um gráfico do número de tentativas."
+ },
+ "Predict, then run the network. Equal cards end up next to each other.": {
+  "ar": "توقّع ثم شغّل الشبكة. تنتهي البطاقات المتساوية متجاورة.",
+  "es": "Predice y luego ejecuta la red. Las cartas iguales quedan una al lado de otra.",
+  "hi": "पहले अनुमान लगाएँ, फिर नेटवर्क चलाएँ। बराबर कार्ड एक-दूसरे के पास आ जाते हैं।",
+  "pt": "Preveja e depois execute a rede. As cartas iguais ficam lado a lado."
+ },
+ "Print an alphabet strip with numbers to help children who are still learning the order of letters. Start with two or three letters and build up.": {
+  "ar": "اطبع شريط أبجدية بالأعداد لمساعدة الأطفال الذين ما زالوا يتعلّمون ترتيب الحروف. ابدأ بحرفين أو ثلاثة ثم زد تدريجيًا.",
+  "es": "Imprime una tira del alfabeto con números para ayudar a los niños que aún aprenden el orden de las letras. Empieza con dos o tres letras y ve aumentando.",
+  "hi": "अक्षरों का क्रम सीख रहे बच्चों की मदद के लिए संख्याओं वाली वर्णमाला की पट्टी छापें। दो-तीन अक्षरों से शुरू करें और बढ़ाते जाएँ।",
+  "pt": "Imprima uma tira do alfabeto com números para ajudar crianças que ainda estão aprendendo a ordem das letras. Comece com duas ou três letras e vá aumentando."
+ },
+ "Printed colour-by-number grids where 1 means black and 0 means white": {
+  "ar": "شبكات تلوين بالأعداد مطبوعة حيث 1 يعني أسود و0 يعني أبيض",
+  "es": "Cuadrículas impresas para colorear por números donde 1 es negro y 0 es blanco",
+  "hi": "छपी हुई संख्या से रंगने वाली जालियाँ, जहाँ 1 का मतलब काला और 0 का मतलब सफ़ेद है",
+  "pt": "Grades impressas de colorir por números, em que 1 é preto e 0 é branco"
+ },
+ "Put children in pairs, back to back. Each has a sheet of 31 boxes.": {
+  "ar": "اجعل الأطفال أزواجًا ظهرًا إلى ظهر. مع كل منهم ورقة فيها 31 مربعًا.",
+  "es": "Pon a los niños en parejas, espalda con espalda. Cada uno tiene una hoja con 31 casillas.",
+  "hi": "बच्चों को जोड़ियों में पीठ से पीठ टिकाकर बैठाएँ। हर एक के पास 31 खानों वाली शीट है।",
+  "pt": "Coloque as crianças em duplas, de costas. Cada uma tem uma folha com 31 caixas."
+ },
+ "Put commands in order to make a program.": {
+  "ar": "ترتيب الأوامر لصنع برنامج.",
+  "es": "Poner los comandos en orden para hacer un programa.",
+  "hi": "कमांडों को क्रम में रखकर प्रोग्राम बनाना।",
+  "pt": "Colocar os comandos em ordem para fazer um programa."
+ },
+ "Put the five cards in a row, biggest on the left (16, 8, 4, 2, 1).": {
+  "ar": "ضع البطاقات الخمس في صف، الأكبر على اليسار (16 و8 و4 و2 و1).",
+  "es": "Pon las cinco cartas en fila, la más grande a la izquierda (16, 8, 4, 2, 1).",
+  "hi": "पाँचों कार्डों को एक पंक्ति में रखें, सबसे बड़ा बाईं ओर (16, 8, 4, 2, 1)।",
+  "pt": "Coloque as cinco cartas em fila, a maior à esquerda (16, 8, 4, 2, 1)."
+ },
+ "Real barcodes from products (12 or 13 digits)": {
+  "ar": "باركودات حقيقية من منتجات (12 أو 13 رقمًا)",
+  "es": "Códigos de barras reales de productos (12 o 13 dígitos)",
+  "hi": "उत्पादों के असली बारकोड (12 या 13 अंक)",
+  "pt": "Códigos de barras reais de produtos (12 ou 13 dígitos)"
+ },
+ "Rebuild a picture from a short code.": {
+  "ar": "إعادة بناء صورة من رمز قصير.",
+  "es": "Reconstruir una imagen a partir de un código corto.",
+  "hi": "छोटे कोड से चित्र फिर से बनाना।",
+  "pt": "Reconstruir uma imagem a partir de um código curto."
+ },
+ "Recap how the network works.": {
+  "ar": "ذكّر بطريقة عمل الشبكة.",
+  "es": "Recuerda cómo funciona la red.",
+  "hi": "याद दिलाएँ कि नेटवर्क कैसे काम करता है।",
+  "pt": "Relembre como a rede funciona."
+ },
+ "Remind the class how binary search works on a sorted list.": {
+  "ar": "ذكّر الصف بطريقة عمل البحث الثنائي في قائمة مرتّبة.",
+  "es": "Recuerda a la clase cómo funciona la búsqueda binaria en una lista ordenada.",
+  "hi": "कक्षा को याद दिलाएँ कि क्रम वाली सूची में बाइनरी सर्च कैसे काम करता है।",
+  "pt": "Lembre a turma de como a busca binária funciona em uma lista ordenada."
+ },
+ "Remind the class how the network works: meet in a box, smaller to the left, bigger to the right.": {
+  "ar": "ذكّر الصف بطريقة عمل الشبكة: يلتقون في صندوق، الأصغر إلى اليسار والأكبر إلى اليمين.",
+  "es": "Recuerda a la clase cómo funciona la red: se encuentran en una caja, el menor a la izquierda y el mayor a la derecha.",
+  "hi": "कक्षा को याद दिलाएँ कि नेटवर्क कैसे चलता है: डिब्बे में मिलें, छोटा बाईं ओर, बड़ा दाईं ओर।",
+  "pt": "Lembre a turma de como a rede funciona: encontram-se em uma caixa, o menor vai para a esquerda e o maior para a direita."
+ },
+ "Repeat with other targets and record each count.": {
+  "ar": "كرّروا مع أهداف أخرى وسجّلوا كل عدّ.",
+  "es": "Repitan con otros objetivos y anoten cada recuento.",
+  "hi": "दूसरे लक्ष्यों के साथ दोहराएँ और हर गिनती लिखें।",
+  "pt": "Repitam com outros alvos e anotem cada contagem."
+ },
+ "Resist the urge to correct guesses. Let the children find the doubling rule themselves. Real computers have billions of bits.": {
+  "ar": "قاوم رغبتك في تصحيح التخمينات. دع الأطفال يكتشفون قاعدة التضاعف بأنفسهم. تحتوي الحواسيب الحقيقية على مليارات البتات.",
+  "es": "Resiste las ganas de corregir las respuestas. Deja que los niños descubran solos la regla de duplicar. Los ordenadores reales tienen miles de millones de bits.",
+  "hi": "अनुमान सुधारने की इच्छा रोकें। बच्चों को दोगुना होने का नियम खुद खोजने दें। असली कंप्यूटरों में अरबों बिट होते हैं।",
+  "pt": "Resista a vontade de corrigir os palpites. Deixe as crianças descobrirem sozinhas a regra do dobro. Computadores de verdade têm bilhões de bits."
+ },
+ "Reveal the pattern: each card has twice as many dots as the one to its right.": {
+  "ar": "اكشف النمط: لكل بطاقة ضعف نقاط البطاقة التي على يمينها.",
+  "es": "Revela el patrón: cada carta tiene el doble de puntos que la que está a su derecha.",
+  "hi": "पैटर्न बताएँ: हर कार्ड में अपने दाईं ओर वाले कार्ड से दोगुने बिंदु हैं।",
+  "pt": "Revele o padrão: cada carta tem o dobro dos pontos da que está à sua direita."
+ },
+ "Run a program: a group lays out cards and a friend does each exercise in order.": {
+  "ar": "شغّلوا برنامجًا: تضع مجموعة البطاقات وينفّذ صديق كل تمرين بالترتيب.",
+  "es": "Ejecuten un programa: un grupo coloca las cartas y un amigo hace cada ejercicio en orden.",
+  "hi": "एक प्रोग्राम चलाएँ: एक समूह कार्ड बिछाता है और एक दोस्त हर व्यायाम क्रम से करता है।",
+  "pt": "Executem um programa: um grupo coloca as cartas e um amigo faz cada exercício em ordem."
+ },
+ "Run the network with one of those and check the result.": {
+  "ar": "شغّلوا الشبكة بأحدها وتحقّقوا من النتيجة.",
+  "es": "Ejecuten la red con una de esas cosas y comprueben el resultado.",
+  "hi": "उनमें से किसी के साथ नेटवर्क चलाएँ और नतीजा जाँचें।",
+  "pt": "Executem a rede com uma delas e conferiam o resultado."
+ },
+ "Run the network with the new cards and check the result.": {
+  "ar": "شغّل الشبكة بالبطاقات الجديدة وتحقّق من النتيجة.",
+  "es": "Ejecuta la red con las cartas nuevas y comprueba el resultado.",
+  "hi": "नए कार्डों के साथ नेटवर्क चलाएँ और नतीजा जाँचें।",
+  "pt": "Execute a rede com as cartas novas e confira o resultado."
+ },
+ "Say No, Yes, No, No, Yes. That is 9, the letter I. Together they spell HI.": {
+  "ar": "قل لا، نعم، لا، لا، نعم. هذا 9، أي الحرف I. معًا تكوّنان HI.",
+  "es": "Di No, Sí, No, No, Sí. Eso es 9, la letra I. Juntas forman HI.",
+  "hi": "बोलें नहीं, हाँ, नहीं, नहीं, हाँ। यह 9 है, यानी अक्षर I। साथ में ये HI बनाते हैं।",
+  "pt": "Diga Não, Sim, Não, Não, Sim. Isso é 9, a letra I. Juntas formam HI."
+ },
+ "Say a pattern such as No, Yes, No, No, No. The cards with Yes are on. Add the dots: that is 8, which is the letter H.": {
+  "ar": "قل نمطًا مثل لا، نعم، لا، لا، لا. البطاقات التي قلنا لها نعم مضاءة. اجمع النقاط: الناتج 8، وهو الحرف H.",
+  "es": "Di un patrón como No, Sí, No, No, No. Las cartas con Sí están encendidas. Suma los puntos: es 8, que es la letra H.",
+  "hi": "कोई पैटर्न बोलें, जैसे नहीं, हाँ, नहीं, नहीं, नहीं। जिन कार्डों के लिए हाँ कहा वे चालू हैं। बिंदु जोड़ें: यह 8 है, यानी अक्षर H।",
+  "pt": "Diga um padrão como Não, Sim, Não, Não, Não. As cartas com Sim estão ligadas. Some os pontos: dá 8, que é a letra H."
+ },
+ "Say you will add one more row and one more column. Add cards so that every row and every column has an even number of black cards.": {
+  "ar": "قل إنك ستضيف صفًّا وعمودًا آخرين. أضف بطاقات بحيث يحتوي كل صف وكل عمود على عدد زوجي من البطاقات السوداء.",
+  "es": "Di que añadirás una fila y una columna más. Añade cartas para que cada fila y cada columna tenga un número par de cartas negras.",
+  "hi": "कहें कि आप एक और पंक्ति और एक और स्तंभ जोड़ेंगे। कार्ड ऐसे जोड़ें कि हर पंक्ति और हर स्तंभ में काले कार्डों की संख्या सम हो।",
+  "pt": "Diga que vai adicionar mais uma linha e mais uma coluna. Adicione cartas para que cada linha e cada coluna tenha um número par de cartas pretas."
+ },
+ "Search a tree by going left or right.": {
+  "ar": "البحث في شجرة بالذهاب يسارًا أو يمينًا.",
+  "es": "Buscar en un árbol yendo a la izquierda o a la derecha.",
+  "hi": "बाएँ या दाएँ जाकर पेड़ में खोजना।",
+  "pt": "Buscar em uma árvore indo para a esquerda ou para a direita."
+ },
+ "Search an unsorted list.": {
+  "ar": "البحث في قائمة غير مرتّبة.",
+  "es": "Buscar en una lista desordenada.",
+  "hi": "बिना क्रम वाली सूची में खोजना।",
+  "pt": "Buscar em uma lista sem ordem."
+ },
+ "See how six people can finish the job sooner than one.": {
+  "ar": "رؤية كيف يمكن لستة أشخاص إنهاء العمل أسرع من شخص واحد.",
+  "es": "Ver cómo seis personas pueden terminar el trabajo antes que una sola.",
+  "hi": "देखना कि छह लोग काम एक अकेले से जल्दी निपटा सकते हैं।",
+  "pt": "Ver como seis pessoas podem terminar o trabalho antes de uma só."
+ },
+ "See how teamwork lets many steps happen at once.": {
+  "ar": "رؤية كيف يتيح العمل الجماعي تنفيذ خطوات كثيرة في وقت واحد.",
+  "es": "Ver cómo el trabajo en equipo permite que ocurran muchos pasos a la vez.",
+  "hi": "देखना कि टीमवर्क से कई चरण एक साथ कैसे हो सकते हैं।",
+  "pt": "Ver como o trabalho em equipe permite que muitos passos aconteçam ao mesmo tempo."
+ },
+ "See that a programming language is a set of commands someone designed.": {
+  "ar": "أن يروا أن لغة البرمجة مجموعة أوامر صمّمها شخص ما.",
+  "es": "Ver que un lenguaje de programación es un conjunto de comandos que alguien diseñó.",
+  "hi": "यह देखना कि प्रोग्रामिंग भाषा कमांडों का वह समूह है जिसे किसी ने डिज़ाइन किया है।",
+  "pt": "Ver que uma linguagem de programação é um conjunto de comandos que alguém projetou."
+ },
+ "See that computers store letters as numbers.": {
+  "ar": "أن يروا أن الحواسيب تخزّن الحروف على شكل أعداد.",
+  "es": "Ver que los ordenadores guardan las letras como números.",
+  "hi": "यह देखना कि कंप्यूटर अक्षरों को संख्याओं के रूप में सँजोते हैं।",
+  "pt": "Ver que os computadores guardam letras como números."
+ },
+ "See that luck changes how many guesses you need.": {
+  "ar": "رؤية أن الحظّ يغيّر عدد المحاولات التي تحتاجها.",
+  "es": "Ver que la suerte cambia cuántos intentos necesitas.",
+  "hi": "देखना कि किस्मत से कोशिशों की संख्या बदल जाती है।",
+  "pt": "Ver que a sorte muda quantas tentativas você precisa."
+ },
+ "See that the network still works when two cards are the same.": {
+  "ar": "رؤية أن الشبكة تظل تعمل عندما تتساوى بطاقتان.",
+  "es": "Ver que la red sigue funcionando cuando dos cartas son iguales.",
+  "hi": "देखना कि दो कार्ड बराबर हों तब भी नेटवर्क काम करता है।",
+  "pt": "Ver que a rede continua funcionando quando duas cartas são iguais."
+ },
+ "See why unsorted data is slow to search.": {
+  "ar": "رؤية لماذا يكون البحث في بيانات غير مرتّبة بطيئًا.",
+  "es": "Ver por qué buscar datos sin orden es lento.",
+  "hi": "देखना कि बिना क्रम के डेटा में खोज धीमी क्यों होती है।",
+  "pt": "Ver por que buscar em dados sem ordem é lento."
+ },
+ "Send and decode a short message.": {
+  "ar": "إرسال رسالة قصيرة وفكّ ترميزها.",
+  "es": "Enviar y decodificar un mensaje corto.",
+  "hi": "एक छोटा संदेश भेजना और समझना।",
+  "pt": "Enviar e decodificar uma mensagem curta."
+ },
+ "Send and read a short coded word.": {
+  "ar": "إرسال كلمة قصيرة مشفّرة وقراءتها.",
+  "es": "Enviar y leer una palabra corta en código.",
+  "hi": "एक छोटा कूट-शब्द भेजना और पढ़ना।",
+  "pt": "Enviar e ler uma palavra curta em código."
+ },
+ "Show a clock with only ten positions. Start at 0, add numbers and say where you land.": {
+  "ar": "اعرض ساعة بعشرة مواضع فقط. ابدأ من 0 وأضف أعدادًا وقل أين تصل.",
+  "es": "Muestra un reloj con solo diez posiciones. Empieza en 0, suma números y di dónde caes.",
+  "hi": "केवल दस स्थानों वाली घड़ी दिखाएँ। 0 से शुरू करें, संख्याएँ जोड़ें और बताएँ कि आप कहाँ पहुँचे।",
+  "pt": "Mostre um relógio com apenas dez posições. Comece no 0, some números e diga onde você cai."
+ },
+ "Show a simple black and white picture. Each pixel is either black or white, so a computer only needs to remember which.": {
+  "ar": "اعرض صورة بسيطة بالأبيض والأسود. كل بكسل إما أبيض أو أسود، فلا يحتاج الحاسوب إلا إلى تذكّر أيّهما.",
+  "es": "Muestra una imagen sencilla en blanco y negro. Cada píxel es blanco o negro, así que el ordenador solo necesita recordar cuál.",
+  "hi": "एक सरल श्वेत-श्याम चित्र दिखाएँ। हर पिक्सल या तो सफ़ेद है या काला, इसलिए कंप्यूटर को बस यह याद रखना है कि कौन-सा।",
+  "pt": "Mostre uma imagem simples em preto e branco. Cada pixel é branco ou preto, então o computador só precisa lembrar qual."
+ },
+ "Show an 8 by 8 picture made of black and white squares. Ask how you could describe it without naming every square.": {
+  "ar": "اعرض صورة 8 في 8 مصنوعة من مربعات بيضاء وسوداء. اسأل كيف يمكن وصفها دون تسمية كل مربع.",
+  "es": "Muestra una imagen de 8 por 8 hecha de cuadros blancos y negros. Pregunta cómo podrías describirla sin nombrar cada cuadro.",
+  "hi": "काले और सफ़ेद खानों से बना 8 बाई 8 का चित्र दिखाएँ। पूछें कि हर खाने का नाम लिए बिना उसका वर्णन कैसे करें।",
+  "pt": "Mostre uma imagem de 8 por 8 feita de quadradinhos pretos e brancos. Pergunte como descrevê-la sem nomear cada quadradinho."
+ },
+ "Show on and off with any two opposite things.": {
+  "ar": "إظهار التشغيل والإيقاف بأي شيئين متضادّين.",
+  "es": "Mostrar encendido y apagado con cualquier par de cosas opuestas.",
+  "hi": "किन्हीं दो विपरीत चीज़ों से चालू और बंद दिखाना।",
+  "pt": "Mostrar ligado e desligado com quaisquer duas coisas opostas."
+ },
+ "Show on and off with different objects, sounds or actions.": {
+  "ar": "إظهار التشغيل والإيقاف بأشياء أو أصوات أو أفعال مختلفة.",
+  "es": "Mostrar encendido y apagado con diferentes objetos, sonidos o acciones.",
+  "hi": "अलग-अलग वस्तुओं, आवाज़ों या क्रियाओं से चालू और बंद दिखाना।",
+  "pt": "Mostrar ligado e desligado com objetos, sons ou ações diferentes."
+ },
+ "Show that letters can be stored as numbers.": {
+  "ar": "إظهار أن الحروف يمكن تخزينها على شكل أعداد.",
+  "es": "Mostrar que las letras se pueden guardar como números.",
+  "hi": "दिखाना कि अक्षरों को संख्याओं के रूप में सँजोया जा सकता है।",
+  "pt": "Mostrar que letras podem ser guardadas como números."
+ },
+ "Show the idea yourself first by being the Programmer. Celebrate bugs found.": {
+  "ar": "اعرض الفكرة بنفسك أولًا بأداء دور المبرمج. احتفِ بالأخطاء المكتشفة.",
+  "es": "Muestra primero la idea tú mismo haciendo de Programador. Celebra los errores encontrados.",
+  "hi": "पहले खुद प्रोग्रामर बनकर विचार दिखाएँ। पकड़ी गई गलतियों का जश्न मनाएँ।",
+  "pt": "Mostre você mesmo a ideia primeiro, fazendo o Programador. Comemore os erros encontrados."
+ },
+ "Show the tree: lines to follow and nodes with hidden numbers underneath.": {
+  "ar": "اعرض الشجرة: خطوط تُتَّبَع وعُقَد تحتها أعداد مخفية.",
+  "es": "Muestra el árbol: líneas que seguir y nodos con números escondidos debajo.",
+  "hi": "पेड़ दिखाएँ: चलने के लिए रेखाएँ और नीचे छिपी संख्याओं वाले नोड।",
+  "pt": "Mostre a árvore: linhas para seguir e nós com números escondidos embaixo."
+ },
+ "Six children per turn": {
+  "ar": "ستة أطفال في كل دور",
+  "es": "Seis niños por turno",
+  "hi": "हर बार छह बच्चे",
+  "pt": "Seis crianças por vez"
+ },
+ "Six children start at the circles holding mixed-up number cards.": {
+  "ar": "يبدأ ستة أطفال عند الدوائر ومعهم بطاقات أعداد مختلطة.",
+  "es": "Seis niños empiezan en los círculos con cartas de números en desorden.",
+  "hi": "छह बच्चे गोलों पर बिना क्रम के संख्या कार्ड लेकर शुरू करते हैं।",
+  "pt": "Seis crianças começam nos círculos com cartas de números fora de ordem."
+ },
+ "Six children walk through a chalk network and compare numbers at each box until they come out in order.": {
+  "ar": "يمشي ستة أطفال في شبكة مرسومة بالطباشير ويقارنون الأعداد عند كل صندوق حتى يصبحوا مرتّبين.",
+  "es": "Seis niños recorren una red dibujada con tiza y comparan números en cada caja hasta quedar en orden.",
+  "hi": "छह बच्चे चॉक से बने नेटवर्क में चलते हैं और हर डिब्बे पर संख्याओं की तुलना करते हैं, जब तक वे क्रम में न आ जाएँ।",
+  "pt": "Seis crianças percorrem uma rede desenhada com giz e comparam números em cada caixa até ficarem em ordem."
+ },
+ "Six children walk through a chalk network, comparing numbers at each box, until they end up in order.": {
+  "ar": "يمشي ستة أطفال في شبكة مرسومة بالطباشير ويقارنون الأعداد عند كل صندوق حتى يصبحوا مرتّبين.",
+  "es": "Seis niños recorren una red dibujada con tiza, comparando números en cada caja, hasta quedar en orden.",
+  "hi": "छह बच्चे चॉक से बने नेटवर्क में चलते हैं और हर डिब्बे पर संख्याओं की तुलना करते हैं, जब तक वे क्रम में न आ जाएँ।",
+  "pt": "Seis crianças percorrem uma rede desenhada com giz, comparando números em cada caixa, até ficarem em ordem."
+ },
+ "Six number cards (1 to 6)": {
+  "ar": "ست بطاقات أعداد (من 1 إلى 6)",
+  "es": "Seis cartas de números (del 1 al 6)",
+  "hi": "छह संख्या कार्ड (1 से 6)",
+  "pt": "Seis cartas de números (de 1 a 6)"
+ },
+ "Small groups make up a short play that counts in binary using two opposite things instead of dot cards.": {
+  "ar": "تبتكر مجموعات صغيرة مسرحية قصيرة تعدّ بالنظام الثنائي باستخدام شيئين متضادّين بدل بطاقات النقاط.",
+  "es": "Grupos pequeños inventan una breve obra que cuenta en binario usando dos cosas opuestas en lugar de cartas con puntos.",
+  "hi": "छोटे समूह एक छोटा नाटक बनाते हैं जो बिंदु कार्डों की जगह दो विपरीत चीज़ों से बाइनरी में गिनता है।",
+  "pt": "Pequenos grupos inventam uma pequena peça que conta em binário usando duas coisas opostas em vez de cartas com pontos."
+ },
+ "Sort things other than numbers.": {
+  "ar": "فرز أشياء غير الأعداد.",
+  "es": "Ordenar cosas que no son números.",
+  "hi": "संख्याओं के अलावा दूसरी चीज़ों को क्रम में लगाना।",
+  "pt": "Ordenar coisas que não são números."
+ },
+ "Sorted Number Hunt sheets (printable on the original lesson page)": {
+  "ar": "أوراق «صيد الأعداد» المرتّبة (قابلة للطباعة من صفحة الدرس الأصلية)",
+  "es": "Hojas de la Búsqueda del Número ordenadas (imprimibles en la página original de la lección)",
+  "hi": "क्रम वाली संख्या-खोज की शीट (मूल पाठ-पेज से छापने योग्य)",
+  "pt": "Folhas da Caça aos Números em ordem (para imprimir na página original da lição)"
+ },
+ "Space outside or in a hall": {
+  "ar": "مساحة في الهواء الطلق أو في قاعة",
+  "es": "Espacio al aire libre o en un salón",
+  "hi": "बाहर या हॉल में जगह",
+  "pt": "Espaço ao ar livre ou em um salão"
+ },
+ "Space to exercise safely": {
+  "ar": "مساحة لممارسة التمارين بأمان",
+  "es": "Espacio para hacer ejercicio con seguridad",
+  "hi": "सुरक्षित रूप से व्यायाम करने की जगह",
+  "pt": "Espaço para se exercitar com segurança"
+ },
+ "Spare copies for mistakes": {
+  "ar": "نسخ احتياطية للأخطاء",
+  "es": "Copias de repuesto por si hay errores",
+  "hi": "गलतियों के लिए अतिरिक्त प्रतियाँ",
+  "pt": "Cópias extras para os erros"
+ },
+ "Spot the doubling pattern and count in binary.": {
+  "ar": "ملاحظة نمط التضاعف والعدّ بالنظام الثنائي.",
+  "es": "Notar el patrón de duplicación y contar en binario.",
+  "hi": "दोगुना होने का पैटर्न पहचानना और बाइनरी में गिनना।",
+  "pt": "Notar o padrão de dobro e contar em binário."
+ },
+ "Start in the middle. If the number is too small, the card you want is to the right. If too big, to the left.": {
+  "ar": "ابدأ من الوسط. إن كان العدد أصغر مما تريد فالبطاقة المطلوبة إلى اليمين، وإن كان أكبر فإلى اليسار.",
+  "es": "Empieza por el medio. Si el número es demasiado pequeño, la carta que buscas está a la derecha. Si es demasiado grande, a la izquierda.",
+  "hi": "बीच से शुरू करें। अगर संख्या बहुत छोटी है तो जो कार्ड चाहिए वह दाईं ओर है। बहुत बड़ी हो तो बाईं ओर।",
+  "pt": "Comece pelo meio. Se o número for pequeno demais, a carta que você quer está à direita. Se for grande demais, à esquerda."
+ },
+ "Sticky notes": {
+  "ar": "ملاحظات لاصقة",
+  "es": "Notas adhesivas",
+  "hi": "चिपकने वाले नोट",
+  "pt": "Post-its"
+ },
+ "Swap codes with a partner. Each partner colours the picture back from the code.": {
+  "ar": "تبادلوا الرموز مع زميل. يلوّن كل منكما الصورة انطلاقًا من الرمز.",
+  "es": "Intercambien códigos con un compañero. Cada uno colorea la imagen a partir del código.",
+  "hi": "किसी साथी से कोड की अदला-बदली करें। हर साथी कोड से चित्र फिर रंगता है।",
+  "pt": "Troquem códigos com um colega. Cada um colore a imagem a partir do código."
+ },
+ "Swap messages with a partner. Decode each other's patterns back into letters.": {
+  "ar": "بدّل الرسائل مع زميل. فكّا ترميز أنماط بعضكما وحوّلاها إلى حروف.",
+  "es": "Intercambia mensajes con un compañero. Decodifiquen los patrones del otro y conviértanlos de nuevo en letras.",
+  "hi": "किसी साथी से संदेशों की अदला-बदली करें। एक-दूसरे के पैटर्न को वापस अक्षरों में बदलें।",
+  "pt": "Troque mensagens com um colega. Decodifiquem os padrões um do outro de volta em letras."
+ },
+ "Swap places so everyone gets a turn being a different bit.": {
+  "ar": "بدّلوا الأماكن ليتولّى الجميع دور بت مختلف.",
+  "es": "Cambien de lugar para que todos hagan de un bit distinto.",
+  "hi": "जगह बदलें ताकि सबको अलग बिट बनने का मौका मिले।",
+  "pt": "Troquem de lugar para que todos façam um bit diferente."
+ },
+ "Swap roles and play again.": {
+  "ar": "بدّلوا الأدوار والعبوا مرة أخرى.",
+  "es": "Cambien de papel y jueguen de nuevo.",
+  "hi": "भूमिकाएँ बदलें और फिर खेलें।",
+  "pt": "Troquem de papel e joguem de novo."
+ },
+ "Swap roles and try a new rescue.": {
+  "ar": "بدّلوا الأدوار وجرّبوا إنقاذًا جديدًا.",
+  "es": "Cambien de papel e intenten un nuevo rescate.",
+  "hi": "भूमिकाएँ बदलें और एक नया बचाव आज़माएँ।",
+  "pt": "Troquem de papel e tentem um novo resgate."
+ },
+ "Swap roles so everyone has been each bit.": {
+  "ar": "بدّلوا الأدوار ليكون الجميع قد تولّى دور كل بت.",
+  "es": "Cambien de papel para que todos hayan sido cada bit.",
+  "hi": "भूमिकाएँ बदलें ताकि सब हर बिट बन चुकें।",
+  "pt": "Troquem de papel para que todos tenham sido cada bit."
+ },
+ "Swap roles so everyone is each bit once.": {
+  "ar": "بدّلوا الأدوار ليكون كل واحد قد أدّى كل بت مرة.",
+  "es": "Cambien de papel para que todos sean cada bit una vez.",
+  "hi": "भूमिकाएँ बदलें ताकि हर कोई एक बार हर बिट बने।",
+  "pt": "Troquem de papel para que todos sejam cada bit uma vez."
+ },
+ "Take a 13-digit barcode and cover the last digit.": {
+  "ar": "خذ باركودًا من 13 رقمًا وغطِّ الرقم الأخير.",
+  "es": "Toma un código de barras de 13 dígitos y tapa el último dígito.",
+  "hi": "13 अंकों का बारकोड लें और आख़िरी अंक ढक दें।",
+  "pt": "Pegue um código de barras de 13 dígitos e cubra o último dígito."
+ },
+ "Take the last digit of that sum. The check digit is what you need to add to reach the next multiple of ten.": {
+  "ar": "خذ الرقم الأخير من ذلك المجموع. رقم التحقق هو ما تحتاج إلى إضافته للوصول إلى المضاعف التالي للعشرة.",
+  "es": "Toma el último dígito de esa suma. El dígito de control es lo que necesitas sumar para llegar al siguiente múltiplo de diez.",
+  "hi": "उस योग का आख़िरी अंक लें। जाँच-अंक वह है जो दस के अगले गुणज तक पहुँचने के लिए जोड़ना पड़ता है।",
+  "pt": "Pegue o último dígito dessa soma. O dígito verificador é o que você precisa somar para chegar ao próximo múltiplo de dez."
+ },
+ "Take turns being each bit.": {
+  "ar": "التناوب على دور كل بت.",
+  "es": "Turnarse para ser cada bit.",
+  "hi": "बारी-बारी से हर बिट बनना।",
+  "pt": "Revezar para ser cada bit."
+ },
+ "Talk about opposites: hot and cold, up and down, happy and sad. A computer uses on and off in the same way.": {
+  "ar": "تحدّثوا عن المتضادّات: ساخن وبارد، فوق وتحت، سعيد وحزين. يستخدم الحاسوب التشغيل والإيقاف بالطريقة نفسها.",
+  "es": "Hablen de los opuestos: frío y calor, arriba y abajo, alegre y triste. Un ordenador usa encendido y apagado de la misma manera.",
+  "hi": "विपरीत चीज़ों पर बात करें: गरम और ठंडा, ऊपर और नीचे, खुश और उदास। कंप्यूटर चालू और बंद को इसी तरह इस्तेमाल करता है।",
+  "pt": "Conversem sobre opostos: quente e frio, em cima e embaixo, feliz e triste. Um computador usa ligado e desligado da mesma forma."
+ },
+ "Talk about what stayed the same each time.": {
+  "ar": "تحدّثوا عمّا بقي ثابتًا في كل مرة.",
+  "es": "Hablen de qué se mantuvo igual cada vez.",
+  "hi": "बात करें कि हर बार क्या एक जैसा रहा।",
+  "pt": "Conversem sobre o que ficou igual a cada vez."
+ },
+ "Talk about who makes programming languages. Today the class will design its own fitness language.": {
+  "ar": "تحدّثوا عمّن يصنع لغات البرمجة. اليوم سيصمّم الصف لغة تمارين خاصة به.",
+  "es": "Hablen de quién crea los lenguajes de programación. Hoy la clase diseñará su propio lenguaje de ejercicio.",
+  "hi": "बात करें कि प्रोग्रामिंग भाषाएँ कौन बनाता है। आज कक्षा अपनी खुद की व्यायाम-भाषा बनाएगी।",
+  "pt": "Conversem sobre quem cria as linguagens de programação. Hoje a turma vai projetar sua própria linguagem de exercícios."
+ },
+ "Teach the trick: instead of naming each square, count how many of the same colour come in a row.": {
+  "ar": "علّم الحيلة: بدل تسمية كل مربع، عُدّ كم مربعًا من اللون نفسه يأتي متتاليًا.",
+  "es": "Enseña el truco: en lugar de nombrar cada cuadro, cuenta cuántos del mismo color van seguidos.",
+  "hi": "तरकीब सिखाएँ: हर खाने का नाम लेने की जगह गिनें कि एक ही रंग के कितने खाने लगातार आते हैं।",
+  "pt": "Ensine o truque: em vez de nomear cada quadradinho, conte quantos da mesma cor vêm seguidos."
+ },
+ "Tell the children a computer is full of tiny things that can be on or off, like a light switch. One of these is called a bit.": {
+  "ar": "أخبر الأطفال أن الحاسوب مليء بأشياء صغيرة جدًا يمكن أن تكون مشغَّلة أو مطفأة، مثل مفتاح الضوء. تُسمّى إحداها بت.",
+  "es": "Diles a los niños que un ordenador está lleno de cosas diminutas que pueden estar encendidas o apagadas, como un interruptor de luz. Una de ellas se llama bit.",
+  "hi": "बच्चों को बताएँ कि कंप्यूटर छोटी-छोटी चीज़ों से भरा है जो चालू या बंद हो सकती हैं, जैसे बिजली का स्विच। इनमें से एक को बिट कहते हैं।",
+  "pt": "Diga às crianças que um computador é cheio de coisinhas que podem estar ligadas ou desligadas, como um interruptor de luz. Uma delas se chama bit."
+ },
+ "Tell the class you have a magic trick. Ask a helper to lay out a 5 by 5 square of cards, some black and some white, in any pattern.": {
+  "ar": "أخبر الصف أن لديك حيلة سحرية. اطلب من مساعد أن يرتّب مربّعًا 5 في 5 من البطاقات، بعضها أسود وبعضها أبيض، بأي نمط.",
+  "es": "Diles a los niños que tienes un truco de magia. Pide a un ayudante que forme un cuadrado de 5 por 5 con cartas negras y blancas en cualquier patrón.",
+  "hi": "कक्षा को बताएँ कि आपके पास जादू का एक करतब है। एक सहायक से कहें कि वह कुछ काले और कुछ सफ़ेद कार्डों से किसी भी पैटर्न में 5 बाई 5 का वर्ग बिछाए।",
+  "pt": "Diga à turma que você tem um truque de mágica. Peça a um ajudante que disponha um quadrado de 5 por 5 de cartas, algumas pretas e outras brancas, em qualquer padrão."
+ },
+ "Test and debug a program.": {
+  "ar": "اختبار برنامج وتنقيحه.",
+  "es": "Probar y depurar un programa.",
+  "hi": "प्रोग्राम को परखना और डिबग करना।",
+  "pt": "Testar e depurar um programa."
+ },
+ "The Developer writes the whole program first. The Bot cannot be steered while it walks.": {
+  "ar": "يكتب المطوّر البرنامج كاملًا أولًا. لا يمكن توجيه الروبوت أثناء مشيه.",
+  "es": "El Programador escribe primero todo el programa. No se puede dirigir al Robot mientras camina.",
+  "hi": "डेवलपर पहले पूरा प्रोग्राम लिखता है। चलते समय बॉट को निर्देशित नहीं किया जा सकता।",
+  "pt": "O Programador escreve primeiro o programa inteiro. O Robô não pode ser guiado enquanto anda."
+ },
+ "The Number Hunt sheets (printable on the original lesson page)": {
+  "ar": "أوراق «صيد الأعداد» (قابلة للطباعة من صفحة الدرس الأصلية)",
+  "es": "Las hojas de la Búsqueda del Número (imprimibles en la página original de la lección)",
+  "hi": "संख्या-खोज की शीट (मूल पाठ-पेज से छापने योग्य)",
+  "pt": "As folhas da Caça aos Números (para imprimir na página original da lição)"
+ },
+ "The Programmer writes the whole program first. The Bot cannot be steered halfway.": {
+  "ar": "يكتب المبرمج البرنامج كاملًا أولًا. لا يمكن توجيه الروبوت في منتصف الطريق.",
+  "es": "El Programador escribe primero todo el programa. No se puede dirigir al Robot a mitad de camino.",
+  "hi": "प्रोग्रामर पहले पूरा प्रोग्राम लिखता है। बॉट को बीच रास्ते में निर्देशित नहीं किया जा सकता।",
+  "pt": "O Programador escreve primeiro o programa inteiro. O Robô não pode ser guiado no meio do caminho."
+ },
+ "The Tester reads the commands one at a time and the Bot moves. Does the Bot reach the object?": {
+  "ar": "يقرأ المختبِر الأوامر واحدًا تلو الآخر ويتحرّك الروبوت. هل يصل الروبوت إلى الشيء؟",
+  "es": "El Probador lee los comandos de uno en uno y el Robot se mueve. ¿Llega el Robot al objeto?",
+  "hi": "टेस्टर एक-एक करके कमांड पढ़ता है और बॉट चलता है। क्या बॉट वस्तु तक पहुँचता है?",
+  "pt": "O Testador lê os comandos um de cada vez e o Robô se move. O Robô chega ao objeto?"
+ },
+ "The Tester reads the program out. The Bot follows it. Did the rocket reach Mars?": {
+  "ar": "يقرأ المختبِر البرنامج بصوت عالٍ ويتّبعه الروبوت. هل وصل الصاروخ إلى المريخ؟",
+  "es": "El Probador lee el programa en voz alta. El Robot lo sigue. ¿Llegó el cohete a Marte?",
+  "hi": "टेस्टर प्रोग्राम पढ़कर सुनाता है। बॉट उसे मानता है। क्या रॉकेट मंगल तक पहुँचा?",
+  "pt": "O Testador lê o programa em voz alta. O Robô o segue. O foguete chegou a Marte?"
+ },
+ "The card where that row and column cross is the one that was flipped. Flip it back.": {
+  "ar": "البطاقة التي يتقاطع عندها ذلك الصف وذلك العمود هي التي قُلبت. اقلبها من جديد.",
+  "es": "La carta donde se cruzan esa fila y esa columna es la que se dio la vuelta. Vuélvela a girar.",
+  "hi": "जहाँ वह पंक्ति और वह स्तंभ मिलते हैं, वही कार्ड पलटा गया था। उसे वापस पलट दें।",
+  "pt": "A carta onde essa linha e essa coluna se cruzam é a que foi virada. Vire-a de volta."
+ },
+ "The chalk sorting network from the first lesson": {
+  "ar": "شبكة الفرز بالطباشير من الدرس الأول",
+  "es": "La red de ordenación con tiza de la primera lección",
+  "hi": "पहले पाठ का चॉक वाला सॉर्टिंग नेटवर्क",
+  "pt": "A rede de ordenação de giz da primeira lição"
+ },
+ "The child with the smaller number leaves by the left line. The bigger leaves by the right.": {
+  "ar": "يغادر الطفل ذو العدد الأصغر عبر الخط الأيسر. ويغادر الأكبر عبر الأيمن.",
+  "es": "El niño con el número menor sale por la línea izquierda. El mayor sale por la derecha.",
+  "hi": "जिस बच्चे की संख्या छोटी है वह बाईं रेखा से निकलता है। बड़ी वाला दाईं से।",
+  "pt": "A criança com o número menor sai pela linha da esquerda. A maior sai pela da direita."
+ },
+ "The sorting network from the first lesson": {
+  "ar": "شبكة الفرز من الدرس الأول",
+  "es": "La red de ordenación de la primera lección",
+  "hi": "पहले पाठ का सॉर्टिंग नेटवर्क",
+  "pt": "A rede de ordenação da primeira lição"
+ },
+ "The teacher can play the Developer first to show the idea. Praise finding bugs, not just getting it right the first time.": {
+  "ar": "يمكن للمعلّم أن يؤدّي دور المطوّر أولًا لعرض الفكرة. امدحوا اكتشاف الأخطاء لا النجاح من أول مرة فقط.",
+  "es": "El maestro puede hacer primero de programador para mostrar la idea. Elogien encontrar errores, no solo acertar a la primera.",
+  "hi": "शिक्षक पहले डेवलपर बनकर विचार दिखा सकता है। गलती ढूँढने की तारीफ़ करें, केवल पहली बार में सही करने की नहीं।",
+  "pt": "O professor pode fazer primeiro o papel de programador para mostrar a ideia. Elogie achar erros, não só acertar de primeira."
+ },
+ "Things to sort: heights, colours, sizes, words": {
+  "ar": "أشياء للفرز: الأطوال والألوان والأحجام والكلمات",
+  "es": "Cosas para ordenar: alturas, colores, tamaños, palabras",
+  "hi": "क्रम में लगाने की चीज़ें: ऊँचाई, रंग, आकार, शब्द",
+  "pt": "Coisas para ordenar: alturas, cores, tamanhos, palavras"
+ },
+ "This is an arithmetic-heavy lesson, so let children use a calculator if they like. The modulo lesson is a good lead-in.": {
+  "ar": "هذا درس كثيف في الحساب، فدع الأطفال يستخدمون آلة حاسبة إن أرادوا. درس باقي القسمة مدخل جيّد.",
+  "es": "Es una lección con mucha aritmética, así que deja que los niños usen calculadora si quieren. La lección del módulo es una buena introducción.",
+  "hi": "यह गणित-प्रधान पाठ है, इसलिए बच्चों को चाहें तो कैलकुलेटर इस्तेमाल करने दें। मॉड्यूलो वाला पाठ अच्छी भूमिका है।",
+  "pt": "Esta é uma lição com muita aritmética, então deixe as crianças usarem calculadora se quiserem. A lição do módulo é uma boa introdução."
+ },
+ "This lesson is mostly maths. It prepares for the barcode and error-checking lessons.": {
+  "ar": "هذا الدرس رياضيات في معظمه. يمهّد لدرسَي الباركود وفحص الأخطاء.",
+  "es": "Esta lección es sobre todo de matemáticas. Prepara para las lecciones del código de barras y de la comprobación de errores.",
+  "hi": "यह पाठ ज़्यादातर गणित है। यह बारकोड और गलती जाँचने वाले पाठों की तैयारी कराता है।",
+  "pt": "Esta lição é sobretudo de matemática. Prepara para as lições do código de barras e da verificação de erros."
+ },
+ "This method is called binary search. Do not use 1 to 15 in order, or children will just count along.": {
+  "ar": "تُسمّى هذه الطريقة البحث الثنائي. لا تستخدم الأعداد من 1 إلى 15 بالترتيب وإلا سيعدّ الأطفال ببساطة.",
+  "es": "Este método se llama búsqueda binaria. No uses del 1 al 15 en orden o los niños simplemente contarán.",
+  "hi": "इस तरीक़े को बाइनरी सर्च कहते हैं। 1 से 15 क्रम से न रखें, वरना बच्चे बस गिनते चले जाएँगे।",
+  "pt": "Esse método se chama busca binária. Não use de 1 a 15 em ordem, ou as crianças vão só contar."
+ },
+ "This method is called binary search. It can search huge lists with only a handful of guesses.": {
+  "ar": "تُسمّى هذه الطريقة البحث الثنائي. يمكنها البحث في قوائم ضخمة بحفنة من المحاولات فقط.",
+  "es": "Este método se llama búsqueda binaria. Puede recorrer listas enormes con solo un puñado de intentos.",
+  "hi": "इस तरीक़े को बाइनरी सर्च कहते हैं। यह बहुत बड़ी सूचियों में बस मुट्ठी भर कोशिशों में खोज लेता है।",
+  "pt": "Esse método se chama busca binária. Ela consegue pesquisar listas enormes com apenas um punhado de tentativas."
+ },
+ "Throw away half the cards and look at the middle of what is left.": {
+  "ar": "استبعد نصف البطاقات وانظر إلى منتصف ما تبقّى.",
+  "es": "Descarta la mitad de las cartas y mira el medio de las que quedan.",
+  "hi": "आधे कार्ड हटा दें और जो बचे उनके बीच वाले को देखें।",
+  "pt": "Descarte metade das cartas e olhe o meio das que sobraram."
+ },
+ "Try a bigger picture in a group, with each child doing some rows.": {
+  "ar": "جرّبوا صورة أكبر في مجموعة، ويلوّن كل طفل بعض الصفوف.",
+  "es": "Prueben con una imagen más grande en grupo, y cada niño hace algunas filas.",
+  "hi": "समूह में एक बड़ा चित्र आज़माएँ, जिसमें हर बच्चा कुछ पंक्तियाँ रंगे।",
+  "pt": "Tentem uma imagem maior em grupo, com cada criança fazendo algumas linhas."
+ },
+ "Try again with different targets. Write the number of guesses each time.": {
+  "ar": "كرّروا مع أعداد مستهدفة مختلفة. دوّنوا عدد المحاولات في كل مرة.",
+  "es": "Repitan con otros números objetivo. Anoten el número de intentos cada vez.",
+  "hi": "अलग लक्ष्य संख्याओं के साथ फिर करें। हर बार कोशिशों की संख्या लिखें।",
+  "pt": "Repitam com outros números-alvo. Anotem o número de tentativas a cada vez."
+ },
+ "Try different numbers so children cannot guess where the target is. Keep a class tally.": {
+  "ar": "جرّب أعدادًا مختلفة كي لا يستطيع الأطفال تخمين مكان الهدف. احتفظوا بسجلّ للصف.",
+  "es": "Prueba con números distintos para que los niños no puedan adivinar dónde está el objetivo. Lleven un recuento de la clase.",
+  "hi": "अलग संख्याएँ आज़माएँ ताकि बच्चे यह न भाँप सकें कि लक्ष्य कहाँ है। कक्षा का एक हिसाब रखें।",
+  "pt": "Teste números diferentes para que as crianças não adivinhem onde está o alvo. Mantenham uma contagem da turma."
+ },
+ "Try other targets. Compare with last time, when the cards were not in order.": {
+  "ar": "جرّبوا أعدادًا مستهدفة أخرى. قارنوا بالمرة السابقة حين لم تكن البطاقات مرتّبة.",
+  "es": "Prueben con otros números. Comparen con la vez anterior, cuando las cartas no estaban en orden.",
+  "hi": "दूसरी लक्ष्य संख्याएँ आज़माएँ। पिछली बार से तुलना करें, जब कार्ड क्रम में नहीं थे।",
+  "pt": "Tentem outros números-alvo. Comparem com a vez anterior, quando as cartas não estavam em ordem."
+ },
+ "Turn over the middle card. If it is too big, throw away the right half. If too small, throw away the left half.": {
+  "ar": "اقلب البطاقة الوسطى. إن كانت أكبر مما يجب فاستبعد النصف الأيمن، وإن كانت أصغر مما يجب فاستبعد النصف الأيسر.",
+  "es": "Da la vuelta a la carta del medio. Si es demasiado grande, descarta la mitad derecha. Si es demasiado pequeña, descarta la mitad izquierda.",
+  "hi": "बीच का कार्ड पलटें। अगर वह बहुत बड़ा है तो दाईं आधी हटा दें। बहुत छोटा हो तो बाईं आधी हटा दें।",
+  "pt": "Vire a carta do meio. Se for grande demais, descarte a metade direita. Se for pequena demais, descarte a metade esquerda."
+ },
+ "Two children follow their lines until they meet at a box. They say hello and show their cards.": {
+  "ar": "يتبع طفلان خطّيهما حتى يلتقيا عند صندوق. يلقيان التحية ويُظهران بطاقتيهما.",
+  "es": "Dos niños siguen sus líneas hasta encontrarse en una caja. Se saludan y muestran sus cartas.",
+  "hi": "दो बच्चे अपनी रेखाओं पर चलते हैं जब तक किसी डिब्बे पर न मिलें। वे नमस्ते कहते हैं और अपने कार्ड दिखाते हैं।",
+  "pt": "Duas crianças seguem suas linhas até se encontrarem em uma caixa. Dizem olá e mostram suas cartas."
+ },
+ "Two children meet in a box, say hello and compare. The smaller number goes left, the bigger goes right.": {
+  "ar": "يلتقي طفلان عند صندوق ويلقيان التحية ويقارنان. يذهب العدد الأصغر إلى اليسار والأكبر إلى اليمين.",
+  "es": "Dos niños se encuentran en una caja, se saludan y comparan. El número menor va a la izquierda y el mayor a la derecha.",
+  "hi": "दो बच्चे एक डिब्बे पर मिलते हैं, नमस्ते कहते हैं और तुलना करते हैं। छोटी संख्या बाईं ओर और बड़ी दाईं ओर जाती है।",
+  "pt": "Duas crianças se encontram em uma caixa, dizem olá e comparam. O número menor vai para a esquerda e o maior para a direita."
+ },
+ "Understand searching means looking for one thing in a list.": {
+  "ar": "فهم أن البحث يعني إيجاد شيء واحد في قائمة.",
+  "es": "Entender que buscar significa encontrar una sola cosa en una lista.",
+  "hi": "समझना कि खोजने का मतलब सूची में एक चीज़ ढूँढना है।",
+  "pt": "Entender que buscar significa encontrar uma coisa em uma lista."
+ },
+ "Understand that a computer uses things that are either on or off.": {
+  "ar": "فهم أن الحاسوب يستخدم أشياء إما مشغَّلة أو مطفأة.",
+  "es": "Entender que un ordenador usa cosas que están encendidas o apagadas.",
+  "hi": "समझना कि कंप्यूटर ऐसी चीज़ें इस्तेमाल करता है जो या तो चालू होती हैं या बंद।",
+  "pt": "Entender que um computador usa coisas que estão ligadas ou desligadas."
+ },
+ "Understand that a picture can be stored as a list of numbers.": {
+  "ar": "فهم أن الصورة يمكن تخزينها على شكل قائمة أعداد.",
+  "es": "Entender que una imagen se puede guardar como una lista de números.",
+  "hi": "समझना कि चित्र को संख्याओं की सूची के रूप में सँजोया जा सकता है।",
+  "pt": "Entender que uma imagem pode ser guardada como uma lista de números."
+ },
+ "Understand that a robot only does what its instructions say.": {
+  "ar": "فهم أن الروبوت لا يفعل إلا ما تقوله تعليماته.",
+  "es": "Entender que un robot solo hace lo que dicen sus instrucciones.",
+  "hi": "समझना कि रोबोट केवल वही करता है जो उसके निर्देश कहते हैं।",
+  "pt": "Entender que um robô só faz o que suas instruções dizem."
+ },
+ "Understand that computers try to store pictures using less space.": {
+  "ar": "فهم أن الحواسيب تحاول تخزين الصور بمساحة أقل.",
+  "es": "Entender que los ordenadores intentan guardar imágenes usando menos espacio.",
+  "hi": "समझना कि कंप्यूटर चित्रों को कम जगह में सँजोने की कोशिश करते हैं।",
+  "pt": "Entender que os computadores tentam guardar imagens usando menos espaço."
+ },
+ "Understand that counting can wrap around, like the hours on a clock.": {
+  "ar": "فهم أن العدّ يمكن أن يعود إلى البداية مثل ساعات الساعة.",
+  "es": "Entender que contar puede dar la vuelta, como las horas de un reloj.",
+  "hi": "समझना कि गिनती घूमकर लौट सकती है, जैसे घड़ी के घंटे।",
+  "pt": "Entender que a contagem pode dar a volta, como as horas de um relógio."
+ },
+ "Understand why unsorted lists take longer.": {
+  "ar": "فهم لماذا تستغرق القوائم غير المرتّبة وقتًا أطول.",
+  "es": "Entender por qué las listas desordenadas tardan más.",
+  "hi": "समझना कि बिना क्रम वाली सूचियों में ज़्यादा समय क्यों लगता है।",
+  "pt": "Entender por que listas sem ordem demoram mais."
+ },
+ "Use bigger numbers, decimals or fractions for a challenge.": {
+  "ar": "استخدم أعدادًا أكبر أو كسورًا عشرية أو كسورًا اعتيادية لرفع التحدّي.",
+  "es": "Usa números más grandes, decimales o fracciones para un desafío.",
+  "hi": "चुनौती के लिए बड़ी संख्याएँ, दशमलव या भिन्न इस्तेमाल करें।",
+  "pt": "Use números maiores, decimais ou frações para um desafio."
+ },
+ "Use cards where two values are equal. Ask what happens when equal cards meet.": {
+  "ar": "استخدم بطاقات فيها قيمتان متساويتان. اسأل ماذا يحدث عندما تلتقي بطاقتان متساويتان.",
+  "es": "Usa cartas en las que dos valores son iguales. Pregunta qué pasa cuando se encuentran dos cartas iguales.",
+  "hi": "ऐसे कार्ड इस्तेमाल करें जिनमें दो मान बराबर हों। पूछें कि दो बराबर कार्ड मिलें तो क्या होता है।",
+  "pt": "Use cartas em que dois valores são iguais. Pergunte o que acontece quando duas cartas iguais se encontram."
+ },
+ "Use five cards (1, 2, 4, 8, 16 dots) to make a number.": {
+  "ar": "استخدام خمس بطاقات (1 و2 و4 و8 و16 نقطة) لتكوين عدد.",
+  "es": "Usar cinco cartas (1, 2, 4, 8, 16 puntos) para formar un número.",
+  "hi": "पाँच कार्डों (1, 2, 4, 8, 16 बिंदु) से एक संख्या बनाना।",
+  "pt": "Usar cinco cartas (1, 2, 4, 8, 16 pontos) para formar um número."
+ },
+ "Use the middle card to throw away half the cards at once.": {
+  "ar": "استخدام البطاقة الوسطى لاستبعاد نصف البطاقات دفعة واحدة.",
+  "es": "Usar la carta del medio para descartar la mitad de las cartas de una vez.",
+  "hi": "बीच के कार्ड से एक साथ आधे कार्ड हटा देना।",
+  "pt": "Usar a carta do meio para descartar metade das cartas de uma vez."
+ },
+ "Use the order of a list to search faster.": {
+  "ar": "استخدام ترتيب القائمة للبحث بسرعة أكبر.",
+  "es": "Usar el orden de una lista para buscar más rápido.",
+  "hi": "सूची के क्रम का इस्तेमाल करके तेज़ खोजना।",
+  "pt": "Usar a ordem de uma lista para buscar mais rápido."
+ },
+ "Use the order of the list to cut the search short.": {
+  "ar": "استخدام ترتيب القائمة لاختصار البحث.",
+  "es": "Usar el orden de la lista para acortar la búsqueda.",
+  "hi": "सूची के क्रम से खोज छोटी करना।",
+  "pt": "Usar a ordem da lista para encurtar a busca."
+ },
+ "Use the trick to find a flipped card.": {
+  "ar": "استخدام الحيلة لإيجاد بطاقة قُلبت.",
+  "es": "Usar el truco para encontrar una carta que se dio la vuelta.",
+  "hi": "करतब से वह कार्ड ढूँढना जो पलट गया।",
+  "pt": "Usar o truque para achar uma carta que foi virada."
+ },
+ "Variation 1: use cards where two numbers are the same. Ask what happens when two equal cards meet. (It does not matter who goes where.)": {
+  "ar": "التنويع 1: استخدم بطاقات فيها عددان متساويان. اسأل ماذا يحدث عندما تلتقي بطاقتان متساويتان. (لا يهمّ من يذهب إلى أين.)",
+  "es": "Variación 1: usa cartas en las que dos números son iguales. Pregunta qué pasa cuando se encuentran dos cartas iguales. (No importa quién vaya adónde.)",
+  "hi": "विविधता 1: ऐसे कार्ड इस्तेमाल करें जिनमें दो संख्याएँ बराबर हों। पूछें कि दो बराबर कार्ड मिलें तो क्या होता है। (कोई भी कहीं भी जाए, फ़र्क नहीं पड़ता।)",
+  "pt": "Variação 1: use cartas em que dois números são iguais. Pergunte o que acontece quando duas cartas iguais se encontram. (Não importa quem vai para onde.)"
+ },
+ "Variation 2: ask what else we could sort. Try heights, colours, or sizes.": {
+  "ar": "التنويع 2: اسأل ماذا يمكن أن نفرز أيضًا. جرّبوا الأطوال أو الألوان أو الأحجام.",
+  "es": "Variación 2: pregunta qué más podríamos ordenar. Prueben con alturas, colores o tamaños.",
+  "hi": "विविधता 2: पूछें कि और क्या क्रम में लगा सकते हैं। ऊँचाई, रंग या आकार आज़माएँ।",
+  "pt": "Variação 2: pergunte o que mais poderíamos ordenar. Tentem alturas, cores ou tamanhos."
+ },
+ "Was it ever one guess? Was it ever all of them?": {
+  "ar": "هل كانت محاولة واحدة يومًا؟ وهل كانت كل المحاولات؟",
+  "es": "¿Alguna vez fue un solo intento? ¿Alguna vez fueron todos?",
+  "hi": "क्या कभी एक ही कोशिश में मिला? क्या कभी सारे कार्ड पलटने पड़े?",
+  "pt": "Alguma vez foi uma tentativa só? Alguma vez foram todas?"
+ },
+ "What can you sort besides numbers?": {
+  "ar": "ماذا يمكنك أن تفرز غير الأعداد؟",
+  "es": "¿Qué puedes ordenar además de números?",
+  "hi": "संख्याओं के अलावा आप क्या क्रम में लगा सकते हैं?",
+  "pt": "O que você pode ordenar além de números?"
+ },
+ "What did your group use for on and off?": {
+  "ar": "ماذا استخدمت مجموعتك للتشغيل والإيقاف؟",
+  "es": "¿Qué usó tu grupo para el encendido y el apagado?",
+  "hi": "आपके समूह ने चालू और बंद के लिए क्या इस्तेमाल किया?",
+  "pt": "O que o seu grupo usou para ligado e desligado?"
+ },
+ "What does going round the clock have to do with remainders?": {
+  "ar": "ما علاقة الدوران حول الساعة بالباقي؟",
+  "es": "¿Qué tiene que ver dar la vuelta al reloj con los restos?",
+  "hi": "घड़ी के चक्कर का शेषफल से क्या संबंध है?",
+  "pt": "O que dar a volta no relógio tem a ver com os restos?"
+ },
+ "What else could you sort?": {
+  "ar": "ماذا يمكنك أن تفرز أيضًا؟",
+  "es": "¿Qué más podrías ordenar?",
+  "hi": "आप और क्या क्रम में लगा सकते हैं?",
+  "pt": "O que mais você poderia ordenar?"
+ },
+ "What else would a computer need codes for?": {
+  "ar": "ما الأشياء الأخرى التي يحتاج الحاسوب إلى رموز لها؟",
+  "es": "¿Para qué más necesitaría códigos un ordenador?",
+  "hi": "कंप्यूटर को और किन चीज़ों के लिए कोड चाहिए?",
+  "pt": "Para que mais um computador precisaria de códigos?"
+ },
+ "What happens if the cards are in a different order?": {
+  "ar": "ماذا يحدث إن كانت البطاقات بترتيب مختلف؟",
+  "es": "¿Qué pasa si las cartas están en otro orden?",
+  "hi": "अगर कार्ड दूसरे क्रम में हों तो क्या होगा?",
+  "pt": "O que acontece se as cartas estiverem em outra ordem?"
+ },
+ "What happens if two cards flip?": {
+  "ar": "ماذا يحدث إن قُلبت بطاقتان؟",
+  "es": "¿Qué pasa si se dan la vuelta dos cartas?",
+  "hi": "अगर दो कार्ड पलट जाएँ तो क्या होता है?",
+  "pt": "O que acontece se duas cartas forem viradas?"
+ },
+ "What if the number is not in the list?": {
+  "ar": "ماذا لو لم يكن العدد في القائمة؟",
+  "es": "¿Y si el número no está en la lista?",
+  "hi": "अगर संख्या सूची में न हो तो?",
+  "pt": "E se o número não estiver na lista?"
+ },
+ "What if the number is not there?": {
+  "ar": "ماذا لو لم يكن العدد موجودًا؟",
+  "es": "¿Y si el número no está?",
+  "hi": "अगर संख्या वहाँ न हो तो?",
+  "pt": "E se o número não estiver lá?"
+ },
+ "What if the rule for smaller changed?": {
+  "ar": "ماذا لو تغيّرت قاعدة «الأصغر»؟",
+  "es": "¿Y si cambiara la regla de «menor»?",
+  "hi": "अगर «छोटा» का नियम बदल जाए तो?",
+  "pt": "E se a regra de «menor» mudasse?"
+ },
+ "What if there were a million cards?": {
+  "ar": "ماذا لو كان هناك مليون بطاقة؟",
+  "es": "¿Y si hubiera un millón de cartas?",
+  "hi": "अगर दस लाख कार्ड होते तो?",
+  "pt": "E se houvesse um milhão de cartas?"
+ },
+ "What if two digits swap places?": {
+  "ar": "ماذا لو تبادل رقمان مكانيهما؟",
+  "es": "¿Y si dos dígitos intercambian su lugar?",
+  "hi": "अगर दो अंक जगह बदल लें तो?",
+  "pt": "E se dois dígitos trocarem de lugar?"
+ },
+ "What if we doubled the cards?": {
+  "ar": "ماذا لو ضاعفنا عدد البطاقات؟",
+  "es": "¿Y si duplicáramos las cartas?",
+  "hi": "अगर हम कार्ड दोगुने कर दें तो?",
+  "pt": "E se dobrássemos as cartas?"
+ },
+ "What instructions would a real rocket need?": {
+  "ar": "ما التعليمات التي يحتاجها صاروخ حقيقي؟",
+  "es": "¿Qué instrucciones necesitaría un cohete de verdad?",
+  "hi": "असली रॉकेट को कौन-से निर्देश चाहिए होंगे?",
+  "pt": "Que instruções um foguete de verdade precisaria?"
+ },
+ "What is the biggest number the four cards can make?": {
+  "ar": "ما أكبر عدد يمكن أن تكوّنه البطاقات الأربع؟",
+  "es": "¿Cuál es el número más grande que pueden formar las cuatro cartas?",
+  "hi": "चारों कार्ड मिलकर सबसे बड़ी कौन-सी संख्या बना सकते हैं?",
+  "pt": "Qual é o maior número que as quatro cartas podem formar?"
+ },
+ "What is the biggest number with four cards? With five?": {
+  "ar": "ما أكبر عدد بأربع بطاقات؟ وبخمس؟",
+  "es": "¿Cuál es el número más grande con cuatro cartas? ¿Y con cinco?",
+  "hi": "चार कार्डों से सबसे बड़ी संख्या कौन-सी है? और पाँच से?",
+  "pt": "Qual é o maior número com quatro cartas? E com cinco?"
+ },
+ "What is the fewest guesses? The most?": {
+  "ar": "ما أقل عدد من المحاولات؟ وما أكبر عدد؟",
+  "es": "¿Cuál es el menor número de intentos? ¿Y el mayor?",
+  "hi": "सबसे कम कोशिशें कितनी थीं? और सबसे ज़्यादा?",
+  "pt": "Qual foi o menor número de tentativas? E o maior?"
+ },
+ "What is the most guesses you could need?": {
+  "ar": "ما أكبر عدد من المحاولات قد تحتاجه؟",
+  "es": "¿Cuál es el máximo de intentos que podrías necesitar?",
+  "hi": "ज़्यादा से ज़्यादा कितनी कोशिशें लग सकती हैं?",
+  "pt": "Qual é o máximo de tentativas de que você poderia precisar?"
+ },
+ "What number do you get if every card is hidden?": {
+  "ar": "ما العدد الذي تحصل عليه إن كانت كل البطاقات مخفية؟",
+  "es": "¿Qué número se obtiene si todas las cartas están ocultas?",
+  "hi": "अगर सारे कार्ड छिपे हों तो कौन-सी संख्या मिलती है?",
+  "pt": "Que número você obtém se todas as cartas estiverem escondidas?"
+ },
+ "What other things on a keyboard need a code?": {
+  "ar": "ما الأشياء الأخرى على لوحة المفاتيح التي تحتاج إلى رمز؟",
+  "es": "¿Qué otras cosas del teclado necesitan un código?",
+  "hi": "कीबोर्ड की और कौन-सी चीज़ों के लिए कोड चाहिए?",
+  "pt": "Que outras coisas do teclado precisam de um código?"
+ },
+ "What was the bug and how did you fix it?": {
+  "ar": "ما الخطأ وكيف أصلحته؟",
+  "es": "¿Cuál fue el error y cómo lo corregiste?",
+  "hi": "गलती क्या थी और आपने उसे कैसे ठीक किया?",
+  "pt": "Qual foi o erro e como você o corrigiu?"
+ },
+ "What was the hardest bug to find?": {
+  "ar": "ما أصعب خطأ في العثور عليه؟",
+  "es": "¿Cuál fue el error más difícil de encontrar?",
+  "hi": "सबसे मुश्किल से मिलने वाली गलती कौन-सी थी?",
+  "pt": "Qual foi o erro mais difícil de achar?"
+ },
+ "What would a clock with 7 points look like?": {
+  "ar": "كيف ستبدو ساعة بسبع نقاط؟",
+  "es": "¿Cómo sería un reloj con 7 puntos?",
+  "hi": "7 बिंदुओं वाली घड़ी कैसी दिखेगी?",
+  "pt": "Como seria um relógio com 7 pontos?"
+ },
+ "What would happen if one number were wrong?": {
+  "ar": "ماذا يحدث لو كان أحد الأعداد خاطئًا؟",
+  "es": "¿Qué pasaría si un número estuviera mal?",
+  "hi": "अगर कोई एक संख्या गलत हो तो क्या होगा?",
+  "pt": "O que aconteceria se um número estivesse errado?"
+ },
+ "What would help?": {
+  "ar": "ماذا سيساعد؟",
+  "es": "¿Qué ayudaría?",
+  "hi": "क्या मदद करेगा?",
+  "pt": "O que ajudaria?"
+ },
+ "What would you add to your language?": {
+  "ar": "ماذا ستضيف إلى لغتك؟",
+  "es": "¿Qué añadirías a tu lenguaje?",
+  "hi": "आप अपनी भाषा में क्या जोड़ेंगे?",
+  "pt": "O que você adicionaria à sua linguagem?"
+ },
+ "What would you do with 100 cards?": {
+  "ar": "ماذا ستفعل مع 100 بطاقة؟",
+  "es": "¿Qué harías con 100 cartas?",
+  "hi": "100 कार्ड हों तो आप क्या करेंगे?",
+  "pt": "O que você faria com 100 cartas?"
+ },
+ "When did you get unclear instructions in real life?": {
+  "ar": "متى تلقّيت تعليمات غير واضحة في الحياة الواقعية؟",
+  "es": "¿Cuándo recibiste instrucciones poco claras en la vida real?",
+  "hi": "असली ज़िंदगी में आपको कब अस्पष्ट निर्देश मिले?",
+  "pt": "Quando você recebeu instruções pouco claras na vida real?"
+ },
+ "Where could a computer use a tree?": {
+  "ar": "أين يمكن أن يستخدم الحاسوب شجرة؟",
+  "es": "¿Dónde podría un ordenador usar un árbol?",
+  "hi": "कंप्यूटर पेड़ का इस्तेमाल कहाँ कर सकता है?",
+  "pt": "Onde um computador poderia usar uma árvore?"
+ },
+ "Where do computers use this idea?": {
+  "ar": "أين تستخدم الحواسيب هذه الفكرة؟",
+  "es": "¿Dónde usan los ordenadores esta idea?",
+  "hi": "कंप्यूटर इस विचार का इस्तेमाल कहाँ करते हैं?",
+  "pt": "Onde os computadores usam essa ideia?"
+ },
+ "Where do you meet wrap-around in everyday life?": {
+  "ar": "أين تصادف هذا الالتفاف في الحياة اليومية؟",
+  "es": "¿Dónde encuentras esto de dar la vuelta en la vida diaria?",
+  "hi": "रोज़मर्रा की ज़िंदगी में आप घूमकर लौटने वाली चीज़ें कहाँ देखते हैं?",
+  "pt": "Onde você encontra essa volta completa no dia a dia?"
+ },
+ "Where else do check digits appear, like library books or bank cards?": {
+  "ar": "أين تظهر أرقام التحقق أيضًا، مثل كتب المكتبة أو البطاقات المصرفية؟",
+  "es": "¿Dónde más aparecen los dígitos de control, como en los libros de una biblioteca o en las tarjetas bancarias?",
+  "hi": "जाँच-अंक और कहाँ दिखते हैं, जैसे पुस्तकालय की किताबों या बैंक कार्डों पर?",
+  "pt": "Onde mais aparecem dígitos verificadores, como em livros de biblioteca ou cartões bancários?"
+ },
+ "Where else do we see things that are just on or off?": {
+  "ar": "أين نرى أيضًا أشياء إما مشغَّلة أو مطفأة فقط؟",
+  "es": "¿Dónde más vemos cosas que solo están encendidas o apagadas?",
+  "hi": "और कहाँ हम ऐसी चीज़ें देखते हैं जो बस चालू या बंद होती हैं?",
+  "pt": "Onde mais vemos coisas que só ficam ligadas ou desligadas?"
+ },
+ "Where have you seen pictures that were sent or saved?": {
+  "ar": "أين رأيت صورًا مُرسَلة أو محفوظة؟",
+  "es": "¿Dónde has visto imágenes enviadas o guardadas?",
+  "hi": "आपने भेजे या सहेजे गए चित्र कहाँ देखे हैं?",
+  "pt": "Onde você já viu imagens enviadas ou salvas?"
+ },
+ "Where might a computer need to find mistakes, like a scratched disc or a QR code?": {
+  "ar": "أين قد يحتاج الحاسوب إلى اكتشاف الأخطاء، مثل قرص مخدوش أو رمز QR؟",
+  "es": "¿Dónde podría un ordenador necesitar encontrar errores, como en un disco rayado o un código QR?",
+  "hi": "कंप्यूटर को गलतियाँ कहाँ पकड़नी पड़ सकती हैं, जैसे खरोंच वाली डिस्क या QR कोड में?",
+  "pt": "Onde um computador pode precisar achar erros, como em um disco riscado ou um código QR?"
+ },
+ "Which bit changed the most often?": {
+  "ar": "أي بت تغيّر أكثر مرّة؟",
+  "es": "¿Qué bit cambió con más frecuencia?",
+  "hi": "कौन-सा बिट सबसे ज़्यादा बार बदला?",
+  "pt": "Qual bit mudou com mais frequência?"
+ },
+ "Which bit moved the most when counting?": {
+  "ar": "أي بت تحرّك أكثر عند العدّ؟",
+  "es": "¿Qué bit se movió más al contar?",
+  "hi": "गिनते समय कौन-सा बिट सबसे ज़्यादा हिला?",
+  "pt": "Qual bit se mexeu mais ao contar?"
+ },
+ "Which card changes most often when counting?": {
+  "ar": "أي بطاقة تتغيّر أكثر عند العدّ؟",
+  "es": "¿Qué carta cambia con más frecuencia al contar?",
+  "hi": "गिनते समय कौन-सा कार्ड सबसे ज़्यादा बदलता है?",
+  "pt": "Qual carta muda com mais frequência ao contar?"
+ },
+ "Which cards were easy to understand?": {
+  "ar": "ما البطاقات التي كان فهمها سهلًا؟",
+  "es": "¿Qué cartas fueron fáciles de entender?",
+  "hi": "कौन-से कार्ड समझना आसान था?",
+  "pt": "Quais cartas foram fáceis de entender?"
+ },
+ "Which do not?": {
+  "ar": "وأيّها لا؟",
+  "es": "¿Cuáles no?",
+  "hi": "और कौन-से नहीं?",
+  "pt": "E quais não?"
+ },
+ "Which idea did you like best from another group?": {
+  "ar": "أي فكرة من مجموعة أخرى أعجبتك أكثر؟",
+  "es": "¿Qué idea de otro grupo te gustó más?",
+  "hi": "दूसरे समूह का कौन-सा विचार आपको सबसे अच्छा लगा?",
+  "pt": "De qual ideia de outro grupo você mais gostou?"
+ },
+ "Which jobs go faster if more people help?": {
+  "ar": "ما المهام التي تُنجَز أسرع إذا ساعد أشخاص أكثر؟",
+  "es": "¿Qué trabajos se hacen más rápido si ayudan más personas?",
+  "hi": "कौन-से काम ज़्यादा लोगों के मदद करने से जल्दी होते हैं?",
+  "pt": "Que tarefas ficam mais rápidas se mais pessoas ajudarem?"
+ },
+ "Which number was hardest to show?": {
+  "ar": "أي عدد كان الأصعب في العرض؟",
+  "es": "¿Qué número fue el más difícil de mostrar?",
+  "hi": "कौन-सी संख्या दिखाना सबसे कठिन था?",
+  "pt": "Qual número foi o mais difícil de mostrar?"
+ },
+ "Which pictures squeeze well, and which do not?": {
+  "ar": "أي الصور تنضغط جيدًا وأيّها لا؟",
+  "es": "¿Qué imágenes se comprimen bien y cuáles no?",
+  "hi": "कौन-से चित्र अच्छी तरह सिकुड़ते हैं और कौन-से नहीं?",
+  "pt": "Quais imagens comprimem bem e quais não?"
+ },
+ "Which steps could happen at the same time?": {
+  "ar": "ما الخطوات التي يمكن أن تحدث في وقت واحد؟",
+  "es": "¿Qué pasos podrían ocurrir al mismo tiempo?",
+  "hi": "कौन-से चरण एक ही समय में हो सकते हैं?",
+  "pt": "Quais passos poderiam acontecer ao mesmo tempo?"
+ },
+ "While everyone looks away, flip exactly one card.": {
+  "ar": "بينما ينظر الجميع بعيدًا، اقلب بطاقة واحدة بالضبط.",
+  "es": "Mientras todos miran para otro lado, da la vuelta a una sola carta.",
+  "hi": "जब सब दूसरी ओर देख रहे हों, ठीक एक कार्ड पलट दें।",
+  "pt": "Enquanto todos olham para o outro lado, vire exatamente uma carta."
+ },
+ "Why do computers want to use less space?": {
+  "ar": "لماذا تريد الحواسيب استخدام مساحة أقل؟",
+  "es": "¿Por qué los ordenadores quieren usar menos espacio?",
+  "hi": "कंप्यूटर कम जगह क्यों इस्तेमाल करना चाहते हैं?",
+  "pt": "Por que os computadores querem usar menos espaço?"
+ },
+ "Why do we need a fifth card?": {
+  "ar": "لماذا نحتاج إلى بطاقة خامسة؟",
+  "es": "¿Por qué necesitamos una quinta carta?",
+  "hi": "हमें पाँचवें कार्ड की ज़रूरत क्यों है?",
+  "pt": "Por que precisamos de uma quinta carta?"
+ },
+ "Why do we need five bits for 26 letters?": {
+  "ar": "لماذا نحتاج إلى خمسة بتات لستّة وعشرين حرفًا؟",
+  "es": "¿Por qué necesitamos cinco bits para 26 letras?",
+  "hi": "26 अक्षरों के लिए हमें पाँच बिट क्यों चाहिए?",
+  "pt": "Por que precisamos de cinco bits para 26 letras?"
+ },
+ "Why does a computer use on and off?": {
+  "ar": "لماذا يستخدم الحاسوب التشغيل والإيقاف؟",
+  "es": "¿Por qué un ordenador usa encendido y apagado?",
+  "hi": "कंप्यूटर चालू और बंद का इस्तेमाल क्यों करता है?",
+  "pt": "Por que um computador usa ligado e desligado?"
+ },
+ "Why does sorting help?": {
+  "ar": "لماذا يساعد الترتيب؟",
+  "es": "¿Por qué ayuda ordenar?",
+  "hi": "क्रम में लगाना मदद क्यों करता है?",
+  "pt": "Por que ordenar ajuda?"
+ },
+ "Why does the network still work?": {
+  "ar": "لماذا لا تزال الشبكة تعمل؟",
+  "es": "¿Por qué sigue funcionando la red?",
+  "hi": "नेटवर्क फिर भी क्यों काम करता है?",
+  "pt": "Por que a rede continua funcionando?"
+ },
+ "Why does the trick always work?": {
+  "ar": "لماذا تنجح الحيلة دائمًا؟",
+  "es": "¿Por qué siempre funciona el truco?",
+  "hi": "यह करतब हमेशा क्यों काम करता है?",
+  "pt": "Por que o truque sempre funciona?"
+ },
+ "Why does the trick work?": {
+  "ar": "لماذا تنجح الحيلة؟",
+  "es": "¿Por qué funciona el truco?",
+  "hi": "यह करतब क्यों काम करता है?",
+  "pt": "Por que o truque funciona?"
+ },
+ "Why is guessing the middle smart?": {
+  "ar": "لماذا من الذكي تخمين الوسط؟",
+  "es": "¿Por qué es inteligente adivinar el medio?",
+  "hi": "बीच का अंदाज़ा लगाना समझदारी क्यों है?",
+  "pt": "Por que é inteligente palpitar o meio?"
+ },
+ "Why is the last digit useful?": {
+  "ar": "لماذا الرقم الأخير مفيد؟",
+  "es": "¿Por qué es útil el último dígito?",
+  "hi": "आख़िरी अंक किस काम का है?",
+  "pt": "Por que o último dígito é útil?"
+ },
+ "Why must instructions be very clear?": {
+  "ar": "لماذا يجب أن تكون التعليمات واضحة جدًا؟",
+  "es": "¿Por qué las instrucciones deben ser muy claras?",
+  "hi": "निर्देश बहुत साफ़ क्यों होने चाहिए?",
+  "pt": "Por que as instruções devem ser muito claras?"
+ },
+ "Why not just steer the rocket step by step?": {
+  "ar": "لماذا لا نوجّه الصاروخ خطوة بخطوة؟",
+  "es": "¿Por qué no dirigir el cohete paso a paso?",
+  "hi": "रॉकेट को चरण-दर-चरण ही क्यों न चलाएँ?",
+  "pt": "Por que não guiar o foguete passo a passo?"
+ },
+ "With cards in order from smallest to biggest, children find a number in only a few guesses.": {
+  "ar": "عندما تكون البطاقات مرتّبة من الأصغر إلى الأكبر، يجد الأطفال العدد في محاولات قليلة فقط.",
+  "es": "Con las cartas ordenadas de menor a mayor, los niños encuentran un número en solo unos pocos intentos.",
+  "hi": "कार्ड छोटे से बड़े क्रम में हों तो बच्चे कुछ ही कोशिशों में संख्या ढूँढ लेते हैं।",
+  "pt": "Com as cartas em ordem do menor para o maior, as crianças encontram um número em poucas tentativas."
+ },
+ "With the cards in order, children find a number in just a few guesses by always checking the middle.": {
+  "ar": "عندما تكون البطاقات مرتّبة، يجد الأطفال العدد في محاولات قليلة بالنظر دائمًا إلى الوسط.",
+  "es": "Con las cartas en orden, los niños encuentran un número en solo unos pocos intentos mirando siempre la del medio.",
+  "hi": "कार्ड क्रम में हों तो बच्चे हमेशा बीच वाला देखकर बस कुछ ही कोशिशों में संख्या ढूँढ लेते हैं।",
+  "pt": "Com as cartas em ordem, as crianças encontram um número em poucas tentativas olhando sempre o meio."
+ },
+ "Work out the code for one letter together, for example D is 4, which needs the 4 card on and the others off: OFF OFF ON OFF OFF.": {
+  "ar": "اكتشفوا معًا رمز حرف؛ مثلًا D هو 4، ويحتاج بطاقة 4 مشغَّلة والبقية مطفأة: مطفأ مطفأ مشغَّل مطفأ مطفأ.",
+  "es": "Averigüen juntos el código de una letra; por ejemplo, la D es 4, que necesita la carta del 4 encendida y las demás apagadas: APAGADO APAGADO ENCENDIDO APAGADO APAGADO.",
+  "hi": "साथ मिलकर किसी अक्षर का कोड निकालें; जैसे D है 4, जिसके लिए 4 वाला कार्ड चालू और बाकी बंद चाहिए: बंद बंद चालू बंद बंद।",
+  "pt": "Descubram juntos o código de uma letra; por exemplo, D é 4, que precisa da carta do 4 ligada e das outras desligadas: DESLIGADO DESLIGADO LIGADO DESLIGADO DESLIGADO."
+ },
+ "Write a program as a list of clear steps.": {
+  "ar": "كتابة برنامج على شكل قائمة خطوات واضحة.",
+  "es": "Escribir un programa como una lista de pasos claros.",
+  "hi": "साफ़ चरणों की सूची के रूप में प्रोग्राम लिखना।",
+  "pt": "Escrever um programa como uma lista de passos claros."
+ },
+ "Write a simple program with arrow commands.": {
+  "ar": "كتابة برنامج بسيط بأوامر الأسهم.",
+  "es": "Escribir un programa sencillo con comandos de flechas.",
+  "hi": "तीर वाले कमांड से एक सरल प्रोग्राम लिखना।",
+  "pt": "Escrever um programa simples com comandos de setas."
+ },
+ "Write the 12 digits in two rows: the 1st, 3rd, 5th... digits on top and the 2nd, 4th, 6th... on the bottom.": {
+  "ar": "اكتب الأرقام الاثني عشر في صفين: الأرقام الأول والثالث والخامس... في الأعلى والثاني والرابع والسادس... في الأسفل.",
+  "es": "Escribe los 12 dígitos en dos filas: los dígitos 1.º, 3.º, 5.º... arriba y los 2.º, 4.º, 6.º... abajo.",
+  "hi": "12 अंकों को दो पंक्तियों में लिखें: 1ला, 3रा, 5वाँ... अंक ऊपर और 2रा, 4था, 6ठा... नीचे।",
+  "pt": "Escreva os 12 dígitos em duas linhas: o 1º, 3º, 5º... dígitos em cima e o 2º, 4º, 6º... embaixo."
+ },
+ "Write the code for your name or a short word, one letter at a time.": {
+  "ar": "اكتب رمز اسمك أو كلمة قصيرة، حرفًا بحرف.",
+  "es": "Escribe el código de tu nombre o de una palabra corta, letra por letra.",
+  "hi": "अपने नाम या किसी छोटे शब्द का कोड एक-एक अक्षर करके लिखें।",
+  "pt": "Escreva o código do seu nome ou de uma palavra curta, uma letra de cada vez."
+ }
+}

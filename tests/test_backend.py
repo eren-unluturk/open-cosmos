@@ -310,7 +310,9 @@ class GuidesAndLessonsTests(unittest.TestCase):
         for lang in LANGS:
             r = self.c.get(f"/{lang}/lesson/{ls['id']}")
             self.assertEqual(r.status_code, 200, lang)
-        self.assertIn("Por ahora este texto está en inglés", self.c.get(f"/es/lesson/{ls['id']}").get_data(as_text=True))
+        html = self.c.get(f"/es/lesson/{ls['id']}").get_data(as_text=True)
+        self.assertNotIn("Por ahora este texto está en inglés", html)  # lessons are translated (lessons_overlay.json)
+        self.assertIn("Pasos", html)
 
     def test_lesson_404s(self):
         self.assertEqual(self.c.get("/en/lesson/nope").status_code, 404)

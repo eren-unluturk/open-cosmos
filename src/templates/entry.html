@@ -128,7 +128,7 @@
   {{ ui.from_list }}: <a href="{{ e.source }}">{{ e.source.split('github.com/')[1] }}</a> · {{ ui.license }}: {{ e.license }} · {{ e.category }}
   {% if is_ai %} · {{ ui.footer_3 }}{% endif %}
 </p>
-{% if e.attribution %}<p class="attrib">{{ e.attribution }}</p>{% endif %}
+{% if e.attribution %}<p class="attrib">{{ ui.entry_attribution }}</p>{% endif %}
 {% if guide %}<p class="attrib"><a href="{{ url_for('howto', lang=lang, kind=e.kind) }}">{{ guide.title }}</a></p>{% endif %}
 
 {% if nb.stops %}

@@ -48,6 +48,27 @@ def _add_guide_translations(guides, overlay):
                     n.setdefault(lang, overlay[n["en"]][lang])
 
 
+LESSON_TEXT_FIELDS = ("summary", "grown_up_note", "objectives", "materials", "steps", "talk_about")
+
+
+def _add_lesson_translations(lessons, overlay):
+    """lessons.json text is {"en": ...}. Add other languages from lessons_overlay.json (English text -> {lang: text}).
+
+    All or nothing per lesson and language, so a lesson page never mixes two languages.
+    """
+    def pieces(value):
+        return value if isinstance(value, list) else [value]
+
+    for ls in lessons:
+        for lang in ("es", "ar", "hi", "pt"):
+            ok = all(lang in overlay.get(t, {}) for f in LESSON_TEXT_FIELDS for t in pieces(ls[f]["en"]))
+            if not ok:
+                continue
+            for f in LESSON_TEXT_FIELDS:
+                en = ls[f]["en"]
+                ls[f].setdefault(lang, [overlay[t][lang] for t in en] if isinstance(en, list) else overlay[en][lang])
+
+
 def _load_lessons():
     """guides.json and lessons.json are written by the data lead (scripts/build_guides.py, fetch_lessons.py)."""
     global _guides, _lessons, _lesson_by_id, _lesson_by_entry
@@ -55,6 +76,11 @@ def _load_lessons():
         _guides = _read_json("guides.json", {"fallback": {}, "groups": {}})
         _add_guide_translations(_guides, _read_json("guides_translated.json", {}))
         _lessons = _read_json("lessons.json", [])
+        _add_lesson_translations(_lessons, _read_json("lessons_overlay.json", {}))
+        kid_titles = {e["id"]: e["title"] for e in _read_json("kids.json", [])}
+        for ls in _lessons:  # the lesson title is the entry title, which is already translated
+            for lang, text in kid_titles.get(ls["entry_id"], {}).items():
+                ls["title"].setdefault(lang, text)
         _lesson_by_id = {x["id"]: x for x in _lessons}
         _lesson_by_entry = {x["entry_id"]: x for x in _lessons}
 

@@ -358,3 +358,14 @@ class _UI(dict):
 
 
 UI = {code: _UI({**d}) for code, d in {"en": EN, "es": ES, "pt": PT, "ar": AR, "hi": HI}.items()}
+
+
+# Strings that were still falling back to English (AI-written; see src/data/ui_translated.json).
+# setdefault: anything already translated in the dicts above wins.
+import json as _json  # noqa: E402
+from pathlib import Path as _Path  # noqa: E402
+
+_extra = _json.loads((_Path(__file__).parent / "data" / "ui_translated.json").read_text(encoding="utf-8"))
+for _code, _d in _extra.items():
+    for _k, _v in _d.items():
+        UI[_code].setdefault(_k, _v)

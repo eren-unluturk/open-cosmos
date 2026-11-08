@@ -46,10 +46,10 @@
 
 <section class="panel cc-box" aria-labelledby="cc-h">
   <h2 id="cc-h" class="side-h">CC BY-SA 4.0</h2>
-  <p>{{ ls.attribution }}</p>
+  <p>{{ ui.lesson_attribution }}</p>
   <p><a href="{{ ls.source_url }}" rel="noopener noreferrer">{{ ui.lesson_original }}</a> · <a href="{{ ls.license_url }}" rel="noopener noreferrer">{{ ui.lesson_license_link }}</a></p>
   <p class="attrib">{{ ui.lesson_pictures }}</p>
-  <p><strong>{{ ui.changes }}:</strong> {{ ls.changes_made }}</p>
+  <p><strong>{{ ui.changes }}:</strong> {{ ui.lesson_changes_text }}</p>
   <p class="attrib">{{ ui.sharealike }}</p>
 </section>
 {% endblock %}
